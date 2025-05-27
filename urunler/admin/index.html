@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serakıncı Admin Paneli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/urunler/assets/css/modern-styles.css">
+  
+  <style>
+    :root {
+      --admin-primary: #4338ca;
+      --admin-secondary: #0f172a;
+      --admin-accent: #f97316;
+      --admin-success: #10b981;
+      --admin-danger: #ef4444;
+      --admin-warning: #f59e0b;
+      --admin-info: #3b82f6;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f1f5f9;
+      color: #1e293b;
+    }
+    
+    .admin-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    
+    .admin-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .admin-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--admin-secondary);
+    }
+    
+    .admin-nav {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .admin-nav-link {
+      color: var(--admin-secondary);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      transition: all 0.2s;
+    }
+    
+    .admin-nav-link:hover {
+      background-color: #e2e8f0;
+    }
+    
+    .admin-nav-link.active {
+      background-color: var(--admin-primary);
+      color: white;
+    }
+    
+    .admin-card {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .admin-card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #4b5563;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.375rem;
+      font-size: 1rem;
+      color: #1e293b;
+      transition: all 0.2s;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--admin-primary);
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    }
+    
+    .form-select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.375rem;
+      font-size: 1rem;
+      color: #1e293b;
+      background-color: white;
+      cursor: pointer;
+    }
+    
+    .form-select:focus {
+      outline: none;
+      border-color: var(--admin-primary);
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    }
+    
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    .btn-primary {
+      background-color: var(--admin-primary);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-primary:hover {
+      background-color: #3730a3;
+      transform: translateY(-2px);
+    }
+    
+    .btn-secondary {
+      background-color: #e2e8f0;
+      color: #4b5563;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-secondary:hover {
+      background-color: #cbd5e1;
+    }
+    
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .admin-table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background-color: #f8fafc;
+      color: #4b5563;
+      font-weight: 500;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .admin-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .admin-table tr:hover {
+      background-color: #f8fafc;
+    }
+    
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    
+    .badge-success {
+      background-color: rgba(16, 185, 129, 0.1);
+      color: var(--admin-success);
+    }
+    
+    .badge-warning {
+      background-color: rgba(245, 158, 11, 0.1);
+      color: var(--admin-warning);
+    }
+    
+    .badge-danger {
+      background-color: rgba(239, 68, 68, 0.1);
+      color: var(--admin-danger);
+    }
+    
+    .image-preview {
+      width: 100%;
+      margin-top: 0.5rem;
+      border-radius: 0.375rem;
+      overflow: hidden;
+      display: none;
+      max-width: 300px;
+    }
+    
+    .image-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .admin-alert {
+      padding: 1rem;
+      border-radius: 0.375rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .admin-alert-success {
+      background-color: rgba(16, 185, 129, 0.1);
+      border-left: 4px solid var(--admin-success);
+      color: var(--admin-success);
+    }
+    
+    .admin-alert-danger {
+      background-color: rgba(239, 68, 68, 0.1);
+      border-left: 4px solid var(--admin-danger);
+      color: var(--admin-danger);
+    }
+    
+    .admin-alert-info {
+      background-color: rgba(59, 130, 246, 0.1);
+      border-left: 4px solid var(--admin-info);
+      color: var(--admin-info);
+    }
+    
+    /* Login Form Styles */
+    .login-container {
+      max-width: 400px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--admin-secondary);
+    }
+    
+    .login-btn {
+      width: 100%;
+    }
+    
+    .login-footer {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      
+      .admin-nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+      }
+      
+      .admin-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="login-page" class="login-container">
+    <h1 class="login-title">Serakıncı Admin Paneli</h1>
+    
+    <div id="login-error" class="admin-alert admin-alert-danger" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <span>Hatalı kullanıcı adı veya şifre!</span>
+    </div>
+    
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username" class="form-label">Kullanıcı Adı</label>
+        <input type="text" id="username" class="form-control" placeholder="Kullanıcı adınızı girin" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password" class="form-label">Şifre</label>
+        <input type="password" id="password" class="form-control" placeholder="Şifrenizi girin" required>
+      </div>
+      
+      <button type="submit" class="btn-primary login-btn">Giriş Yap</button>
+    </form>
+    
+    <p class="login-footer">Serakıncı Ürün Yönetim Sistemi &copy; 2023</p>
+  </div>
+  
+  <div id="admin-panel" style="display: none;">
+    <div class="admin-container">
+      <header class="admin-header">
+        <h1 class="admin-title">Serakıncı Admin Paneli</h1>
+        
+        <nav class="admin-nav">
+          <a href="#products" class="admin-nav-link active" data-tab="products-tab">Ürünler</a>
+          <a href="#add-product" class="admin-nav-link" data-tab="add-product-tab">Yeni Ürün Ekle</a>
+          <a href="#brands" class="admin-nav-link" data-tab="brands-tab">Markalar</a>
+          <a href="#categories" class="admin-nav-link" data-tab="categories-tab">Kategoriler</a>
+          <a href="#" id="logout-btn" class="admin-nav-link">Çıkış Yap</a>
+        </nav>
+      </header>
+      
+      <!-- Ürünler Tabı -->
+      <div id="products-tab" class="admin-tab">
+        <div class="admin-card">
+          <h2 class="admin-card-title">Ürün Listesi</h2>
+          
+          <div class="form-group">
+            <input type="text" id="product-search" class="form-control" placeholder="Ürün adı veya kodu ile ara...">
+          </div>
+          
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Ürün Kodu</th>
+                <th>Ürün Adı</th>
+                <th>Marka</th>
+                <th>Kategori</th>
+                <th>Durum</th>
+                <th>İşlemler</th>
+              </tr>
+            </thead>
+            <tbody id="products-table-body">
+              <tr>
+                <td>KSNUXEAQU871</td>
+                <td>AQUABELLA LOTION ESSENCE</td>
+                <td>Nuxe</td>
+                <td>Dermokozmetik</td>
+                <td><span class="badge badge-success">Aktif</span></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1002995851</td>
+                <td>SEBIUM H2O 500ml İKİZ KOFRE</td>
+                <td>Bioderma</td>
+                <td>Dermokozmetik</td>
+                <td><span class="badge badge-success">Aktif</span></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+              <tr>
+                <td>DMTMZ001</td>
+                <td>PetActive Köpek Maması 15kg</td>
+                <td>PetActive</td>
+                <td>Hayvan Sağlığı</td>
+                <td><span class="badge badge-warning">Stok Az</span></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Yeni Ürün Ekle Tabı -->
+      <div id="add-product-tab" class="admin-tab" style="display: none;">
+        <div class="admin-card">
+          <h2 class="admin-card-title">Yeni Ürün Ekle</h2>
+          
+          <div id="product-added-alert" class="admin-alert admin-alert-success" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>Ürün başarıyla eklendi!</span>
+          </div>
+          
+          <form id="add-product-form">
+            <div class="form-group">
+              <label for="product-code" class="form-label">Ürün Kodu *</label>
+              <input type="text" id="product-code" class="form-control" placeholder="Örn: DMTMZ001" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="product-name" class="form-label">Ürün Adı *</label>
+              <input type="text" id="product-name" class="form-control" placeholder="Örn: AQUABELLA LOTION ESSENCE" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="product-brand" class="form-label">Marka *</label>
+              <select id="product-brand" class="form-select" required>
+                <option value="">Marka Seçin</option>
+                <optgroup label="Dermokozmetik">
+                  <option value="Bioderma">Bioderma</option>
+                  <option value="Nuxe">Nuxe</option>
+                  <option value="Caudalie">Caudalie</option>
+                  <option value="Esthederm">Esthederm</option>
+                  <option value="Phyto">Phyto</option>
+                  <option value="Etat Pur">Etat Pur</option>
+                </optgroup>
+                <optgroup label="Hayvan Sağlığı">
+                  <option value="Boehringer Ingelheim">Boehringer Ingelheim</option>
+                  <option value="PetActive">PetActive</option>
+                  <option value="Elanco">Elanco</option>
+                  <option value="Semex">Semex</option>
+                  <option value="Dollvet">Dollvet</option>
+                  <option value="Biomin">Biomin</option>
+                  <option value="Ceva">Ceva</option>
+                </optgroup>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="product-category" class="form-label">Kategori *</label>
+              <select id="product-category" class="form-select" required>
+                <option value="">Kategori Seçin</option>
+                <option value="Dermokozmetik">Dermokozmetik</option>
+                <option value="Hayvan Sağlığı">Hayvan Sağlığı</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="product-description" class="form-label">Ürün Açıklaması</label>
+              <textarea id="product-description" class="form-control form-textarea" placeholder="Ürün hakkında açıklama yazın..."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="product-image" class="form-label">Ürün Fotoğrafı</label>
+              <input type="file" id="product-image" class="form-control" accept="image/*">
+              <div id="image-preview" class="image-preview">
+                <img id="preview-img" src="#" alt="Ürün Fotoğraf Önizleme">
+              </div>
+            </div>
+            
+            <div class="form-actions" style="display: flex; gap: 1rem;">
+              <button type="submit" class="btn-primary">Ürün Ekle</button>
+              <button type="reset" class="btn-secondary">Formu Temizle</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Markalar Tabı -->
+      <div id="brands-tab" class="admin-tab" style="display: none;">
+        <div class="admin-card">
+          <h2 class="admin-card-title">Marka Yönetimi</h2>
+          
+          <div class="form-group">
+            <label for="brand-filter" class="form-label">Kategori Filtresi</label>
+            <select id="brand-filter" class="form-select">
+              <option value="all">Tüm Kategoriler</option>
+              <option value="Dermokozmetik">Dermokozmetik</option>
+              <option value="Hayvan Sağlığı">Hayvan Sağlığı</option>
+            </select>
+          </div>
+          
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Marka Adı</th>
+                <th>Kategori</th>
+                <th>Ürün Sayısı</th>
+                <th>Durum</th>
+                <th>Logo</th>
+                <th>İşlemler</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bioderma</td>
+                <td>Dermokozmetik</td>
+                <td>24</td>
+                <td><span class="badge badge-success">Aktif</span></td>
+                <td><img src="/urunler/assets/logos/bioderma.png" alt="Bioderma" height="30"></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Nuxe</td>
+                <td>Dermokozmetik</td>
+                <td>18</td>
+                <td><span class="badge badge-success">Aktif</span></td>
+                <td><img src="/urunler/assets/logos/nuxe.png" alt="Nuxe" height="30"></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Boehringer Ingelheim</td>
+                <td>Hayvan Sağlığı</td>
+                <td>12</td>
+                <td><span class="badge badge-success">Aktif</span></td>
+                <td><img src="/urunler/assets/Boehringer_Ingelheim_Logo.svg.png" alt="Boehringer" height="30"></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Kategoriler Tabı -->
+      <div id="categories-tab" class="admin-tab" style="display: none;">
+        <div class="admin-card">
+          <h2 class="admin-card-title">Kategori Yönetimi</h2>
+          
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Kategori Adı</th>
+                <th>Ürün Sayısı</th>
+                <th>Marka Sayısı</th>
+                <th>Durum</th>
+                <th>İşlemler</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dermokozmetik</td>
+                <td>85</td>
+                <td>6</td>
+                <td><span class="badge badge-success">Aktif</span></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Hayvan Sağlığı</td>
+                <td>56</td>
+                <td>8</td>
+                <td><span class="badge badge-success">Aktif</span></td>
+                <td>
+                  <button class="btn-secondary">Düzenle</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/urunler/assets/js/admin-panel.js"></script>
+</body>
+</html>

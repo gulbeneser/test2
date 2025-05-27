@@ -1,0 +1,239 @@
+[
+  {
+    "ProductId": 1413,
+    "ProductName": "KSİLAZOL Enj. 50ml",
+    "ProductCode": "VALIV056",
+    "DisplayProductCode": "VALIV056",
+    "ProducerProductCode": null,
+    "AddToCartWarehouseBased": false,
+    "Price": 381,
+    "Discounts": [],
+    "AlternatePrice": null,
+    "Quantity": null,
+    "ManuelDiscountRate": null,
+    "QuantityMultiplier": 1,
+    "MaxQuantity": null,
+    "MinQuantity": null,
+    "HasStock": false,
+    "IsAddedToCart": false,
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV056.jpg",
+    "ProductRef": "3102",
+    "Stock": null,
+    "UnitId": 46,
+    "UnitName": "Adet",
+    "StockInformation": null,
+    "StockColorCode": null,
+    "ContractDetailId": null,
+    "RedirectUrl": null,
+    "IsSampleProduct": false,
+    "BaseUnitFactor1": 1,
+    "BaseUnitFactor2": 1,
+    "BaseUnitId": 46,
+    "BaseUnitName": "Adet",
+    "VatRate": 5,
+    "Description": "",
+    "ProductImages": [
+      {
+        "ImageId": 861,
+        "Title": "",
+        "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV056.jpg",
+        "Name": null,
+        "LineNumber": 0
+      },
+      {
+        "ImageId": 2850,
+        "Title": "",
+        "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV056_1.jpg",
+        "Name": null,
+        "LineNumber": 0
+      }
+    ],
+    "ProductSpecialCodes": [
+      {
+        "ProductSpecialCodeFieldId": 1,
+        "ProductSpecialCodeFieldCode": "SPECODE3",
+        "ProductSpecialCodeFieldName": "SPECODE3",
+        "ProductSpecialCodeValueCode": "B2B",
+        "ProductSpecialCodeValueName": "B2B",
+        "ProductSpecialCodeSortNumber": null,
+        "ProductSpecialCodeHideOnProductDetailPage": false
+      }
+    ],
+    "PriceTypes": [
+      {
+        "ProductPriceId": 2741,
+        "Code": "L",
+        "Name": "Liste Fiyatı",
+        "Price": 381,
+        "Color": null,
+        "Priority": 2,
+        "PriceTypeId": 2,
+        "PriceDiscounted": 381,
+        "DiscountRate": null,
+        "CurrencyCode": "TRY",
+        "CurrencyCodeLower": "try"
+      }
+    ],
+    "anaKategori": "Hayvan Sağlığı",
+    "kategori": "ANESTEZİK",
+    "catId": 38
+  },
+  {
+    "ProductId": 1415,
+    "ProductName": "REVERSAL Enj. 10ml",
+    "ProductCode": "VALIV058",
+    "DisplayProductCode": "VALIV058",
+    "ProducerProductCode": null,
+    "AddToCartWarehouseBased": false,
+    "Price": 2656.25,
+    "Discounts": [],
+    "AlternatePrice": null,
+    "Quantity": null,
+    "ManuelDiscountRate": null,
+    "QuantityMultiplier": 1,
+    "MaxQuantity": null,
+    "MinQuantity": null,
+    "HasStock": false,
+    "IsAddedToCart": false,
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV058.jpg",
+    "ProductRef": "3104",
+    "Stock": null,
+    "UnitId": 46,
+    "UnitName": "Adet",
+    "StockInformation": null,
+    "StockColorCode": null,
+    "ContractDetailId": null,
+    "RedirectUrl": null,
+    "IsSampleProduct": false,
+    "BaseUnitFactor1": 1,
+    "BaseUnitFactor2": 1,
+    "BaseUnitId": 46,
+    "BaseUnitName": "Adet",
+    "VatRate": 5,
+    "Description": "",
+    "ProductImages": [
+      {
+        "ImageId": 863,
+        "Title": "",
+        "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV058.jpg",
+        "Name": null,
+        "LineNumber": 0
+      },
+      {
+        "ImageId": 2852,
+        "Title": "",
+        "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV058_1.jpg",
+        "Name": null,
+        "LineNumber": 0
+      }
+    ],
+    "ProductSpecialCodes": [
+      {
+        "ProductSpecialCodeFieldId": 1,
+        "ProductSpecialCodeFieldCode": "SPECODE3",
+        "ProductSpecialCodeFieldName": "SPECODE3",
+        "ProductSpecialCodeValueCode": "B2B",
+        "ProductSpecialCodeValueName": "B2B",
+        "ProductSpecialCodeSortNumber": null,
+        "ProductSpecialCodeHideOnProductDetailPage": false
+      }
+    ],
+    "PriceTypes": [
+      {
+        "ProductPriceId": 2743,
+        "Code": "L",
+        "Name": "Liste Fiyatı",
+        "Price": 2656.25,
+        "Color": null,
+        "Priority": 2,
+        "PriceTypeId": 2,
+        "PriceDiscounted": 2656.25,
+        "DiscountRate": null,
+        "CurrencyCode": "TRY",
+        "CurrencyCodeLower": "try"
+      }
+    ],
+    "anaKategori": "Hayvan Sağlığı",
+    "kategori": "ANESTEZİK",
+    "catId": 38
+  },
+  {
+    "ProductId": 1416,
+    "ProductName": "Tomidin 10ml",
+    "ProductCode": "VALIV059",
+    "DisplayProductCode": "VALIV059",
+    "ProducerProductCode": null,
+    "AddToCartWarehouseBased": false,
+    "Price": 2656.25,
+    "Discounts": [],
+    "AlternatePrice": null,
+    "Quantity": null,
+    "ManuelDiscountRate": null,
+    "QuantityMultiplier": 1,
+    "MaxQuantity": null,
+    "MinQuantity": null,
+    "HasStock": false,
+    "IsAddedToCart": false,
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV059.jpg",
+    "ProductRef": "3105",
+    "Stock": null,
+    "UnitId": 46,
+    "UnitName": "Adet",
+    "StockInformation": null,
+    "StockColorCode": null,
+    "ContractDetailId": null,
+    "RedirectUrl": null,
+    "IsSampleProduct": false,
+    "BaseUnitFactor1": 1,
+    "BaseUnitFactor2": 1,
+    "BaseUnitId": 46,
+    "BaseUnitName": "Adet",
+    "VatRate": 5,
+    "Description": "",
+    "ProductImages": [
+      {
+        "ImageId": 864,
+        "Title": "",
+        "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV059.jpg",
+        "Name": null,
+        "LineNumber": 0
+      },
+      {
+        "ImageId": 2853,
+        "Title": "",
+        "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV059_1.jpg",
+        "Name": null,
+        "LineNumber": 0
+      }
+    ],
+    "ProductSpecialCodes": [
+      {
+        "ProductSpecialCodeFieldId": 1,
+        "ProductSpecialCodeFieldCode": "SPECODE3",
+        "ProductSpecialCodeFieldName": "SPECODE3",
+        "ProductSpecialCodeValueCode": "B2B",
+        "ProductSpecialCodeValueName": "B2B",
+        "ProductSpecialCodeSortNumber": null,
+        "ProductSpecialCodeHideOnProductDetailPage": false
+      }
+    ],
+    "PriceTypes": [
+      {
+        "ProductPriceId": 2744,
+        "Code": "L",
+        "Name": "Liste Fiyatı",
+        "Price": 2656.25,
+        "Color": null,
+        "Priority": 2,
+        "PriceTypeId": 2,
+        "PriceDiscounted": 2656.25,
+        "DiscountRate": null,
+        "CurrencyCode": "TRY",
+        "CurrencyCodeLower": "try"
+      }
+    ],
+    "anaKategori": "Hayvan Sağlığı",
+    "kategori": "ANESTEZİK",
+    "catId": 38
+  }
+]

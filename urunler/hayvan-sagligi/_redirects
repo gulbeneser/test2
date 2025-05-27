@@ -1,0 +1,3 @@
+# Hayvan Sağlığı URL yönlendirmeleri
+/urunler/hayvan-sagligi/product/* /urunler/hayvan-sagligi/product.html 200
+/urunler/hayvan-sagligi/kategori/* /urunler/hayvan-sagligi/index.html 200

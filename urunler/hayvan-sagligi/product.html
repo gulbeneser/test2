@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Detayı | Hayvan Sağlığı | Serakıncı</title>
+  <meta name="description" content="Serakıncı'da hayvan sağlığı ürünleri. Orijinal ürünler Serakıncı güvencesiyle sizinle buluşuyor.">
+  
+  <!-- Yerel İşletme ve Ürün SEO Meta Etiketleri -->
+  <meta name="keywords" content="Hayvan Sağlığı Ürünleri, Boehringer Kıbrıs, Semex KKTC, Elanco Lefkoşa, Veteriner İlaçları, Hayvan İlaçları">
+  <meta name="geo.region" content="CY-04">
+  <meta name="geo.placename" content="Lefkoşa, Kuzey Kıbrıs Türk Cumhuriyeti">
+  <meta name="geo.position" content="35.1856;33.3823">
+  <meta name="ICBM" content="35.1856, 33.3823">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.serakinci.com/urunler/hayvan-sagligi/product">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.serakinci.com/urunler/hayvan-sagligi/product">
+  <meta property="og:title" content="Hayvan Sağlığı Ürünleri | Serakıncı Kuzey Kıbrıs">
+  <meta property="og:description" content="Kuzey Kıbrıs Türk Cumhuriyeti'nde Serakıncı güvencesiyle hayvan sağlığı ürünleri.">
+  <meta property="og:site_name" content="Serakıncı">
+  <meta property="og:locale" content="tr_TR">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hayvan Sağlığı Ürünleri | Serakıncı Kuzey Kıbrıs">
+  <meta name="twitter:description" content="Kuzey Kıbrıs Türk Cumhuriyeti'nde Serakıncı güvencesiyle hayvan sağlığı ürünleri.">
+  
+  <!-- Stiller ve Fontlar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/urunler/assets/css/modern-styles.css">
+  <script src="/urunler/assets/js/modern-features.js" defer></script>
+  
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --accent: #f97316;
+      --accent-hover: #ea580c;
+      --background: #f9fafb;
+      --card-bg: #ffffff;
+      --text-dark: #111827;
+      --text-medium: #4b5563;
+      --text-light: #6b7280;
+      --border: #e5e7eb;
+      --border-dark: #d1d5db;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 15px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --radius-sm: 0.25rem;
+      --radius: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --transition: all 0.3s ease;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+    
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* Header */
+    .header {
+      background-color: white;
+      box-shadow: var(--shadow);
+      padding: 1rem 0;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-decoration: none;
+    }
+    
+    .navbar {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    .nav-link {
+      color: var(--text-medium);
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+    }
+    
+    .nav-link:hover {
+      color: var(--primary);
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 1rem 0;
+      background-color: var(--background);
+    }
+    
+    .breadcrumb-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 0.5rem;
+    }
+    
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
+    }
+    
+    .breadcrumb-item:not(:last-child)::after {
+      content: "/";
+      margin-left: 0.5rem;
+      color: var(--text-light);
+    }
+    
+    .breadcrumb-link {
+      color: var(--text-medium);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: var(--transition);
+    }
+    
+    .breadcrumb-link:hover {
+      color: var(--primary);
+    }
+    
+    .breadcrumb-current {
+      color: var(--text-dark);
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+    
+    /* 6. Ürün Detay Sayfası İyileştirmeleri */
+    .product-detail-container {
+      padding: 2rem 0;
+    }
+    
+    .product-detail {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+      .product-detail {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .product-gallery {
+      background-color: var(--card-bg);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .product-main-image-container {
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      background-color: white;
+      padding-top: 100%; /* 1:1 aspect ratio */
+    }
+    
+    .product-detail-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .product-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .product-detail-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 0 0 1rem 0;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+    
+    .product-meta {
+      margin-bottom: 1.5rem;
+    }
+    
+    .product-meta-item {
+      display: flex;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    
+    .product-meta-label {
+      font-weight: 500;
+      color: var(--text-medium);
+      width: 100px;
+      flex-shrink: 0;
+    }
+    
+    .product-meta-value {
+      color: var(--text-dark);
+    }
+    
+    .product-description {
+      margin-bottom: 1.5rem;
+      color: var(--text-medium);
+      line-height: 1.6;
+    }
+    
+    .product-features-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 1rem 0;
+      color: var(--text-dark);
+    }
+    
+    .product-features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .product-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-medium);
+    }
+    
+    .feature-icon {
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    
+    /* Related Products */
+    .related-products {
+      padding: 3rem 0;
+    }
+    
+    .related-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--text-dark);
+    }
+    
+    .related-products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    /* Fotoğraf hazırlanıyor mesajı */
+    .missing-image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1rem;
+      color: #718096;
+      font-weight: 500;
+      text-align: center;
+      width: 100%;
+    }
+    
+    /* No image placeholder */
+    .no-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      background-color: #f3f4f6;
+      color: #4b5563;
+      border-radius: 8px;
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .no-image::before {
+      content: "📷";
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .no-image::after {
+      content: "Fotoğraf hazırlanıyor";
+      font-size: 1rem;
+    }
+    
+    /* Ürün fotoğrafı büyütme efekti */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+      position: relative;
+    }
+
+    .lightbox-image {
+      max-width: 100%;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lightbox-close:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body class="product-detail-page">
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="/urunler/" class="logo">
+          Serakıncı
+        </a>
+        
+        <nav class="navbar">
+          <a href="https://www.serakinci.com" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Ana Siteye Dön
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="/urunler/" class="breadcrumb-link">Ana Sayfa</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/urunler/hayvan-sagligi" class="breadcrumb-link">Hayvan Sağlığı</a>
+          </li>
+          <li class="breadcrumb-item">
+            <span id="product-category-breadcrumb" class="breadcrumb-link">Kategori</span>
+          </li>
+          <li class="breadcrumb-item">
+            <span id="product-name-breadcrumb" class="breadcrumb-current">Ürün Adı</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Ürün Detay -->
+    <div class="product-detail-container">
+      <div class="container">
+        <div class="product-detail">
+          <!-- Sol Taraf - Ürün Görselleri -->
+          <div class="product-gallery">
+            <div class="product-main-image-container">
+              <img id="product-image" src="" alt="" class="product-detail-image" />
+            </div>
+          </div>
+          
+          <!-- Sağ Taraf - Ürün Bilgileri -->
+          <div class="product-info">
+            <h1 id="product-name" class="product-detail-title">Ürün Adı</h1>
+            
+            <div class="product-meta">
+              <div class="product-meta-item">
+                <div class="product-meta-label">Kategori:</div>
+                <div id="product-category" class="product-meta-value">Kategori</div>
+              </div>
+              <div class="product-meta-item">
+                <div class="product-meta-label">Ürün Kodu:</div>
+                <div id="product-code" class="product-meta-value">-</div>
+              </div>
+            </div>
+            
+            <div class="product-description">
+              <p id="product-description">Orijinal ürün Serakıncı güvencesiyle sizinle buluşuyor.</p>
+            </div>
+            
+            <div class="product-features">
+              <h2 class="product-features-title">Ürün Özellikleri</h2>
+              <ul class="product-features-list">
+                <li class="product-feature-item">
+                  <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                  <span id="feature-category">Kategori: </span>
+                </li>
+                <li class="product-feature-item">
+                  <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                  Orijinal Üretici Ürünü
+                </li>
+                <li class="product-feature-item">
+                  <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                  %100 Güvenilir ve Orijinal
+                </li>
+                <li class="product-feature-item">
+                  <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                  Serakıncı Güvencesiyle
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Benzer Ürünler -->
+    <section class="related-products">
+      <div class="container">
+        <h2 class="related-title">Benzer Ürünler</h2>
+        
+        <div class="related-products-grid" id="relatedProducts">
+          <!-- Benzer ürünler JavaScript ile yüklenecek -->
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <img class="lightbox-image" src="" alt="Ürün Fotoğrafı">
+      <div class="lightbox-close">×</div>
+    </div>
+  </div>
+  
+  <script>
+    // URL'den ürün adını al
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlPath = window.location.pathname;
+      console.log("Tam URL yolu:", urlPath);
+      
+      // URL'den ürün adını çıkar - product/ sonrasındaki kısmı al
+      let productSlug = '';
+      if (urlPath.includes('/product/')) {
+        const parts = urlPath.split('/product/');
+        if (parts.length > 1) {
+          productSlug = parts[1];
+        }
+      } else {
+        // Eğer /product/ yoksa, son parçayı al
+        const urlParts = urlPath.split('/');
+        productSlug = urlParts[urlParts.length - 1];
+      }
+      
+      console.log("Ürün slug:", productSlug);
+      
+      // API endpoint
+      const apiUrl = '/urunler/api/hayvan-sagligi.json';
+      
+      // URL dostu slug fonksiyonu
+      function slugify(text) {
+        return text
+          .toString()
+          .toLowerCase()
+          .replace(/ğ/g, 'g')
+          .replace(/ü/g, 'u')
+          .replace(/ş/g, 's')
+          .replace(/ı/g, 'i')
+          .replace(/ö/g, 'o')
+          .replace(/ç/g, 'c')
+          .replace(/Ğ/g, 'g')
+          .replace(/Ü/g, 'u')
+          .replace(/Ş/g, 's')
+          .replace(/İ/g, 'i')
+          .replace(/Ö/g, 'o')
+          .replace(/Ç/g, 'c')
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-')
+          .replace(/^-+/, '')
+          .replace(/-+$/, '');
+      }
+      
+      // Ürün verilerini API'den yükle
+      fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          if (!data || !Array.isArray(data)) {
+            throw new Error('API geçersiz veri döndürdü!');
+          }
+          
+          console.log("Toplam ürün sayısı:", data.length);
+          
+          // Ürün slugını kullanarak eşleşen ürünü bul
+          console.log("Eşleşme için aranıyor:", productSlug);
+          
+          // Önce tam eşleşme dene
+          let product = data.find(item => {
+            if (!item.ProductName) return false;
+            const itemSlug = slugify(item.ProductName);
+            console.log("Kontrol ediliyor:", itemSlug, "==", productSlug);
+            return itemSlug === productSlug;
+          });
+          
+          // Tam eşleşme yoksa, içeren ürünleri bul
+          if (!product && productSlug.length > 3) {
+            console.log("Tam eşleşme bulunamadı, kısmi eşleşme deneniyor");
+            product = data.find(item => {
+              if (!item.ProductName) return false;
+              const itemSlug = slugify(item.ProductName);
+              return itemSlug.includes(productSlug) || productSlug.includes(itemSlug);
+            });
+          }
+          
+          if (product) {
+            console.log("Ürün bulundu:", product.ProductName);
+            
+            // Ürün verilerini sayfaya yerleştir
+            // Ürün adı
+            document.getElementById('product-name').textContent = product.ProductName;
+            document.getElementById('product-name-breadcrumb').textContent = product.ProductName;
+            
+            // Kategori - farklı alanlarda olabilir
+            let category = product.Category || product.kategori || 'Hayvan Sağlığı';
+            
+            // Kategorileri standartlaştır
+            category = category.toUpperCase();
+            
+            document.getElementById('product-category').textContent = category;
+            document.getElementById('product-category-breadcrumb').textContent = category;
+            document.getElementById('feature-category').textContent = `Kategori: ${category}`;
+            
+            // Ürün kodu
+            document.getElementById('product-code').textContent = product.ProductCode || '-';
+            
+            // Ürün açıklaması
+            if (product.Description && product.Description.trim()) {
+              document.getElementById('product-description').textContent = product.Description;
+            } else {
+              document.getElementById('product-description').textContent = `Orijinal ${product.ProductName} Serakıncı güvencesiyle sizinle buluşuyor.`;
+            }
+            
+            // Ürün görseli
+            const productImage = document.getElementById('product-image');
+            if (product.ImageUrl) {
+              productImage.src = product.ImageUrl;
+              productImage.alt = product.ProductName;
+              productImage.setAttribute('data-original', product.ImageUrl); // Lightbox için orijinal görsel
+            } else if (product.ProductImages && product.ProductImages.length > 0 && product.ProductImages[0].ImageUrl) {
+              productImage.src = product.ProductImages[0].ImageUrl;
+              productImage.alt = product.ProductName;
+              productImage.setAttribute('data-original', product.ProductImages[0].ImageUrl);
+            } else {
+              // Görsel yoksa
+              productImage.style.display = 'none';
+              productImage.parentElement.innerHTML = '<div class="no-image"></div>';
+            }
+            
+            // SEO için sayfa başlığını güncelle
+            document.title = `${product.ProductName} | Hayvan Sağlığı | Serakıncı`;
+            
+            // Meta açıklama güncelleme
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+              metaDescription.content = `${product.ProductName} - Orijinal ${product.ProductName} Serakıncı güvencesiyle sizinle. Hayvan sağlığı kategorisinde ${category} ürünlerimizi keşfedin.`;
+            }
+            
+            // Canonical URL güncelleme
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            if (canonicalLink) {
+              canonicalLink.href = `https://www.serakinci.com/urunler/hayvan-sagligi/product/${productSlug}`;
+            }
+            
+            // Benzer ürünleri yükle
+            loadSimilarProducts(data, product);
+            
+            // Lightbox özelliğini etkinleştir
+            initLightbox();
+          } else {
+            // Ürün bulunamadıysa
+            console.error("Ürün bulunamadı:", productSlug);
+            document.getElementById('product-name').textContent = 'Ürün bulunamadı';
+            document.getElementById('product-description').textContent = 'Bu ürün mevcut değil veya kaldırılmış olabilir.';
+          }
+        })
+        .catch(error => {
+          console.error('Ürün verileri yüklenirken hata oluştu:', error);
+          document.getElementById('product-name').textContent = 'Veri yükleme hatası';
+          document.getElementById('product-description').textContent = 'Lütfen daha sonra tekrar deneyin.';
+        });
+    });
+    
+    // Benzer ürünleri yükle
+    function loadSimilarProducts(products, currentProduct) {
+      const relatedProductsContainer = document.getElementById('relatedProducts');
+      if (!relatedProductsContainer) return;
+      
+      // URL dostu slug fonksiyonu
+      function slugify(text) {
+        return text
+          .toString()
+          .toLowerCase()
+          .replace(/ğ/g, 'g')
+          .replace(/ü/g, 'u')
+          .replace(/ş/g, 's')
+          .replace(/ı/g, 'i')
+          .replace(/ö/g, 'o')
+          .replace(/ç/g, 'c')
+          .replace(/Ğ/g, 'g')
+          .replace(/Ü/g, 'u')
+          .replace(/Ş/g, 's')
+          .replace(/İ/g, 'i')
+          .replace(/Ö/g, 'o')
+          .replace(/Ç/g, 'c')
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\-]+/g, '')
+          .replace(/\-\-+/g, '-')
+          .replace(/^-+/, '')
+          .replace(/-+$/, '');
+      }
+      
+      // Aynı kategorideki ürünleri bul (mevcut ürün hariç)
+      const currentCategory = currentProduct.Category || currentProduct.kategori || '';
+      const similarProducts = products
+        .filter(product => 
+          (product.Category === currentCategory || product.kategori === currentCategory) && 
+          product.ProductId !== currentProduct.ProductId
+        )
+        .slice(0, 3); // En fazla 3 ürün göster
+      
+      if (similarProducts.length === 0) {
+        // Benzer ürün yoksa bölümü gizle
+        document.querySelector('.related-products').style.display = 'none';
+        return;
+      }
+      
+      // Benzer ürünleri HTML olarak oluştur
+      let similarProductsHTML = '';
+      
+      similarProducts.forEach(product => {
+        const productSlug = slugify(product.ProductName);
+        const category = product.Category || product.kategori || 'Hayvan Sağlığı';
+        
+        // Ürün görseli
+        let image = product.ImageUrl || '';
+        if (!image && product.ProductImages && product.ProductImages.length > 0) {
+          image = product.ProductImages[0].ImageUrl;
+        }
+        
+        similarProductsHTML += `
+          <div class="product-card">
+            <div class="product-image-container">
+              ${image 
+                ? `<img src="${image}" alt="${product.ProductName}" class="product-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'no-image\\'></div>';">`
+                : `<div class="no-image"></div>`
+              }
+            </div>
+            <div class="product-content">
+              <span class="product-category">${category}</span>
+              <h3 class="product-name">${product.ProductName}</h3>
+              <a href="/urunler/hayvan-sagligi/product/${productSlug}" class="product-link">
+                <span>Ürünü İncele</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+              </a>
+            </div>
+          </div>
+        `;
+      });
+      
+      relatedProductsContainer.innerHTML = similarProductsHTML;
+    }
+    
+    // Lightbox (Ürün Resmi Büyütme)
+    function initLightbox() {
+      const productImage = document.getElementById('product-image');
+      if (!productImage || productImage.style.display === 'none') return;
+      
+      const lightbox = document.querySelector('.lightbox');
+      const lightboxImage = document.querySelector('.lightbox-image');
+      const lightboxClose = document.querySelector('.lightbox-close');
+      
+      // Ürün resmine tıklama olayı
+      productImage.style.cursor = 'zoom-in';
+      productImage.addEventListener('click', function() {
+        // Orijinal görsel URL'sini al
+        const originalSrc = this.getAttribute('data-original') || this.src;
+        lightboxImage.src = originalSrc;
+        lightboxImage.alt = this.alt || 'Ürün Fotoğrafı';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Sayfayı kaydırmayı engelle
+      });
+      
+      // Kapatma butonuna tıklama
+      lightboxClose.addEventListener('click', function() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = ''; // Sayfayı kaydırmayı etkinleştir
+      });
+      
+      // Lightbox'a tıklayarak kapatma
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+      
+      // ESC tuşu ile kapatma
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

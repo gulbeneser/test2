@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Detayı | Dermokozmetik | Serakıncı</title>
+  <meta name="description" content="Serakıncı'da dermokozmetik ürünleri. En sevdiğiniz markaların ürün detaylarını inceleyin.">
+  
+  <!-- canonical JS ile dinamik güncellenecek -->
+  <link rel="canonical" href="https://www.serakinci.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- --- TÜM STİLLER (index dosyasındaki modern tasarım + detay özgül eklemeler) --- -->
+  <style>
+    /* Global renkler & yardımcı değişkenler */
+    :root{--primary:#3b82f6;--primary-hover:#2563eb;--bg:#f8f9fa;--card:#ffffff;--text-dark:#111827;--text-medium:#4b5563;--text-light:#9ca3af;--border:#e5e7eb;--radius:10px;--shadow:0 .125rem .25rem rgba(0,0,0,.075);--shadow-md:0 .5rem 1rem rgba(0,0,0,.1)}
+    html{scroll-behavior:smooth}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text-dark);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1140px;margin:0 auto;padding:1.5rem 1rem}
+    /* --- Arama barı --- */
+    .site-header{background:var(--card);padding:1rem 0;box-shadow:var(--shadow);position:sticky;top:0;z-index:1000}
+    .search-bar-container{max-width:1140px;margin:0 auto;padding:0 1rem;position:relative}
+    .search-input-wrapper{display:flex;align-items:center;background:#eff1f3;border-radius:var(--radius);padding:.5rem 1rem}
+    .search-input-wrapper svg{margin-right:.75rem;color:var(--text-light);width:20px;height:20px}
+    #productSearchInput{width:100%;border:none;outline:none;font-size:1rem;background:transparent;color:var(--text-dark)}
+    #productSearchInput::placeholder{color:var(--text-light)}
+    #searchResultsDropdown{position:absolute;top:100%;left:0;right:0;background:var(--card);border:1px solid var(--border);border-top:none;border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow-md);max-height:300px;overflow-y:auto;z-index:999;display:none}
+    #searchResultsDropdown ul{list-style:none;margin:0;padding:0}
+    #searchResultsDropdown li a{display:flex;align-items:center;padding:.75rem 1rem;border-bottom:1px solid var(--border);transition:background .2s;color:var(--text-dark)}
+    #searchResultsDropdown li:last-child a{border-bottom:none}
+    #searchResultsDropdown li a:hover{background:#f1f3f5}
+    .suggestion-image{width:40px;height:40px;object-fit:contain;margin-right:.75rem;border-radius:var(--radius);border:1px solid var(--border)}
+    .suggestion-name{font-weight:500;flex-grow:1}
+    .suggestion-category{font-size:.8rem;color:var(--text-light);margin-left:.5rem}
+    .no-results{padding:1rem;text-align:center;color:var(--text-medium)}
+    /* Breadcrumbs */
+    .breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;font-size:.875rem;margin-bottom:2rem;color:var(--text-medium)}
+    .breadcrumb-link{color:var(--primary)}
+    .breadcrumb-separator{margin:0 .5rem;color:var(--text-light)}
+    .breadcrumb-current{color:var(--text-dark);font-weight:500}
+    /* Ana ürün alanı */
+    .product-main-layout{display:grid;grid-template-columns:1fr;gap:2rem;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);padding:2rem;margin-bottom:2.5rem}
+    @media(min-width:768px){.product-main-layout{grid-template-columns:2fr 3fr}}
+    .product-main-image-wrapper{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+    .product-main-image{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;padding:.5rem;cursor:pointer}
+    .image-placeholder{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1;background:#e9ecef;color:var(--text-medium)}
+    .product-info{display:flex;flex-direction:column}
+    .product-title-wrapper{display:flex;align-items:center;flex-wrap:wrap;margin-bottom:.75rem}
+    .product-title{font-size:2rem;font-weight:700;line-height:1.3;margin:0 .5rem 0 0}
+    .favorite-button{background:none;border:none;cursor:pointer;padding:.3rem;color:var(--text-light);transition:color .2s,transform .2s;display:inline-flex;align-items:center}
+    .favorite-button:hover{color:#e74c3c;transform:scale(1.1)}
+    .favorite-button.favorited{color:#e74c3c}
+    .product-meta{font-size:.9rem;color:var(--text-medium);margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.5rem 1.2rem}
+    .product-meta strong{font-weight:600;color:var(--text-dark);margin-right:.3rem}
+    .product-share-buttons{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem}
+    .share-label{font-size:.9rem;font-weight:500;color:var(--text-medium)}
+    .product-share-buttons a{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center}
+    .product-short-description{font-size:1rem;color:var(--text-medium);margin-bottom:1.5rem;line-height:1.7}
+    /* Tabs */
+    .tabs-navigation{display:flex;border-bottom:1px solid var(--border);overflow-x:auto;white-space:nowrap;background:#f8f9fa}
+    .tab-link{padding:1rem 1.5rem;font-size:1rem;font-weight:600;background:transparent;border:none;cursor:pointer;color:var(--text-medium);transition:color .2s,border-color .2s;background:#f8f9fa;border-bottom:3px solid transparent}
+    .tab-link:hover{color:var(--primary);background:#e9ecef}
+    .tab-link.active{color:var(--primary);border-bottom-color:var(--primary);background:var(--card)}
+    .tab-content{padding:1.5rem 2rem}
+    .tab-pane{display:none;line-height:1.7;font-size:.9375rem;color:var(--text-medium)}
+    .tab-pane.active{display:block}
+    .tab-pane h3{font-size:1.25rem;font-weight:700;color:var(--text-dark);margin-top:0;margin-bottom:1rem}
+    .toggle-content{max-height:100px;overflow:hidden;position:relative;transition:max-height .5s}
+    .toggle-content.expanded{max-height:2000px}
+    .toggle-content::after{content:'';position:absolute;bottom:0;left:0;right:0;height:30px;background:linear-gradient(to bottom,transparent,var(--card));pointer-events:none}
+    .toggle-content.expanded::after{opacity:0}
+    .read-more-btn{display:inline-block;margin-top:.5rem;padding:.3rem .6rem;font-size:.85rem;color:var(--primary);background:transparent;border:1px solid var(--primary);border-radius:var(--radius);cursor:pointer}
+    .read-more-btn:hover{background:var(--primary);color:#fff}
+    /* Related products */
+    .related-products-section{margin-bottom:2.5rem}
+    .related-products-title{font-size:1.75rem;font-weight:700;margin-bottom:1.5rem;color:var(--text-dark);border-bottom:2px solid var(--primary);padding-bottom:.75rem;display:inline-block}
+    .related-products-carousel{position:relative}
+    .related-products-container{display:flex;gap:1.5rem;overflow-x:auto;scroll-behavior:smooth;padding-bottom:1rem}
+    .related-products-container::-webkit-scrollbar{display:none}
+    .related-product-card{flex:0 0 auto;width:240px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);text-decoration:none;color:var(--text-dark);transition:transform .2s,box-shadow .2s}
+    .related-product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+    .related-product-card img{width:100%;height:180px;object-fit:contain;padding:.5rem;border-bottom:1px solid var(--border)}
+    .related-product-card .info{padding:1rem}
+    .related-product-card .name{font-weight:600;font-size:.9375rem;margin-bottom:.25rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;height:2.8em}
+    .related-product-card .category{font-size:.8rem;color:var(--text-light)}
+    .carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.9);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow)}
+    .carousel-arrow.prev{left:-15px}
+    .carousel-arrow.next{right:-15px}
+    /* Lightbox */
+    .lightbox-modal{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.85);align-items:center;justify-content:center;z-index:1050}
+    .lightbox-modal.show{display:flex}
+    .lightbox-content{max-width:90vw;max-height:90vh;animation:lightboxZoom .3s}
+    @keyframes lightboxZoom{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+    .lightbox-close{position:absolute;top:20px;right:35px;color:#fff;font-size:40px;font-weight:bold;cursor:pointer}
+    /* Scroll top */
+    .scroll-to-top{position:fixed;bottom:20px;right:20px;width:48px;height:48px;border:none;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;visibility:hidden;transition:opacity .3s,transform .3s;transform:translateY(20px);z-index:999;box-shadow:var(--shadow-md)}
+    .scroll-to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+    /* Loading */
+    .loading-container{text-align:center;padding:3rem 1rem;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);max-width:600px;margin:3rem auto}
+    .loading-spinner{width:48px;height:48px;border:4px solid #e9ecef;border-top:4px solid var(--primary);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 1.5rem}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .loading-text{color:var(--text-medium)}
+    .error-container{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-md);padding:3rem 1.5rem;text-align:center;max-width:600px;margin:3rem auto}
+  </style>
+</head>
+<body>
+  <!-- --- ARAMA BAR --- -->
+  <header class="site-header">
+    <div class="search-bar-container">
+      <div class="search-input-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="productSearchInput" placeholder="Ürün ara...">
+      </div>
+      <div id="searchResultsDropdown"><ul id="searchResultsList"></ul></div>
+    </div>
+  </header>
+
+  <main class="product-detail-page">
+    <div class="container" id="productDetailContainer">
+      <div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>
+    </div>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="imageLightbox" class="lightbox-modal"><span class="lightbox-close">×</span><img id="lightboxImg" class="lightbox-content"></div>
+
+  <!-- SCROLL TOP -->
+  <button id="scrollToTopBtn" class="scroll-to-top" title="Başa dön"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+  <!-- TOOLTIP alanları (kopyala & favori) -->
+  <div id="copyTooltip" class="copy-tooltip">Kopyalandı!</div>
+  <div id="favoriteTooltip" class="favorite-tooltip"></div>
+
+  <script>
+    /* ---------------- YARDIMCI FONKSİYONLAR ---------------- */
+    const slugify = str => str.toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s').replace(/ı/g,'i').replace(/ö/g,'o').replace(/ç/g,'c').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'-');
+    const getSlugFromUrl = () => {const p=window.location.pathname.split('/');return (p.length>=5 && p[3]==='product')?p[4]:''};
+
+    let allProducts=[];let debounceTimer;
+
+    document.addEventListener('DOMContentLoaded',()=>{
+      const slug=getSlugFromUrl();const canonical=document.querySelector("link[rel='canonical']");
+      if(slug){if(canonical)canonical.href=location.href;loadProductDetail(slug);}else{if(canonical)canonical.href=location.origin+location.pathname;loadAllProductsForSearch();hideLoader();}
+      setupScrollTop();setupLightbox();setupSearch();
+    });
+
+    /* ---------------- ARAMA İÇİN TÜM ÜRÜNLER ---------------- */
+    async function loadAllProductsForSearch(){try{const res=await fetch('/urunler/api/product.json');if(!res.ok)throw new Error(res.status);allProducts=await res.json();}catch(e){console.error('Arama ürünleri yüklenemedi',e);} }
+
+    /* ---------------- ÜRÜN DETAY ---------------- */
+    async function loadProductDetail(slug){const container=document.getElementById('productDetailContainer');try{const [listRes,detailRes]=await Promise.all([fetch('/urunler/api/product.json'),fetch('/urunler/api/detay-product.json')]);if(!listRes.ok||!detailRes.ok)throw new Error('Veri yok');allProducts=await listRes.json();const detailArr=await detailRes.json();const product=allProducts.find(p=>slugify(p.ProductName)===slug);if(!product){showError('Ürün bulunamadı');return;}const productDetail=detailArr.find(d=>d.ProductId===product.ProductId||slugify(d.ProductName)===slugify(product.ProductName));displayProductDetail(product,productDetail);}catch(err){console.error(err);showError('Ürün yüklenemedi');}}
+
+    function displayProductDetail(product,detail){const container=document.getElementById('productDetailContainer');if(!container)return;
+      const img=product.ImageUrl|| (product.ProductImages&&product.ProductImages[0]&&product.ProductImages[0].ImageUrl)||'';
+      const imgHTML=img?`<div class="product-main-image-wrapper" id="mainProductImageWrapper"><img src="${img}" alt="${product.ProductName}" class="product-main-image"></div>`:`<div class="product-main-image-wrapper"><div class="image-placeholder">Görsel hazırlanıyor</div></div>`;
+      /* Breadcrumb */
+      const breadcrumbHTML=`<nav class="breadcrumbs"><a href="/" class="breadcrumb-link">Ana Sayfa</a><span class="breadcrumb-separator">></span><a href="/urunler/" class="breadcrumb-link">Ürün Kataloğu</a><span class="breadcrumb-separator">></span><a href="/urunler/dermokozmetik/" class="breadcrumb-link">Dermokozmetik</a>${product.cat?`<span class="breadcrumb-separator">></span><a href="/urunler/dermokozmetik/?kategori=${slugify(product.cat)}" class="breadcrumb-link">${product.cat}</a>`:''}<span class="breadcrumb-separator">></span><span class="breadcrumb-current">${product.ProductName}</span></nav>`;
+      /* Meta */
+      let metaHTML='<div class="product-meta">';if(product.brand)metaHTML+=`<span><strong>Marka:</strong> ${product.brand}</span>`;if(product.cat)metaHTML+=`<span><strong>Kategori:</strong> ${product.cat}</span>`;if(product.ProductCode)metaHTML+=`<span><strong>Kod:</strong> <span id="productCodeValue">${product.ProductCode}</span> <span class="copy-code" onclick="copyProductCode(event)">(Kopyala)</span></span>`;metaHTML+='</div>';
+      /* Short desc */
+      const shortDesc=`<div class="product-short-description"><p>${product.ProductName} Serakıncı güvencesiyle sizlerle.</p></div>`;
+      /* Tabs */
+      const tab1=`<h3>Ürün Açıklaması</h3><div>${detail&&detail['Ürün Açıklaması']?detail['Ürün Açıklaması']:'Bilgi hazırlanıyor.'}</div>`;
+      const tab2=detail&&detail['Üretici Firma']?`<h3>Üretici Firma</h3><div>${detail['Üretici Firma']}</div>`:'<p>Ek bilgi bulunamadı.</p>';
+      const tab3=`<h3>Kullanım / Uyarılar</h3><div>${detail&&detail['Dikkat edilmesi gerekenler ya da uyarılar']?detail['Dikkat edilmesi gerekenler ya da uyarılar']:'Belirtilmemiştir.'}</div>`;
+      /* Related */
+      const related=allProducts.filter(p=>p.cat===product.cat&&slugify(p.ProductName)!==slugify(product.ProductName)).slice(0,10);
+      let relatedHTML='';if(related.length){relatedHTML=`<div class="related-products-section"><h2 class="related-products-title">Benzer Ürünler</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="scrollCarousel(-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
+        related.forEach(r=>{const ri=r.ImageUrl||(r.ProductImages&&r.ProductImages[0]&&r.ProductImages[0].ImageUrl)||'';relatedHTML+=`<a href="/urunler/dermokozmetik/product/${slugify(r.ProductName)}/" class="related-product-card"><img src="${ri}" alt="${r.ProductName}"><div class="info"><div class="name">${r.ProductName}</div><div class="category">${r.cat||''}</div></div></a>`});
+        relatedHTML+=`</div><div class="carousel-arrow next" onclick="scrollCarousel(1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div></div></div>`}
+      /* Build */
+      container.innerHTML=`${breadcrumbHTML}<div class="product-main-layout"><div class="product-gallery">${imgHTML}</div><div class="product-info"><div class="product-title-wrapper"><h1 class="product-title">${product.ProductName}</h1></div>${metaHTML}${shortDesc}</div></div><div class="product-details-tabs"><div class="tabs-navigation"><button class="tab-link active" data-tab="tab1">Detaylar</button><button class="tab-link" data-tab="tab2">Ek Bilgiler</button><button class="tab-link" data-tab="tab3">Uyarılar</button></div><div class="tab-content"><div id="tab1" class="tab-pane active">${tab1}</div><div id="tab2" class="tab-pane">${tab2}</div><div id="tab3" class="tab-pane">${tab3}</div></div></div>${relatedHTML}<a href="/urunler/dermokozmetik/" class="back-button-modern" style="margin-top:2rem"><span class="back-icon">←</span> Dermokozmetik Ürünlerine Dön</a>`;
+      /* Tabs JS */
+      container.querySelectorAll('.tab-link').forEach(btn=>btn.addEventListener('click',()=>{container.querySelectorAll('.tab-link').forEach(b=>b.classList.remove('active'));container.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));btn.classList.add('active');container.querySelector('#'+btn.dataset.tab).classList.add('active')}));
+      /* Lightbox */
+      const imgWrapper=document.getElementById('mainProductImageWrapper');if(imgWrapper&&img){imgWrapper.onclick=()=>{document.getElementById('lightboxImg').src=img;document.getElementById('imageLightbox').classList.add('show')}}
+    }
+
+    function hideLoader(){const lc=document.querySelector('.loading-container');if(lc)lc.style.display='none';}
+    function showError(msg){const c=document.getElementById('productDetailContainer');if(c)c.innerHTML=`<div class="error-container"><h2>Hata</h2><p>${msg}</p><a href="/urunler/dermokozmetik/" class="back-button-modern" style="margin-top:1rem"><span class="back-icon">←</span> Dermokozmetik Ürünlerine Dön</a></div>`;}
+
+    /* ------------- SEARCH ------------- */
+    function setupSearch(){const input=document.getElementById('productSearchInput');const dd=document.getElementById('searchResultsDropdown');const list=document.getElementById('searchResultsList');if(!input||!dd||!list)return;input.addEventListener('input',e=>{const term=e.target.value.toLowerCase('tr-TR');clearTimeout(debounceTimer);if(term.length<2){dd.style.display='none';list.innerHTML='';return;}debounceTimer=setTimeout(()=>{if(!allProducts.length){list.innerHTML='<li class="no-results">Ürünler yükleniyor...</li>';dd.style.display='block';return;}const filtered=allProducts.filter(p=>p.ProductName.toLowerCase('tr-TR').includes(term));list.innerHTML='';if(filtered.length){filtered.slice(0,7).forEach(p=>{const li=document.createElement('li');const img=p.ImageUrl||(p.ProductImages&&p.ProductImages[0]&&p.ProductImages[0].ImageUrl)||'https://via.placeholder.com/40x40.png?text=...';li.innerHTML=`<a href="/urunler/dermokozmetik/product/${slugify(p.ProductName)}/"><img src="${img}" class="suggestion-image" alt="${p.ProductName}"><span class="suggestion-name">${p.ProductName}</span>${p.cat?`<span class="suggestion-category">${p.cat}</span>`:''}</a>`;list.appendChild(li);});}else{list.innerHTML='<li class="no-results">Sonuç bulunamadı.</li>'}dd.style.display='block';},300)});
+      document.addEventListener('click',e=>{if(!input.contains(e.target)&&!dd.contains(e.target))dd.style.display='none';});input.addEventListener('focus',()=>{if(input.value.length>=2&&list.children.length)dd.style.display='block';});}
+
+    /* ------------- COPY CODE & FAVORITE TOOLTIP ------------- */
+    function copyProductCode(e){const code=document.getElementById('productCodeValue');if(!code)return;navigator.clipboard.writeText(code.innerText).then(()=>{const tip=document.getElementById('copyTooltip');const rect=e.target.getBoundingClientRect();tip.style.left=`${rect.left+window.scrollX}px`;tip.style.top=`${rect.top+window.scrollY-30}px`;tip.style.opacity='1';setTimeout(()=>tip.style.opacity='0',1500)}).catch(err=>console.error(err));}
+
+    /* Scroll top */
+    function setupScrollTop(){const btn=document.getElementById('scrollToTopBtn');window.addEventListener('scroll',()=>btn.classList.toggle('show',window.scrollY>100));btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));}
+
+    /* Lightbox */
+    function setupLightbox(){const modal=document.getElementById('imageLightbox');modal.querySelector('.lightbox-close').onclick=()=>modal.classList.remove('show');modal.onclick=e=>{if(e.target===modal)modal.classList.remove('show');};}
+
+    /* Carousel */
+    function scrollCarousel(dir){const cont=document.getElementById('relatedProductsContainer');if(cont){const amt=cont.clientWidth*.8;cont.scrollLeft+=dir*amt;}}
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+# ---------------------------------------------
+# 1)  Statik JSON / logo / CSS vb. dosyalar
+# ---------------------------------------------
+[[redirects]]
+  from   = "/urunler/api/*"
+  to     = "/urunler/api/:splat"
+  status = 200
+  force  = true   # “mutlaka dosyanın kendisini ver”
+
+[[redirects]]
+  from   = "/urunler/assets/*"
+  to     = "/urunler/assets/:splat"
+  status = 200
+  force  = true
+
+# ---------------------------------------------
+# 2)  Ürün detayı (template)
+# ---------------------------------------------
+[[redirects]]
+  from   = "/urunler/hayvan-sagligi/product/*"
+  to     = "/urunler/hayvan-sagligi/product/template.html"
+  status = 200
+
+[[redirects]]
+  from   = "/urunler/dermokozmetik/product/*"
+  to     = "/urunler/dermokozmetik/product/template.html"
+  status = 200
+
+# ---------------------------------------------
+# 3)  Kategori alt-index’leri
+# ---------------------------------------------
+[[redirects]]
+  from   = "/urunler/hayvan-sagligi/kategori/*"
+  to     = "/urunler/hayvan-sagligi/kategori/index.html"
+  status = 200
+
+# ---------------------------------------------
+# 4)  Kategori ana-index’leri
+# ---------------------------------------------
+[[redirects]]
+  from   = "/urunler/hayvan-sagligi/*"
+  to     = "/urunler/hayvan-sagligi/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/urunler/dermokozmetik/*"
+  to     = "/urunler/dermokozmetik/index.html"
+  status = 200
+
+# ---------------------------------------------
+# 5)  Ürün listesi ana sayfası
+# ---------------------------------------------
+[[redirects]]
+  from   = "/urunler/*"
+  to     = "/urunler/index.html"
+  status = 200
+
+# ---------------------------------------------
+# 6)  Site geneli fallback
+# ---------------------------------------------
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

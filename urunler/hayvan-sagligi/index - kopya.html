@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayvan Sağlığı Ürünleri | Serakıncı KKTC</title>
+  <meta name="description" content="Serakıncı'da hayvan sağlığı ürünleri. Antibiyotik, aşı, dezenfektan, vitamin ve takviye ürünleri en kaliteli markalarla Kuzey Kıbrıs Türk Cumhuriyeti'ndeki servis noktalarımızda.">
+  
+  <link rel="canonical" href="https://www.serakinci.com/urunler/hayvan-sagligi/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/urunler/assets/css/modern-styles.css">
+  <style>
+    /* Temel Stiller */
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --accent: #f97316;
+      --background: #f9fafb;
+      --card-bg: #ffffff;
+      --text-dark: #111827;
+      --text-medium: #4b5563;
+      --text-light: #6b7280;
+      --border: #e5e7eb;
+      --radius: 0.375rem;
+      --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+
+    
+    .header {
+      background-color: white;
+      box-shadow: var(--shadow);
+      padding: 1rem 0;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    
+    .nav-link:hover {
+      background-color: var(--primary-hover);
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+    }
+    
+    .breadcrumb-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
+    }
+    
+    .breadcrumb-item:not(:last-child)::after {
+      content: "/";
+      margin: 0 0.5rem;
+      color: var(--text-light);
+    }
+    
+    .breadcrumb-link {
+      color: var(--text-medium);
+      text-decoration: none;
+    }
+    
+    .breadcrumb-current {
+      color: var(--primary);
+      font-weight: 500;
+    }
+    
+    /* Page Title */
+    .page-title {
+      margin-bottom: 2rem;
+    }
+    
+    .page-title-heading {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+    
+    .page-title-description {
+      color: var(--text-medium);
+      max-width: 800px;
+    }
+    
+    /* Category Layout */
+    .category-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+      .category-layout {
+        grid-template-columns: 280px 1fr;
+      }
+    }
+    
+    /* Category Sidebar */
+    .category-sidebar {
+      margin-bottom: 2rem;
+    }
+    
+    /* Filtreleme Stilleri */
+    .filter-container {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: var(--shadow);
+    }
+    
+    .filter-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-dark);
+    }
+    
+    .filter-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .filter-item {
+      margin-bottom: 0.5rem;
+    }
+    
+    .filter-link {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      border-radius: var(--radius);
+      color: var(--text-medium);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    
+    .filter-link:hover, .filter-link.active {
+      background-color: #f3f4f6;
+      color: var(--primary);
+    }
+    
+    .filter-link svg {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
+    }
+    
+    .filter-count {
+      margin-left: auto;
+      font-size: 0.875rem;
+      padding: 0.25rem 0.5rem;
+      background-color: #f3f4f6;
+      border-radius: 9999px;
+      color: var(--text-medium);
+    }
+    
+    /* Toolbar */
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 0.75rem 1rem;
+      background-color: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    
+    .toolbar-count {
+      font-size: 0.875rem;
+      color: var(--text-medium);
+    }
+    
+    .select-sort {
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background-color: white;
+      color: var(--text-dark);
+      font-size: 0.875rem;
+    }
+    
+    /* Category Description */
+    .category-description-box {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    
+    .category-section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+    
+    .category-description-content {
+      color: var(--text-medium);
+      line-height: 1.6;
+    }
+    
+    /* Product Grid */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+      min-height: 200px;
+    }
+    
+    @media (min-width: 640px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    /* Product Card */
+    .product-card {
+      background-color: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-image-container {
+      position: relative;
+      padding-top: 100%;
+      overflow: hidden;
+      background-color: #f9fafb;
+    }
+    
+    .product-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+    
+    .product-card:hover .product-image {
+      transform: scale(1.05);
+    }
+    
+    .product-content {
+      padding: 1rem;
+    }
+    
+    .product-category {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--text-light);
+      background-color: #f3f4f6;
+      padding: 0.25rem 0.5rem;
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .product-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    
+    .product-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0.75rem;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    
+    .product-link:hover {
+      background-color: var(--primary-hover);
+    }
+    
+    /* Footer */
+    .footer {
+      background-color: #1f2937;
+      color: white;
+      padding: 3rem 0 1rem;
+      margin-top: 4rem;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+      .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .footer-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+    
+    .footer-text {
+      color: #9ca3af;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    
+    .footer-contact {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      color: #d1d5db;
+    }
+    
+    .footer-contact-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.75rem;
+    }
+    
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .footer-social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: #374151;
+      color: white;
+      border-radius: 9999px;
+      transition: all 0.2s;
+    }
+    
+    .footer-social-link:hover {
+      background-color: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-link-item {
+      margin-bottom: 0.75rem;
+    }
+    
+    .footer-link {
+      color: #d1d5db;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .footer-link:hover {
+      color: white;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid #374151;
+      padding-top: 1.5rem;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+    }
+    
+    /* Back to Top */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      z-index: 100;
+    }
+    
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-5px);
+    }
+    
+    /* Markalar */
+    .brands-section {
+      margin-bottom: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--text-dark);
+      text-align: center;
+    }
+    
+    .brands-container {
+      overflow: hidden;
+    }
+    
+    .brands-group {
+      display: flex;
+      animation-duration: 30s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    
+    .brands-group:first-child {
+      animation-name: scroll-right;
+    }
+    
+    .brands-group:last-child {
+      animation-name: scroll-left;
+    }
+    
+    @keyframes scroll-right {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    @keyframes scroll-left {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+    
+    .brand-item {
+      flex: 0 0 auto;
+      width: 150px;
+      height: 80px;
+      margin: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 0.75rem;
+    }
+    
+    .brand-logo {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    /* Error & No Results */
+    .error, .no-results {
+      padding: 2rem;
+      text-align: center;
+      background-color: white;
+      border-radius: var(--radius);
+      color: var(--text-medium);
+      box-shadow: var(--shadow);
+      margin: 2rem 0;
+    }
+    
+    /* No Image */
+    .no-image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3f4f6;
+      color: #9ca3af;
+      font-size: 0.875rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    /* Loading */
+    .loading {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-medium);
+    }
+  </style>
+</head>
+<body>
+  
+
+  
+  <main>
+    
+    <!-- Kategori Başlık -->
+    <section class="page-title">
+      <div class="container">
+        <h1 class="page-title-heading">Hayvan Sağlığı Ürünleri</h1>
+        <p class="page-title-description">Evcil hayvanlarınızın sağlığı ve mutluluğu bizim için önemli. Veteriner klinikler ve hayvan sahipleri için en geniş ürün yelpazemizle yanınızdayız.</p>
+        
+        <!-- Arama Kutusu -->
+        <div style="margin-top: 20px; max-width: 600px;">
+          <div style="position: relative;">
+            <input type="text" id="productSearchInput" placeholder="Ürün ara..." style="width: 100%; padding: 12px 20px; padding-left: 45px; border: 2px solid var(--border); border-radius: var(--radius); font-size: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: all 0.3s;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-medium);">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <button id="clearSearchButton" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-light); cursor: pointer; padding: 5px; display: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Marka Logoları -->
+    <section class="brands-section">
+      <div class="container">
+        <h2 class="section-title">Çalıştığımız Üretici Firmalar</h2>
+        
+        <div class="brands-container">
+          <!-- Üst Sıra Markalar (Soldan Sağa Hareket) -->
+          <div class="brands-group">
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/ceva.webp" alt="Ceva" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/2 boehringer NwBU8rLrTl0TYgg2YxlcYbascg.avif" alt="Boehringer" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/3 dutch farm.avif" alt="Dutch Farm" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/4 semex.avif" alt="Semex" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/5 V.M.D. nv.avif" alt="V.M.D." class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/6 bio petactive.avif" alt="Bio Petactive" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/alivira.webp" alt="Alivira" class="brand-logo">
+            </div>
+          </div>
+          
+          <!-- Alt Sıra Markalar (Sağdan Sola Hareket) -->
+          <div class="brands-group">
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/elanco.png" alt="Elanco" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/9 chevita GmbH.avif" alt="Chevita GmbH" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/10 nutrimoore.avif" alt="Nutrimoore" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/11 alphatec.avif" alt="Alphatec" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/12 chemifarma.avif" alt="Chemifarma" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/biomin.png" alt="Biomin" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/16 dollvet.avif" alt="Dollvet" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/17 intracare.avif" alt="Intracare" class="brand-logo">
+            </div>
+            <div class="brand-item">
+              <img src="/urunler/assets/logos/ceva.avif" alt="Ceva" class="brand-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Kategori İçerik -->
+    <section class="category-section">
+      <div class="container">
+        <div class="category-layout">
+          <!-- Sol Taraf - Kategori Filtreleri -->
+          <aside class="category-sidebar">
+            <div class="filter-container">
+              <h2 class="filter-title">Kategoriler</h2>
+              <ul class="filter-list" id="categoryList">
+                <li class="filter-item">
+                  <a href="#" class="filter-link active" data-category="ALL">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    Tüm Ürünler
+                    <span class="filter-count">0</span>
+                  </a>
+                </li>
+                <!-- Diğer kategoriler JavaScript ile eklenecek -->
+              </ul>
+            </div>
+          </aside>
+          
+          <!-- Sağ Taraf - Ürünler -->
+          <div class="category-content">
+            <div class="toolbar">
+              <div class="toolbar-count">
+                <span id="productCount">Yükleniyor...</span>
+              </div>
+              
+              <div class="sort-options">
+                <select class="select-sort" id="sortDropdown">
+                  <option value="name-asc">İsme Göre (A-Z)</option>
+                  <option value="name-desc">İsme Göre (Z-A)</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Kategori Açıklaması -->
+            <div class="category-description-box">
+              <h2 class="category-section-title">Hayvan Sağlığı Ürünlerimiz</h2>
+              <div class="category-description-content">
+                <p>Serakıncı olarak, Kuzey Kıbrıs'ta hayvan sağlığı alanında en geniş ürün yelpazesine sahip distribütör konumundayız. Büyükbaş ve küçükbaş hayvanlar, kümes hayvanları, egzotik hayvanlar, deniz ürünleri ve pet hayvanları için geniş bir ürün yelpazemiz bulunmaktadır.</p>
+                <p>Antibiyotikler, aşılar, vitamin ve takviyeler, antiseptik ve dezenfektanlar dahil olmak üzere tüm kategorilerde dünya standartlarında ürünler sunuyoruz. Temsil ettiğimiz markalar arasında Boehringer Ingelheim, Elanco, Semex, V.M.D., Dutch Farm, Bio Petactive, Ceva, Chevita, Nutrimoore, Alphatech, Chemifarma, Biomin, Dollvet ve Intracare gibi lider markalar bulunmaktadır.</p>
+              </div>
+            </div>
+            
+            <!-- Ürün Grid -->
+            <div class="products-grid" id="productsGrid">
+              <div class="loading">Ürünler yükleniyor...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Yukarı Çık Butonu -->
+  <button class="back-to-top" id="backToTop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="/urunler/assets/js/modern-features.js"></script>
+  
+  <script>
+    /**
+     * Hayvan Sağlığı Kategorileri Çözümü
+     * - JSON'daki "kategori" alanından kategorileri çeker
+     * - Türkçe karakter sorunlarını çözer
+     * - Sayfa yenilemeden filtreleme yapar
+     */
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      // Ana uygulamayı başlat
+      initApplication();
+      
+      // Yukarı çık butonu
+      initBackToTop();
+      
+      // Sıralama
+      initSorting();
+      
+      // Arama işlevselliği
+      initSearch();
+    });
+    
+    // Global ürün listesi
+    let allProducts = [];
+    
+    // Ana uygulama
+    async function initApplication() {
+      try {
+        console.log("Hayvan Sağlığı uygulaması başlatılıyor...");
+        
+        // Ürünleri getir
+        allProducts = await fetchProducts();
+        
+        if (!allProducts || allProducts.length === 0) {
+          showMessage("Ürün verisi bulunamadı.");
+          return;
+        }
+        
+        console.log(`${allProducts.length} adet ürün yüklendi.`);
+        
+        // Kategorileri oluştur
+        buildCategories();
+        
+        // Tüm ürünleri göster
+        displayProducts(allProducts);
+        
+        // URL'deki parametreleri kontrol et
+        checkUrlParams();
+        
+      } catch (error) {
+        console.error("Uygulama başlatılırken hata:", error);
+        showMessage("Sayfa yüklenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.", true);
+      }
+    }
+    
+    // Ürünleri getir
+    async function fetchProducts() {
+      try {
+        const response = await fetch('/urunler/api/hayvan-sagligi.json');
+        
+        if (!response.ok) {
+          throw new Error(`API hatası: ${response.status}`);
+        }
+        
+        return await response.json();
+      } catch (error) {
+        console.error("Ürün verileri yüklenirken hata:", error);
+        throw error;
+      }
+    }
+    
+    // Kategorileri oluştur
+    function buildCategories() {
+      // Kategorileri topla
+      const categories = extractCategories();
+      
+      // Kategorileri alfabetik sırala
+      const sortedCategories = Object.keys(categories)
+        .filter(cat => cat !== "ALL")
+        .sort();
+      
+      // Kategorileri listeye ekle
+      const categoryList = document.getElementById('categoryList');
+      
+      // Tüm ürünler kategorisinin sayısını güncelle
+      const allProductsCount = categoryList.querySelector('.filter-link[data-category="ALL"] .filter-count');
+      if (allProductsCount) {
+        allProductsCount.textContent = allProducts.length;
+      }
+      
+      // Her kategori için bir öğe oluştur
+      sortedCategories.forEach(category => {
+        const categoryItem = createCategoryItem(category, categories[category]);
+        categoryList.appendChild(categoryItem);
+      });
+      
+      // Kategori bağlantılarına olay ekle
+      setupCategoryEvents();
+    }
+    
+    // Kategorileri çıkar
+    function extractCategories() {
+      const categories = {
+        "ALL": allProducts.length
+      };
+      
+      allProducts.forEach(product => {
+        // JSON dosyasındaki "kategori" alanından al
+        const category = product.kategori || "DİĞER";
+        
+        if (categories[category]) {
+          categories[category]++;
+        } else {
+          categories[category] = 1;
+        }
+      });
+      
+      return categories;
+    }
+    
+    // Kategori öğesi oluştur
+    function createCategoryItem(category, count) {
+      const li = document.createElement('li');
+      li.className = 'filter-item';
+      
+      // Kategoriye uygun ikon
+      const iconSvg = getCategoryIcon(category);
+      
+      li.innerHTML = `
+        <a href="#" class="filter-link" data-category="${category}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${iconSvg}</svg>
+          ${category}
+          <span class="filter-count">${count}</span>
+        </a>
+      `;
+      
+      return li;
+    }
+    
+    // Kategoriye göre ikon seç
+    function getCategoryIcon(category) {
+      const categoryLower = category.toLowerCase();
+      
+      if (categoryLower.includes('antibiyotik')) {
+        return '<circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"></path>';
+      } else if (categoryLower.includes('aşı') || categoryLower.includes('asi')) {
+        return '<path d="M19 2H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM9 17V7"/><path d="M15 7v10"/>';
+      } else if (categoryLower.includes('anestezik')) {
+        return '<path d="M7 16H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h4"></path><path d="M14 2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-4"></path><path d="M7 22V2"></path><path d="M14 22V2"></path>';
+      } else if (categoryLower.includes('vitamin')) {
+        return '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle>';
+      } else if (categoryLower.includes('dezenfektan')) {
+        return '<path d="M12 2v6"></path><path d="M5 4.27 6.5 9"></path><path d="m17.5 6.5-2.5 2.5"></path><path d="m3 14 4-1"></path><path d="m7 7-3 2"></path><path d="M9 17H3"></path><path d="m13 14 4 3"></path><path d="M21 12v3"></path><path d="m12 20 3-4"></path><path d="m5 18 5-3"></path><path d="M20 5c-2 2-2 4.5-1 7"></path>';
+      } else if (categoryLower.includes('hormon')) {
+        return '<circle cx="8" cy="18" r="4"></circle><path d="M14 18a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z"></path><path d="M18 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"></path><path d="M6 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"></path>';
+      } else if (categoryLower.includes('antiseptik')) {
+        return '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>';
+      }
+      
+      // Varsayılan ikon
+      return '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>';
+    }
+    
+    // Kategori bağlantılarına tıklama olayı ekle
+    function setupCategoryEvents() {
+      document.querySelectorAll('.filter-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Tüm aktif filtreleri kaldır
+          document.querySelectorAll('.filter-link').forEach(l => {
+            l.classList.remove('active');
+          });
+          
+          // Bu filtreyi aktif yap
+          this.classList.add('active');
+          
+          // Kategoriyi al
+          const category = this.getAttribute('data-category');
+          
+          // Ürünleri filtrele
+          filterProducts(category);
+          
+          // URL'yi güncelle
+          updateURL(category);
+        });
+      });
+    }
+    
+    // Ürünleri filtrele
+    function filterProducts(category) {
+      let filteredProducts;
+      
+      if (category === 'ALL') {
+        filteredProducts = allProducts;
+      } else {
+        filteredProducts = allProducts.filter(product => {
+          return product.kategori === category;
+        });
+      }
+      
+      // Ürünleri göster
+      displayProducts(filteredProducts);
+    }
+    
+    // Ürünleri göster
+    function displayProducts(products) {
+      const productsGrid = document.getElementById('productsGrid');
+      if (!productsGrid) return;
+      
+      // Ürün sayısını güncelle
+      updateProductCount(products.length);
+      
+      if (products.length === 0) {
+        productsGrid.innerHTML = '<div class="no-results">Bu kategoride ürün bulunamadı.</div>';
+        return;
+      }
+      
+      let productsHTML = '';
+      
+      products.forEach(product => {
+        // Ürün slug
+        const slug = createSlug(product.ProductName);
+        
+        // Kategori al
+        const category = product.kategori || "DİĞER";
+        
+        // Ürün görseli
+        let imageUrl = product.ImageUrl || '';
+        
+        // Alternatif görsel kontrolü
+        if (!imageUrl && product.ProductImages && product.ProductImages.length > 0) {
+          imageUrl = product.ProductImages[0].ImageUrl;
+        }
+        
+        // Ürün kartı
+        productsHTML += `
+          <div class="product-card" data-category="${category}" data-product-name="${product.ProductName.toLowerCase()}">
+            <div class="product-image-container">
+              ${imageUrl 
+                ? `<img src="${imageUrl}" alt="${product.ProductName}" class="product-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'no-image\\'><span>Fotoğraf hazırlanıyor</span></div>';">`
+                : `<div class="no-image"><span>Fotoğraf hazırlanıyor</span></div>`
+              }
+            </div>
+            <div class="product-content">
+              <span class="product-category">${category}</span>
+              <h3 class="product-name">${product.ProductName}</h3>
+              <a href="/urunler/hayvan-sagligi/product/${slug}" class="product-link">
+                <span>Ürünü İncele</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+              </a>
+            </div>
+          </div>
+        `;
+      });
+      
+      productsGrid.innerHTML = productsHTML;
+    }
+    
+    // Ürün sayısını güncelle
+    function updateProductCount(count) {
+      const countElement = document.getElementById('productCount');
+      if (countElement) {
+        countElement.textContent = `${count} ürün`;
+      }
+    }
+    
+    // URL'yi güncelle
+    function updateURL(category) {
+      const url = new URL(window.location.href);
+      
+      if (category === 'ALL') {
+        url.searchParams.delete('kategori');
+      } else {
+        url.searchParams.set('kategori', category);
+      }
+      
+      window.history.pushState({}, '', url);
+    }
+    
+    // URL parametrelerini kontrol et
+    function checkUrlParams() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const kategori = urlParams.get('kategori');
+      
+      if (kategori) {
+        // Kategori bağlantısını bul
+        const categoryLinks = document.querySelectorAll('.filter-link');
+        let found = false;
+        
+        categoryLinks.forEach(link => {
+          if (link.getAttribute('data-category') === kategori) {
+            link.click();
+            found = true;
+          }
+        });
+        
+        // Bulunamadıysa varsayılan kategoriye dön
+        if (!found) {
+          const allProductsLink = document.querySelector('.filter-link[data-category="ALL"]');
+          if (allProductsLink) {
+            allProductsLink.click();
+          }
+        }
+      }
+    }
+    
+    // Arama işlevselliği
+    function initSearch() {
+      const searchInput = document.getElementById('productSearchInput');
+      const clearButton = document.getElementById('clearSearchButton');
+      
+      if (!searchInput || !clearButton) return;
+      
+      // Input değiştiğinde arama yap
+      searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.trim().toLowerCase();
+        
+        // Temizleme butonunu göster/gizle
+        clearButton.style.display = searchTerm.length > 0 ? 'block' : 'none';
+        
+        // Arama yap
+        searchProducts(searchTerm);
+      });
+      
+      // Temizleme butonuna tıklandığında
+      clearButton.addEventListener('click', function() {
+        searchInput.value = '';
+        clearButton.style.display = 'none';
+        
+        // Tüm ürünleri göster
+        const activeCategory = document.querySelector('.filter-link.active');
+        if (activeCategory) {
+          const category = activeCategory.getAttribute('data-category');
+          filterProducts(category);
+        } else {
+          displayProducts(allProducts);
+        }
+      });
+    }
+    
+    // Ürünleri aramak için
+    function searchProducts(searchTerm) {
+      if (!searchTerm) {
+        // Arama terimi yoksa, aktif kategoriye göre filtrele
+        const activeCategory = document.querySelector('.filter-link.active');
+        if (activeCategory) {
+          const category = activeCategory.getAttribute('data-category');
+          filterProducts(category);
+        } else {
+          displayProducts(allProducts);
+        }
+        return;
+      }
+      
+      // Geçerli aktif kategoriyi bul
+      const activeCategory = document.querySelector('.filter-link.active');
+      const categoryFilter = activeCategory ? activeCategory.getAttribute('data-category') : 'ALL';
+      
+      // Önce kategoriye göre filtrele
+      let filteredProducts = categoryFilter === 'ALL' ? 
+        allProducts : 
+        allProducts.filter(product => product.kategori === categoryFilter);
+      
+      // Sonra arama terimine göre filtrele
+      filteredProducts = filteredProducts.filter(product => {
+        // Ürün adında arama
+        const productName = product.ProductName.toLowerCase();
+        if (productName.includes(searchTerm)) return true;
+        
+        // Ürün kodunda arama
+        const productCode = product.ProductCode ? product.ProductCode.toLowerCase() : '';
+        if (productCode.includes(searchTerm)) return true;
+        
+        // Markada arama
+        const brand = product.brand ? product.brand.toLowerCase() : '';
+        if (brand.includes(searchTerm)) return true;
+        
+        return false;
+      });
+      
+      // Sonuçları göster
+      displayProducts(filteredProducts);
+      
+      // Ürün sayısını güncelle
+      updateProductCount(filteredProducts.length);
+    }
+    
+    // Geri yukarı butonu
+    function initBackToTop() {
+      const backToTopButton = document.getElementById('backToTop');
+      if (!backToTopButton) return;
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+    
+    // Sıralama
+    function initSorting() {
+      const sortDropdown = document.getElementById('sortDropdown');
+      if (!sortDropdown) return;
+      
+      sortDropdown.addEventListener('change', function() {
+        const sortValue = this.value;
+        
+        // Aktif kategoriyi bul
+        const activeFilter = document.querySelector('.filter-link.active');
+        const activeCategory = activeFilter ? activeFilter.getAttribute('data-category') : 'ALL';
+        
+        // Ürünleri filtrele
+        let filteredProducts;
+        
+        if (activeCategory === 'ALL') {
+          filteredProducts = [...allProducts];
+        } else {
+          filteredProducts = allProducts.filter(product => {
+            return product.kategori === activeCategory;
+          });
+        }
+        
+        // Sırala
+        if (sortValue === 'name-asc') {
+          filteredProducts.sort((a, b) => a.ProductName.localeCompare(b.ProductName));
+        } else if (sortValue === 'name-desc') {
+          filteredProducts.sort((a, b) => b.ProductName.localeCompare(a.ProductName));
+        }
+        
+        // Göster
+        displayProducts(filteredProducts);
+      });
+    }
+    
+    // Mesaj göster
+    function showMessage(message, isError = false) {
+      const productsGrid = document.getElementById('productsGrid');
+      if (productsGrid) {
+        productsGrid.innerHTML = `<div class="${isError ? 'error' : 'no-results'}">${message}</div>`;
+      }
+    }
+    
+    // URL dostu slug oluştur
+    function createSlug(text) {
+      if (!text) return '';
+      
+      return text
+        .toString()
+        .toLowerCase()
+        .replace(/ğ/g, 'g')
+        .replace(/ü/g, 'u')
+        .replace(/ş/g, 's')
+        .replace(/ı/g, 'i')
+        .replace(/ö/g, 'o')
+        .replace(/ç/g, 'c')
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]+/g, '')
+        .replace(/\-\-+/g, '-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
+    }
+    
+    // Ürün detay sayfasına yönlendirme
+    function showProductDetail(productSlug) {
+      localStorage.setItem('selectedProductSlug', productSlug);
+      window.location.href = '/urunler/hayvan-sagligi/product';
+      return false;
+    }
+  </script>
+</body>
+</html>

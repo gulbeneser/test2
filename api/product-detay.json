@@ -1,0 +1,2130 @@
+[
+  {
+    "ProductId": 1,
+    "ProductName": "BAKTERAL 50ml enj.",
+    "DisplayProductCode": "VALIV026",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 33,
+    "ProductName": "OXYFOAM 20 kg",
+    "DisplayProductCode": "VSHECO27",
+    "Üretici Firma": "Ecolab",
+    "Ürün Açıklaması": "H₂O₂ bazlı köpüklü meme başı temizleyicisi; durulama kolay, boya/parfüm içermez.",
+    "Ürün İçeriği": "Hidrojen peroksit %1,5; gliserin; yüzey-aktifler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Göz temasından kaçının; sağım öncesi silin.",
+    "Üretici Linki": "https://en-uk.ecolab.com/offerings/pre-milking-udder-care/oxyfoam",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 37,
+    "ProductName": "PEN-STREP 20/20 100ml enj. (DUTC)",
+    "DisplayProductCode": "VADUT12",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "Prokain penisilin G ve dihidrostreptomisin kombinasyonu; geniş spektrumlu antibiyotik enjeksiyonu.",
+    "Ürün İçeriği": "Prokain penisilin G 200 mg/ml + Dihidrostreptomisin sülfat 200 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt verimi için süt çekim süresine (withdrawal) uyulmalıdır; aminoglikozid ototoksisitesi riski vardır."
+  },
+  {
+    "ProductId": 47,
+    "ProductName": "MULTIVIT 100 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Suda ve yağda çözünen vitaminlerin dengeli karışımı; büyüme geriliği, stres ve hastalık sonrası toparlanma dönemlerinde destek amaçlı kullanılır.",
+    "Ürün İçeriği": "Vitamin A 100 000 IU, D₃ 20 000 IU, E 20 mg, B kompleks (B₁, B₂, B₆, B₁₂), nikotinamid, pantotenat.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "İM/SC uygulanır. Açılmış flakon 14 gün sonra atılmalıdır."
+  },
+  {
+    "ProductId": 48,
+    "ProductName": "CESAMOLİN 10 X 6gr ORAL",
+    "DisplayProductCode": "VALIV003",
+    "Üretici Firma": "Topkim İlaç (TR)",
+    "Ürün Açıklaması": "Oral antibakteriyel ve antidiarreal toz preparat.",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Ürün içeriğindeki antibiyotiklere karşı duyarlı olmayan mikroorganizmaların oluşturduğu ishal vakalarında kullanmayınız."
+  },
+  {
+    "ProductId": 58,
+    "ProductName": "AVROMEC 50 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Aynı etken maddeli orta hacim ambalaj; iç/dış parazit mücadelesinde kullanılır.",
+    "Ürün İçeriği": "İvermektin 10 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 97,
+    "ProductName": "OXYTETRA %10 100ml enj.",
+    "DisplayProductCode": "VAVMD17",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Geniş spektrumlu oksitetrasiklin enjeksiyonu; solunum, sindirim ve üriner sistem enfeksiyonlarında kullanılır.",
+    "Ürün İçeriği": "Oxytetracycline dihidrat 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Böbrek fonksiyon bozukluğu olan hayvanlarda doz ayarı gerekebilir."
+  },
+  {
+    "ProductId": 100,
+    "ProductName": "Oxytocin 10 IU/ml 100 ml Enj.",
+    "DisplayProductCode": "VAVMD51",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 110,
+    "ProductName": "SULFADİMİDİNE %33.3 500ml",
+    "DisplayProductCode": "VAVMD12",
+    "Üretici Firma": "Interchemie",
+    "Ürün Açıklaması": "Sulfadimidine bazlı bakterisid enjeksiyon; geniş Gram-pozitif ve Gram-negatif etki.",
+    "Ürün İçeriği": "Sulfadimidine sodyum 333 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kristalüri riskine karşı yeterli su alımı sağlanmalıdır."
+  },
+  {
+    "ProductId": 147,
+    "ProductName": "CATGUT SMI CHROME USP-3 50 m",
+    "DisplayProductCode": "AVMD0160",
+    "Üretici Firma": "SMI (Surgical Medical Industries)",
+    "Ürün Açıklaması": "Veteriner cerrahide rutin doku içi ligatür ve sütür işlemlerinde kullanılan, krom tuzlarıyla işlem görmüş emilebilir kedi bağırsağı (catgut) cerrahi iplik. Uzatılmış rezorpsiyon süresi ve düzgün düğüm güvenliği sunar.",
+    "Ürün İçeriği": "Krom kaplı, doğal kollajen kökenli (sığır-koyun submukoza) catgut iplik; USP-3 kalınlıkta, gliserol ve izopropanol içeren steril sıvıda ambalajlı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Aseptik teknik gereklidir. Enfekte veya yüksek gerilimli dokularda sentetik sütür tercih edilmelidir. İnsan kullanımı için değildir.",
+    "Üretici Linki": "https://www.sutures.be",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 148,
+    "ProductName": "SURGICRYL SMI USP-1 25 m",
+    "DisplayProductCode": "AVMD0161",
+    "Üretici Firma": "SMI (Surgical Medical Industries)",
+    "Ürün Açıklaması": "Poliglaktin 910 (PGLA) bazlı sentetik, mor renkli, emilebilir cerrahi sütür. Yüksek ilk düğüm güvenliği ve 60-90 günde biyolojik rezorpsiyon süresi ile yumuşak doku onarımlarında ideal.",
+    "Ürün İçeriği": "Poliglaktin 910 iplik, poliglaktin kaplı iğneli sütür; steril alkol-su solüsyonunda.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Minimal doku reaksiyonu olsa da inflamatuvar dokularda dikkatli kullanılmalıdır. İnsan kullanımı için değildir.",
+    "Üretici Linki": "https://www.sutures.be",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 170,
+    "ProductName": "DOLARJİN 50ml enj.",
+    "DisplayProductCode": "VALIV100",
+    "Üretici Firma": "Alivira",
+    "Ürün Açıklaması": "Metamizol sodyum içeren analjezik-antipiretik enjeksiyon; sığır, at ve köpeklerde akut ağrı yönetiminde kullanılır.",
+    "Ürün İçeriği": "Metamizol sodyum 500 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Alerjik reaksiyonlar ve hipotansiyon görülebilir."
+  },
+  {
+    "ProductId": 177,
+    "ProductName": "FOSFOTONİK 100 ml Enj.",
+    "DisplayProductCode": "VALIV017",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Enerji metabolizmasını desteklemek üzere fosforik bileşik, B12 vitamini ve kafein içeren tonik enjeksiyon. Ketozis, iştahsızlık ve doğum sonrası halsizlikte kullanılır.",
+    "Ürün İçeriği": "Sodyum gliserofosfat 100 mg/ml, B12 vitamini 50 µg/ml, Kafein 20 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Damar içi hızlı enjeksiyondan kaçınılmalıdır. Böbrek yetmezliğinde fosfat yüküne dikkat.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 191,
+    "ProductName": "PLS. AĞIZLIK No:3",
+    "DisplayProductCode": "AVMD0187",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Büyükbaş hayvanların ağızdan ilaç veya sıvı takviyesi sırasında ısırmayı engelleyen plastik drenş tüpü ağızlığı. 3 numara: yetişkin inek boyutuna uygundur.",
+    "Ürün İçeriği": "Yüksek yoğunluklu gıda sınıfı polietilen.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Uygulama öncesi dezenfekte edilmelidir. Zorla takma trakea yaralanmalarına yol açabilir.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 239,
+    "ProductName": "E VİT-SE FORTE 100gr ORAL",
+    "DisplayProductCode": "VALIV005",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 255,
+    "ProductName": "İNTRA HOOF-FIT BATH 20 L (Zn+Cu)",
+    "DisplayProductCode": "VAİNTRA002",
+    "Üretici Firma": "Intracare",
+    "Ürün Açıklaması": "Sığırların ayak banyolarında kullanılan bakır-çinko kompleksli, formaldehit-ve antibiyotik içermeyen solüsyon. Dijital dermatit ve topallık insidansını azaltır.",
+    "Ürün İçeriği": "Şelatlı bakır sülfat, çinko sülfat, organik asitler, yüzey aktif maddeler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Ayak banyosu her 200 geçişte yenilenmelidir. Solüsyonun pH’ı 3,5-5 aralığında tutulmalıdır.",
+    "Üretici Linki": "https://intracare.nl",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 256,
+    "ProductName": "Intra Hoof-Fit Liquid 10 L",
+    "DisplayProductCode": "VAİNTRA003",
+    "Üretici Firma": "Intracare BV",
+    "Ürün Açıklaması": "Lezyon üzerine sprey/fitil uygulaması için yüksek konsantre bakır-çinko kompleksi; Aloe vera içerir.\nÜretici bağlantısı: https://intracare.nl/products-support/intra-skin-hoof-care/intrabath",
+    "Ürün İçeriği": "Bakır şelat %3, çinko şelat %3, Aloe vera jeli, glikol taşıyıcı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Açık yaraya doğrudan enjeksiyon yapmayın; kullanımdan sonra fırça-sprey uçlarını temizleyin."
+  },
+  {
+    "ProductId": 287,
+    "ProductName": "İğne Ucu 15 G × 1,5'' Luer Lock",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Geniş çaplı (15 G) Delvo marka iğne; özellikle viskoz vitamin preparatlarının uygulanmasında tercih edilir.",
+    "Ürün İçeriği": "Paslanmaz çelik kanül, polipropilen hub.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Steril ambalaj hasarlıysa kullanmayın."
+  },
+  {
+    "ProductId": 343,
+    "ProductName": "AC 20 24 kg (Asepto Supra)",
+    "DisplayProductCode": "VSHECO79",
+    "Üretici Firma": "Ecolab",
+    "Ürün Açıklaması": "Hipokloritli alkali deterjan-dezenfektan; protein-yağ tortusunu temizler.",
+    "Ürün İçeriği": "Sodyum hidroksit, sodyum hipoklorit, sekuestran ajanlar.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Asitle karıştırmayın (klor gazı).",
+    "Üretici Linki": "https://www.ecolab.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 344,
+    "ProductName": "AD 20 24 kg (Horolith FL)",
+    "DisplayProductCode": "VSHECO80",
+    "Üretici Firma": "Ecolab",
+    "Ürün Açıklaması": "Fosforik asit bazlı CIP asidik deterjan; süt taşını çözer.",
+    "Ürün İçeriği": "Fosforik asit > 25 %, azotlu inhibitörler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Paslanmaz çelik harici yüzeylerde uzun süre bekletmeyin.",
+    "Üretici Linki": "https://www.ecolab.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 394,
+    "ProductName": "DOLARJİN 100ml enj.",
+    "DisplayProductCode": "VALIV101",
+    "Üretici Firma": "Alivira",
+    "Ürün Açıklaması": "Metamizol sodyum içerikli çözeltinin 100 ml ambalajı.",
+    "Ürün İçeriği": "Metamizol sodyum 500 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 397,
+    "ProductName": "DUFAFOSFAN 10 % + B12 Enj. 100 ml",
+    "DisplayProductCode": "VADUT47",
+    "Üretici Firma": "Dufa Vet",
+    "Ürün Açıklaması": "Butafosfan + B12 tonik; fosfor dengesizliği ve enerji eksikliğinde kullanılır.",
+    "Ürün İçeriği": "Butafosfan 100 mg/ml, siyanokobalamin 50 µg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "IV veya SC yavaş verin; hipermagnezemi varsa kullanmayın.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 404,
+    "ProductName": "AVROMEC 20 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "İvermektin bazlı antiparaziterin düşük hacimli formu; özellikle küçük sürüler için ekonomik ambalaj.",
+    "Ürün İçeriği": "İvermektin 10 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Su ürünleri için toksiktir. Kesim süresi 28 gün."
+  },
+  {
+    "ProductId": 590,
+    "ProductName": "METACAM %2 INJ. 20 ML",
+    "DisplayProductCode": "VALIV102",
+    "Üretici Firma": "Boehringer Ingelheim",
+    "Ürün Açıklaması": "Meloksikam %2 çözeltisi; köpeklerde osteoartrit ağrısı ve sığırlarda akut mastitis ile solunum yolu hastalıklarının semptomatik tedavisinde kullanılır.",
+    "Ürün İçeriği": "Meloksikam 20 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Gastrointestinal ülser, kanama bozukluğu veya dehidratasyon varlığında kontrendikedir; et çekim süresi 15 gün."
+  },
+  {
+    "ProductId": 608,
+    "ProductName": "NexGard Dog S 3 Tablet 2-4 kg",
+    "DisplayProductCode": "VBOEING059",
+    "Üretici Firma": "Boehringer Ingelheim",
+    "Ürün Açıklaması": "Afoxolaner 11,3 mg çiğneme tableti; 1 ay pire-kene koruması.",
+    "Ürün İçeriği": "Afoxolaner 11,3 mg/tablet.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "8 haftalıktan küçük yavrularda kullanmayın.",
+    "Üretici Linki": "https://nexgard.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 680,
+    "ProductName": "ENZAPROST T 30 ml",
+    "Üretici Firma": "Ceva",
+    "Ürün Açıklaması": "Dinoprost trometamin içeren prostaglandin F2α analogu; uterus boşaltımı, luteoliz ve doğum indüksiyonu için kullanılır.",
+    "Ürün İçeriği": "Dinoprost trometamin 5 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Gebelikte abort yapar. Astımlı veya gebelikteki kişiler ilaca maruz kalmamalıdır."
+  },
+  {
+    "ProductId": 681,
+    "ProductName": "OVARELIN 20 ml",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Gonadorelin asetat içeren hormonal preparat; ineklerde ovulasyon senkronizasyonu (Ovsynch) ve inaktif over tedavilerinde kullanılır.",
+    "Ürün İçeriği": "Gonadorelin asetat 0,02 mg/ml; benzil alkol, su.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "IM uygulanır. Gebe hayvanlarda kullanmayın. Kişisel hormonal maruziyet riskine karşı iğne ucu kazalara dikkat."
+  },
+  {
+    "ProductId": 683,
+    "ProductName": "CEVAXEL RTU 100ML FLAKON",
+    "DisplayProductCode": "VGÜN79",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Ceftiofur bazlı, kullanıma hazır steril enjeksiyon; mastitis ve solunum yolu enfeksiyonlarında etkilidir.",
+    "Ürün İçeriği": "Ceftiofur hidrojene klorür 50 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Beta-laktam antibiyotiklere duyarlı kişiler temas etmemelidir."
+  },
+  {
+    "ProductId": 684,
+    "ProductName": "PRID DELTA 10",
+    "DisplayProductCode": "VGÜN80",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "İneklerde ve düvelerde östrus senkronizasyonu ile fertilite problemlerinin yönetiminde kullanılan, silikon matrikse gömülü 1,55 g progesteron içeren intravajinal cihazdır. PRID DELTA, kontrollü progesteron salınımıyla ovaryen aktivitenin baskılanmasını ve programlı tohumlama protokollerinin uygulanmasını kolaylaştırır.",
+    "Ürün İçeriği": "Etken madde: Progesteron 1,55 g. Taşıyıcı: Silikon elastomer destek plaka.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt çekilme süresi 0 gün, et çekilme süresi 0 gün olsa da cihazın çıkarıldığından emin olunmalıdır. Vajinal irritasyon kontrol edilmeli, hijyenik tak-çıkar prosedürleri izlenmelidir. Gebe hayvanlarda kullanılmamalıdır.",
+    "Üretici Linki": "https://www.ceva.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 686,
+    "ProductName": "MARBOX 100 ML",
+    "DisplayProductCode": "VGÜN83",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Marbofloksasin içeren florokinolon; solunum ve idrar-üreme yolu enfeksiyonlarında kullanılır.",
+    "Ürün İçeriği": "Marbofloksasin 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Fluorokinolon direnci gelişimini sınırlamak için doz/tedavi süresine uyun."
+  },
+  {
+    "ProductId": 687,
+    "ProductName": "FLORKEM 100 ML",
+    "DisplayProductCode": "VGÜN84",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Florfenikol içeren geniş spektrumlu antibakteriyel enjeksiyon.",
+    "Ürün İçeriği": "Florfenikol 300 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kollajen dokuda kalıntı bırakabileceği için kesim süresine uyunuz."
+  },
+  {
+    "ProductId": 688,
+    "ProductName": "SPIROVET 100 ML",
+    "DisplayProductCode": "VGÜN85",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Spiramisin bazlı makrolid; akut mastitis ve solunum enfeksiyonlarında etkilidir.",
+    "Ürün İçeriği": "Spiramisin adipat 100 mg/ml (yaklaşık).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt çekim süresi: 13,5 gün. Kas içi uygulamada et çekim süresi 75 gündür."
+  },
+  {
+    "ProductId": 689,
+    "ProductName": "EPRECIS ENJ. 100 ml",
+    "DisplayProductCode": "VGÜN86",
+    "Üretici Firma": "Boehringer Ingelheim",
+    "Ürün Açıklaması": "Sığır, koyun ve keçilerde endo-ve ektoparaziter infestasyonların tedavi ve kontrolünde kullanılan enjektabl eprinomektin (20 mg/ml) preparatıdır. Gastro-intestinal nematodlar, akciğer kurtları, uyuz etkenleri ve bitlere karşı etkilidir.",
+    "Ürün İçeriği": "Etken madde: Eprinomektin 20 mg/ml. Yardımcı maddeler: Benzil alkol, propylen glikol, polioksietilen nonilfenol.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt çekilme süresi 0 saattir; laktasyondaki hayvanlarda güvenle kullanılabilir. Et çekilme süresi 15 gündür. 2 aydan küçük buzağılara uygulanmamalıdır. İvermektinlere aşırı duyarlılık durumunda dikkatli olun.",
+    "Üretici Linki": "https://bi-animalhealth.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 690,
+    "ProductName": "GABBROCOL 1KG",
+    "DisplayProductCode": "VGÜN87",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "İçme suyu veya sütle verilen paromomisin tozu; genç sığır ve domuzlarda E. coli kaynaklı gastrointestinal enfeksiyonlarda kullanılır.",
+    "Ürün İçeriği": "Paromomisin sülfat %50 (yaklaşık).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Böbrek/karaciğer yetmezliğinde kullanmayın; aminoglikozid hipersensitivitesi olan hayvanlarda kontrendike."
+  },
+  {
+    "ProductId": 751,
+    "ProductName": "AVROMEC Enj. 100 ml",
+    "DisplayProductCode": "VALIV020",
+    "Üretici Firma": "Alivira",
+    "Ürün Açıklaması": "İvermektin %1 enjeksiyon; geniş spektrumlu endo-ektoparazitisit.\nÜretici bağlantısı: https://www.alivira.com",
+    "Ürün İçeriği": "İvermektin 10 mg/ml, gliserol formal, propilen glikol.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kuzu-oğlaklarda hipomotilite; süt ineği kuru dönemden önce kullanılmaz."
+  },
+  {
+    "ProductId": 752,
+    "ProductName": "BAKTERAL 100ml enj.",
+    "DisplayProductCode": "VALIV033",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 757,
+    "ProductName": "CLIMOX INJ.100ML",
+    "DisplayProductCode": "VALIV010",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 790,
+    "ProductName": "CEFAMILK-180 Mono 100ML ENJ.",
+    "DisplayProductCode": "VALIV039",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 793,
+    "ProductName": "CLAVON 100 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Amoksisilin-klavulanik asit kombinasyonu; solunum-ürogenital ve yumuşak doku enfeksiyonlarında hızla bakterisidal etki gösterir.",
+    "Ürün İçeriği": "Amoxicillin sodium 140 mg/ml + Clavulanic acid (as potassium salt) 35 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "IM veya SC uygulanır. Beta-laktam allerjisi olan kişiler temas etmemelidir. Kesim süresi 42 gün."
+  },
+  {
+    "ProductId": 795,
+    "ProductName": "VİODOX SPREY 200 ML",
+    "DisplayProductCode": "VALIV043",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 805,
+    "ProductName": "COGLAVAX 100ML",
+    "DisplayProductCode": "VGÜN93",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 806,
+    "ProductName": "COGLAVAX 250ML",
+    "DisplayProductCode": "VGÜN94",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 845,
+    "ProductName": "BOYNUZ YAKMA ALETİ (Dehorner Goat-Sheep)",
+    "DisplayProductCode": "AVMD0375",
+    "Üretici Firma": "Kerbl",
+    "Ürün Açıklaması": "Koyun ve keçilerde boynuz tomurcuğu yakma işlemi için elektrikli cihaz. Seramik başlık ~650 °C’ye ısıtılarak kök hücre tabakasını kalıcı olarak tahrip eder.",
+    "Ürün İçeriği": "Paslanmaz çelik gövde, seramik ısıtıcı, termal sigorta.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Analjezi/sedasyon eşliğinde kullanılması tavsiye edilir. Aşırı ısı uygulaması kafa tası nekrozu riskini artırır.",
+    "Üretici Linki": "https://www.kerbl.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 869,
+    "ProductName": "SURCALCE 250ml enj.",
+    "DisplayProductCode": "VALIV011",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 908,
+    "ProductName": "GABBROCOL 250 Gr",
+    "DisplayProductCode": "VGÜN100",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 920,
+    "ProductName": "VITALJEK ADE 100 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Yağda çözünen A, D₃ ve E vitaminleri içeren parenteral preparat; kas içi veya deri altı uygulanır. Özellikle besi ve sürü hayvanlarında eksikliklerin hızlı düzeltilmesi için.",
+    "Ürün İçeriği": "Vitamin A 500 000 IU/ml, Vitamin D₃ 75 000 IU/ml, Vitamin E 50 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yağ dokuda depolandığından doz aşımında hipervitaminoz riski vardır. Son kullanım sonrası şişede kalan çözelti 28 gün içinde atılmalıdır."
+  },
+  {
+    "ProductId": 939,
+    "ProductName": "ZELERİS 100ml",
+    "DisplayProductCode": "VGÜN102",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Florfenikol + meloksikam kombinasyonu; solunum yolu enfeksiyonu tedavisinde antibiyotik etki ve anti-inflamatuar destek sağlar.",
+    "Ürün İçeriği": "Florfenikol 300 mg/ml + Meloksikam 12,5 mg/ml (yaklaşık).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kesim süresi ve meloksikam kontrendikasyonlarına dikkat edin (ülser, kanama riski vb.)."
+  },
+  {
+    "ProductId": 943,
+    "ProductName": "FENOSVIT C wsp 100g",
+    "DisplayProductCode": "VADUT51",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "Suda çözünen, beş antibiyotik ve vitamin kompleksi içeren toz preparat; geniş spektrum.",
+    "Ürün İçeriği": "Kombinasyon antibiyotik + vitamin premiksi (detay prospektüste).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Böbrek yetmezliğinde ve aminoglikozid hassasiyetinde dikkatli kullanılır."
+  },
+  {
+    "ProductId": 960,
+    "ProductName": "TENALİNE LA 100ml",
+    "DisplayProductCode": "VGÜN103",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Yüksek konsantrasyonlu uzun etkili oksitetrasiklin; tek dozda uzun süreli antibakteriyel etki sağlar.",
+    "Ürün İçeriği": "Oxytetracycline dihidrat 200 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kas içi uygulamada ağrı ve doku irritasyonu oluşabilir; doz sınırına uyun."
+  },
+  {
+    "ProductId": 1001,
+    "ProductName": "SUNİ TOHUM Sandy Valley Copious",
+    "DisplayProductCode": "VSUNTS134",
+    "Üretici Firma": "CK Genetics",
+    "Ürün Açıklaması": "Sandy Valley Copious boğa sperması; yüksek süt yağ-protein yüzdesi, A2A2 beta-kazein profili.\nÜretici bağlantısı: https://www.ckgenetics.com",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çözündürme sonrası 15 dk içinde inseminasyon yapılmalıdır."
+  },
+  {
+    "ProductId": 1018,
+    "ProductName": "TOPAZ HD3",
+    "DisplayProductCode": "VGÜN102",
+    "Üretici Firma": "Hipra",
+    "Ürün Açıklaması": "Sığır ve koyunlarda kombine enterotoksemi, tetanoz ve hepatitis necroticans (CI. novyi Tip B) subünit aşısı. Yüksek antijen konsantrasyonu ile uzun süreli koruma sağlar.",
+    "Ürün İçeriği": "Toksoid ve inaktif Clostridium perfringens Tip C & D, C. tetani, C. novyi Tip B; alüminyum hidroksit adjuvan.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Aşılamadan sonra enjeksiyon bölgesinde geçici şişlik olabilir. Uygulama öncesi vücut ısısı >40 °C ise aşı ertelenmelidir.",
+    "Üretici Linki": "https://www.hipra.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1158,
+    "ProductName": "BAYCOX %5 100 ML",
+    "DisplayProductCode": "VELAN016",
+    "Üretici Firma": "Elanco (eski Bayer AH)",
+    "Ürün Açıklaması": "Toltrazuril içeren koksidiyosit; ruminant ve domuz yavrularında koksidiyoz kontrolü.",
+    "Ürün İçeriği": "Toltrazuril 50 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Ciddi karaciğer bozukluğu olan hayvanlarda kullanmayın."
+  },
+  {
+    "ProductId": 1160,
+    "ProductName": "BAYTRİL %10 ENJ 50 ML",
+    "DisplayProductCode": "VELAN017",
+    "Üretici Firma": "Elanco",
+    "Ürün Açıklaması": "Enrofloksasin içeren geniş spektrumlu florokinolon antibiyotik.",
+    "Ürün İçeriği": "Enrofloksasin 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Fluorokinolon direnci ve kıkırdak hasarı riskine karşı genç büyüme dönemindeki hayvanlarda dikkat."
+  },
+  {
+    "ProductId": 1173,
+    "ProductName": "Advantage Multi Dog 25–40 kg (4 ml ×3)",
+    "DisplayProductCode": "VELAN005",
+    "Üretici Firma": "Elanco",
+    "Ürün Açıklaması": "İmidacloprid + moksidectin topikal spot-on; dış parazitlere ek olarak kalp kurdu, askarit, kancalı kurt ve kamçılı kurtlara karşı koruma.\nÜretici bağlantısı: https://yourpetandyou.elanco.com/us/our-products/advantage-multi/advantage-multi-dogs",
+    "Ürün İçeriği": "İmidacloprid 400 mg, moksidectin 100 mg/pipet.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Uygulama sonrası 24 saat banyo yapılmamalı; oral yalama riskine karşı köpekler birbirini yalamamalı."
+  },
+  {
+    "ProductId": 1177,
+    "ProductName": "Advantix Dog 4×6 ml 40-60 kg",
+    "DisplayProductCode": "VELAN009",
+    "Üretici Firma": "Elanco",
+    "Ürün Açıklaması": "İmidacloprid + permethrin spot-on; pire, kene, sivrisinek kovucu ve öldürücü.",
+    "Ürün İçeriği": "Imidacloprid 600 mg, permethrin 3000 mg/pipet.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kedilere uygulanmaz.",
+    "Üretici Linki": "https://yourpetandyou.elanco.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1187,
+    "ProductName": "MARBOX 50 ml",
+    "DisplayProductCode": "VGÜN105",
+    "Üretici Firma": "Vetoquinol",
+    "Ürün Açıklaması": "Marbofloksasin 100 mg/ml içeren enjektabl florokinolon; solunum, mastitis‐metritis ve yumuşak doku enfeksiyonlarının tedavisinde.",
+    "Ürün İçeriği": "Marbofloksasin, metakrezol, glisin, su.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Laktasyonda kullanılan ineklerde 72 saat süt çekilme süresi. 400 kg’dan ağır sığırlarda tek enjeksiyon hacmi 20 ml’yi geçmemelidir.",
+    "Üretici Linki": "https://www.vetoquinol.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1207,
+    "ProductName": "ZELERİS 50ml",
+    "DisplayProductCode": "VGÜN106",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Florfenikol + meloksikam kombinasyonu; sığırlarda ateşli solunum yolu hastalığı (BRD) tedavisinde antibakteriyel ve anti-inflamatuar etkiyi tek enjeksiyonda birleştirir.",
+    "Ürün İçeriği": "Florfenikol 400 mg/ml, Meloksikam 5 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt amaçlı hayvanlarda kullanılmaz; yetiştirme boğalarında, karaciğer/böbrek/kalp yetmezliğinde ve ülseratif GİS lezyonlarında kontrendikedir. Kesim süresi 37 gün."
+  },
+  {
+    "ProductId": 1208,
+    "ProductName": "FLORKEM 50 ML",
+    "DisplayProductCode": "VGÜN118",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "%30 florfenikol içeren yüksek konsantrasyonlu enjeksiyon; sığır ve domuzlarda bakteriyel solunum yolu enfeksiyonlarını (shipping fever) tedavi eder, 48 saat arayla iki doz uygulanır.",
+    "Ürün İçeriği": "Florfenikol 300 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt ineklerinde onaylı değildir; et çekim süresi 37 gün. Aşırı dozlarda iştahsızlık ve diare görülebilir."
+  },
+  {
+    "ProductId": 1215,
+    "ProductName": "Feline Toxoplasma Gondii IgG/IgM Test",
+    "DisplayProductCode": "VADİA013",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1219,
+    "ProductName": "CANINE IgE TEST",
+    "DisplayProductCode": "VADİA010",
+    "Üretici Firma": "Diagen Diagnostics",
+    "Ürün Açıklaması": "Köpeklerde total IgE düzeyini ölçen ELISA kiti; gıda veya çevresel alerjenlere duyarlılığı araştırmada referans test olarak kullanılır.",
+    "Ürün İçeriği": "Mikroplate stripler, enzim konjugat, substrat çözeltisi, durdurucu asit.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Serum örnekleri hemolizsiz olmalıdır. Oda sıcaklığında reaktif stabilitesi sınırlıdır.",
+    "Üretici Linki": "https://www.diagen.com.tr",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1243,
+    "ProductName": "Dollisera Hyperimmune Serum 5 ds ×25 ml",
+    "DisplayProductCode": "VDOL17",
+    "Üretici Firma": "Dollvet",
+    "Ürün Açıklaması": "Clostridium perfringens tip C & D’ye karşı yüksek titreli antitoksin içerir; pasif immunizasyon amacıyla s.c. veya i.m. uygulanır.\nÜretici bağlantısı: https://www.dollvet.com.tr",
+    "Ürün İçeriği": "≥ 250 IU antitoksin/ml serum, fenol 0,25 % koruyucu.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Anafilaksi riskine karşı adrenalin hazır bulundurun; buz dolabında (+2 – +8 °C) saklayın."
+  },
+  {
+    "ProductId": 1244,
+    "ProductName": "PASTEDOLL-3 50 Ds. 100 ml",
+    "DisplayProductCode": "VDOL18",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1245,
+    "ProductName": "ADVANTAGE MULTİ DOG 3×1,0 ml (4–10 kg)",
+    "DisplayProductCode": "VELAN034",
+    "Üretici Firma": "Elanco Animal Health",
+    "Ürün Açıklaması": "- Spot-on kombinasyonu (imidacloprid + moxidektin)\n- Pireleri 24 saatte öldürür, 4 hafta yeniden enfestasyonu önler\n- Kalp kurdu profilaksisi + bağırsak nematodları ve sarcoptic uyuz tedavisi",
+    "Ürün İçeriği": "İmidacloprid 100 mg/ml\nMoxidektin 25 mg/ml",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "• Sadece dermal kullanın, yalanmayı önleyin\n• Çocuk temasından kaçının; uygulama yeri kuruyana kadar bekleyin\n• MDR1 mutant Collie ırklarında nörolojik risk"
+  },
+  {
+    "ProductId": 1246,
+    "ProductName": "SERESTO KÜÇÜK < 8 kg, 38 cm tasma",
+    "DisplayProductCode": "VELAN035",
+    "Üretici Firma": "Bayer / Elanco",
+    "Ürün Açıklaması": "- 8 ay süren pire & kene koruması\n- Suya dayanıklı, kokusuz polimer matriks\n- Re-infestasyonda 2 saatte %100 pire mortalitesi",
+    "Ürün İçeriği": "İmidacloprid 10 % w/w\nFlumetrin 4,5 % w/w",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yedi haftalıktan küçük yavrulara takılmamalı; çocuklar oyuncak sanmamalı"
+  },
+  {
+    "ProductId": 1247,
+    "ProductName": "ADVANTIX DOG 4×0,4 ml (< 4 kg)",
+    "DisplayProductCode": "VELAN036",
+    "Üretici Firma": "Elanco (eski Bayer AH)",
+    "Ürün Açıklaması": "- İmidacloprid + permethrin kombinasyonu\n- Pire, kene, sivrisinek ve kum sineğine karşı öldürücü + repellant\n- Tek damlatma 4 hafta korur",
+    "Ürün İçeriği": "İmidacloprid 100 mg/ml\nPermethrin 500 mg/ml",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "• KEDİLERE UYGULANMAZ—fatal toksisite yapar\n• Uygulamadan sonra 48 saat yıkamayın"
+  },
+  {
+    "ProductId": 1273,
+    "ProductName": "PROFENDER CAT 0,35 ml (0,5–2,5 kg)",
+    "DisplayProductCode": "VELAN041",
+    "Üretici Firma": "Bayer / Elanco",
+    "Ürün Açıklaması": "- Tek doz dermal iç parazit tedavisi\n- Tenyalar + yuvarlak kurtları elimine eder",
+    "Ürün İçeriği": "Emodepsid 21,4 mg/ml\nPraziquantel 85,8 mg/ml",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "8 haftalıktan küçük veya < 0,5 kg kedilerde kullanılmaz"
+  },
+  {
+    "ProductId": 1274,
+    "ProductName": "PROFENDER CAT 0,70 ml (2,5–5 kg)",
+    "DisplayProductCode": "VELAN042",
+    "Üretici Firma": "Bayer / Elanco",
+    "Ürün Açıklaması": "- 2,5–5 kg kedilerde geniş spektrumlu helmint eliminasyonu",
+    "Ürün İçeriği": "Emodepsid 21,4 mg/ml\nPraziquantel 85,8 mg/ml",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "30 gün içinde tekrar doz gerekmez"
+  },
+  {
+    "ProductId": 1275,
+    "ProductName": "PROFENDER CAT 1,12 ml (5–8 kg)",
+    "DisplayProductCode": "VELAN043",
+    "Üretici Firma": "Bayer / Elanco",
+    "Ürün Açıklaması": "- 5–8 kg kedilerde tek damla iç parazit tedavisi",
+    "Ürün İçeriği": "Emodepsid 21,4 mg/ml\nPraziquantel 85,8 mg/ml",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1279,
+    "ProductName": "SUNİ TOHUM PROGENESIS BLUFF",
+    "DisplayProductCode": "VSUNTS161",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1287,
+    "ProductName": "SUNİ TOHUM AOT HELIUM-RED-ET (SEXED)",
+    "DisplayProductCode": "VSUNTS169",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1289,
+    "ProductName": "SUNİ TOHUM SANDY-VALLEY ESTHETIC-ET (SEXED)",
+    "DisplayProductCode": "VSUNTS171",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1294,
+    "ProductName": "SUNİ TOHUM PROGENESIS SUMMERDAY (SEXED)",
+    "DisplayProductCode": "VSUNTS175",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1300,
+    "ProductName": "ADEMİN 20 ml",
+    "DisplayProductCode": "VADUV041",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1301,
+    "ProductName": "ADEMİN 250 ml",
+    "DisplayProductCode": "VADUV042",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1304,
+    "ProductName": "CEFCLOREN 100 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Uzun etkili 3. kuşak sefalosporin (seftiofur kriztalin serbest baz) içerir; özellikle BRD, metritis ve interdigital dermatitte etkilidir.",
+    "Ürün İçeriği": "Ceftiofur crystalline free acid 200 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt çekim süresi yoktur; et için 13 gün kesim süresi. Enterasistin implant bölgesine enjekte edilmemelidir."
+  },
+  {
+    "ProductId": 1305,
+    "ProductName": "IMOZAN 50 ml Enj.",
+    "DisplayProductCode": "VALIV049",
+    "Üretici Firma": "MSD Animal Health",
+    "Ürün Açıklaması": "İmidokarb dipropiyonat 120 mg/ml; büyükbaşlarda Babesia bovis, B. bigemina ve Anaplasma marginale enfeksiyonlarının hem tedavisi hem profilaksisi için kullanılır.",
+    "Ürün İçeriği": "İmidokarb dipropiyonat, polisorbat 80, benzil alkol, su.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Et çekilme süresi 213 gün, süt çekilme süresi 4 ay. Kolinerjik yan etkiler görülebilir; atropin hazır bulundurulmalıdır.",
+    "Üretici Linki": "https://www.msd-animal-health.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1306,
+    "ProductName": "NEURON-B 100 ml enj.",
+    "DisplayProductCode": "VADUV045",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1307,
+    "ProductName": "PENSTREP 20/20 100 ml Enj.",
+    "DisplayProductCode": "VALIV051",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Prokain penisilin G (200 000 IU/ml) ve dihidrostreptomisin sülfat (200 mg/ml) kombinasyonu; geniş etki spektrumu ile solunum, septisemi ve mastitis vakalarında kullanılır.",
+    "Ürün İçeriği": "Prokain benzilpenisilin, dihidrostreptomisin sülfat, polisorbat 80.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Et çekilme süresi 28 gün, süt çekilme süresi 8 sağım. Penisilin alerjisi olan personel temastan kaçınmalıdır.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1310,
+    "ProductName": "VIRAFLOR 100 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Florfenikol içeren geniş spektrumlu antibakteriyel; solunum yolu enfeksiyonlarında (BRD, pasteurellosis) etkilidir.",
+    "Ürün İçeriği": "Florfenicol 300 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Derin IM (boyun) veya SC uygulanır. Kesim süresi 28 gün; süt için onaylı değildir."
+  },
+  {
+    "ProductId": 1311,
+    "ProductName": "FULINALJİN 100 ml enj.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Florfenikol + fluniksin meglumin kombinasyonu; hem antibakteriyel hem antipiretik-antiinflamatuvar etki sağlar.",
+    "Ürün İçeriği": "Florfenicol 300 mg/ml + Flunixin meglumine 16,5 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Böbrek yetmezliği veya dehidrasyonda dikkatli olun. Kesim süresi 38 gün."
+  },
+  {
+    "ProductId": 1334,
+    "ProductName": "İNCİDİN TR 20 kg",
+    "DisplayProductCode": "VSHECO106",
+    "Üretici Firma": "Ecolab",
+    "Ürün Açıklaması": "- Glukoprotamin bazlı yüzey dezenfektanı\n- 5 dk’da bakterisid / virüsid / fungisid etki\n- Köpüksüz formül, gıda işletmelerinde de güvenli",
+    "Ürün İçeriği": "Glukoprotamin 22,5 % w/w (konsantre)",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Seyreltilmemiş ürün deri-irritandır; eldiven/gözlük kullanın"
+  },
+  {
+    "ProductId": 1339,
+    "ProductName": "ADEMİN NEO 100 ml oral",
+    "DisplayProductCode": "VADUV050",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1340,
+    "ProductName": "BAKOSEL JEL 100 ml oral",
+    "DisplayProductCode": "VADUV051",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1345,
+    "ProductName": "AGITA 10 WG 1 kg",
+    "DisplayProductCode": "VELAN045",
+    "Üretici Firma": "Elanco",
+    "Ürün Açıklaması": "Thiametoxam + (Z)-9-tricosene sinek yemi; şeker bazlı granül form, hızlı etki ve uzun rezidü.\nÜretici bağlantısı: https://farmanimal.elanco.com/us/poultry/product/agita-10-wg",
+    "Ürün İçeriği": "Thiametoxam 10 %, Tricosene 0,05 %, şeker bazlı taşıyıcı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Arı toksiktir; uygulama alanına evcil hayvan erişimini kısıtlayın."
+  },
+  {
+    "ProductId": 1351,
+    "ProductName": "Vitalidog 75 g / 150 tablet",
+    "DisplayProductCode": "VITA001",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1352,
+    "ProductName": "Dermadog 1.5 – 100 Tablet",
+    "DisplayProductCode": "VPBİO0002",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1353,
+    "ProductName": "Dermadog 0.5 – 150 tablet",
+    "DisplayProductCode": "VITA003",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1354,
+    "ProductName": "D-Kaltabs 126 g",
+    "DisplayProductCode": "VITA004",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1355,
+    "ProductName": "Vitalicat Paste 100 ml",
+    "DisplayProductCode": "VITA005",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1356,
+    "ProductName": "Vitalidog Paste 100ml",
+    "DisplayProductCode": "VPBİO0006",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1357,
+    "ProductName": "Bio Urinamin 40 tablet",
+    "DisplayProductCode": "VITA007",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1358,
+    "ProductName": "GlucoPet 60 tablet / 90 g",
+    "DisplayProductCode": "VITA008",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1359,
+    "ProductName": "GlucoCHOND Plus Gel 100 ml",
+    "DisplayProductCode": "",
+    "Üretici Firma": "VetExpert",
+    "Ürün Açıklaması": "Köpek ve kedilerde eklem desteği için glukozamin, kondroitin sülfat, MSM ve Omega-3 içeren oral jel. Lezzetli formu sayesinde kolay yutturulur.",
+    "Ürün İçeriği": "Glukozamin HCl 250 mg/ml, Kondroitin sülfat 120 mg/ml, MSM 80 mg/ml, Balık yağı (%EPA+DHA).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Deniz ürününe alerjisi olan hayvanlarda dikkatli kullanılmalıdır. Uzun süreli kullanım veteriner hekim kontrolü gerektirir.",
+    "Üretici Linki": "https://vetexpert.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1360,
+    "ProductName": "OptiBioMega Salmon Oil 250 ml",
+    "DisplayProductCode": "VITA010",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1361,
+    "ProductName": "Bio Kitten 200g",
+    "DisplayProductCode": "VPBİO0011",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1362,
+    "ProductName": "Bio Puppy 200 g",
+    "DisplayProductCode": "VITA012",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1363,
+    "ProductName": "Vitalicat Junior 100ml",
+    "DisplayProductCode": "VPBİO0013",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Yavru kediler (4 hafta-12 ay) için multivitamin–taurin macunu\n- Büyüme, bağışıklık ve kemik–diş gelişimini destekler\n- Lezzetli formül kedi mamalarına karıştırılabilir",
+    "Ürün İçeriği": "Vitamin A, D₃, B₁, B₂, B₆, B₁₂, niasin, folik asit, biotin, taurine, dicalcium phosphate",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Günlük doz 3 cm macun (~1,5 g)\n- Açıldıktan sonra 3 ay içinde tüketin"
+  },
+  {
+    "ProductId": 1364,
+    "ProductName": "Vitalidog Junior Pasta 100ml",
+    "DisplayProductCode": "VPBİO0014",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Büyüme dönemindeki yavru köpekler için vitamin + kalsiyum macunu\n- Bağışıklık, kemik ve diş gelişimini destekler",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1365,
+    "ProductName": "Felilysine Gel 100ml",
+    "DisplayProductCode": "VPBİO0015",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "L-Lizin (250 mg/2 ml) içeren jel; FHV-1 yönetiminde bağışıklık desteği.",
+    "Ürün İçeriği": "L-lysine HCl, malt bazlı jel, tatlandırıcı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Hamile kedilerde veteriner onayı alın.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1366,
+    "ProductName": "CatiMalt Plus 100ml",
+    "DisplayProductCode": "VPBİO0016",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Malt ekstraktı + prebiyotik lif; tüy yumaklarını doğal yollarla atmayı kolaylaştırır",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1367,
+    "ProductName": "Synbioflora Tabs 30gr - Small Breed Dog",
+    "DisplayProductCode": "VPBİO0017",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Probiyotik + prebiyotik tablet; sindirim florasını dengeler (≤10 kg köpekler)",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1368,
+    "ProductName": "Synbioflora Tabs 72gr - Medium & Large Breed Dog",
+    "DisplayProductCode": "VPBİO0018",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Aynı formül; ≥10 kg köpekler için ölçeklendirilmiş doz",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1370,
+    "ProductName": "Coprophagia 90gr",
+    "DisplayProductCode": "VPBİO0019",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1371,
+    "ProductName": "Calming for Dogs 90gr",
+    "DisplayProductCode": "VPBİO0020",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- L-teanin, triptofan, B-vitaminleri; anksiyete ve stres yönetimi",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1372,
+    "ProductName": "Calming for Cats 30gr",
+    "DisplayProductCode": "VPBİO0021",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Kediotu (Valerian) + L-teanin içeren çiğneme tableti; seyahat & veteriner stresi azaltır",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1373,
+    "ProductName": "Puppy Trainer Spray 100 ml",
+    "DisplayProductCode": "VPBİO0022",
+    "Üretici Firma": "Bioline",
+    "Ürün Açıklaması": "Yavru köpeklerde tuvalet eğitimini hızlandırmaya yardımcı, feromon benzeri doğal özlerle zenginleştirilmiş yönlendirici sprey.",
+    "Ürün İçeriği": "Bitkisel özler, doğal feromon analogları, saf su, alkol.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çocukların erişemeyeceği yerde muhafaza edin. Yutulduğunda gastrointestinal irritasyon yapabilir.",
+    "Üretici Linki": "https://www.biolinepet.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1374,
+    "ProductName": "Aloe Vera Shampoo for Cat 250ml",
+    "DisplayProductCode": "VPBİO0023",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- %1 Aloe vera özü + panthenol; tüyleri nemlendirir, kepeklenmeyi azaltır",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Gözle temas ettirmeyin"
+  },
+  {
+    "ProductId": 1375,
+    "ProductName": "Aloe Vera Shampoo for Dogs 250ml",
+    "DisplayProductCode": "VPBİO0024",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Köpek derisine pH-uyumlu aloe şampuan",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1376,
+    "ProductName": "Tea Tree Shampoo for Dogs 250ml",
+    "DisplayProductCode": "VPBİO0025",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- %0,5 çay ağacı yağı; antipruritik ve deodorant etki",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Kedilerde kullanmayın (terpen toksisitesi)"
+  },
+  {
+    "ProductId": 1377,
+    "ProductName": "Puppy Shampoo 250ml",
+    "DisplayProductCode": "VPBİO0026",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Yavru köpekler için sülfatsız, göz yakmayan formül",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1378,
+    "ProductName": "Aloe Vera Shampoo for Cats 400ml",
+    "DisplayProductCode": "VPBİO0027",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- 400 ml ekonomi boy; nemlendirici aloe & E vitamini",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1379,
+    "ProductName": "Aloe Vera Shampoo for Dogs 400ml",
+    "DisplayProductCode": "VPBİO0028",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Büyük ırklar için ideal hacim; tüy parlaklığını artırır",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1380,
+    "ProductName": "Tea Tree Shampoo for Dogs 400ml",
+    "DisplayProductCode": "VPBİO0029",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Çay ağacı + mentol serinletici etki; kepek kontrolü",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1381,
+    "ProductName": "Puppy Shampoo 400ml",
+    "DisplayProductCode": "VPBİO0030",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Sülfat/paraben içermeyen nazik formül – 400 ml",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1382,
+    "ProductName": "Perfume Fancy 50ml",
+    "DisplayProductCode": "VPBİO0031",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Alkolü azaltılmış koku spreyi; meyvemsi notalar",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Göz ve buruna direkt püskürtmeyin"
+  },
+  {
+    "ProductId": 1383,
+    "ProductName": "Perfume Elegance 50ml",
+    "DisplayProductCode": "VPBİO0032",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Çiçeksi & misk bazlı pet parfümü",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1384,
+    "ProductName": "Perfume Flashy 50ml",
+    "DisplayProductCode": "VPBİO0033",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Enerjik narenciye kokusu; kötü kokuları maske eder",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1385,
+    "ProductName": "Perfume Crazy 50ml",
+    "DisplayProductCode": "VPBİO0034",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Tatlı vanilya-karamel alt notaları",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1386,
+    "ProductName": "GlucoCHOND 60 Tabs",
+    "DisplayProductCode": "VPBİO0035",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Glukozamin + kondroitin + MSM; eklem desteği",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1413,
+    "ProductName": "KSİLAZOL Enj. 50ml",
+    "DisplayProductCode": "VALIV056",
+    "Üretici Firma": "Vetaş",
+    "Ürün Açıklaması": "Xylazine-bazlı enjeksiyon; büyükbaş, küçükbaş ve pet hayvanlarda sedasyon, kas gevşetme ve kısa süreli analjezi için kullanılır.",
+    "Ürün İçeriği": "Xylazine hidroklorür %2 (20 mg/ml).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kardiyorespiratuvar depresyon yapabilir; kalp-solunum hastalarında ve gebe hayvanlarda dikkatli kullanılmalı, gıda hayvanlarında arınma sürelerine uyulmalıdır. İnsanlarda kazara enjeksiyondan kaçının."
+  },
+  {
+    "ProductId": 1415,
+    "ProductName": "REVERSAL Enj. 10ml",
+    "DisplayProductCode": "VALIV058",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Medetomidin/xylazine sedasyonunu hızlıca geri çevirmek için atipamezol içeren antagonistik enjeksiyon.",
+    "Ürün İçeriği": "Atipamezole hidroklorür 5 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Hipotansiyon veya kardiyak hastalık vakalarında dikkatli olun. Aşırı hızla uygulandığında ajitasyon yapabilir."
+  },
+  {
+    "ProductId": 1416,
+    "ProductName": "Tomidin 10ml",
+    "DisplayProductCode": "VALIV059",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Medetomidine içerikli sedatif-analjezik; özellikle küçük hayvanlarda kısa prosedürler için kullanılır.",
+    "Ürün İçeriği": "Medetomidine hidroklorür 1 mg/ml (yaklaşık).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Bradikardi, hipotermi ve solunum depresyonu görülebilir. Diyabetik hayvanlarda kontrendikedir."
+  },
+  {
+    "ProductId": 1419,
+    "ProductName": "COMBIVET INJ 100ML",
+    "DisplayProductCode": "VALIV014",
+    "Üretici Firma": "Norbrook Laboratories",
+    "Ürün Açıklaması": "B-kompleks vitaminleri ve C vitamini içeren steril çözeltidir; vitamin eksiklikleri, CCN ve bracken zehirlenmesi gibi durumların destek tedavisinde kullanılır.",
+    "Ürün İçeriği": "Askorbik asit 70 mg, Tiamin HCl 35 mg, Nikotinamid 23 mg, Piridoksin HCl 7 mg, Riboflavin sodyum fosfat 0.5 mg / ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yavaş IM/IV uygulanır; aşırı doz lokal irritasyon yapabilir."
+  },
+  {
+    "ProductId": 1421,
+    "ProductName": "SEDAPET ORAL SÜSPANSİYON 10ml",
+    "DisplayProductCode": "VALIV016",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1422,
+    "ProductName": "ANIMAR 100 ML",
+    "DisplayProductCode": "VGÜN115",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Trimethoprim + sulfadoksin enjeksiyonu; ruminant ve domuzlarda sistemik bakteriyel enfeksiyonlarda sinerjik bakterisidal etki sağlar.",
+    "Ürün İçeriği": "Sulfadoksin 200 mg/ml, Trimethoprim 40 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Sülfonamid alerjisi, ağır karaciğer/böbrek yetmezliği olan hayvanlarda kullanmayın."
+  },
+  {
+    "ProductId": 1428,
+    "ProductName": "ATOPİVET SPOT ON 16*2ML",
+    "DisplayProductCode": "VELAN047",
+    "Üretici Firma": "Dechra",
+    "Ürün Açıklaması": "- Crambe abyssinica yağı bazlı dermal lipid yenileyici\n- Köpek & kedilerde atopik dermatit yönetiminde barier onarımı sağlar",
+    "Ürün İçeriği": "Crambe abyssinica seed oil, ceramidler, kolesterol, serbest yağ asitleri",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Haftada 1 pipet (4 hafta) sonra idame 2 haftada 1"
+  },
+  {
+    "ProductId": 1429,
+    "ProductName": "IMPROMUNE 40 Tablet",
+    "DisplayProductCode": "VELAN048",
+    "Üretici Firma": "Bioiberica & VetNova",
+    "Ürün Açıklaması": "Köpek ve kedilerde doğuştan veya kazanılmış immün yetmezlik tablolarında kullanılan nutraseutik. β-glukan açısından zengin AHCC® (Active Hexose Correlated Compound) ve nükleotid karışımı Nucleoforce® içererek hücresel ve humoral immün yanıtı destekler.",
+    "Ürün İçeriği": "AHCC® 315 mg, Nucleoforce® 585 mg/tablet. Yardımcı: Maya türevleri, maltodekstrin.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Uzun süreli kullanımda doza dikkat edilmelidir. Şeker intoleransı olan hayvanlarda formülasyondaki maltodekstrin göz önüne alınmalıdır.",
+    "Üretici Linki": "https://vetnova.net",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1430,
+    "ProductName": "PRO-ENTERIC TRIPLEX Pasta 30 ml",
+    "DisplayProductCode": "VELAN049",
+    "Üretici Firma": "VetNova",
+    "Ürün Açıklaması": "Akut ishal vakalarında bağırsak mikrobiyotasını dengelemek için üçlü etki: probiyotik (Enterococcus faecium), prebiyotik (FOS), ve bağlayıcı montmorillonit kil. Uygun lezzet ve tek doz ayarlı şırınga ile kolay uygulama.",
+    "Ürün İçeriği": "E. faecium 4b1707 ≥4 × 10⁹ CFU/g, frukto-oligosakkarit, montmorillonit, pektin, dekstroz.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Antibiyotik tedavisiyle eşzamanlı kullanılırsa iki saat arayla verilmelidir. Dehidrasyona karşı ek elektrolit tedavisi gerekebilir.",
+    "Üretici Linki": "https://vetnova.net",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1431,
+    "ProductName": "DOXAPROL Enj. 2ml * FLAKON",
+    "DisplayProductCode": "VALIV060",
+    "Üretici Firma": "SGPharma",
+    "Ürün Açıklaması": "Merkezi sinir sistemi ve solunum uyarıcısı; post-anjestezik solunum depresyonunda kullanılır.",
+    "Ürün İçeriği": "Doxapram hidroklorür 20 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Epileptik nöbet geçmişi olan hayvanlarda kontrendike. Hipertansiyon ve kafa travması vakalarında dikkatli kullanılmalıdır."
+  },
+  {
+    "ProductId": 1446,
+    "ProductName": "SUNİ TOHUM PROGENESIS RICHMOND",
+    "DisplayProductCode": "VSUNTS182",
+    "Üretici Firma": "ST Genetics",
+    "Ürün Açıklaması": "Dondurulmuş sperma dozu; yüksek süt verimi ve genetik ilerleme için seçilmiş Holstein boğa RICHMOND’dan elde edilmiştir. Sex-sorted seçeneği mevcuttur.",
+    "Ürün İçeriği": "Her straw ≈20 × 10⁶ motil sperm; Tris-yumurta sarısı – gliserol kriyoprotektan ortam.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Sıcaklık şokuna duyarlıdır; -196 °C sıvı azot dışında çözülme-yeniden dondurma yapılmaz.",
+    "Üretici Linki": "https://www.stgen.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1448,
+    "ProductName": "SUNİ TOHUM PROGENESIS VIGOROSO",
+    "DisplayProductCode": "VSUNTS184",
+    "Üretici Firma": "ST Genetics",
+    "Ürün Açıklaması": "Et yönlü performansıyla öne çıkan VIGOROSO boğa sperması. Yüksek kas alanı ve yemden yararlanma verileri tescillidir.",
+    "Ürün İçeriği": "Her straw ~20 × 10⁶ motil sperm, Tris-sitrik ortam.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çözme 35 °C su banyosunda 30 sn; pipetin ucuna buğu gelmemelidir.",
+    "Üretici Linki": "https://www.stgen.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1449,
+    "ProductName": "SUNİ TOHUM OCD CHRONICLE-ET",
+    "DisplayProductCode": "VSUNTS185",
+    "Üretici Firma": "ST Genetics",
+    "Ürün Açıklaması": "CHRONICLE-ET boğasından alınan sekslenmemiş dondurulmuş sperma dozu; süt verimi + tip kombinasyonunda üstün genomik indekslere sahiptir.",
+    "Ürün İçeriği": "Sperm hücresi, kriyoprotektan, antibiyotik karışımı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çözdürme-sevk zinciri kırıldığında fertilite önemli ölçüde düşer.",
+    "Üretici Linki": "https://www.stgen.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1450,
+    "ProductName": "SUNİ TOHUM QUAKER HILL COLUMBUS 6V48",
+    "DisplayProductCode": "VSUNTS186",
+    "Üretici Firma": "ST Genetics",
+    "Ürün Açıklaması": "Angus ırkında karkas kalitesi ve doğum kolaylığı özelliklerini birleştiren COLUMBUS 6V48 boğa sperması.",
+    "Ürün İçeriği": "Her straw ~20 milyon sperm; Tris-yumurta sarısı bazlı ortam.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Derin koldan pipet çekilirken sıvı azot sıçratmamaya özen gösterin.",
+    "Üretici Linki": "https://www.stgen.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1451,
+    "ProductName": "SUNİ TOHUM AOT HELIUM-RED-ET (Sexed)",
+    "DisplayProductCode": "VSUNTS169",
+    "Üretici Firma": "STgenetics",
+    "Ürün Açıklaması": "Swingman-Red × Salvatore soy ağacından gelen HELIUM-RED, yüksek GTPI (3059) ve +2,35 PTAT değeriyle kırmızı-beyaz Holstein sürülerinde tip ve verim geliştirmek amacıyla kullanılan sekslenmiş sperma dozudur. İri meme bağları ve negatif hücre sayısı (-2.82 SCS) özellikleriyle mastitis riskini düşürmeye yardımcı olur. Karyotip: RC, A2A2.",
+    "Ürün İçeriği": "≈20×10⁶ motil sperm/straw; kriyoprotektan: tris-yumurta sarısı-gliserol ortamı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çözme 35 °C su banyosunda 40 sn; pipet ucunu kuru tut. Straw yeniden dondurulmaz. Taşıma sırasında sıvı azot seviyesini kontrol et.",
+    "Üretici Linki": "https://www.stgen.com/sire-directory/dairy-bull-usa.aspx?code=200HO11884",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1452,
+    "ProductName": "SUNİ TOHUM SANDY-VALLEY ESTHETIC-ET (Sexed)",
+    "DisplayProductCode": "VSUNTS171",
+    "Üretici Firma": "STgenetics",
+    "Ürün Açıklaması": "DUKE × Rubicon kökenli ESTHETIC-ET, +3160 GTPI ve +1302 NetMerit indeksiyle süt ve üreme verimini birlikte yükseltmek isteyen işletmeler için seçilir. Robot sağım uyumu (Robot Ready) ve +0,9 Temprament skoru ile modern sürülere uygundur.",
+    "Ürün İçeriği": "Yaklaşık 4 % XY ayrılmış dişi sperm; tris-yumurta sarısı tampon.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çözme protokolü 35 °C/45 sn. Çözülmüş sperma 15 dakika içinde kullanılmalıdır.",
+    "Üretici Linki": "https://www.stgen.com/sire-directory/dairy-bull-usa.aspx?code=777HO12046",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1453,
+    "ProductName": "SUNİ TOHUM PROGENESIS SUMMERDAY (Sexed)",
+    "DisplayProductCode": "VSUNTS175",
+    "Üretici Firma": "STgenetics",
+    "Ürün Açıklaması": "SUMMERDAY (DUKE × Rubicon), +3106 GTPI ve +11219 kg süt genomik tahminiyle yüksek üretim hedefleyen işletmelere önerilir. Sağlam tırnak ( +1.10 Rear Leg Set) ve düşük Somatik Hücre Skoru (-2,70) profiline sahiptir.",
+    "Ürün İçeriği": "20 × 10⁶ motil sperm/straw; gliserol %7,2, tris-yumurta sarısı ortamı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Sıvı azotta sürekli -196 °C’de saklanmalı; straw’ı çözdükten sonra 15 dakika içinde inseminasyon yapılmalıdır.",
+    "Üretici Linki": "https://www.stgen.com/sire-directory/dairy-bull-usa.aspx?code=200HO10906",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1454,
+    "ProductName": "SUNİ TOHUM RIVER VALLEY MERCEDES-ET (Sexed)",
+    "DisplayProductCode": "VSUNTS221",
+    "Üretici Firma": "STgenetics",
+    "Ürün Açıklaması": "Jersey ırkında JPI + 164 ve +1,5 PTAT değeriyle dikkat çeken MERCEDES-ET, özellikle sağlam meme yapısı (+0,8 Rear Udder Height) ve yüksek yağ-protein (%) kombine verimiyle öne çıkar. A2A2 beta-kazein.",
+    "Ürün İçeriği": "≈15 × 10⁶ motil dişi sperm/straw; tris-yumurta sarısı ortamı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çözme 32-35 °C banyo/30-45 sn, pipeti azot buharında hazırlayıp servikal katetere aktar.",
+    "Üretici Linki": "https://www.stgen.com/sire-directory/dairy-bull-usa.aspx?code=200JE10062",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1455,
+    "ProductName": "SUNİ TOHUM OCD TONKA-ET",
+    "DisplayProductCode": "VSUNTS227",
+    "Üretici Firma": "STgenetics",
+    "Ürün Açıklaması": "PYRAMID × Pinnacle soylu TONKA-ET, +3042 GTPI ve +1155 NetMerit skoru sunar. Sağım robotuna uygun meme ucu yerleşimi (UDC +2,04) ve doğum kolaylığı (2,1 % CE) ile hekim-yetiştirici dostu.",
+    "Ürün İçeriği": "Standart dondurulmuş sperma, 20 milyon sperm/straw.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Nitrojen seviyesi <5 cm’ye düşmemeli. Hızlı çöz-hızlı uygula prensibi önemli.",
+    "Üretici Linki": "https://www.stgen.com/sire-directory/dairy-bull-usa.aspx?code=777HO12049",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1456,
+    "ProductName": "VITALICAT PASTE 100 ml",
+    "DisplayProductCode": "VITA005",
+    "Üretici Firma": "Bio PetActive (Mar Kimya Tic. Ltd.)",
+    "Ürün Açıklaması": "11 vitamin + 2 aminoasit içeren kedi multivitamin macunu. Lysine ve Methionine’le bağışıklığı, Taurine’le kalp-göz sağlığını destekler; B-vitaminleriyle deri-tüy kalitesini artırır. Uygun palatabilite sayesinde doğrudan yalatılabilir.",
+    "Ürün İçeriği": "L-Lysine, DL-Methionine, Vitamin A, D3, E, K, B1, B2, B6, B12, Niacin, Ca-D-Pantotenat, Biotin, Taurine.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Böbrek diyetinde metiyonin kısıtlı hayvanlarda veteriner kontrolünde kullanılmalıdır.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1457,
+    "ProductName": "VITALIDOG PASTE 100 ml",
+    "DisplayProductCode": "VITA006",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "L-Carnitine, 12 vitamin ve Biotin içeren köpek vitamin macunu; yağ metabolizmasını optimize eder, tüy dökülmesini azaltır, stres dönemlerinde bağışıklığı destekler.",
+    "Ürün İçeriği": "Vitamin A, D3, E, K, B1, B2, B6, B12, Niacin, Ca-D-Pantothenate, L-Carnitine, DL-Methionine, Biotin.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Günlük doz 1 cm macun/5 kg; aşırı A-vitamini retinozise yol açabilir.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1458,
+    "ProductName": "BIO URINAMIN 40 tablet",
+    "DisplayProductCode": "VITA007",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Kedi-köpeklerde idrar yolu sağlığını desteklemek amacıyla kızılcık (PAC) ve C vitamini içeren çiğneme tableti. E. coli’nin mesane epiteline tutunmasını azaltır, pH tamponlar.",
+    "Ürün İçeriği": "Kızılcık meyve tozu, Askorbik asit, Brewer’s yeast, Maltodextrin.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Struvit taşı öyküsünde pH takibi önerilir. Şeker intoleransı olanlarda doz ayarlanmalıdır.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1459,
+    "ProductName": "GLUCOPET 60 tablet / 90 g",
+    "DisplayProductCode": "VITA008",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Glukozamin, Kondroitin sülfat, MSM, Vitamin C-E ve Manganez içeren eklem destek tableti; kıkırdak elastikiyetini artırır, ağrıyı azaltır.",
+    "Ürün İçeriği": "Glukozamin HCl, Kondroitin sülfat, Metil Sülfonil Metan, Vitamin C, Vitamin E, Manganez şelatı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kan sulandırıcı ilaç kullanan hayvanlarda veteriner hekim önerisiyle verilir.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1460,
+    "ProductName": "GLUCOCHOND PLUS GEL 100 ml",
+    "DisplayProductCode": "VITA009",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Boswellia, Tip-II kollajen ve Hyaluronik asit ilaveli glukozamin-kondroitin-MSM jel; kedi-köpeklerde eklem mobilitesini artırır, anti-inflamatuvar destek sağlar.",
+    "Ürün İçeriği": "Glukozamin, Kondroitin, MSM, Boswellia serrata, Tip-II kolajen, Hyaluronik asit, Yucca schidigera, Vitamin C, Vitamin E.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Gastro-intestinal hassasiyeti olan hayvanlarda bölünmüş doz tercih edilmelidir.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1461,
+    "ProductName": "OPTIBIOMEGA SALMON OIL 250 ml",
+    "DisplayProductCode": "VITA010",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Soğuk preslenmiş %100 somon yağı; DHA-EPA kaynağı olarak deri-tüy sağlığını, eklem fonksiyonlarını ve nörolojik gelişimi destekler.",
+    "Ürün İçeriği": "Doğal somon yağı (Omega-3 ≥ 15 %, Omega-6 ≥ 8 %).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Açılmış şişe 3 ay içinde buzdolabında tüketilmelidir. Pankreatit öyküsünde günlük yağ kotaları hesaplanmalıdır.",
+    "Üretici LinkI": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1462,
+    "ProductName": "BIO KITTEN 200 g",
+    "DisplayProductCode": "VITA011",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Yetim veya emzirilemayan yavru kediler için anne sütü ikamesi; yüksek protein (%32), dengeli yağ ve DHA-EPA içerir. Gebe-laktasyon dönemi kedilerde de ek destek sağlar.",
+    "Ürün İçeriği": "Kurutulmuş peynir altı suyu proteini, süt yağları, balık yağı (DHA), vitamin-mineral premiksi.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "15 g toz + 30 ml ılık su (37 °C) oranı ile taze hazırlanmalı; 24 saat içinde tüketilmelidir.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1463,
+    "ProductName": "BIO PUPPY 200 g",
+    "DisplayProductCode": "VITA012",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Yavru köpek ve süt veren anne köpekler için süt tozu: Yüksek enerji, prebiyotik MOS ve L-carnitine’le gelişimi hızlandırır.",
+    "Ürün İçeriği": "Süt proteini konsantresi, bitkisel yağlar, MOS, L-Carnitine, vitamin-mineral premiksi.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Hazırlanan formül buzdolabında 12 saati geçmemeli. Laktoz intoleransı olan ırklarda dikkat.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1464,
+    "ProductName": "BIO DERM CAT 100 tablet",
+    "DisplayProductCode": "VPBİO0065",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Çinko, Biotin ve Omega-3 içeren deri-tüy sağlığı tableti; tüy dökülmesini azaltır, parlaklık arttırır.",
+    "Ürün İçeriği": "Çinko amino asit şelatı, Biotin (2000 µg/tablet), L-Methionine, Balık yağı tozu.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Çinko fazlalığı bakır emilimini düşürebilir; uzun süreli kullanımda veteriner kontrolü önerilir.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1465,
+    "ProductName": "BIO DERM DOG 150 tablet",
+    "DisplayProductCode": "VPBİO0066",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Omega-3-6 (balık yağı + hodan yağı), Çinko ve Biotin kombinasyonu; deri alerjilerinde destek ve yoğun parlak tüy için formüle edilmiştir.",
+    "Ürün İçeriği": "EPA-DHA yağ asitleri, Hodan yağı (% 20 GLA), Çinko metiyonin, Biotin 2000 µg/tab.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kan pıhtılaşma bozukluğu olan köpeklerde yüksek EPA dozuna dikkat.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1466,
+    "ProductName": "BIO VETIMMUNE 90 tablet",
+    "DisplayProductCode": "VPBİO0067",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Beta-glukan ve Echinacea purpurea ile güçlendirilmiş immün sistem destek tableti; enfeksiyonlara karşı doğal savunmayı artırır.",
+    "Ürün İçeriği": "β-1,3/1,6-Glukan, Echinacea ekstraktı (%4 polifenol), Vitamin C-E, Çinko.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Otoimmün hastalığı olan hayvanlarda veteriner kontrolü gerekir.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1467,
+    "ProductName": "BIO DIGEST PET 100 ml",
+    "DisplayProductCode": "VPBİO0068",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1468,
+    "ProductName": "BIO DIGEST PET PLUS 250 ml",
+    "DisplayProductCode": "VPBİO0069",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1469,
+    "ProductName": "BIO HAIRBALL CONTROL 75 g",
+    "DisplayProductCode": "VPBİO0071",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Kabak lifi, Marshmallow kökü ve Psyllium tohumu ile formüle edilmiş kedi tüy yumağı önleyici tablet; yutulan tüylerin bağırsaktan geçişini kolaylaştırır.",
+    "Ürün İçeriği": "Malt ekstraktı, Kabak tozu, Marshmallow kökü, Slippery elm, Psyllium tozu, Balık yağı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kabızlık eğiliminde su tüketimi artırılmalıdır.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1470,
+    "ProductName": "OLIGOVIT PLUS 250 g WSP",
+    "DisplayProductCode": "VAVMD40",
+    "Üretici Firma": "Intermedicavet",
+    "Ürün Açıklaması": "Poultry için yüksek yoğunluklu vitamin-mineral tozu; stres dönemlerinde (aşılama, sıcaklık dalgalanması) yumurta verimi ve kuluçka randımanını artırır.",
+    "Ürün İçeriği": "Vitamin A 20 MIU, D3 5 MIU, E 10 g, K3 3,5 g, B-kompleks, C vitamini 25 g, DL-Methionine 10 g, Lysine HCl 5 g, çinko, bakır, manganez sülfat vs.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "0,25-0,5 g/L içme suyuna; hazırlandıktan sonra 24 saate kadar tüketilmelidir.",
+    "Üretici Linki": "https://intermedica-vet.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1471,
+    "ProductName": "ASCOPET 1000 g ORAL",
+    "DisplayProductCode": "VAVMD30",
+    "Üretici Firma": "Inovet (Belçika)",
+    "Ürün Açıklaması": "Ascophyllum nodosum deniz yosunu bazlı toz; coprophagia (dışkı yeme) davranışını azaltır, sindirimi düzenler, tüy kalitesini artırır.",
+    "Ürün İçeriği": "Ascophyllum nodosum unu (%100 doğal), iyot, mineral iz elementler, sülfatlanmış polisakkaritler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Hipertiroidi şüphesinde iyot yükü nedeniyle dikkat. Günlük doz 1 çay kaşığı/10 kg.",
+    "Üretici Linki": "https://www.inovet.eu",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1472,
+    "ProductName": "PROVET ADE 20 ml",
+    "DisplayProductCode": "VADUV043",
+    "Üretici Firma": "Provet",
+    "Ürün Açıklaması": "Yağda eriyen vitamin A-D3-E kombinasyonu; fertilite bozuklukları, raşitizm ve kas distrofilerinin destek tedavisinde kullanılır.",
+    "Ürün İçeriği": "Retinol propiyonat 100 000 IU/ml, Ergokalsiferol 100 000 IU/ml, α-Tokoferol asetat 30 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kas içi veya SC uygulanır; aşırı A vitamini teratojeniktir. Et çekilme süresi 21 gündür.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1473,
+    "ProductName": "PROVET ADE 250 ml",
+    "DisplayProductCode": "VADUV044",
+    "Üretici Firma": "Provet",
+    "Ürün Açıklaması": "Aynı formülün büyük ambalajı; sürü tedavileri için ekonomik çözüm.",
+    "Ürün İçeriği": "Retinol propiyonat 100 000 IU/ml; Kolekalsiferol 100 000 IU/ml; dl-α-Tokoferol 30 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Gebe hayvanlarda üst limit doz aşılmamalıdır.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1474,
+    "ProductName": "NEURON-B 100 ml Enj.",
+    "DisplayProductCode": "VADUV045",
+    "Üretici Firma": "VitaminVet (UAE)",
+    "Ürün Açıklaması": "Vitamin B1 (tiamin) 100 mg/ml ve Vitamin B6 10 mg/ml içeren steril enjeksiyon; polinörit, anoreksi ve stres durumlarında sinir iletimini destekler.",
+    "Ürün İçeriği": "Tiamin HCl 100 mg/ml, Piridoksin HCl 10 mg/ml, su, benzil alkol.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "IV verilmemeli; IM enjeksiyon sonrası hafif ödem görülebilir.",
+    "Üretici Linki": "https://vitaminvet.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1475,
+    "ProductName": "ADEMİN NEO 100 ml Oral",
+    "DisplayProductCode": "VADUV050",
+    "Üretici Firma": "Ceva Animal Health",
+    "Ürün Açıklaması": "A-D-E vitamini içeren oral emülsiyon; kuzu-buzağı büyüme geriliğinde ve stres dönemlerinde kullanılır.",
+    "Ürün İçeriği": "Vitamin A 100 000 IU/ml, Vitamin D3 20 000 IU/ml, Vitamin E 20 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Şurup formu yem/suya karıştırılır; aşırı doz hipervitaminoz A/D riskine sahiptir.",
+    "Üretici Linki": "https://www.ceva.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1476,
+    "ProductName": "BAKOSEL GEL 100 ml Oral",
+    "DisplayProductCode": "VADUV051",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1477,
+    "ProductName": "VITALINJECT ADE 100 ml Enj.",
+    "DisplayProductCode": "VADUV052",
+    "Üretici Firma": "Neogen",
+    "Ürün Açıklaması": "Steril, su-emülsifiye vitamin E (300 IU/ml), A (100 000 IU/ml) ve D3 (10 000 IU/ml) çözeltisi; süt ve et sığırcılığında antioksidan ve üreme desteği sağlar.",
+    "Ürün İçeriği": "Vitamin E (d-α-tokoferol), Vitamin A propiyonat, Vitamin D3, benzil alkol (%2), emülsifiyanlar.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "IM veya SC uygulanır; enjeksiyon bölgesinde geçici şişlik yapabilir.",
+    "Üretici Linki": "https://www.neogen.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1478,
+    "ProductName": "COLISTINE 4800 WSP 100 g",
+    "DisplayProductCode": "VADUT57",
+    "Üretici Firma": "DutchFarm / DufaSept",
+    "Ürün Açıklaması": "Suya katılan kolistin sülfat (4 800 000 IU/g) tozu; buzağı, domuz ve kanatlılarda E. coli ve Salmonella kaynaklı enteritlerin tedavisinde etkilidir.",
+    "Ürün İçeriği": "Kolistin sülfat 4,8 MIU/g; laktoz taşıyıcı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Meat çekilme süresi 1 gün, yumurta 0 gün. İnsanlarda polimiksin alerjisi varsa temastan kaçınılmalıdır.",
+    "Üretici Linki": "https://www.dufafeed.com",
+    "Prospektüs": "https://www.dufasept.com/wp-content/uploads/2017/03/Colistine-4800-wsp.pdf"
+  },
+  {
+    "ProductId": 1479,
+    "ProductName": "DUFAMOX G 150/40 100 ml Enj.",
+    "DisplayProductCode": "VALIV093",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "Amoksisilin (150 mg/ml) + Gentamisin (40 mg/ml) süspansiyonu; solunum, GİS ve mastitis vakalarında geniş spektrumlu tedavi sunar.",
+    "Ürün İçeriği": "Amoksisilin trihidrat 150 mg/ml, Gentamisin sülfat 40 mg/ml, suspenyan yağ bazlı taşıyıcı.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "IM uygulanır; et çekilme 30 gün, süt 2 gün. Böbrek yetmezliğinde dikkat.",
+    "Üretici LinkI": "https://www.dutchfarmint.com",
+    "Prospektüs": "https://www.dufafeed.com/wp-content/uploads/2017/03/DUFAMOX-G-150-40-INJ-1-1.pdf"
+  },
+  {
+    "ProductId": 1480,
+    "ProductName": "L-SPEC 5/10 100 ml Enj.",
+    "DisplayProductCode": "VALIV094",
+    "Üretici Firma": "Intermedicavet",
+    "Ürün Açıklaması": "Lincomycin 5 g + Spectinomycin 10 g/100 ml kombinasyonu; kanatlılarda CRD (Mycoplasma gallisepticum) ve E. coli enfeksiyonlarının enjeksiyonla tedavisinde kullanılır.",
+    "Ürün İçeriği": "Lincomycin HCl 5 %, Spectinomycin sülfat 10 %, distile su.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "IM doz 0,2 ml/kg. Et çekilme 21 gün; yumurta için ruhsatlı değildir.",
+    "Üretici LinkI": "https://intermedica-vet.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1496,
+    "ProductName": "Silycumin Milk Thistle & Turmeric Extract 90tb",
+    "DisplayProductCode": "VPBİO0036",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Karaciğer detoksu için silimarin (devedikeni) + kurkumin tableti\n- Antioksidan, anti-inflamatuar destek",
+    "Ürün İçeriği": "Milk thistle ekstresi (silymarin), turmeric kökü ekstresi (kurkumin), E vitamini",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Antikoagülan kullanan hayvanlarda dikkat"
+  },
+  {
+    "ProductId": 1497,
+    "ProductName": "Bio Geraniomint Spray 100ml",
+    "DisplayProductCode": "VPBİO0037",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Bitkisel insekt-repellant: geraniol + nane + karanfil yağı\n- Kaşıntıyı azaltır, mantar & bakteri üremesini önler",
+    "Ürün İçeriği": "Geraniol, clove oil, peppermint oil, sodium methyl …",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Gözle temastan kaçının; 12 haftalıktan küçük yavrularda kullanmayın"
+  },
+  {
+    "ProductId": 1498,
+    "ProductName": "Biodent Hexidine 50ml",
+    "DisplayProductCode": "VPBİO0038",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Klorheksidin glukonat içerikli oral sprey; plak oluşumunu azaltır, nefes tazeler",
+    "Ürün İçeriği": "Chlorhexidine gluconate %0,12 + nane aroması",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Yutulabilir formül; kedi-köpeklerde güvenli doz"
+  },
+  {
+    "ProductId": 1499,
+    "ProductName": "Biodent Hexidine 250ml",
+    "DisplayProductCode": "VPBİO0039",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Aynı formülün klinik/çoklu evcil hayvan kullanımına uygun 250 ml boyu",
+    "Ürün İçeriği": "Chlorhexidine gluconate %0,12",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1500,
+    "ProductName": "Bio Eyes 50ml",
+    "DisplayProductCode": "VPBİO0040",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "- Steril borik asit + hiyaluronik asit göz temizleme solüsyonu; irritan akıntıları giderir",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "- Kornea ülseri şüphesi varsa veteriner hekime danışın"
+  },
+  {
+    "ProductId": 1501,
+    "ProductName": "Bio Otic Ear Cleaner 100 ml",
+    "DisplayProductCode": "VPBİO0041",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Kediler ve köpekler için pH-dengeli kulak temizleme solüsyonu; fazla kiri ve serumen birikimini çözer, kötü kokuyu önler.\nÜretici bağlantısı: https://biopetactive.com (ürün sayfası bulunamadı, genel site)",
+    "Ürün İçeriği": "Laktik asit, hekzidinat, witch-hazel ekstraktı, gliserin.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Timpanik membran perforasyonunda kullanmayın; oda sıcaklığında saklayın."
+  },
+  {
+    "ProductId": 1502,
+    "ProductName": "Knot Away Detangler & Conditioner 250ml",
+    "DisplayProductCode": "VPBİO0042",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Düğümlü tüyleri açan silikon-gliserin sprey; UV korumalı.",
+    "Ürün İçeriği": "Silikon oil, pantenol, ipek proteini.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Göz-burun temasından kaçının.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1503,
+    "ProductName": "Dermahexidine Shampoo 250ml",
+    "DisplayProductCode": "VPBİO0043",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Klorheksidin (%2) içeren antiseptik şampuan; bakteriyel/mantar dermatitlerde destek.",
+    "Ürün İçeriği": "Chlorhexidine gluconate 20 mg/ml, gliserin, hindistancevizi bazlı sürfaktan.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Köpüğü 5 dk deride tutup durulayın; açık yaraya sürmeyin.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1504,
+    "ProductName": "Natural Honey Dog Shampoo 400ml",
+    "DisplayProductCode": "VPBİO0044",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Bal ekstraktlı, SLS-siz şampuan; parlaklık ve nem sağlar.",
+    "Ürün İçeriği": "Honey extract, hindistancevizi betain, gliserin.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1505,
+    "ProductName": "Aloe Vera Dog Shampoo 5 L",
+    "DisplayProductCode": "VPBİO0045",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Profesyonel boy aloe veralı konsantre şampuan; hassas ciltler için.",
+    "Ürün İçeriği": "Aloe vera jeli, panthenol, ipek proteini.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "1:5 oranında seyrelterek kullanın.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1506,
+    "ProductName": "Tea Tree Shampoo for Dogs 5000ml",
+    "DisplayProductCode": "VPBİO0046",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Çay ağacı yağı (%1) içeren antiseptik şampuan; kepek ve kötü kokuları azaltır, tüy parlaklığını artırır.",
+    "Ürün İçeriği": "Tea tree oil, panthenol, gliserin, hindistancevizi türevli yüzey aktifler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kedilerde kullanmayın; gözle temasında bol suyla durulayın.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1507,
+    "ProductName": "Diamond White Shampoo 250ml",
+    "DisplayProductCode": "VPBİO0047",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Beyaz/açık renk tüylere özel optik parlatıcılı şampuan; sararmayı nötralize eder.",
+    "Ürün İçeriği": "Optik brightener, ipek proteini, lavanta esansı, nazik sürfaktanlar.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Haftada ikiden fazla kullanmayın; gözden uzak tutun.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1508,
+    "ProductName": "Bio Magic Dry Shampoo Powder (Dogs) 150gr",
+    "DisplayProductCode": "VPBİO0048",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Su gerektirmeyen kuru pudra; yağ ve kiri emerek tüyü ferahlatır.",
+    "Ürün İçeriği": "Doğal kil mineralleri, sodyum bikarbonat, aloe vera, parfüm.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Solumadan kaçının; uygulama sonrası tüyü fırçalayın.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1509,
+    "ProductName": "Bio Magic Dry Shampoo Powder (Cats) 150 g",
+    "DisplayProductCode": "VPBİO0049",
+    "Üretici Firma": "Bioline",
+    "Ürün Açıklaması": "Su kullanmadan kedi tüyündeki yağı ve kokuyu gideren doğal toz kuru şampuan. Pudra yapısı fazla yağı absorbe ederken tüyleri hacimli ve parlak bırakır.",
+    "Ürün İçeriği": "Mısır nişastası, sodyum bikarbonat, aloe vera özü, hafif parfüm.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Toz partiküllerinin inhalasyonundan kaçınmak için uygulama sonrası hayvanı hafifçe fırçalayın.",
+    "Üretici Linki": "https://www.biolinepet.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1510,
+    "ProductName": "Aloe Vera Dry Washing Foam Shampoo 200ml",
+    "DisplayProductCode": "VPBİO0050",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Durulama gerektirmeyen aloe veralı köpük şampuan; hassas deriyi yatıştırır.",
+    "Ürün İçeriği": "Aloe vera jeli, provitamin B5, hafif yüzey aktifler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Uygulama sonrası 5-10 dk yalanmayı sınırlayın.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1511,
+    "ProductName": "Natural Honey Dry Washing Foam Shampoo 200ml",
+    "DisplayProductCode": "VPBİO0051",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Bal özü ve E vitamini içeren kuru köpük; antibakteriyel ve parlaklık sağlar.",
+    "Ürün İçeriği": "Honey extract, vitamin E, gliserin, yüzey aktifler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Bal alerjisi olan hayvanlarda kullanmayın.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1537,
+    "ProductName": "NexGard Spectra XS 2–3,5 kg (3 tbl)",
+    "DisplayProductCode": "VBOEING088",
+    "Üretici Firma": "Boehringer Ingelheim",
+    "Ürün Açıklaması": "Afoxolaner + milbemisin oksim içeren çiğneme tableti; pire-kene öldürür, kalp kurdu ve GIS nematodlarına karşı aylık koruma.\nÜretici bağlantısı: https://www.boehringer-ingelheim.com/animal-health/products/nexgard-spectra",
+    "Ürün İçeriği": "Afoxolaner 9,4 mg, milbemisin oksim 1,9 mg/tablet.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Collie ırkı toleranslıdır; 8 haftalıktan küçük yavrularda kullanmayın."
+  },
+  {
+    "ProductId": 1590,
+    "ProductName": "ANIMAR 50 ML",
+    "DisplayProductCode": "VGÜN116",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Trimethoprim/sulfadoksin enjeksiyonu; 50 ml ambalaj seçeneği.",
+    "Ürün İçeriği": "Sulfadoksin 200 mg/ml, Trimethoprim 40 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1591,
+    "ProductName": "CEVAXEL RTU 50ML FLAKON",
+    "DisplayProductCode": "VGÜN117",
+    "Üretici Firma": "Ceva Santé Animale",
+    "Ürün Açıklaması": "Kullanıma hazır ceftiofur enjeksiyonu; mastitis ve solunum yolu enfeksiyonlarında geniş spektrumlu üçüncü kuşak sefalosporin.",
+    "Ürün İçeriği": "Ceftiofur hidroklorür 50 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Beta-laktam alerjisi olan kişiler temastan kaçınmalıdır; süt çekim süresi 0 saat, et çekim süresi 3 gün."
+  },
+  {
+    "ProductId": 1608,
+    "ProductName": "Paw & Nose Care Balm",
+    "DisplayProductCode": "VPBİO0057",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Shea yağı, hindistancevizi yağı ve balmumu karışımı; çatlak patilerde bariyer onarımı ve nemlendirme sağlar.\nÜretici bağlantısı: https://biopetactive.com",
+    "Ürün İçeriği": "Butyrospermum parkii butter, Cocos nucifera oil, balmumu.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kaygan zeminlerde patinin kurumasını bekleyin; yutulabilir, toksik değildir."
+  },
+  {
+    "ProductId": 1635,
+    "ProductName": "NEPTRA OTIC SOL. 10×1 ml",
+    "DisplayProductCode": "VELAN052",
+    "Üretici Firma": "Elanco",
+    "Ürün Açıklaması": "Tek dozluk kulak damlası; köpeklerde otitis externa’nın bakteriyel (Staphylococcus pseudintermedius) ve fungal (Malassezia pachydermatis) etkenlerinin tedavisi için formüle edilmiştir. Tek uygulamada 30 gün etkinlik sağlar.",
+    "Ürün İçeriği": "Florfenikol 16 mg/ml, Terbinafin 14 mg/ml, Mometazon furoat 2,2 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Perforé kulak zarı olan hayvanlarda kullanılmamalıdır. Sistemik kortikosteroid alan köpeklerde ek supresyon riski.",
+    "Üretici Linki": "https://www.elanco.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1636,
+    "ProductName": "CANIVET Leishmania Canis Ab Test (10’lu)",
+    "DisplayProductCode": "VADİA029",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1652,
+    "ProductName": "OXY-T DERİ SPREYİ 200ML",
+    "DisplayProductCode": "VALIV081",
+    "Üretici Firma": "Alivira",
+    "Ürün Açıklaması": "Topikal oksitetrasiklin spreyi; deri, meme, tırnak enfeksiyonları ve yaraların lokal tedavisi için antibakteriyel etki sağlar.",
+    "Ürün İçeriği": "Oksitetrasiklin HCl 4.5 g/200 ml (≈22.5 mg/ml).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Sadece haricen uygulanır; lezyon bölgesi temizlenmelidir."
+  },
+  {
+    "ProductId": 1653,
+    "ProductName": "SEFAKIM 100 ml enj. süsp.",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Seftiofur hidroklorid içeren steril süspansiyon; büyükbaş-küçükbaş solunum yolu enfeksiyonlarında ilk tercih sefalosporindir.",
+    "Ürün İçeriği": "Ceftiofur HCl eşleniği 50 mg/ml seftiofur baza eşdeğer.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt ineğinde kesim süresi 4 gün; süt çekimi gerekmez. Alerjen riski: Koruyucu eldiven kullanın."
+  },
+  {
+    "ProductId": 1655,
+    "ProductName": "ANTISTAMIN-C Inj. 20 ml",
+    "DisplayProductCode": "VALIV084",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Akut alerjik reaksiyonlar, anafilaksi ve ilaç reaksiyonlarında semptomatik tedavi için antihistaminik (klorfeniramin) ve C vitamini kombinasyonu.",
+    "Ürün İçeriği": "Klorfeniramin maleat 10 mg/ml, Askorbik asit 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Sedasyon yapabilir; süt ineklerinde 48 saat et çekilme süresi önerilir. İV enjeksiyonda hipotansiyon riski.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1658,
+    "ProductName": "SELENE 5 L",
+    "DisplayProductCode": "VACHEM009",
+    "Üretici Firma": "Vachem",
+    "Ürün Açıklaması": "Selenyum (se‐yum) ve vitamin E içeren sıvı takviye; kas distrofisi ve antikor yanıtını destekler. Yem veya suya katılır.\nÜretici bağlantısı: https://www.vachem.com",
+    "Ürün İçeriği": "Sodyum selenit 1 mg / ml, Vitamin E 50 mg / ml, gliserol baz.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Aşırı doz toksiktir; günlük toplam Se alımını 0,3 mg/kg DM’nin altında tutun."
+  },
+  {
+    "ProductId": 1687,
+    "ProductName": "TENALINE LA 50 ml",
+    "DisplayProductCode": "VGÜN120",
+    "Üretici Firma": "Hipra",
+    "Ürün Açıklaması": "Uzun etkili tetrasiklin enjeksiyonu (oksitetrasiklin dihidrat 200 mg/ml). Kas içi uygulamada 4-5 gün bakteriyostatik seviye sağlar.",
+    "Ürün İçeriği": "Oksitetrasiklin dihidrat 200 mg/ml, magnezyum oksit, polisorbat.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Et çekilme süresi 28 gün. Kas içi aynı noktaya 10 ml’den fazla uygulanmamalıdır.",
+    "Üretici Linki": "https://www.hipra.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1721,
+    "ProductName": "OTC-SPRAY 200ml",
+    "DisplayProductCode": "VALIV083",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Oksitetrasiklin + gentian violet içeren mor renkli yara spreyi; ayak çürüklüğü, cilt yaraları ve operasyon bölgelerinde lokal antibakteriyel koruma sağlar.",
+    "Ürün İçeriği": "Oksitetrasiklin HCl 2 g + Gentian violet 0.5 g / 200 ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Harici kullanım; solvent buharını solumayın."
+  },
+  {
+    "ProductId": 1742,
+    "ProductName": "Boynuz Yakma Aleti (Dehorner Cows)",
+    "DisplayProductCode": "AVMD0015",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1752,
+    "ProductName": "Plastik Meme Sondası 7 cm",
+    "DisplayProductCode": "AVMD0012",
+    "Üretici Firma": "IMV Technologies",
+    "Ürün Açıklaması": "Dezenfekte edilebilir, tek-yönlü valfli, fleksibl plastik meme kanülü; süt stazı veya mastitis drenajında kullanılır.\nÜretici bağlantısı: https://www.imv-technologies.com",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Steril kullanın; sondanın tamamı kanal içine sokulmamalı, mukozaya zarar vermemeli."
+  },
+  {
+    "ProductId": 1760,
+    "ProductName": "CTC OBLETS 1 adet",
+    "DisplayProductCode": "VALIV084",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": ""
+  },
+  {
+    "ProductId": 1767,
+    "ProductName": "XYLAZİNE 2% 25ml enj.",
+    "DisplayProductCode": "VADUT24",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Sedasyon ve kas gevşetme amaçlı %2 xylazine çözeltisi.",
+    "Ürün İçeriği": "Xylazine hidroklorür %2.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kalp yetmezliği, solunum yolu enfeksiyonu ve geç gebelikte kullanımdan kaçınılmalıdır."
+  },
+  {
+    "ProductId": 1771,
+    "ProductName": "Buzağı Emziği (Silikon)",
+    "DisplayProductCode": "AVMD0205",
+    "Üretici Firma": "Milk Bar®",
+    "Ürün Açıklaması": "Slow-flow valfli silikon emzik; buzağıların doğal emme ritmine uygun tasarım, aspire riskini düşürür.\nÜretici bağlantısı: https://www.milkbar.info",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yarıklar yırtıldığında değiştirin; 85 °C su / asidik deterjanla yıkayın."
+  },
+  {
+    "ProductId": 1772,
+    "ProductName": "GENTA %10 100ml enj.",
+    "DisplayProductCode": "VALIV085",
+    "Üretici Firma": "Interchemie",
+    "Ürün Açıklaması": "Gentamisin %10 çözeltisi; Gram-negatif bakterilere bağlı GİS ve solunum yolu enfeksiyonlarının tedavisinde kullanılır.",
+    "Ürün İçeriği": "Gentamisin sülfat 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Nefrotoksisite ve ototoksisite riski nedeniyle doz aşımından kaçının."
+  },
+  {
+    "ProductId": 1773,
+    "ProductName": "OXYTETRA %20 LA 100ml enj.",
+    "DisplayProductCode": "VALIV086",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Uzun etkili %20 oksitetrasiklin enjeksiyonu; geniş spektrumlu antibakteriyel etki sağlar.",
+    "Ürün İçeriği": "Oksitetrasiklin dihidrat 200 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Kas içi enjeksiyon sonrası lokal hassasiyet oluşabilir."
+  },
+  {
+    "ProductId": 1798,
+    "ProductName": "OXYVETO %50 1 KG.ORAL",
+    "DisplayProductCode": "VALIV087",
+    "Üretici Firma": "Interchemie",
+    "Ürün Açıklaması": "Oksitetrasiklin %54 (baz olarak %50) toz premiks; kanatlı, buzağı ve domuz yavrularında solunum ve enterik enfeksiyonlarda içme suyuna katılır.",
+    "Ürün İçeriği": "Oksitetrasiklin HCl 0.54 g/g.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yumurta için arınma süresi 0 gün."
+  },
+  {
+    "ProductId": 1812,
+    "ProductName": "KETAMİN 10% 25ml enj.",
+    "DisplayProductCode": "VADUT14",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Genel anestezi indüksiyonu veya tek başına dissosiyatif anestezi için kullanılan ketamin çözeltisi.",
+    "Ürün İçeriği": "Ketamin hidroklorür 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yüksek kan basıncı veya epilepsi öyküsü olan hayvanlarda dikkatli olun."
+  },
+  {
+    "ProductId": 1823,
+    "ProductName": "KANAPEN-P Imm 10gr LC",
+    "DisplayProductCode": "VALIV088",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "İntramamary enjektör; penisilin + kanamisin kombinasyonu mastitis etkenlerine karşı geniş spektrum sunar.",
+    "Ürün İçeriği": "Prokain penisilin + Kanamisin sülfat (prospektüs değerleri).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt çekim süresi 96 saat; ilk sütler atılmalıdır."
+  },
+  {
+    "ProductId": 1824,
+    "ProductName": "CLOXA-BEN 10gr DRY COW",
+    "DisplayProductCode": "VALIV089",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "Kuru dönemde kullanılan intramammary pomat; kloksasilin benzatin içerir ve mastitis riskini azaltır.",
+    "Ürün İçeriği": "Kloksasilin benzatin 600 mg/syringe (örnek).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Süt çekim süresi 28 gün."
+  },
+  {
+    "ProductId": 1835,
+    "ProductName": "TYLO-DOX Plus 100gr ORAL (W.S.P)",
+    "DisplayProductCode": "VALIV090",
+    "Üretici Firma": "DufaMix",
+    "Ürün Açıklaması": "Tylosin + doksisiklin sinerjik kombinasyonu; kanatlı ve ruminantlarda solunum ve GİS enfeksiyonlarını kontrol eder.",
+    "Ürün İçeriği": "Tylosin tartrat 100 mg/g, Doksisiklin hyklat 100 mg/g (örnek).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "İyonofor içeren yemlerle karıştırmayın."
+  },
+  {
+    "ProductId": 1838,
+    "ProductName": "DUFAFLOXACİN 10% 1000ml ORAL",
+    "DisplayProductCode": "VALIV091",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "Dufafloxacin %10 oral solüsyon; florokinolon sınıfı, kanatlı ve domuzlarda sistemik bakteriyel enfeksiyonların tedavisinde kullanılır.",
+    "Ürün İçeriği": "Dufafloxacin 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Florokinolon direnci riskine karşı sadece kültür-antibiyogram sonrası kullanın."
+  },
+  {
+    "ProductId": 1841,
+    "ProductName": "ASCOPET 500gr ORAL",
+    "DisplayProductCode": "VAVMD29",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1842,
+    "ProductName": "Metal Meme Sondası",
+    "DisplayProductCode": "AVMD0011",
+    "Üretici Firma": "IMV Technologies",
+    "Ürün Açıklaması": "Paslanmaz çelik, Luer-lock uyumlu meme kanülü; kronik kanal striktürlerinde geçici drenaj sağlar.\nÜretici bağlantısı: https://www.imv-technologies.com",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Her kullanımdan önce otoklav; tekrar kullanımlarda çapak oluşumunu kontrol edin."
+  },
+  {
+    "ProductId": 1843,
+    "ProductName": "İğne Ucu 18 G × 1,5'' Luer Lock",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Paslanmaz çelik, silikonize luer-lock veteriner iğne; viskoz preparatların güvenli uygulaması için geniş lümen.",
+    "Ürün İçeriği": "AISI 304 cerrahi çelik, polipropilen hub.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Tek kullanımlıktır; yeniden sterilizasyon mikro çatlaklarda pirojen riski doğurur."
+  },
+  {
+    "ProductId": 1857,
+    "ProductName": "DUFAFLOXACİN 10% 100ml enj.",
+    "DisplayProductCode": "VALIV092",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "Parenteral %10 dufafloxacin enjeksiyonu; solunum ve GİS enfeksiyonlarında hızlı bakterisidal etki sunar.",
+    "Ürün İçeriği": "Dufafloxacin 100 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "18 aydan küçük buzağılarda kıkırdak toksisitesi riski mevcuttur."
+  },
+  {
+    "ProductId": 1862,
+    "ProductName": "DUFAMOX G 150/40 100ml enj.",
+    "DisplayProductCode": "VALIV093",
+    "Üretici Firma": "Dutch Farm International",
+    "Ürün Açıklaması": "Amoksisilin + gentamisin sinerjik yağ süspansiyonu; karma enfeksiyonların tedavisi için uzun etkili formül.",
+    "Ürün İçeriği": "Amoksisilin trihidrat 150 mg/ml, Gentamisin sülfat 40 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Beta-laktam veya aminoglikozid alerjisi olan kişiler temastan kaçınmalıdır."
+  },
+  {
+    "ProductId": 1865,
+    "ProductName": "L SPEC 5/10 100ml enj.",
+    "DisplayProductCode": "VALIV094",
+    "Üretici Firma": "Intermedica Vet",
+    "Ürün Açıklaması": "Lincomycin + spectinomycin kombinasyonu; kanatlılarda kronik solunum hastalığı ve mycoplasma enfeksiyonlarının tedavisinde kullanılır.",
+    "Ürün İçeriği": "Lincomycin 50 mg/ml, Spectinomycin 100 mg/ml (örnek).",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yumurtacı tavuklarda kullanılmamalıdır."
+  },
+  {
+    "ProductId": 1866,
+    "ProductName": "COLİVETO-4800s 1kg ORAL (W.S.P)",
+    "DisplayProductCode": "VALIV095",
+    "Üretici Firma": "Bimeda",
+    "Ürün Açıklaması": "Kolistin sülfat 4 800 000 IU/g toz; kanatlı ve domuzlarda E. coli enfeksiyonlarının tedavisi ve ödem hastalığının önlenmesinde kullanılır.",
+    "Ürün İçeriği": "Kolistin sülfat 4 800 000 IU/g.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Sadece su veya yem yoluyla verilir; böbrek yetmezliğinde dikkat."
+  },
+  {
+    "ProductId": 1923,
+    "ProductName": "SPECTAM Jel 100 ml",
+    "Üretici Firma": "Ceva",
+    "Ürün Açıklaması": "Domuz yavrularında nekrotik enterit (Clostridium) ve ishal kontrolü için oral uygulanan spektramisin sülfat jel formu.",
+    "Ürün İçeriği": "Spectinomycin sulfate 50 mg/ml, taşıyıcı jelleştiriciler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Yalnızca oral; parenteral kullanmayın. Kullanımdan önce homojenize edin; açılmış flakon 28 gün içinde tüketilmelidir."
+  },
+  {
+    "ProductId": 1932,
+    "ProductName": "OLİGOVİT PLUS 100 g WSP",
+    "DisplayProductCode": "VAVMD39",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "Kanatlılarda büyüme geriliği, stres ve düşük yumurta veriminde kullanılan suda çözünebilen multivitamin-mineral preparatıdır.",
+    "Ürün İçeriği": "A-D3-E-K3-B kompleks vitaminler, çinko, manganez, selenyum, elektrolitler.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "İçme suyuna eklendikten sonra 24 saat içinde tüketilmelidir. Aşırı dozda hipervitaminoz riskine dikkat.",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 1933,
+    "ProductName": "DUFAMOX LA %15 100 ml enj.",
+    "Üretici Firma": "Düfa Veteriner İlaç",
+    "Ürün Açıklaması": "Uzun etkili amoksisilin süspansiyonu; tek dozla 48 saatten uzun antibakteriyel etki.",
+    "Ürün İçeriği": "Amoxicillin trihydrate 150 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Enjeksiyon öncesi iyice çalkalayın. Kesim süresi 28 gün; süt ineğinde kullanmayın."
+  },
+  {
+    "ProductId": 1934,
+    "ProductName": "TYLOSİN %20 100ml enj.",
+    "DisplayProductCode": "VALIV098",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "%20 (200 mg/ml) tylosin bazlı makrolid enjeksiyonu; sığır, koyun ve domuzlarda solunum yolu enfeksiyonlarında etkilidir.",
+    "Ürün İçeriği": "Tylosin tartrat 200 mg/ml.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Enjeksiyon bölgesinde ağrı ve ödem yapabilir; süt çekim süresi 3 gün."
+  },
+  {
+    "ProductId": 1935,
+    "ProductName": "AMOXYVETO %50 1kg ORAL (W.S.P)",
+    "DisplayProductCode": "VALIV099",
+    "Üretici Firma": "Bimeda",
+    "Ürün Açıklaması": "Suda çözünebilir amoksisilin tozu; yüksek biyoyararlanım ile geniş spektrumlu bakterisidal etki sağlar.",
+    "Ürün İçeriği": "Amoksisilin trihidrat 500 mg/g.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Arınma süresi kanatlı eti için 5 gündür."
+  },
+  {
+    "ProductId": 1974,
+    "ProductName": "IO-SHIELD 10 kg",
+    "DisplayProductCode": "VSHECO07",
+    "Üretici Firma": "GEA Farm Technologies",
+    "Ürün Açıklaması": "Yüksek viskoziteli, iyot bazlı meme başı dezenfektanı. Film tabaka oluşturarak uzun süreli bariyer ve nemlendirici gliserin desteği sağlar.",
+    "Ürün İçeriği": "Serbest iyot 3 000 ppm, gliserin, sorbitol, polimer jel matrisi.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Uygulama sonrası süt kalıntısı görülürse durulama yapılmalıdır. Açık yaralarda irritasyon olabilir.",
+    "Üretici Linki": "https://www.gea.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 2857,
+    "ProductName": "Spirulina (Kuş Vitamini) 100g",
+    "DisplayProductCode": "VPBİO0070",
+    "Üretici Firma": "Bio PetActive",
+    "Ürün Açıklaması": "Spirulina platensis tozu; yüksek protein (%60) ve β-karoten kaynağı.",
+    "Ürün İçeriği": "Spirulina platensis ≥ 98 %, silika ≤ 2 %.",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "Günde yem karışımının %0,5’ini aşmayın.",
+    "Üretici Linki": "https://biopetactive.com",
+    "Prospektüs": ""
+  },
+  {
+    "ProductId": 2859,
+    "ProductName": "Yucky-B Chew Deterrent",
+    "DisplayProductCode": "VPBİO0072",
+    "Üretici Firma": "",
+    "Ürün Açıklaması": "",
+    "Ürün İçeriği": "",
+    "Dikkat edilmesi gerekenler ya da uyarılar": "",
+    "Üretici Linki": "",
+    "Prospektüs": ""
+  }
+]

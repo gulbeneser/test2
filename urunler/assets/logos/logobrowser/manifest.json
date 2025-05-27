@@ -1,0 +1,55 @@
+{
+  "name": "Serakıncı Dermokozmetik Ürünleri",
+  "short_name": "Serakıncı",
+  "description": "Serakıncı'da dermokozmetik ürünleri. En sevdiğiniz markaların ürün detaylarını inceleyin.",
+  "lang": "tr-TR",
+  "start_url": "/urunler/dermokozmetik/",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#50C8C6",
+  "icons": [
+    {
+      "src": "/urunler/assets/logos/logobrowser/android-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/urunler/assets/logos/logobrowser/android-icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0"
+    },
+    {
+      "src": "/urunler/assets/logos/logobrowser/android-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0"
+    },
+    {
+      "src": "/urunler/assets/logos/logobrowser/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "any" 
+    },
+    {
+      "src": "/urunler/assets/logos/logobrowser/android-icon-192x192.png", 
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable" 
+    }
+    // İdeal olarak 512x512 bir ikon da ekleyebilirsiniz. 
+    // Eğer varsa, aşağıdaki bloğu aktifleştirin ve dosya adını güncelleyin:
+    /*
+    {
+      "src": "/urunler/assets/logos/logobrowser/android-icon-512x512.png", // Bu dosyayı oluşturmanız gerekir
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+    */
+  ],
+  "scope": "/urunler/",
+  "orientation": "portrait-primary"
+}

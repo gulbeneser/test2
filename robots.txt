@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /admin/ # Örnek: Yönetici paneli gibi taranmasını istemediğiniz dizinler
+
+Sitemap: https://www.serakinci.com/sitemap.xml

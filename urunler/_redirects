@@ -1,0 +1,8 @@
+# SEO Dostu URL yönlendirmeleri
+
+# Hayvan Sağlığı yönlendirmeleri 
+/urunler/hayvan-sagligi/kategori/* /urunler/hayvan-sagligi/kategori/index.html 200
+/urunler/hayvan-sagligi/product/* /urunler/hayvan-sagligi/product/template.html 200
+
+# Dermokozmetik yönlendirmeleri
+/urunler/dermokozmetik/product/* /urunler/dermokozmetik/product/template.html 200

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Detayı | Hayvan Sağlığı | Serakıncı</title>
+  <meta name="description" content="Serakıncı'da hayvan sağlığı ürünleri. Ürünler Serakıncı güvencesiyle sizinle buluşuyor.">
+  <link rel="canonical" href="https://www.serakinci.com/urunler/hayvan-sagligi/product">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --background: #f9fafb;
+      --card-bg: #ffffff;
+      --text-dark: #111827;
+      --text-medium: #4b5563;
+      --text-light: #6b7280;
+      --border: #e5e7eb;
+      --radius: 0.5rem;
+      --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+    body { background-color: var(--background); font-family: 'Inter', sans-serif; color: var(--text-dark); margin: 0; padding: 0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+    .product-detail { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 1.5rem; }
+    @media (min-width: 768px) { .product-detail { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+    .product-gallery { position: relative; background-color: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .product-main-image-container { position: relative; padding-top: 100%; overflow: hidden; }
+    .product-main-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; }
+    .product-info { background-color: white; padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow); }
+    .product-detail-title { font-size: 1.5rem; font-weight: 600; color: var(--text-dark); margin-top: 0; margin-bottom: 1rem; }
+    .product-meta-item { display: flex; margin-bottom: 0.5rem; }
+    .product-meta-label { font-weight: 500; width: 100px; color: var(--text-medium); }
+    .product-meta-value { color: var(--text-dark); }
+    .product-description { color: var(--text-medium); line-height: 1.6; font-size: 0.9375rem; }
+    .breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; font-size: 0.875rem; margin-bottom: 1.5rem; margin-top: 1rem; }
+    .breadcrumb-link { color: var(--text-medium); text-decoration: none; }
+    .breadcrumb-separator { margin: 0 0.5rem; color: var(--text-light); }
+    .breadcrumb-current { color: var(--text-dark); font-weight: 500; }
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      color: var(--text-medium);
+      text-decoration: none;
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+      transition: color 0.3s;
+    }
+    .back-button:hover { color: var(--primary); }
+    .back-icon { margin-right: 0.25rem; }
+    .image-placeholder { display: flex; align-items: center; justify-content: center; height: 100%; background-color: #f3f4f6; color: var(--text-medium); flex-direction: column; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .brand-logo-container { display: flex; justify-content: flex-end; margin-bottom: 1rem; }
+    .brand-logo { max-height: 30px; max-width: 120px; object-fit: contain; }
+    .error-container { text-align: center; padding: 3rem 1rem; background-color: white; border-radius: var(--radius); box-shadow: var(--shadow); max-width: 600px; margin: 3rem auto; }
+    .loading-container, .error-container { text-align: center; padding: 3rem 1rem; background-color: white; border-radius: var(--radius); box-shadow: var(--shadow); max-width: 600px; margin: 3rem auto; }
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #f3f4f6;
+      border-top: 3px solid var(--primary);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 1rem;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .loading-text { color: var(--text-medium); font-size: 0.9375rem; }
+    .product-detail-section {
+      background-color: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary);
+    }
+    .detail-item {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+    }
+    .detail-item-title {
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .detail-item-content {
+      color: var(--text-medium);
+      line-height: 1.6;
+      font-size: 0.9375rem;
+    }
+    /* İletişim kutusu */
+    .contact-card {
+      margin-top: 32px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 1px 8px #0001;
+      padding: 26px 22px 20px 22px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-title {
+      font-weight: 700; font-size: 1.22em; margin-bottom: 6px; color: #222;
+    }
+    .contact-bar { border-bottom:2px solid #4f46e5; width:32px; margin-bottom:18px; }
+    .contact-label { font-weight:600; color:#333; }
+    .contact-link { color:#4f46e5; text-decoration:none; font-size:1.09em;}
+    .contact-social-label { margin-top:23px; font-weight:500; color:#555; }
+    .contact-social-row { display:flex; gap:17px; margin-top:10px; }
+    .contact-social-row a { display:inline-block;}
+    /* Responsive düzenleme */
+    @media (max-width: 600px) {
+      .container { padding: 0.5rem; }
+      .product-detail { grid-template-columns: 1fr !important; gap: 1.2rem; }
+      .contact-card { padding: 18px 7px 16px 7px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="product-detail-page">
+    <div class="container" id="productDetail">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Ürün bilgileri yükleniyor...</p>
+      </div>
+    </div>
+  </main>
+  <script>
+    // Türkçe karakterlerle tam uyumlu slugify
+    function slugify(text) {
+      const trMap = {
+        'ç': 'c', 'Ç': 'c',
+        'ğ': 'g', 'Ğ': 'g',
+        'ı': 'i', 'İ': 'i',
+        'ö': 'o', 'Ö': 'o',
+        'ş': 's', 'Ş': 's',
+        'ü': 'u', 'Ü': 'u'
+      };
+      text = text.replace(/[\u00C7\u00E7\u011F\u011E\u0131\u0130\u00D6\u00F6\u015E\u015F\u00DC\u00FC]/g, function(match) {
+        return trMap[match] || match;
+      });
+      return text
+        .toString()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')      // boşlukları tire yap
+        .replace(/[^\w\-]+/g, '')  // harf/digit ve tire dışındakileri sil
+        .replace(/\-\-+/g, '-');   // çift tireleri teke indir
+    }
+
+    // URL'den ürün adını al
+    function getSlugFromUrl() {
+      const pathname = window.location.pathname;
+      const parts = pathname.split('/');
+      if (parts.length >= 5) {
+        return parts[4];
+      }
+      return '';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const slugStr = getSlugFromUrl();
+      if (!slugStr) {
+        showError('Ürün bulunamadı. Geçersiz URL.');
+      } else {
+        loadProductDetail(slugStr);
+      }
+    });
+
+    // Ürünü yükle
+    async function loadProductDetail(slug) {
+      try {
+        // Yolları kendine göre güncelle
+        const [productsResponse, detailsResponse] = await Promise.all([
+          fetch('/urunler/api/hayvan-sagligi.json'),
+          fetch('/urunler/api/product-detay.json')
+        ]);
+        if (!productsResponse.ok) throw new Error('Ürün verileri yüklenemedi');
+        if (!detailsResponse.ok) throw new Error('Ürün detay verileri yüklenemedi');
+        const products = await productsResponse.json();
+        const productDetails = await detailsResponse.json();
+        // Slug ile ürün bul
+        let foundProduct = null;
+        for (const product of products) {
+          const productSlug = slugify(product.ProductName);
+          if (productSlug === slug) {
+            foundProduct = product;
+            break;
+          }
+        }
+        if (foundProduct) {
+          // ProductId veya ProductName ile detay bul
+          const productDetail = productDetails.find(detail =>
+            detail.ProductId === foundProduct.ProductId ||
+            (detail.ProductName && detail.ProductName.trim().toLowerCase() === foundProduct.ProductName.trim().toLowerCase())
+          );
+          displayProductDetail(foundProduct, productDetail);
+          document.title = `${foundProduct.ProductName} | Hayvan Sağlığı | Serakıncı`;
+        } else {
+          showError('Ürün bulunamadı. Lütfen bağlantıyı kontrol edin.');
+        }
+      } catch (error) {
+        console.error('Ürün yüklenirken hata:', error);
+        showError('Ürün yüklenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
+      }
+    }
+
+    function displayProductDetail(product, productDetail) {
+      const detailPage = document.getElementById('productDetail');
+      let galleryHTML = '';
+      let imageUrl = '';
+      if (product.Imag && product.Imag.trim() !== '') {
+        imageUrl = product.Imag;
+      } else if (product.ImageUrl && product.ImageUrl.trim() !== '') {
+        imageUrl = product.ImageUrl;
+      } else if (product.ProductImages && product.ProductImages.length > 0 && product.ProductImages[0].ImageUrl) {
+        imageUrl = product.ProductImages[0].ImageUrl;
+      }
+      if (imageUrl) {
+        galleryHTML = `<div class="product-main-image-container"><img src="${imageUrl}" alt="${product.ProductName}" class="product-main-image"></div>`;
+      } else {
+        galleryHTML = `<div class="product-main-image-container"><div class="image-placeholder"><span>Fotoğraf hazırlanıyor</span></div></div>`;
+      }
+      let detailSectionsHTML = '';
+      if (productDetail) {
+        if (productDetail["Ürün Açıklaması"]) {
+          detailSectionsHTML += `<div class="product-detail-section"><h3 class="section-title">Ürün Açıklaması</h3><div class="detail-item"><div class="detail-item-content">${productDetail["Ürün Açıklaması"]}</div></div></div>`;
+        }
+        if (productDetail["Üretici Firma"]) {
+          detailSectionsHTML += `<div class="product-detail-section"><h3 class="section-title">Üretici Firma Bilgileri</h3><div class="detail-item"><div class="detail-item-content">${productDetail["Üretici Firma"]}</div></div></div>`;
+        }
+        if (productDetail["Ürün İçeriği"]) {
+          detailSectionsHTML += `<div class="product-detail-section"><h3 class="section-title">Ürün İçeriği</h3><div class="detail-item"><div class="detail-item-title">Etken Madde ve İçerik</div><div class="detail-item-content">${productDetail["Ürün İçeriği"]}</div></div></div>`;
+        }
+        if (productDetail["Dikkat edilmesi gerekenler ya da uyarılar"]) {
+          detailSectionsHTML += `<div class="product-detail-section"><h3 class="section-title">Dikkat ve Uyarılar</h3><div class="detail-item"><div class="detail-item-title">Önemli Bilgiler</div><div class="detail-item-content">${productDetail["Dikkat edilmesi gerekenler ya da uyarılar"]}</div></div></div>`;
+        }
+      }
+      // Yasal uyarı kutusu
+      const disclaimerHTML = `
+      <div style="margin-top:32px; padding:18px; background:#f8f9fa; border-radius:10px; border-left:4px solid #ef4444; color:#222; font-size:0.98em;">
+        <b>Yasal Uyarı / Legal Disclaimer</b><br>
+        <span style="color:#e04444">Bu sitede yer alan ürün bilgilerinin tamamı genel bilgilendirme amaçlıdır ve profesyonel veteriner tavsiyesinin yerini almaz. Ürünlerin kullanımı öncesinde mutlaka veteriner hekiminize danışınız. Serakıncı Limited, ürün içerikleri ve açıklamalarının doğruluğu veya güncelliği konusunda herhangi bir sorumluluk kabul etmez. Ürün bilgileri zamanla değişebilir, en güncel bilgi için üretici firma ve resmi prospektüs dikkate alınmalıdır.</span>
+        <br><br>
+        <span style="color:#444"><b>All information on this site is for general informational purposes only and is not a substitute for professional veterinary advice. Always consult your veterinarian before using any product. Serakıncı Limited does not assume any responsibility for the accuracy or currency of the product information and descriptions. Product details may change over time; for the most up-to-date information, please refer to the manufacturer and official product leaflet.</b></span>
+      </div>
+      `;
+      // İletişim ve sosyal medya kutusu
+      const contactHTML = `
+      <div class="contact-card">
+        <div class="contact-title">Ürün hakkında bilgi al</div>
+        <div class="contact-bar"></div>
+        <div style="color:#444; margin-bottom:22px;">Ürünle ilgili detaylı bilgi için bizimle iletişime geçebilirsiniz:</div>
+        <div style="display:grid; gap:16px;">
+          <div style="display:flex; align-items:center;">
+            <svg style="color:#4f46e5; margin-right:12px;" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <span class="contact-label">Telefon</span><br>
+              <a href="tel:+903923662594" class="contact-link">+90 392 366 25 94</a>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center;">
+            <svg style="color:#4f46e5; margin-right:12px;" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/></svg>
+            <div>
+              <span class="contact-label">Fax</span><br>
+              <a href="fax:+903923661585" class="contact-link">+90 392 366 15 85</a>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center;">
+            <svg style="color:#4f46e5; margin-right:12px;" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6.7 12 13 2 6.7"/></svg>
+            <div>
+              <span class="contact-label">E-posta</span><br>
+              <a href="mailto:info@serakinci.com" class="contact-link">info@serakinci.com</a>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center;">
+            <svg style="color:#4f46e5; margin-right:12px;" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 12.414A6 6 0 1 0 12 18a5.972 5.972 0 0 0 4.242-1.757l4.243 4.243a1 1 0 1 0 1.414-1.415l-4.242-4.242z"/><circle cx="11" cy="11" r="5"/></svg>
+            <div>
+              <span class="contact-label">İletişim adresi</span><br>
+              <span style="font-size:1.06em;">
+                Sht. Ziya Sok. No:1-2 99450<br>
+                Gazimağusa - KKTC<br>
+                Mersin 10 Turkey
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social-label">Bizi sosyal medyada takip edin</div>
+        <div class="contact-social-row">
+          <a href="https://www.facebook.com/share/1AVJgiPaGX/?mibextid=wwXIfr" target="_blank" rel="noopener" title="Facebook">
+            <svg width="36" height="36" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#1877F2"/><path d="M34 25h-5v10h-5V25h-3v-4h3v-2.5C24 15.57 25.79 14 28.2 14c1.14 0 2.34.19 2.34.19v4.18H29.6c-1.04 0-1.6.65-1.6 1.41V21h5l-1 4z" fill="#fff"/></svg>
+          </a>
+          <a href="https://www.instagram.com/serakincieczadeposu?igsh=anpnM2x0cGEyenU2" target="_blank" rel="noopener" title="Instagram">
+            <svg width="36" height="36" viewBox="0 0 50 50" fill="none">
+              <defs>
+                <radialGradient id="IG" cx="50%" cy="50%" r="60%" fx="50%" fy="50%">
+                  <stop offset="0%" stop-color="#FFD676"/>
+                  <stop offset="50%" stop-color="#E1306C"/>
+                  <stop offset="100%" stop-color="#833AB4"/>
+                </radialGradient>
+              </defs>
+              <circle cx="25" cy="25" r="25" fill="url(#IG)"/>
+              <rect x="15" y="15" width="20" height="20" rx="6" stroke="#fff" stroke-width="2"/>
+              <circle cx="25" cy="25" r="5.5" stroke="#fff" stroke-width="2"/>
+              <circle cx="32" cy="18" r="1.5" fill="#fff"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      `;
+      detailPage.innerHTML = `
+        <div class="container">
+          <nav class="breadcrumbs">
+            <a href="https://www.serakinci.com" class="breadcrumb-link">Ana Sayfa</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="/urunler/" class="breadcrumb-link">Ürün Kataloğu</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="/urunler/hayvan-sagligi/" class="breadcrumb-link">Hayvan Sağlığı</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">${product.ProductName}</span>
+          </nav>
+          <div class="product-detail">
+            <div class="product-gallery">${galleryHTML}</div>
+            <div class="product-info">
+              <div class="brand-logo-container"></div>
+              <h1 class="product-detail-title">${product.ProductName}</h1>
+              <div class="product-meta">
+                <div class="product-meta-item"><span class="product-meta-label">Ürün Kodu:</span><span class="product-meta-value">${productDetail?.DisplayProductCode || product.ProductCode || 'Belirtilmemiş'}</span></div>
+                <div class="product-meta-item"><span class="product-meta-label">Marka:</span><span class="product-meta-value">${product.brand || 'Belirtilmemiş'}</span></div>
+                <div class="product-meta-item"><span class="product-meta-label">Kategori:</span><span class="product-meta-value">${product.kategori || 'Belirtilmemiş'}</span></div>
+              </div>
+              <div class="product-description">
+                <p>${product.ProductName} Serakıncı güvencesiyle Kuzey Kıbrıs'ta sizlerle buluşuyor.</p>
+              </div>
+            </div>
+          </div>
+          ${detailSectionsHTML}
+          ${disclaimerHTML}
+          ${contactHTML}
+          <a href="/urunler/hayvan-sagligi/" class="back-button"><span class="back-icon">&#8592;</span> Tüm Ürünlere Dön</a>
+        </div>
+      `;
+    }
+    function showError(msg) {
+      const detailPage = document.getElementById('productDetail');
+      detailPage.innerHTML = `<div class="error-container"><h2>Hata</h2><p>${msg}</p><a href="/urunler/hayvan-sagligi/" class="back-button">Ürün Listesine Dön</a></div>`;
+    }
+  </script>
+</body>
+</html>

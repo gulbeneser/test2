@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title><!-- JS dolduracak --></title>
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <link rel="stylesheet" href="/urunler/assets/css/modern-styles.css">
+  <style>/* ufak ek stiller */ .brand-hero{max-width:900px;margin:0 auto;padding:2rem 1rem}</style>
+</head>
+<body>
+  <main class="brand-hero" id="brandHero">
+    <h1>Yükleniyor…</h1>
+  </main>
+
+  <script type="module">
+    const slug = location.pathname.split('/').filter(Boolean).pop();   // bioderma
+    const brandJson = '/urunler/api/brands.json';
+    const productsJson = '/urunler/api/products.json';
+
+    const trTitle = s => s.replace(/\b\w/g,l=>l.toUpperCase());
+
+    // slugify JS eşleniği (ürün sayfalarında kullandığınızla aynı!)
+    function slugify(str){
+      const map = {'Ç':'C','Ğ':'G','İ':'I','Ö':'O','Ş':'S','Ü':'U','ç':'c','ğ':'g','ı':'i','ö':'o','ş':'s','ü':'u'};
+      return str.replace(/[ÇĞİÖŞÜçğıöşü]/g,ch=>map[ch]||ch)
+        .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+        .toLowerCase().replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').replace(/^-+|-+$/g,'');
+    }
+
+    const hero = document.getElementById('brandHero');
+
+    (async()=>{
+      /* 1) Marka bilgisi */
+      const brands = await (await fetch(brandJson)).json();
+      const brand = brands.find(b=>b.slug===slug);
+      if(!brand){ hero.innerHTML = '<p>Marka bulunamadı</p>'; return;}
+
+      document.title = `${trTitle(brand.name)} KKTC – Serakıncı Dermokozmetik`;
+      document.querySelector('meta[name="description"]').content =
+        `${trTitle(brand.name)} dermokozmetik ürünleri KKTC’de Serakıncı güvencesiyle. Hızlı kargo, orijinal ürün garantisi.`;
+      document.querySelector('link[rel="canonical"]').href = location.href;
+
+      /* 2) Marka başlığı + kısa tanıtım */
+      hero.innerHTML = `
+        <h1>${trTitle(brand.name)} ürünleri (KKTC yetkili satıcı)</h1>
+        <p>${trTitle(brand.name)}’in en sevilen serileri şimdi KKTC’de.
+           <strong>Gazimağusa</strong> deposundan 24 saatte teslim.</p>
+        <div id="brandGrid" class="products-grid" style="margin-top:1.5rem"></div>
+      `;
+
+      /* 3) Ürünleri filtrele & grid’e bas */
+      const all = await (await fetch(productsJson)).json();
+      const list = all.filter(p=> (p.brand||'').trim().toLowerCase() === brand.name.toLowerCase());
+
+      const grid = document.getElementById('brandGrid');
+      grid.innerHTML = list.map(p=>{
+        const img = p.ImageUrl || (p.ProductImages?.[0]?.ImageUrl) || '/urunler/assets/img/no-image.png';
+        const url = `/urunler/${(p.segment||'dermokozmetik')}/product/${slugify(p.ProductName)}/`;
+        return `<div class="product-card" onclick="location.href='${url}'">
+                  <div class="product-image-container">
+                    <img src="${img}" alt="${p.ProductName}" class="product-image" loading="lazy">
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-name">${p.ProductName}</h3>
+                  </div>
+                </div>`;
+      }).join('');
+    })();
+  </script>
+</body></html>
