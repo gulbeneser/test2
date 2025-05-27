@@ -1,0 +1,53 @@
+name: Run B2B Scraper and Update Product Data
+
+on:
+  schedule:
+    # Her gün UTC 00:00'da çalışır (Türkiye saatiyle sabah 03:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Manuel olarak tetikleme imkanı sunar
+
+jobs:
+  scrape_and_commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Depoya commit yapabilmek için izin
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Veya scraper'ınızın gerektirdiği Node.js sürümü
+
+      - name: Install Puppeteer dependencies (for headless mode)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -yq libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libdbus-1-3 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 libasound2 libnss3
+
+      - name: Install npm dependencies (scraper needs puppeteer and fs-extra)
+        run: |
+          npm install puppeteer fs-extra
+          # Eğer scraper'ınız farklı bir klasördeyse ve kendi package.json'ı varsa:
+          # cd scraper_klasoru && npm install
+
+      - name.env: Set environment variables
+        env:
+          DERMO_EMAIL: ${{ secrets.DERMO_EMAIL }}
+          DERMO_PASSWORD: ${{ secrets.DERMO_PASSWORD }}
+          ANIMAL_EMAIL: ${{ secrets.ANIMAL_EMAIL }}
+          ANIMAL_PASSWORD: ${{ secrets.ANIMAL_PASSWORD }}
+          # API_KEY: ${{ secrets.API_KEY }} # Bu scraper için gerekmiyor, geminiService için build sırasında lazım
+          # CI: true # Bazı build araçları için gerekebilir
+
+      - name: Run the scraper script
+        run: node b2b_scraper.js # Eğer scraper farklı bir yoldaysa, örn: node scraper/b2b_scraper.js
+
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add public/api/products.json public/api/hayvan-sagligi.json
+          # Değişiklik varsa commit at ve push'la
+          git diff --staged --quiet || (git commit -m "Scraper: Update product data" && git push)
