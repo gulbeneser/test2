@@ -1,5 +1,5 @@
 name: Run B2B Scraper and Update Product Data
-
+ 
 on:
   schedule:
     # Her gün UTC 00:00'da çalışır (Türkiye saatiyle 03:00)
