@@ -1,10 +1,9 @@
 name: Run B2B Scraper and Update Product Data
- 
+
 on:
   schedule:
-    # Her gün UTC 00:00'da çalışır (Türkiye saatiyle sabah 03:00)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Manuel çalıştırma için
+  workflow_dispatch:
 
 jobs:
   scrape_and_commit:
@@ -19,7 +18,7 @@ jobs:
       - name: 🟢 Node.js kurulumu
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Puppeteer ile uyumlu kararlı sürüm
+          node-version: '18'
 
       - name: 🧱 Puppeteer için sistem kütüphanelerini kur (Ubuntu 24.04 uyumlu)
         run: |
