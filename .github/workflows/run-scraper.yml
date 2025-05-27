@@ -4,13 +4,13 @@ on:
   schedule:
     # Her gün UTC 00:00'da çalışır (Türkiye saatiyle sabah 03:00)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Manuel tetikleme için
+  workflow_dispatch: # Manuel çalıştırmak için
 
 jobs:
   scrape_and_commit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Push izni
+      contents: write # GitHub'a push izni
 
     steps:
       - name: 📥 Repo'yu klonla
@@ -31,7 +31,6 @@ jobs:
             libxrandr2 \
             libgbm1 \
             libgtk-3-0 \
-            libasound2-data \
             libnss3 \
             libatk1.0-0 \
             libatk-bridge2.0-0 \
@@ -48,7 +47,7 @@ jobs:
             xdg-utils \
             wget
 
-      - name: 📦 NPM bağımlılıklarını yükle
+      - name: 📦 NPM paketlerini yükle
         run: npm install puppeteer fs-extra dotenv
 
       - name: 🚀 Scraper script'ini çalıştır
