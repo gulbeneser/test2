@@ -19,20 +19,45 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Veya scraper'ınızın gerektirdiği Node.js sürümü
+          node-version: '20' # Güncel bir LTS Node.js sürümü kullanın
 
       - name: Install Puppeteer dependencies (for headless mode)
         run: |
           sudo apt-get update
-          sudo apt-get install -yq libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libdbus-1-3 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 libasound2 libnss3
+          sudo apt-get install -yq \
+            libgconf-2-4 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libdbus-1-3 \
+            libxkbcommon0 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxrandr2 \
+            libgbm1 \
+            libpango-1.0-0 \
+            libcairo2 \
+            libasound2 \
+            libnss3 \
+            libxshmfence1 \
+            libxss1 \
+            libfontconfig1 \
+            libx11-xcb1 \
+            libxtst6 \
+            lsb-release \
+            wget \
+            --no-install-recommends # Gerekli bağımlılıklar
 
       - name: Install npm dependencies (scraper needs puppeteer and fs-extra)
         run: |
           npm install puppeteer fs-extra
-          # Eğer scraper'ınız farklı bir klasördeyse ve kendi package.json'ı varsa:
-          # cd scraper_klasoru && npm install
+          # Eğer b2b_scraper.js veya projenizin kökünde bir package.json varsa
+          # ve scraper için ek bağımlılıklar içeriyorsa, şunu kullanabilirsiniz:
+          # npm install
 
-      - name.env: Set environment variables
+      - name: Run the scraper script
         env:
           DERMO_EMAIL: ${{ secrets.DERMO_EMAIL }}
           DERMO_PASSWORD: ${{ secrets.DERMO_PASSWORD }}
@@ -40,14 +65,17 @@ jobs:
           ANIMAL_PASSWORD: ${{ secrets.ANIMAL_PASSWORD }}
           # API_KEY: ${{ secrets.API_KEY }} # Bu scraper için gerekmiyor, geminiService için build sırasında lazım
           # CI: true # Bazı build araçları için gerekebilir
-
-      - name: Run the scraper script
-        run: node b2b_scraper.js # Eğer scraper farklı bir yoldaysa, örn: node scraper/b2b_scraper.js
+        run: node b2b_scraper.js # b2b_scraper.js dosyanızın projenizin kök dizininde olduğunu varsayar
 
       - name: Commit and push if changes
         run: |
           git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          git add public/api/products.json public/api/hayvan-sagligi.json
-          # Değişiklik varsa commit at ve push'la
-          git diff --staged --quiet || (git commit -m "Scraper: Update product data" && git push)
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add urunler/api/products.json urunler/api/hayvan-sagligi.json
+          # Değişiklik olup olmadığını kontrol et
+          if git diff --staged --quiet; then
+            echo "No changes to product data files to commit."
+          else
+            git commit -m "Scraper: Update product data in urunler/api"
+            git push
+          fi

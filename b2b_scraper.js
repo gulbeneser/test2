@@ -1,8 +1,8 @@
 
 /********************************************************************
-  Serakıncı B2B Scraper v5 – GitHub Actions Optimized (28.05.2024)
+  Serakıncı B2B Scraper v5 – GitHub Actions Optimized (29.05.2024)
   - Handles Dermokozmetik and Hayvan Sağlığı with separate credentials from env.
-  - Outputs 'products.json' and 'hayvan-sagligi.json' to 'public/urunler/api/'.
+  - Outputs 'products.json' and 'hayvan-sagligi.json' to 'urunler/api/'.
   - Maps fields to align with frontend Product type.
 ********************************************************************/
 const puppeteer = require('puppeteer');
@@ -54,7 +54,8 @@ const ACCOUNTS_CONFIG = [
 ];
 
 const BASE_URL = 'https://siparis.serakinci.com';
-const OUTPUT_DIR = path.join(__dirname, 'urunler', 'api'); // Output to public/api/
+// Output to urunler/api/ at the project root
+const OUTPUT_DIR = path.join(__dirname, 'urunler', 'api'); 
 /* :::::::::::::::::::::::::::::::::::: */
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
