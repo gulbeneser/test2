@@ -1,25 +1,3 @@
-name: Run B2B Scraper and Update Product Data
-
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-
-jobs:
-  scrape_and_commit:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-      - name: 📥 Repo'yu klonla
-        uses: actions/checkout@v4
-
-      - name: 🟢 Node.js kurulumu
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
       - name: 🧱 Puppeteer için sistem kütüphanelerini kur (Ubuntu 24.04 uyumlu)
         run: |
           sudo apt-get update
@@ -40,31 +18,9 @@ jobs:
             libpango-1.0-0 \
             libcairo2 \
             libxkbcommon0 \
+            libasound2t64 \
             lsb-release \
             fonts-liberation \
             libfontconfig1 \
             xdg-utils \
             wget
-
-      - name: 📦 NPM bağımlılıklarını yükle
-        run: npm install puppeteer fs-extra dotenv
-
-      - name: 🚀 Scraper script'ini çalıştır
-        env:
-          DERMO_EMAIL: ${{ secrets.DERMO_EMAIL }}
-          DERMO_PASSWORD: ${{ secrets.DERMO_PASSWORD }}
-          ANIMAL_EMAIL: ${{ secrets.ANIMAL_EMAIL }}
-          ANIMAL_PASSWORD: ${{ secrets.ANIMAL_PASSWORD }}
-        run: node b2b_scraper.js
-
-      - name: 💾 JSON verilerini commit & push et (varsa)
-        run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add urunler/api/products.json urunler/api/hayvan-sagligi.json
-          if git diff --staged --quiet; then
-            echo "📦 Değişiklik yok, commit yapılmadı."
-          else
-            git commit -m "Scraper: Update product data in urunler/api"
-            git push
-          fi
