@@ -4,24 +4,24 @@ on:
   schedule:
     # Her gün UTC 00:00'da çalışır (Türkiye saatiyle sabah 03:00)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Manuel olarak tetikleme imkanı sunar
+  workflow_dispatch: # Manuel olarak da çalıştırabilirsin
 
 jobs:
   scrape_and_commit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Depoya commit yapabilmek için izin
+      contents: write # Push işlemi için gerekli izin
 
     steps:
-      - name: Checkout repository
+      - name: 📥 Repo'yu klonla
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: 🟢 Node.js kurulumu
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Güncel bir LTS Node.js sürümü kullanın
+          node-version: '18'
 
-      - name: Install Puppeteer dependencies (for headless mode)
+      - name: 🧱 Puppeteer bağımlılıklarını kur
         run: |
           sudo apt-get update
           sudo apt-get install -yq \
@@ -48,33 +48,26 @@ jobs:
             libxtst6 \
             lsb-release \
             wget \
-            --no-install-recommends # Gerekli bağımlılıklar
+            --no-install-recommends
 
-      - name: Install npm dependencies (scraper needs puppeteer and fs-extra)
-        run: |
-          npm install puppeteer fs-extra
-          # Eğer b2b_scraper.js veya projenizin kökünde bir package.json varsa
-          # ve scraper için ek bağımlılıklar içeriyorsa, şunu kullanabilirsiniz:
-          # npm install
+      - name: 📦 NPM paketlerini yükle
+        run: npm install puppeteer fs-extra
 
-      - name: Run the scraper script
+      - name: 🚀 Scraper script'ini çalıştır
         env:
           DERMO_EMAIL: ${{ secrets.DERMO_EMAIL }}
           DERMO_PASSWORD: ${{ secrets.DERMO_PASSWORD }}
           ANIMAL_EMAIL: ${{ secrets.ANIMAL_EMAIL }}
           ANIMAL_PASSWORD: ${{ secrets.ANIMAL_PASSWORD }}
-          # API_KEY: ${{ secrets.API_KEY }} # Bu scraper için gerekmiyor, geminiService için build sırasında lazım
-          # CI: true # Bazı build araçları için gerekebilir
-        run: node b2b_scraper.js # b2b_scraper.js dosyanızın projenizin kök dizininde olduğunu varsayar
+        run: node b2b_scraper.js
 
-      - name: Commit and push if changes
+      - name: 💾 JSON verilerini commit & push et (varsa)
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add urunler/api/products.json urunler/api/hayvan-sagligi.json
-          # Değişiklik olup olmadığını kontrol et
           if git diff --staged --quiet; then
-            echo "No changes to product data files to commit."
+            echo "📦 Yeni veri yok, commit atılmadı."
           else
             git commit -m "Scraper: Update product data in urunler/api"
             git push
