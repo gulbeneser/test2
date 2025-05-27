@@ -1,1 +1,5842 @@
-[]
+[
+  {
+    "ProductId": 1977,
+    "ProductName": "BIODERMA SENSIBIO H2O 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003060447.jpg",
+    "ProductCode": "1003060447",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1978,
+    "ProductName": "BIODERMA SEBIUM İZOKİT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999101.jpg",
+    "ProductCode": "1002999101",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1979,
+    "ProductName": "BIODERMA SENSIBIO H2O 500 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003075571.jpg",
+    "ProductCode": "1003075571",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1981,
+    "ProductName": "BIODERMA SEBIUM FOAMING GEL 500 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002057093.jpg",
+    "ProductCode": "1002057093",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1982,
+    "ProductName": "BIODERMA SENSIBIO DS+ CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003090470.jpg",
+    "ProductCode": "1003090470",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1983,
+    "ProductName": "SENSIBIO H2O 500ml İKİZ KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003993562_1.jpg",
+    "ProductCode": "1003993562",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1984,
+    "ProductName": "BIODERMA SENSIBIO AR CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003106245.jpg",
+    "ProductCode": "1003106245",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1985,
+    "ProductName": "SENSIBIO EYE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003113335.jpg",
+    "ProductCode": "1003113335",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1986,
+    "ProductName": "BIODERMA CICABIO ARNICA+",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008073648.jpg",
+    "ProductCode": "1008073648",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1987,
+    "ProductName": "BIODERMA ABCDERM CHANGE INTENSIVE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009214944.jpg",
+    "ProductCode": "1009214944",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1993,
+    "ProductName": "HYDRABIO H2O 500 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007209020.jpg",
+    "ProductCode": "1007209020",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1994,
+    "ProductName": "BIODERMA SENSIBIO FOAMING GEL 500 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003110843.jpg",
+    "ProductCode": "1003110843",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 1996,
+    "ProductName": "BIODERMA ATODERM SHOWER GEL 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001073237.jpg",
+    "ProductCode": "1001073237",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2002,
+    "ProductName": "ABCDERM GENTLE SHAMPOO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009616541.jpg",
+    "ProductCode": "1009616541",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2005,
+    "ProductName": "ABCDERM H2O 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009516645.jpg",
+    "ProductCode": "1009516645",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2011,
+    "ProductName": "ABCDERM HYDRATANT 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009621451.jpg",
+    "ProductCode": "1009621451",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2026,
+    "ProductName": "SEBIUM NIGHT PEEL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002301369.jpg",
+    "ProductCode": "1002301369",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2031,
+    "ProductName": "SENSIBIO H2O 850 ML POMPALI ŞİŞE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003701642.jpg",
+    "ProductCode": "1003701642",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2032,
+    "ProductName": "PIGMENTBIO NIGHT RENEWER 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004230089.jpg",
+    "ProductCode": "1004230089",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2033,
+    "ProductName": "PIGMENTBIO C-CONCENTRATE 15 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004240119.jpg",
+    "ProductCode": "1004240119",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2034,
+    "ProductName": "PIGMENTBIO DAILY CARE SPF50+ 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004260072.jpg",
+    "ProductCode": "1004260072",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2035,
+    "ProductName": "PIGMENTBIO SENSITIVE AREAS 75 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004250096.jpg",
+    "ProductCode": "1004250096",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2036,
+    "ProductName": "PIGMENTBIO H2O 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004200102.jpg",
+    "ProductCode": "1004200102",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2063,
+    "ProductName": "ATODERM INTENSIVE EYE 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001331963.jpg",
+    "ProductCode": "1001331963",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2082,
+    "ProductName": "ATODERM INTENSIVE GEL CREAM 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001332663.jpg",
+    "ProductCode": "1001332663",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2083,
+    "ProductName": "ATODERM INTENSIVE GEL CREAM 500 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001332670.jpg",
+    "ProductCode": "1001332670",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2114,
+    "ProductName": "BIODERMA PIGMENTBIO FOAMING CREAM 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004210546.jpg",
+    "ProductCode": "1004210546",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2115,
+    "ProductName": "NODE DS+ CREAM SHAMPOO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1005057253.jpg",
+    "ProductCode": "1005057253",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2150,
+    "ProductName": "BIODERMA SEBIUM FOAMING GEL ACTIF 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002303400.jpg",
+    "ProductCode": "1002303400",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2228,
+    "ProductName": "SENSIBIO DEFENSIVE CREAM ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003134452.jpg",
+    "ProductCode": "1003134452",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2229,
+    "ProductName": "SENSIBIO DEFENSIVE RICH CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003134469.jpg",
+    "ProductCode": "1003134469",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2230,
+    "ProductName": "CICABIO HAND CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008104711.jpg",
+    "ProductCode": "1008104711",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2287,
+    "ProductName": "SENSIBIO H2O EYE 125 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003122237.jpg",
+    "ProductCode": "1003122237",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2329,
+    "ProductName": "BIODERMA SEBIUM KERATO+ - YENİ\r\n",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002305367.jpg",
+    "ProductCode": "1002305367",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2353,
+    "ProductName": "SENSIBIO DEFENSIVE SERUM - YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003134995.jpg",
+    "ProductCode": "1003134995",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2386,
+    "ProductName": "KURU CİLTLER İÇİN NEMLENDİRİCİ BAKIM KİTİ 02.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001990044_1.jpg",
+    "ProductCode": "1001990044",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2387,
+    "ProductName": "ATOPİ EĞİLİMLİ CİLTLER İÇİN BAKIM KİTİ 02.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001990043_1.jpg",
+    "ProductCode": "1001990043",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2388,
+    "ProductName": "ATODERM KIŞ BAKIM KİTİ 02.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001990042.jpg",
+    "ProductCode": "1001990042",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2389,
+    "ProductName": "AKNE EĞİLİMLİ CİLTLERE ÖZEL BAKIM KİTİ 02.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999126_1.jpg",
+    "ProductCode": "1002999126",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2390,
+    "ProductName": "LEKE KARŞITI BAKIM SETİ 03.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004999042_1.jpg",
+    "ProductCode": "1004999042",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2391,
+    "ProductName": "BIODERMA ETATPUR MAKYAJ ÖNCESİ&SONRASI BAKIM KİTİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003993135_1.jpg",
+    "ProductCode": "1003993135",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2442,
+    "ProductName": "SEBIUM H2O 500ml İKİZ KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002995851.jpg",
+    "ProductCode": "1002995851",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2457,
+    "ProductName": "ATODERM 2 IN 1 BODY OIL 150 ML -YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001327934.jpg",
+    "ProductCode": "1001327934",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2460,
+    "ProductName": "MATRICIUM™ 30 x 1 ML KAPSÜL ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1010506586.jpg",
+    "ProductCode": "1010506586",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2463,
+    "ProductName": "CICABIO CLEANSING BALM 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008110019.jpg",
+    "ProductCode": "1008110019",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2483,
+    "ProductName": "BIODERMA ABCDERM FOAMING CLEANSER 1 LT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009563618.jpg",
+    "ProductCode": "1009563618",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2484,
+    "ProductName": "BIODERMA ABCDERM FOAMING CLEANSER 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009558694.jpg",
+    "ProductCode": "1009558694",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2495,
+    "ProductName": "HYDRABIO SERUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007149775.jpg",
+    "ProductCode": "1007149775",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2510,
+    "ProductName": "ATODERM CREAM ULTRA 500 ML- YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001103466.jpg",
+    "ProductCode": "1001103466",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2516,
+    "ProductName": "BIODERMA ATODERM CREAM ULTRA 200 ML- YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001188835.jpg",
+    "ProductCode": "1001188835",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2532,
+    "ProductName": "SEBIUM EXFOLIATING GEL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002091423.jpg",
+    "ProductCode": "1002091423",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2536,
+    "ProductName": "ATODERM INTENSIVE BAR ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001033527.jpg",
+    "ProductCode": "1001033527",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2537,
+    "ProductName": "SEBIUM GLOBAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002267508.jpg",
+    "ProductCode": "1002267508",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2538,
+    "ProductName": "BIODERMA SENSIBIO DS+ FOAMING GEL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003080531.jpg",
+    "ProductCode": "1003080531",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2539,
+    "ProductName": "SENSIBIO AR BB CREAM SPF30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003134049.jpg",
+    "ProductCode": "1003134049",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2543,
+    "ProductName": "BIODERMA SEBIUM FOAMING GEL 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002036399.jpg",
+    "ProductCode": "1002036399",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2594,
+    "ProductName": "CICABIO CREAM SPF 50+",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008085547.jpg",
+    "ProductCode": "1008085547",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2600,
+    "ProductName": "HYDRABIO PERFECTEUR SPF 30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007187977.jpg",
+    "ProductCode": "1007187977",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2601,
+    "ProductName": "HYDRABIO CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007177687.jpg",
+    "ProductCode": "1007177687",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2602,
+    "ProductName": "HYDRABIO GEL CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007167809.jpg",
+    "ProductCode": "1007167809",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2609,
+    "ProductName": "SEBIUM H2O 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002078297.jpg",
+    "ProductCode": "1002078297",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2612,
+    "ProductName": "BIODERMA SENSIBIO FOAMING GEL 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003107565.jpg",
+    "ProductCode": "1003107565",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2614,
+    "ProductName": "ATODERM SHOWER OIL 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001289895.jpg",
+    "ProductCode": "1001289895",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2615,
+    "ProductName": "ATODERM SHOWER OIL 1LT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001290846.jpg",
+    "ProductCode": "1001290846",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2619,
+    "ProductName": "CICABIO POMAD",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008095405.jpg",
+    "ProductCode": "1008095405",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2626,
+    "ProductName": "HYDRABIO H2O 500ML İKİZ KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007221764.jpg",
+    "ProductCode": "1007221764",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2627,
+    "ProductName": "HYDRABIO H2O 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007211157.jpg",
+    "ProductCode": "1007211157",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2631,
+    "ProductName": "ATODERM INTENSIVE FOAMING GEL 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001246988.jpg",
+    "ProductCode": "1001246988",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2633,
+    "ProductName": "SEBIUM MAT CONTROL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002242361.jpg",
+    "ProductCode": "1002242361",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2634,
+    "ProductName": "BIODERMA ATODERM INTENSIVE BALM 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001313359.jpg",
+    "ProductCode": "1001313359",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2638,
+    "ProductName": "ATODERM INTENSIVE FOAMING GEL 1LT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001262807.jpg",
+    "ProductCode": "1001262807",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2639,
+    "ProductName": "ATODERM SHOWER GEL 1LT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001082926.jpg",
+    "ProductCode": "1001082926",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2649,
+    "ProductName": "BIODERMA ATODERM INTENSIVE BALM 500 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001309201.jpg",
+    "ProductCode": "1001309201",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2662,
+    "ProductName": "ATODERM LIP BALM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001163756.jpg",
+    "ProductCode": "1001163756",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2669,
+    "ProductName": "SEBIUM H2O 500 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002085851.jpg",
+    "ProductCode": "1002085851",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2670,
+    "ProductName": "ATODERM LIP STICK",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001172346.jpg",
+    "ProductCode": "1001172346",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2674,
+    "ProductName": "BIODERMA ATODERM NUTRITION CREAM 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001153008.jpg",
+    "ProductCode": "1001153008",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2677,
+    "ProductName": "CICABIO LOTION SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008100225.jpg",
+    "ProductCode": "1008100225",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2683,
+    "ProductName": "BIODERMA SEBIUM SENSITIVE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002296994.jpg",
+    "ProductCode": "1002296994",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2684,
+    "ProductName": "SEBIUM GLOBAL COVER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002275207.jpg",
+    "ProductCode": "1002275207",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2685,
+    "ProductName": "SEBIUM LOTION 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002287514.jpg",
+    "ProductCode": "1002287514",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2687,
+    "ProductName": "BIODERMA CICABIO CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008059546.jpg",
+    "ProductCode": "1008059546",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2694,
+    "ProductName": "ATODERM HAND CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001132575.jpg",
+    "ProductCode": "1001132575",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2698,
+    "ProductName": "SEBIUM H2O 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002066935.jpg",
+    "ProductCode": "1002066935",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2702,
+    "ProductName": "BIODERMA SEBIUM PORE REFINER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002113625.jpg",
+    "ProductCode": "1002113625",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2725,
+    "ProductName": "SEBIUM HYDRA CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002120421.jpg",
+    "ProductCode": "1002120421",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2744,
+    "ProductName": "SENSIBIO H2O 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003056706.jpg",
+    "ProductCode": "1003056706",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2748,
+    "ProductName": "CICABIO CREAM+ ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008992056_1.jpg",
+    "ProductCode": "1008992056",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2749,
+    "ProductName": "ABCDERM FOAMING CLEANSER 1 LT ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009991223_1.jpg",
+    "ProductCode": "1009991223",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2750,
+    "ProductName": "SEBIUM KERATO+ ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999130_1.jpg",
+    "ProductCode": "1002999130",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2778,
+    "ProductName": "ABCDERM MASSAGE OIL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1009606480_1.jpg",
+    "ProductCode": "1009606480",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2788,
+    "ProductName": "PIGMENTBIO FOAMING CREAM 500ML- YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004220553_1.jpg",
+    "ProductCode": "1004220553",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2789,
+    "ProductName": "SEBIUM HYDRA CLEANSER 200 ML - YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002309273_1.jpg",
+    "ProductCode": "1002309273",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2790,
+    "ProductName": "SEBIUM SERUM - YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002309280_1.jpg",
+    "ProductCode": "1002309280",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2791,
+    "ProductName": "HYDRABIO HYALU+ SERUM - YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007189334.jpg",
+    "ProductCode": "1007189334",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2803,
+    "ProductName": "BIODERMA CICABIO CREAM ÖZEL FİYAT 09.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008992049_1.jpg",
+    "ProductCode": "1008992049",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2804,
+    "ProductName": "SEBIUM FOAMING GEL 500 ML ÖZEL FİYAT 09.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999131.jpg",
+    "ProductCode": "1002999131",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2812,
+    "ProductName": "SENSIBIO MICELLER CLEANSING OIL 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003137835.jpg",
+    "ProductCode": "1003137835",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2814,
+    "ProductName": "SEBIUM FOAMING GEL&PORE REFINER ÇANTALI KİT 2024 ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999141_1.jpg",
+    "ProductCode": "1002999141",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2815,
+    "ProductName": "SEBIUM FOAMING GEL & KERATO + ÇANTALI KİT 2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999143_1.jpg",
+    "ProductCode": "1002999143",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2816,
+    "ProductName": "SEBIUM FOAMING GEL ACTIVE&KERATO+ ÇANTALI KİT 2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999144.jpg",
+    "ProductCode": "1002999144",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2817,
+    "ProductName": "ATODERM INT. BALM 200ML&INT. FG ÖZEL FİYAT 03.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999952.jpg",
+    "ProductCode": "1001999952",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2818,
+    "ProductName": "ATODERM INTENSIVE BALM 500 ML ÖZEL FİYAT 03.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999957.jpg",
+    "ProductCode": "1001999957",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2821,
+    "ProductName": "HYDRABIO MILKY CLEANSER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007064295_1.jpg",
+    "ProductCode": "1007064295",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2842,
+    "ProductName": "BIODERMA SEBIUM İZOKİT + (YENİ)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999140.jpg",
+    "ProductCode": "1002999140",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2875,
+    "ProductName": "SEBIUM FOAMING GEL & SENSITIVE ÇANTALI KİT 2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999142_1.jpg",
+    "ProductCode": "1002999142",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2876,
+    "ProductName": "ATODERM CREAM ULTRA 500+SENSIBIO H2O 500 ML HEDİYE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999979.jpg",
+    "ProductCode": "1001999979",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2877,
+    "ProductName": "ATODERM CREAM ULTRA 500 ML ÖZEL FİYAT 03.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999956.jpg",
+    "ProductCode": "1001999956",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2878,
+    "ProductName": "ATODERM CREAM ULTRA 200 ML ÖZEL FİYAT 09.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999959_1.jpg",
+    "ProductCode": "1001999959",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2879,
+    "ProductName": "CICABIO DÖVME KİTİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008994222_1.jpg",
+    "ProductCode": "1008994222",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2880,
+    "ProductName": "PIGMENTBIO FOAMING CREAM 500 ML ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1004999043.jpg",
+    "ProductCode": "1004999043",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2881,
+    "ProductName": "SENSIBIO FOAMING GEL 500 ML ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003993142.jpg",
+    "ProductCode": "1003993142",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2882,
+    "ProductName": "SEBIUM FOAMING GEL  200ML + BİLEK HAVLUSU",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999147.jpg",
+    "ProductCode": "1002999147",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2883,
+    "ProductName": "SEBIUM HYDRA CLEANSER 200ML + BİLEK HAVLUSU",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999149.jpg",
+    "ProductCode": "1002999149",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2884,
+    "ProductName": "ATODERM HAND CREAM 2Lİ ÖZEL FİYAT 08.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999976_1.jpg",
+    "ProductCode": "1001999976",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2885,
+    "ProductName": "ATODERM HAND CREAM + LIP BALM ÖZEL FİYAT 08.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999977_1.jpg",
+    "ProductCode": "1001999977",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2886,
+    "ProductName": "CICABIO CREAM+ SPF50+ ÖZEL FİYAT 09.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008992057.jpg",
+    "ProductCode": "1008992057",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2888,
+    "ProductName": "SEBIUM H2O 500ML ÖZEL FİYAT 11.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999136.jpg",
+    "ProductCode": "1002999136",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2889,
+    "ProductName": "HYDRABIO H20 500 ML ÖZEL FİYAT 11.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007997553.jpg",
+    "ProductCode": "1007997553",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2890,
+    "ProductName": "SENSIBIO H20 850 ML POMPALI ŞİŞE ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003993422.jpg",
+    "ProductCode": "1003993422",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2891,
+    "ProductName": "ATODERM SHOWER OIL 1LT ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999945.jpg",
+    "ProductCode": "1001999945",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2892,
+    "ProductName": "ATODERM SHOWER GEL 1LT ÖZEL FİYAT 10.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999947_1.jpg",
+    "ProductCode": "1001999947",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2893,
+    "ProductName": "ATODERM CREAM 200 ML&SHOWER OIL 200 ML ÖZEL FİYAT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999954_1.jpg",
+    "ProductCode": "1001999954",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2899,
+    "ProductName": "SEBIUM FOAMING GEL ACTIVE 200ML + BİLEK HAVLUSU",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999148_1.jpg",
+    "ProductCode": "1002999148",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2909,
+    "ProductName": "SENSIBIO H2O 500ML ÖZEL FİYAT 11.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003993423_1.jpg",
+    "ProductCode": "1003993423",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2910,
+    "ProductName": "ATODERM INTENSIVE FOAMING GEL 1LT ÖZEL FİYAT 04.24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999946_1.jpg",
+    "ProductCode": "1001999946",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2911,
+    "ProductName": "CICABIO CLEASING BALM 200ML ÖZEL FİYAT 10.23",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008992051_1.jpg",
+    "ProductCode": "1008992051",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2912,
+    "ProductName": "ATODERM CREAM 200 ML&SHOWER GEL 200 ML ÖZEL FİYAT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001999953_1.jpg",
+    "ProductCode": "1001999953",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2913,
+    "ProductName": "SEBIUM KERATO+ 30ML & FOAMING GEL ACTIVE 45ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1002999146.jpg",
+    "ProductCode": "1002999146",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2978,
+    "ProductName": "SENSIBIO AR+ MICELLAR GEL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003142488_1.jpg",
+    "ProductCode": "1003142488",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2979,
+    "ProductName": "SENSIBIO AR+ BI-SERUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003142518_1.jpg",
+    "ProductCode": "1003142518",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2980,
+    "ProductName": "CICABIO LIP REPAIR 10 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008112426_1.jpg",
+    "ProductCode": "1008112426",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2981,
+    "ProductName": "SENSIBIO H2O 500 ML LIMITED EDITION ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1003064420_1.jpg",
+    "ProductCode": "1003064420",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2052,
+    "ProductName": "VINOPURE PURIFIYING GEL CLEANSER 150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4012267.jpg",
+    "ProductCode": "KSCAUVINOP4012267",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2060,
+    "ProductName": "VINOSCULPT LIFT& FIRM BODY CREAM 250ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008261.jpg",
+    "ProductCode": "KSCAU4008261",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2065,
+    "ProductName": "VINOPERFECT DARK SPOT CORRECTING HAND CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006258.jpg",
+    "ProductCode": "KSCAUVINOP4006258",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2110,
+    "ProductName": "RESVERATROL-LIFT FIRMING EYE GEL CREAM 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004296.jpg",
+    "ProductCode": "KSCAURES4004296",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2111,
+    "ProductName": "RESVERATROL-LIFT INSTANT FIRMING SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004297.jpg",
+    "ProductCode": "KSCAURES4004297",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2112,
+    "ProductName": "RESVERATROL-LIFT FIRMING NIGHT CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004298.jpg",
+    "ProductCode": "KSCAURES4004298",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2113,
+    "ProductName": "RESVERATROL-LIFT LIGHTWEIGHT CASHMERE CREAM 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004300.jpg",
+    "ProductCode": "KSCAURES4004300",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2119,
+    "ProductName": "VINOCLEAN INSTANT FOAMING CLEANSER 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001307.jpg",
+    "ProductCode": "KSCAU4001307",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2120,
+    "ProductName": "VINOCLEAN MICELLAR CLEANSING WATER 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001309.jpg",
+    "ProductCode": "KSCAU4001309",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2121,
+    "ProductName": "VINOCLEAN CLEANSING ALMOND MILK 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001312.jpg",
+    "ProductCode": "KSCAU4001312",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2122,
+    "ProductName": "VINOCLEAN MOISTURIZING TONER 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001315.jpg",
+    "ProductCode": "KSCAU4001315",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2123,
+    "ProductName": "VINOCLEAN MAKEUP REMOVING CLEANSING OIL 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001317.jpg",
+    "ProductCode": "KSCAU4001317",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2124,
+    "ProductName": "VINOCLEAN MICELLAR CLEANSING WATER 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001308.jpg",
+    "ProductCode": "KSCAU4001308",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2125,
+    "ProductName": "VINOCLEAN CLEANSING ALMOND MILK 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001311.jpg",
+    "ProductCode": "KSCAU4001311",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2126,
+    "ProductName": "VINOCLEAN MOISTURIZING TONER 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001314.jpg",
+    "ProductCode": "KSCAU4001314",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2127,
+    "ProductName": "VINOCLEAN INSTANT FOAMING CLEANSER 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001305.jpg",
+    "ProductCode": "KSCAU4001305",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2128,
+    "ProductName": "RESVERATROL-LIFT FIRMING CASHMERE CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004299.jpg",
+    "ProductCode": "KSCAURES4004299",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2129,
+    "ProductName": "VINOFRESH STICK DEODORANT 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOF4008330.jpg",
+    "ProductCode": "KSCAUVINOF4008330",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2130,
+    "ProductName": "CAUDALIE GRAPE WATER 75 ML(üzüm suyu)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4009320.jpg",
+    "ProductCode": "KSCAU4009320",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2139,
+    "ProductName": "VINOSOURCE HYDRA MOISTURIZING MASK 75 ML(NEW)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS4002338_1.jpg",
+    "ProductCode": "KSCAUVINOS4002338",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2151,
+    "ProductName": "VINOPURE BLEMISH CONTROL SALICILIC SERUM 30ML -new",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4012344.jpg",
+    "ProductCode": "KSCAUVINOP4012344",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2152,
+    "ProductName": "VINOPURE MOISTURIZING MATTIFYING FLUID 40ML - new",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4012345.jpg",
+    "ProductCode": "KSCAUVINOP4012345",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2153,
+    "ProductName": "VINOPURE PURIFIYING MASK 75 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4012347.jpg",
+    "ProductCode": "KSCAUVINOP4012347",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2164,
+    "ProductName": "VINERGETIC C+  ENERGY SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINER4003348.jpg",
+    "ProductCode": "KSCAUVINER4003348",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2165,
+    "ProductName": "VINERGETIC C+  EYE CREAM 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINER4003349.jpg",
+    "ProductCode": "KSCAUVINER4003349",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2166,
+    "ProductName": "VINERGETIC C+ 3 IN 1 MOISTURIZER 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINER4003350.jpg",
+    "ProductCode": "KSCAUVINER4003350",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2167,
+    "ProductName": "VINERGETIC C+ OVERNIGHT DETOX OIL 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINER4003351.jpg",
+    "ProductCode": "KSCAUVINER4003351",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2168,
+    "ProductName": "VINERGETIC C+ INSTANT DETOX MASK 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINER4003352.jpg",
+    "ProductCode": "KSCAUVINER4003352",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2241,
+    "ProductName": "VINOPERFECT BRIGHTENING DARK SPOT SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006324.jpg",
+    "ProductCode": "KSCAUVINOP4006324",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2242,
+    "ProductName": "CAUDALIE DEEP CLEANSING EXFOLIATING 75 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001304.jpg",
+    "ProductCode": "KSCAU4001304",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2243,
+    "ProductName": "VINOPERFECT INSTANT BRIGHTENING MOISTURIZER 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006322.jpg",
+    "ProductCode": "KSCAUVINOP4006322",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2244,
+    "ProductName": "CAUDALIE BEAUTY ELIXIR 100 ML (YENİ)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001319.jpg",
+    "ProductCode": "KSCAU4001319",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2245,
+    "ProductName": "VINOTHERAPIST FOOT BEAUTY CREAM 75 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008360.jpg",
+    "ProductCode": "KSCAU4008360",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2246,
+    "ProductName": "VINOTHERAPIST HAND&NAIL CREAM 75 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008361.jpg",
+    "ProductCode": "KSCAU4008361",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2247,
+    "ProductName": "VINOTHERAPIST VEGAN BODY BUTTER 250ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008362.jpg",
+    "ProductCode": "KSCAU4008362",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2248,
+    "ProductName": "VINOTHERAPIST NOURISHING BODY LOTION 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008363.jpg",
+    "ProductCode": "KSCAU4008363",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2249,
+    "ProductName": "CAUDALIE BEAUTY ELIXIR 30 ML (YENİ)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4009318.jpg",
+    "ProductCode": "KSCAU4009318",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2281,
+    "ProductName": "VINOPERFECT DARK SPOT GLYCOLIC NIGHT CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006323.jpg",
+    "ProductCode": "KSCAUVINOP4006323",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2298,
+    "ProductName": "VINOSCULPT CONTOURING CONCENTRATE 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008367.jpg",
+    "ProductCode": "KSCAU4008367",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2299,
+    "ProductName": "VINOPURE SPRING SET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP40122831.jpg",
+    "ProductCode": "KSCAUVINOP40122831",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2314,
+    "ProductName": "VINOTHERAPIST NOURISHING BODY LOTION 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008364.jpg",
+    "ProductCode": "KSCAU4008364",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2331,
+    "ProductName": "VINOSCULPT CRUSHED CABERNET SCRUB 250G",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008366.jpg",
+    "ProductCode": "KSCAU4008366",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2332,
+    "ProductName": "VINOPURE PURIFYING TONER 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4012343.jpg",
+    "ProductCode": "KSCAUVINOP4012343",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2346,
+    "ProductName": "VINOTHERAPIST VEGAN BODY BUTTER SET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU40082840.jpg",
+    "ProductCode": "KSCAU40082840",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2383,
+    "ProductName": "VINOCLEAN MAKEUP REMOVING CLEANSING OIL 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001320.jpg",
+    "ProductCode": "KSCAU4001320",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2384,
+    "ProductName": "VINOPERFECT BRIGHTENING EYE CREAM 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006329.jpg",
+    "ProductCode": "KSCAUVINOP4006329",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2385,
+    "ProductName": "VINERGETIC C+ INSTANT DETOX MASK 35ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINER4003353.jpg",
+    "ProductCode": "KSCAUVINER4003353",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2407,
+    "ProductName": "ANGE DES VIGNES LIGHT FRAGNANCE-50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUFRA4008100.jpg",
+    "ProductCode": "KSCAUFRA4008100",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2413,
+    "ProductName": "VINOPURE PURIFIYING GEL CLEANSER 385 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP40122679.jpg",
+    "ProductCode": "KSCAUVINOP40122679",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2414,
+    "ProductName": "VINOPURE SALICYLIC SPOT SOLUTION - 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP40122680.jpg",
+    "ProductCode": "KSCAUVINOP40122680",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2415,
+    "ProductName": "VINOPERFECT CONCENTRATED GLYCOLIC ESSENCE 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006213.jpg",
+    "ProductCode": "KSCAUVINOP4006213",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2434,
+    "ProductName": "SOLEIL DES VIGNES OIL ELIXIR 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUOIL3522930004165.jpg",
+    "ProductCode": "KSCAUOIL3522930004165",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2435,
+    "ProductName": "SOLEIL DES VIGNES OIL ELIXIR 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUOIL3522930004172.jpg",
+    "ProductCode": "KSCAUOIL3522930004172",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2436,
+    "ProductName": "SMOOTH & GLOW OIL ELIXIR 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUOIL3522930004189.jpg",
+    "ProductCode": "KSCAUOIL3522930004189",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2437,
+    "ProductName": "SMOOTH & GLOW OIL ELIXIR 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUOIL3522930004196.jpg",
+    "ProductCode": "KSCAUOIL3522930004196",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2438,
+    "ProductName": "RESVERATROL-LIFT FIRMING NIGHT CREAM REFILL 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004301.jpg",
+    "ProductCode": "KSCAURES4004301",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2439,
+    "ProductName": "RESVERATROL-LIFT FIRMING CASHMERE CR. REFILL 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004302.jpg",
+    "ProductCode": "KSCAURES4004302",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2449,
+    "ProductName": "VINOCRUSH SKIN TINT -1- 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001321.jpg",
+    "ProductCode": "KSCAU4001321",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2450,
+    "ProductName": "VINOCRUSH SKIN TINT -2- 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001322.jpg",
+    "ProductCode": "KSCAU4001322",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2451,
+    "ProductName": "VINOCRUSH SKIN TINT -3- 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001323.jpg",
+    "ProductCode": "KSCAU4001323",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2452,
+    "ProductName": "VINOCRUSH SKIN TINT -4- 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001324.jpg",
+    "ProductCode": "KSCAU4001324",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2453,
+    "ProductName": "VINOCRUSH SKIN TINT -5- 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001325.jpg",
+    "ProductCode": "KSCAU4001325",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2454,
+    "ProductName": "VINOCRUSH LONGLASTING BRONZER POWDER 8.5GR",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001326.jpg",
+    "ProductCode": "KSCAU4001326",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2546,
+    "ProductName": "CAUDALIE FOAMING CLEANSER 150 ML(temizleme köpüğü)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001232.jpg",
+    "ProductCode": "KSCAU4001232",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2552,
+    "ProductName": "PREMIER CRU THE SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUPRE4005224.jpg",
+    "ProductCode": "KSCAUPRE4005224",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2553,
+    "ProductName": "PREMIER CRU THE CREAM RICHE 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUPRE4005222.jpg",
+    "ProductCode": "KSCAUPRE4005222",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2554,
+    "ProductName": "PREMIER CRU THE EYE CREAM 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUPRE4005221.jpg",
+    "ProductCode": "KSCAUPRE4005221",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2555,
+    "ProductName": "VINOPERFECT SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006041.jpg",
+    "ProductCode": "KSCAUVINOP4006041",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2556,
+    "ProductName": "VINOPERFECT FLUID 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006124.jpg",
+    "ProductCode": "KSCAUVINOP4006124",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2557,
+    "ProductName": "VINOPERFECT CREAM 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006125.jpg",
+    "ProductCode": "KSCAUVINOP4006125",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2558,
+    "ProductName": "VINOPERFECT NIGHT CREAM 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006126.jpg",
+    "ProductCode": "KSCAUVINOP4006126",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2559,
+    "ProductName": "VINOPERFECT GLYCOLIC PEEL MASK 75 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006328.jpg",
+    "ProductCode": "KSCAUVINOP4006328",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2562,
+    "ProductName": "THE DES VIGNE SHOWER GEL 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008121.jpg",
+    "ProductCode": "KSCAU4008121",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2563,
+    "ProductName": "CAUDALIE FLUER DE VIGNE SHOWER GEL 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008069.jpg",
+    "ProductCode": "KSCAU4008069",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2568,
+    "ProductName": "CAUDALIE BEUATY FOOT CREAM 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008086-1.jpg",
+    "ProductCode": "KSCAU4008086-1",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2571,
+    "ProductName": "FLEUR DE VIGNE FRAGRANCE 50 ML (üzüm çekirdegi)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUFRA4008097.jpg",
+    "ProductCode": "KSCAUFRA4008097",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2572,
+    "ProductName": "THE DES VIGNES FRAGNANCE 50 ML(yasemin/zencefil)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUFRA4008099.jpg",
+    "ProductCode": "KSCAUFRA4008099",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2583,
+    "ProductName": "CAUDALIE DEEP CLEANSING EXFOLIATING CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001204.jpg",
+    "ProductCode": "KSCAU4001204",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2585,
+    "ProductName": "CAUDALIE TONING LOTION 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001147.jpg",
+    "ProductCode": "KSCAU4001147",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2587,
+    "ProductName": "THE DES VIGNES FRAGNANCE 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUFRA4008173.jpg",
+    "ProductCode": "KSCAUFRA4008173",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2589,
+    "ProductName": "CAUDALIE FOAMING CLEANSER 50 ML(temizleme köpüğü)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4009141.jpg",
+    "ProductCode": "KSCAU4009141",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2598,
+    "ProductName": "VINOPERFECT TINTED FLUID SPF20-LIGHT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006165.jpg",
+    "ProductCode": "KSCAUVINOP4006165",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2599,
+    "ProductName": "VINOPERFECT TINTED FLUID SPF20-MEDIUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006164.jpg",
+    "ProductCode": "KSCAUVINOP4006164",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2635,
+    "ProductName": "VINOPERFECT GET GLOWING SET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4002380.jpg",
+    "ProductCode": "KSCAUVINOP4002380",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2650,
+    "ProductName": "CAUDALIE GENTLE BUFFING CREAM (PEELING) 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001203.jpg",
+    "ProductCode": "KSCAU4001203",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2665,
+    "ProductName": "VINOPERFECT SUNCARE SET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUDIV40062733-1.jpg",
+    "ProductCode": "KSCAUDIV40062733-1",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2688,
+    "ProductName": "VINOPERFECT CONCENTRATED GLYCOLIC ESSENCE 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006212.jpg",
+    "ProductCode": "KSCAUVINOP4006212",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2705,
+    "ProductName": "PREMIER CRU THE CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUPRE4005220.jpg",
+    "ProductCode": "KSCAUPRE4005220",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2721,
+    "ProductName": "THE DES VIGNES NOURISHING BODY LOTION 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUFRA4008205.jpg",
+    "ProductCode": "KSCAUFRA4008205",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2722,
+    "ProductName": "THE DES VIGNES NOURISHING BODY LOTION 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUFRA4008253.jpg",
+    "ProductCode": "KSCAUFRA4008253",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2726,
+    "ProductName": "VINOPURE PURIFYING TONER 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4012250.jpg",
+    "ProductCode": "KSCAUVINOP4012250",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2728,
+    "ProductName": "VINOPURE SKIN PERFECTING MATIFYING FLUID 40ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4012252.jpg",
+    "ProductCode": "KSCAUVINOP4012252",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2735,
+    "ProductName": "VINOPERFECT CONCENTRATED BRIGHTENING ESSENCE 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006255.jpg",
+    "ProductCode": "KSCAUVINOP4006255",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2746,
+    "ProductName": "VINOPERFECT BRIGHTENING  MICROPEEL FOAM - 100 mL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOP4006330.jpg",
+    "ProductCode": "KSCAUVINOP4006330",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2753,
+    "ProductName": "VINOHYDRA HYALURONIC SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS4002341_1.jpg",
+    "ProductCode": "KSCAUVINOS4002341",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2754,
+    "ProductName": "VINOHYDRA DEEP HYDRATION MOISTURIZER 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS4002342_1.jpg",
+    "ProductCode": "KSCAUVINOS4002342",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2755,
+    "ProductName": "VINOHYDRA SORBET CREAM MOISTURIZER 60ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS4002343_1.jpg",
+    "ProductCode": "KSCAUVINOS4002343",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2756,
+    "ProductName": "VINOHYDRA GEL MOISTURIZER 60ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS4002344_1.jpg",
+    "ProductCode": "KSCAUVINOS4002344",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2757,
+    "ProductName": "VINOHYDRA DEEP HYDRATION MOISTURIZER 60ML-TÜP",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS4002345_1.jpg",
+    "ProductCode": "KSCAUVINOS4002345",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2758,
+    "ProductName": "VINOHYDRA MOISTURIZING MASK 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS4002346_1.jpg",
+    "ProductCode": "KSCAUVINOS4002346",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2759,
+    "ProductName": "VINOCLEAN MICELLAR CLEANSING WATER 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001310_1.jpg",
+    "ProductCode": "KSCAU4001310",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2760,
+    "ProductName": "VINOCLEAN MOISTURIZING TONER 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001327_1.jpg",
+    "ProductCode": "KSCAU4001327",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2762,
+    "ProductName": "THE DES VIGNE SHOWER GEL 400 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4008122.jpg",
+    "ProductCode": "KSCAU4008122",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2781,
+    "ProductName": "SOLEIL DIVIN SHOWER GEL 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUDIV4007279.jpg",
+    "ProductCode": "KSCAUDIV4007279",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2785,
+    "ProductName": "CAUDALIE VINOCLEAN  FOAMING CLEANSER DUO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU40012781-2.jpg",
+    "ProductCode": "KSCAU40012781-2",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2820,
+    "ProductName": "CAUDALIE GRAPE WATER 200 ML(üzüm suyu)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001063.jpg",
+    "ProductCode": "KSCAU4001063",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2837,
+    "ProductName": "RESVERATROL-LIFT CASHMERE CREAM 50ML SET- XMAS2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES2868_1.jpg",
+    "ProductCode": "KSCAURES2868",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2838,
+    "ProductName": "VINOHYDRA SERUM 30 ML SET - XMAS2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS2872_1.jpg",
+    "ProductCode": "KSCAUVINOS2872",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2839,
+    "ProductName": "VINOHYDRA MOISTURIZING CREAM 60ML SET - XMAS2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUVINOS2870_1.jpg",
+    "ProductCode": "KSCAUVINOS2870",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2840,
+    "ProductName": "SOLEIL DES VIGNES OIL ELIXIR 50 ML - XMAS2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUOIL2871_1.jpg",
+    "ProductCode": "KSCAUOIL2871",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2841,
+    "ProductName": "MOISTURIZING OIL ELIXIR 50 ML SET-XMAS2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUOIL2866_1.jpg",
+    "ProductCode": "KSCAUOIL2866",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2904,
+    "ProductName": "PREMIER CRU THE CREAM 50ML-REFİLL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUPRE4005225.jpg",
+    "ProductCode": "KSCAUPRE4005225",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2905,
+    "ProductName": "PREMIER CRU THE CREAM RICHE 50ML-REFİLL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUPRE4005226.jpg",
+    "ProductCode": "KSCAUPRE4005226",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2906,
+    "ProductName": "RESVERATROL-LIFT INSTANT FIRMING SERUM 30ML-REFİLL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAURES4004303.jpg",
+    "ProductCode": "KSCAURES4004303",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2907,
+    "ProductName": "Ange des Vignes Shower Gel - 200 mL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU400441.jpg",
+    "ProductCode": "KSCAU400441",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2934,
+    "ProductName": "CAUDALIE DEEP CLEANSING EXFOLIATING 75 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU4001313_1.jpg",
+    "ProductCode": "KSCAU4001313",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2975,
+    "ProductName": "SELF-TAN SUN DROPS - 15ML YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUDIV3522931004042_1.jpg",
+    "ProductCode": "KSCAUDIV3522931004042",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2984,
+    "ProductName": "EAU DE VIGNES FRESH FRAGRANCE 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAU391_1.jpg",
+    "ProductCode": "KSCAU391",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Caudalie",
+    "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2169,
+    "ProductName": "CELLULAR WATER MIST 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2001003047.jpg",
+    "ProductCode": "2001003047",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2170,
+    "ProductName": "CELLULAR WATER MIST 200ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2001003054.jpg",
+    "ProductCode": "2001003054",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2171,
+    "ProductName": "OSMOPURE FACE&EYES CLEANSING WATER 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002047986.jpg",
+    "ProductCode": "2002047986",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2172,
+    "ProductName": "GENTLE DEEP PORE CLEANSER 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002057931.jpg",
+    "ProductCode": "2002057931",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2173,
+    "ProductName": "LIGHTENING BUFFING MASK 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002118082.jpg",
+    "ProductCode": "2002118082",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2174,
+    "ProductName": "PURE CLEANSING GEL 150ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002107962.jpg",
+    "ProductCode": "2002107962",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2175,
+    "ProductName": "HYDRA REPLENISHING CLEANSING MILK 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002060955.jpg",
+    "ProductCode": "2002060955",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2176,
+    "ProductName": "CALMING CLEANSING MILK 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002080962.jpg",
+    "ProductCode": "2002080962",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2177,
+    "ProductName": "HIGH TOLERANCE EYES&LIPS MAKEUP REMOVER 125 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002073192.jpg",
+    "ProductCode": "2002073192",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2178,
+    "ProductName": "INTENSIVE HYALURONIC SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016014014.jpg",
+    "ProductCode": "2016014014",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2179,
+    "ProductName": "INTENSIVE VITAMINE E² SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016064076.jpg",
+    "ProductCode": "2016064076",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2180,
+    "ProductName": "INTENSIVE HYALURONIC CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016024021.jpg",
+    "ProductCode": "2016024021",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2181,
+    "ProductName": "INTENSIVE HYALURONIC MASK 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016034038.jpg",
+    "ProductCode": "2016034038",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2182,
+    "ProductName": "INTENSIVE HYALURONIC EYE SERUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016022118.jpg",
+    "ProductCode": "2016022118",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2183,
+    "ProductName": "INTENSIVE SPIRULINE SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016084083.jpg",
+    "ProductCode": "2016084083",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2184,
+    "ProductName": "INTENSIVE SPIRULINE CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016094090.jpg",
+    "ProductCode": "2016094090",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2185,
+    "ProductName": "INTENSIVE AHA PEEL GENTLE SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016124144.jpg",
+    "ProductCode": "2016124144",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2186,
+    "ProductName": "INTENSIVE AHA PEEL CONCENTRATED SERUM 30 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016134137.jpg",
+    "ProductCode": "2016134137",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2187,
+    "ProductName": "INTENSIVE VITAMINE C GEL-CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016142147.jpg",
+    "ProductCode": "2016142147",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2188,
+    "ProductName": "INTENSIVE PROPOLIS+CONCENTRATED SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016142161.jpg",
+    "ProductCode": "2016142161",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2189,
+    "ProductName": "INTENSIVE PROPOLIS+SKIN PERFECTOR CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016142178.jpg",
+    "ProductCode": "2016142178",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2190,
+    "ProductName": "INTENSIVE PROPOLIS+SERUM LOTION 130ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016142185.jpg",
+    "ProductCode": "2016142185",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2191,
+    "ProductName": "INTENSIVE PROPOLIS+DEEP CLEAN.MASK 75ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016142192.jpg",
+    "ProductCode": "2016142192",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2192,
+    "ProductName": "ESTHE-WHITE ANTI-DARK SPOTS SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2010027726.jpg",
+    "ProductCode": "2010027726",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2193,
+    "ProductName": "ESTHE-WHITE CLEANSING FOAM 150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2010072690.jpg",
+    "ProductCode": "2010072690",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2194,
+    "ProductName": "ESTHE-WHITE MOISTURIZING DAYCARE 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2010032942.jpg",
+    "ProductCode": "2010032942",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2195,
+    "ProductName": "ESTHE-WHITE TARGETED DARK SPOTS CONCENTRATE 9 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2010057696.jpg",
+    "ProductCode": "2010057696",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2197,
+    "ProductName": "DERM REPAIR SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2014012881_1.jpg",
+    "ProductCode": "2014012881",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2198,
+    "ProductName": "RADIANCE SKINCARE 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2004051815.jpg",
+    "ProductCode": "2004051815",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2199,
+    "ProductName": "ACTIVE REPAIR CREAM 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2015013086.jpg",
+    "ProductCode": "2015013086",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2200,
+    "ProductName": "ACTIVE REPAIR EYE CONTOUR CARE 15 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2015032898.jpg",
+    "ProductCode": "2015032898",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2201,
+    "ProductName": "LIFT&REPAIR ABSOLUTE REPULP BALM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2013033031.jpg",
+    "ProductCode": "2013033031",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2202,
+    "ProductName": "LIFT&REPAIR ABSOLUTE TIGHTENING SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2013052188.jpg",
+    "ProductCode": "2013052188",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2203,
+    "ProductName": "LIFT&REPAIR ABSOLUTE SMOOTHING CREAM 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2013062164.jpg",
+    "ProductCode": "2013062164",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2204,
+    "ProductName": "LIFT&REPAIR EYE CONTOUR SMOOTHING GEL 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2013074526.jpg",
+    "ProductCode": "2013074526",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2205,
+    "ProductName": "LIFT&REPAIR INSTANT REPULP MASK 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2013082591.jpg",
+    "ProductCode": "2013082591",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2206,
+    "ProductName": "LIFT PATCHES 2x10",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2013043024.jpg",
+    "ProductCode": "2013043024",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2207,
+    "ProductName": "EXCELLAGE SERUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2009032064.jpg",
+    "ProductCode": "2009032064",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2208,
+    "ProductName": "EXCELLAGE CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2009032026.jpg",
+    "ProductCode": "2009032026",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2213,
+    "ProductName": "CALMING BIOMIMETIC CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2007078662.jpg",
+    "ProductCode": "2007078662",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2215,
+    "ProductName": "PHOTO REVERSE TINTED LIGHT BEIGE 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012132123.jpg",
+    "ProductCode": "2012132123",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2216,
+    "ProductName": "PHOTO REVERSE TINTED MEDIUM BEIGE 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012132130.jpg",
+    "ProductCode": "2012132130",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2217,
+    "ProductName": "PHOTO REGUL 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012092027.jpg",
+    "ProductCode": "2012092027",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2218,
+    "ProductName": "INTO REPAIR 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012108853.jpg",
+    "ProductCode": "2012108853",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2219,
+    "ProductName": "NO SUN 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012118969.jpg",
+    "ProductCode": "2012118969",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2220,
+    "ProductName": "MICELLAR AFTER SUN SHOWER GEL 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012024458.jpg",
+    "ProductCode": "2012024458",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2276,
+    "ProductName": "E.V.E SERUM SOURCE 30 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2001101563.jpg",
+    "ProductCode": "2001101563",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2277,
+    "ProductName": "ALCOHOL FREE CALMING LOTION 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002091181.jpg",
+    "ProductCode": "2002091181",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2278,
+    "ProductName": "INTENSIVE RETINOL CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016114120.jpg",
+    "ProductCode": "2016114120",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2279,
+    "ProductName": "EXCELLAGE EYE CARE 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2009032019.jpg",
+    "ProductCode": "2009032019",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2280,
+    "ProductName": "PHOTO REVERSE 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012128976.jpg",
+    "ProductCode": "2012128976",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2333,
+    "ProductName": "CELLULAR WATER MELTING MOISTRUZING CREAM ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2001083085.jpg",
+    "ProductCode": "2001083085",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2334,
+    "ProductName": "CELLULAR WATER FRESH MOISTURIZING GEL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2001073078.jpg",
+    "ProductCode": "2001073078",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2340,
+    "ProductName": "HYDRA REPLENISHING FRESH LOTION 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002071075.jpg",
+    "ProductCode": "2002071075",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2341,
+    "ProductName": "INTENSIVE RETINOL SERUM 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016104113.jpg",
+    "ProductCode": "2016104113",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2342,
+    "ProductName": "INTENSIVE VITAMINE C2 SERUM 10ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016140543.jpg",
+    "ProductCode": "2016140543",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2398,
+    "ProductName": "AGE PROTEOM ADVANCED SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2017010007.jpg",
+    "ProductCode": "2017010007",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2399,
+    "ProductName": "SUN OIL MODERATE SUN 150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012133161.jpg",
+    "ProductCode": "2012133161",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2400,
+    "ProductName": "ADAPTASUN SENSITIVE FACE CREAM MODERATE SUN 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012078846.jpg",
+    "ProductCode": "2012078846",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2401,
+    "ProductName": "PHOTO REVERSE CREAM IN STICK ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012121144.jpg",
+    "ProductCode": "2012121144",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2422,
+    "ProductName": "MICELLAR CLEANSING OIL CARE 150ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002092080.jpg",
+    "ProductCode": "2002092080",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2423,
+    "ProductName": "INTENSIVE PROPOLIS+ PURIFYING CLEASING GEL 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016151991.jpg",
+    "ProductCode": "2016151991",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2424,
+    "ProductName": "HYDRA BOOST SELF TANNING CREAM-GEL 200ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012151151.jpg",
+    "ProductCode": "2012151151",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2425,
+    "ProductName": "ADAPTASUN HYDRA-PROTECTIVE SUN WATER 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2012142103.jpg",
+    "ProductCode": "2012142103",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2426,
+    "ProductName": "AYRILMAZ İKİLİ KOFRE 2023",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002999234.jpg",
+    "ProductCode": "2002999234",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2461,
+    "ProductName": "INTENSIVE PRO COLLAGEN CREAM 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016152035.jpg",
+    "ProductCode": "2016152035",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2462,
+    "ProductName": "INTENSIVE PRO COLLAGEN SERUM 30 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016152059.jpg",
+    "ProductCode": "2016152059",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2836,
+    "ProductName": "INTENSIVE RETINOL EYE BALM 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2016122929_1.jpg",
+    "ProductCode": "2016122929",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2983,
+    "ProductName": "EXCELLAGE NT SLEEPING OIL 30 ML - YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2009033285_1.jpg",
+    "ProductCode": "2009033285",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Esthederm",
+    "cat": "Esthederm"
+  },
+  {
+    "ProductId": 2250,
+    "ProductName": "MICELLAR PURIFYING CLEANS.WATER 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002060350.jpg",
+    "ProductCode": "3002060350",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2251,
+    "ProductName": "CLEANSING MILK GENTLE PH 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002070404.jpg",
+    "ProductCode": "3002070404",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2252,
+    "ProductName": "PURIFYING CLEANSING GEL 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002080626.jpg",
+    "ProductCode": "3002080626",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2253,
+    "ProductName": "EXPRESS PURIFYING MASK 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002111524.jpg",
+    "ProductCode": "3002111524",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2254,
+    "ProductName": "GENTLE CLEANSING FOAM 150ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002091456.jpg",
+    "ProductCode": "3002091456",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2255,
+    "ProductName": "OIL-FREE MATIFYING GEL 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003080756.jpg",
+    "ProductCode": "3003080756",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2256,
+    "ProductName": "LIGHT MOISTRUZING CREAM 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003090848.jpg",
+    "ProductCode": "3003090848",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2257,
+    "ProductName": "MELTING MOISTURIZING CREAM 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003100992.jpg",
+    "ProductCode": "3003100992",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2258,
+    "ProductName": "RICH MOISTURIZING CREAM 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003111029.jpg",
+    "ProductCode": "3003111029",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2259,
+    "ProductName": "MOISTURIZING EYE CONTOUR FLUID 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003141418.jpg",
+    "ProductCode": "3003141418",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2260,
+    "ProductName": "PURE ACTIVE ZINC GLUCONATE 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001151210.jpg",
+    "ProductCode": "3001151210",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2261,
+    "ProductName": "PURE ACTIVE PROPOLIS 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001161272.jpg",
+    "ProductCode": "3001161272",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2262,
+    "ProductName": "PURE ACTIVE SALICYLIC ACID %2 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001171159.jpg",
+    "ProductCode": "3001171159",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2263,
+    "ProductName": "PURE ACTIVE VITAMINE E 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001181203.jpg",
+    "ProductCode": "3001181203",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2264,
+    "ProductName": "PURE ACTIVE ALOE VERA 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001191104.jpg",
+    "ProductCode": "3001191104",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2265,
+    "ProductName": "PURE ACTIVE D-PANTHENOL 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001201166.jpg",
+    "ProductCode": "3001201166",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2266,
+    "ProductName": "PURE ACTIVE ENOXOLONE 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001211173.jpg",
+    "ProductCode": "3001211173",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2267,
+    "ProductName": "PURE ACTIVE CITRIC ACID %26-AHA 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001231135.jpg",
+    "ProductCode": "3001231135",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2268,
+    "ProductName": "PURE ACTIVE GLABRIDINE 15ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001241180.jpg",
+    "ProductCode": "3001241180",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2269,
+    "ProductName": "PURE ACTIVE GLYCOLIC ACID %10 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001221517.jpg",
+    "ProductCode": "3001221517",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2270,
+    "ProductName": "PURE ACTIVE RESVERATROL 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001261234.jpg",
+    "ProductCode": "3001261234",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2271,
+    "ProductName": "PURE ACTIVE PEPTIDE-4 PRO-COLLAGEN 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001271227.jpg",
+    "ProductCode": "3001271227",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2272,
+    "ProductName": "PURE ACTIVE HYALURONIC ACID 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001281142.jpg",
+    "ProductCode": "3001281142",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2273,
+    "ProductName": "PROTECTIVE MINERAL FLUID SPF30+ 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3005011043.jpg",
+    "ProductCode": "3005011043",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2274,
+    "ProductName": "PROTECTIVE MINERAL FLUID SPF50+ 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3005021098.jpg",
+    "ProductCode": "3005021098",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2293,
+    "ProductName": "MELTING EXFOLIATING GEL 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002101500.jpg",
+    "ProductCode": "3002101500",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2294,
+    "ProductName": "ULTRA RICH MOISTURIZING BALM 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003121340.jpg",
+    "ProductCode": "3003121340",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2295,
+    "ProductName": "MOISTURIZING WATERY ESSENCE 125ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003141531.jpg",
+    "ProductCode": "3003141531",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2343,
+    "ProductName": "PURE ACTIVE SAF VITAMINE C %10 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001251000.jpg",
+    "ProductCode": "3001251000",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2392,
+    "ProductName": "MOISTURIZING GEL CREAM 40ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3003131586.jpg",
+    "ProductCode": "3003131586",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2393,
+    "ProductName": "PURE ACTIVE NIACINAMIDE %5 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001301685.jpg",
+    "ProductCode": "3001301685",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2394,
+    "ProductName": "PURE ACTIVE RETINOL 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001298005.jpg",
+    "ProductCode": "3001298005",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2395,
+    "ProductName": "GENTLE CLEANSING FOAM İKİLİ KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002990001.jpg",
+    "ProductCode": "3002990001",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2396,
+    "ProductName": "LEKE KARŞITI İKİLİ KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001990003_1.jpg",
+    "ProductCode": "3001990003",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 2397,
+    "ProductName": "AKNE KARŞITI CİLT BAKIM KİTİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3001990004_1.jpg",
+    "ProductCode": "3001990004",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Etat Pur",
+    "cat": "Etat Pur"
+  },
+  {
+    "ProductId": 1975,
+    "ProductName": "HUİLE PRODİGİEUSE 100ml MULTİ-USAGE DRY OİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXSOI001.jpg",
+    "ProductCode": "KSNUXSOI001",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1976,
+    "ProductName": "HUİLE PRODİGİEUSE OR 100ml MULTİ-USAGE DRY OİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30119778.jpg",
+    "ProductCode": "KSNUX30119778",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1980,
+    "ProductName": "POUDRE ECLAT PRODİGİEUX ALL SKİN TYPES 25gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE007.jpg",
+    "ProductCode": "KSNUXE007",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1988,
+    "ProductName": "NUXELLENCE SUPER SERUM YOUTH30G1",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEJEU30163323.jpg",
+    "ProductCode": "KSNUXEJEU30163323",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1989,
+    "ProductName": "NUXURIANCE GOLD DAY CREAM ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30255908.jpg",
+    "ProductCode": "KSNUX30255908",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1990,
+    "ProductName": "NUXURIANCE GOLD NIGHT BALM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30255915.jpg",
+    "ProductCode": "KSNUX30255915",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1991,
+    "ProductName": "NUXURIANCE GOLD EYE BALM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30255922.jpg",
+    "ProductCode": "KSNUX30255922",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1992,
+    "ProductName": "NUXURIANCE GOLD SERUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30255939.jpg",
+    "ProductCode": "KSNUX30255939",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1995,
+    "ProductName": "NUXE SUN HUILE SPF10",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE031.jpg",
+    "ProductCode": "KSNUXE031",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1997,
+    "ProductName": "NUXE SUN HUILE SPF30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE032.jpg",
+    "ProductCode": "KSNUXE032",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 1999,
+    "ProductName": "NUXE SUN SHAMPOOING 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30178726.jpg",
+    "ProductCode": "KSNUXE30178726",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2001,
+    "ProductName": "NUXE SUN LAIT SPF 30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE036.jpg",
+    "ProductCode": "KSNUXE036",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2006,
+    "ProductName": "CREME PRODIGIEUSE BOOST CREME SOYEUSE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO012_1.jpg",
+    "ProductCode": "KSNUXEPRO012",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2009,
+    "ProductName": "HUILE PRODIGIEUSE FLORAL100ml MULTİ-USAGE DRY OİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXSOI019.jpg",
+    "ProductCode": "KSNUXSOI019",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2015,
+    "ProductName": "INSTA-MASQUE DETOXIFYING+GLOW SİYAH",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE038.jpg",
+    "ProductCode": "KSNUXE038",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2016,
+    "ProductName": "INSTA-MASQUE PURIFYING+SMOOTING YEŞİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE039.jpg",
+    "ProductCode": "KSNUXE039",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2028,
+    "ProductName": "INSTA-MASQUE EXFOLIATING +UNIFYING PEMBE ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE040.jpg",
+    "ProductCode": "KSNUXE040",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2030,
+    "ProductName": "PARFUM LE SOIR DES POSSIBLES (GÜN BATIMI) KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30229142.jpg",
+    "ProductCode": "KSNUX30229142",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2054,
+    "ProductName": "REVE DE MIEL STICK LEVRES ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV016.jpg",
+    "ProductCode": "KSNUXEREV016",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2061,
+    "ProductName": "PRODIGIEUX ABSOLU DE PARFUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO016.jpg",
+    "ProductCode": "KSNUXEPRO016",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2062,
+    "ProductName": "REVE DE MIEL OIL CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV017.jpg",
+    "ProductCode": "KSNUXEREV017",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2064,
+    "ProductName": "NUXE SUN FLUID SPF50",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30172166.jpg",
+    "ProductCode": "KSNUXE30172166",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2072,
+    "ProductName": "NUX CLEANS WATER NORM SKIN 200ML(ALL SKIN)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012043.jpg",
+    "ProductCode": "KSNUX30012043",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2073,
+    "ProductName": "NUX CLEANS OIL 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012067.jpg",
+    "ProductCode": "KSNUX30012067",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2074,
+    "ProductName": "NUX VERY ROSE CLEANS MASK 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012081.jpg",
+    "ProductCode": "KSNUX30012081",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2075,
+    "ProductName": "NUX CLEANS FOAM 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012111.jpg",
+    "ProductCode": "KSNUX30012111",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2076,
+    "ProductName": "NUX CLEANS PEEL LOTION 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012104.jpg",
+    "ProductCode": "KSNUX30012104",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2077,
+    "ProductName": "NUX CLEANS LOTION 200ML(MİST)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012098.jpg",
+    "ProductCode": "KSNUX30012098",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2079,
+    "ProductName": "NUXE SUN EAU DELICIEUSE PARFUMANTE 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30175342.jpg",
+    "ProductCode": "KSNUX30175342",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2080,
+    "ProductName": "NUXE BODY EAU DELAISSANTE PARFUMANTE 30 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30136920.jpg",
+    "ProductCode": "KSNUX30136920",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2085,
+    "ProductName": "NUX CLEANS WATER DRY 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012036.jpg",
+    "ProductCode": "KSNUX30012036",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2087,
+    "ProductName": "HUİLE PRODIGIEUSE FLORAL 50ml ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXSOI020.jpg",
+    "ProductCode": "KSNUXSOI020",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2091,
+    "ProductName": "BIO NUTRIREGE OIL NIGHT 30 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXBİO30273057_1.jpg",
+    "ProductCode": "KSNUXBİO30273057",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2096,
+    "ProductName": "BIO MASQUE DETOX  50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXBİO30273910.jpg",
+    "ProductCode": "KSNUXBİO30273910",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2097,
+    "ProductName": "BIO MICELLAR WATER  200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXBİO30273033.jpg",
+    "ProductCode": "KSNUXBİO30273033",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2116,
+    "ProductName": "AQUABELLA DUO (EMULSION +GELEE PURIFIANTE )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEAQU300443897.jpg",
+    "ProductCode": "KSNUXEAQU300443897",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2142,
+    "ProductName": "NUX PROD FLOW JELLY SHOWER GEL 200ML (FLORAL)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30116133.jpg",
+    "ProductCode": "KSNUX30116133",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2143,
+    "ProductName": "NUX PROD PARFÜM FLORAL 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30182524.jpg",
+    "ProductCode": "KSNUX30182524",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2144,
+    "ProductName": "NUXE BODY REVE DE TONING FIRMING CREAM 200ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30131992.jpg",
+    "ProductCode": "KSNUX30131992",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2145,
+    "ProductName": "NUXE BODY REVE DE THE MOISTURIZING MILK 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30135105.jpg",
+    "ProductCode": "KSNUX30135105",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2146,
+    "ProductName": "NUXE BODY REVE DE THE EXALTING FRAGNANT 100ML SPRY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30131985.jpg",
+    "ProductCode": "KSNUX30131985",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2147,
+    "ProductName": "NUXE BODY REVE DE THE REVITALISING SHOWER GEL200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30132012.jpg",
+    "ProductCode": "KSNUX30132012",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2149,
+    "ProductName": "NUXE BODY REVE DE THE REVITALISING SCRUB 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30132005.jpg",
+    "ProductCode": "KSNUX30132005",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2159,
+    "ProductName": "BIO SOAP (SABUN) 100 GR invigorating",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXBİO30275075.jpg",
+    "ProductCode": "KSNUXBİO30275075",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2160,
+    "ProductName": "BIO SOAP (SABUN) PS 100 GR delicate ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXBİO30275860.jpg",
+    "ProductCode": "KSNUXBİO30275860",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2161,
+    "ProductName": "NUXE BODY REVE DE THE DEO 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30132006.jpg",
+    "ProductCode": "KSNUX30132006",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2162,
+    "ProductName": "HUİLE PRODİGİEUSE NEROLİ 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30114993.jpg",
+    "ProductCode": "KSNUX30114993",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2222,
+    "ProductName": "PARFUM LE MATIN DES POSSIBLES (GÜN DOĞUMU) KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30224023.jpg",
+    "ProductCode": "KSNUX30224023",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2223,
+    "ProductName": "NUX PROD PARFUM SET XMAS20",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30183996.jpg",
+    "ProductCode": "KSNUX30183996",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2224,
+    "ProductName": "REVE DE MIEL BODY CREAM 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30151770.jpg",
+    "ProductCode": "KSNUXEREV30151770",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2226,
+    "ProductName": "NUXE BODY REVE DE THE DEO 2X50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30133673.jpg",
+    "ProductCode": "KSNUX30133673",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2233,
+    "ProductName": "NUX CLEANS OIL MILK 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012068.jpg",
+    "ProductCode": "KSNUX30012068",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2234,
+    "ProductName": "NUXE BODY REVE DE THE EXALTING FRAGNANT 30ML SPRY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30132159.jpg",
+    "ProductCode": "KSNUX30132159",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2235,
+    "ProductName": "REVE DE MIEL SOLID SHAMPOO 65G",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30156270.jpg",
+    "ProductCode": "KSNUXEREV30156270",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2236,
+    "ProductName": "MERVEILLANCE LIFT VELVET DAY CREAM50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXMERV30084795.jpg",
+    "ProductCode": "KSNUXMERV30084795",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2237,
+    "ProductName": "MERVEILLANCE LIFT NORM SKIN POWDER CR 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXMERV30086089.jpg",
+    "ProductCode": "KSNUXMERV30086089",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2238,
+    "ProductName": "MERVEILLANCE LIFT NIGHT CR 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXMERV30084818.jpg",
+    "ProductCode": "KSNUXMERV30084818",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2239,
+    "ProductName": "MERVEILLANCE LIFT OIL-SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXMERV30084771.jpg",
+    "ProductCode": "KSNUXMERV30084771",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2240,
+    "ProductName": "MERVEILLANCE LIFT EYE CR 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXMERV30084757.jpg",
+    "ProductCode": "KSNUXMERV30084757",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2283,
+    "ProductName": "NUXE SUN HAIR MIST 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE047_1.jpg",
+    "ProductCode": "KSNUXE047",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2284,
+    "ProductName": "NUXE SUN AFTER SUN 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30178961_1.jpg",
+    "ProductCode": "KSNUXE30178961",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2285,
+    "ProductName": "NUXE WHITE EYE CONTOUR 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30219685.jpg",
+    "ProductCode": "KSNUX30219685",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2286,
+    "ProductName": "NUXE WHITE A-POLLUTION GEL CR 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30219692.jpg",
+    "ProductCode": "KSNUX30219692",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2306,
+    "ProductName": "HUİLE PRODİGİEUSE 30ml MULTİ-USAGE DRY OİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30116080.jpg",
+    "ProductCode": "KSNUX30116080",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2307,
+    "ProductName": "NUX VERY ROSE LIP BALM 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30017178.jpg",
+    "ProductCode": "KSNUX30017178",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2308,
+    "ProductName": "NUXE WHITE A-POLLUTION SERUM 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30219708.jpg",
+    "ProductCode": "KSNUX30219708",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2309,
+    "ProductName": "NUXE SUN AUTOBRONZANT HYDRATANT FACE&BODY ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE049_1.jpg",
+    "ProductCode": "KSNUXE049",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2310,
+    "ProductName": "REVE DE MIEL FRAGNANT WATER 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30156263.jpg",
+    "ProductCode": "KSNUXEREV30156263",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2311,
+    "ProductName": "NUX CLEANS WATER 2*400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30014887.jpg",
+    "ProductCode": "KSNUX30014887",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2312,
+    "ProductName": "NUXE BODY REVE DE THE SHOWER GEL 2*200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30135594_1.jpg",
+    "ProductCode": "KSNUX30135594",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2313,
+    "ProductName": "RDM TRAVEL KIT 2025",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30195464_1.jpg",
+    "ProductCode": "KSNUX30195464",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2335,
+    "ProductName": "REVE DE MIEL HONEY LIPS 10ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30157901.jpg",
+    "ProductCode": "KSNUXEREV30157901",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2336,
+    "ProductName": "CREME FRAICHE 3 IN 1 100ML- NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEFRA30038014.jpg",
+    "ProductCode": "KSNUXEFRA30038014",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2337,
+    "ProductName": "CREME FRAICHE RICH DS 50ML - NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEFRA30039028.jpg",
+    "ProductCode": "KSNUXEFRA30039028",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2338,
+    "ProductName": "CREME FRAICHE PLUMPING CR NS 50ML - NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEFRA30038007.jpg",
+    "ProductCode": "KSNUXEFRA30038007",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2339,
+    "ProductName": "BIO EYE CREAM 15ML - NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXBİO30277611.jpg",
+    "ProductCode": "KSNUXBİO30277611",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2354,
+    "ProductName": "CREME FRAICHE MATTIFYING FL CS 50ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEFRA30037932.jpg",
+    "ProductCode": "KSNUXEFRA30037932",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2402,
+    "ProductName": "REVE DE MIEL CICA HAND CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30156171.jpg",
+    "ProductCode": "KSNUXEREV30156171",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2403,
+    "ProductName": "NUX HP100+ HUILE DOUCH30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30116996.jpg",
+    "ProductCode": "KSNUX30116996",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2416,
+    "ProductName": "NUX HP100 + ROLL ON OR 8ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30012112_1.jpg",
+    "ProductCode": "KSNUX30012112",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2417,
+    "ProductName": "NUX HPN100+ GEL DOUC NERO 30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30117010.jpg",
+    "ProductCode": "KSNUX30117010",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2427,
+    "ProductName": "CP BOOST EYE BALM 15 ML -NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO30231586.jpg",
+    "ProductCode": "KSNUXEPRO30231586",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2428,
+    "ProductName": "CP BOOST GLOW CREAM 40 ML - NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO30231584.jpg",
+    "ProductCode": "KSNUXEPRO30231584",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2429,
+    "ProductName": "CP BOOST NIGHT BALM 50 ML - NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO30231585.jpg",
+    "ProductCode": "KSNUXEPRO30231585",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2430,
+    "ProductName": "CP BOOST GLOW SERUM 30 ML - NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO30233702.jpg",
+    "ProductCode": "KSNUXEPRO30233702",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2431,
+    "ProductName": "CP BOOST DETOX MASKE 75 ML - NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO30233780.jpg",
+    "ProductCode": "KSNUXEPRO30233780",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2432,
+    "ProductName": "MERVEILLANCE LIFT GLOW CREAM 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXMERV30085234.jpg",
+    "ProductCode": "KSNUXMERV30085234",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2433,
+    "ProductName": "NUXELLENCE SUPER SERUM EYE CONT 15 ML -NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEJEU30162578.jpg",
+    "ProductCode": "KSNUXEJEU30162578",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2443,
+    "ProductName": "NUXURIANCE ULTRA RICHE CREAM 50ML-YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104473.jpg",
+    "ProductCode": "KSNUXULTRA30104473",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2444,
+    "ProductName": "NUXURIANCE ULTRA NIGHT  CREAM 50ML-YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104480.jpg",
+    "ProductCode": "KSNUXULTRA30104480",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2445,
+    "ProductName": "NUXURIANCE ULTRA SERUM 30ML-YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104497.jpg",
+    "ProductCode": "KSNUXULTRA30104497",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2446,
+    "ProductName": "NUXURIANCE ULTRA SPF 30 CREAM 50ML-YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104503.jpg",
+    "ProductCode": "KSNUXULTRA30104503",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2447,
+    "ProductName": "NUXURIANCE ULTRA EYE & LIP CREAM 15ML-YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104510.jpg",
+    "ProductCode": "KSNUXULTRA30104510",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2448,
+    "ProductName": "NUXURIANCE ULTRA DAY CREAM 50ML-YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30106880.jpg",
+    "ProductCode": "KSNUXULTRA30106880",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2468,
+    "ProductName": "NUXURIANCE ULTRA BODY MILK 400ML -YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104527.jpg",
+    "ProductCode": "KSNUXULTRA30104527",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2469,
+    "ProductName": "NUXURIANCE ULTRA HAND CREAM 75ML -YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104534.jpg",
+    "ProductCode": "KSNUXULTRA30104534",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2470,
+    "ProductName": "NUX VERY ROSE BODY MILK 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30018891.jpg",
+    "ProductCode": "KSNUX30018891",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2471,
+    "ProductName": "NUXE SUN  SPRAY FONDANT SPF30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30172646_1.jpg",
+    "ProductCode": "KSNUXE30172646",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2472,
+    "ProductName": "NUXE SUN  SPRAY FONDANT SPF50 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30179652_1.jpg",
+    "ProductCode": "KSNUXE30179652",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2473,
+    "ProductName": "NUXE SUN AUTOBRONZANT FACE&BODY CREAM MOUSSE 150ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30178914_1.jpg",
+    "ProductCode": "KSNUXE30178914",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2474,
+    "ProductName": "NUXE SUN TRAVEL SET 2024",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30179676_1.jpg",
+    "ProductCode": "KSNUXE30179676",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2477,
+    "ProductName": "NUXE HAIR WASH 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXHAIR30064695.jpg",
+    "ProductCode": "KSNUXHAIR30064695",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2478,
+    "ProductName": "NUXE HAIR WASH 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXHAIR30061129.jpg",
+    "ProductCode": "KSNUXHAIR30061129",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2479,
+    "ProductName": "NUXE HAIR CONDITIONER 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXHAIR30064664.jpg",
+    "ProductCode": "KSNUXHAIR30064664",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2480,
+    "ProductName": "NUXE HAIR PRE WASH 125ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXHAIR30064688.jpg",
+    "ProductCode": "KSNUXHAIR30064688",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2481,
+    "ProductName": "NUXE HAIR LEAVE IN 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXHAIR30069881.jpg",
+    "ProductCode": "KSNUXHAIR30069881",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2490,
+    "ProductName": "MASQUE CREME FRAICHE DE BEAUTE 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEFRA005.jpg",
+    "ProductCode": "KSNUXEFRA005",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2491,
+    "ProductName": "REVE DE MIEL BAUME LEVRES 15g",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV001.jpg",
+    "ProductCode": "KSNUXEREV001",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2494,
+    "ProductName": "REVE DE MIEL 2IN1 NIGHT-DAY FACE CREME",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30159159.jpg",
+    "ProductCode": "KSNUXEREV30159159",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2496,
+    "ProductName": "REVE DE MIEL CREME MAINS ET ONGLES 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV005.jpg",
+    "ProductCode": "KSNUXEREV005",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2545,
+    "ProductName": "NUXE BODY DEO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE016.jpg",
+    "ProductCode": "KSNUXE016",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2623,
+    "ProductName": "NUXURIANCE ULTRA SERUM 30ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30106516.jpg",
+    "ProductCode": "KSNUX30106516",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2652,
+    "ProductName": "PRODIGIEUX LE PARFUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO005.jpg",
+    "ProductCode": "KSNUXEPRO005",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2653,
+    "ProductName": "NUXE MEN NUXELLENCE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM719.jpg",
+    "ProductCode": "KSNUXEM719",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2654,
+    "ProductName": "NUXE MEN DEODORANT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM578.jpg",
+    "ProductCode": "KSNUXEM578",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2655,
+    "ProductName": "NUXE MEN GEL A RASER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM585.jpg",
+    "ProductCode": "KSNUXEM585",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2656,
+    "ProductName": "NUXE MEN CONTOUR DES YEUX",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM561.jpg",
+    "ProductCode": "KSNUXEM561",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2657,
+    "ProductName": "NUXE MEN BAUME APRES RASAGE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM592.jpg",
+    "ProductCode": "KSNUXEM592",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2658,
+    "ProductName": "NUXE MEN GEL HYDRATANT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM957.jpg",
+    "ProductCode": "KSNUXEM957",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2659,
+    "ProductName": "NUXE MEN GEL DOUCHE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM964.jpg",
+    "ProductCode": "KSNUXEM964",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2660,
+    "ProductName": "NUXURIANCE ULTRA 20 SPF",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXINTE12.jpg",
+    "ProductCode": "KSNUXINTE12",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2661,
+    "ProductName": "NUXE BODY EAU DELAISSANTE PARFUMANTE 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30136920.jpg",
+    "ProductCode": "KSNUXE30136920",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2675,
+    "ProductName": "NUXURIANCE ULTRA CREME MAINS ANTI-TACHES&ANTI-AGE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXINTE13.jpg",
+    "ProductCode": "KSNUXINTE13",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2676,
+    "ProductName": "NUXE SUN EAU DELICIEUSE PARFUMANTE 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30170125_1.jpg",
+    "ProductCode": "KSNUXE30170125",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2678,
+    "ProductName": "REVE DE MIEL STICK LEVRES + CREME MAINS 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV007.jpg",
+    "ProductCode": "KSNUXEREV007",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2680,
+    "ProductName": "REVE DE MIEL GOMMAGE GOURMAND NOURRISSANT CORPS",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV009_1.jpg",
+    "ProductCode": "KSNUXEREV009",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2681,
+    "ProductName": "NUXE MEN GEL DOUCHE DUO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM965.jpg",
+    "ProductCode": "KSNUXEM965",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2695,
+    "ProductName": "HUİLEde douch PRODİGİEUSE (duş yağı)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXSOI012.jpg",
+    "ProductCode": "KSNUXSOI012",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2696,
+    "ProductName": "HUİLE PRODİGİEUSE 50ml MULTİ-USAGE DRY OİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXSOI013.jpg",
+    "ProductCode": "KSNUXSOI013",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2697,
+    "ProductName": "HUİLE PRODİGİEUSE OR 50ml MULTİ-USAGE DRY OİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXSOI014.jpg",
+    "ProductCode": "KSNUXSOI014",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2699,
+    "ProductName": "REVE DE MIEL CREME DUO  MAINS ET ONGLES 2*50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV010.jpg",
+    "ProductCode": "KSNUXEREV010",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2709,
+    "ProductName": "NUXURIANCE ULTRA CREME CORPS ANTI-AGE GLOBAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXINTE14.jpg",
+    "ProductCode": "KSNUXINTE14",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2711,
+    "ProductName": "NUXE SUN ROLAND GARROS SPRAY FONDANT SPF50",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE024_1.jpg",
+    "ProductCode": "KSNUXE024",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2712,
+    "ProductName": "NUXE SUN EMULSİON VISAGE SPF50",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30176999_1.jpg",
+    "ProductCode": "KSNUXE30176999",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2714,
+    "ProductName": "REVE DE MIEL GEL LAVANT SURGRAS VISAGE&CORPS",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV011.jpg",
+    "ProductCode": "KSNUXEREV011",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2716,
+    "ProductName": "REVE DE MIEL GEL NETTOYANT ET DEMAQUILLANT VISAGE ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV012.jpg",
+    "ProductCode": "KSNUXEREV012",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2717,
+    "ProductName": "AQUABELLA GELEE PURIFIANTE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEAQU857.jpg",
+    "ProductCode": "KSNUXEAQU857",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2718,
+    "ProductName": "AQUABELLA LOTION ESSENCE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEAQU871.jpg",
+    "ProductCode": "KSNUXEAQU871",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2719,
+    "ProductName": "AQUABELLA EMULSION HYDRATANTE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEAQU888.jpg",
+    "ProductCode": "KSNUXEAQU888",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2730,
+    "ProductName": "NUXE SUN EMULSİON VISAGE SPF30",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE027_1.jpg",
+    "ProductCode": "KSNUXE027",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2731,
+    "ProductName": "REVE DE MIEL SUPER BALM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV013.jpg",
+    "ProductCode": "KSNUXEREV013",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2732,
+    "ProductName": "PARFUM LE MATIN DES POSSIBLES (GÜN DOĞUMU)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE028.jpg",
+    "ProductCode": "KSNUXE028",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2733,
+    "ProductName": "PARFUM LE SOIR DES POSSIBLES (GÜN BATIMI)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE029.jpg",
+    "ProductCode": "KSNUXE029",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2734,
+    "ProductName": "REVE DE MIEL STICK LEVRES  2 Lİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV014.jpg",
+    "ProductCode": "KSNUXEREV014",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2736,
+    "ProductName": "NUXE MEN DEODORANT DUO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM579.jpg",
+    "ProductCode": "KSNUXEM579",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2737,
+    "ProductName": "REVE DE MIEL GEL LAVANT SURGRAS 400ML 2 Lİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV015.jpg",
+    "ProductCode": "KSNUXEREV015",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2763,
+    "ProductName": "NUXELLENCE SUPER SERUM YOUTH50G1",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEJEU30165104_1.jpg",
+    "ProductCode": "KSNUXEJEU30165104",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2764,
+    "ProductName": "HUILE PRODIGIEUSE FLORAL OIL OR 50ML- NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXSO30118334.jpg",
+    "ProductCode": "KSNUXSO30118334",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2769,
+    "ProductName": "PRODIGIEUX  BB CREAM LIGHT30 (NEW)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO30119820.jpg",
+    "ProductCode": "KSNUXEPRO30119820",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2770,
+    "ProductName": "PRODIGIEUX  BB CREAM MEDIUM 30 (NEW)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEPRO30119837.jpg",
+    "ProductCode": "KSNUXEPRO30119837",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2793,
+    "ProductName": "NUXE SWEET LEMON LIP BALM ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXESW30244718_1.jpg",
+    "ProductCode": "KSNUXESW30244718",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2794,
+    "ProductName": "NUXE SWEET LEMON HAND CREAM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXESW30244725_1.jpg",
+    "ProductCode": "KSNUXESW30244725",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2795,
+    "ProductName": "NUXE SWEET LEMON LIP STICK",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXESW30244732_1.jpg",
+    "ProductCode": "KSNUXESW30244732",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2796,
+    "ProductName": "CREME FRAICHE GLOW RICH CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEFRA30039029.jpg",
+    "ProductCode": "KSNUXEFRA30039029",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2797,
+    "ProductName": "CREME FRAICHE EYE CREAM 15 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEFRA30038015_1.jpg",
+    "ProductCode": "KSNUXEFRA30038015",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2798,
+    "ProductName": "NUXE BODY DEO BALM 50G",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE051.jpg",
+    "ProductCode": "KSNUXE051",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2799,
+    "ProductName": "REVE DE MIEL ECO REFILL CLEAN GEL 400ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV018_1.jpg",
+    "ProductCode": "KSNUXEREV018",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2810,
+    "ProductName": "NUX VERY ROSE HAND CREAM 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013482.jpg",
+    "ProductCode": "KSNUX30013482",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2811,
+    "ProductName": "NUX VERY ROSE FRAGNANCE SPRAY 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30018846_1.jpg",
+    "ProductCode": "KSNUX30018846",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2843,
+    "ProductName": "NUXE SWEET LEMON GEL DOUCHE 750ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXESW30240108.jpg",
+    "ProductCode": "KSNUXESW30240108",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2844,
+    "ProductName": "REVE DE MIEL CLEANSING GEL 750ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30155891.jpg",
+    "ProductCode": "KSNUXEREV30155891",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2845,
+    "ProductName": "NUXE BODY REVE DE THE GEL DOUCHE 750ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30138884.jpg",
+    "ProductCode": "KSNUX30138884",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2846,
+    "ProductName": "NUXE HAIR PRODIGIEUX SAÇ BAKIM SETİ 24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXHAIR30064665.jpg",
+    "ProductCode": "KSNUXHAIR30064665",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2847,
+    "ProductName": "NUX VERY ROSE CHRISTMAS BOX 24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30011686.jpg",
+    "ProductCode": "KSNUX30011686",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2848,
+    "ProductName": "NUXE ADVENT CALENDER 24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30191617.jpg",
+    "ProductCode": "KSNUX30191617",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2900,
+    "ProductName": "NUXE HP FLORALE PEMBE GÜZELLİK SETİ 24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30111679_1.jpg",
+    "ProductCode": "KSNUX30111679",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2901,
+    "ProductName": "NUXE HP PARLAKLIK SETİ 24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30111112_1.jpg",
+    "ProductCode": "KSNUX30111112",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2902,
+    "ProductName": "NUXE PRODDIGIEUX GÜZELLİK SETİ 24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30111655_1.jpg",
+    "ProductCode": "KSNUXE30111655",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2903,
+    "ProductName": "NUXE MEN BAKIM SETİ 24",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEM548_1.jpg",
+    "ProductCode": "KSNUXEM548",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2915,
+    "ProductName": "NUXURIANCE ULTRA VANITY-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30105585_1.jpg",
+    "ProductCode": "KSNUXULTRA30105585",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2916,
+    "ProductName": "MERVEILLANCE LIFT VANITY-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXMERV30085578_1.jpg",
+    "ProductCode": "KSNUXMERV30085578",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2917,
+    "ProductName": "VERY ROSE PLUMPING LIP SERUM-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013529_1.jpg",
+    "ProductCode": "KSNUX30013529",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2918,
+    "ProductName": "VERY ROSE MAKE-UP REMOVER MILK 200ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013390_1.jpg",
+    "ProductCode": "KSNUX30013390",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2919,
+    "ProductName": "VERY ROSE SOOTHING CLEANSING MIC.WATER 200ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013444_1.jpg",
+    "ProductCode": "KSNUX30013444",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2920,
+    "ProductName": "VERY ROSE SOOTHING CLEANSING MIC.WATER 400ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013451_1.jpg",
+    "ProductCode": "KSNUX30013451",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2921,
+    "ProductName": "VERY ROSE SHOWER GEL 750ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30018907_1.jpg",
+    "ProductCode": "KSNUX30018907",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2922,
+    "ProductName": "VERY ROSE REFRESHING TONIC LOTION 200ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013376_1.jpg",
+    "ProductCode": "KSNUX30013376",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2923,
+    "ProductName": "VERY ROSE LIGHT CLEANSING FOAM 150ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013383_1.jpg",
+    "ProductCode": "KSNUX30013383",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2924,
+    "ProductName": "VERY ROSE RADIANT FACE SCRUB 75ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013406_1.jpg",
+    "ProductCode": "KSNUX30013406",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2925,
+    "ProductName": "VERY ROSE SOOTHING CLEANSING GEL 150ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013413_1.jpg",
+    "ProductCode": "KSNUX30013413",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2926,
+    "ProductName": "VERY ROSE DELICATE CLEANSING OIL 150ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013475_1.jpg",
+    "ProductCode": "KSNUX30013475",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2927,
+    "ProductName": "VERY ROSE SOOTHING CLEANS.MIC.WATER 2*400ML-NEW",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30013628_1.jpg",
+    "ProductCode": "KSNUX30013628",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2928,
+    "ProductName": "REVE DE MIEL CICA HAND CREAM 2*50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXEREV30156378_1.jpg",
+    "ProductCode": "KSNUXEREV30156378",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2929,
+    "ProductName": "NUXURIANCE ULTRA ULTIM CARE 75ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXULTRA30104311_1.jpg",
+    "ProductCode": "KSNUXULTRA30104311",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2931,
+    "ProductName": "HP COLLECTOR 100ML (Özel Fuşya Bileklik Hediyeli)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30110666.jpg",
+    "ProductCode": "KSNUX30110666",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2932,
+    "ProductName": "HP OR COLLECTOR100ML(Özel Fuşya Bileklik Hediyeli)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30110908.jpg",
+    "ProductCode": "KSNUX30110908",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2933,
+    "ProductName": "NUX SWEET LEMON KIT STICK 4G + HAND CR 30 ML(NEW)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXESW30249508_1.jpg",
+    "ProductCode": "KSNUXESW30249508",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2970,
+    "ProductName": "NUXE SUN HUILE SOLAIRE GOLD SPF50 /150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30172003.jpg",
+    "ProductCode": "KSNUX30172003",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2971,
+    "ProductName": "NUXE SUN TRAVEL SET 2025",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE30173000.jpg",
+    "ProductCode": "KSNUXE30173000",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2973,
+    "ProductName": "NUXE SUN PERFUME & AFTER SUN SHAMPOO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30179638.jpg",
+    "ProductCode": "KSNUX30179638",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Nuxe",
+    "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2019,
+    "ProductName": "PHYTOCOLOR 7.3- (2019)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10012A99927_1.jpg",
+    "ProductCode": "PHYC4PH10012A99927",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2027,
+    "ProductName": "PHYTOCOLOR 8 (2019)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10013A99926.jpg",
+    "ProductCode": "PHYC4PH10013A99926",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2037,
+    "ProductName": "PHYTONOVATHRIX LOTION",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYS1PH10048A31524.jpg",
+    "ProductCode": "PHYS1PH10048A31524",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2038,
+    "ProductName": "PHYTODETOX SPRAY 150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10042A31524.jpg",
+    "ProductCode": "PHYPH10042A31524",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2039,
+    "ProductName": "PHYTOVOLUME JELLY MASK 150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10053A31590_1.jpg",
+    "ProductCode": "PHYPH10053A31590",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2040,
+    "ProductName": "PHYTOVOLUME BLOW DRY SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10055A31590.jpg",
+    "ProductCode": "PHYPH10055A31590",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2041,
+    "ProductName": "PHYTODETOX PRE SHAMPOO MASK 125 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10042A31525.jpg",
+    "ProductCode": "PHYPH10042A31525",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2042,
+    "ProductName": "PHYTODETOX  SHAMPOO 125 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10044A31224.jpg",
+    "ProductCode": "PHYPH10044A31224",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2050,
+    "ProductName": "PHYTOCOLOR 6,34 (2019)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10076A99926_1.jpg",
+    "ProductCode": "PHYC4PH10076A99926",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2051,
+    "ProductName": "PHYTOCOLOR 7,43 (2019)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10077A99926.jpg",
+    "ProductCode": "PHYC4PH10077A99926",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2067,
+    "ProductName": "PHYTOJOBA MOISTURIZING GEL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10028A31590.jpg",
+    "ProductCode": "PHYPH10028A31590",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2068,
+    "ProductName": "PHYTOPROGENIUM ULTRA GENTLE DETANGLER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10050A31590_1.jpg",
+    "ProductCode": "PHYPH10050A31590",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2069,
+    "ProductName": "PHYTOCOLOR MASK 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10029A31590.jpg",
+    "ProductCode": "PHYPH10029A31590",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2070,
+    "ProductName": "PHYTOCOLOR SHAMPOO 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10008A32590.jpg",
+    "ProductCode": "PHYC4PH10008A32590",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2107,
+    "ProductName": "PHYTOCOLOR 9- (2019)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10011A99927.jpg",
+    "ProductCode": "PHYC4PH10011A99927",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2131,
+    "ProductName": "PHYTOCOLOR 8.3 ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10014A99926.jpg",
+    "ProductCode": "PHYC4PH10014A99926",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2148,
+    "ProductName": "PHYTOCOLOR SHINE ACTIVATING CARE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYPH10030A31590.jpg",
+    "ProductCode": "PHYPH10030A31590",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2282,
+    "ProductName": "PHYTOJOBA Moisturizing Mask 150ml -yeni-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYM3520222_1.jpg",
+    "ProductCode": "PHYM3520222",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2315,
+    "ProductName": "PHYTOLAQUE SOIE SPRAY 400 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYS10082B34090_1.jpg",
+    "ProductCode": "PHYS10082B34090",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2316,
+    "ProductName": "PHYTOCOLOR 9.3",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH100104A99926.jpg",
+    "ProductCode": "PHYC4PH100104A99926",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2317,
+    "ProductName": "PHYTOCOLOR 9.8",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH100105A99927.jpg",
+    "ProductCode": "PHYC4PH100105A99927",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2318,
+    "ProductName": "PHYTOCOLOR 10",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH100106A99928.jpg",
+    "ProductCode": "PHYC4PH100106A99928",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2319,
+    "ProductName": "PHYTOPOLLEINE STIMUL 20ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYS1036104.jpg",
+    "ProductCode": "PHYS1036104",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2322,
+    "ProductName": "PHYTOKÉRATINE SPRAY 30ML (MM)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYS7199004400.jpg",
+    "ProductCode": "PHYS7199004400",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2356,
+    "ProductName": "PHYTOJOBA- Hydrating Moist. Shampoo 250 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH2076321.jpg",
+    "ProductCode": "PHYSH2076321",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2360,
+    "ProductName": "PHYTOCOLOR SHAMPOO 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10008A32591.jpg",
+    "ProductCode": "PHYC4PH10008A32591",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2361,
+    "ProductName": "PHYTOJOBA SHAMPOO 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH2076322.jpg",
+    "ProductCode": "PHYSH2076322",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2362,
+    "ProductName": "PHYTOPROGENIUM SHMAPOO 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH2136339_1.jpg",
+    "ProductCode": "PHYSH2136339",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2363,
+    "ProductName": "PHYTOVOLUME SHAMPOO 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH2550347_1.jpg",
+    "ProductCode": "PHYSH2550347",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2364,
+    "ProductName": "PHYTODÉFRISANT SHAMPOO 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHY10094A25091.jpg",
+    "ProductCode": "PHY10094A25091",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2365,
+    "ProductName": "PHYTOCOLOR 5.5 ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10020A99927.jpg",
+    "ProductCode": "PHYC4PH10020A99927",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2366,
+    "ProductName": "PHYTOCOLOR 8.1",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10017A99927.jpg",
+    "ProductCode": "PHYC4PH10017A99927",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2372,
+    "ProductName": "PHYTOCYANE MEN SHAMPOO  *YENİ* 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH2046315_1.jpg",
+    "ProductCode": "PHYSH2046315",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2521,
+    "ProductName": "PHYTOKÉRATINE SPRAY-Repairing Thermal 150 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYS3530440_1.jpg",
+    "ProductCode": "PHYS3530440",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2526,
+    "ProductName": "PHYTOPOLLEINE -Botanical Scalp Treatment -25 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYS1036102.jpg",
+    "ProductCode": "PHYS1036102",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2591,
+    "ProductName": "PHYTOSQUAM PURIFYING SHAMPOO 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH2190358.jpg",
+    "ProductCode": "PHYSH2190358",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2607,
+    "ProductName": "PHYTOKERATINE EXTREME EXCEPTIONAL ŞAMPUAN",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYS600342.jpg",
+    "ProductCode": "PHYS600342",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2645,
+    "ProductName": "PHYTODENSIA Shampoo - 200 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH2610362.jpg",
+    "ProductCode": "PHYSH2610362",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  },
+  {
+    "ProductId": 2673,
+    "ProductName": "PHYTODENSIA SERUM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYSH3610562_1.jpg",
+    "ProductCode": "PHYSH3610562",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Phyto",
+    "cat": "Phyto"
+  }
+]
