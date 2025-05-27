@@ -4,13 +4,13 @@ on:
   schedule:
     # Her gün UTC 00:00'da çalışır (Türkiye saatiyle sabah 03:00)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Manuel çalıştırmak için
+  workflow_dispatch: # Manuel çalıştırma için
 
 jobs:
   scrape_and_commit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # GitHub'a push izni
+      contents: write
 
     steps:
       - name: 📥 Repo'yu klonla
@@ -19,7 +19,7 @@ jobs:
       - name: 🟢 Node.js kurulumu
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '18' # Puppeteer ile uyumlu kararlı sürüm
 
       - name: 🧱 Puppeteer için sistem kütüphanelerini kur (Ubuntu 24.04 uyumlu)
         run: |
@@ -47,7 +47,7 @@ jobs:
             xdg-utils \
             wget
 
-      - name: 📦 NPM paketlerini yükle
+      - name: 📦 NPM bağımlılıklarını yükle
         run: npm install puppeteer fs-extra dotenv
 
       - name: 🚀 Scraper script'ini çalıştır
@@ -64,7 +64,7 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add urunler/api/products.json urunler/api/hayvan-sagligi.json
           if git diff --staged --quiet; then
-            echo "📦 Değişiklik yok, commit atılmadı."
+            echo "📦 Değişiklik yok, commit yapılmadı."
           else
             git commit -m "Scraper: Update product data in urunler/api"
             git push
