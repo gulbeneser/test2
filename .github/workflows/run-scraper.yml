@@ -2,15 +2,15 @@ name: Run B2B Scraper and Update Product Data
 
 on:
   schedule:
-    # Her gün UTC 00:00'da çalışır (Türkiye saatiyle sabah 03:00)
+    # Her gün UTC 00:00'da çalışır (Türkiye saatiyle 03:00)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Manuel olarak da çalıştırabilirsin
+  workflow_dispatch: # Manuel tetikleme için
 
 jobs:
   scrape_and_commit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Push işlemi için gerekli izin
+      contents: write # Push izni
 
     steps:
       - name: 📥 Repo'yu klonla
@@ -19,39 +19,37 @@ jobs:
       - name: 🟢 Node.js kurulumu
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '18' # Puppeteer için ideal sürüm
 
-      - name: 🧱 Puppeteer bağımlılıklarını kur
+      - name: 🧱 Puppeteer için sistem kütüphanelerini kur
         run: |
           sudo apt-get update
-          sudo apt-get install -yq \
-            libgconf-2-4 \
+          sudo apt-get install -y \
+            libx11-xcb1 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxrandr2 \
+            libgbm1 \
+            libgtk-3-0 \
+            libasound2-data \
+            libnss3 \
             libatk1.0-0 \
             libatk-bridge2.0-0 \
             libcups2 \
             libdrm2 \
-            libdbus-1-3 \
-            libxkbcommon0 \
-            libxcomposite1 \
-            libxdamage1 \
-            libxfixes3 \
-            libxrandr2 \
-            libgbm1 \
+            libxss1 \
+            libxshmfence1 \
             libpango-1.0-0 \
             libcairo2 \
-            libasound2 \
-            libnss3 \
-            libxshmfence1 \
-            libxss1 \
-            libfontconfig1 \
-            libx11-xcb1 \
-            libxtst6 \
+            libxkbcommon0 \
             lsb-release \
-            wget \
-            --no-install-recommends
+            fonts-liberation \
+            libfontconfig1 \
+            xdg-utils \
+            wget
 
-      - name: 📦 NPM paketlerini yükle
-        run: npm install puppeteer fs-extra
+      - name: 📦 NPM bağımlılıklarını yükle
+        run: npm install puppeteer fs-extra dotenv
 
       - name: 🚀 Scraper script'ini çalıştır
         env:
@@ -67,7 +65,7 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add urunler/api/products.json urunler/api/hayvan-sagligi.json
           if git diff --staged --quiet; then
-            echo "📦 Yeni veri yok, commit atılmadı."
+            echo "📦 Değişiklik yok, commit atılmadı."
           else
             git commit -m "Scraper: Update product data in urunler/api"
             git push
