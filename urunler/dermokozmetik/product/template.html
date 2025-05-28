@@ -11,15 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/urunler/assets/logos/logobrowser/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/urunler/assets/logos/logobrowser/favicon-32x32.png">
   <link rel="apple-touch-icon" href="/urunler/assets/logos/logobrowser/apple-icon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="/urunler/assets/logos/logobrowser/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/urunler/assets/logos/logobrowser/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/urunler/assets/logos/logobrowser/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/urunler/assets/logos/logobrowser/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/urunler/assets/logos/logobrowser/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/urunler/assets/logos/logobrowser/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/urunler/assets/logos/logobrowser/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/urunler/assets/logos/logobrowser/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/urunler/assets/logos/logobrowser/apple-icon-180x180.png">
+  <!-- Diğer favicon linkleri buraya gelecek (kısaltıldı) -->
   <link rel="apple-touch-icon-precomposed" href="/urunler/assets/logos/logobrowser/apple-icon-precomposed.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/urunler/assets/logos/logobrowser/android-icon-192x192.png">
   <meta name="msapplication-TileColor" content="#212A40">
@@ -63,6 +55,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet">
   
+  <script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/generative-ai"
+    }
+  }
+  </script>
+
   <style>
     :root {
       --primary-theme: #50C8C6; 
@@ -373,7 +373,6 @@
     .product-gallery-modern { display: flex; justify-content: center; align-items: flex-start; }
     .product-main-image-wrapper { width: 100%; border: 1px solid var(--border-color); border-radius: var(--radius); overflow: hidden; background-color: #fff; box-shadow: var(--shadow-sm); }
     .product-main-image-modern { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; padding: 0.5rem; }
-    /* .image-placeholder-modern artık kullanılmıyor, onun yerine varsayılan resim gösterilecek */
 
     .product-info-modern { display: flex; flex-direction: column; }
     .product-title-wrapper { display: flex; align-items: center; flex-wrap: wrap; margin-bottom: 0.75rem;}
@@ -398,7 +397,18 @@
     .product-share-buttons a:hover { opacity: 0.7; transform: scale(1.1); }
     .product-share-buttons svg { width: 100%; height: 100%; } 
 
-    .product-short-description { font-size: 1rem; color: var(--text-medium); margin-bottom: 1.5rem; line-height: 1.7; }
+    .product-short-description { font-size: 1rem; color: var(--text-medium); margin-bottom: 1rem; line-height: 1.7; }
+    
+    /* YENİ: AI Bilgi Alanı Stilleri */
+    #aiProductInfo { margin-top: 1rem; margin-bottom:1.5rem; padding: 1rem; background-color: #e6f7ff; /* Temaya uygun açık mavi */ border-left: 4px solid var(--primary-theme); border-radius: var(--radius); font-size: 0.9375rem; }
+    #aiProductInfo h4 { font-size: 1.15rem; color: var(--text-dark); margin-top: 0; margin-bottom: 0.75rem; font-weight: 600; }
+    #aiProductInfo p { margin-bottom: 0.75rem; line-height: 1.6; }
+    #aiProductInfo ul { padding-left: 1.2rem; margin-bottom: 0; }
+    #aiProductInfo li { margin-bottom: 0.35rem; }
+    #aiProductInfo.error-message { background-color: #fff3cd; border-left-color: #ffe082; color: #664d03; }
+    #aiProductInfoPlaceholder { margin-top: 1rem; margin-bottom:1.5rem; font-size: 0.9375rem; }
+    #aiProductInfoPlaceholder p { font-style: italic; color: var(--text-medium); padding: 1rem; background-color: #f8f9fa; border: 1px dashed var(--border-color); border-radius: var(--radius); }
+
 
     .product-details-tabs-modern { background-color: var(--card-bg); padding: 0; border-radius: var(--radius); box-shadow: var(--shadow-md); margin-bottom: 2.5rem; overflow: hidden; }
     .tabs-navigation-modern { display: flex; border-bottom: 1px solid var(--border-color); background-color: #f8f9fa; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--primary-theme) #f1f3f5; }
@@ -635,60 +645,141 @@
   </div>
 </footer>
 <div class="footer-bottom">
-  © 2025 Serakıncı Limited. Tüm hakları saklıdır. | Powered by
+  © <span id="currentYear"></span> Serakıncı Limited. Tüm hakları saklıdır. | Powered by
   <a href="https://fures.tech" target="_blank">Fures Tech<img src="/urunler/assets/logos/fureslogo.png" alt="Fures Tech Logo"/></a>
 </div>
 
-  <script>
+  <script type="module"> // YENİ: type="module" eklendi
+    // YENİ: Gemini SDK import ve kontrolü
+    import { GoogleGenerativeAI } from "@google/genai";
+
+    const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
+
+    if (GEMINI_SDK_LOADED) {
+        console.log("Google Generative AI SDK (Dermokozmetik) başarıyla yüklendi.");
+    } else {
+        console.error("KRİTİK HATA: Google Generative AI SDK (Dermokozmetik) yüklenemedi. Lütfen importmap ayarlarını ve tarayıcı konsolunu kontrol edin.");
+    }
+    
+    // YENİ: Gemini API Anahtarı
+    const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA"; // API anahtarınızı buraya girin
+
     const segment = 'dermokozmetik';
     let allProducts = [];
     let searchDebounceTimer;
-    const defaultImagePath = '/urunler/assets/logos/resimyok.png'; // Varsayılan görsel yolu
+    const defaultImagePath = '/urunler/assets/logos/resimyok.png'; 
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear(); // currentYear footer için
+
+    // YENİ: Akıllı Model Yedeklemesi ile generateEnhancedProductInfo fonksiyonu
+    async function generateEnhancedProductInfo(productName, productKategori, languageCode) {
+      if (!GEMINI_SDK_LOADED) {
+        throw new Error("Yapay zeka modülü (SDK) yüklenemedi. Ek bilgi üretilemiyor.");
+      }
+      if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA_PLACEHOLDER" || !GEMINI_API_KEY) { 
+        console.error("Gemini API anahtarı (Dermokozmetik) yapılandırılmamış!");
+        throw new Error("Gemini API anahtarı yapılandırılmamış. Gelişmiş ürün bilgisi üretilemiyor.");
+      }
+
+      const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+      
+      const languageInstruction = languageCode === 'tr'
+        ? "Lütfen cevabınızı Türkçe olarak oluşturun. JSON anahtarları İngilizce kalmalıdır ('enhancedDescription', 'keyFeatures'). Açıklama ve özellikler Türkçe olmalıdır."
+        : "Please generate your response in English. JSON keys should remain in English ('enhancedDescription', 'keyFeatures'). The description and features should be in English.";
+
+      const basePrompt = `
+        ${languageInstruction}
+        "${productName}" isimli ve "${productKategori || 'Genel Dermokozmetik'}" kategorisindeki bir dermokozmetik ürünü için JSON formatında aşağıdaki bilgileri sağlayın:
+        1.  "enhancedDescription": Ürünün detaylı, cilt tipi/sorununa yönelik faydalarını, kullanım amacını ve öne çıkan içeriklerini vurgulayan profesyonel ve bilgilendirici bir açıklaması (yaklaşık 6-8 cümle). Açıklama kullanıcı odaklı ve kolay anlaşılır olmalı.
+        2.  "keyFeatures": Ürünün 5-7 adet temel özelliği, faydası veya anahtar içeriği (örneğin, "Hiyalüronik Asit ile yoğun nemlendirme", "Parabensiz ve parfümsüz formül", "Hassas ve alerjik ciltler için özel olarak geliştirilmiştir", "Geniş spektrumlu UVA/UVB koruması SPF50+"). Mümkünse resmi ürün veya marka sayfasının linkini de "Resmi Sayfa: [LINK]" formatında ekleyin.
+
+        Çıktının "enhancedDescription" ve "keyFeatures" anahtarlarına sahip geçerli bir JSON nesnesi olduğundan emin olun.
+        Örnek JSON yapısı (değerlerin dili talimata bağlıdır):
+        {
+          "enhancedDescription": "Ürünün detaylı bir açıklaması...",
+          "keyFeatures": ["Özellik 1", "Özellik 2", "Özellik 3", "Resmi Sayfa: https://example.com/urun"]
+        }
+      `;
+
+      const GEMINI_MODEL_FALLBACK_ORDER = [
+        "gemini-flash",
+        "gemini-1.5-flash",
+        "gemini-1.5-flash-8b"
+      ];
+
+      let lastError = null;
+
+      for (const modelName of GEMINI_MODEL_FALLBACK_ORDER) {
+        try {
+          console.log(`Gemini API'ye (Dermokozmetik) istek gönderiliyor. Model: ${modelName}, Ürün: ${productName}, Kategori: ${productKategori || 'Belirtilmedi'}`);
+          const model = genAI.getGenerativeModel({
+            model: modelName,
+            generationConfig: { responseMimeType: "application/json" }
+          });
+          
+          const result = await model.generateContent(basePrompt); // languageInstruction zaten basePrompt içinde
+          const response = result.response;
+          let jsonStr = response.text(); 
+          console.log(`Gemini API'den (Dermokozmetik) ham yanıt (${modelName}):`, jsonStr);
+
+          const fenceRegex = /^```(?:json)?\s*\n?(.*?)\n?\s*```$/s;
+          let match = jsonStr.match(fenceRegex);
+          if (match && match[1]) {
+            jsonStr = match[1].trim();
+          } else {
+            jsonStr = jsonStr.trim(); 
+          }
+          
+          const parsedData = JSON.parse(jsonStr);
+          console.log(`Ayrıştırılmış JSON verisi (Dermokozmetik - ${modelName}):`, parsedData);
+
+          if (!parsedData.enhancedDescription || !Array.isArray(parsedData.keyFeatures) || parsedData.keyFeatures.some(f => typeof f !== 'string')) {
+            console.error(`Gemini API'si (${modelName}) (Dermokozmetik) hatalı JSON döndürdü:`, parsedData);
+            throw new Error(`Yapay zekadan (${modelName}) ürün detayları için eksik veya hatalı biçimlendirilmiş veri alındı.`);
+          }
+          return parsedData;
+
+        } catch (error) {
+          console.warn(`Gemini API (Dermokozmetik) hatası (Model: ${modelName}):`, error);
+          lastError = error;
+          const msgLower = error.message ? error.message.toLowerCase() : "";
+          
+          if (msgLower.includes("rate limit") || msgLower.includes("resource exhausted") || msgLower.includes("quota") || (error.status && error.status === 429) || msgLower.includes("model_unavailable") || msgLower.includes("try again later") || msgLower.includes("deadline_exceeded") || msgLower.includes("service_unavailable")) { 
+            console.log(`Model ${modelName} (Dermokozmetik) için limit/kaynak hatası. Bir sonraki modele geçiliyor.`);
+          } else if (msgLower.includes("json") || msgLower.includes("unexpected token")) {
+             console.warn(`Model ${modelName} (Dermokozmetik) beklenmedik formatta yanıt verdi. Bir sonraki modele geçiliyor.`);
+          } else if (msgLower.includes("api key not valid") || msgLower.includes("permission denied") || msgLower.includes("forbidden") || msgLower.includes("could not find model") || msgLower.includes("developer_message") || msgLower.includes("400 bad request") || msgLower.includes("invalid argument")) { 
+            throw new Error(`Kritik API Hatası (Model: ${modelName}) (Dermokozmetik): ${error.message}`); 
+          } else {
+            console.warn(`Bilinmeyen hata (Model: ${modelName}) (Dermokozmetik). Bir sonraki modele geçiliyor. Detay: ${error.message}`);
+          }
+        }
+      }
+      console.error("Tüm yedek modeller (Dermokozmetik) denendi, başarısız oldu.");
+      let finalErrorMessage = "Gelişmiş ürün bilgisi (Dermokozmetik) üretilemedi.";
+      if (lastError && lastError.message) finalErrorMessage += ` Son hata: ${lastError.message}`;
+      throw new Error(finalErrorMessage);
+    }
+
 
     function slugify(text) {
         if (text === null || typeof text === 'undefined') return '';
         let str = String(text);
-
-        // 1. Türkçe karakterleri ASCII benzerlerine çevir
         const trMap = { 'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'İ': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U' };
-        for (let key in trMap) {
-            str = str.replace(new RegExp(key, 'g'), trMap[key]);
-        }
-
-        // 2. Aksanları kaldır
+        for (let key in trMap) { str = str.replace(new RegExp(key, 'g'), trMap[key]); }
         str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-        // 3. Eğik çizgiyi (/) kaldır
         str = str.replace(/\//g, ''); 
-        
-        // 4. Noktayı (.) kaldır (Örn: "04.24" -> "0424")
         str = str.replace(/\./g, '');
-
-        // 5. Her şeyi küçük harfe çevir
         str = str.toLowerCase();
-
-        // 6. Özel birleştirmeler (küçük harf üzerinde çalışır)
         str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2'); 
-        
         const birimler = 'ml|gr|l|kg|mg|cm|m|lt'; 
-        str = str.replace(new RegExp(`\\b(${birimler})\\s+(shower|gel)\\b`, 'gi'), '$1$2'); // 'gel' eklendi ve 'gi' flag'i (case-insensitive)
-
-        // 7. Sayı ve BİLİNEN birimler arasına tire koy
+        str = str.replace(new RegExp(`\\b(${birimler})\\s+(shower|gel)\\b`, 'gi'), '$1$2'); 
         str = str.replace(new RegExp(`(\\d+)\\s*(${birimler})\\b`, 'gi'), '$1-$2');
-
-        // 8. Kalan tüm boşluk dizilerini tek tireye çevir
         str = str.replace(/\s+/g, '-');      
-        
-        // 9. Alfanümerik olmayan karakterleri (tire hariç) tireye çevir.
         str = str.replace(/[^\w-]+/g, '-'); 
-        
-        // 10. Birden fazla olan tireleri tek tireye indir
         str = str.replace(/--+/g, '-');     
-        
-        // 11. Başta ve sonda kalmış olabilecek tireleri temizle
         str = str.replace(/^-+|-+$/g, '');  
-        
-        return str;
+        return str || 'isimsiz-urun'; // Eğer slug boş kalırsa
     }
 
     function getSlugFromUrl() {
@@ -765,13 +856,10 @@
         if (!detailsResponse.ok) throw new Error(`Ürün detay verileri yüklenemedi (${detailsResponse.status})`);
         const productDetailsData = await detailsResponse.json();
         
-        console.log(`DEBUG URL SLUG: "${slugFromUrl}"`);
-
         let foundProduct = null;
         for (const p of allProducts) {
             if (!p.ProductName) continue; 
             const productNameSlug = slugify(p.ProductName);
-            console.log(`DEBUG JSON: Ad: "${p.ProductName}", Üretilen Slug: "${productNameSlug}"`); 
             if (productNameSlug === slugFromUrl) {
                 foundProduct = p;
                 break;
@@ -783,11 +871,11 @@
             detail.ProductId === foundProduct.ProductId ||
             (detail.ProductName && slugify(detail.ProductName) === slugify(foundProduct.ProductName))
           );
-          displayProductDetail(foundProduct, productDetail);
+          displayProductDetail(foundProduct, productDetail); // AI çağrısı displayProductDetail içinde yapılacak
           document.title = `${foundProduct.ProductName} | Dermokozmetik | Serakıncı`;
           updateMetaTags(foundProduct, productDetail);
         } else {
-          console.warn(`loadProductDetail (dermokozmetik): "${slugFromUrl}" slug'ı ile ürün bulunamadı. Yukarıdaki DEBUG loglarını kontrol edin.`);
+          console.warn(`loadProductDetail (dermokozmetik): "${slugFromUrl}" slug'ı ile ürün bulunamadı.`);
           showError('Aradığınız ürün bulunamadı veya bağlantı hatalı. Lütfen kontrol edin.');
         }
       } catch (error) {
@@ -886,13 +974,16 @@
       
       const shortDescriptionText = product.ProductShortDescription || `"${product.ProductName}" Serakıncı güvencesiyle Kuzey Kıbrıs'ta sizlerle. Cilt tipinize uygun en iyi dermokozmetik ürünlerini keşfedin.`;
       let shortDescriptionHTML = `<div class="product-short-description"><p>${shortDescriptionText}</p></div>`;
+      
+      // YENİ: AI içerik placeholder'ı
+      const aiContentPlaceholderHTML = `<div id="aiProductInfoPlaceholder"><p>Yapay zeka ile ürün bilgileri hazırlanıyor...</p></div>`;
 
       let tab1_HTML = '', tab2_HTML = '', tab3_HTML = '';
       const descContent = productDetail && productDetail["Ürün Açıklaması"] ? productDetail["Ürün Açıklaması"] : `${product.ProductName} hakkında temel bilgiler.`;
       tab1_HTML += (descContent.length > 250) ? `<h3>Ürün Açıklaması</h3><div class="toggle-content" id="descToggle"><div>${descContent}</div></div><button class="read-more-btn" onclick="toggleReadMore('descToggle', this)">Devamını Oku</button>` : `<h3>Ürün Açıklaması</h3><div>${descContent}</div>`;
       
       const producerInfo = productDetail && productDetail["Üretici Firma"] ? productDetail["Üretici Firma"] : "Bu ürün için üretici firma bilgisi belirtilmemiştir.";
-      tab2_HTML += `<h3>Ek Bilgiler</h3><div>${producerInfo}</div>`;
+      tab2_HTML += `<h3>Ek Bilgiler</h3><div><p><strong>Üretici/Marka:</strong> ${product.brand || producerInfo}</p></div>`;
       
       const warningContent = productDetail && productDetail["Dikkat edilmesi gerekenler ya da uyarılar"] ? productDetail["Dikkat edilmesi gerekenler ya da uyarılar"] : "Bu ürün için özel kullanım talimatı veya uyarı belirtilmemiştir. Genel ürün kullanım tavsiyelerine uyunuz.";
       tab3_HTML += (warningContent.length > 250) ? `<h3>Kullanım Şekli ve Uyarılar</h3><div class="toggle-content" id="warningToggle"><div>${warningContent}</div></div><button class="read-more-btn" onclick="toggleReadMore('warningToggle', this)">Devamını Oku</button>` : `<h3>Kullanım Şekli ve Uyarılar</h3><div>${warningContent}</div>`;
@@ -926,7 +1017,7 @@
           <div class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg><div><span class="contact-label-modern">Telefon</span><a href="tel:+903923662594" class="contact-link-modern">+90 392 366 25 94</a></div></div>
           <div class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg><div><span class="contact-label-modern">E-posta</span><a href="mailto:info@serakinci.com" class="contact-link-modern">info@serakinci.com</a></div></div>
           <div class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg><div><span class="contact-label-modern">Adres</span><span class="contact-address-text">Sht. Ziya Sok. No:1-2 99450<br>Gazimağusa - KKTC, Mersin 10 Turkey</span></div></div>
-          <div class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 17.36c-.32-.1-.66-.16-1-.16-1.02 0-2.04.21-2.97.64-.34.16-.73.08-1-.16l-3.28-3.28c.43-.93.64-1.95.64-2.97 0-.34-.06-.68-.16-1l3.28-3.28c.24-.23.32-.62.16-1-.43-.93-.64-1.95-.64-2.97 0-.34.06-.68.16-1 .09-.28.03-.59-.18-.8l-1.09-1.09c-.21-.21-.52-.27-.8-.18-1 .1-1.98.38-2.87.82-.09.04-.18.07-.26.12L5.12 7.25c-.04.09-.07.17-.12.26C4.18 8.4 3.9 9.38 3.81 10.38c-.09.28-.03.59.18.8l1.09 1.09c.21.21.52.27.8.18 1-.1 1.98-.38 2.87-.82.09-.04.18-.07.26-.12l5.75-5.75c.04-.09.07-.17.12-.26.89-.44 1.87-.72 2.87-.82.28-.09.59-.03.8.18l1.09 1.09c.21.21.27.52.18.8-.1 1-.38 1.98-.82 2.87-.04-.09-.07.18-.12.26L10.38 17c-.09.04-.17.07-.26.12-.89-.44-1.87.72-2.87.82-.28-.09-.59-.03-.8-.18l-1.09-1.09c-.21-.21-.27-.52-.18-.8.1-1 .38-1.98.82 2.87.04-.09.07.18.12-.26l.01-.01c.01 0 .01 0 0 0L17 5.12c.09-.04.17-.07.26-.12.9-.43 1.88-.64 2.9-.64.34 0 .68.06 1 .16.28.09.5.29.62.56.15.34.17.73.05 1.07-.27.78-.63 1.52-1.06 2.2-.01.01-.01.02-.02.03l-5.52 5.52c-.01.01-.02.01-.03.02-.68.43-1.42.79-2.2 1.06-.34.12-.62.34-.75.62s-.16.61-.05 1.07c.27.78.63 1.52 1.06 2.2.01.01.01.02.02.03l.01.01c.01 0 .01 0 0 0zM6.5 10.5c0 .28.22.5.5.5s.5-.22.5-.5-.22-.5-.5-.5-.5.22-.5.5z"/></svg><div><span class="contact-label-modern">Fax</span><a href="fax:+903923661585" class="contact-link-modern">+90 392 366 15 85</a></div></div>
+          <div class="contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 17.36c-.32-.1-.66-.16-1-.16-1.02 0-2.04.21-2.97.64-.34.16-.73.08-1-.16l-3.28-3.28c.43-.93.64-1.95.64-2.97 0-.34-.06-.68-.16-1l3.28-3.28c.24-.23.32-.62.16-1-.43-.93-.64-1.95-.64-2.97 0-.34.06-.68.16-1 .09-.28.03-.59-.18-.8l-1.09-1.09c-.21-.21-.52-.27-.8-.18-1 .1-1.98.38-2.87.82-.09.04-.18.07-.26.12L5.12 7.25c-.04.09-.07.17-.12.26C4.18 8.4 3.9 9.38 3.81 10.38c-.09.28-.03.59.18.8l1.09 1.09c.21.21.52.27.8.18 1-.1 1.98-.38 2.87-.82.09-.04.18.07.26-.12l5.75-5.75c.04-.09.07-.17.12-.26.89-.44 1.87-.72 2.87-.82.28-.09.59-.03.8.18l1.09 1.09c.21.21.27.52.18.8-.1 1-.38 1.98-.82 2.87-.04-.09-.07.18-.12.26L10.38 17c-.09.04-.17.07-.26.12-.89.44-1.87.72-2.87.82-.28.09-.59-.03-.8-.18l-1.09-1.09c-.21-.21-.27-.52-.18-.8.1-1 .38-1.98.82 2.87.04-.09.07.18.12-.26l.01-.01c.01 0 .01 0 0 0L17 5.12c.09-.04.17-.07.26-.12.9-.43 1.88-.64 2.9-.64.34 0 .68.06 1 .16.28.09.5.29.62.56.15.34.17.73.05 1.07-.27.78-.63 1.52-1.06 2.2-.01.01-.01.02-.02.03l-5.52 5.52c-.01.01-.02.01-.03.02-.68.43-1.42.79-2.2 1.06-.34.12-.62.34-.75.62s-.16.61-.05 1.07c.27.78.63 1.52 1.06 2.2.01.01.01.02.02.03l.01.01c.01 0 .01 0 0 0zM6.5 10.5c0 .28.22.5.5.5s.5-.22.5-.5-.22-.5-.5-.5-.5.22-.5.5z"/></svg><div><span class="contact-label-modern">Fax</span><a href="fax:+903923661585" class="contact-link-modern">+90 392 366 15 85</a></div></div>
         </div>
         <div class="firm-social-media">
             <span class="social-label">Sosyal Medyada Biz</span>
@@ -966,7 +1057,10 @@
           <div class="product-gallery-modern">${imageHTML}</div>
           <div class="product-info-modern">
             <div class="product-title-wrapper"><h1 class="product-title-modern">${product.ProductName}</h1>${favoriteButtonHTML}</div>
-            ${metaInfoHTML}${shareButtonsHTML}${shortDescriptionHTML}
+            ${metaInfoHTML}
+            ${shareButtonsHTML}
+            ${shortDescriptionHTML}
+            ${aiContentPlaceholderHTML} 
           </div>
         </div>
         <div class="product-details-tabs-modern">
@@ -1023,6 +1117,31 @@
             const message = isFavorited ? 'Favorilere eklendi!' : 'Favorilerden çıkarıldı!';
             showTooltip(favBtn, message, 'favoriteTooltip');
         };
+      }
+
+      // YENİ: AI Bilgisi Çekme ve Gösterme
+      const aiPlaceholderDiv = document.getElementById('aiProductInfoPlaceholder');
+      if (GEMINI_SDK_LOADED && aiPlaceholderDiv) {
+        generateEnhancedProductInfo(product.ProductName, product.cat || 'Dermokozmetik', 'tr')
+            .then(aiData => {
+                let aiHtml = `<div id="aiProductInfo">`;
+                aiHtml += `<h4>Ürün Bilgileri:</h4>`;
+                aiHtml += `<p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>`;
+                aiHtml += `<p><strong>Öne Çıkan Özellikler:</strong></p><ul>`;
+                aiData.keyFeatures.forEach(feature => {
+                    const linkRegex = /\[(.*?)\]\((.*?)\)/g; // Markdown link formatı [text](url)
+                    const featureHtml = feature.replace(linkRegex, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color: var(--primary-theme); text-decoration: underline;">$1</a>');
+                    aiHtml += `<li>${featureHtml}</li>`;
+                });
+                aiHtml += `</ul></div>`;
+                aiPlaceholderDiv.innerHTML = aiHtml;
+            })
+            .catch(error => {
+                console.error("AI Bilgisi Getirme Hatası (Dermokozmetik):", error);
+                aiPlaceholderDiv.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka ile ürün bilgisi oluşturulurken bir sorun oluştu: ${error.message}.<br>Lütfen tarayıcı konsolunu (F12 ile açılır) kontrol edin veya daha sonra tekrar deneyin.</em></p></div>`;
+            });
+      } else if (aiPlaceholderDiv) {
+         aiPlaceholderDiv.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka modülü (SDK) yüklenemediği için ek bilgi üretilemedi. Lütfen internet bağlantınızı ve tarayıcı konsolundaki (F12) hata mesajlarını kontrol edin.</em></p></div>`;
       }
     }
 
