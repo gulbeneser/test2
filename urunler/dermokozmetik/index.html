@@ -36,14 +36,14 @@
 
   <style>
     :root{
-      --primary: #50C8C6; 
+      --primary: #50C8C6;
       --primary-hover: #40A8A6;
-      --bg: #f8f9fa; 
-      --card: #fff; 
+      --bg: #f8f9fa;
+      --card: #fff;
       --text-dark: #2c3e50;
       --text-medium: #7f8c8d;
-      --text-light: #abb8c3; 
-      --border: #e0e6e8; 
+      --text-light: #abb8c3;
+      --border: #e0e6e8;
       --radius: 6px; /* This will be used by header locally if not overridden */
       --shadow: 0 2px 6px rgba(44, 62, 80, .07); /* This will be used by header locally if not overridden */
       --shadow-md: 0 3px 10px rgba(44, 62, 80, .09); /* This will be used by header locally if not overridden */
@@ -66,7 +66,7 @@
     *{box-sizing:border-box; overflow-wrap: break-word;} /* Added overflow-wrap from original */
     body{
       margin:0;
-      font-family:'Satoshi', sans-serif; 
+      font-family:'Satoshi', sans-serif;
       background:var(--bg);
       color:var(--text-dark);
       -webkit-font-smoothing:antialiased;
@@ -98,8 +98,8 @@
       justify-content: space-between;
       align-items: center;
       /* max-width from .main-container will apply */
-      margin: 0 auto; 
-      padding: 0 1.5rem; 
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
     .new-site-logo-link {
       display: flex;
@@ -185,7 +185,7 @@
       background-color: var(--header-b2b-button-bg);
       color: var(--header-b2b-button-text);
       padding: 0.5rem 1.2rem;
-      border-radius: 20px; 
+      border-radius: 20px;
       text-decoration: none;
       font-weight: 500;
       font-size: 0.9rem;
@@ -198,7 +198,7 @@
       color: var(--header-b2b-button-text);
     }
     .mobile-menu-toggle {
-        display: none; 
+        display: none;
         background: none;
         border: none;
         cursor: pointer;
@@ -211,10 +211,10 @@
     }
     @media(max-width: 992px) {
       .new-site-navigation {
-        display: none; 
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%; 
+        top: 100%;
         left: 0;
         right: 0;
         background-color: var(--header-bg);
@@ -224,9 +224,9 @@
         border-top: 1px solid var(--header-border-color);
       }
       .new-site-navigation.is-active {
-        display: flex; 
+        display: flex;
       }
-      .mobile-menu-toggle { display: block; } 
+      .mobile-menu-toggle { display: block; }
       .new-header-content { padding: 0 1rem; }
     }
 
@@ -259,10 +259,10 @@
       .search-button svg { width: 17px; height: 17px;}
     }
     /* --- YENİ HEADER STYLES END --- */
-    
+
     .page-title{
       padding:2rem 0 1.5rem;
-      border-bottom: 1px solid var(--border); 
+      border-bottom: 1px solid var(--border);
       margin-bottom: 2rem;
       /* margin-top added dynamically by JS if header exists */
     }
@@ -313,7 +313,7 @@
     .filter-link{
       display:flex;justify-content:space-between;align-items:center;
       padding:.5rem .85rem;
-      border-radius:calc(var(--radius) - 2px); 
+      border-radius:calc(var(--radius) - 2px);
       text-decoration:none;color:var(--text-dark);
       font-size:.9rem;
       transition: background-color .2s ease, color .2s ease;
@@ -386,14 +386,17 @@
       box-shadow:var(--shadow-md);
     }
     .product-image-container{
-      width:100%;aspect-ratio:1/1;
+      width:100%;
+      aspect-ratio: 4/5;   /* <<< DEĞİŞİKLİK BURADA: Kare yerine 4:5 oranında dikdörtgen */
       background:#fdfdfe;
       display:flex;align-items:center;justify-content:center;
       border-bottom: 1px solid var(--border);
+      overflow: hidden; /* <<< DEĞİŞİKLİK BURADA: Olası taşmaları engellemek için eklendi */
     }
     .product-image{
-      width:85%;height:85%;
-      object-fit:contain;
+      max-width: 85%;  /* <<< DEĞİŞİKLİK BURADA: Konteynerin %85'i kadar maksimum genişlik */
+      max-height: 85%; /* <<< DEĞİŞİKLİK BURADA: Konteynerin %85'i kadar maksimum yükseklik */
+      object-fit:contain; /* Görselin en-boy oranını koruyarak konteynere sığmasını sağlar */
     }
     .no-image{font-size:.8rem;color:var(--text-light);text-align:center;padding:2rem}
     .product-content{
@@ -415,14 +418,14 @@
       margin:0 0 .4rem;
       color: var(--text-dark);
       line-height: 1.4;
-      height: 2.8em;
+      height: 2.8em; /* Yaklaşık 2 satır için */
       display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
     }
     .product-link{
       color:var(--primary-hover);
       font-weight:500;
       font-size:.85rem;
-      margin-top: auto;
+      margin-top: auto; /* İçeriği alta iter */
       text-decoration: none;
     }
     .product-link:hover {
@@ -487,7 +490,7 @@
       align-items: flex-start;
       font-size: 16px;
       border-top: 1px solid #e0e0e0;
-      color: #1C274C; 
+      color: #1C274C;
     }
     .footer-left { display: flex; flex-direction: column; max-width: 45%; }
     .footer-brand { display: flex; align-items: center; margin-bottom: 12px; }
@@ -624,7 +627,7 @@
   </div>
 
   <script>
-    const segment = 'dermokozmetik'; 
+    const segment = 'dermokozmetik';
 
     document.addEventListener('DOMContentLoaded', () => {
       // Header Menu Toggle Logic
@@ -637,11 +640,11 @@
           menuToggle.setAttribute('aria-expanded', !isExpanded);
           nav.classList.toggle('is-active');
           if (nav.classList.contains('is-active')) {
-            nav.style.top = `${siteHeader.offsetHeight}px`; 
+            nav.style.top = `${siteHeader.offsetHeight}px`;
           }
         });
       }
-      
+
       // Adjust page title margin based on header height
       const pageTitleSection = document.getElementById('pageTitleSection');
       if (siteHeader && pageTitleSection) {
@@ -657,38 +660,38 @@
       initApp(); initBackToTop(); initSorting(); initSearch();
     });
 
-    let allProducts = []; 
-    let currentProducts = []; 
+    let allProducts = [];
+    let currentProducts = [];
 
     async function initApp() {
       try {
-        const response = await fetch('/urunler/api/products.json'); 
+        const response = await fetch('/urunler/api/products.json');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         allProducts = await response.json();
-        
-        if (!Array.isArray(allProducts)) { 
+
+        if (!Array.isArray(allProducts)) {
             console.error('products.json içeriği bir dizi değil:', allProducts);
-            allProducts = []; 
+            allProducts = [];
         }
 
         if (!allProducts.length) return showMessage('Ürün verisi bulunamadı veya yüklenemedi.');
-        
-        currentProducts = [...allProducts]; 
-        buildCategories(); 
-        buildBrandsCarousel(); 
-        displayProducts(currentProducts); 
+
+        currentProducts = [...allProducts];
+        buildCategories();
+        buildBrandsCarousel();
+        displayProducts(currentProducts);
         checkUrlParams();
-      } catch (e) { 
-        console.error('Uygulama başlatılırken hata:', e); 
-        showMessage('Sayfa yüklenirken bir hata oluştu. Lütfen konsolu kontrol edin.', true); 
+      } catch (e) {
+        console.error('Uygulama başlatılırken hata:', e);
+        showMessage('Sayfa yüklenirken bir hata oluştu. Lütfen konsolu kontrol edin.', true);
       }
     }
 
     const extractCategories = () => {
       const categoriesMap = { ALL: allProducts.length };
-      allProducts.forEach(p => { 
-        const categoryName = (p.cat || p.brand || 'Diğer').trim(); 
-        categoriesMap[categoryName] = (categoriesMap[categoryName] || 0) + 1; 
+      allProducts.forEach(p => {
+        const categoryName = (p.cat || p.brand || 'Diğer').trim();
+        categoriesMap[categoryName] = (categoriesMap[categoryName] || 0) + 1;
       });
       return categoriesMap;
     };
@@ -700,10 +703,10 @@
 
       const allProductsLink = categoryListElement.querySelector('[data-category="ALL"] .filter-count');
       if (allProductsLink) allProductsLink.textContent = categories.ALL || 0;
-      
+
       Object.keys(categories).filter(cat => cat !== 'ALL').sort().forEach(categoryName => {
-        const safeCategoryName = categoryName.replace(/"/g, '"'); 
-        categoryListElement.insertAdjacentHTML('beforeend', 
+        const safeCategoryName = categoryName.replace(/"/g, '"');
+        categoryListElement.insertAdjacentHTML('beforeend',
           `<li class="filter-item">
             <a href="#" class="filter-link" data-category="${safeCategoryName}">
               ${categoryName}
@@ -744,13 +747,13 @@
                 </button>`;
       }
       track.innerHTML = uniqueBrands.concat(uniqueBrands).map(makeBtn).join('');
-      
+
       track.addEventListener('click', e => {
-        const brandButton = e.target.closest('.brand-logo'); 
+        const brandButton = e.target.closest('.brand-logo');
         if (!brandButton) return;
         const brandName = brandButton.dataset.brand;
         const categoryLink = Array.from(document.querySelectorAll('.filter-link')).find(l => l.dataset.category === brandName);
-        
+
         if (categoryLink) {
           categoryLink.click();
           const categorySection = document.querySelector('.category-section');
@@ -762,7 +765,7 @@
         }
       });
     }
-    
+
     function filterAndDisplayProducts(category) {
         currentProducts = (category === 'ALL' || !category)
             ? [...allProducts]
@@ -773,7 +776,7 @@
 
     function sortAndDisplayProducts() {
         const sortBy = document.getElementById('sortDropdown').value;
-        let sortedProducts = [...currentProducts]; 
+        let sortedProducts = [...currentProducts];
 
         sortedProducts.sort((a, b) => {
             if (sortBy === 'name-asc') {
@@ -790,24 +793,24 @@
     function displayProducts(productsToDisplay) {
       const productCountElement = document.getElementById('productCount');
       if (productCountElement) productCountElement.textContent = `${productsToDisplay.length} ürün`;
-      
+
       const grid = document.getElementById('productsGrid');
       if (!grid) return;
 
-      if (!productsToDisplay.length) { 
-        grid.innerHTML = '<div class="no-results">Bu kritere uygun ürün bulunamadı.</div>'; 
-        return; 
+      if (!productsToDisplay.length) {
+        grid.innerHTML = '<div class="no-results">Bu kritere uygun ürün bulunamadı.</div>';
+        return;
       }
 
       grid.innerHTML = productsToDisplay.map(p => {
         const productSlug = slugify(p.ProductName);
         const imageUrl  = p.ImageUrl || (p.ProductImages?.[0]?.ImageUrl) || '';
         const categoryName  = (p.cat || p.brand || 'Diğer').trim();
-        
+
         const imageTag = imageUrl
           ? `<img src="${imageUrl}" alt="${p.ProductName || 'Ürün Resmi'}" class="product-image" loading="lazy" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'no-image\\'>Görsel Yok</div>';">`
           : '<div class="no-image">Görsel Yok</div>';
-        
+
         return `<div class="product-card" onclick="window.location.href='/urunler/${segment}/product/${productSlug}/'" title="${p.ProductName || ''}">
                   <div class="product-image-container">${imageTag}</div>
                   <div class="product-content">
@@ -819,18 +822,18 @@
       }).join('');
     }
 
-    const updateURL = category => { 
-      const url = new URL(location.href); 
+    const updateURL = category => {
+      const url = new URL(location.href);
       if (category === 'ALL' || !category) {
         url.searchParams.delete('kategori');
       } else {
         url.searchParams.set('kategori', category);
       }
-      history.pushState({}, '', url); 
+      history.pushState({}, '', url);
     };
 
-    const checkUrlParams = () => { 
-      const categoryParam = new URLSearchParams(location.search).get('kategori'); 
+    const checkUrlParams = () => {
+      const categoryParam = new URLSearchParams(location.search).get('kategori');
       if (!categoryParam) {
         if (document.querySelector('.filter-link.active')?.dataset.category === 'ALL') {
             return;
@@ -839,7 +842,7 @@
         if (allProductsLink) allProductsLink.click();
         return;
       }
-      
+
       const categoryLinkToActivate = Array.from(document.querySelectorAll('.filter-link')).find(l => l.dataset.category === categoryParam);
       if (categoryLinkToActivate) {
         categoryLinkToActivate.click();
@@ -856,7 +859,7 @@
         sortAndDisplayProducts();
       });
     }
-    
+
     let searchDebounceTimeout;
     function initSearch(){
       const searchInput = document.getElementById('productSearchInput');
@@ -870,9 +873,9 @@
             performSearch(searchInput.value.toLowerCase());
         }, 300);
       });
-      clearButton.addEventListener('click', () => { 
-        searchInput.value=''; 
-        clearButton.style.display='none'; 
+      clearButton.addEventListener('click', () => {
+        searchInput.value='';
+        clearButton.style.display='none';
         const activeCategoryLink = document.querySelector('.filter-link.active');
         const activeCategory = activeCategoryLink ? activeCategoryLink.dataset.category : 'ALL';
         filterAndDisplayProducts(activeCategory);
@@ -888,9 +891,9 @@
             : allProducts.filter(p => (p.cat || p.brand || 'Diğer').trim() === activeCategory);
 
         if (term) {
-            productsToSearch = productsToSearch.filter(p => 
-                (p.ProductName || '').toLowerCase().includes(term) || 
-                (p.ProductCode || '').toLowerCase().includes(term) || 
+            productsToSearch = productsToSearch.filter(p =>
+                (p.ProductName || '').toLowerCase().includes(term) ||
+                (p.ProductCode || '').toLowerCase().includes(term) ||
                 (p.brand || '').toLowerCase().includes(term)
             );
         }
@@ -899,11 +902,11 @@
     }
 
 
-    function initBackToTop(){ 
-      const btn = document.getElementById('backToTop'); 
+    function initBackToTop(){
+      const btn = document.getElementById('backToTop');
       if (!btn) return;
-      window.addEventListener('scroll', ()=>btn.classList.toggle('visible',window.scrollY > 300)); 
-      btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'})); 
+      window.addEventListener('scroll', ()=>btn.classList.toggle('visible',window.scrollY > 300));
+      btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
     }
 
     function slugify(text) {
