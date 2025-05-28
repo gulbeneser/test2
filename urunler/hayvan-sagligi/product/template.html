@@ -338,8 +338,9 @@
     let currentSegment = ''; 
 
     const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA"; 
-    const GEMINI_TEXT_MODEL = 'gemini-2.5-flash-preview-04-17'; 
+    // const GEMINI_TEXT_MODEL = 'gemini-2.5-flash-preview-04-17'; // Bu satır kaldırıldı.
 
+    // YENİ: Akıllı Model Yedeklemesi için generateEnhancedProductInfo fonksiyonu
     async function generateEnhancedProductInfo(productName, productKategori, languageCode) {
       if (!GEMINI_SDK_LOADED) {
         throw new Error("Yapay zeka modülü (SDK) yüklenemedi. Lütfen internet bağlantınızı ve tarayıcı konsolundaki (F12) hata mesajlarını kontrol edin. Ek bilgi üretilemiyor.");
@@ -350,17 +351,12 @@
       }
 
       const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-      const model = genAI.getGenerativeModel({
-        model: GEMINI_TEXT_MODEL,
-        generationConfig: { responseMimeType: "application/json" }
-      });
-
+      
       const languageInstruction = languageCode === 'tr'
         ? "Lütfen cevabınızı Türkçe olarak oluşturun. JSON anahtarları İngilizce kalmalıdır ('enhancedDescription', 'keyFeatures'). Açıklama ve özellikler Türkçe olmalıdır."
         : "Please generate your response in English. JSON keys should remain in English ('enhancedDescription', 'keyFeatures'). The description and features should be in English.";
 
-      const prompt = `
-        ${languageInstruction}
+      const basePrompt = `
         "${productName}" isimli ve "${productKategori}" kategorisindeki bir hayvan sağlığı ürünü için JSON formatında aşağıdaki bilgileri sağlayın:
         1.  "enhancedDescription": Ürünün detaylı, prospektüs bazlı profesyonel ve bilgilendirici bir açıklaması (8 cümle).
         2.  "keyFeatures": Ürününün içeriği ve ana etken maddesi başta olmak üzere, Ürünün 5-9 adet temel özelliği veya faydası, string dizisi olarak ve bulunabilirse ürün üretici linki linke tıklanabilir şekilde sağla.
@@ -373,51 +369,101 @@
         }
       `;
 
-      try {
-        console.log(`Gemini API'ye istek gönderiliyor. Model: ${GEMINI_TEXT_MODEL}, Ürün: ${productName}`);
-        const result = await model.generateContent(prompt);
-        const response = result.response;
-        let jsonStr = response.text(); 
-        console.log("Gemini API'den ham yanıt:", jsonStr);
+      const GEMINI_MODEL_FALLBACK_ORDER = [
+        "gemini-flash",         // Ana Model
+        "gemini-1.5-flash",     // İlk Yedek Model
+        "gemini-1.5-flash-8b"   // İkinci Yedek Model
+      ];
 
-        const fenceRegex = /^```(?:json)?\s*\n?(.*?)\n?\s*```$/s;
-        let match = jsonStr.match(fenceRegex);
-        if (match && match[1]) {
-          jsonStr = match[1].trim();
-        } else {
-          jsonStr = jsonStr.trim(); 
-        }
-        
-        const parsedData = JSON.parse(jsonStr);
-        console.log("Ayrıştırılmış JSON verisi:", parsedData);
+      let lastError = null;
 
-        if (!parsedData.enhancedDescription || !Array.isArray(parsedData.keyFeatures) || parsedData.keyFeatures.some(f => typeof f !== 'string')) {
-          console.error("Gemini API'si gelişmiş bilgi için hatalı JSON döndürdü:", parsedData);
-          throw new Error("Yapay zekadan ürün detayları için eksik veya hatalı biçimlendirilmiş veri alındı.");
-        }
-        return parsedData;
+      for (const modelName of GEMINI_MODEL_FALLBACK_ORDER) {
+        try {
+          console.log(`Gemini API'ye istek gönderiliyor. Model: ${modelName}, Ürün: ${productName}, Kategori: ${productKategori}`);
+          const model = genAI.getGenerativeModel({
+            model: modelName,
+            generationConfig: { responseMimeType: "application/json" }
+          });
 
-      } catch (error) {
-        console.error(`Gemini API ile gelişmiş ürün bilgisi üretilirken hata oluştu (Model: ${GEMINI_TEXT_MODEL}):`, error);
-        let errorMessage = "Gelişmiş ürün bilgisi üretilirken bilinmeyen bir hata oluştu.";
-        if (error && error.message) {
-            const msgLower = error.message.toLowerCase();
-            if (msgLower.includes("api key") || 
-                msgLower.includes("permission denied") || 
-                msgLower.includes("forbidden") ||
-                msgLower.includes("could not find model") ||
-                msgLower.includes("developer_message") ||
-                msgLower.includes("400 bad request") 
-              ) { 
-                errorMessage = `API Hatası: Sağlanan Gemini API anahtarı geçerli değil, '${GEMINI_TEXT_MODEL}' modeline erişim izniniz yok, model adı hatalı veya istek formatı yanlış. Lütfen yapılandırmanızı ve Google Cloud Console'daki API ayarlarınızı kontrol edin. Detay: ${error.message}`;
-            } else if (msgLower.includes("json") || msgLower.includes("unexpected token")) { 
-                errorMessage = "Yapay zeka beklenmedik bir formatta yanıt verdi. Yanıt JSON olarak ayrıştırılamadı. Ham yanıt konsolda loglandı.";
-            } else {
-                errorMessage = `Gelişmiş ürün bilgisi üretilemedi: ${error.message}`;
-            }
+          const prompt = `${languageInstruction}\n${basePrompt}`;
+          
+          const result = await model.generateContent(prompt);
+          const response = result.response;
+          let jsonStr = response.text(); 
+          console.log(`Gemini API'den ham yanıt (${modelName}):`, jsonStr);
+
+          const fenceRegex = /^```(?:json)?\s*\n?(.*?)\n?\s*```$/s;
+          let match = jsonStr.match(fenceRegex);
+          if (match && match[1]) {
+            jsonStr = match[1].trim();
+          } else {
+            jsonStr = jsonStr.trim(); 
+          }
+          
+          const parsedData = JSON.parse(jsonStr);
+          console.log(`Ayrıştırılmış JSON verisi (${modelName}):`, parsedData);
+
+          if (!parsedData.enhancedDescription || !Array.isArray(parsedData.keyFeatures) || parsedData.keyFeatures.some(f => typeof f !== 'string')) {
+            console.error(`Gemini API'si (${modelName}) gelişmiş bilgi için hatalı JSON döndürdü:`, parsedData);
+            // Bu hatayı bir sonraki modele geçmek için `Error` olarak fırlatıyoruz, ancak `continue` da kullanılabilirdi.
+            throw new Error(`Yapay zekadan (${modelName}) ürün detayları için eksik veya hatalı biçimlendirilmiş veri alındı.`);
+          }
+          return parsedData; // Başarılı, veriyi döndür ve fonksiyondan çık.
+
+        } catch (error) {
+          console.warn(`Gemini API ile gelişmiş ürün bilgisi üretilirken hata oluştu (Model: ${modelName}):`, error);
+          lastError = error; // Son hatayı sakla
+
+          const msgLower = error.message ? error.message.toLowerCase() : "";
+          
+          // Yedekleme tetikleyecek hatalar:
+          if (msgLower.includes("rate limit") || // Oran sınırı aşıldı
+              msgLower.includes("resource exhausted") || // Kaynak tükendi
+              msgLower.includes("quota") || // Kota aşıldı
+              (error.status && error.status === 429) || // HTTP 429 Too Many Requests
+              msgLower.includes("model_unavailable") || // Model geçici olarak kullanılamıyor
+              msgLower.includes("try again later") || // Daha sonra tekrar deneyin mesajı
+              msgLower.includes("deadline_exceeded") || // Zaman aşımı
+              msgLower.includes("service_unavailable") // Servis kullanılamıyor (503)
+             ) { 
+            console.log(`Model ${modelName} için limit/kaynak hatası veya geçici sorun. Bir sonraki modele geçiliyor.`);
+            // Döngünün bir sonraki iterasyonuna devam et
+          } 
+          // JSON ayrıştırma hatası da yedekleme tetiklesin:
+          else if (msgLower.includes("json") || msgLower.includes("unexpected token")) {
+             console.warn(`Model ${modelName} beklenmedik bir formatta yanıt verdi (JSON ayrıştırma hatası). Bir sonraki modele geçiliyor. Ham yanıt konsolda loglandı.`);
+             // Döngünün bir sonraki iterasyonuna devam et
+          }
+          // Kritik ve yedekleme yapılmaması gereken hatalar:
+          else if (msgLower.includes("api key not valid") || // Geçersiz API anahtarı
+                     msgLower.includes("permission denied") || // İzin reddedildi
+                     msgLower.includes("forbidden") || // Yasaklandı (erişim yok)
+                     msgLower.includes("could not find model") || // Model bulunamadı (yanlış model adı veya erişim yok)
+                     msgLower.includes("developer_message") || // Geliştirici mesajı içeren genel API hatası
+                     msgLower.includes("400 bad request") || // Hatalı istek
+                     msgLower.includes("invalid argument") // Geçersiz argüman
+                    ) { 
+            let criticalErrorMessage = `Kritik API Hatası (Model: ${modelName}): API anahtarı, model erişimi veya istek formatında sorun. Lütfen yapılandırmanızı kontrol edin. Detay: ${error.message}`;
+            // Bu tür hatalar genellikle yapılandırma ile ilgilidir, diğer modelleri denemek anlamsız olabilir.
+            throw new Error(criticalErrorMessage); 
+          }
+          // Diğer bilinmeyen hatalar için de yedeklemeyi dene:
+          else {
+            console.warn(`Bilinmeyen bir hata oluştu (Model: ${modelName}). Bir sonraki modele geçiliyor. Detay: ${error.message}`);
+            // Döngünün bir sonraki iterasyonuna devam et
+          }
         }
-        throw new Error(errorMessage);
       }
+
+      // Eğer döngü tamamlanırsa, tüm modeller başarısız olmuş demektir.
+      console.error("Tüm yedek modeller denendi ancak hiçbiri başarılı olamadı.");
+      let finalErrorMessage = "Gelişmiş ürün bilgisi üretilirken tüm denemeler başarısız oldu.";
+      if (lastError && lastError.message) {
+          finalErrorMessage += ` Son denenen modeldeki hata: ${lastError.message}`;
+      } else if (lastError) {
+          finalErrorMessage += ` Son denenen modelde bilinmeyen bir hata oluştu.`;
+      }
+      throw new Error(finalErrorMessage);
     }
 
     function getProductCategory(product) {
@@ -573,7 +619,7 @@
       const shareText = encodeURIComponent(`Serakıncı'da ${product.ProductName} ürününü inceleyin:`);
       const shareButtonsHTML = `<div class="product-share-buttons"><span class="share-label">Paylaş:</span><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}" target="_blank" title="Facebook'ta Paylaş"><svg viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a><a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a></div>`;
       let shortDescriptionHTML = `<div class="product-short-description"><p>${product.Description || product.ProductName + " Serakıncı güvencesiyle sizlerle."}</p></div>`;
-      const aiContentPlaceholderHTML = `<div id="aiProductInfoPlaceholder"><p style="font-style: italic; color: var(--text-medium);">Ürün bilgileri hazırlanıyor...</p></div>`;
+      const aiContentPlaceholderHTML = `<div id="aiProductInfoPlaceholder"><p style="font-style: italic; color: var(--text-medium);">Yapay zeka ile ürün bilgileri hazırlanıyor...</p></div>`;
 
       const createToggleableContent = (id, title, content) => {
           if (!content || String(content).trim() === '') return `<h3>${title}</h3><p>Bu sekme için bilgi bulunmamaktadır.</p>`;
@@ -696,7 +742,7 @@
         generateEnhancedProductInfo(product.ProductName, getProductCategory(product), 'tr')
             .then(aiData => {
                 let aiHtml = `<div id="aiProductInfo">`;
-                aiHtml += `<h4>Ürün Bilgileri:</h4>`;
+                aiHtml += `<h4>Ürün Bilgileri:</h4>`; // Başlık güncellendi
                 aiHtml += `<p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>`;
                 aiHtml += `<p><strong>Öne Çıkan Özellikler ve İçerik:</strong></p><ul>`;
                 aiData.keyFeatures.forEach(feature => {
@@ -707,7 +753,7 @@
             })
             .catch(error => {
                 console.error("AI Bilgisi Getirme Hatası:", error);
-                if (aiPlaceholderDiv) aiPlaceholderDiv.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka ile ürün bilgisi oluşturulurken bir sorun oluştu: ${error.message}.<br>Lütfen tarayıcı konsolunu (F12 ile açılır) kontrol edin.</em></p></div>`;
+                if (aiPlaceholderDiv) aiPlaceholderDiv.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka ile ürün bilgisi oluşturulurken bir sorun oluştu: ${error.message}.<br>Lütfen tarayıcı konsolunu (F12 ile açılır) kontrol edin veya daha sonra tekrar deneyin.</em></p></div>`;
             });
       } else {
          if (aiPlaceholderDiv) {
