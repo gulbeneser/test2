@@ -1,8 +1,9 @@
-/********************************************************************
-  Serakıncı B2B Scraper v5 – GitHub Actions Optimized (29.05.2024)
+/**********************************/********************************************************************
+  Serakıncı B2B Scraper v6 – GitHub Actions Optimized (IMAGE CHANGE DETECTION - 02.06.2024)
   - Handles Dermokozmetik and Hayvan Sağlığı with separate credentials from env.
   - Outputs 'products.json' and 'hayvan-sagligi.json' to 'urunler/api/'.
   - Maps fields to align with frontend Product type.
+  - Detects and logs changes in product image URLs.
 ********************************************************************/
 
 require('dotenv').config(); // ✅ .env dosyasını yükle
@@ -60,6 +61,30 @@ const OUTPUT_DIR = path.join(__dirname, 'urunler', 'api');
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+async function loadPreviousProducts(filePath, accountType) {
+  const previousProductsMap = new Map();
+  if (await fs.pathExists(filePath)) {
+    try {
+      const previousProductsArray = await fs.readJson(filePath);
+      if (Array.isArray(previousProductsArray)) {
+        previousProductsArray.forEach(p => {
+          if (p && p.ProductId) { // Sadece geçerli ProductId'ye sahip olanları ekle
+            previousProductsMap.set(p.ProductId, p);
+          }
+        });
+        console.log(`[${accountType}] ✔️ Önceki ${previousProductsMap.size} ürün verisi yüklendi: ${path.basename(filePath)}`);
+      } else {
+        console.warn(`[${accountType}] ⚠️ Önceki ürün dosyası (${path.basename(filePath)}) geçerli bir dizi değil. Sıfırdan başlanıyor.`);
+      }
+    } catch (error) {
+      console.warn(`[${accountType}] ⚠️ Önceki ürün dosyası (${path.basename(filePath)}) okunamadı/bozuk. Sıfırdan başlanıyor:`, error.message);
+    }
+  } else {
+    console.log(`[${accountType}] ℹ️ Önceki ürün dosyası bulunamadı, muhtemelen ilk çalıştırma: ${path.basename(filePath)}`);
+  }
+  return previousProductsMap;
+}
+
 async function scrapeAccountData(accountConfig, browser) {
   const t0_account = Date.now();
   console.log(`\n===== ${accountConfig.type} Kategorisi için İşlem Başlatılıyor =====`);
@@ -69,8 +94,10 @@ async function scrapeAccountData(accountConfig, browser) {
     return [];
   }
 
-  const page = await browser.newPage();
+  const outputFilePath = path.join(OUTPUT_DIR, accountConfig.outputFile);
+  const previousProductsMap = await loadPreviousProducts(outputFilePath, accountConfig.type);
 
+  const page = await browser.newPage();
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64)');
   await page.evaluateOnNewDocument(() => {
     Object.defineProperty(navigator, 'webdriver', { get: () => false });
@@ -89,16 +116,17 @@ async function scrapeAccountData(accountConfig, browser) {
     console.log(`[${accountConfig.type}] ✔ Giriş başarılı`);
   } catch (error) {
     console.error(`[${accountConfig.type}] ❌ Giriş başarısız:`, error.message);
+    await page.screenshot({ path: `error_login_${accountConfig.type}.png` });
     await page.close();
     return [];
   }
 
-  await sleep(3000);
+  await sleep(3000); // Sayfanın tam yüklenmesi için ek bekleme
 
   const tokenData = await page.evaluate(() => {
     const stor = { ...localStorage, ...sessionStorage };
     for (const key in stor) {
-      if (key.toLowerCase().includes('token')) return { token: stor[key] };
+      if (key && key.toLowerCase().includes('token')) return { token: stor[key] }; // key null/undefined kontrolü
     }
     return { token: null };
   });
@@ -107,6 +135,7 @@ async function scrapeAccountData(accountConfig, browser) {
 
   if (!token) {
     console.error(`[${accountConfig.type}] ❌ Token alınamadı`);
+    await page.screenshot({ path: `error_token_${accountConfig.type}.png` });
     await page.close();
     return [];
   }
@@ -133,7 +162,7 @@ async function scrapeAccountData(accountConfig, browser) {
       try {
         apiResponse = await page.evaluate(async (url, h) => {
           const r = await fetch(url, { headers: h });
-          if (!r.ok) return { Error: `HTTP ${r.status}`, Url: url };
+          if (!r.ok) return { Error: `HTTP ${r.status} - ${r.statusText}`, Url: url, ResponseText: await r.text() };
           return await r.json();
         }, apiUrl, headers);
       } catch (e) {
@@ -141,7 +170,8 @@ async function scrapeAccountData(accountConfig, browser) {
       }
 
       if (apiResponse.Error) {
-        console.error(`[${accountConfig.type}] ⚠️ API Hatası: ${apiResponse.Error}`);
+        console.error(`[${accountConfig.type}] ⚠️ API Hatası (${cat.name} - Sayfa ${pageNo}): ${apiResponse.Error}`);
+        if (apiResponse.ResponseText) console.error(`[${accountConfig.type}] API Yanıtı: ${apiResponse.ResponseText.substring(0, 200)}...`);
         break;
       }
 
@@ -154,7 +184,7 @@ async function scrapeAccountData(accountConfig, browser) {
       if (!productList.length) break;
 
       const processedProducts = productList.map(p => {
-        const product = {
+        const currentProduct = {
           ProductId: p.ProductId,
           ProductName: p.ProductName,
           ImageUrl: p.ProductImage || p.ImageUrl || null,
@@ -164,29 +194,57 @@ async function scrapeAccountData(accountConfig, browser) {
         };
 
         if (accountConfig.type === 'Dermokozmetik') {
-          product.brand = cat.name;
-          product.cat = cat.name;
-        } else {
-          product.kategori = cat.name;
-          if (p.ProducerName) product.brand = p.ProducerName;
+          currentProduct.brand = cat.name; // Kategori adı marka olarak atanıyor
+          currentProduct.cat = cat.name;
+        } else { // Hayvan Sağlığı
+          currentProduct.kategori = cat.name;
+          if (p.ProducerName) currentProduct.brand = p.ProducerName;
         }
 
-        return product;
-      }).filter(p => p.ProductId && p.ProductName);
+        // Fotoğraf değişikliği kontrolü
+        const previousProduct = previousProductsMap.get(currentProduct.ProductId);
+        if (previousProduct) {
+          // Normalize URLs by removing potential query strings for a more robust comparison
+          const normalizeUrl = (url) => url ? url.split('?')[0] : null;
+          const prevImg = normalizeUrl(previousProduct.ImageUrl);
+          const currImg = normalizeUrl(currentProduct.ImageUrl);
+
+          if (prevImg !== currImg) {
+            if (prevImg && currImg) {
+              console.log(`[${accountConfig.type}]   🔄 FOTOĞRAF GÜNCELLENDİ: "${currentProduct.ProductName}" (ID: ${currentProduct.ProductId})`);
+              // console.log(`       Eski: ${previousProduct.ImageUrl}`);
+              // console.log(`       Yeni: ${currentProduct.ImageUrl}`);
+            } else if (!prevImg && currImg) {
+              console.log(`[${accountConfig.type}]   🖼️ YENİ FOTOĞRAF EKLENDİ: "${currentProduct.ProductName}" (ID: ${currentProduct.ProductId})`);
+              // console.log(`       Yeni: ${currentProduct.ImageUrl}`);
+            } else if (prevImg && !currImg) {
+              console.log(`[${accountConfig.type}]   🗑️ FOTOĞRAF KALDIRILDI: "${currentProduct.ProductName}" (ID: ${currentProduct.ProductId})`);
+              // console.log(`       Eski: ${previousProduct.ImageUrl}`);
+            }
+          }
+        } else {
+           console.log(`[${accountConfig.type}]   ✨ YENİ ÜRÜN BULUNDU: "${currentProduct.ProductName}" (ID: ${currentProduct.ProductId})`);
+        }
+
+        return currentProduct;
+      }).filter(p => p.ProductId && p.ProductName); // Geçerli ProductId ve ProductName olanları filtrele
 
       allProductsForAccount.push(...processedProducts);
       if (productList.length < 100) break;
       skip += 100;
       pageNo++;
-      await sleep(600);
+      await sleep(process.env.NODE_ENV === 'development' ? 200 : 700); // Geliştirme ortamında daha kısa bekleme
     }
   }
 
   await fs.ensureDir(OUTPUT_DIR);
-  const outputFilePath = path.join(OUTPUT_DIR, accountConfig.outputFile);
-  fs.writeJsonSync(outputFilePath, allProductsForAccount, { spaces: 2 });
+  // Ürünleri ProductId'ye göre sıralayarak yazalım, bu diff almayı kolaylaştırır.
+  allProductsForAccount.sort((a, b) => (a.ProductId > b.ProductId) ? 1 : ((b.ProductId > a.ProductId) ? -1 : 0));
+  await fs.writeJson(outputFilePath, allProductsForAccount, { spaces: 2 });
 
   console.log(`\n[${accountConfig.type}] ✅ Yazıldı: ${outputFilePath} → ${allProductsForAccount.length} ürün`);
+  const elapsedTimeAccount = ((Date.now() - t0_account) / 1000).toFixed(1);
+  console.log(`[${accountConfig.type}] ⏱️ Kategori işlem süresi: ${elapsedTimeAccount} sn`);
   await page.close();
   return allProductsForAccount;
 }
@@ -194,10 +252,12 @@ async function scrapeAccountData(accountConfig, browser) {
 (async () => {
   const t0_total = Date.now();
   console.log("🚀 Serakıncı B2B Scraper Başlatılıyor...");
+  console.log(`ℹ️ Çalışma Zamanı: ${new Date().toLocaleString('tr-TR')}`);
+
 
   const browser = await puppeteer.launch({
-    headless: "new",
-    slowMo: 40,
+    headless: process.env.HEADLESS_MODE !== 'false' ? "new" : false, // Ortam değişkeni ile kontrol
+    slowMo: parseInt(process.env.SLOW_MO || '30', 10), // Ortam değişkeni ile kontrol
     defaultViewport: null,
     args: [
       '--start-maximized',
@@ -214,10 +274,12 @@ async function scrapeAccountData(accountConfig, browser) {
       await scrapeAccountData(config, browser);
     }
   } catch (err) {
-    console.error("❌ Genel hata:", err.message);
+    console.error("❌ Genel hata:", err); // err.message yerine tüm hata objesini logla
+    // Hata durumunda da screenshot almayı düşünebilirsiniz, ancak hangi sayfada olduğunu bilmek zor olabilir.
   } finally {
     await browser.close();
     console.log('🧼 Tarayıcı kapatıldı.');
     console.log(`⏱️ Toplam süre: ${((Date.now() - t0_total) / 1000).toFixed(1)} sn`);
+    console.log("🏁 Scraper tamamlandı.");
   }
 })();
