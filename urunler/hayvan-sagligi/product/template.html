@@ -848,13 +848,13 @@
         const historyPrompt = chatHistory.map(msg => `**${msg.role === 'user' ? 'Kullanıcı' : 'Asistan'}**: ${msg.text}`).join('\n');
 
         const prompt = `
-            Sen Serakıncı Limited için bir müşteri destek asistanısın. Sadece hayvan sağlığı ve dermokozmetik ürünleri hakkında bilgi veriyorsun. 
+            Sen Serakıncı Limited için bir müşteri destek asistanısın. Sadece hayvan sağlığı hakkında bilgi veriyorsun. 
             Şu an "${productName}" (${category}) ürünü hakkında konuşuyoruz. 
             Kullanıcı sorusu: "${question}".
             Önceki konuşma:
             ${historyPrompt}
             
-            Lütfen bu ürüne odaklanarak, kısa, anlaşılır ve Türkçe bir cevap ver. Bilmediğin veya emin olmadığın konularda 'Bu konuda detaylı bilgi için lütfen veteriner hekiminize veya firmamıza danışın.' de. Asla tıbbi tavsiye verme veya tanı koyma.
+            Lütfen bu ürüne odaklanarak, kısa, anlaşılır ve Türkçe bir cevap ver. Bilmediğin veya emin olmadığın konularda 'Bu konuda detaylı bilgi için lütfen veteriner hekiminize veya firmamıza danışın.' de. Tıbbı destek ya da tanı koyarsan eğer mutlaka yapay zeka olduğunu söyle, ürünlerin etken maddesi gibi özellikleri hakkında bilgi ver.
         `;
 
         try {
