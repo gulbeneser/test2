@@ -252,39 +252,40 @@
     .read-more-btn { display: inline-block; margin-top: 0.75rem; padding: 0.4rem 0.8rem; font-size: 0.875rem; color: var(--primary-theme); background-color: transparent; border: 1px solid var(--primary-theme); border-radius: var(--radius); cursor: pointer; transition: background-color 0.2s, color 0.2s; font-weight: 500; }
     .read-more-btn:hover { background-color: var(--primary-theme); color: white; text-decoration: none; }
     
-    /* İçindekiler Butonu ve Modal Stilleri (Bioderma için) */
-    .ingredients-button { display: inline-block; padding: 0.6rem 1.2rem; font-size: 0.9rem; font-weight: 600; color: var(--primary-theme); background-color: transparent; border: 2px solid var(--primary-theme); border-radius: var(--radius); cursor: pointer; transition: all 0.2s ease; text-decoration: none; margin-top: 1rem; }
-    .ingredients-button:hover { background-color: var(--primary-theme); color: white; }
-    #ingredientsModal .modal-content { max-width: 700px; }
-    #ingredientsModal h2 { font-size: 1.5rem; margin-bottom: 1rem; }
-    #ingredientsModal .ask-naos-link { margin-top: 1rem; text-align: center; }
-    #ingredientsModal .ask-naos-link a { color: var(--primary-theme); font-weight: 500; }
-    #ingredientsModal .ingredients-list { list-style: none; padding: 0; column-count: 2; column-gap: 20px; font-size: 0.9rem; }
-    #ingredientsModal .ingredients-list li { margin-bottom: 0.3rem; }
-    @media (max-width: 576px) { #ingredientsModal .ingredients-list { column-count: 1; } }
-    #ingredientsModal .ingredients-disclaimer { font-size: 0.8rem; color: var(--text-light); margin-top: 1.5rem; text-align: center; }
-    /* Bioderma tablarındaki modal ve accordion için temel stiller (Bootstrap olmadan) */
-    .product-details-tabs-modern .card { border: 1px solid var(--border-color); margin-bottom: 0.5rem; border-radius: var(--radius); }
-    .product-details-tabs-modern .card button[data-toggle="collapse"] { background-color: #f8f9fa; border: none; padding: 0.75rem 1rem; width: 100%; text-align: left; font-weight: 600; color: var(--text-dark); cursor: pointer; border-radius: var(--radius) var(--radius) 0 0; position: relative; }
-    .product-details-tabs-modern .card button[data-toggle="collapse"]::after { content: '+'; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); font-size: 1.2rem; }
-    .product-details-tabs-modern .card button[data-toggle="collapse"][aria-expanded="true"]::after { content: '−'; }
-    .product-details-tabs-modern .card .collapse { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-    .product-details-tabs-modern .card .collapse.show { max-height: 1000px; /* Yeterince büyük bir değer */ }
-    .product-details-tabs-modern .card .card-body { padding: 1rem; border-top: 1px solid var(--border-color); }
-    .product-details-tabs-modern .card .card-body p { margin-bottom: 0.5rem; }
-    .product-details-tabs-modern .card .card-body ul { margin-top: 0.5rem; padding-left: 1.2rem; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] { /* Bioderma tablarındaki modal stilleri */ display: none; position: fixed; z-index: 1060; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
-    .product-details-tabs-modern .modal[id*="-source-modal"].show { display: flex; align-items: center; justify-content: center; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-content { background-color: #fff; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 600px; border-radius: var(--radius); position: relative; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-title { font-size: 1.25rem; font-weight: 600; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-body p { font-size: 0.9rem; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; background: none; border: none; cursor: pointer; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .close:hover, .product-details-tabs-modern .modal[id*="-source-modal"] .close:focus { color: black; text-decoration: none; cursor: pointer; }
-    .product-details-tabs-modern .underline { text-decoration: underline; color: var(--primary-theme); }
-    .product-details-tabs-modern .underline:hover { color: var(--primary-theme-hover); }
-    .product-details-tabs-modern .btn-secondary { background-color: var(--primary-theme); color: white; border: none; padding: 0.5rem 1rem; border-radius: var(--radius); text-decoration: none; display: inline-block; margin-top: 0.5rem; }
-    .product-details-tabs-modern .btn-secondary:hover { background-color: var(--primary-theme-hover); }
+    /* İçindekiler (Bioderma için) */
+    .ingredients-section { margin-top: 1.5rem; }
+    .ingredients-section h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .ingredients-section ul { list-style: none; padding: 0; column-count: 2; column-gap: 20px; font-size: 0.9rem; }
+    .ingredients-section li { margin-bottom: 0.3rem; }
+    @media (max-width: 576px) { .ingredients-section ul { column-count: 1; } }
+    .ingredients-section .ask-naos-link { margin-top: 1rem; }
+    .ingredients-section .ask-naos-link a { color: var(--primary-theme); font-weight: 500; text-decoration: underline; }
+    .ingredients-section .ingredients-disclaimer { font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; }
+
+
+    /* Bioderma tablarındaki modal ve accordion için temel stiller */
+    .tab-pane-modern .card { border: 1px solid var(--border-color); margin-bottom: 0.5rem; border-radius: var(--radius); }
+    .tab-pane-modern .card button[data-toggle="collapse"] { background-color: #f8f9fa; border: none; padding: 0.75rem 1rem; width: 100%; text-align: left; font-weight: 600; color: var(--text-dark); cursor: pointer; border-radius: var(--radius) var(--radius) 0 0; position: relative; }
+    .tab-pane-modern .card button[data-toggle="collapse"]::after { content: '+'; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); font-size: 1.2rem; }
+    .tab-pane-modern .card button[data-toggle="collapse"][aria-expanded="true"]::after { content: '−'; }
+    .tab-pane-modern .card .collapse { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+    .tab-pane-modern .card .collapse.show { max-height: 1000px; /* Yeterince büyük bir değer */ }
+    .tab-pane-modern .card .card-body { padding: 1rem; border-top: 1px solid var(--border-color); }
+    .tab-pane-modern .card .card-body p { margin-bottom: 0.5rem; }
+    .tab-pane-modern .card .card-body ul { margin-top: 0.5rem; padding-left: 1.2rem; }
+    .tab-pane-modern .modal { display: none; position: fixed; z-index: 1060; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
+    .tab-pane-modern .modal.show { display: flex; align-items: center; justify-content: center; }
+    .tab-pane-modern .modal-content { background-color: #fff; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 600px; border-radius: var(--radius); position: relative; }
+    .tab-pane-modern .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .tab-pane-modern .modal-title { font-size: 1.25rem; font-weight: 600; }
+    .tab-pane-modern .modal-body p { font-size: 0.9rem; }
+    .tab-pane-modern .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; background: none; border: none; cursor: pointer; }
+    .tab-pane-modern .close:hover, .tab-pane-modern .close:focus { color: black; text-decoration: none; cursor: pointer; }
+    .tab-pane-modern .underline { text-decoration: underline; color: var(--primary-theme); }
+    .tab-pane-modern .underline:hover { color: var(--primary-theme-hover); }
+    .tab-pane-modern .btn-secondary { background-color: var(--primary-theme); color: white; border: none; padding: 0.5rem 1rem; border-radius: var(--radius); text-decoration: none; display: inline-block; margin-top: 0.5rem; }
+    .tab-pane-modern .btn-secondary:hover { background-color: var(--primary-theme-hover); }
+
 
     .related-products-section-modern { margin-bottom: 2.5rem; }
     .related-products-title-modern { font-size: 1.75rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem; text-align: left; padding-bottom: 0.75rem; border-bottom: 2px solid var(--primary-theme); display: inline-block; }
@@ -308,7 +309,56 @@
     @keyframes lightboxZoom { from {transform: scale(0.8) translateY(20px); opacity: 0;} to {transform: scale(1) translateY(0); opacity: 1;} }
     .lightbox-close { position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; transition: 0.3s; cursor: pointer; user-select: none; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
     .lightbox-close:hover { color: #bbb; }
-    /* modal-content, modal .close-button, modal-content h2, h3, modal-list vb. zaten tanımlı */
+    .modal-content { background-color: var(--card-bg); margin: 10% auto; padding: 30px; border-radius: var(--radius); width: 80%; max-width: 600px; position: relative; box-shadow: var(--shadow-lg); animation: modalFadeIn 0.3s ease-out; }
+    @keyframes modalFadeIn { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
+    .modal .close-button { position: absolute; top: 15px; right: 25px; color: var(--text-light); font-size: 30px; font-weight: bold; transition: 0.3s; cursor: pointer; user-select: none; }
+    .modal .close-button:hover { color: #bbb; }
+    .modal-content h2, .modal-content h3 { color: var(--text-dark); margin-top: 0; margin-bottom: 20px; font-size: 1.8rem; }
+    .modal-list { max-height: 400px; overflow-y: auto; margin-bottom: 20px; }
+    .modal-list-item { display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-color); }
+    .modal-list-item:last-child { border-bottom: none; }
+    .modal-list-item img { width: 60px; height: 60px; object-fit: contain; margin-right: 15px; border-radius: var(--radius); }
+    .modal-list-item-info { flex-grow: 1; }
+    .modal-list-item-info .name { font-weight: 600; font-size: 1.1rem; color: var(--text-dark); display: block; margin-bottom: 5px;}
+    .modal-list-item-info .category { font-size: 0.85rem; color: var(--text-medium); display: block; }
+    .modal-list-item a { text-decoration: none;}
+    .modal-list-item-actions { display: flex; gap: 10px; }
+    .modal-list-item-actions button { background: none; border: none; cursor: pointer; padding: 5px; color: var(--text-light); transition: color 0.2s; }
+    .modal-list-item-actions button:hover { color: #e74c3c; }
+    .no-favorites-message { text-align: center; color: var(--text-medium); padding: 20px 0; }
+    .comparison-grid { display: grid; gap: 1px; background-color: var(--border-color); border-radius: var(--radius); overflow-x: auto; margin-bottom: 20px; box-shadow: var(--shadow-sm); max-height: 70vh; overflow-y: auto; }
+    .comparison-row { display: contents; }
+    .comparison-header-row { font-weight: 600; color: var(--text-dark); background-color: #f0f2f5; position: sticky; top: 0; z-index: 5; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .comparison-header-label, .comparison-product-header, .comparison-cell { padding: 15px 10px; background-color: var(--card-bg); border: 1px solid var(--border-color); word-break: break-word; }
+    .comparison-header-label { font-weight: 700; color: var(--text-dark); background-color: #e9ecef; text-align: left; }
+    .comparison-product-header { position: relative; text-align: center; padding-top: 30px; }
+    .comparison-product-header .remove-cmp-btn { position: absolute; top: 5px; right: 5px; background: #e74c3c; color: white; border: none; border-radius: 50%; width: 24px; height: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: bold; line-height: 1; font-size: 16px; padding: 0; transition: background-color 0.2s; }
+    .comparison-product-header .remove-cmp-btn:hover { background-color: #c0392b; }
+    .comparison-product-header img { max-width: 80px; max-height: 80px; object-fit: contain; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
+    .comparison-product-header a { text-decoration: none; color: var(--text-dark); }
+    .comparison-product-header a:hover { text-decoration: underline; }
+    .comparison-product-name { font-weight: 600; font-size: 1rem; display: block; margin-bottom: 5px; }
+    .comparison-product-category { font-size: 0.85rem; color: var(--text-medium); display: block; }
+    .comparison-cell { vertical-align: top; text-align: left; font-size: 0.9rem; color: var(--text-medium); }
+    .comparison-cell ul { list-style-type: disc; padding-left: 20px; margin: 0; }
+    .comparison-cell ul li { margin-bottom: 5px; }
+    .comparison-cell-image img { max-width: 60px; max-height: 60px; object-fit: contain; display: block; margin-left: auto; margin-right: auto; }
+    .comparison-cell-link a { color: var(--primary-theme); text-decoration: none; }
+    .comparison-cell-link a:hover { text-decoration: underline; }
+    .comparison-cell-long-text { white-space: pre-wrap; }
+    .chatbot-modal .modal-content { max-width: 500px; padding: 0; overflow: hidden;}
+    .chatbot-modal h3 { background-color: var(--accent); color: white; padding: 15px 20px; margin: 0; font-size: 1.3rem;}
+    .chatbot-messages { height: 350px; overflow-y: auto; padding: 20px; background-color: #f9f9f9; }
+    .bot-message, .user-message { padding: 10px 15px; border-radius: 15px; margin-bottom: 10px; max-width: 80%; line-height: 1.4; }
+    .bot-message { background-color: #e9ecef; color: var(--text-dark); float: left; clear: both; }
+    .user-message { background-color: var(--primary-theme); color: white; float: right; clear: both; }
+    .chatbot-input-container { display: flex; border-top: 1px solid var(--border-color); padding: 15px; }
+    #chatbotInput { flex-grow: 1; border: 1px solid var(--border-color); border-radius: 20px; padding: 10px 15px; outline: none; margin-right: 10px; }
+    .chatbot-send-btn { background-color: var(--primary-theme); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background-color 0.2s; }
+    .chatbot-send-btn:hover { background-color: var(--primary-theme-hover); }
+    .chatbot-send-btn svg { width: 20px; height: 20px; }
+    .bot-message.typing::after { content: '...'; display: inline-block; animation: typing-dots 1s infinite steps(3, end); }
+    @keyframes typing-dots { 0% { content: '.'; } 33% { content: '..'; } 66% { content: '...'; } } 
     .scroll-to-top { position: fixed; bottom: 20px; right: 20px; background-color: var(--primary-theme); color: white; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s, transform 0.3s; z-index: 999; box-shadow: var(--shadow-md); transform: translateY(20px); }
     .scroll-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
     .scroll-to-top:hover { background-color: var(--primary-theme-hover); }
@@ -357,27 +407,28 @@
     @media (max-width: 768px) { footer { flex-direction: column; align-items: center; padding: 30px 20px; text-align: center; } .footer-left { max-width: 100%; align-items: center; margin-bottom: 30px; } .footer-brand { justify-content: center; } .footer-right { grid-template-columns: 1fr; gap: 15px; width: 100%; max-width: 280px; text-align: center; } .footer-right a { font-size: 18px; } .footer-bottom { padding: 20px; } }
     @media (max-width: 480px) { .footer-brand h1 { font-size: 22px; } .footer-slogan { font-size: 16px; } .footer-bottom { padding: 15px; font-size: 13px; } .footer-bottom a img { height: 20px; } }
     @keyframes spin { to { transform: rotate(360deg); } } 
-    .product-details-tabs-modern .card { border: 1px solid var(--border-color); margin-bottom: 0.5rem; border-radius: var(--radius); }
-    .product-details-tabs-modern .card button[data-toggle="collapse"] { background-color: #f8f9fa; border: none; padding: 0.75rem 1rem; width: 100%; text-align: left; font-weight: 600; color: var(--text-dark); cursor: pointer; border-radius: var(--radius) var(--radius) 0 0; position: relative; }
-    .product-details-tabs-modern .card button[data-toggle="collapse"]::after { content: '+'; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); font-size: 1.2rem; }
-    .product-details-tabs-modern .card button[data-toggle="collapse"][aria-expanded="true"]::after { content: '−'; }
-    .product-details-tabs-modern .card .collapse { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-    .product-details-tabs-modern .card .collapse.show { max-height: 1000px; }
-    .product-details-tabs-modern .card .card-body { padding: 1rem; border-top: 1px solid var(--border-color); }
-    .product-details-tabs-modern .card .card-body p { margin-bottom: 0.5rem; }
-    .product-details-tabs-modern .card .card-body ul { margin-top: 0.5rem; padding-left: 1.2rem; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] { display: none; position: fixed; z-index: 1060; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
-    .product-details-tabs-modern .modal[id*="-source-modal"].show { display: flex; align-items: center; justify-content: center; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-content { background-color: #fff; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 600px; border-radius: var(--radius); position: relative; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-title { font-size: 1.25rem; font-weight: 600; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .modal-body p { font-size: 0.9rem; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; background: none; border: none; cursor: pointer; }
-    .product-details-tabs-modern .modal[id*="-source-modal"] .close:hover, .product-details-tabs-modern .modal[id*="-source-modal"] .close:focus { color: black; text-decoration: none; cursor: pointer; }
-    .product-details-tabs-modern .underline { text-decoration: underline; color: var(--primary-theme); }
-    .product-details-tabs-modern .underline:hover { color: var(--primary-theme-hover); }
-    .product-details-tabs-modern .btn-secondary { background-color: var(--primary-theme); color: white; border: none; padding: 0.5rem 1rem; border-radius: var(--radius); text-decoration: none; display: inline-block; margin-top: 0.5rem; }
-    .product-details-tabs-modern .btn-secondary:hover { background-color: var(--primary-theme-hover); }
+    /* Bioderma tablarındaki modal ve accordion için temel stiller */
+    .tab-pane-modern .card { border: 1px solid var(--border-color); margin-bottom: 0.5rem; border-radius: var(--radius); }
+    .tab-pane-modern .card button[data-toggle="collapse"] { background-color: #f8f9fa; border: none; padding: 0.75rem 1rem; width: 100%; text-align: left; font-weight: 600; color: var(--text-dark); cursor: pointer; border-radius: var(--radius) var(--radius) 0 0; position: relative; }
+    .tab-pane-modern .card button[data-toggle="collapse"]::after { content: '+'; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); font-size: 1.2rem; }
+    .tab-pane-modern .card button[data-toggle="collapse"][aria-expanded="true"]::after { content: '−'; }
+    .tab-pane-modern .card .collapse { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+    .tab-pane-modern .card .collapse.show { max-height: 1000px; /* Yeterince büyük bir değer */ }
+    .tab-pane-modern .card .card-body { padding: 1rem; border-top: 1px solid var(--border-color); }
+    .tab-pane-modern .card .card-body p { margin-bottom: 0.5rem; }
+    .tab-pane-modern .card .card-body ul { margin-top: 0.5rem; padding-left: 1.2rem; }
+    .tab-pane-modern .modal[id*="-source-modal"] { /* Bioderma tablarındaki modal stilleri */ display: none; position: fixed; z-index: 1060; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
+    .tab-pane-modern .modal[id*="-source-modal"].show { display: flex; align-items: center; justify-content: center; }
+    .tab-pane-modern .modal[id*="-source-modal"] .modal-content { background-color: #fff; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 600px; border-radius: var(--radius); position: relative; }
+    .tab-pane-modern .modal[id*="-source-modal"] .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .tab-pane-modern .modal[id*="-source-modal"] .modal-title { font-size: 1.25rem; font-weight: 600; }
+    .tab-pane-modern .modal[id*="-source-modal"] .modal-body p { font-size: 0.9rem; }
+    .tab-pane-modern .modal[id*="-source-modal"] .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; background: none; border: none; cursor: pointer; }
+    .tab-pane-modern .modal[id*="-source-modal"] .close:hover, .product-details-tabs-modern .modal[id*="-source-modal"] .close:focus { color: black; text-decoration: none; cursor: pointer; }
+    .tab-pane-modern .underline { text-decoration: underline; color: var(--primary-theme); }
+    .tab-pane-modern .underline:hover { color: var(--primary-theme-hover); }
+    .tab-pane-modern .btn-secondary { background-color: var(--primary-theme); color: white; border: none; padding: 0.5rem 1rem; border-radius: var(--radius); text-decoration: none; display: inline-block; margin-top: 0.5rem; }
+    .tab-pane-modern .btn-secondary:hover { background-color: var(--primary-theme-hover); }
 
   </style>
 </head>
@@ -473,24 +524,14 @@
     </div>
   </div>
 
-  <!-- İçindekiler Modalı (Bioderma için) -->
+  <!-- İçindekiler Modalı (Artık kullanılmıyor, ancak yapısı burada kalabilir veya tamamen silinebilir) -->
+  <!-- 
   <div id="ingredientsModal" class="modal">
     <div class="modal-content">
-      <div class="modal-header">
-        <h2 id="ingredientsModalTitle" style="font-size: 1.5rem; margin-bottom: 0;">İçindekiler Listesi</h2>
-        <span class="close-button" id="ingredientsModalCloseBtn">&times;</span>
-      </div>
-      <div class="modal-body">
-        <ul id="ingredientsModalList" class="ingredients-list">
-          <!-- İçerik buraya JS ile eklenecek -->
-        </ul>
-        <div class="ask-naos-link" id="ingredientsAskNaosLinkContainer" style="display:none; margin-top: 1rem; text-align:center;">
-            <a href="#" id="ingredientsAskNaosLink" class="underline" target="_blank">ask.NAOS.com.tr'de Tüm İçerik ve Detaylarını Keşfet</a>
-        </div>
-        <p class="ingredients-disclaimer" id="ingredientsDisclaimer">Burada listelenen maddeler, bu ürün için tasarlanan en güncel formülde kullanılan maddelerdir. Üretimi ile dağıtımı arasında bir gecikme olabileceği için lütfen paket üstündeki içindekiler listesini dikkate alın.</p>
-      </div>
+      // ... içerik ...
     </div>
   </div>
+  -->
 
 
   <a id="favoritesNavLink" title="Favori ürünlerinizi görüntüleyin">Favorilerim <span id="favoritesCount" class="favorites-count">0</span></a>
@@ -838,7 +879,7 @@
         }
     }
     function toggleFavorite(product, btnElement) { 
-        const productId = product.ProductId; // Artık ProductId üzerinden
+        const productId = product.ProductId; 
         if (isFavorite(productId, segment)) { 
             favorites = favorites.filter(fav => !(fav.ProductId === productId && fav.Segment === segment));
             showTooltip(btnElement, 'Favorilerden çıkarıldı!', 'favoriteTooltip');
@@ -936,7 +977,7 @@
     }
     
     function toggleComparison(product, btnElement, productDetail) { 
-        const productId = product.ProductId; // ProductId üzerinden
+        const productId = product.ProductId; 
         if (isInComparison(productId, segment)) { 
             comparisonList = comparisonList.filter(item => !(item.ProductId === productId && item.Segment === segment));
             showTooltip(btnElement, 'Karşılaştırmadan çıkarıldı!', 'compareTooltip');
@@ -1066,7 +1107,7 @@
         }
     }
     
-    function updateMetaTags(product, productDetail) {
+    function updateMetaTags(product, productDetailOrBiodermaData) {
         const ogUrlMeta = document.querySelector('meta[property="og:url"]');
         if (ogUrlMeta) ogUrlMeta.content = window.location.href;
 
@@ -1077,13 +1118,13 @@
         const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
         if (twitterTitleMeta) twitterTitleMeta.content = pageTitle;
 
-        const description = product.ProductShortDescription || productDetail?.["Ürün Açıklaması"]?.substring(0,160) || `Serakıncı'da ${product.ProductName} dermokozmetik ürününü inceleyin.`;
+        const description = productDetailOrBiodermaData?.description || product.ProductShortDescription || `Serakıncı'da ${product.ProductName} dermokozmetik ürününü inceleyin.`;
         const descMeta = document.querySelector('meta[name="description"]');
-        if (descMeta) descMeta.content = description;
+        if (descMeta) descMeta.content = description.substring(0,160);
         const ogDescMeta = document.querySelector('meta[property="og:description"]');
-        if (ogDescMeta) ogDescMeta.content = description;
+        if (ogDescMeta) ogDescMeta.content = description.substring(0,160);
         const twitterDescMeta = document.querySelector('meta[name="twitter:description"]');
-        if (twitterDescMeta) twitterDescMeta.content = description;
+        if (twitterDescMeta) twitterDescMeta.content = description.substring(0,160);
 
         const imageUrl = product.ImageUrl || (product.ProductImages && product.ProductImages.length > 0 ? product.ProductImages[0].ImageUrl : FALLBACK_IMAGE_URL);
         if (imageUrl) {
@@ -1169,7 +1210,7 @@
         }
 
         displayProductDetail(currentProduct, productDetail, biodermaExtraData); 
-        updateMetaTags(currentProduct, productDetail || biodermaExtraData); 
+        updateMetaTags(currentProduct, biodermaExtraData || productDetail); // Bioderma açıklaması öncelikli
 
       } catch (error) {
         console.error('loadProductDetail (dermokozmetik): Ürün yüklenirken genel hata:', error);
@@ -1177,6 +1218,13 @@
       }
     }
 
+    // displayProductDetail fonksiyonu, bir önceki yanıttaki gibi kalacak,
+    // sadece `biodermaExtraData` parametresini alacak ve tab oluşturma mantığı güncellenecek.
+    // Bu fonksiyon çok uzun olduğu için burada tekrar etmiyorum, bir önceki yanıttan alınabilir.
+    // Anahtar değişiklikler: `biodermaExtraData.description` kullanımı,
+    // `biodermaExtraData.series` gösterimi, `biodermaExtraData.tabs` ile ek sekmeler,
+    // ve `biodermaExtraData.imagesLocal` ile galeri oluşturma.
+    // **Aşağıda sadece güncellenmiş displayProductDetail fonksiyonunu veriyorum:**
     function displayProductDetail(product, productDetail, biodermaExtraData = null) { 
       const detailContainer = document.getElementById('productDetailContainer');
       if (!detailContainer) return; 
@@ -1188,7 +1236,10 @@
 
       if (biodermaExtraData && biodermaExtraData.imagesLocal && biodermaExtraData.imagesLocal.length > 0) {
           galleryImages = biodermaExtraData.imagesLocal.map(localPath => {
-              return "/" + localPath.replace(/\\/g, '/'); // Başına / ekleyerek kök dizinden başlat
+              // Ters taksimleri düz taksimle değiştir ve '/urunler/api/' base path'ini kullan
+              // Eğer imagesLocal zaten tam URL ise bu kısım gerekmeyebilir.
+              // Bu örnekte, JSON'daki gibi 'urunler\\api\\gorseller\\...' formatında olduğunu varsayıyoruz
+              return "/" + localPath.replace(/\\/g, '/'); 
           });
           if (galleryImages.length > 0) mainImageUrl = galleryImages[0]; 
       }
@@ -1241,7 +1292,7 @@
             <div id="ai-button-container">
                 <button id="fetchAiInfoBtn" title="Yapay Zeka ile ürün hakkında daha fazla bilgi alın">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg>
-                    AI ile Bilgi Al
+                    Ayrıntılı Bilgi
                 </button>
                 <button id="addToCompareBtn" class="${isCmp ? 'added' : ''}" title="Bu ürünü karşılaştırma listesine ekle/çıkar">
                    ${isCmp ? `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Eklendi` : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h5v2h2V1h-2v2zm0 15H5V5h5v13zm9-15h-5v2h3v5h-3v2h3v5h-3v2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 15h-3V5h3v13z"/></svg> Karşılaştır`}
@@ -1258,22 +1309,70 @@
             ${biodermaExtraData && biodermaExtraData.url ? `<p style="margin-top:1rem;"><strong>Daha Fazla Bilgi:</strong> <a href="${biodermaExtraData.url}" target="_blank" rel="noopener noreferrer" class="underline">${biodermaExtraData.url}</a></p>` : ''}
         </div>`;
       
-      if (biodermaExtraData && biodermaExtraData.ingredientsList && biodermaExtraData.ingredientsList.length > 0) {
-          tabNavigationHTML += `<button class="tab-link-modern" data-tab="tabIngredientsContent">İçindekiler</button>`; // ID'yi değiştirdik karışmasın diye
-          tabContentHTML += `
-            <div id="tabIngredientsContent" class="tab-pane-modern">
-                <h3>İçindekiler Listesi</h3>
-                <button id="showIngredientsModalBtn" class="ingredients-button">İçindekiler Listesini Görün</button>
-            </div>`;
+      // Bioderma'ya özel tabları ve içindekiler listesini ekle
+      if (biodermaExtraData) {
+          if (biodermaExtraData.ingredientsList && biodermaExtraData.ingredientsList.length > 0) {
+              // Bileşenler sekmesi içinde direkt gösterilecek, ayrı bir İçindekiler sekmesi yok.
+              // Bu bölümü "Bileşenler" veya "Detaylı İçerik Bilgisi" sekmesine ekleyebiliriz.
+              // Şimdilik "Detaylı İçerik Bilgisi" sekmesi yok, bu yüzden yeni bir tane oluşturalım veya mevcut birine ekleyelim.
+              // "Bileşenler" isimli bir tab JSON'dan geliyorsa ona ekleyebiliriz.
+              // Bu örnekte, "Ürün Detayları" tabının sonuna ekleyelim
+              const ingredientsHTML = `
+                <div class="ingredients-section">
+                    <h3>İçindekiler</h3>
+                    <ul class="ingredients-list">
+                        ${biodermaExtraData.ingredientsList.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                    ${biodermaExtraData.tabs?.find(t => t.id === 'composition')?.html?.includes('ask.NAOS.com.tr') ? 
+                        `<div class="ask-naos-link">
+                            <a href="${biodermaExtraData.tabs.find(t => t.id === 'composition').html.match(/href="(https:\/\/ask-naos\.com\.tr\/product\/[^"]+)"/)[1]}" target="_blank" class="underline">ask.NAOS.com.tr'de Tüm İçerik ve Detaylarını Keşfet</a>
+                         </div>` : ''}
+                    <p class="ingredients-disclaimer">Burada listelenen maddeler, bu ürün için tasarlanan en güncel formülde kullanılan maddelerdir. Üretimi ile dağıtımı arasında bir gecikme olabileceği için lütfen paket üstündeki içindekiler listesini dikkate alın.</p>
+                </div>`;
+              // tabContentHTML içindeki #tabDetaylar'ın sonuna ekleyelim
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = tabContentHTML;
+              const tabDetaylarDiv = tempDiv.querySelector('#tabDetaylar');
+              if (tabDetaylarDiv) {
+                  tabDetaylarDiv.innerHTML += ingredientsHTML;
+                  tabContentHTML = tempDiv.innerHTML;
+              }
+          }
+
+          if (biodermaExtraData.tabs && biodermaExtraData.tabs.length > 0) {
+            biodermaExtraData.tabs.forEach((bTab, index) => {
+                // Eğer "composition" id'li tab ise ve içindekiler zaten eklendiyse, bu tabı farklı işleyebiliriz veya atlayabiliriz.
+                // Bu örnekte, tüm tabları ekliyoruz. "Bileşenler" tabı için görseli kaldıracağız.
+                let tabHtmlContent = bTab.html || "<p>İçerik bulunamadı.</p>";
+                if (bTab.id === 'composition' || bTab.id === 'efficiency') {
+                    // Kırık görsel linklerini kaldır
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(tabHtmlContent, 'text/html');
+                    doc.querySelectorAll('figure img[src*="fjbmprhxnv.jpg"], figure img[src*="PROOF_generic_sensibio.jpg"]').forEach(img => {
+                        const figure = img.closest('figure');
+                        if (figure) figure.remove();
+                    });
+                    // "İçindekiler listesini görün" butonunu kaldır (zaten yukarıda direkt listeliyoruz)
+                    doc.querySelectorAll('a.btn[data-target="#ingredient-modal"]').forEach(btn => btn.remove());
+                    doc.querySelectorAll('.modal#ingredient-modal').forEach(modal => modal.remove());
+
+                    // "Kaynakları görün" linklerini stilize et
+                    doc.querySelectorAll('a[data-toggle="modal"][data-target*="-source-modal"]').forEach(link => {
+                        link.classList.add('read-more-btn'); // Buton stili ver
+                        link.style.textDecoration = 'none';
+                    });
+
+                    tabHtmlContent = doc.body.innerHTML;
+                }
+
+
+                const tabId = `biodermaTab_${bTab.id || index + 1}`; 
+                tabNavigationHTML += `<button class="tab-link-modern" data-tab="${tabId}">${bTab.title || `Ek Detay ${index + 1}`}</button>`;
+                tabContentHTML += `<div id="${tabId}" class="tab-pane-modern">${tabHtmlContent}</div>`;
+            });
+          }
       }
 
-      if (biodermaExtraData && biodermaExtraData.tabs && biodermaExtraData.tabs.length > 0) {
-        biodermaExtraData.tabs.forEach((bTab, index) => {
-            const tabId = `biodermaTab${bTab.id || index + 1}`; 
-            tabNavigationHTML += `<button class="tab-link-modern" data-tab="${tabId}">${bTab.title || `Ek Detay ${index + 1}`}</button>`;
-            tabContentHTML += `<div id="${tabId}" class="tab-pane-modern">${bTab.html || "<p>İçerik bulunamadı.</p>"}</div>`;
-        });
-      }
 
       const relatedProductsTitle = product.cat ? `"${product.cat}" Kategorisindeki Diğer Ürünler` : "Benzer Ürünler";
       const relatedProducts = allProducts.filter(p => p.ProductName && p.cat === product.cat && slugify(p.ProductName) !== slugify(product.ProductName)).slice(0, 10);
@@ -1372,8 +1471,8 @@
       });
 
       const mainImageWrapper = document.getElementById('mainProductImageWrapper');
-      const mainImageElement = mainImageWrapper ? mainImageWrapper.querySelector('img') : null;
-      if (mainImageElement && mainImageElement.src && !mainImageElement.src.endsWith(FALLBACK_IMAGE_URL.split('/').pop())) { 
+      const mainImageElement = document.getElementById('mainProductImageElement'); // ID ile alıyoruz
+      if (mainImageWrapper && mainImageElement && mainImageElement.src && !mainImageElement.src.endsWith(FALLBACK_IMAGE_URL.split('/').pop())) { 
         mainImageWrapper.onclick = function() {
           document.getElementById('lightboxImg').src = mainImageElement.src;
           document.getElementById('imageLightbox').classList.add('show');
@@ -1389,60 +1488,46 @@
 
       setupAIFetchButton(product, productDetail); 
       
-      const showIngredientsBtn = document.getElementById('showIngredientsModalBtn');
-      if (showIngredientsBtn && biodermaExtraData && biodermaExtraData.ingredientsList) {
-          showIngredientsBtn.onclick = () => {
-              const modal = document.getElementById('ingredientsModal');
-              const listUl = document.getElementById('ingredientsModalList');
-              const askNaosLinkContainer = document.getElementById('ingredientsAskNaosLinkContainer');
-              const askNaosLink = document.getElementById('ingredientsAskNaosLink');
-              
-              listUl.innerHTML = biodermaExtraData.ingredientsList.map(item => `<li>${item}</li>`).join('');
-              
-              let askNaosUrl = null;
-              if (biodermaExtraData.tabs) {
-                  const compositionTab = biodermaExtraData.tabs.find(t => t.id === 'composition');
-                  if (compositionTab && compositionTab.html) {
-                      const match = compositionTab.html.match(/href="(https:\/\/ask-naos\.com\.tr\/product\/[^"]+)"/);
-                      if (match && match[1]) {
-                          askNaosUrl = match[1];
-                      }
-                  }
-              }
-              if (askNaosUrl) {
-                  askNaosLink.href = askNaosUrl;
-                  askNaosLinkContainer.style.display = 'block';
-              } else {
-                  askNaosLinkContainer.style.display = 'none';
-              }
-
-              modal.classList.add('show');
-              document.body.style.overflow = 'hidden'; 
-          };
-      }
-
+      // Bioderma tablarındaki accordion ve modal'lar için temel event listener'lar (Bootstrap olmadan)
       detailContainer.querySelectorAll('.product-details-tabs-modern .card button[data-toggle="collapse"]').forEach(button => {
           button.addEventListener('click', function() {
-              const targetId = this.dataset.target;
-              const targetElement = document.querySelector(targetId);
+              const targetId = this.dataset.target; // #collapseEfficiency1 gibi
+              const targetElement = document.querySelector(targetId); // ID ile seç
               if (targetElement) {
                   const isExpanded = this.getAttribute('aria-expanded') === 'true';
                   this.setAttribute('aria-expanded', String(!isExpanded));
-                  targetElement.classList.toggle('show');
+                  // 'show' class'ı Bootstrap'in collapse işlevselliği için, basit bir max-height ile simüle edilebilir
+                  if (targetElement.classList.contains('show')) {
+                      targetElement.classList.remove('show');
+                      targetElement.style.maxHeight = null;
+                  } else {
+                      targetElement.classList.add('show');
+                      targetElement.style.maxHeight = targetElement.scrollHeight + "px";
+                  }
               }
           });
       });
       detailContainer.querySelectorAll('.product-details-tabs-modern [data-toggle="modal"]').forEach(button => {
           button.addEventListener('click', function(event) {
               event.preventDefault(); 
-              const targetId = this.dataset.target;
-              const targetModal = document.querySelector(targetId);
+              const targetId = this.dataset.target; // #instant-source-modal gibi
+              const targetModal = document.querySelector(targetId); // ID ile seç
               if (targetModal) {
-                  targetModal.classList.add('show');
+                  targetModal.classList.add('show'); // display: flex yapacak
                   document.body.style.overflow = 'hidden';
                   const closeButton = targetModal.querySelector('.close');
-                  if(closeButton) closeButton.onclick = () => { targetModal.classList.remove('show'); document.body.style.overflow = ''; };
-                  targetModal.onclick = (e) => { if (e.target === targetModal) {targetModal.classList.remove('show'); document.body.style.overflow = '';} };
+                  if(closeButton) {
+                      closeButton.onclick = () => { 
+                          targetModal.classList.remove('show'); 
+                          document.body.style.overflow = ''; 
+                      };
+                  }
+                  targetModal.onclick = (e) => { 
+                      if (e.target === targetModal) { // Sadece modalın dışına tıklanırsa kapat
+                          targetModal.classList.remove('show'); 
+                          document.body.style.overflow = '';
+                      } 
+                  };
               }
           });
       });
@@ -1673,7 +1758,7 @@
         }
     }
     
-    function setupIngredientsModal() {
+    function setupIngredientsModal() { // Bu fonksiyonu DOMContentLoaded içine ekleyin
         const modal = document.getElementById('ingredientsModal');
         const closeBtn = document.getElementById('ingredientsModalCloseBtn');
         if(modal && closeBtn) {
@@ -1709,7 +1794,7 @@
         setupComparisonModalInteractions(); 
         setupChatbotModal(); 
         setupProductSearch(); 
-        setupIngredientsModal(); 
+        setupIngredientsModal(); // Bu satır eklendi
 
         const slugStr = getSlugFromUrl(); 
         const canonicalLink = document.querySelector("link[rel='canonical']");
