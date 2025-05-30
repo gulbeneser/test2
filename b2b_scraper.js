@@ -1,10 +1,10 @@
-/**********************************/********************************************************************
+/*
   Serakıncı B2B Scraper v6 – GitHub Actions Optimized (IMAGE CHANGE DETECTION - 02.06.2024)
   - Handles Dermokozmetik and Hayvan Sağlığı with separate credentials from env.
   - Outputs 'products.json' and 'hayvan-sagligi.json' to 'urunler/api/'.
   - Maps fields to align with frontend Product type.
   - Detects and logs changes in product image URLs.
-********************************************************************/
+*/
 
 require('dotenv').config(); // ✅ .env dosyasını yükle
 
