@@ -68,6 +68,7 @@
       --header-b2b-button-text: #ffffff;
       --header-b2b-button-hover-bg: #303E5C;
       --header-border-color: #e0e6e8;
+      --compare-btn-display: none; /* JS tarafından kontrol edilecek */
     }
     html{scroll-behavior:smooth}
     *{box-sizing:border-box; overflow-wrap: break-word;}
@@ -86,7 +87,6 @@
     .new-nav-link:hover::after { width: 100%; }
     .new-header-actions { display: flex; align-items: center; gap: 1rem; flex-shrink: 0;}
     
-    /* Search Input Styles */
     .header-search-wrapper {
         position: relative;
         min-width: 180px; 
@@ -123,7 +123,6 @@
     }
     #headerProductSearchInput::placeholder { color: var(--text-light); }
 
-    /* Search Results Dropdown Styles */
     #headerSearchResultsDropdown { 
         position: absolute; 
         top: calc(100% + 2px); 
@@ -175,7 +174,6 @@
         justify-content: center; 
     }
 
-    /* Favorilerim Link - New Fixed Position (Bubble style) */
     #favoritesNavLink { 
         position: fixed;
         bottom: calc(150px + 56px + 10px); 
@@ -211,6 +209,38 @@
         display: none !important; 
     }
 
+    .compare-floating-btn, .chatbot-floating-btn {
+        position: fixed;
+        right: 20px;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1001;
+        box-shadow: var(--shadow-md);
+        transition: transform 0.3s;
+    }
+    .chatbot-floating-btn {
+        bottom: 150px;
+        background-color: var(--accent);
+        display: flex; 
+    }
+    .compare-floating-btn { /* General styling, display handled by JS for its ID */
+        bottom: 80px;
+    }
+    #compareFloatingBtn { /* Specific ID for display control */
+        display: var(--compare-btn-display);
+    }
+
+    .compare-floating-btn:hover, .chatbot-floating-btn:hover { transform: scale(1.1); }
+    .compare-floating-btn svg, .chatbot-floating-btn svg { width: 28px; height: 28px; }
+    .compare-count { position: absolute; top: -5px; right: -5px; background-color: #e74c3c; color: white; border-radius: 50%; padding: 3px 7px; font-size: 0.75em; font-weight: bold; }
+    
 
     @media(max-width: 992px) { 
         .new-site-navigation { 
@@ -232,13 +262,7 @@
         .mobile-menu-toggle { display: block; } 
         .header-search-wrapper { display:none; } 
     }
-    @media (max-width: 767px) {
-       .new-header-content { padding: 0 1rem; }
-       .new-site-navigation { gap: 1rem; }
-       .new-nav-link { font-size: 1rem; padding: 0.8rem 0; } 
-       .new-header-actions { gap: 0.5rem; }
-    }
-
+    
 
     .product-detail-page { padding-top: 1px; }
     .breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; font-size: 0.875rem; margin-bottom: 2rem; padding: 0.5rem 0; color: var(--text-medium); }
@@ -355,7 +379,6 @@
     .modal-list-item-actions button:hover { color: #e74c3c; }
     .no-favorites-message { text-align: center; color: var(--text-medium); padding: 20px 0; }
     
-    /* Comparison Grid Styles */
     .comparison-grid { 
         display: grid; 
         gap: 1px; 
@@ -478,13 +501,7 @@
     .comparison-cell-long-text {
         white-space: pre-wrap; 
     }
-
-
-    .compare-floating-btn, .chatbot-floating-btn { position: fixed; bottom: 80px; right: 20px; background-color: var(--primary); color: white; border: none; border-radius: 50%; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1001; box-shadow: var(--shadow-md); transition: transform 0.3s; }
-    .chatbot-floating-btn { bottom: 150px; background-color: var(--accent); } 
-    .compare-floating-btn:hover, .chatbot-floating-btn:hover { transform: scale(1.1); }
-    .compare-floating-btn svg, .chatbot-floating-btn svg { width: 28px; height: 28px; }
-    .compare-count { position: absolute; top: -5px; right: -5px; background-color: #e74c3c; color: white; border-radius: 50%; padding: 3px 7px; font-size: 0.75em; font-weight: bold; }
+    
     .chatbot-modal .modal-content { max-width: 500px; padding: 0; overflow: hidden;}
     .chatbot-modal h3 { background-color: var(--accent); color: white; padding: 15px 20px; margin: 0; font-size: 1.3rem;}
     .chatbot-messages { height: 350px; overflow-y: auto; padding: 20px; background-color: #f9f9f9; }
@@ -531,7 +548,12 @@
     .firm-social-media-row a { display:inline-flex; align-items:center; justify-content:center; width: 36px; height: 36px; } 
     .firm-social-media-row a svg { width: 100%; height: 100%; transition: opacity 0.2s; }
     .firm-social-media-row a:hover svg { opacity: 0.75; }
+
     @media (max-width: 767px) { 
+        .new-header-content { padding: 0 1rem; }
+        .new-site-navigation { gap: 1rem; }
+        .new-nav-link { font-size: 1rem; padding: 0.8rem 0; } 
+        .new-header-actions { gap: 0.5rem; }
         .container { padding: 1rem 0.75rem; } 
         .product-main-layout { padding: 1.5rem; gap: 1.5rem; } 
         .product-title-modern { font-size: 1.75rem; } 
@@ -572,6 +594,33 @@
             background-color: var(--text-dark);
             color: white;
         }
+        
+        /* Mobile Floating Buttons Visibility */
+        .chatbot-floating-btn {
+            display: flex !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            right: 20px; /* Ensure position */
+            bottom: 150px; /* Ensure position */
+        }
+        #favoritesNavLink {
+            display: inline-flex !important; /* Correct display type */
+            opacity: 1 !important;
+            visibility: visible !important;
+            right: 20px; /* Ensure position */
+            bottom: calc(150px + 56px + 10px); /* Ensure position */
+        }
+        #compareFloatingBtn {
+            display: var(--compare-btn-display) !important; /* Controlled by JS */
+            opacity: 1 !important;
+            visibility: visible !important;
+            right: 20px; /* Ensure position */
+            bottom: 80px; /* Ensure position */
+        }
+        .scroll-to-top { /* Ensure scroll to top is also positioned correctly */
+            right: 20px;
+            bottom: 20px;
+        }
     }
     @media (max-width: 480px) { 
         .product-title-modern { font-size: 1.5rem; } 
@@ -608,7 +657,6 @@
         <a href="https://serakinci.com/contact" class="new-nav-link">Bize Ulaşın</a>
       </nav>
       <div class="new-header-actions">
-        <!-- Turkish language selector button removed -->
         <div class="header-search-wrapper">
             <div class="search-input-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -720,14 +768,7 @@
   <script type="module">
     import { GoogleGenerativeAI } from "https://esm.sh/@google/generative-ai";
 
-    // --- KRİTİK GÜVENLİK UYARISI! ---
-    // Bu API ANAHTARI DOĞRUDAN FRONTEND KODUNDA BULUNUYOR.
-    // Bu ANAHTAR HERKES TARAFINDAN GÖRÜLEBİLİR VE KÖTÜ NİYETLİ KİŞİLER TARAFINDAN KULLANILABİLİR.
-    // CANLI BİR ORTAMDA BU YÖNTEMİ ASLA KULLANMAYIN!
-    // Kendi sunucu tarafınızda (backend) API anahtarını güvenli bir şekilde saklamanız ve çağrıları oradan yapmanız ŞİDDETLE ÖNERİLİR.
-    const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA"; // KENDİ GEÇERLİ ANAHTARINIZI BURAYA GİRİN!
-
-    // --- Global Değişkenler ve Sabitler ---
+    const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA"; 
     const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png';
     const API_BASE_PATH = '/urunler/api/'; 
     const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
@@ -741,8 +782,201 @@
     let searchDebounceTimer;
     let G_isMouseOverDropdown = false; 
 
-    // --- Tüm Fonksiyon Tanımları ---
+    async function generateEnhancedProductInfo(productName, productKategori, languageCode, existingProductInfo = {}) {
+        if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
+        if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) { // Original check
+             // Allow the specific demo key to pass if it's not literally "PLACEHOLDER"
+            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
+                // This is the demo key, let it attempt to work.
+            } else {
+                 throw new Error("Gemini API anahtarı yapılandırılmamış.");
+            }
+        }
 
+
+        const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+        const model = genAI.getGenerativeModel({ 
+            model: "gemini-2.5-flash-preview-05-20", 
+            generationConfig: { responseMimeType: "application/json" } 
+        });
+
+        const basePrompt = `
+            Sen bir hayvan sağlığı ve dermokozmetik ürün uzmanısın. Müşterilere ürünler hakkında ek, ilgi çekici ve profesyonel bilgiler sağlıyorsun. 
+            Lütfen "${productName}" isimli ve "${productKategori}" kategorisindeki ürün için aşağıdaki JSON formatında YENİ ve FARKLI bilgiler sun. 
+            Mevcut bilgiler: 
+            - Açıklama: ${existingProductInfo.description || 'Yok'}
+            - İçerik: ${existingProductInfo.content || 'Yok'}
+            
+            Çıktı JSON nesnesi olmalı ve SADECE aşağıdaki anahtarları içermelidir:
+            1.  "enhancedDescription": Ürünün pazarlama odaklı, faydalarını vurgulayan, 6-8 cümlelik profesyonel bir ek açıklaması. Mevcut açıklamayla ÇAKIŞMAMALI.
+            2.  "keyFeatures": Ürünün 5-7 adet temel ve pratik yeni özelliği veya faydası (örn: "Hızlı emilim sağlar", "Cilt bariyerini güçlendirir", "Kullanımı kolaydır"). Mevcut özelliklerden FARKLI OLMALI.
+
+            Örnek JSON:
+            {
+              "enhancedDescription": "Bu ürün...",
+              "keyFeatures": ["Özellik 1", "Özellik 2"]
+            }
+            Cevabını Türkçe olarak oluştur.
+        `;
+        
+        try {
+            const result = await model.generateContent(basePrompt);
+            const response = result.response;
+            let jsonStr = response.text().replace(/^```(?:json)?\s*\n?(.*?)\n?\s*```$/s, '$1').trim();
+            const parsedData = JSON.parse(jsonStr);
+            if (!parsedData.enhancedDescription || !Array.isArray(parsedData.keyFeatures)) throw new Error("Eksik veya hatalı biçimlendirilmiş veri alındı.");
+            return parsedData; 
+        } catch (error) {
+            console.error("Gemini API ile gelişmiş ürün bilgisi üretilirken hata oluştu:", error);
+            throw new Error(`AI bilgi üretilemedi: ${error.message || 'Bilinmeyen Hata'}`);
+        }
+    }
+    
+    async function generateChatResponse(productName, category, question, chatHistory = []) {
+        if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
+        if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) { // Original check
+            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
+                // Demo key, proceed
+            } else {
+                throw new Error("Gemini API anahtarı yapılandırılmamış.");
+            }
+        }
+
+        const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-preview-05-20" });
+
+        const historyPrompt = chatHistory.map(msg => `**${msg.role === 'user' ? 'Kullanıcı' : 'Asistan'}**: ${msg.text}`).join('\n');
+
+        const prompt = `
+            Sen Serakıncı Limited için bir müşteri destek asistanısın. Sadece hayvan sağlığı ve dermokozmetik ürünleri hakkında bilgi veriyorsun. 
+            Şu an "${productName}" (${category}) ürünü hakkında konuşuyoruz. 
+            Kullanıcı sorusu: "${question}".
+            Önceki konuşma:
+            ${historyPrompt}
+            
+            Lütfen bu ürüne odaklanarak, kısa, anlaşılır ve Türkçe bir cevap ver. Bilmediğin veya emin olmadığın konularda 'Bu konuda detaylı bilgi için lütfen veteriner hekiminize veya firmamıza danışın.' de. Asla tıbbi tavsiye verme veya tanı koyma.
+        `;
+
+        try {
+            const result = await model.generateContent(prompt);
+            const response = result.response;
+            return response.text();
+        } catch (error) {
+            console.error("AI Chat Hatası:", error);
+            return "Üzgünüm, şu anda sorunuzu yanıtlayamıyorum. Lütfen daha sonra tekrar deneyin veya firmamızla iletişime geçin.";
+        }
+    }
+
+    function setupAIFetchButton(product, enhancedDetail) {
+        const fetchBtn = document.getElementById('fetchAiInfoBtn');
+        const placeholder = document.getElementById('aiProductInfoPlaceholder');
+        if (!fetchBtn || !placeholder) return;
+        
+        let isAiDisabled = false;
+        if (!GEMINI_SDK_LOADED) isAiDisabled = true;
+        if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) {
+            if (!(GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER"))) {
+                isAiDisabled = true;
+            }
+        }
+
+        if (isAiDisabled) {
+            fetchBtn.disabled = true; 
+            fetchBtn.style.cursor = 'not-allowed';
+            fetchBtn.title = 'Yapay zeka modülü veya API anahtarı kullanılamıyor.';
+            placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka modülü (SDK) veya API anahtarı yapılandırılmadığı için bu özellik kullanılamıyor.</em></p></div>`; 
+            return;
+        }
+
+        fetchBtn.addEventListener('click', async () => {
+            fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> Bilgi Üretiliyor...`; placeholder.innerHTML = ''; 
+            const existingInfo = { 
+                description: enhancedDetail?.["Ürün Açıklaması"] || product.Description, 
+                content: enhancedDetail?.["Ürün İçeriği"] 
+            };
+            try {
+                const aiData = await generateEnhancedProductInfo(product.ProductName, getProductCategory(product), 'tr', existingInfo); 
+                placeholder.innerHTML = `<div id="aiProductInfo"><h4>Yapay Zeka Destekli Ek Bilgiler:</h4><p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>${aiData.keyFeatures && aiData.keyFeatures.length > 0 ? `<p><strong>Öne Çıkan Ek Özellikler:</strong></p><ul>${aiData.keyFeatures.map(f => `<li>${f}</li>`).join('')}</ul>` : ''}</div>`;
+                fetchBtn.style.display = 'none'; 
+            } catch (error) {
+                placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>AI bilgisi oluşturulurken hata: ${error.message}.</em></p></div>`;
+                fetchBtn.disabled = false; fetchBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg> Tekrar Dene`;
+            }
+        });
+    }
+
+    function setupChatbotModal() {
+        const modal = document.getElementById('chatbotModal');
+        const btn = document.getElementById('chatbotFloatingBtn');
+        const closeBtn = modal.querySelector('.close-button');
+        const sendBtn = document.getElementById('chatbotSendBtn');
+        const input = document.getElementById('chatbotInput');
+        const messagesEl = document.getElementById('chatbotMessages');
+        let chatHistory = [];
+
+        function addMessage(text, role = 'bot') {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = role === 'bot' ? 'bot-message' : 'user-message';
+            msgDiv.textContent = text;
+            messagesEl.appendChild(msgDiv);
+            messagesEl.scrollTop = messagesEl.scrollHeight; 
+            chatHistory.push({ role, text });
+        }
+        
+        async function sendChat() {
+            const question = input.value.trim();
+            if (!question || !currentProduct) {
+                if(!currentProduct) addMessage("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.", 'bot');
+                return;
+            }
+            
+            addMessage(question, 'user');
+            input.value = '';
+            input.disabled = true;
+            sendBtn.disabled = true;
+            
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'bot-message typing';
+            messagesEl.appendChild(typingIndicator);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+
+            try {
+                const response = await generateChatResponse(currentProduct.ProductName, getProductCategory(currentProduct), question, chatHistory);
+                messagesEl.removeChild(typingIndicator);
+                addMessage(response, 'bot');
+            } catch (error) {
+                messagesEl.removeChild(typingIndicator);
+                addMessage("Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.", 'bot');
+            } finally {
+                input.disabled = false;
+                sendBtn.disabled = false;
+                input.focus();
+            }
+        }
+        if (modal && btn && closeBtn && sendBtn && input && messagesEl) {
+            btn.onclick = () => { 
+                let isAiDisabled = false;
+                if (!GEMINI_SDK_LOADED) isAiDisabled = true;
+                if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) {
+                     if (!(GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER"))) {
+                        isAiDisabled = true;
+                    }
+                }
+                if (isAiDisabled) {
+                    alert("AI Chatbot şu an kullanılamıyor (API anahtarı eksik veya SDK yüklenmedi).");
+                    return;
+                }
+                if (currentProduct) modal.classList.add('show'); 
+                else alert("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.");
+            };
+            closeBtn.onclick = () => modal.classList.remove('show');
+            modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); };
+            sendBtn.onclick = sendChat;
+            input.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendChat(); });
+        }
+    }
+
+    // --- Diğer Yardımcı Fonksiyonlar ---
     function showTooltip(tooltipId, element, message) {
         const tooltip = document.getElementById(tooltipId);
         if (!tooltip) return;
@@ -901,11 +1135,13 @@
     function loadComparison() { comparisonList = JSON.parse(localStorage.getItem('serakinciComparison')) || []; updateCompareCount(); }
     function saveComparison() { localStorage.setItem('serakinciComparison', JSON.stringify(comparisonList)); updateCompareCount(); }
     function isInComparison(productId) { return comparisonList.some(item => item.ProductId === productId); }
-    function updateCompareCount() { 
+    function updateCompareCount() {
         const countEl = document.getElementById('compareCount');
-        if(countEl) {
-            countEl.textContent = comparisonList.length; 
-            document.getElementById('compareFloatingBtn').style.display = comparisonList.length > 0 ? 'flex' : 'none';
+        const compareBtn = document.getElementById('compareFloatingBtn');
+        if (countEl && compareBtn) {
+            countEl.textContent = comparisonList.length;
+            const displayStyle = comparisonList.length > 0 ? 'flex' : 'none';
+            document.documentElement.style.setProperty('--compare-btn-display', displayStyle);
         }
     }
     function toggleComparison(product, btnElement, enhancedDetail) {
@@ -1056,209 +1292,6 @@
             modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); };
         }
     }
-
-    async function generateEnhancedProductInfo(productName, productKategori, languageCode, existingProductInfo = {}) {
-        if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
-        // Using "PLACEHOLDER" for the check, as in the original code.
-        if (!GEMINI_API_KEY || GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || GEMINI_API_KEY.includes("PLACEHOLDER") ) {
-             // If the key is the exact demo key or contains "PLACEHOLDER"
-            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") {
-                 // This is the demo key, it should work if properly configured on Google's side for that model.
-                 // For safety, we can still treat it as potentially unconfigured if it's exactly the demo string.
-                 // However, for this exercise, we'll assume if it's *not* "PLACEHOLDER", it's intended to be used.
-            } else if (GEMINI_API_KEY.includes("PLACEHOLDER")) {
-                throw new Error("Gemini API anahtarı yapılandırılmamış (PLACEHOLDER içeriyor).");
-            }
-            // If it's the demo key, we let it pass, but a real production app should have a more robust check
-        }
-
-
-        const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ 
-            model: "gemini-1.5-flash-latest", // Reverted to gemini-1.5-flash-latest as per original user prompt's JS.
-                                             // If "gemini-2.5-flash-preview-05-20" is strictly required, this needs to be changed back.
-                                             // The user's latest request implies the *original* JS for AI was correct. Let's re-check.
-                                             // The *first* prompt's JS used: "gemini-2.5-flash-preview-05-20"
-            // Correcting based on explicit re-request for first prompt's AI logic:
-            // model: "gemini-2.5-flash-preview-05-20",
-            // The user's *newest* prompt contains JS with: "gemini-2.5-flash-preview-05-20"
-            // So, this is the correct one.
-            model: "gemini-2.5-flash-preview-05-20",
-            generationConfig: { responseMimeType: "application/json" } 
-        });
-
-        const basePrompt = `
-            Sen bir hayvan sağlığı ve dermokozmetik ürün uzmanısın. Müşterilere ürünler hakkında ek, ilgi çekici ve profesyonel bilgiler sağlıyorsun. 
-            Lütfen "${productName}" isimli ve "${productKategori}" kategorisindeki ürün için aşağıdaki JSON formatında YENİ ve FARKLI bilgiler sun. 
-            Mevcut bilgiler: 
-            - Açıklama: ${existingProductInfo.description || 'Yok'}
-            - İçerik: ${existingProductInfo.content || 'Yok'}
-            
-            Çıktı JSON nesnesi olmalı ve SADECE aşağıdaki anahtarları içermelidir:
-            1.  "enhancedDescription": Ürünün pazarlama odaklı, faydalarını vurgulayan, 6-8 cümlelik profesyonel bir ek açıklaması. Mevcut açıklamayla ÇAKIŞMAMALI.
-            2.  "keyFeatures": Ürünün 5-7 adet temel ve pratik yeni özelliği veya faydası (örn: "Hızlı emilim sağlar", "Cilt bariyerini güçlendirir", "Kullanımı kolaydır"). Mevcut özelliklerden FARKLI OLMALI.
-
-            Örnek JSON:
-            {
-              "enhancedDescription": "Bu ürün...",
-              "keyFeatures": ["Özellik 1", "Özellik 2"]
-            }
-            Cevabını Türkçe olarak oluştur.
-        `;
-        
-        try {
-            const result = await model.generateContent(basePrompt);
-            const response = result.response;
-            let jsonStr = response.text().replace(/^```(?:json)?\s*\n?(.*?)\n?\s*```$/s, '$1').trim();
-            const parsedData = JSON.parse(jsonStr);
-            if (!parsedData.enhancedDescription || !Array.isArray(parsedData.keyFeatures)) throw new Error("Eksik veya hatalı biçimlendirilmiş veri alındı.");
-            return parsedData; 
-        } catch (error) {
-            console.error("Gemini API ile gelişmiş ürün bilgisi üretilirken hata oluştu:", error);
-            throw new Error(`AI bilgi üretilemedi: ${error.message || 'Bilinmeyen Hata'}`);
-        }
-    }
-    
-    async function generateChatResponse(productName, category, question, chatHistory = []) {
-        if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
-        // Using "PLACEHOLDER" for the check, as in the original code.
-        if (!GEMINI_API_KEY || GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || GEMINI_API_KEY.includes("PLACEHOLDER") ) {
-            if (GEMINI_API_KEY.includes("PLACEHOLDER")) {
-                 throw new Error("Gemini API anahtarı yapılandırılmamış (PLACEHOLDER içeriyor).");
-            }
-        }
-
-
-        const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-preview-05-20" }); // Reverted to original model
-
-        const historyPrompt = chatHistory.map(msg => `**${msg.role === 'user' ? 'Kullanıcı' : 'Asistan'}**: ${msg.text}`).join('\n');
-
-        const prompt = `
-            Sen Serakıncı Limited için bir müşteri destek asistanısın. Sadece hayvan sağlığı ve dermokozmetik ürünleri hakkında bilgi veriyorsun. 
-            Şu an "${productName}" (${category}) ürünü hakkında konuşuyoruz. 
-            Kullanıcı sorusu: "${question}".
-            Önceki konuşma:
-            ${historyPrompt}
-            
-            Lütfen bu ürüne odaklanarak, kısa, anlaşılır ve Türkçe bir cevap ver. Bilmediğin veya emin olmadığın konularda 'Bu konuda detaylı bilgi için lütfen veteriner hekiminize veya firmamıza danışın.' de. Asla tıbbi tavsiye verme veya tanı koyma.
-        `;
-
-        try {
-            const result = await model.generateContent(prompt);
-            const response = result.response;
-            return response.text();
-        } catch (error) {
-            console.error("AI Chat Hatası:", error);
-            return "Üzgünüm, şu anda sorunuzu yanıtlayamıyorum. Lütfen daha sonra tekrar deneyin veya firmamızla iletişime geçin.";
-        }
-    }
-
-    function setupAIFetchButton(product, enhancedDetail) {
-        const fetchBtn = document.getElementById('fetchAiInfoBtn');
-        const placeholder = document.getElementById('aiProductInfoPlaceholder');
-        if (!fetchBtn || !placeholder) return;
-        // Using "PLACEHOLDER" for the check, as in the original code.
-        if (!GEMINI_SDK_LOADED || !GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) { 
-             if (GEMINI_API_KEY && GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
-                // This is the demo key, let it pass for now if not "PLACEHOLDER"
-             } else {
-                fetchBtn.disabled = true; 
-                fetchBtn.style.cursor = 'not-allowed';
-                fetchBtn.title = 'Yapay zeka modülü veya API anahtarı kullanılamıyor.';
-                placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka modülü (SDK) veya API anahtarı yapılandırılmadığı için bu özellik kullanılamıyor.</em></p></div>`; 
-                return;
-             }
-        }
-
-        fetchBtn.addEventListener('click', async () => {
-            fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> Bilgi Üretiliyor...`; placeholder.innerHTML = ''; 
-            const existingInfo = { 
-                description: enhancedDetail?.["Ürün Açıklaması"] || product.Description, 
-                content: enhancedDetail?.["Ürün İçeriği"] 
-            };
-            try {
-                // Passing 'tr' as languageCode, as in the original function call
-                const aiData = await generateEnhancedProductInfo(product.ProductName, getProductCategory(product), 'tr', existingInfo); 
-                placeholder.innerHTML = `<div id="aiProductInfo"><h4>Yapay Zeka Destekli Ek Bilgiler:</h4><p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>${aiData.keyFeatures && aiData.keyFeatures.length > 0 ? `<p><strong>Öne Çıkan Ek Özellikler:</strong></p><ul>${aiData.keyFeatures.map(f => `<li>${f}</li>`).join('')}</ul>` : ''}</div>`;
-                fetchBtn.style.display = 'none'; 
-            } catch (error) {
-                placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>AI bilgisi oluşturulurken hata: ${error.message}.</em></p></div>`;
-                fetchBtn.disabled = false; fetchBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg> Tekrar Dene`;
-            }
-        });
-    }
-
-    function setupChatbotModal() {
-        const modal = document.getElementById('chatbotModal');
-        const btn = document.getElementById('chatbotFloatingBtn');
-        const closeBtn = modal.querySelector('.close-button');
-        const sendBtn = document.getElementById('chatbotSendBtn');
-        const input = document.getElementById('chatbotInput');
-        const messagesEl = document.getElementById('chatbotMessages');
-        let chatHistory = [];
-
-        function addMessage(text, role = 'bot') {
-            const msgDiv = document.createElement('div');
-            msgDiv.className = role === 'bot' ? 'bot-message' : 'user-message';
-            msgDiv.textContent = text;
-            messagesEl.appendChild(msgDiv);
-            messagesEl.scrollTop = messagesEl.scrollHeight; 
-            chatHistory.push({ role, text });
-        }
-        
-        async function sendChat() {
-            const question = input.value.trim();
-            if (!question || !currentProduct) {
-                if(!currentProduct) addMessage("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.", 'bot');
-                return;
-            }
-            
-            addMessage(question, 'user');
-            input.value = '';
-            input.disabled = true;
-            sendBtn.disabled = true;
-            
-            const typingIndicator = document.createElement('div');
-            typingIndicator.className = 'bot-message typing';
-            messagesEl.appendChild(typingIndicator);
-            messagesEl.scrollTop = messagesEl.scrollHeight;
-
-            try {
-                const response = await generateChatResponse(currentProduct.ProductName, getProductCategory(currentProduct), question, chatHistory);
-                messagesEl.removeChild(typingIndicator);
-                addMessage(response, 'bot');
-            } catch (error) {
-                messagesEl.removeChild(typingIndicator);
-                addMessage("Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.", 'bot');
-            } finally {
-                input.disabled = false;
-                sendBtn.disabled = false;
-                input.focus();
-            }
-        }
-        if (modal && btn && closeBtn && sendBtn && input && messagesEl) {
-            btn.onclick = () => { 
-                // Using "PLACEHOLDER" for the check, as in the original code.
-                if (!GEMINI_SDK_LOADED || !GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) { 
-                     if (GEMINI_API_KEY && GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
-                        // This is the demo key, let it pass for now
-                     } else {
-                        alert("AI Chatbot şu an kullanılamıyor (API anahtarı eksik veya SDK yüklenmedi).");
-                        return;
-                     }
-                }
-                if (currentProduct) modal.classList.add('show'); 
-                else alert("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.");
-            };
-            closeBtn.onclick = () => modal.classList.remove('show');
-            modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); };
-            sendBtn.onclick = sendChat;
-            input.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendChat(); });
-        }
-    }
-
-
     async function loadProductDetail(slugFromUrl, segmentName) {
         const productDetailContainer = document.getElementById('productDetailContainer');
         productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`;
@@ -1430,7 +1463,7 @@
                 <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><div><span class="contact-label-modern">Telefon</span><a href="tel:+903923662594" class="contact-link-modern">+90 392 366 25 94</a></div></div>
                 <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><div><span class="contact-label-modern">E-posta</span><a href="mailto:info@serakinci.com" class="contact-link-modern">info@serakinci.com</a></div></div>
                 <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><div><span class="contact-label-modern">Adres</span><span class="contact-address-text">Sht. Ziya Sok. No:1-2 99450<br>Gazimağusa - KKTC, Mersin 10 Turkey</span></div></div>
-                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 17.36c-.32-.1-.66-.16-1-.16-1.02 0-2.04.21-2.97.64-.34.16-.73.08-1-.16l-3.28-3.28c.43-.93.64-1.95.64-2.97C12.83 12.34 12.77 12 12.61 11l3.28-3.28c.24-.23.32-.62.16-1-.43-.93-.64-1.95-.64-2.97 0-.34.06-.68.16-1 .09-.28.03-.59-.18-.8l-1.09-1.09c-.21-.21-.52-.27-.8-.18-1 .1-1.98.38-2.87.82-.09.04-.18.07-.26.12L5.12 7.25c-.04.09-.07.17-.12.26C4.18 8.4 3.9 9.38 3.81 10.38c-.09.28-.03.59.18.8l1.09 1.09c.21.21.52.27.8.18 1-.1 1.98-.38 2.87-.82.09-.04.18.07.26-.12l5.75-5.75c.04-.09.07-.17.12-.26.89-.44 1.87-.72 2.87-.82.28-.09.59-.03.8.18l1.09 1.09c.21.21.27.52.18.8-.1 1-.38 1.98-.82 2.87-.04-.09-.07.18-.12.26L10.38 17c-.09.04-.17.07-.26-.12-.89.44-1.87.72-2.87.82-.28.09-.59-.03-.8-.18l-1.09-1.09c-.21-.21-.27-.52-.18-.8.1-1 .38-1.98.82 2.87-.04-.09.07.18.12-.26l.01-.01c.01 0 .01 0 0 0L17 5.12c.09-.04.17-.07.26-.12.9-.43 1.88-.64 2.9-.64.34 0 .68.06 1 .16.28.09.5.29.62.56.15.34.17.73.05 1.07-.27.78-.63 1.52-1.06 2.2-.01.01-.01.02-.02.03l-5.52 5.52c-.01.01-.02.01-.03.02-.68.43-1.42.79-2.2 1.06-.34.12-.62.34-.75.62s-.16.61-.05 1.07c.27.78.63 1.52 1.06 2.2.01.01.01.02.02.03l.01.01c.01 0 .01 0 0 0zM6.5 10.5c0 .28.22.5.5.5s.5-.22.5-.5-.22-.5-.5-.5-.5.22-.5.5z"/></svg><div><span class="contact-label-modern">Fax</span><a href="fax:+903923661585" class="contact-link-modern">+90 392 366 15 85</a></div></div>
+                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 17.36c-.32-.1-.66-.16-1-.16-1.02 0-2.04.21-2.97.64-.34.16-.73.08-1-.16l-3.28-3.28c.43-.93.64-1.95.64-2.97C12.83 12.34 12.77 12 12.61 11l3.28-3.28c.24-.23.32-.62.16-1-.43-.93-.64-1.95-.64-2.97 0-.34.06-.68.16-1 .09-.28.03-.59-.18-.8l-1.09-1.09c-.21-.21-.52-.27-.8-.18-1 .1-1.98.38-2.87.82-.09.04-.18.07-.26.12L5.12 7.25c-.04.09-.07.17-.12.26C4.18 8.4 3.9 9.38 3.81 10.38c-.09.28-.03.59.18.8l1.09 1.09c.21.21.52.27.8.18 1-.1 1.98-.38 2.87-.82.09-.04.18.07.26-.12l5.75-5.75c.04-.09.07-.17.12-.26.89-.44 1.87-.72 2.87-.82.28-.09.59-.03.8.18l1.09 1.09c.21.21.27.52.18.8-.1 1-.38 1.98-.82 2.87-.04-.09-.07.18-.12.26L10.38 17c-.09.04-.17.07-.26-.12-.89.44-1.87.72-2.87.82-.28-.09-.59-.03-.8-.18l-1.09-1.09c-.21-.21-.27-.52-.18-.8.1-1 .38-1.98.82 2.87-.04-.09.07.18.12-.26l.01-.01c.01 0 .01 0 0 0L17 5.12c.09-.04.17-.07.26-.12.9-.43 1.88-.64 2.9-.64.34 0 .68.06 1 .16.28.09.5.29.62.56.15.34.17.73.05 1.07-.27.78-.63 1.52-1.06 2.2-.01.01-.01.02-.02.03l-5.52 5.52c-.01.01-.02.01-.03.02-.68.43-1.42.79-2.2 1.06-.34.12-.62.34-.75.62s-.16.61-.05 1.07c.27.78.63 1.52 1.06 2.2.01.01.01.02.02.03l.01.01c.01 0 .01 0 0 0zM6.5 10.5c0 .28.22.5.5.5s.5-.22.5-.5-.22-.5-.5-.5-.5.22-.5.5z"/></svg><div><span class="contact-label-modern">Fax</span><a href="fax:+903923661585" class="contact-link-modern">+90 392 366 15 85</a></div></div>
             </div>
             <div class="firm-social-media">
                 <span class="social-label">Sosyal Medyada Biz</span>
@@ -1577,7 +1610,7 @@
         resultsDropdown.addEventListener('mouseleave', () => { G_isMouseOverDropdown = false; });
 
         document.addEventListener('click', function(event) {
-            if (!searchWrapper.contains(event.target) && !resultsDropdown.contains(event.target)) {
+            if (searchWrapper && !searchWrapper.contains(event.target) && resultsDropdown && !resultsDropdown.contains(event.target)) {
                 resultsDropdown.style.display = 'none';
                 if (searchInput.value.length < 2) { 
                      searchWrapper.classList.remove('search-active');
@@ -1602,20 +1635,19 @@
         }
     }
 
-    // --- DOMContentLoaded Listener ---
     document.addEventListener('DOMContentLoaded', function() {
         const currentYearEl = document.getElementById('currentYear');
         if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
         
         loadFavorites();
-        loadComparison();
+        loadComparison(); // This calls updateCompareCount inside it
 
         setupMobileMenu(); 
         setupScrollToTopButton();
         setupLightbox();
         setupFavoritesModal();
         setupComparisonModal();
-        setupChatbotModal(); // Ensures AI modals are set up
+        setupChatbotModal(); 
         setupProductSearch(); 
 
         const { segment: detectedSegment, slug: slugFromUrl } = getCurrentSegmentAndSlug();
@@ -1624,19 +1656,16 @@
         if (slugFromUrl && currentSegment) {
             loadProductDetail(slugFromUrl, currentSegment);
         } else {
-            if (allProducts.length === 0) { // If not a product page, still try to load products for search
+            if (allProducts.length === 0) { 
                 fetchJsonData('hayvan-sagligi.json') 
                     .then(data => { 
                         allProducts = data; 
-                        setupProductSearch(); // Re-run setup if products loaded late
+                        setupProductSearch(); 
                     }) 
                     .catch(e => console.error("Error loading default products for search on non-product page:", e));
             }
-            // Don't show error if it's not a product detail page, 
-            // but ensure search has data if possible.
-            // If on a non-product page, productDetailContainer might not exist or be relevant.
             const detailContainer = document.getElementById('productDetailContainer');
-            if(detailContainer && (!slugFromUrl || !currentSegment)) { // Only show error if detail page was intended
+            if(detailContainer && (!slugFromUrl || !currentSegment)) { 
                  showError('Ürün bilgisi alınamadı. URL yapısı hatalı veya eksik. Lütfen geçerli bir ürün URL\'si ile gelin. Örnek: `/urunler/hayvan-sagligi/product/multivit-100ml-enj/`');
             }
         }
