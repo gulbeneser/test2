@@ -1,788 +1,4290 @@
 [
   {
+    "ProductId": 1413,
+    "ProductName": "KSİLAZOL Enj. 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV056.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
     "ProductId": 1415,
     "ProductName": "REVERSAL Enj. 10ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV058.jpg",
+    "Üretici Firma": "Provet",
+    "Firma Web Sitesi": "https://www.provet.com.tr/",
     "Ürün Açıklaması": "Atipamezol hidroklorür, köpek ve kedilerde, medetomidin ve deksmedetomidin gibi α2- agonistlerinin kullanımından sonra, bunların sedatif etkilerinin ve kardiyovasküler etkilerinin ortadan kaldırılması amacıyla kullanılır."
   },
   {
     "ProductId": 1416,
     "ProductName": "Tomidin 10ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV059.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Köpek ve kedilerde; sedasyon veya analjezi gerektiren muayene ve tedaviler öncesinde, hayvanların kontrol altında tutulması istendiğinde sakinleştirici olarak (röntgen filmi çekimi, dişlerin tedavisi, kulağın temizlenmesi, yaraların dikilmesi, deri tümörlerinin eksizyonu ve erkek kedilerin kastrasyonu gibi küçük cerrahi operasyonlarda) enjeksiyon ve inhalasyon ile oluşturulan genel anesteziler öncesi preanestezik olarak kullanılır."
   },
   {
     "ProductId": 1421,
     "ProductName": "SEDAPET ORAL SÜSPANSİYON 10ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV016.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Köpek, kedi ve atlarda:\n• Sakinleştirici ve preanestezik olarak,\n• Uzun yolculuklarda ortaya çıkan rahatsızlıkları önlemek,\n• Muayene ve tedavi sırasında sakinleştirmek,\n• Alerji ve kaşıntıları geçici olarak durdurmak amacıyla kullanılır"
   },
   {
     "ProductId": 1431,
     "ProductName": "DOXAPROL Enj. 2ml * FLAKON",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV060.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr",
     "Ürün Açıklaması": "Anestezi sonrası uyanmanın ve reflekslerin başlatılmasının hızlandırılması,\nMerkezi sinir sistemininden kaynaklanan depresyonlarda solunumun uyarılması,\nYeni doğan köpek, kedi, buzağı ve kuzularda; Güç doğum ve sezaryen sonrası solunumun başlatılması ve desteklenmesi amacıyla kullanılır."
   },
   {
     "ProductId": 1767,
     "ProductName": "XYLAZİNE 2% 25ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT24.jpg",
-    "Ürün Açıklaması": "Sakinleştirici, bazı analjezik ve kas gevşetici özelliklere sahip bir Alfa-2 agonisti."
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1812,
     "ProductName": "KETAMİN 10% 25ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT14.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://www.dutchfarm.com/",
     "Ürün Açıklaması": "_2-agonistlerle kombinasyon halinde anestezi indüklemek için enjekte edilebilir ürün."
   },
   {
     "ProductId": 1,
     "ProductName": "BAKTERAL 50ml enj. ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV026.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
     "Ürün Açıklaması": "Sığır, koyun, keçi ve atlarda sistemik enfeksiyonlarda, septisemilerde, viral enfeksiyonlarla komplike sekonder bakteri enfeksiyonlarında, solunum hastalıkları, Gurm, Kolibasilloz, E. coli enteritis, Salmonelloz, Aktinomikoz, Listeriozis, Piyelonefritis, Piyeten ve Pododermatitis’in sistemik tedavisi; yara enfeksiyonları, mastitis, metritis ve diğer yumuşak doku enfeksiyonlarında lokal tedavilere destek olarak kullanılır."
   },
   {
     "ProductId": 37,
     "ProductName": "PEN-STREP 20/20 100ml enj. (DUTC)",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT12.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/en/home",
     "Ürün Açıklaması": "Penisilin ve dihidrostreptomisin kombinasyonuna duyarlı gram pozitif ve gram negatif mikroorganizmaların neden olduğu enfeksiyonlarda kullanılır."
   },
   {
     "ProductId": 48,
     "ProductName": "CESAMOLİN 10 X 6gr ORAL",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV003.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "At, kedi, köpek, sığır, koyun, keçi, tavuk ve hindilerde sindirim kanalına lokalize olan neomisine duyarlı patojen bakterileri imha etmek ve ishalin durdurulmasına yardımcı olmak amacı ile kullanılır."
   },
   {
     "ProductId": 97,
     "ProductName": "OXYTETRA %10 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD17.jpg",
-    "Ürün Açıklaması": "Evcil hayvanlarda oksitetrasikline duyarlı bakteriler tarafından meydana gelen deri, meme, tırnak enfeksiyonları ve yaralanmalarda tedavi amacıyla kullanılır."
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd-nv.com/",
+    "Ürün Açıklaması": "Uzun süreli etki sağlamak üzere özel olarak formüle edilmiş, sürekli antibakteriyel aktivite ile sonuçlanan yüksek derecede aktif geniş spektrumlu tetrasiklin antibiyotik."
+  },
+  {
+    "ProductId": 110,
+    "ProductName": "SULFADİMİDİNE %33.3 500ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD12.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://vmddrugs.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 683,
     "ProductName": "CEVAXEL RTU 100ML FLAKON",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN79.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Kullanıma hazır (RTU) Seftiofur süspansiyonu."
   },
   {
     "ProductId": 686,
     "ProductName": "MARBOX 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN83.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Yüksek şırınga edilebilirliğe sahip Marbofloksasin enjeksiyonluk çözeltisi"
   },
   {
     "ProductId": 687,
     "ProductName": "FLORKEM 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN84.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Yüksek şırınga edilebilirliğe sahip Florfenikol enjeksiyonluk çözeltisi"
   },
   {
     "ProductId": 688,
     "ProductName": "SPIROVET 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN85.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Spiramisin enjeksiyonluk çözeltisi"
   },
   {
     "ProductId": 690,
     "ProductName": "GABBROCOL 1KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN87.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.eu/",
     "Ürün Açıklaması": "Cryptosporidiosis ve kolibasilloz tedavisi için Paromomisin oral çözeltisi"
   },
   {
     "ProductId": 752,
     "ProductName": "BAKTERAL 100ml enj. ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV033.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.aliviravet.com/",
     "Ürün Açıklaması": "Sığır, koyun, keçi ve atlarda sistemik enfeksiyonlarda, septisemilerde, viral enfeksiyonlarla komplike sekonder bakteri enfeksiyonlarında, solunum hastalıkları, Gurm, Kolibasilloz, E. coli enteritis, Salmonelloz, Aktinomikoz, Listeriozis, Piyelonefritis, Piyeten ve Pododermatitis’in sistemik tedavisi; yara enfeksiyonları, mastitis, metritis ve diğer yumuşak doku enfeksiyonlarında lokal tedavilere destek olarak kullanılır."
+  },
+  {
+    "ProductId": 757,
+    "ProductName": "CLIMOX INJ.100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV010.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 790,
     "ProductName": "CEFAMILK-180 Mono 100ML ENJ.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV039.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Sığır, kedi ve köpeklerde antibakteriyel tedavide kullanılmaktadır. Sefaleksin,\nbakterisidal etkiye sahip, çok sayıda Gram pozitif (+) ve Gram negatif (-) bakterilere etkili, geniş spektrumlu bir antibakteriyel ajandır"
   },
   {
     "ProductId": 793,
     "ProductName": "CLAVON 100 ML ENJ.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV042.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Amoksisilin ve klavulanik asit kombinasyonuna duyarlı bakterilerden kaynaklanan enfeksiyonların tedavisinde kullanılır."
+  },
+  {
+    "ProductId": 795,
+    "ProductName": "VİODOX SPREY 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV043.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 805,
     "ProductName": "COGLAVAX 100ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN93.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Clostridiosis’e karşı kapsamlı inaktive aşı"
   },
   {
     "ProductId": 806,
     "ProductName": "COGLAVAX 250ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN94_1.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Clostridiosis’e karşı kapsamlı inaktive aşı"
   },
   {
     "ProductId": 908,
     "ProductName": "GABBROCOL 250 Gr",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN100.jpg",
+    "Üretici Firma": "IntraCare",
+    "Firma Web Sitesi": "https://intracare.nl/",
     "Ürün Açıklaması": "Cryptosporidiosis ve kolibasilloz tedavisi için Paromomisin oral çözeltisi"
   },
   {
     "ProductId": 939,
     "ProductName": "ZELERİS 100ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN102.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Florfenikol ve meloksikam içeren yüksek şırınga edilebilirliğe sahip kombinasyon"
+  },
+  {
+    "ProductId": 943,
+    "ProductName": "FENOSVIT C wsp 100g",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT51.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 960,
     "ProductName": "TENALİNE LA 100ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN103.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Uzun etkili, yüksek konsantrasyonlu (%20) oksitetrasiklin enjeksiyonluk çözeltisi"
+  },
+  {
+    "ProductId": 1158,
+    "ProductName": "BAYCOX %5 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN016.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1160,
     "ProductName": "BAYTRİL %10 ENJ 50 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN017.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Sığırlarda solunum yolu enfeksiyonlarının tedavisinde kullanılır."
   },
   {
     "ProductId": 1161,
     "ProductName": "BAYTRİL %10 ENJ 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN018.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Sığırlarda solunum yolu enfeksiyonlarının tedavisinde kullanılır."
   },
   {
     "ProductId": 1162,
     "ProductName": "BAYTRİL K %5 ENJ 20 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN019.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Sığırlarda solunum yolu enfeksiyonlarının tedavisinde kullanılır."
   },
   {
     "ProductId": 1163,
     "ProductName": "BAYTRİL UNO ENJ 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN020.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Sığırlarda solunum yolu enfeksiyonlarının tedavisinde kullanılır."
   },
   {
     "ProductId": 1187,
     "ProductName": "MARBOX 50 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN105.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Yüksek şırınga edilebilirliğe sahip Marbofloksasin enjeksiyonluk çözeltisi"
   },
   {
     "ProductId": 1197,
     "ProductName": "MASTICURE 10GR DC ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV046.jpg",
+    "Üretici Firma": "IntraCare",
+    "Firma Web Sitesi": "https://www.intracare.nl/",
     "Ürün Açıklaması": "Kuru dönemdeki ineklerde mastitis tedavisinde kullanılır"
   },
   {
     "ProductId": 1207,
     "ProductName": "ZELERİS 50ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN106.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Florfenikol ve meloksikam içeren yüksek şırınga edilebilirliğe sahip kombinasyon"
   },
   {
     "ProductId": 1208,
     "ProductName": "FLORKEM 50 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN118.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Yüksek şırınga edilebilirliğe sahip Florfenikol enjeksiyonluk çözeltisi"
   },
   {
     "ProductId": 1227,
     "ProductName": "BAYTRİL TABLET 50 mg",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN030.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Sığırlarda solunum yolu enfeksiyonlarının tedavisinde kullanılır."
   },
   {
     "ProductId": 1228,
     "ProductName": "BAYTRİL TABLET 150 mg",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN031.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Sığırlarda solunum yolu enfeksiyonlarının tedavisinde kullanılır."
+  },
+  {
+    "ProductId": 1230,
+    "ProductName": "VERAFLOX 2,5% ORAL 15ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN033.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1304,
+    "ProductName": "CEFCLOREN 100ML ENJ.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV048.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1307,
     "ProductName": "PENSTREP 20/20 100ML ENJEKSİYONLUK SÜSPANSİYON",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV051.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Penisilin ve dihidrostreptomisin kombinasyonuna duyarlı gram pozitif ve gram negatif mikroorganizmaların neden olduğu enfeksiyonlarda kullanılır."
   },
   {
     "ProductId": 1308,
     "ProductName": "TOTAL-4 IMM 5 GR LC.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV052.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr",
     "Ürün Açıklaması": "İneklerde laktasyon döneminde ağrı ve yangı ile seyreden; penisilin, streptomisin ve neomisine duyarlı bakterilerin oluşturduğu akut ve subakut mastitlerin tedavisinde kullanılır."
   },
   {
     "ProductId": 1309,
     "ProductName": "PENTAMYCİN LA 250ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV021.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Oksitetrasikline duyarlı mikroorganizmalardan ileri gelen sistemik enfeksiyonlarda, septisemilerde, viral enfeksiyonlarla komplike sekonder bakteri enfeksiyonlarında kullanılır. Bu kapsamda başlıca kolibasilloz, piyeten, agalaksi, listerioz, leptospiroz, enfeksiyöz keratokonjunktivit, anaplazmoz, pnömonilerde, ayrıca mastit ve metritlerde lokal tedaviye destek olarak kullanılır."
   },
   {
     "ProductId": 1310,
     "ProductName": "VİRAFLOR 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV0022.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr",
     "Ürün Açıklaması": "Sığırlarda ﬂorfenikole duyarlı bakterilerden kaynaklanan solunum sistemi enfeksiyonları (BRD) ve ayak hastalıkları (ayak çürüğü, akut interdigital nekrobasilloz, enfeksiyöz pododermatitis) tedavisinde kullanılır."
+  },
+  {
+    "ProductId": 1311,
+    "ProductName": "FULİNALJİN 100ml enj.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV023.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1312,
     "ProductName": "CLAVON 50 ML ENJ. ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV053.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Amoksisilin ve klavulanik asit kombinasyonuna duyarlı bakterilerden kaynaklanan enfeksiyonların tedavisinde kullanılır."
   },
   {
     "ProductId": 1336,
     "ProductName": "BAYTRİL %2,5 100 ML ORAL SOLUTION  ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN044.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Sığırlarda solunum yolu enfeksiyonlarının tedavisinde kullanılır."
   },
   {
     "ProductId": 1343,
     "ProductName": "TENALİNE LA 250ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN109.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Uzun etkili, yüksek konsantrasyonlu (%20) oksitetrasiklin enjeksiyonluk çözeltisi"
   },
   {
     "ProductId": 1411,
     "ProductName": "Doxymix %20 Oral Solution 100ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV054.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Tavuk, hindi ve rumen faaliyeti başlamamış buzağılarda duyarlı bakteriler tarafından meydana getirilen sindirim ve solunum sistemi enfeksiyonlarının tedavisinde kullanılır."
+  },
+  {
+    "ProductId": 1419,
+    "ProductName": "COMBIVET INJ 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV014.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1422,
+    "ProductName": "ANIMAR 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN115.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1478,
     "ProductName": "COLISTINE 4800 WSP 100GR",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT57.jpg",
+    "Üretici Firma": "chemifarma",
+    "Firma Web Sitesi": "https://www.chemifarma.it/",
     "Ürün Açıklaması": "Gastrointestinal enfeksiyonlara karşı suda çözünebilen polimiksin antibiyotik."
+  },
+  {
+    "ProductId": 1590,
+    "ProductName": "ANIMAR 50 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN116.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1591,
     "ProductName": "CEVAXEL RTU 50ML FLAKON",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN117.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Kullanıma hazır (RTU) Seftiofur süspansiyonu."
   },
   {
     "ProductId": 1652,
     "ProductName": "OXY-T DERİ SPREYİ 200ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV081.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Evcil hayvanlarda oksitetrasikline duyarlı bakteriler tarafından meydana gelen deri, meme, tırnak enfeksiyonları ve yaralanmalarda tedavi amacıyla kullanılır."
   },
   {
     "ProductId": 1653,
     "ProductName": "SEFAKİM ENJEKSİYONLUK SÜSPANSİYON 100ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV082.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.aliviravet.com/",
     "Ürün Açıklaması": "Sığırlarda solunum sistemi enfeksiyonlarının ve yumuşak doku enfeksiyonlarının (akut puerperal metritis ve interdigital nekrobasilloz) tedavisinde kullanılır."
   },
   {
     "ProductId": 1687,
     "ProductName": "TENALİNE LA 50ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN120.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Uzun etkili, yüksek konsantrasyonlu (%20) oksitetrasiklin enjeksiyonluk çözeltisi"
+  },
+  {
+    "ProductId": 1721,
+    "ProductName": "OTC-SPRAY 200ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD18.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd-nv.be/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1760,
+    "ProductName": "CTC OBLETS 1 adet",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD04.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1772,
     "ProductName": "GENTA %10 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT03.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.eu/",
     "Ürün Açıklaması": "Hem gram-negatif hem de bazı gram-pozitif bakterilere karşı aktiviteye sahip aminoglikozid antibiyotik."
   },
   {
     "ProductId": 1773,
     "ProductName": "OXYTETRA %20 LA 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT06.jpg",
-    "Ürün Açıklaması": "Evcil hayvanlarda oksitetrasikline duyarlı bakteriler tarafından meydana gelen deri, meme, tırnak enfeksiyonları ve yaralanmalarda tedavi amacıyla kullanılır."
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Uzun süreli etki sağlamak üzere özel olarak formüle edilmiş, sürekli antibakteriyel aktivite ile sonuçlanan yüksek derecede aktif geniş spektrumlu tetrasiklin antibiyotik."
+  },
+  {
+    "ProductId": 1798,
+    "ProductName": "OXYVETO %50 1 KG.ORAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD27.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://vmddrugs.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1823,
     "ProductName": "KANAPEN-P Imm 10gr LC",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT16.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://www.dutchfarm.com.tr/",
     "Ürün Açıklaması": "Penisilin ve kanamisin kombinasyonu sayesinde en zorlu mastitis formlarını tedavi etmek için meme içi enjektör."
   },
   {
     "ProductId": 1824,
     "ProductName": "CLOXA-BEN 10gr DRY COW",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT17.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.nl",
     "Ürün Açıklaması": "İneklerde kuruya çıkarma döneminde mevcut mastitis enfeksiyonlarını tedavi etmek ve yeni enfeksiyonlara karşı koruma sağlamak için intramamar enjeksiyon."
   },
   {
     "ProductId": 1835,
     "ProductName": "TYLO-DOX Plus 100gr ORAL (W.S.P)",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT19.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Makrolid antibiyotik (Tilosin) ve tetrasiklin antibiyotik (Doksisiklin) kombinasyonu; geniş spektrumlu ve birçok bakteriye karşı sinerjistik olarak aktif."
   },
   {
     "ProductId": 1838,
     "ProductName": "DUFAFLOXACİN 10% 1000ml ORAL",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT22.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.com/",
     "Ürün Açıklaması": "Pasteurelloz, mikoplazmoz, kolibasilloz, koliseptisemi ve salmonelloz gibi gastrointestinal ve solunum yolu enfeksiyonlarında kullanılan florokinolon antibiyotik."
   },
   {
     "ProductId": 1857,
     "ProductName": "DUFAFLOXACİN 10%  100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT25.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.com/",
     "Ürün Açıklaması": "Pasteurelloz, mikoplazmoz, kolibasilloz, koliseptisemi ve salmonelloz gibi gastrointestinal ve solunum yolu enfeksiyonlarında kullanılan florokinolon antibiyotik."
+  },
+  {
+    "ProductId": 1862,
+    "ProductName": "DUFAMOX G 150/40 100ml enj.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT28.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1865,
+    "ProductName": "L SPEC 5/10 100ml enj.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD32.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/en",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1866,
+    "ProductName": "COLİVETO-4800s 1kg ORAL (W.S.P)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD33.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://vmddrugs.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1923,
     "ProductName": "SPECTAM JEL 100ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN89.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Kuzu ve buzağılarda spektinomisine duyarlı bakteriler tarafından meydana getirilen ishallerin tedavisi için oral jel formunda bağırsak antibakteriyeli"
   },
   {
     "ProductId": 1933,
     "ProductName": "DUFAMOX LA %15 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT34.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Çok çeşitli gram-pozitif ve gram-negatif bakterilerin neden olduğu bakteriyel enfeksiyonlara karşı geniş spektrumlu yarı sentetik penisilin."
   },
   {
     "ProductId": 1934,
     "ProductName": "TYLOSİN %20 100ml  enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT36.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Sığır, koyun ve domuzlarda bakteriyel enfeksiyonlara karşı makrolid antibiyotik."
+  },
+  {
+    "ProductId": 1935,
+    "ProductName": "AMOXYVETO %50 1kg ORAL (W.S.P)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD40.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 170,
     "ProductName": "DOLARJİN  50ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV036.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
     "Ürün Açıklaması": "At, sığır ve köpeklerde antienﬂamatuvar, analjezik, spazmolitik ve antipiretik olarak kullanılır."
   },
   {
     "ProductId": 394,
     "ProductName": "DOLARJİN 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV019.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
     "Ürün Açıklaması": "At, sığır ve köpeklerde antienﬂamatuvar, analjezik, spazmolitik ve antipiretik olarak kullanılır."
+  },
+  {
+    "ProductId": 592,
+    "ProductName": "BUSCOPAN 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING012.jpg",
+    "Üretici Firma": "Boehringer Ingelheim",
+    "Firma Web Sitesi": "https://www.boehringer-ingelheim.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 909,
+    "ProductName": "DİFALJİN 100 ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN101.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1388,
     "ProductName": "PHENYLBUTAZON 20% INJ 100ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT55.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.com",
     "Ürün Açıklaması": "Atlarda, sığırlarda ve domuzlarda kas-iskelet sistemi rahatsızlıklarıyla ilişkili iltihaplanma ve akut veya kronik ağrıyı tedavi etmek için non-steroidal anti-inflamatuar ilaç (NSAID)."
+  },
+  {
+    "ProductId": 1423,
+    "ProductName": "DİFALJİN 50 ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN112.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 787,
+    "ProductName": "ANTISTAMIN-C INJ.50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV038.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.aliviravet.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1655,
+    "ProductName": "ANTISTAMIN-C INJ.20ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV084.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.aliviravet.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 58,
     "ProductName": "AVROMEC 50ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV018.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Sığır ve koyunlarda ivermektine duyarlı iç ve dış parazit enfestasyonlarının sağaltım ve korunmasında kullanılır."
+  },
+  {
+    "ProductId": 284,
+    "ProductName": "PİPERAZİNE CİTRATE %99  100gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD57.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 285,
+    "ProductName": "PİPERAZİNE CİTRATE %99 1000gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD58.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 404,
     "ProductName": "AVROMEC 20ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV006.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Sığır ve koyunlarda ivermektine duyarlı iç ve dış parazit enfestasyonlarının sağaltım ve korunmasında kullanılır."
+  },
+  {
+    "ProductId": 606,
+    "ProductName": "NEXGARD DOG L box of 3 tablets 10-25kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING052.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 607,
+    "ProductName": "NEXGARD DOG M box of 3 tablets 04-10kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING058.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 608,
+    "ProductName": "NEXGARD DOG S box of 3 tablets 02-04kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING059.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 609,
+    "ProductName": "NEXGARD DOG XL box of 3 tablets 25-50kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING060.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 649,
     "ProductName": "UNIVERM TOTAL 20tablet",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD82.jpg",
-    "Ürün Açıklaması": "İneklerde laktasyon döneminde ağrı ve yangı ile seyreden; penisilin, streptomisin ve neomisine duyarlı bakterilerin oluşturduğu akut ve subakut mastitlerin tedavisinde kullanılır."
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 653,
     "ProductName": "RABENZOLE Tb.(10 tb.)",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV007.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Sığırlarda; karaciğer kelebekleri, kum kelebeği, mide-bağırsak kıl kurtları, akciğer kıl kurtları ve buzağılardaki askarit invazyonlarından kaynaklanan enfeksiyonların sağaltım ve korunmasında kullanılır."
+  },
+  {
+    "ProductId": 668,
+    "ProductName": "NEXGARD SPECTRA  L box of 3 tablets 15-30kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING065.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 669,
+    "ProductName": "NEXGARD SPECTRA  M box of 3 tablets 7,5-15kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING066.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 678,
+    "ProductName": "NEXGARD SPECTRA XL box of 3 tablets 30-60kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING068.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 689,
     "ProductName": "EPRECIS ENJ. 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN86.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Parazit kontrolü için enjekte edilebilir Eprinomektin"
   },
   {
     "ProductId": 751,
     "ProductName": "AVROMEC 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV020.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Sığır ve koyunlarda ivermektine duyarlı iç ve dış parazit enfestasyonlarının sağaltım ve korunmasında kullanılır."
   },
   {
     "ProductId": 941,
     "ProductName": "Dufamec 1% enj.50ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT46.jpg",
-    "Ürün Açıklaması": "Çok çeşitli endo- ve ektoparazitlerin kontrolü için geniş spektrumlu oral sıvı antelmintik."
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Muhtemelen birçok endo- ve ektoparazite karşı aktiviteye sahip en popüler enjekte edilebilir antiparaziter."
+  },
+  {
+    "ProductId": 1155,
+    "ProductName": "KİLTİX KÜÇÜK 35 cm",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN010.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1156,
+    "ProductName": "KİLTİX BÜYÜK 66 cm",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN011.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/tr-tr",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1157,
     "ProductName": "SERESTO BÜYÜK 70 cm 8KG <",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN015.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "8 ay boyunca pire, kene ve tatarcık sineğine karşı koruma sağlar."
+  },
+  {
+    "ProductId": 1164,
+    "ProductName": "BAYVAROL STRIPS 5*4 ( Varroosis )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN021.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1167,
+    "ProductName": "SEBACIL %50 EC 250 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN024.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1168,
+    "ProductName": "SEBACIL %50 EC 1000 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN025.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1169,
     "ProductName": "ADVANTAGE CAT 4* 0,4 ml  <4KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN001.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
     "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
   },
   {
     "ProductId": 1170,
     "ProductName": "ADVANTAGE CAT 4* 0,8 ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN002.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com.tr/",
     "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
   },
   {
     "ProductId": 1171,
     "ProductName": "ADVANTAGE MULTİ CAT 3* 0,4 ml  <4KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN003.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
   },
   {
     "ProductId": 1172,
     "ProductName": "ADVANTAGE MULTİ DOG 3* 2,5 ml 10-25 KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN004.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
   },
   {
     "ProductId": 1173,
     "ProductName": "ADVANTAGE MULTİ DOG 3* 4,0 ml 25-40 KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN005.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
   },
   {
     "ProductId": 1174,
     "ProductName": "ADVANTIX DOG 4* 1,0 ml 4-10 KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN006.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantix™, keneleri, sivrisinek ve tatarcık sineklerini öldüren ve kovan; pire ve ısırıcı bitleri ise öldüren, aylık topikal uygulamadır."
   },
   {
     "ProductId": 1175,
     "ProductName": "ADVANTIX DOG 4* 2,5 ml 10- 25KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN007.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantix™, keneleri, sivrisinek ve tatarcık sineklerini öldüren ve kovan; pire ve ısırıcı bitleri ise öldüren, aylık topikal uygulamadır."
   },
   {
     "ProductId": 1176,
     "ProductName": "ADVANTIX DOG 4* 4,0 ml 25-40 KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN008.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantix™, keneleri, sivrisinek ve tatarcık sineklerini öldüren ve kovan; pire ve ısırıcı bitleri ise öldüren, aylık topikal uygulamadır."
   },
   {
     "ProductId": 1177,
     "ProductName": "ADVANTIX DOG 4* 6,0 ml 40-60 KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN009.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantix™, keneleri, sivrisinek ve tatarcık sineklerini öldüren ve kovan; pire ve ısırıcı bitleri ise öldüren, aylık topikal uygulamadır."
+  },
+  {
+    "ProductId": 1224,
+    "ProductName": "BAYTİCOL %1 DÖKME ÇÖZELTİ 1000 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN027_1.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1226,
     "ProductName": "ADVANTAGE MULTİ CAT 3* 0,8 ml  4-8KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN029.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
   },
   {
     "ProductId": 1245,
     "ProductName": "ADVANTAGE MULTİ DOG 3* 1,0 ml 4-10 KG",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN034.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
     "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
   },
   {
     "ProductId": 1246,
     "ProductName": "SERESTO KÜÇÜK 8KG >",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN035.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "8 ay boyunca pire, kene ve tatarcık sineğine karşı koruma sağlar."
   },
   {
     "ProductId": 1247,
     "ProductName": "ADVANTIX DOG 4* 0,4 ml <4KG ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN036.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com.tr/",
     "Ürün Açıklaması": "Advantix™, keneleri, sivrisinek ve tatarcık sineklerini öldüren ve kovan; pire ve ısırıcı bitleri ise öldüren, aylık topikal uygulamadır."
+  },
+  {
+    "ProductId": 1273,
+    "ProductName": "PROFENDER CAT 0,35 ML >0,5 -2.5KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN041.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1274,
+    "ProductName": "PROFENDER CAT 0,70 ML >2.5 - 5KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN042.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1275,
+    "ProductName": "PROFENDER CAT 1,12 ML >5-8KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN043.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1305,
     "ProductName": "IMOZAN 50 ML ENJ.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV049.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Sığır: Babesiosis (Babesia argentina, B. bigemina, B. bovis ve B. divergens) ve Anaplasmosis marginale tedavisi ve önlenmesi.\nKöpek: Babesiosis (Babesia canis, B. gibsoni ve B. vogelli) tedavisi ve önlenmesi.\nAt: Babesiosis (B. equi ve B. caballi) tedavisi ve önlenmesinde kullanılır."
   },
   {
     "ProductId": 1418,
     "ProductName": "BLOTİC 1000ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV012.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://dollvet.com.tr",
     "Ürün Açıklaması": "Sığır, koyun ve keçilerde; keneler, uyuz etkenleri, bitler, pireler, yara kurtları ve ısırıcı, sokucu ve kan emici sineklerle mücadelede kullanılır."
   },
   {
     "ProductId": 1491,
     "ProductName": "EPRECIS %2 ENJ.50 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN010.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Parazit kontrolü için enjekte edilebilir Eprinomektin"
   },
   {
     "ProductId": 1492,
     "ProductName": "EPRECIS %2 ENJ.100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN011.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Parazit kontrolü için enjekte edilebilir Eprinomektin"
   },
   {
     "ProductId": 1519,
     "ProductName": "EPRINOMEC DÖKME ÇÖZELTİ 1LT",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV013.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Süt ve besi sığırlarında gastrointestinal nematodlar, akciğer kıl kurtları, Hipoderma larvaları (parazitik devreler), uyuz etkenleri, bitler, tek konaklı keneler, boynuz sineği ve yarakurdu kaynaklı parazit enfestasyonlarının tedavi ve kontrolü amacıyla kullanılır."
+  },
+  {
+    "ProductId": 1537,
+    "ProductName": "NEXGARD SPECTRA XS  box of 3 tablets 2-3,5kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING088.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1642,
     "ProductName": "NİLVERM 15GR",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN119_1.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
     "Ürün Açıklaması": "Sığır ve koyunlar için levamizol içeren oral çözelti tozu"
+  },
+  {
+    "ProductId": 1704,
+    "ProductName": "NEXGARD COMBO CAT L 0,9ML 3 SYRING X 1",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING089.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1705,
+    "ProductName": "NEXGARD COMBO CAT S 0,3ML  3 SYRING X 1",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING090.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1860,
     "ProductName": "BLOTİC  100ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV001.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
     "Ürün Açıklaması": "Sığır, koyun ve keçilerde; keneler, uyuz etkenleri, bitler, pireler, yara kurtları ve ısırıcı, sokucu ve kan emici sineklerle mücadelede kullanılır."
   },
   {
     "ProductId": 1922,
     "ProductName": "BLOTİC  500ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV002.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Sığır, koyun ve keçilerde; keneler, uyuz etkenleri, bitler, pireler, yara kurtları ve ısırıcı, sokucu ve kan emici sineklerle mücadelede kullanılır."
   },
   {
     "ProductId": 1924,
     "ProductName": "Dufamec-P Horsewormer 25gr ORAL PASTE",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT33.jpg",
-    "Ürün Açıklaması": "Çok çeşitli endo- ve ektoparazitlerin kontrolü için geniş spektrumlu oral sıvı antelmintik."
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Atlarda çok çeşitli endoparazitlerin ve yassı kurtların kontrolü için geniş spektrumlu antelmintik."
   },
   {
     "ProductId": 1953,
     "ProductName": "DUFALBEN 10% 1000ml ORAL",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT38.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.nl",
     "Ürün Açıklaması": "Yuvarlak kurtların, şeritlerin ve kelebeklerin kontrolü için etkili geniş spektrumlu antelmintik."
+  },
+  {
+    "ProductId": 947,
+    "ProductName": "CAPRİDOLL 50 Ds. 10ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL01.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 948,
+    "ProductName": "COLİDOLL 10 Ds. 20ml ( İNAKTİF E.COLİ  AŞI )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL02.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 949,
+    "ProductName": "COLİDOLL 5 Ds. 10ml ( İNAKTİF E. COLİ AŞI )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL03.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 950,
+    "ProductName": "DOLLISERA 1 Ds. 5ml ( HYPERIMMUNE SERUM )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL04.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 951,
+    "ProductName": "LAXYDOLL-oil 50 Ds 50ml ( İNAKTİF AGALAKSİ AŞI )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL05.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 952,
+    "ProductName": "LAXYDOLL-oil 100 Ds.100ml( İNAKTİF AGALAKSİ AŞI)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL06.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 953,
+    "ProductName": "SERADOLL 1 Ds. 5ml ( HYPERİMMUNE SERUM )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL07.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 954,
+    "ProductName": "ULTRADOLL-8 25 Ds. 50ml ( KOMBİNE ENTEROTOKSEMİ )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL08.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 955,
+    "ProductName": "ULTRADOLL-8 50 Ds. 100ml ( KOMBİNE ENTEROTOKSEMİ )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL09.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 996,
+    "ProductName": "TRICHODOLL 40ML 10 Ds.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL10.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 997,
+    "ProductName": "MASTIDOLL-3 10ds. 20ml ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL11.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1123,
     "ProductName": "MASTICURE 10GR LC ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV045.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://vmd.be",
     "Ürün Açıklaması": "Kuru dönemdeki ineklerde mastitis tedavisinde kullanılır"
+  },
+  {
+    "ProductId": 1198,
+    "ProductName": "MASTIDOLL-3 25ds. 50ml ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL12.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1199,
+    "ProductName": "ROCODOLL 5ML 1 Dz.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL13.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1200,
+    "ProductName": "ROCODOLL 50ML 10 Dz.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL14.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1201,
+    "ProductName": "TRICHODOLL 4ML 1 Ds.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL15.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1202,
+    "ProductName": "ULTRADOLL-8 10 Ds. 20ml ( KOMBİNE ENTEROTOKSEMİ )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL16.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1243,
+    "ProductName": "DOLLISERA 5 Ds. 25ml ( HYPERIMMUNE SERUM )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL17.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1244,
+    "ProductName": "PASTEDOLL-3 50 Ds. 100 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL18.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1460,
+    "ProductName": "BOVELA 10 ML 5Ds",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING038.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1671,
+    "ProductName": "PASTEDOLL-3 10 Ds. 20 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL32.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1672,
+    "ProductName": "RAPİDOLL 1DS 1ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL33.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1677,
+    "ProductName": "PASTEDOLL-3 25 Ds. 50 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL34.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2835,
+    "ProductName": "IMMUDOLL-CG 5ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL35.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2870,
+    "ProductName": "IMMUDOLL-CG 25ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VDOL36_1.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 33,
+    "ProductName": "OXYFOAM 20kg(Sağım Öncesi Meme Başı Dezf.)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO27.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 159,
+    "ProductName": "D4+ DEZENFEKTAN 25lt",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD09.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/en/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 254,
+    "ProductName": "İNTRA HOOF FİT GEL 330ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAİNTRA001.jpg",
+    "Üretici Firma": "Intrahoof",
+    "Firma Web Sitesi": "https://intrahoof.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 255,
+    "ProductName": "İNTRA HOOF FİT BATH 20lt ( Zn+Cu )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAİNTRA002.jpg",
+    "Üretici Firma": "Intrahoof",
+    "Firma Web Sitesi": "https://www.intracare.nl/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 256,
+    "ProductName": "İNTRA HOOF FİT LİQUİD 10lt",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAİNTRA003.jpg",
+    "Üretici Firma": "Intrahoof",
+    "Firma Web Sitesi": "https://intracare.nl/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 343,
     "ProductName": "AC 20 24kg ( ASEPTO SUPRA )",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO79.jpg",
-    "Ürün Açıklaması": "Salmonella Enteritidis’e karşı tavukların bağışıklanmasına yöneliktir."
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 344,
     "ProductName": "AD 20 24kg( HOROLİTH FL )",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO80.jpg",
-    "Ürün Açıklaması": "Advantage™ %10 pirelerin ısırmalarına gerek kalmadan, temas yoluyla pireleri öldürerek kedilerin pire enfestasyonlarından koruma ve mücadelesinde kullanılır."
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 349,
+    "ProductName": "CIDE PLUS 20kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO84.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 436,
+    "ProductName": "OZONIT PERFORMANCE 21 KG.(TSUNAMİ 100)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO93.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 544,
+    "ProductName": "İNTRA REPİDERMA 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAİNTRA005.jpg",
+    "Üretici Firma": "Intra",
+    "Firma Web Sitesi": "https://intravet.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1018,
+    "ProductName": "TOPAZ HD3 25KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO123.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1151,
+    "ProductName": "OXONIA ACTIVE 21KG  ( Astri L / LC - YEŞİL )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO110.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/en",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1222,
+    "ProductName": "İNTRA HOOF FİT BATH 10lt ( Zn+Cu )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAİNTRA006.jpg",
+    "Üretici Firma": "Intrahoof",
+    "Firma Web Sitesi": "https://intrahoof.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1334,
+    "ProductName": "İNCİDİN TR 20kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO106.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/en_us/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1433,
+    "ProductName": "ALPHACLEAN 25KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAALP007.jpg",
+    "Üretici Firma": "AlphaTech",
+    "Firma Web Sitesi": "https://www.alphatech-vet.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1467,
+    "ProductName": "MIP SMX / 24KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO108.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1468,
+    "ProductName": "HOROLITH PA 29KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO107.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1547,
+    "ProductName": "D4+ DEZENFEKTAN 5lt",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD93.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/en/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1548,
+    "ProductName": "UBERA DRY 250ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD94.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.eu",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1867,
+    "ProductName": "D4+ DEZENFEKTAN 10lt",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD35.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1969,
+    "ProductName": "OXYFOAM 10kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO02.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1974,
+    "ProductName": "İO SHIELD 10kg",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO07.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 100,
     "ProductName": "OXYTOCİN 10 IU/ml 100ml ENJ.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD51.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/en/",
     "Ürün Açıklaması": "Evcil hayvanlarda oksitetrasikline duyarlı bakteriler tarafından meydana gelen deri, meme, tırnak enfeksiyonları ve yaralanmalarda tedavi amacıyla kullanılır."
   },
   {
     "ProductId": 118,
     "ProductName": "DEVAMED 20ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV004.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
     "Ürün Açıklaması": "Sığır, at, köpek ve kedilerde genel kapsamıyla intermedier metabolizma hastalıklarının ve çeşitli etmenlere bağlı gelişen yangısal, romatizmal, toksik, alerjik ve anafilaktik hastalıkların sağaltımında tek başına veya destekleyici olarak kullanılır."
   },
   {
     "ProductId": 680,
     "ProductName": "ENZAPROST T 30ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN76.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/global/",
     "Ürün Açıklaması": "Sığır fertilite programları için doğal prostaglandin (dinoprost)"
   },
   {
     "ProductId": 681,
     "ProductName": "OVARELİN 20ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN77.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "GnRH Analoğu (Gonadorelin) enjeksiyonluk çözeltisi"
   },
   {
     "ProductId": 682,
     "ProductName": "REGULİN IMP (2*25)",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN78.jpg",
+    "Üretici Firma": "Provet",
+    "Firma Web Sitesi": "https://www.provet.com.tr",
     "Ürün Açıklaması": "Küçükbaş hayvanlar için benzersiz Melatonin implantı"
   },
   {
     "ProductId": 684,
     "ProductName": "PRID DELTA 10",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN80.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Sığırlar için Progesteron salan intravaginal araç"
+  },
+  {
+    "ProductId": 693,
+    "ProductName": "DEXACURE 50ML. ENJ.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV074.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 792,
+    "ProductName": "OVOSTIM INJ. 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV041.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.aliviravet.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 875,
+    "ProductName": "DEXAVETO %2 100ml enj.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD87.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/en/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 958,
     "ProductName": "DEXAMETHASONE 50 ml.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT52.jpg",
-    "Ürün Açıklaması": "Anti-inflamatuar, antiflojistik, anti-alerjik, immünosupresif ve glukoneogenetik etkilere sahip sentetik glukokortikosteroid."
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.nl",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 970,
     "ProductName": "ENZAPROST T 50ml ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN104.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Sığır fertilite programları için doğal prostaglandin (dinoprost)"
+  },
+  {
+    "ProductId": 1412,
+    "ProductName": "FERTİLİN Enj. Çözelti 20ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV055.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1420,
     "ProductName": "OVIREN 10ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV015.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Oviren enjeksiyonluk çözelti inek, kısrak ve tavşanlarda ovaryumlardan kaynaklı çeşitli fertilite bozukluklarının sağaltımı ve fertilite düşüklüklerinin önlenmesi amacıyla aşağıdaki alanlarda kullanılır.\na. İneklerde:"
+  },
+  {
+    "ProductId": 1464,
+    "ProductName": "DEXACURE 100ML. ENJ.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV062.jpg",
+    "Üretici Firma": "Provet",
+    "Firma Web Sitesi": "https://www.provet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1465,
+    "ProductName": "PROVET OKSİTOSİN ENJ 50ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV063.jpg",
+    "Üretici Firma": "Provet",
+    "Firma Web Sitesi": "https://www.provet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1625,
     "ProductName": "DEVAMED 50ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV022.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.aliviravet.com/",
     "Ürün Açıklaması": "Sığır, at, köpek ve kedilerde genel kapsamıyla intermedier metabolizma hastalıklarının ve çeşitli etmenlere bağlı gelişen yangısal, romatizmal, toksik, alerjik ve anafilaktik hastalıkların sağaltımında tek başına veya destekleyici olarak kullanılır."
   },
   {
     "ProductId": 1626,
     "ProductName": "LUTELEN 20ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV080.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
     "Ürün Açıklaması": "Hedef türlerde döllenme ile ilgili çeşitli endikasyon alanlarında luteolitik olarak kullanılır."
+  },
+  {
+    "ProductId": 1804,
+    "ProductName": "DEXAVETO %2 50ml enj.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD19.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://vmdex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1178,
+    "ProductName": "AGITA 10WG 100 gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN026.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1345,
+    "ProductName": "AGITA 10WG 1KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN045.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 263,
+    "ProductName": "BOVİFERM PLUS SID 115gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VACHEV002.jpg",
+    "Üretici Firma": "chevita GmbH",
+    "Firma Web Sitesi": "https://www.chevita.de/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 351,
+    "ProductName": "RUMEN BOVİSAL 600gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VACHEV007.jpg",
+    "Üretici Firma": "chevita GmbH",
+    "Firma Web Sitesi": "https://www.chevita.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 836,
+    "ProductName": "DIAKUR PLUS ORAL 3KG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VBOEING027.jpg",
+    "Üretici Firma": "Boehringer Ingelheim",
+    "Firma Web Sitesi": "https://www.boehringer-ingelheim.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 859,
     "ProductName": "SUPRALİVER 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV009.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.com.tr/",
     "Ürün Açıklaması": "Sığırlarda aşağıdaki hastalık hallerinde koleretik ve dijestif olarak kullanılır.\n• Sığırlarda gıda indigesyonlarında,\n• Buzağılarda hatalı beslemeden kaynaklanan sindirim bozuklukları ve ishallerde,\n• Enfeksiyonlar, metabolik hastalıklar ve organ hastalıkları sebebiyle ortaya çıkan iştahsızlık, geviş almama, timpani, indigesyon, bağırsak tembelliği, konstipasyon ve diğer sindirim bozukluklarında,\n• Zehirlenmelerde (özellikle gıda zehirlenmeleri),\n• Hepatotoksik bozukluklarda, ikterus, puerperal karaciğer koması ve ketosis gibi hepatodijestif metabolizma hastalıklarında,\n• Dana humması, metritis, mastitis, parapleji ve diğer puerperal hastalıklarda (yardımcı tedavi uygulaması olarak),\n• İştihanın ve diğer sindirim fonksiyonlarının düzelmesine yardımcı olmak amacıyla her çeşit hastalıkta kullanılır."
   },
   {
     "ProductId": 1863,
     "ProductName": "METE SOL 100 CC",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN54.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Köpük giderici ve köpük önleyici etkinliğe sahip gaz giderici oral emülsiyon"
+  },
+  {
+    "ProductId": 449,
+    "ProductName": "SNAKE VENOM ANTİTOXİN (BİO SNAKE) 10 ml.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAIOI03.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1351,
+    "ProductName": "Vitalidog 75gr 150 Tablet",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0001.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1352,
+    "ProductName": "Dermadog 1.5 100 Tabs",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0002.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1353,
+    "ProductName": "Dermadog 0.5 150 Tabs",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0003.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1354,
+    "ProductName": "D-Kaltabs 126gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0004.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1355,
+    "ProductName": "Vitalicat Paste 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0005.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1356,
+    "ProductName": "Vitalidog Paste 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0006.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1357,
+    "ProductName": "Bio Urinamin 40 Tabs",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0007.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1358,
+    "ProductName": "GlucoPet 60 Tabs 90gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0008.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1359,
+    "ProductName": "GlucoCHOND Plus Gel 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0009.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1360,
+    "ProductName": "OptiBioMega Salmon Oil 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0010.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1361,
+    "ProductName": "Bio Kitten 200gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0011.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1362,
+    "ProductName": "Bio Puppy 200gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0012.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1363,
+    "ProductName": "Vitalicat Junior 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0013.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1364,
+    "ProductName": "Vitalidog Junior Pasta 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0014.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1365,
+    "ProductName": "Felilysine Gel 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0015.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1366,
+    "ProductName": "CatiMalt Plus 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0016.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1367,
+    "ProductName": "Synbioflora Tabs 30gr - Small Breed Dog",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0017.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1368,
+    "ProductName": "Synbioflora Tabs 72gr - Medium & Large Breed Dog",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0018.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1370,
+    "ProductName": "Coprophagia 90gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0019.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1371,
+    "ProductName": "Calming for Dogs 90gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0020.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1372,
+    "ProductName": "Calming for Cats 30gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0021.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1373,
+    "ProductName": "Puppy Trainer Spray 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0022.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1374,
+    "ProductName": "Aloe Vera Shampoo for Cat 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0023.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1375,
+    "ProductName": "Aloe Vera Shampoo for Dogs 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0024.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1376,
+    "ProductName": "Tea Tree Shampoo for Dogs 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0025.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1377,
+    "ProductName": "Puppy Shampoo 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0026.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1378,
+    "ProductName": "Aloe Vera Shampoo for Cats 400ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0027.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1379,
+    "ProductName": "Aloe Vera Shampoo for Dogs 400ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0028.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1380,
+    "ProductName": "Tea Tree Shampoo for Dogs 400ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0029.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1381,
+    "ProductName": "Puppy Shampoo 400ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0030.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1382,
+    "ProductName": "Perfume Fancy 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0031.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1383,
+    "ProductName": "Perfume Elegance 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0032.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1384,
+    "ProductName": "Perfume Flashy 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0033.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1385,
+    "ProductName": "Perfume Crazy 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0034.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1386,
+    "ProductName": "GlucoCHOND 60 Tabs ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0035.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1428,
+    "ProductName": "ATOPİVET SPOT ON 16*2ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN047.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1429,
+    "ProductName": "IMPROMUNE 40 Tablet ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN048.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1430,
+    "ProductName": "PRO-ENTERIC TRIPLEX PASTA 30ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN049.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1496,
+    "ProductName": "Silycumin Milk Thistle & Turmeric Extract 90tb",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0036.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1497,
+    "ProductName": "Bio Geraniomint Spray 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0037.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1498,
+    "ProductName": "Biodent Hexidine 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0038.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1499,
+    "ProductName": "Biodent Hexidine 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0039.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1500,
+    "ProductName": "Bio Eyes 50ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0040.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1501,
+    "ProductName": "Bio Otic (Ear Cleaner) 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0041.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1502,
+    "ProductName": "Knot Away Detangler & Conditioner 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0042.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1503,
+    "ProductName": "Dermahexidine Shampoo 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0043.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1504,
+    "ProductName": "Natural Honey Shampoo for Dogs 400ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0044.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1505,
+    "ProductName": "Aloe Vera Shampoo for Dogs 5000ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0045.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1506,
+    "ProductName": "Tea Tree Shampoo for Dogs 5000ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0046.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1507,
+    "ProductName": "Diamond White Shampoo 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0047.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1508,
+    "ProductName": "Bio Magic Dry Shampoo Powder (For Dogs) 150gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0048.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1509,
+    "ProductName": "Bio Magic Dry Shampoo Powder (For Cats) 150gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0049.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1510,
+    "ProductName": "Aloe Vera Dry Washing Foam Shampoo 200ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0050.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1511,
+    "ProductName": "Natural Honey Dry Washing Foam Shampoo 200ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0051.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1512,
+    "ProductName": "Nursing Bottle",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0052.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1604,
+    "ProductName": "Synbioflora Tabs for Cats 30gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0053.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1605,
+    "ProductName": "Hairball Control for Sterilised Cats 45gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0054.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1606,
+    "ProductName": "Catnip Spray 100ml ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0055.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1607,
+    "ProductName": "Beauty Shine Shining & Moisturizing 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0056.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1608,
+    "ProductName": "Paw & Nose Care",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0057.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1609,
+    "ProductName": "Pure Paw Cleansing Foam 150ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0058.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1610,
+    "ProductName": "Black Pearl Shampoo 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0059.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1611,
+    "ProductName": "Easy Grooming Shampoo 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0060.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1612,
+    "ProductName": "Sensitive Shampoo 250ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0061.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1613,
+    "ProductName": "Silycumin Milk Thistle & Turmeric Ext.100 Tb. 50GR",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0062.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1633,
+    "ProductName": "CONDROVET FORCE DOG 120",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN050_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1634,
+    "ProductName": "CALMUROFEL 30 CAPS",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN051_1.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1635,
     "ProductName": "NEPTRA OTIC SOL. 10X1.0ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN052_1.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com/",
     "Ürün Açıklaması": "Köpeklerde otitis eksterna tedavisini kolaylaştırır."
+  },
+  {
+    "ProductId": 2850,
+    "ProductName": "Vitalidog Junior 60 Tablet",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0063.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2851,
+    "ProductName": "Bioderm Dog 75 Tablet",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0064.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2852,
+    "ProductName": "Bioderm Cat 100 Tablet",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0065.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2853,
+    "ProductName": "Immunecat Pasta 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0066.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2854,
+    "ProductName": "Dermacat Pasta 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0067.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2855,
+    "ProductName": "CalmingCat Pasta 100ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0079.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2857,
+    "ProductName": "Spirulina (Kuş Vitamini)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0070_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2858,
+    "ProductName": "Yeast Stock (Kuş Vitamini)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0071_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2859,
+    "ProductName": "Yucky-B Chew Deterrent",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0072_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2860,
+    "ProductName": "Stain Odor Remover 490ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0073_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2861,
+    "ProductName": "Natural Honey Shampoo for Cats 400ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0074_1.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2862,
+    "ProductName": "Rainbow Pink",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0075_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2863,
+    "ProductName": "Rainbow Blue",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0076_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2864,
+    "ProductName": "Mantax-Scaly",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0077_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2865,
+    "ProductName": "Bio Nature Spray ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPBİO0078_1.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2946,
+    "ProductName": "ALOPECIA - HAIR REMOVER COMBING SPRAY 250ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0001.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2947,
+    "ProductName": "EASY SCAN FOAM 200ML WITH SILVER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0002.jpg",
+    "Üretici Firma": "IntraCare",
+    "Firma Web Sitesi": "https://www.intracare.nl",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2948,
+    "ProductName": "GENERAL BODY TREATMENT SUPPORT WIPES 30 PCS",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0003.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2949,
+    "ProductName": "ALOPESIA HAIR GROWTH VASELINE 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0004.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2950,
+    "ProductName": "WOUND STICK SILVER 10CC",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0005.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd-nv.be/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2951,
+    "ProductName": "DRY HYGIENE FOR PUPPIES ANTIBACTERIAL FOAM- 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0006.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2952,
+    "ProductName": "NANO SILVER TREATMENT SUPPORT SHAMPOO 450 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0007.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2953,
+    "ProductName": "ALOPEIA SHAMPOO 250ML-HAIR REMOVER SHAMPOO AL.GRUP",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0008.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.in/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2954,
+    "ProductName": "POWERFUL SERIES ORAL CARE/TARTAR/ SPRAY 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0009.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://www.biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2955,
+    "ProductName": "ANTIBACTERIAL ORAL HEALTH BALL XSMALL-2CM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0010.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2956,
+    "ProductName": "ANTIBACTERIAL ORAL HEALTH BALL SMALL-4CM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0011.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2957,
+    "ProductName": "ANTIBACTERIAL ORAL HEALTH BALL MEDIUM-6CM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0012.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com.tr",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2958,
+    "ProductName": "ANTIBACTERIAL ORAL HEALTH BALL LARGE-8CM",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0013.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2959,
+    "ProductName": "NANO SPRAY 250ML  IN BOX - TREATMENT SUPPORT SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0014.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2960,
+    "ProductName": "NANO SPRAY 150ML  IN BOX - TREATMENT SUPPORT SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0015.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2961,
+    "ProductName": "FIRST AID SPRAY-MILK AID SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0016.jpg",
+    "Üretici Firma": "IntraCare",
+    "Firma Web Sitesi": "https://intracare.nl/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2962,
+    "ProductName": "ANTI FUNGAL SPRAY - FUNGUS TREATMENT SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0017.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2963,
+    "ProductName": "SCABIES TREATMENT SUPPORT SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0018.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2964,
+    "ProductName": "RESTORATIVE ECZEMA SPRAY ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0019.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2965,
+    "ProductName": "TEAR STAIN REMOVER SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0020.jpg",
+    "Üretici Firma": "Bio PetActive",
+    "Firma Web Sitesi": "https://biopetactive.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2966,
+    "ProductName": "ALLERGY SPRAY-ALLERGY SOOTHING SPRAY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0021.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2967,
+    "ProductName": "NANO SPRAY 1LT IN BOX-TREATMENT SUPPORT SPRAY ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0022.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2968,
+    "ProductName": "AMBIENT CLINIC DISINFECTANT 1000ML-FOG DEODORIZER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0023.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2969,
+    "ProductName": "BIOTIN ZINC / OMEGA/ DROP 100ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VPCLE0024.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 807,
+    "ProductName": "SUNİ TOHUM MELARRY ALLTIME -ET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS070.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1001,
+    "ProductName": "SUNİ TOHUM SANDY VALLEY COPIOUS-ET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS134.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1016,
+    "ProductName": "SUNİ TOHUM PHS BANK ROLL 345B",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS147.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1135,
+    "ProductName": "SUNİ TOHUM WESTCOAST GUNMETAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS153.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1279,
+    "ProductName": "SUNİ TOHUM PROGENESIS BLUFF",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS161.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1287,
+    "ProductName": "SUNİ TOHUM AOT HELIUM-RED-ET (SEXED)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS169.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1289,
+    "ProductName": "SUNİ TOHUM SANDY-VALLEY ESTHETIC-ET (SEXED)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS171.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1294,
+    "ProductName": "SUNİ TOHUM PROGENESIS SUMMERDAY (SEXED)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS176.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1441,
+    "ProductName": "SUNİ TOHUM PROGENESIS RHINERIVER",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS177.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1442,
+    "ProductName": "SUNİ TOHUM PROGENESIS WATERMARK",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS178.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1443,
+    "ProductName": "SUNİ TOHUM PROGENESIS EVERGIVEN",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS179.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1444,
+    "ProductName": "SUNİ TOHUM VATLAND MASTERCARD-ET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS180.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1445,
+    "ProductName": "SUNİ TOHUM PROGENESIS PUGETSOUND",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS181.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1446,
+    "ProductName": "SUNİ TOHUM PROGENESIS RICHMOND",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS182.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1447,
+    "ProductName": "SUNİ TOHUM PROGENESIS PEDRO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS183.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1448,
+    "ProductName": "SUNİ TOHUM PROGENESIS VIGOROSO",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS184.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1449,
+    "ProductName": "SUNİ TOHUM OCD CHRONICLE-ET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS185.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1450,
+    "ProductName": "SUNİ TOHUM QUAKER HILL COLUMBUS 6V48",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS186.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1452,
+    "ProductName": "SUNİ TOHUM QUAKER HILL HIGH COTTON 9U17",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS187.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1453,
+    "ProductName": "SUNİ TOHUM QUAKER HILL ROCK STAR 9IN7",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS188.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1454,
+    "ProductName": "SUNİ TOHUM PROGENESIS MELVILLE (SEXED)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS189.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1562,
+    "ProductName": "SUNİ TOHUM PROGENESIS FRESHAIR",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS201.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1563,
+    "ProductName": "SUNİ TOHUM WESTCOAST VOLTAGE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS202.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1564,
+    "ProductName": "SUNİ TOHUM WESTCOAST SWAG",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS203.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1565,
+    "ProductName": "SUNİ TOHUM PHS POLLED WORLDWIDE 14W",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS204.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1688,
+    "ProductName": "SUNİ TOHUM PROGENESIS BREVILLE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS211.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1689,
+    "ProductName": "SUNİ TOHUM PROGENESIS MINDSET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS212.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1690,
+    "ProductName": "SUNİ TOHUM AGRITAR B PK EQUILIBRIUM P",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS213.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1691,
+    "ProductName": "SUNİ TOHUM NORTH-POLLED SONNY-P-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS214.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1692,
+    "ProductName": "SUNİ TOHUM CLAYNOOK ZOLTON SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS215.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1693,
+    "ProductName": "SUNİ TOHUM OCD TONKA-ET SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS216.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1694,
+    "ProductName": "SUNİ TOHUM WINSTAR GREYCUP-ET SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS217.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1695,
+    "ProductName": "SUNİ TOHUM AOT BRAVEHEART-ET SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS218.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1696,
+    "ProductName": "SUNİ TOHUM OCD LOBSTER-ET SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS219.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1697,
+    "ProductName": "SUNİ TOHUM JX AHLEM CAESAR [5]-ET SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS220.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1698,
+    "ProductName": "SUNİ TOHUM RIVER VALLEY MERCEDES-ET SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS221.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1699,
+    "ProductName": "SUNİ TOHUM SMX TOWNSEND 2K-ET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS222.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1700,
+    "ProductName": "SUNİ TOHUM FEE HAVEN KODIAK 310K",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS223.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2866,
+    "ProductName": "SUNİ TOHUM OCD TRUMAN-ET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS225_1.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2867,
+    "ProductName": "SUNİ TOHUM OCD TONKA-ET",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS227_1.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2868,
+    "ProductName": "SUNİ TOHUM OCD TRUMAN-ET SEXED",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS229_1.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2869,
+    "ProductName": "SUNİ TOHUM VIERRA SMX HOME FREE 90704",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS232_1.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2908,
+    "ProductName": "SUNİ TOHUM QUAKER HILL COLUMBUS 6V48",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS233.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2930,
+    "ProductName": "SUNİ TOHUM FEE HAVEN KUSTOM MADE 381K",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSUNTS234.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 776,
+    "ProductName": "FIV AB+FELV AG  TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA015.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 777,
+    "ProductName": "FELINE CORONA VIRUS (FCOV) AG  TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA019.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 778,
+    "ProductName": "CANIV 4 (HEARTWORM+EHRLICHIA+LEISHMANIA+ANAPLASMA)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA009.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 779,
+    "ProductName": "EHRLICHIA CANIS AB  TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA021.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 780,
+    "ProductName": "PARVO VIRUS (CPV) AG  TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA004.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 781,
+    "ProductName": "FELINE HERPES VIRUS (FHV) AG TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA018.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 785,
+    "ProductName": "FELINE PARVO (PANLEUKOPENIA) VIRUS (FPV) TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA017.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 828,
+    "ProductName": "CANINE LEISHMANIA  AG TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA005.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1212,
+    "ProductName": "FELINE CORONA VIRUS (FCOV) AB  TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA020.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1213,
+    "ProductName": "GİARDİA AG TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA006.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1214,
+    "ProductName": "TOXOPLASMA GONDİİ TG AB TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA012.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1215,
+    "ProductName": "FELİNE TOXOPLASMA GONDİİ IGG/IGM AB TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA013.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1216,
+    "ProductName": "CANINE HEARTWORM (DIROFILARIA) AG ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA011.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1217,
+    "ProductName": "CANINE DTM DERMATOPHYTE TEST MEDİUM ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA008.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1218,
+    "ProductName": "CANINE CDV-CIV-CAV1 AG (distempr+adeno2+influenza)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA007.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1219,
+    "ProductName": "CANINE IGE TEST (allergy reference test)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA010.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1220,
+    "ProductName": "FELİNE FCV TEST (calicivirus antigen test)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA016.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1221,
+    "ProductName": "FELİNE TOXOPLASMA GONDİİ TG AB TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA014.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1592,
+    "ProductName": "FELIVET FIV/AB/FELV AG 10 TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA024.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1593,
+    "ProductName": "FELIVET FCOV AG 10 TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA025.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1594,
+    "ProductName": "CANIVET PARVO VIRUS AG 10 TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA026.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1595,
+    "ProductName": "CANIVET EHR/LEISH/ANAPLASMA/HEARTWORM 10 TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA027.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1596,
+    "ProductName": "CALF-5  (ROTA/CORONA/CRYPTO/GIARDİA/E.COLİ 10 TEST",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA028.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1636,
+    "ProductName": "CANIVET LEISHMANIA CANİS AB 10LU",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA029.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1637,
+    "ProductName": "TOXOPLASMA IGG/IGM AB TEST 10LU",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA030.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1638,
+    "ProductName": "CANIVET CPV/CCV/GIARDIA AG COMBO 10LU",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADİA031_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 5,
+    "ProductName": "DALDIRMA KABI 300ml POWER( KÖPÜK )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO11.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 6,
+    "ProductName": "DALDIRMA KABI 300ml DÜZ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO12.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 11,
+    "ProductName": "İO KAĞIT HAVLU 510mt.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO17.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 12,
+    "ProductName": "KAĞIT HAVLU APARATI",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VSHECO18.jpg",
+    "Üretici Firma": "Ecolab",
+    "Firma Web Sitesi": "https://www.ecolab.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 31,
+    "ProductName": "KULAK DELME ALETİ(EARTAG APPLICATOR)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0102.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 32,
+    "ProductName": "HAUPTNER-MUTO 25ml LL (Otomatik Enjektör)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0103.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 38,
+    "ProductName": "CUTTER HEAD 2.00 mm AESCULAP(KIRPAM MAK.AĞZI)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0105.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 39,
+    "ProductName": "BUSTER CLİC COLLAR 10cm(YAKALIK KÖPEKLER İÇİN)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0106.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 40,
+    "ProductName": "BUSTER CLİC COLLAR 12.5cm(YAKALIK KÖPEKLER İÇİN)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0107.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.eu/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 41,
+    "ProductName": "BUSTER CLİC COLLAR 15cm(YAKALIK KÖPEKLER İÇİN)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0108.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 42,
+    "ProductName": "BUSTER CLİC COLLAR  7.5cm(YAKALIK KÖPEKLER İÇİN)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0109.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 45,
+    "ProductName": "İĞNE UCU 16/15 Delvo Luer Lock (AVROMEC )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0112.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 46,
+    "ProductName": "CATGUT SMI CHROME USP 1 75 m",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0113.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 67,
+    "ProductName": "KUZU EMZİĞİ(Rubber lamb teat)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0123.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 87,
+    "ProductName": "CUTTER HEAD 0.1  mm  AESCULAP(KIRPAM MAK.AĞZI)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0132.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 90,
+    "ProductName": "İĞNE UCU 16/25 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0134.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 91,
+    "ProductName": "İĞNE UCU 16/30 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0135.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 92,
+    "ProductName": "İĞNE UCU 18/25 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0136.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 93,
+    "ProductName": "İĞNE UCU 18/30 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0137.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 95,
+    "ProductName": "İĞNE UCU 18/35 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0139.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 96,
+    "ProductName": "İĞNE UCU 16/35 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0140.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 117,
+    "ProductName": "EUROPLEX LUER-LOCK ENJEKTÖR 50 ml.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0150.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 146,
+    "ProductName": "BUSTER CLİC COLLAR 20cm(YAKALIK KÖPEKLER İÇİN)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0159.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 147,
+    "ProductName": "CATGUT SMI CHROME USP 3 50m",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0160.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 148,
+    "ProductName": "SURGICRYL SMI USP 1 25m",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0161.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 180,
+    "ProductName": "AUTO.DRENCHING GUN HSW DRNNCHMATIC 30ml (SUV. POM)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0176.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 186,
+    "ProductName": "EUROPLEX LUER-LOCK ENJEKTÖR 10 ml.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0182.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 190,
+    "ProductName": "PLS.AĞIZLIK NO:10(MUZZLE PLS.forDOG BROWN No:10) ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0186.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 191,
+    "ProductName": "PLS.AĞIZLIK NO: 3(MUZZLE PLS.forDOG BROWN No:3) ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0187.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 192,
+    "ProductName": "PLS.AĞIZLIK NO: 5(MUZZLE PLS.forDOG BROWN No:5) ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0188.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 193,
+    "ProductName": "PLS.AĞIZLIK NO: 7(MUZZLE PLS.forDOG BROWN No:7) ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0189.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 201,
+    "ProductName": "GLOVES NITRIL 100'pcs SMALL (6-7)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0197.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 202,
+    "ProductName": "GLOVES NITRIL 100'pcs MEDIUM (7-8)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0198.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 203,
+    "ProductName": "GLOVES NITRIL 100'pcs LARGE (8-9)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0199.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 204,
+    "ProductName": "GLOVES NITRIL 100'pcs XLARGE (9-10)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0200.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 257,
+    "ProductName": "İNTRA BATH 2 Pls.Parts and grill of S.Steel",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAİNTRA004.jpg",
+    "Üretici Firma": "Intra",
+    "Firma Web Sitesi": "https://www.intracare.nl/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 287,
+    "ProductName": "İĞNE UCU 15/15 Delvo Luer Lock (AVROMEC )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0235.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 288,
+    "ProductName": "İĞNE UCU 14/20 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0236.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 302,
+    "ProductName": "SURGICRYL SMI USP 2/0 15m",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0240.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 310,
+    "ProductName": "SURGICRYL SMI USP 2/0 25m",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0173.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 317,
+    "ProductName": "İĞNE UCU 20/25 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0244.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.eu/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 318,
+    "ProductName": "İĞNE UCU 20/30 Delvo Luer Lock",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0245.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 350,
+    "ProductName": "SOCOREX 1ml with vial holder",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0250.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 353,
+    "ProductName": "KUZU EMZİRME KOVASI (Bucket with Teat for LAMBS)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0252.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 358,
+    "ProductName": "SUNİ TOHUMLAMA PİSTOLA KRUSE( A.I Guns )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/ASUNT005.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 374,
+    "ProductName": "KULAK KÜPESİ Büyük BAŞ YEŞİL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0209.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 375,
+    "ProductName": "KULAK KÜPESİ Büyük BAŞ MAVİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0205.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 376,
+    "ProductName": "KULAK KÜPESİ Büyük BAŞ KIRMIZI",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0204.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 377,
+    "ProductName": "KULAK KÜPESİ Büyük BAŞ BEYAZ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0203.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 378,
+    "ProductName": "KULAK KÜPESİ Büyük BAŞ PEMBE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0206.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 379,
+    "ProductName": "KULAK KÜPESİ Büyük BAŞ SARI",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0207.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 380,
+    "ProductName": "KULAK DELME ALETİ Büyük BAŞ için",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0201.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 384,
+    "ProductName": "ROUX-HENKE 5Oml LL(Otomatik Enjektör)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0008.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 391,
+    "ProductName": "KULAK KÜPESİ KÜÇÜK BAŞ kırmızı",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0211.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 392,
+    "ProductName": "KULAK KÜPESİ KÜÇÜK BAŞ mavi",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0212.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 393,
+    "ProductName": "KULAK KÜPESİ KÜÇÜK BAŞ yeşil",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0215.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 399,
+    "ProductName": "DEKANJELATÖR 12 & 220 VOLT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/ASUNT003.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 407,
+    "ProductName": "NITROGEN CONTAINER 20  LT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/SEMNT002_1.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 424,
+    "ProductName": "CAT HOLDING CAGE (KEDİ YAKALAMA KAFESİ)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0268.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 425,
+    "ProductName": "İĞNE UCU 10/10 Delvo Luer Lock ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0269.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 469,
+    "ProductName": "KULAK KÜPESİ KÜÇÜK BAŞ beyaz",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0210.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 542,
+    "ProductName": "KUZU EMZİĞİ(Rubber lamb teat for bucket)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0345.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 546,
+    "ProductName": "KULAK KÜPESİ Büyük BAŞ TURUNCU",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0208.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 602,
+    "ProductName": "TIRNAK MAKASI LARGE(Nail Clipper Doggyman 16.5cm) ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0351.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 603,
+    "ProductName": "TIRNAK MAKASI SMALL (Nail Clipper Doggyman 12.5cm)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0352.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 644,
+    "ProductName": "PLS.AĞIZLIK NO: 2(MUZZLE PLS.forDOG BROWN No:2) ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0354.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 645,
+    "ProductName": "PLS.AĞIZLIK NO: 8(MUZZLE PLS.forDOG BROWN No:8) ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0355.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 722,
+    "ProductName": "SUNİ TOHUMLAMA PİSTOLA PLASTİK KORUMA KILIFI  ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/ASUNT007.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 723,
+    "ProductName": "CIMBIZ (SUNİ TOHUM PİPET İÇİN)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/ASUNT006.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 728,
+    "ProductName": "KULAK KÜPESİ KÜÇÜK BAŞ pembe",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0213.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 768,
+    "ProductName": "SUNİ TOHUMLAMA PİPETİ 50li ( KESİKSİZ )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/ASUNTIMV007.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 770,
+    "ProductName": "SUNİ TOHUM PİPET MAKASI ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/ASUNTIMV009.jpg",
+    "Üretici Firma": "Semex",
+    "Firma Web Sitesi": "https://www.semex.com",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 771,
+    "ProductName": "SUNİ TOHUMLAMA PİSTOLA İMV (WHITE KOMBICOLOR)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/ASUNTIMV010.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 813,
+    "ProductName": "İĞNE UCU 10/13 Delvo Luer Lock ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0368.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 816,
+    "ProductName": "SOCOREX 1ml Twin model 287.2.0501",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0369.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 819,
+    "ProductName": "KULAK KÜPESİ (HOUPNER)-EAR TAG DUO mavi",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0370.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 820,
+    "ProductName": "KULAK KÜPESİ (HOUPNER)-EAR TAG DUO green",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0371.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 821,
+    "ProductName": "KULAK KÜPESİ (HOUPNER)-EAR TAG DUO pembe",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0372.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 822,
+    "ProductName": "KULAK KÜPESİ (HOUPNER)-EAR TAG DUO white",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0373.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 845,
+    "ProductName": "BOYNUZ YAKMA ALETİ(Dehorner goat-sheep)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0375.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 889,
+    "ProductName": "KULAK KÜPESİ KÜÇÜK BAŞ yavru ağzı",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AKUM0214.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 906,
+    "ProductName": "SOCOREX 1ml with feed tube",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0377.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1189,
+    "ProductName": "SYRINGE HSW ECO-MATIC 1 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0385.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1190,
+    "ProductName": "SYRINGE HSW ECO-MATIC 2 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0386.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1191,
+    "ProductName": "SYRINGE HSW ECO-MATIC 5 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0387.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1393,
+    "ProductName": "CUTTER HEAD 10.00 mm AESCULAP(KIRPMA MAK.AĞZI)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0392.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1395,
+    "ProductName": "CUTTER HEAD SNAP-ON AESCULAP SIZE 9 (2,0mm)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0393.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1396,
+    "ProductName": "CUTTER HEAD SNAP-ON AESCULAP SIZE 10 (1,5mm)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0394.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1397,
+    "ProductName": "CUTTER HEAD SNAP-ON AESCULAP SIZE 7 (3,2mm)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0395.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1398,
+    "ProductName": "AESCULAP FORTİS  (KÖPEK KIRPMA MAKİNESİ)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0396.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1732,
+    "ProductName": "COLUMBUS(TÜYLÜ MEME SONDASI/Wollen teat pins)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0001.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1734,
+    "ProductName": "5 PARMAK ELDİVEN 100'LÜK SOFT ( KRUUSE-DANİMARKA )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0002.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1736,
+    "ProductName": "EUROPLEX LUER-LOCK ENJEKTÖR 20 ml.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0016.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1739,
+    "ProductName": "AUTO.DRENCHING GUN Europlex 30ml (SUVARMA POMPASI)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0024.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1740,
+    "ProductName": "BOYNUZ KESME TELİ (Roll wire saw Bovivet-12mt. )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0007.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1741,
+    "ProductName": "BOYNUZ KESME TELİ SAPI TEK ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0142.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1742,
+    "ProductName": "BOYNUZ YAKMA ALETİ(Dehorner COWS)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0015.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1746,
+    "ProductName": "EUROPLEX LUER-LOCK ENJEKTÖR 30 ml.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0017.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1749,
+    "ProductName": "KUYRUK KESME ALETİ METAL(ELASTRATOR FORCEPS METAL)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0158.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1750,
+    "ProductName": "KUYRUK KESME LASTİĞİ 100 'LÜK (ELASTRATOR RINGS)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0023.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1751,
+    "ProductName": "PLS.MEME SONDASI 5cm 10'pcs.(Teat plugs pls.)KOYUN",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0131.jpg",
+    "Üretici Firma": "IntraCare",
+    "Firma Web Sitesi": "https://www.intracare.nl/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1752,
+    "ProductName": "PLS.MEME SONDASI 7cm 10'pcs.(Teat plug pls.) İNEK",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0012.jpg",
+    "Üretici Firma": "IntraCare",
+    "Firma Web Sitesi": "https://www.intracare.nl",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1754,
+    "ProductName": "BOYNUZ KÖRELTME KALEMİ (CAUSTIC STICK for CALVES)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0013.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1770,
+    "ProductName": "BUZAĞI EMZİRME KOVASI (CALF MILK BUCKET+RUB.TEAT)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0249.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.nl/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1771,
+    "ProductName": "BUZAĞI EMZİĞİ(Rubber calf teat)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0205.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1787,
+    "ProductName": "BURUN HALKASI ÇİVİLİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0010.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1842,
+    "ProductName": "MEME SONDASI METAL(Teat plug metal)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0011.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1843,
+    "ProductName": "İĞNE UCU 18/15 Delvo Luer Lock (AVROMEC)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0014.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.in/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2871,
+    "ProductName": "SOCOREX 5ml with feed tube",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0399_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 2985,
+    "ProductName": "KULAK KÜPESİ (HOUPNER)-EAR TAG DUO yellow",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/AVMD0400_1.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 22,
+    "ProductName": "MEGAVİT B-Comp.+ C 100ml enj.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT39.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.com/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 47,
     "ProductName": "MULTİVİT 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT08.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://www.dutchfarm.com/",
     "Ürün Açıklaması": "Vitamin eksikliklerinin tedavisi ve önlenmesi."
   },
   {
     "ProductId": 177,
     "ProductName": "FOSFOTONİK 100ml ENJ.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV017.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.in/",
     "Ürün Açıklaması": "Sığır, koyun, keçi, at, kedi, köpeklerde fosfor eksikliğinin önlenmesi ve tedavisinde kullanılır."
+  },
+  {
+    "ProductId": 239,
+    "ProductName": "E VİT-SE FORTE 100gr ORAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV005.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 252,
     "ProductName": "YELDİF 100ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN82.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com.tr",
     "Ürün Açıklaması": "Selenyum ve E vitamini içeren enjeksiyonluk süspansiyon"
+  },
+  {
+    "ProductId": 264,
+    "ProductName": "BOVİSAL PEARLS CaP 600gr",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VACHEV003.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 277,
+    "ProductName": "VİTAKOMBİN FORTE 5 LT (İTA)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VACHEM001.jpg",
+    "Üretici Firma": "chemifarma",
+    "Firma Web Sitesi": "https://www.chemifarma.it/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 314,
     "ProductName": "FOSFOTONİK  50ml ENJ.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV035.jpg",
+    "Üretici Firma": "chemifarma",
+    "Firma Web Sitesi": "https://www.chemifarma.it/",
     "Ürün Açıklaması": "Sığır, koyun, keçi, at, kedi, köpeklerde fosfor eksikliğinin önlenmesi ve tedavisinde kullanılır."
   },
   {
     "ProductId": 396,
     "ProductName": "DUFA-CALCIO 50 100 ml.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT45.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://www.dutchfarm.nl",
     "Ürün Açıklaması": "Kalsiyum, magnezyum ve fosfor içeren konsantre, güçlü iyonize infüzyon çözeltisi."
+  },
+  {
+    "ProductId": 397,
+    "ProductName": "DUFAFOSFAN 10 %+B12 enj. 100 ml.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT47.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://www.dutchfarm.com/",
+    "Ürün Açıklaması": "Kronik veya akut hastalık veya metabolik rahatsızlıklar nedeniyle zayıflamış hayvanlara yardımcı olmak için enjekte edilebilir çözelti."
+  },
+  {
+    "ProductId": 443,
+    "ProductName": "HEPATOVETO 5000 ml",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD70.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.eu/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 554,
     "ProductName": "FİTADİNON-K ENJ. 20ml.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV040.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://alivira.com.tr",
     "Ürün Açıklaması": "Fitodinon-K sığır, at, koyun, keçi, kedi ve köpeklerde varfarin veya diğer kumarinlerin neden olduğu zehirlenmeye bağlı hipoprotrombineminin tedavisinde kullanılır."
   },
   {
     "ProductId": 691,
     "ProductName": "ADEMİN 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN90.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com.tr",
     "Ürün Açıklaması": "A vitamini, D3 vitamini ve E vitamini içeren enjeksiyonluk çözelti"
+  },
+  {
+    "ProductId": 784,
+    "ProductName": "SÜPERVİT FORTE 100gr ORAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV008.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 869,
     "ProductName": "SURCALCE 250ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV011.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://alivira.in/",
     "Ürün Açıklaması": "Sığır, koyun, keçi ve atlarda hipokalsemik hastalıklara karşı kullanılır. İneklerde süt humması (dana humması, parezis puerperalis), transit tetani, doğum öncesi ahır tetanisi, sığırlarda çayır tetanisi, kısraklarda laktasyon tetanisi; kaslarda takatsizlik ve gevşeklik (parezis), hayvanın ayağa kalkmasını güçleştiren diğer hastalık halleri; kanlı ishal olayları, yaralanmalar, iç kanama olayları, sığırlarda kan işeme hastalığı (haematuria vesicalis bovis), burun kanaması ve kanama ile seyreden diğer bütün hastalıklarda kanı durdurmak amacıyla ve asıl tedavinin yanında destekleyici olarak; tüm alerjik hastalıklarda; ürtiker (kurdeşen), serum hastalığı, arpalama (fürbur), anazarka (morbus maculosus), alerjik meme ödemleri ve çeşitli gıda ekzantemlerinin tedavisinde; damar geçirgenliğinin artışına bağlı ödemler, kollaps hali, zehirli hayvan sokmaları; gıdai hazımsızlık (rumen asidozu), küflü ve bozuk yemlerden ileri gelen hastalıkların tedavisinde; kırık kemiklerin kaynamasının çabuklaştırılması, flor zehirlenmesine bağlı kemik hastalıkları; Surcalce’nin ihtiva ettiği etkin maddelerin eksikliği ve yokluğunda, kas sistemlerinde sinir impulslarının geçişinin düzenlenmesinde, damar geçirgenliğinin azaltılmasında, vücut sıvılarında dengenin sağlanmasında ve mineral metabolizması düzenleyici etkilerinden yararlanmak amaçlarıyla muhtelif organ ve sistem hastalıklarında, ilaç ve yem zehirlenmelerinde, ağır metallerle zehirlenmelerde, genel durgunluk hallerinde destekleyici olarak kullanılabilir."
+  },
+  {
+    "ProductId": 919,
+    "ProductName": "ALIVIRA VİTAMİN C 100ml ENJ.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV077.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://alivira.in/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 920,
+    "ProductName": "VITALJEK ADE 100ml ENJ.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV078.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.in",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 932,
     "ProductName": "SURCALCE 100ml enj.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV034.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://www.alivira.in/",
     "Ürün Açıklaması": "Sığır, koyun, keçi ve atlarda hipokalsemik hastalıklara karşı kullanılır. İneklerde süt humması (dana humması, parezis puerperalis), transit tetani, doğum öncesi ahır tetanisi, sığırlarda çayır tetanisi, kısraklarda laktasyon tetanisi; kaslarda takatsizlik ve gevşeklik (parezis), hayvanın ayağa kalkmasını güçleştiren diğer hastalık halleri; kanlı ishal olayları, yaralanmalar, iç kanama olayları, sığırlarda kan işeme hastalığı (haematuria vesicalis bovis), burun kanaması ve kanama ile seyreden diğer bütün hastalıklarda kanı durdurmak amacıyla ve asıl tedavinin yanında destekleyici olarak; tüm alerjik hastalıklarda; ürtiker (kurdeşen), serum hastalığı, arpalama (fürbur), anazarka (morbus maculosus), alerjik meme ödemleri ve çeşitli gıda ekzantemlerinin tedavisinde; damar geçirgenliğinin artışına bağlı ödemler, kollaps hali, zehirli hayvan sokmaları; gıdai hazımsızlık (rumen asidozu), küflü ve bozuk yemlerden ileri gelen hastalıkların tedavisinde; kırık kemiklerin kaynamasının çabuklaştırılması, flor zehirlenmesine bağlı kemik hastalıkları; Surcalce’nin ihtiva ettiği etkin maddelerin eksikliği ve yokluğunda, kas sistemlerinde sinir impulslarının geçişinin düzenlenmesinde, damar geçirgenliğinin azaltılmasında, vücut sıvılarında dengenin sağlanmasında ve mineral metabolizması düzenleyici etkilerinden yararlanmak amaçlarıyla muhtelif organ ve sistem hastalıklarında, ilaç ve yem zehirlenmelerinde, ağır metallerle zehirlenmelerde, genel durgunluk hallerinde destekleyici olarak kullanılabilir."
   },
   {
     "ProductId": 942,
     "ProductName": "DUFAMINOVIT ORAL 1 LT.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT50.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://www.dutchfarm.com/",
     "Ürün Açıklaması": "Oral sıvı vitamin ve aminoasit takviyesi."
   },
   {
     "ProductId": 959,
     "ProductName": "DUFAVİT E %15 +SEL ORAL 1 LT",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT53.jpg",
-    "Ürün Açıklaması": "Oral sıvı E vitamini ve selenyum takviyesi."
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://www.dutchfarm.nl/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1166,
     "ProductName": "CATOSAL %10 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VELAN023.jpg",
+    "Üretici Firma": "Elanco",
+    "Firma Web Sitesi": "https://www.elanco.com",
     "Ürün Açıklaması": "Fosfor ve B12 eksikliğiyle ilişkili durumların destek tedavisinde kullanılır."
+  },
+  {
+    "ProductId": 1188,
+    "ProductName": "MINERAL TS 1 LT.",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD90.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://vmdnv.be",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1300,
     "ProductName": "ADEMİN 20 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN190.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
     "Ürün Açıklaması": "A vitamini, D3 vitamini ve E vitamini içeren enjeksiyonluk çözelti"
   },
   {
     "ProductId": 1301,
     "ProductName": "ADEMİN 250 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN191.jpg",
+    "Üretici Firma": "Provet",
+    "Firma Web Sitesi": "https://www.provet.com.tr",
     "Ürün Açıklaması": "A vitamini, D3 vitamini ve E vitamini içeren enjeksiyonluk çözelti"
   },
   {
     "ProductId": 1306,
     "ProductName": "NEURON-B 100ML ENJ.",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV050.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://alivira.in/",
     "Ürün Açıklaması": "Genel sinirlilik ve aşırı duyarlılık halleri,\nNekahat dönemleri, halsizlik, iştahsızlık, beslenme yetersizlikleri,\nRuminantlarda akut rumen bozuklukları,\nÇeşitli musküler bozukluklar, sinir dokusu hastalıkları, dermatitis, hepatitis, intoksikasyonlar,\nKetozis, gebelik toksemisi durumlarında ve enfeksiyonların tedavisinde destek olarak kullanılır."
   },
   {
     "ProductId": 1339,
     "ProductName": "ADEMİN NEO 100 ML ORAL",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN110.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com.tr/",
     "Ürün Açıklaması": "A vitamini, D3 vitamini ve E vitamini içeren enjeksiyonluk çözelti"
   },
   {
     "ProductId": 1340,
     "ProductName": "BAKOSEL JEL 100ML ORAL",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN111.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmdnv.be/",
     "Ürün Açıklaması": "Bakır, Selenyum ve E vitamini içeren Sığır, Koyun ve Keçiler için tamamlayıcı yem"
   },
   {
     "ProductId": 1425,
     "ProductName": "ADEMİN NEO 50 ML ORAL",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN114.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com.tr/",
     "Ürün Açıklaması": "A vitamini, D3 vitamini ve E vitamini içeren enjeksiyonluk çözelti"
   },
   {
     "ProductId": 1477,
     "ProductName": "IRON DEXTRAN 20% PLUS 100ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VADUT56.jpg",
+    "Üretici Firma": "Dutch Farm",
+    "Firma Web Sitesi": "https://dutchfarm.nl/",
     "Ürün Açıklaması": "Domuz yavruları ve kuzularda demir eksikliklerinin tedavisi ve önlenmesi."
+  },
+  {
+    "ProductId": 1518,
+    "ProductName": "PROVET D3 ENJ 10ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV064.jpg",
+    "Üretici Firma": "Provet",
+    "Firma Web Sitesi": "https://www.provet.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1624,
     "ProductName": "CAROFERTİN ENJ ÇÖZELTİ 100ML ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV079_1.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
     "Ürün Açıklaması": "Ovaryum aktivitesinin ve üreme faaliyetlerinin desteklenmesi amacıyla ve antioksidan olarak kullanılır."
+  },
+  {
+    "ProductId": 1640,
+    "ProductName": "ACTIVE D BOLUS (1x24 )",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VNUTRI004.jpg",
+    "Üretici Firma": "Phyto",
+    "Firma Web Sitesi": "https://www.phyto.com.tr/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1654,
     "ProductName": "DIACALF EFERVESAN TB. 4TB/KUTU",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VALIV083.jpg",
+    "Üretici Firma": "Alivira",
+    "Firma Web Sitesi": "https://alivira.com.tr/",
     "Ürün Açıklaması": "buzağı ishallerinde destekleyici tedavi ürünüdür."
+  },
+  {
+    "ProductId": 1658,
+    "ProductName": "SELENE 5LT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VACHEM009.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1762,
+    "ProductName": "VİT.E-SELENYUM 1lt  ORAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD06.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmdnv.be",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1809,
     "ProductName": "BEROVİT B12 100 ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN88.jpg",
+    "Üretici Firma": "Provet",
+    "Firma Web Sitesi": "https://www.provet.com.tr/",
     "Ürün Açıklaması": "B kompleks vitaminleri içeren enjeksiyonluk çözelti"
+  },
+  {
+    "ProductId": 1813,
+    "ProductName": "OLİGOVİT PLUS 1000grORAL (W.S.P)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD23.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
+  },
+  {
+    "ProductId": 1841,
+    "ProductName": "ASCOPET 500gr ORAL",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD29.jpg",
+    "Üretici Firma": "Diğer",
+    "Firma Web Sitesi": "",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1896,
     "ProductName": "YELDİF  20ml",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN99.jpg",
+    "Üretici Firma": "Ceva",
+    "Firma Web Sitesi": "https://www.ceva.com.tr",
     "Ürün Açıklaması": "Selenyum ve E vitamini içeren enjeksiyonluk süspansiyon"
+  },
+  {
+    "ProductId": 1932,
+    "ProductName": "OLİGOVİT PLUS 100 GR ORAL (W.S.P)",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VAVMD39.jpg",
+    "Üretici Firma": "V.M.D. nv",
+    "Firma Web Sitesi": "https://www.vmd.be/",
+    "Ürün Açıklaması": "Açıklama bulunamadı"
   },
   {
     "ProductId": 1424,
     "ProductName": "KAFEDİF 20 ML ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/VGÜN113.jpg",
+    "Üretici Firma": "Dollvet",
+    "Firma Web Sitesi": "https://www.dollvet.com.tr/",
     "Ürün Açıklaması": "Merkezi sinir sistemi ve özellikle solunum merkezinin uyarıcı, kafein içeren analeptik enjeksiyonluk çözelti"
   }
 ]
