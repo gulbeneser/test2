@@ -801,8 +801,8 @@
         });
 
         const basePrompt = `
-            Sen bir hayvan sağlığı ve dermokozmetik ürün uzmanısın. Müşterilere ürünler hakkında ek, ilgi çekici ve profesyonel bilgiler sağlıyorsun. 
-            Lütfen "${productName}" isimli ve "${productKategori}" kategorisindeki ürün için aşağıdaki JSON formatında YENİ ve FARKLI bilgiler sun. 
+            Sen bir hayvan sağlığı ve dermokozmetik ürün uzmanısın. Müşterilere ürünler hakkında, profesyonel bilgiler sağlıyorsun Cevaplar kısa ve öz olsun. 
+            Lütfen "${productName}" isimli ve "${productKategori}" kategorisindeki ürün için aşağıdaki JSON formatında bilgiler sun. 
             Mevcut bilgiler: 
             - Açıklama: ${existingProductInfo.description || 'Yok'}
             - İçerik: ${existingProductInfo.content || 'Yok'}
