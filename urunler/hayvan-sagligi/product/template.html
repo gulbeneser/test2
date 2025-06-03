@@ -787,9 +787,9 @@
         
         let isGeminiEnabled = false;
         if (GEMINI_SDK_LOADED) {
-            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") {
+            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") { // Demo key
                 isGeminiEnabled = true;
-            } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
+            } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) { // Other valid key
                 isGeminiEnabled = true;
             }
         }
@@ -831,7 +831,9 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             const response = result.response;
             let jsonStr = response.text().replace(/^```(?:json)?\s*\n?(.*?)\n?\s*```$/s, '$1').trim();
             const parsedData = JSON.parse(jsonStr);
-            if (!parsedData.enhancedDescription || !Array.isArray(parsedData.keyFeatures)) throw new Error("Eksik veya hatalı biçimlendirilmiş veri alındı.");
+            // Looser check, only enhancedDescription is strictly needed for auto-fill
+            if (!parsedData.enhancedDescription) throw new Error("Yapay zekadan beklenen 'enhancedDescription' alanı alınamadı.");
+            if (!parsedData.keyFeatures) parsedData.keyFeatures = []; // Default to empty array if missing
             return parsedData; 
         } catch (error) {
             console.error("Gemini API ile gelişmiş ürün bilgisi üretilirken hata oluştu:", error);
@@ -901,12 +903,13 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         fetchBtn.addEventListener('click', async () => {
             fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> Bilgi Üretiliyor...`; placeholder.innerHTML = ''; 
+            // Use currentProduct's potentially updated description for existingInfo
             const existingInfo = { 
-                description: enhancedDetail?.["Ürün Açıklaması"] || product.Description, 
-                content: enhancedDetail?.["Ürün İçeriği"] || product.Content 
+                description: (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || currentProduct.Description, 
+                content: (enhancedDetail && enhancedDetail["Ürün İçeriği"]) || currentProduct.Content 
             };
             try {
-                const aiData = await generateEnhancedProductInfo(product.ProductName, getProductCategory(product), 'tr', existingInfo); 
+                const aiData = await generateEnhancedProductInfo(currentProduct.ProductName, getProductCategory(currentProduct), 'tr', existingInfo); 
                 placeholder.innerHTML = `<div id="aiProductInfo"><h4>Yapay Zeka Destekli Ek Bilgiler:</h4><p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>${aiData.keyFeatures && aiData.keyFeatures.length > 0 ? `<p><strong>Öne Çıkan Ek Özellikler:</strong></p><ul>${aiData.keyFeatures.map(f => `<li>${f}</li>`).join('')}</ul>` : ''}</div>`;
                 fetchBtn.style.display = 'none'; 
             } catch (error) {
@@ -1158,6 +1161,9 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
     }
     function toggleComparison(product, btnElement, enhancedDetail) {
         const productId = product.ProductId;
+        // Use currentProduct's description as it might have been updated by AI
+        const productDescriptionForCompare = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || currentProduct.Description || '-';
+
         if (isInComparison(productId)) {
             comparisonList = comparisonList.filter(item => item.ProductId !== productId);
             showTooltip('compareTooltip', btnElement, 'Karşılaştırmadan çıkarıldı!');
@@ -1174,13 +1180,13 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 ImageUrl: product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL,
                 Category: getProductCategory(product),
                 ProductCode: product.ProductCode || product.DisplayProductCode || '-',
-                Description: enhancedDetail?.["Ürün Açıklaması"] || product.Description || '-', // Use potentially AI-updated description
+                Description: productDescriptionForCompare,
                 Slug: slugify(product.ProductName),
                 Segment: currentSegment,
                 enhancedManufacturer: enhancedDetail?.["Üretici Firma"] || '-',
                 enhancedWebsite: enhancedDetail?.["Firma Web Sitesi"] || '-',
                 enhancedProspectus: enhancedDetail?.["Üretici Prospektüs"] || '-',
-                enhancedContent: enhancedDetail?.["Ürün İçeriği"] || product.Content || '-',
+                enhancedContent: (enhancedDetail && enhancedDetail["Ürün İçeriği"]) || product.Content || '-',
                 enhancedWarnings: enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"] || [],
                 enhancedUsageTips: enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"] || []
             });
@@ -1304,7 +1310,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); };
         }
     }
-    async function loadProductDetail(slugFromUrl, segmentName) { // Make async
+    async function loadProductDetail(slugFromUrl, segmentName) {
         const productDetailContainer = document.getElementById('productDetailContainer');
         productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`;
 
@@ -1323,7 +1329,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
             if (currentProduct) {
                 const enhancedDetail = enhancedData.find(detail => detail.ProductId === currentProduct.ProductId);
-                await displayProductDetail(currentProduct, enhancedDetail, segmentName); // MODIFIED: await here
+                displayProductDetail(currentProduct, enhancedDetail, segmentName); // No await here
                 document.title = `${currentProduct.ProductName} | ${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} | Serakıncı`;
                 const canonicalLink = document.querySelector("link[rel='canonical']");
                 if (canonicalLink) canonicalLink.href = window.location.href; 
@@ -1335,68 +1341,94 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             showError(`Ürün bilgileri yüklenirken bir hata oluştu: ${error.message}. JSON dosyası formatı veya yolu hatalı olabilir.`);
         }
     }
-
-    async function displayProductDetail(product, enhancedDetail, segmentName) { // MODIFIED: Make async
-        const detailContainer = document.getElementById('productDetailContainer');
+    
+    // NEW Function to fetch AI description post-render
+    async function fetchAndFillDescriptionAI(product, enhancedDetail) {
+        const initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description;
+        const placeholderTexts = [
+            "açıklama mevcut değil.",
+            "bu ürün için açıklama şu anda üretilememektedir.",
+            "otomatik açıklama üretilirken bir hata oluştu.",
+            "açıklama mevcut değil (ai modülü etkin değil)."
+        ];
         
-        // --- START: AI Auto-Description Logic ---
-        let currentDescription = enhancedDetail?.["Ürün Açıklaması"] || product.Description;
-        const isDescriptionTrulyMissing = (!currentDescription || String(currentDescription).trim() === "" || String(currentDescription).trim().toLowerCase() === "açıklama mevcut değil.");
+        const isDescriptionTrulyMissing = (!initialDescription || 
+                                         String(initialDescription).trim() === "" || 
+                                         placeholderTexts.includes(String(initialDescription).trim().toLowerCase()));
 
-        if (isDescriptionTrulyMissing) {
-            console.log(`[AI Auto-Desc] Açıklama eksik: "${product.ProductName}". Gemini ile üretilmeye çalışılacak.`);
+        if (!isDescriptionTrulyMissing) {
+            return; // Description already exists or is not a generic placeholder.
+        }
+
+        console.log(`[AI Auto-Desc Post-Render] Açıklama eksik for "${product.ProductName}". Gemini ile üretilmeye çalışılacak.`);
             
-            let isAiEnabled = false;
-            if (GEMINI_SDK_LOADED) {
-                if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") { // Demo key
-                    isAiEnabled = true;
-                } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) { // Other valid key
-                    isAiEnabled = true;
-                }
-            }
-
-            if (isAiEnabled) {
-                try {
-                    const aiData = await generateEnhancedProductInfo(
-                        product.ProductName,
-                        getProductCategory(product),
-                        'tr',
-                        { 
-                            description: 'Yok', // Signal Gemini that description is missing
-                            content: enhancedDetail?.["Ürün İçeriği"] || product.Content || 'Yok' 
-                        }
-                    );
-
-                    if (aiData && aiData.enhancedDescription && 
-                        String(aiData.enhancedDescription).trim() !== "" &&
-                        String(aiData.enhancedDescription).trim().toLowerCase() !== "ürün hakkında detaylı bilgi bulunmamaktadır") {
-                        currentDescription = aiData.enhancedDescription;
-                        console.log(`[AI Auto-Desc] Gemini'den açıklama alındı: "${product.ProductName}"`);
-                        // Update the source objects for consistency
-                        if (enhancedDetail) {
-                            enhancedDetail["Ürün Açıklaması"] = currentDescription;
-                        } else {
-                            // If enhancedDetail didn't exist, create a minimal one or update product.Description
-                            // For simplicity, we'll update product.Description if enhancedDetail is null/undefined
-                            // However, given the structure, it's better to ensure enhancedDetail exists if we modify it.
-                            // Let's assume if enhancedDetail is null, product.Description will be primary.
-                            product.Description = currentDescription; 
-                        }
-                    } else {
-                        console.warn(`[AI Auto-Desc] Gemini'den geçerli bir açıklama alınamadı veya 'bilgi yok' mesajı döndü for "${product.ProductName}".`);
-                        if (isDescriptionTrulyMissing) currentDescription = "Bu ürün için açıklama şu anda üretilememektedir.";
-                    }
-                } catch (error) {
-                    console.error(`[AI Auto-Desc] Gemini ile otomatik açıklama üretilirken hata for "${product.ProductName}":`, error);
-                    if (isDescriptionTrulyMissing) currentDescription = "Otomatik açıklama üretilirken bir hata oluştu.";
-                }
-            } else {
-                console.warn(`[AI Auto-Desc] Gemini modülü veya API anahtarı kullanılamadığı için otomatik açıklama üretilemedi for "${product.ProductName}".`);
-                if (isDescriptionTrulyMissing) currentDescription = "Açıklama mevcut değil (AI modülü etkin değil).";
+        let isAiEnabled = false;
+        if (GEMINI_SDK_LOADED) {
+            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER"))) {
+                isAiEnabled = true;
             }
         }
-        // --- END: AI Auto-Description Logic ---
 
+        if (!isAiEnabled) {
+            console.warn(`[AI Auto-Desc Post-Render] Gemini modülü veya API anahtarı kullanılamadığı için otomatik açıklama üretilemedi for "${product.ProductName}".`);
+            const shortDescEl = document.getElementById('product-short-description-content');
+            const tab1DescEl = document.getElementById('product-tab1-description-content');
+            if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.textContent = "Açıklama mevcut değil (AI kapalı).";
+            if (tab1DescEl && placeholderTexts.includes(tab1DescEl.textContent.trim().toLowerCase())) tab1DescEl.textContent = "Bu ürün için genel açıklama bulunmamaktadır (AI kapalı).";
+            return;
+        }
+
+        try {
+            const aiData = await generateEnhancedProductInfo(
+                product.ProductName,
+                getProductCategory(product),
+                'tr',
+                { 
+                    description: 'Yok', 
+                    content: (enhancedDetail && enhancedDetail["Ürün İçeriği"]) || product.Content || 'Yok' 
+                }
+            );
+
+            if (aiData && aiData.enhancedDescription && 
+                String(aiData.enhancedDescription).trim() !== "" &&
+                String(aiData.enhancedDescription).trim().toLowerCase() !== "ürün hakkında detaylı bilgi bulunmamaktadır") {
+                
+                const newDescription = aiData.enhancedDescription;
+                console.log(`[AI Auto-Desc Post-Render] Gemini'den açıklama alındı for "${product.ProductName}". Updating DOM.`);
+
+                const shortDescEl = document.getElementById('product-short-description-content');
+                if (shortDescEl) shortDescEl.innerHTML = newDescription; // Use innerHTML if AI can return simple formatting
+
+                const tab1DescEl = document.getElementById('product-tab1-description-content');
+                if (tab1DescEl) tab1DescEl.innerHTML = newDescription;
+
+                // Update in-memory data for consistency with other features
+                product.Description = newDescription; // This updates currentProduct.Description as well
+                if (enhancedDetail) {
+                    enhancedDetail["Ürün Açıklaması"] = newDescription;
+                }
+            } else {
+                console.warn(`[AI Auto-Desc Post-Render] Gemini'den geçerli bir açıklama alınamadı or 'bilgi yok' for "${product.ProductName}".`);
+                 const shortDescEl = document.getElementById('product-short-description-content');
+                 const tab1DescEl = document.getElementById('product-tab1-description-content');
+                 if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.textContent = "Yapay zeka ile açıklama üretilemedi.";
+                 if (tab1DescEl && placeholderTexts.includes(tab1DescEl.textContent.trim().toLowerCase())) tab1DescEl.textContent = "Yapay zeka ile genel açıklama üretilemedi.";
+            }
+        } catch (error) {
+            console.error(`[AI Auto-Desc Post-Render] Gemini ile otomatik açıklama üretilirken hata for "${product.ProductName}":`, error);
+            const shortDescEl = document.getElementById('product-short-description-content');
+            const tab1DescEl = document.getElementById('product-tab1-description-content');
+            if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.textContent = "Açıklama üretilirken hata oluştu.";
+            if (tab1DescEl && placeholderTexts.includes(tab1DescEl.textContent.trim().toLowerCase())) tab1DescEl.textContent = "Genel açıklama üretilirken hata oluştu.";
+        }
+    }
+
+
+    function displayProductDetail(product, enhancedDetail, segmentName) { // No longer async
+        const detailContainer = document.getElementById('productDetailContainer');
+        
+        // Use initial description, or a placeholder if totally missing
+        let initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description || "Açıklama mevcut değil.";
 
         let imageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
         const productCategory = getProductCategory(product);
@@ -1421,8 +1453,8 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         const shareText = encodeURIComponent(`Serakıncı'da ${product.ProductName} ürününü inceleyin:`);
         const shareButtonsHTML = `<div class="product-share-buttons"><span class="share-label">Paylaş:</span><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}" target="_blank" title="Facebook'ta Paylaş"><svg viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a><a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a></div>`;
         
-        // MODIFIED: Use currentDescription which might be AI-generated
-        const shortDescriptionHTML = `<div class="product-short-description"><p>${currentDescription || "Açıklama mevcut değil."}</p></div>`;
+        // MODIFIED: Add ID for short description paragraph
+        const shortDescriptionHTML = `<div class="product-short-description"><p id="product-short-description-content">${initialDescription}</p></div>`;
         
         const aiButtonHTML = `
             <div id="ai-button-container">
@@ -1436,8 +1468,8 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 <div id="aiProductInfoPlaceholder"></div>
             </div>`;
 
-        // MODIFIED: Use currentDescription for Tab 1 content
-        const tab1Content = `<h3>Genel Açıklama</h3><p>${currentDescription || "Bu ürün için genel açıklama bulunmamaktadır."}</p>`;
+        // MODIFIED: Add ID for tab1 description paragraph
+        const tab1Content = `<h3>Genel Açıklama</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
         const tab2Content = `<h3>Ürün İçeriği</h3><p>${(enhancedDetail?.["Ürün İçeriği"] || product.Content) && String(enhancedDetail?.["Ürün İçeriği"] || product.Content).trim() !== '' ? (enhancedDetail?.["Ürün İçeriği"] || product.Content) : "Bileşen listesi için ambalajdaki etiket incelenmelidir."}</p>`;
         let tab3Content = `<h3>Dikkat Edilmesi Gerekenler / Uyarılar</h3><ul>${enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel uyarı bulunmamaktadır.</li>"}</ul><h3>Kullanım İpuçları ve En İyi Uygulamalar</h3><ul>${enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel kullanım ipucu bulunmamaktadır.</li>"}</ul>`;
         let tab4Content = `<h3>Sıkça Sorulan Sorular</h3>${enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length ? `<div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>` : '<p>Bu ürün için sıkça sorulan soru bulunmamaktadır.</p>'}`;
@@ -1494,20 +1526,24 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         if (favBtn) favBtn.onclick = (e) => toggleFavorite(product, e.currentTarget);
 
         const compareBtn = document.getElementById('addToCompareBtn');
-        // Pass the potentially updated enhancedDetail (or original product if enhancedDetail was null)
         if (compareBtn) compareBtn.onclick = (e) => toggleComparison(product, e.currentTarget, enhancedDetail || product);
 
 
         setupMainImageLightbox(imageUrl);
-        // Pass the potentially updated enhancedDetail (or original product if enhancedDetail was null)
         setupAIFetchButton(product, enhancedDetail || product); 
+        
+        // MODIFIED: Call the async AI description fetcher without awaiting
+        fetchAndFillDescriptionAI(product, enhancedDetail);
     }
 
     function getRelatedProductsHTML(currentProduct, segmentName, allProducts) {
         const productCategory = getProductCategory(currentProduct);
-        const relatedProducts = allProducts
-            .filter(p => getProductCategory(p) === productCategory && slugify(p.ProductName) !== slugify(currentProduct.ProductName))
+        // Ensure allProducts is an array before filtering
+        const safeAllProducts = Array.isArray(allProducts) ? allProducts : [];
+        const relatedProducts = safeAllProducts
+            .filter(p => p && p.ProductName && getProductCategory(p) === productCategory && slugify(p.ProductName) !== slugify(currentProduct.ProductName))
             .slice(0, 10);
+
         if (relatedProducts.length === 0) return '';
         const title = productCategory !== 'Diğer' ? `"${productCategory}" Kategorisindeki Diğer Ürünler` : "İlgili Diğer Ürünler";
         let html = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${title}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
@@ -1624,12 +1660,9 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         if (allProducts.length === 0) { 
             try { 
-                // Attempt to load a default product list for search if on a non-product page
-                // or if product-specific data hasn't loaded yet.
                 allProducts = await fetchJsonData(`hayvan-sagligi.json`); 
             } catch (e) { 
                 console.warn("Header arama için varsayılan ürünler yüklenemedi (bu bir ürün sayfası olmayabilir):", e.message); 
-                // Do not block search functionality if this fails, it might be populated later
             }
         }
 
@@ -1645,7 +1678,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             }
             searchWrapper.classList.add('search-active');
             searchDebounceTimer = setTimeout(() => {
-                // Ensure allProducts has data before filtering
                 if (!allProducts || allProducts.length === 0) {
                     resultsList.innerHTML = '<li class="no-results">Ürün verisi yükleniyor...</li>';
                     resultsDropdown.style.display = 'block';
@@ -1653,16 +1685,14 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 }
 
                 const filtered = allProducts.filter(product => 
-                    (product.ProductName || '').toLocaleLowerCase('tr-TR').includes(searchTerm) ||
-                    (product.ProductCode || '').toLocaleLowerCase('tr-TR').includes(searchTerm)
+                    product && product.ProductName && product.ProductName.toLocaleLowerCase('tr-TR').includes(searchTerm) ||
+                    product && product.ProductCode && product.ProductCode.toLocaleLowerCase('tr-TR').includes(searchTerm)
                 ).slice(0, 7);
                 resultsList.innerHTML = ''; 
                 if (filtered.length > 0) {
                     filtered.forEach(product => { 
                         const listItem = document.createElement('li');
                         let rpImageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
-                        // Determine segment for search link. If product has 'segment', use it.
-                        // Otherwise, use currentSegment (if on a product page), or fallback to 'hayvan-sagligi'.
                         const productSegForLink = product.segment || currentSegment || 'hayvan-sagligi'; 
 
                         listItem.innerHTML = `
@@ -1727,7 +1757,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         }
     }
 
-    document.addEventListener('DOMContentLoaded', async function() { // MODIFIED: Make async
+    document.addEventListener('DOMContentLoaded', async function() {
         const currentYearEl = document.getElementById('currentYear');
         if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
 
@@ -1741,32 +1771,20 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         setupComparisonModal();
         setupChatbotModal(); 
         
-        // Call setupProductSearch early so `allProducts` can be populated if needed.
-        // `loadProductDetail` will later potentially overwrite `allProducts` with segment-specific data.
-        await setupProductSearch(); // MODIFIED: await if it fetches data
+        await setupProductSearch(); 
 
         const { segment: detectedSegment, slug: slugFromUrl } = getCurrentSegmentAndSlug();
         currentSegment = detectedSegment; 
 
         if (slugFromUrl && currentSegment) {
-            await loadProductDetail(slugFromUrl, currentSegment); // MODIFIED: await here
+            await loadProductDetail(slugFromUrl, currentSegment); 
         } else {
-            // Not a product detail page, `allProducts` from setupProductSearch (defaulting to hayvan-sagligi.json) should be used for header search.
-            // If on a page that is not a product page, but is part of a segment (e.g. category listing)
-            // you might want to load segment-specific products for search here.
-            // For now, this handles the product detail page and general non-product pages.
             const detailContainer = document.getElementById('productDetailContainer');
             if(detailContainer && (!slugFromUrl || !currentSegment) && window.location.pathname.includes('/product/')) { 
-                 // Only show error if it looks like a product page but params are wrong
                  showError('Ürün bilgisi alınamadı. URL yapısı hatalı veya eksik. Lütfen geçerli bir ürün URL\'si ile gelin. Örnek: `/urunler/hayvan-sagligi/product/multivit-100ml-enj/`');
             } else if (detailContainer && detailContainer.querySelector('.loading-container')) {
-                // If it's not a product page but still has the loading container, remove it or show a default message.
-                // For instance, if this HTML structure is reused for category pages without product details.
-                // For this specific case, if it's not a product page, the loading container might be an error.
-                // However, if the intent is that the page might show *something* else, this needs adjustment.
-                // Assuming for now that if it's not a product detail page, the loading container shouldn't be there or implies an issue.
-                 if (!window.location.pathname.includes('/product/')) { // If not a product page at all, clear loader
-                    detailContainer.innerHTML = ''; // Or some default content for non-product views using this container
+                 if (!window.location.pathname.includes('/product/')) { 
+                    detailContainer.innerHTML = ''; 
                  }
             }
         }
