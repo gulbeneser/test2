@@ -175,7 +175,7 @@
 
     #favoritesNavLink { 
         position: fixed;
-        bottom: calc(80px + 56px + 10px); 
+        bottom: calc(80px + 56px + 10px); /* Adjusted: Compare button removed */
         right: 20px;
         background-color: var(--card-bg);
         border: 1px solid var(--border);
@@ -224,7 +224,7 @@
         z-index: 1001;
         box-shadow: var(--shadow-md);
         transition: transform 0.3s;
-        bottom: 80px; 
+        bottom: 80px; /* Adjusted: Compare button removed */
     }
     .chatbot-floating-btn:hover { transform: scale(1.1); }
     .chatbot-floating-btn svg { width: 28px; height: 28px; }
@@ -684,7 +684,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         if (!isAiEnabled) {
             fetchBtn.disabled = true; 
-            fetchBtn.style.display = 'none'; // Hide if not usable
+            fetchBtn.style.display = 'none';
             placeholder.innerHTML = `<div id="aiProductInfo" class="error-message" style="display:none;"><p><em>Yapay zeka özelliği şu anda kullanılamıyor.</em></p></div>`; 
             return;
         }
@@ -706,8 +706,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         });
     }
 
-    // --- Other helper functions (showTooltip, getProductCategory, etc.) are assumed to be the same as your last provided version ---
-    // For brevity, they are not repeated here but should be included.
     function showTooltip(tooltipId, element, message) { const tooltip = document.getElementById(tooltipId); if (!tooltip) return; tooltip.textContent = message; const rect = element.getBoundingClientRect(); tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2)}px`; tooltip.style.top = `${rect.top + window.scrollY - tooltip.offsetHeight - 8}px`; tooltip.style.opacity = '1'; setTimeout(() => { tooltip.style.opacity = '0'; }, 2000); }
     function getProductCategory(product) { if (product && typeof product.kategori === 'string' && product.kategori.trim() !== '') return product.kategori.trim(); if (product && typeof product.cat === 'string' && product.cat.trim() !== '') return product.cat.trim(); return 'Diğer'; }
     function slugify(text) { if (text === null || typeof text === 'undefined') return 'isimsiz-urun'; const trMap = { 'ç': 'c', 'Ç': 'c', 'ğ': 'g', 'Ğ': 'g', 'ı': 'i', 'İ': 'i', 'ö': 'o', 'Ö': 'o', 'ş': 's', 'Ş': 's', 'ü': 'u', 'Ü': 'u' }; return String(text).replace(/[\u00C7\u00E7\u011F\u011E\u0131\u0130\u00D6\u00F6\u015E\u015F\u00DC\u00FC]/g, match => trMap[match] || match).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[()]/g, '-').replace(/(\d+)\s*(ml|gr|lt|kg|cc|mcg|mg|iu|doz|enj|wsp|oral|flakon|adet|ad|m|g|l|k|d)\b/gi, '$1-$2').replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-').replace(/^-+|-+$/g, ''); }
@@ -719,13 +717,13 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
     function isFavorite(productId) { return favorites.some(fav => fav.ProductId === productId); }
     function updateFavoritesCount() {  const countEl = document.getElementById('favoritesCount'); if(countEl) { countEl.textContent = favorites.length;  if (favorites.length > 0) { countEl.style.display = 'inline-flex';  } else { countEl.style.display = 'none'; } } }
     function toggleFavorite(product, btnElement) { const productId = product.ProductId; if (isFavorite(productId)) { favorites = favorites.filter(fav => fav.ProductId !== productId); showTooltip('favoriteTooltip', btnElement, 'Favorilerden çıkarıldı!'); btnElement.classList.remove('favorited'); } else { favorites.push({  ProductId: product.ProductId,  ProductName: product.ProductName,  ImageUrl: product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL, Category: getProductCategory(product), Segment: currentSegment, Slug: slugify(product.ProductName) }); showTooltip('favoriteTooltip', btnElement, 'Favorilere eklendi!'); btnElement.classList.add('favorited'); } saveFavorites(); }
-    function displayFavorites() { const listEl = document.getElementById('favoritesList'); const noFavMsg = document.getElementById('noFavoritesMessage'); listEl.innerHTML = ''; if (favorites.length === 0) { noFavMsg.style.display = 'block'; } else { noFavMsg.style.display = 'none'; favorites.forEach(fav => { const item = document.createElement('div'); item.className = 'modal-list-item'; item.innerHTML = ` <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" title="${fav.ProductName} Detayı"> <img src="${fav.ImageUrl}" alt="${fav.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"> </a> <div class="modal-list-item-info"> <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a> <span class="category">${fav.Category}</span> </div> <div class="modal-list-item-actions"> <button class="remove-fav-btn" data-product-id="${fav.ProductId}" title="Favorilerden Çıkar"> <svg viewBox="0 0 24 24" fill="#e74c3c" width="20" height="20"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> </button> </div>`; listEl.appendChild(item); }); document.querySelectorAll('.remove-fav-btn').forEach(btn => { btn.onclick = (e) => { const id = e.currentTarget.dataset.productId; favorites = favorites.filter(f => f.ProductId != id); saveFavorites(); displayFavorites();  if (currentProduct && currentProduct.ProductId == id) { const favBtn = document.getElementById('favoriteBtn'); if (favBtn) favBtn.classList.remove('favorited'); } }; }); } }
+    function displayFavorites() { const listEl = document.getElementById('favoritesList'); const noFavMsg = document.getElementById('noFavoritesMessage'); listEl.innerHTML = ''; if (favorites.length === 0) { noFavMsg.style.display = 'block'; } else { noFavMsg.style.display = 'none'; favorites.forEach(fav => { const item = document.createElement('div'); item.className = 'modal-list-item'; item.innerHTML = ` <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" title="${fav.ProductName} Detayı"> <img src="${fav.ImageUrl}" alt="${fav.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"> </a> <div class="modal-list-item-info"> <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a> <span class="category">${fav.Category}</span> </div> <div class="modal-list-item-actions"> <button class="remove-fav-btn" data-product-id="${fav.ProductId}" title="Favorilerden Çıkar"> <svg viewBox="0 0 24 24" fill="#e74c3c" width="20" height="20"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> </button> </div>`; listEl.appendChild(item); }); document.querySelectorAll('.remove-fav-btn').forEach(btn => { btn.onclick = (e) => { const id = e.currentTarget.dataset.productId; favorites = favorites.filter(f => String(f.ProductId) !== String(id)); saveFavorites(); displayFavorites();  if (currentProduct && String(currentProduct.ProductId) === String(id)) { const favBtn = document.getElementById('favoriteBtn'); if (favBtn) favBtn.classList.remove('favorited'); } }; }); } }
     function setupFavoritesModal() { const modal = document.getElementById('favoritesModal'); const link = document.getElementById('favoritesNavLink'); const closeBtn = modal.querySelector('.close-button'); if (link && modal && closeBtn) { link.onclick = (e) => { e.preventDefault(); displayFavorites(); modal.classList.add('show'); }; closeBtn.onclick = () => modal.classList.remove('show'); modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); }; } else { console.error("Favorites modal elements not found."); } }
     function setupChatbotModal() { const modal = document.getElementById('chatbotModal'); const btn = document.getElementById('chatbotFloatingBtn'); const closeBtn = modal.querySelector('.close-button'); const sendBtn = document.getElementById('chatbotSendBtn'); const input = document.getElementById('chatbotInput'); const messagesEl = document.getElementById('chatbotMessages'); let chatHistory = []; function addMessage(text, role = 'bot') { const msgDiv = document.createElement('div'); msgDiv.className = role === 'bot' ? 'bot-message' : 'user-message'; msgDiv.textContent = text; messagesEl.appendChild(msgDiv); messagesEl.scrollTop = messagesEl.scrollHeight;  chatHistory.push({ role, text }); } async function sendChat() { const question = input.value.trim(); if (!question || !currentProduct) { if(!currentProduct) addMessage("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.", 'bot'); return; } addMessage(question, 'user'); input.value = ''; input.disabled = true; sendBtn.disabled = true; const typingIndicator = document.createElement('div'); typingIndicator.className = 'bot-message typing'; messagesEl.appendChild(typingIndicator); messagesEl.scrollTop = messagesEl.scrollHeight; try { const response = await generateChatResponse(currentProduct.ProductName, getProductCategory(currentProduct), question, chatHistory); messagesEl.removeChild(typingIndicator); addMessage(response, 'bot'); } catch (error) { messagesEl.removeChild(typingIndicator); addMessage("Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.", 'bot'); } finally { input.disabled = false; sendBtn.disabled = false; input.focus(); } } if (modal && btn && closeBtn && sendBtn && input && messagesEl) { btn.onclick = () => {  let isAiEnabled = false; if (GEMINI_SDK_LOADED) { if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER"))) { isAiEnabled = true; } } if (!isAiEnabled) { alert("AI Chatbot şu an kullanılamıyor (API anahtarı eksik veya SDK yüklenmedi)."); return; } if (currentProduct) modal.classList.add('show');  else alert("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin."); }; closeBtn.onclick = () => modal.classList.remove('show'); modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); }; sendBtn.onclick = sendChat; input.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendChat(); }); } }
 
     async function loadProductDetail(slugFromUrl, segmentName) {
         const productDetailContainer = document.getElementById('productDetailContainer');
-        // Keep the initial loading message
+        // Initial loading message remains until displayProductDetail replaces it
         // productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`;
 
         try {
@@ -746,7 +744,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
             if (currentProduct) {
                 const originalEnhancedDetail = enhancedData.find(detail => detail.ProductId === currentProduct.ProductId);
-                // This function will now handle rendering and then AI fetching.
                 displayProductDetail(currentProduct, originalEnhancedDetail, segmentName); 
                 document.title = `${currentProduct.ProductName} | ${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} | Serakıncı`;
                 const canonicalLink = document.querySelector("link[rel='canonical']");
@@ -778,7 +775,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         const currentDescSource = (originalEnhancedDetail && originalEnhancedDetail["Ürün Açıklaması"]) || product.Description;
         const placeholderTexts = [
-            "açıklama mevcut değil.", "açıklama mevcut değil (aı kapalı).",
+            "açıklama mevcut değil.", "açıklama mevcut değil (ai kapalı).",
             "bu ürün için açıklama şu anda üretilememektedir.", "yapay zeka ile açıklama üretilemedi.",
             "otomatik açıklama üretilirken bir hata oluştu.", "açıklama üretilirken hata oluştu."
         ];
@@ -789,9 +786,12 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         if (!isDescriptionTrulyMissing) {
             if(currentDescSource && product.Description !== currentDescSource){
-                 product.Description = currentDescSource; // Sync with initial valid description
+                 product.Description = currentDescSource; 
                  if (originalEnhancedDetail) originalEnhancedDetail["Ürün Açıklaması"] = currentDescSource;
             }
+            // Ensure DOM reflects the valid non-placeholder description
+            if (shortDescEl && currentDescSource && shortDescEl.innerHTML !== currentDescSource) shortDescEl.innerHTML = currentDescSource;
+            if (tab1DescEl && currentDescSource && tab1DescEl.innerHTML !== currentDescSource) tab1DescEl.innerHTML = currentDescSource;
             return; 
         }
         
@@ -856,7 +856,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         const cachedAIDescription = localStorage.getItem(cacheKey);
         let initialDescription = cachedAIDescription || (originalEnhancedDetail && originalEnhancedDetail["Ürün Açıklaması"]) || product.Description || "Açıklama mevcut değil.";
 
-        product.Description = initialDescription; // Ensure product object has the most up-to-date description
+        product.Description = initialDescription;
         if (originalEnhancedDetail && initialDescription !== ((originalEnhancedDetail && originalEnhancedDetail["Ürün Açıklaması"]))) {
             originalEnhancedDetail["Ürün Açıklaması"] = initialDescription;
         }
@@ -953,7 +953,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         setupMainImageLightbox(imageUrl);
         setupAIFetchButton(product, originalEnhancedDetail); 
         
-        // Fetch AI description (if needed and not cached) after DOM is rendered
+        // Non-blocking call to fetch/update AI description
         fetchAndFillDescriptionAI_Cached(product, originalEnhancedDetail);
     }
 
@@ -969,8 +969,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
     async function setupProductSearch() {  const searchInput = document.getElementById('headerProductSearchInput'); const searchWrapper = document.querySelector('.header-search-wrapper'); const resultsDropdown = document.getElementById('headerSearchResultsDropdown'); const resultsList = document.getElementById('headerSearchResultsList'); if (!searchInput || !searchWrapper || !resultsDropdown || !resultsList) { console.error("Header search elements not found."); return; } if (allProducts.length === 0) {  try {  allProducts = await fetchJsonData(`hayvan-sagligi.json`);  } catch (e) {  console.warn("Header arama için varsayılan ürünler yüklenemedi:", e.message);  } } searchInput.addEventListener('input', function(e) { const searchTerm = e.target.value.trim().toLocaleLowerCase('tr-TR'); clearTimeout(searchDebounceTimer); if (searchTerm.length < 2) {  resultsDropdown.style.display = 'none';  resultsList.innerHTML = '';  searchWrapper.classList.remove('search-active'); return;  } searchWrapper.classList.add('search-active'); searchDebounceTimer = setTimeout(() => { if (!allProducts || allProducts.length === 0) { resultsList.innerHTML = '<li class="no-results">Ürün verisi yükleniyor...</li>'; resultsDropdown.style.display = 'block'; return; } const filtered = allProducts.filter(product =>  product && product.ProductName && product.ProductName.toLocaleLowerCase('tr-TR').includes(searchTerm) || product && product.ProductCode && product.ProductCode.toLocaleLowerCase('tr-TR').includes(searchTerm) ).slice(0, 7); resultsList.innerHTML = '';  if (filtered.length > 0) { filtered.forEach(product => {  const listItem = document.createElement('li'); let rpImageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL; const productSegForLink = product.segment || currentSegment || 'hayvan-sagligi';  listItem.innerHTML = ` <a href="/urunler/${productSegForLink}/product/${slugify(product.ProductName)}/"> <img src="${rpImageUrl}" alt="${product.ProductName}" class="suggestion-image" onerror="this.src='${FALLBACK_IMAGE_URL}'"> <span class="suggestion-name">${product.ProductName}</span> ${getProductCategory(product) !== 'Diğer' ? `<span class="suggestion-category">${getProductCategory(product)}</span>` : ''} </a>`; resultsList.appendChild(listItem); }); } else { resultsList.innerHTML = '<li class="no-results">Sonuç bulunamadı.</li>'; } resultsDropdown.style.display = 'block'; }, 300);  }); searchInput.addEventListener('focus', function() { searchWrapper.classList.add('search-active'); if (searchInput.value.length >= 2 && resultsList.children.length > 0 && resultsList.firstChild.className !== 'no-results') { resultsDropdown.style.display = 'block'; } }); searchInput.addEventListener('blur', function() { setTimeout(() => { if (!G_isMouseOverDropdown) { resultsDropdown.style.display = 'none'; if (searchInput.value.length < 2) {  searchWrapper.classList.remove('search-active'); } } }, 150); }); resultsDropdown.addEventListener('mouseenter', () => { G_isMouseOverDropdown = true; }); resultsDropdown.addEventListener('mouseleave', () => { G_isMouseOverDropdown = false; }); document.addEventListener('click', function(event) { if (searchWrapper && !searchWrapper.contains(event.target) && resultsDropdown && !resultsDropdown.contains(event.target)) { resultsDropdown.style.display = 'none'; if (searchInput.value.length < 2) {  searchWrapper.classList.remove('search-active'); } } }); }
     function setupMobileMenu() {  const menuToggle = document.querySelector('.mobile-menu-toggle'); const nav = document.querySelector('.new-site-navigation'); const siteHeader = document.getElementById('newSiteHeader'); if (menuToggle && nav && siteHeader) { menuToggle.addEventListener('click', () => { const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true'; menuToggle.setAttribute('aria-expanded', !isExpanded); nav.classList.toggle('is-active'); if (nav.classList.contains('is-active')) { nav.style.top = `${siteHeader.offsetHeight}px`;  } }); } }
 
-
-    document.addEventListener('DOMContentLoaded', () => { // Removed async from here
+    document.addEventListener('DOMContentLoaded', () => {
         const currentYearEl = document.getElementById('currentYear');
         if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
 
@@ -982,24 +981,21 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         setupFavoritesModal();
         setupChatbotModal(); 
         
-        // Call setupProductSearch (it's async but we don't await its completion here
-        // for faster initial DOMContentLoaded processing)
-        setupProductSearch(); 
+        setupProductSearch(); // Call non-awaited for faster perceived load
 
         const { segment: detectedSegment, slug: slugFromUrl } = getCurrentSegmentAndSlug();
         currentSegment = detectedSegment; 
 
         if (slugFromUrl && currentSegment) {
-            // Call loadProductDetail without await to prevent blocking DOMContentLoaded
-            loadProductDetail(slugFromUrl, currentSegment); 
+            loadProductDetail(slugFromUrl, currentSegment); // Not awaited
         } else {
             const detailContainer = document.getElementById('productDetailContainer');
-            // If not a product page, but still has loading container, remove it or show error
             if(detailContainer && detailContainer.querySelector('.loading-container')) {
                 if (window.location.pathname.includes('/product/')) { 
                     showError('Ürün bilgisi alınamadı. URL yapısı hatalı veya eksik.');
                 } else { 
-                    detailContainer.innerHTML = ''; // Clear loader if it's not a product page context
+                    // If it's a generic page that might have this loader, but not a product detail page, clear it.
+                    detailContainer.innerHTML = ''; 
                 }
             }
         }
