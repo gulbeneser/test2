@@ -806,19 +806,28 @@
             Mevcut bilgiler: 
             - Açıklama: ${existingProductInfo.description || 'Yok'}
             - İçerik: ${existingProductInfo.content || 'Yok'}
-            
-            Çıktı JSON nesnesi olmalı ve SADECE aşağıdaki anahtarları içermelidir ve asla bilmediğin konuda cevap verme. Asla emin değilsen cevap verme. ekleme yapma. Mümkünse ürün prospektüsünden ya da resmi websitesindeki verinin birebir aynısı olsun:
-             
-    "Ne işe yarar?": "1 cümlelik sade açıklama.",
-    "İçeriği (Composition)": "1 cümlede etken madde ve oran.",
-    "Kullanım Alanları ve kullanım hayvanları (Indications)": "Hangi hayvanlarda, hangi durumlarda kullanıldığı. En fazla 2 cümle.",
-    "Kontrendikasyonlar (Contraindications)": "Kısa madde listesi veya 1–2 cümle.",
-    "Dozaj ve Uygulama (Dosage and Administration)": "Doz bilgisi sade, sadece uygulanış şekliyle beraber.",
-    "Yan Etkiler (Side Effects)": "1–2 cümleyle özet yan etkiler.",
-    "Uyarılar ve Önlemler (Precautions and Warnings)": "Maksimum 2 cümle, önemli uyarılar.",
-    "İlaç Kalıntı Süresi / İnsan Tüketimi Uyarısı (Withdrawal Times)": "1 cümle. İnsan tüketimi için kullanılmamalı gibi net ifade.",
-    "Saklama Koşulları (Storage Conditions)": "1 cümleyle saklama bilgisi.",
-    "Ambalaj (Packing)": "1 cümle. Şişe hacmi belirtilsin."
+          Lütfen aşağıdaki formatta bir **JSON çıktısı** oluştur:
+
+Çıktı yalnızca aşağıdaki **10 anahtar kelimeyi** içermelidir ve **bu anahtarlar dışında hiçbir şey yazma.**  
+Her değer sadece **kısa, net ve prospektüse uygun bilgi** içersin.  
+**Bilmediğin bir bilgi varsa boş bırak.** Uydurma, yorumlama, abartma veya spekülasyon yapma.
+
+Format:
+{
+  "Ne işe yarar?": "1 cümlelik sade açıklama.",
+  "İçeriği (Composition)": "1 cümlede etken madde ve oran.",
+  "Kullanım Alanları ve kullanım hayvanları (Indications)": "Hangi hayvanlarda, hangi durumlarda kullanıldığı. En fazla 2 cümle.",
+  "Kontrendikasyonlar (Contraindications)": "Kısa madde listesi veya 1–2 cümle.",
+  "Dozaj ve Uygulama (Dosage and Administration)": "Doz bilgisi sade, sadece uygulanış şekliyle beraber.",
+  "Yan Etkiler (Side Effects)": "1–2 cümleyle özet yan etkiler.",
+  "Uyarılar ve Önlemler (Precautions and Warnings)": "Maksimum 2 cümle, önemli uyarılar.",
+  "İlaç Kalıntı Süresi / İnsan Tüketimi Uyarısı (Withdrawal Times)": "1 cümle. İnsan tüketimi için kullanılmamalı gibi net ifade.",
+  "Saklama Koşulları (Storage Conditions)": "1 cümleyle saklama bilgisi.",
+  "Ambalaj (Packing)": "1 cümle. Şişe hacmi belirtilsin."
+}
+
+Not: **Prospektüs bilgisi veya resmi web sitesinden alınmamışsa cevap verme.**
+
     
             Örnek JSON:
             {
