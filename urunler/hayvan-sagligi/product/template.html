@@ -808,11 +808,18 @@
             - İçerik: ${existingProductInfo.content || 'Yok'}
             
             Çıktı JSON nesnesi olmalı ve SADECE aşağıdaki anahtarları içermelidir:
-            1.  "enhancedDescription": Ürünün hakkında veteriner bilgi odaklı, kendi web sitelerinden çekilmiş ve propektüs bazlı olan özelliklerini vurgulayan, profesyonel bir ek açıklaması. Mevcut açıklamayla ÇAKIŞMAMALI.
-            2.  "keyFeatures": Ne işe yarar?, İçeriği (Composition) , Kullanım Alanları ve kulanım hayvanları (Indications), Kontrendikasyonlar (Contraindications), Dozaj ve Uygulama (Dosage and Administration),Yan Etkiler (Side Effects), Uyarılar ve Önlemler (Precautions and Warnings), İlaç Kalıntı Süresi / İnsan Tüketimi Uyarısı (Withdrawal Times), Saklama Koşulları (Storage Conditions)
-
-Ambalaj (Packing).
-
+             
+    "Ne işe yarar?": "1 cümlelik sade açıklama.",
+    "İçeriği (Composition)": "1 cümlede etken madde ve oran.",
+    "Kullanım Alanları ve kullanım hayvanları (Indications)": "Hangi hayvanlarda, hangi durumlarda kullanıldığı. En fazla 2 cümle.",
+    "Kontrendikasyonlar (Contraindications)": "Kısa madde listesi veya 1–2 cümle.",
+    "Dozaj ve Uygulama (Dosage and Administration)": "Doz bilgisi sade, sadece uygulanış şekliyle beraber.",
+    "Yan Etkiler (Side Effects)": "1–2 cümleyle özet yan etkiler.",
+    "Uyarılar ve Önlemler (Precautions and Warnings)": "Maksimum 2 cümle, önemli uyarılar.",
+    "İlaç Kalıntı Süresi / İnsan Tüketimi Uyarısı (Withdrawal Times)": "1 cümle. İnsan tüketimi için kullanılmamalı gibi net ifade.",
+    "Saklama Koşulları (Storage Conditions)": "1 cümleyle saklama bilgisi.",
+    "Ambalaj (Packing)": "1 cümle. Şişe hacmi belirtilsin."
+    
             Örnek JSON:
             {
               "enhancedDescription": "Bu ürün...",
