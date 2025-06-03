@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr">More actions
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ürün Detayı Yükleniyor... | Serakıncı</title>
   <meta name="description" content="Serakıncı'da hayvan sağlığı ve dermokozmetik ürünleri. Ürünler Serakıncı güvencesiyle sizinle buluşuyor.">
   <link rel="canonical" href="https://www.serakinci.com/"> 
-  
+
   <link rel="icon" href="/urunler/assets/logos/logobrowser/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="16x16" href="/urunler/assets/logos/logobrowser/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/urunler/assets/logos/logobrowser/favicon-32x32.png">
@@ -86,7 +86,7 @@
     .new-nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -2px; left: 0; background-color: var(--header-nav-link-hover-color); transition: width 0.3s ease; }
     .new-nav-link:hover::after { width: 100%; }
     .new-header-actions { display: flex; align-items: center; gap: 1rem; flex-shrink: 0;}
-    
+
     .header-search-wrapper {
         position: relative;
         min-width: 180px; 
@@ -153,12 +153,12 @@
     #headerSearchResultsDropdown .suggestion-name { font-weight: 500; font-size:0.85rem; flex-grow: 1; white-space: normal; line-height: 1.3; }
     #headerSearchResultsDropdown .suggestion-category { font-size: 0.75rem; color: var(--text-light); margin-left: 0.5rem; white-space: nowrap; flex-shrink: 0;}
     #headerSearchResultsDropdown .no-results { padding: 0.75rem 1rem; text-align: center; color: var(--text-medium); font-size:0.85rem; }
-    
+
     .b2b-login-button { background-color: var(--header-b2b-button-bg); color: var(--header-b2b-button-text); padding: 0.5rem 1.2rem; border-radius: 20px; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: background-color 0.2s ease; white-space: nowrap; }
     .b2b-login-button:hover { background-color: var(--header-b2b-button-hover-bg); }
     .mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
     .mobile-menu-toggle svg { width: 24px; height: 24px; stroke: var(--header-text-color); }
-    
+
     .favorites-count { 
         background-color: var(--accent);
         color: white;
@@ -240,7 +240,7 @@
     .compare-floating-btn:hover, .chatbot-floating-btn:hover { transform: scale(1.1); }
     .compare-floating-btn svg, .chatbot-floating-btn svg { width: 28px; height: 28px; }
     .compare-count { position: absolute; top: -5px; right: -5px; background-color: #e74c3c; color: white; border-radius: 50%; padding: 3px 7px; font-size: 0.75em; font-weight: bold; }
-    
+
 
     @media(max-width: 992px) { 
         .new-site-navigation { 
@@ -262,7 +262,7 @@
         .mobile-menu-toggle { display: block; } 
         .header-search-wrapper { display:none; } 
     }
-    
+
 
     .product-detail-page { padding-top: 1px; }
     .breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; font-size: 0.875rem; margin-bottom: 2rem; padding: 0.5rem 0; color: var(--text-medium); }
@@ -378,7 +378,7 @@
     .modal-list-item-actions button { background: none; border: none; cursor: pointer; padding: 5px; color: var(--text-light); transition: color 0.2s; }
     .modal-list-item-actions button:hover { color: #e74c3c; }
     .no-favorites-message { text-align: center; color: var(--text-medium); padding: 20px 0; }
-    
+
     .comparison-grid { 
         display: grid; 
         gap: 1px; 
@@ -501,7 +501,7 @@
     .comparison-cell-long-text {
         white-space: pre-wrap; 
     }
-    
+
     .chatbot-modal .modal-content { max-width: 500px; padding: 0; overflow: hidden;}
     .chatbot-modal h3 { background-color: var(--accent); color: white; padding: 15px 20px; margin: 0; font-size: 1.3rem;}
     .chatbot-messages { height: 350px; overflow-y: auto; padding: 20px; background-color: #f9f9f9; }
@@ -594,7 +594,7 @@
             background-color: var(--text-dark);
             color: white;
         }
-        
+
         /* Mobile Floating Buttons Visibility */
         .chatbot-floating-btn {
             display: flex !important;
@@ -773,7 +773,7 @@
     const API_BASE_PATH = '/urunler/api/'; 
     const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
     const MAX_COMPARE_ITEMS = 4;
-    
+
     let allProducts = []; 
     let currentSegment = ''; 
     let currentProduct = null;
@@ -806,25 +806,15 @@
             Mevcut bilgiler: 
             - Açıklama: ${existingProductInfo.description || 'Yok'}
             - İçerik: ${existingProductInfo.content || 'Yok'}
-               Çıktı JSON nesnesi olmalı ve SADECE aşağıdaki anahtarları içermelidir:Add commentMore actions
+            
+            Çıktı JSON nesnesi olmalı ve SADECE aşağıdaki anahtarları içermelidir:
+            1.  "enhancedDescription": Ürünün pazarlama odaklı, faydalarını vurgulayan, 6-8 cümlelik profesyonel bir ek açıklaması. Mevcut açıklamayla ÇAKIŞMAMALI.
+            2.  "keyFeatures": Ürünün 5-7 adet temel ve pratik yeni özelliği veya faydası (örn: "Hızlı emilim sağlar", "Cilt bariyerini güçlendirir", "Kullanımı kolaydır"). Mevcut özelliklerden FARKLI OLMALI.
             1.  "enhancedDescription": Ürünün hakkında veteriner bilgi odaklı, kendi web sitelerinden çekilmiş ve propektüs bazlı olan özelliklerini vurgulayan, profesyonel bir ek açıklaması. Mevcut açıklamayla ÇAKIŞMAMALI.
             2.  "keyFeatures": Ne işe yarar?, İçeriği (Composition) , Kullanım Alanları ve kulanım hayvanları (Indications), Kontrendikasyonlar (Contraindications), Dozaj ve Uygulama (Dosage and Administration),Yan Etkiler (Side Effects), Uyarılar ve Önlemler (Precautions and Warnings), İlaç Kalıntı Süresi / İnsan Tüketimi Uyarısı (Withdrawal Times), Saklama Koşulları (Storage Conditions)
 
 Ambalaj (Packing).
 
-             
-    "Ne işe yarar?": "1 cümlelik sade açıklama.",
-    "İçeriği (Composition)": "1 cümlede etken madde ve oran.",
-    "Kullanım Alanları ve kullanım hayvanları (Indications)": "Hangi hayvanlarda, hangi durumlarda kullanıldığı. En fazla 2 cümle.",
-    "Kontrendikasyonlar (Contraindications)": "Kısa madde listesi veya 1–2 cümle.",
-    "Dozaj ve Uygulama (Dosage and Administration)": "Doz bilgisi sade, sadece uygulanış şekliyle beraber.",
-    "Yan Etkiler (Side Effects)": "1–2 cümleyle özet yan etkiler.",
-    "Uyarılar ve Önlemler (Precautions and Warnings)": "Maksimum 2 cümle, önemli uyarılar.",
-    "İlaç Kalıntı Süresi / İnsan Tüketimi Uyarısı (Withdrawal Times)": "1 cümle. İnsan tüketimi için kullanılmamalı gibi net ifade.",
-    "Saklama Koşulları (Storage Conditions)": "1 cümleyle saklama bilgisi.",
-    "Ambalaj (Packing)": "1 cümle. Şişe hacmi belirtilsin."
-    
-    
             Örnek JSON:
             {
               "enhancedDescription": "Bu ürün...",
@@ -832,7 +822,7 @@ Ambalaj (Packing).
             }
             Cevabını Türkçe olarak oluştur.
         `;
-        
+
         try {
             const result = await model.generateContent(basePrompt);
             const response = result.response;
@@ -845,7 +835,7 @@ Ambalaj (Packing).
             throw new Error(`AI bilgi üretilemedi: ${error.message || 'Bilinmeyen Hata'}`);
         }
     }
-    
+
     async function generateChatResponse(productName, category, question, chatHistory = []) {
         if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
         if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) { // Original check
@@ -885,7 +875,7 @@ Ambalaj (Packing).
         const fetchBtn = document.getElementById('fetchAiInfoBtn');
         const placeholder = document.getElementById('aiProductInfoPlaceholder');
         if (!fetchBtn || !placeholder) return;
-        
+
         let isAiDisabled = false;
         if (!GEMINI_SDK_LOADED) isAiDisabled = true;
         if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) {
@@ -936,19 +926,19 @@ Ambalaj (Packing).
             messagesEl.scrollTop = messagesEl.scrollHeight; 
             chatHistory.push({ role, text });
         }
-        
+
         async function sendChat() {
             const question = input.value.trim();
             if (!question || !currentProduct) {
                 if(!currentProduct) addMessage("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.", 'bot');
                 return;
             }
-            
+
             addMessage(question, 'user');
             input.value = '';
             input.disabled = true;
             sendBtn.disabled = true;
-            
+
             const typingIndicator = document.createElement('div');
             typingIndicator.className = 'bot-message typing';
             messagesEl.appendChild(typingIndicator);
@@ -1028,7 +1018,7 @@ Ambalaj (Packing).
         }
         return { segment: null, slug: null };
     }
-    
+
     async function fetchJsonData(fileName) {
         try {
             const response = await fetch(`${API_BASE_PATH}${fileName}`);
@@ -1057,7 +1047,7 @@ Ambalaj (Packing).
             </div></div>`;
         }
     }
-    
+
     function loadFavorites() { favorites = JSON.parse(localStorage.getItem('serakinciFavorites')) || []; updateFavoritesCount(); }
     function saveFavorites() { localStorage.setItem('serakinciFavorites', JSON.stringify(favorites)); updateFavoritesCount(); }
     function isFavorite(productId) { return favorites.some(fav => fav.ProductId === productId); }
@@ -1136,7 +1126,7 @@ Ambalaj (Packing).
         const modal = document.getElementById('favoritesModal');
         const link = document.getElementById('favoritesNavLink');
         const closeBtn = modal.querySelector('.close-button');
-        
+
         if (link && modal && closeBtn) {
             link.onclick = (e) => { e.preventDefault(); displayFavorites(); modal.classList.add('show'); };
             closeBtn.onclick = () => modal.classList.remove('show');
@@ -1292,7 +1282,7 @@ Ambalaj (Packing).
                 }
             };
         });
-        
+
         gridEl.style.gridTemplateColumns = `1fr repeat(${comparisonList.length}, minmax(180px, 1fr))`;
     }
 
@@ -1316,7 +1306,7 @@ Ambalaj (Packing).
               fetchJsonData(productsListFile), 
               fetchJsonData('hayvan-sagligi-enhanced.json') 
             ]);
-            
+
             allProducts = products; 
 
             if (!Array.isArray(allProducts)) { showError('Ürün listesi yüklenemedi. Beklenmeyen format.'); return; }
@@ -1347,7 +1337,7 @@ Ambalaj (Packing).
 
         const imageHTML = `<div class="product-main-image-wrapper" id="mainProductImageWrapper"><img src="${imageUrl}" alt="${product.ProductName}" class="product-main-image-modern ${!imageUrl || imageUrl === FALLBACK_IMAGE_URL ? 'fallback-image' : ''}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';" loading="lazy"></div>`;
         const favoriteButtonHTML = `<button class="favorite-button ${isFav ? 'favorited' : ''}" id="favoriteBtn" title="Favorilere Ekle/Çıkar"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>`;
-        
+
         let metaInfoHTML = '<div class="product-meta-enhanced">';
         if (productCategory && productCategory !== 'Diğer') metaInfoHTML += `<span class="meta-item"><strong>Kategori:</strong> ${productCategory}</span>`;
         const productCode = product.ProductCode || product.DisplayProductCode;
@@ -1379,7 +1369,7 @@ Ambalaj (Packing).
         const tab2Content = `<h3>Ürün İçeriği</h3><p>${enhancedDetail?.["Ürün İçeriği"] && enhancedDetail["Ürün İçeriği"].trim() !== '' ? enhancedDetail["Ürün İçeriği"] : "Bileşen listesi için ambalajdaki etiket incelenmelidir."}</p>`;
         let tab3Content = `<h3>Dikkat Edilmesi Gerekenler / Uyarılar</h3><ul>${enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel uyarı bulunmamaktadır.</li>"}</ul><h3>Kullanım İpuçları ve En İyi Uygulamalar</h3><ul>${enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel kullanım ipucu bulunmamaktadır.</li>"}</ul>`;
         let tab4Content = `<h3>Sıkça Sorulan Sorular</h3>${enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length ? `<div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>` : '<p>Bu ürün için sıkça sorulan soru bulunmamaktadır.</p>'}`;
-        
+
         const relatedProductsHTML = getRelatedProductsHTML(product, segmentName, allProducts);
         const disclaimerHTML = getDisclaimerHTML();
         const contactHTML = getContactHTML();
@@ -1426,14 +1416,14 @@ Ambalaj (Packing).
             ${contactHTML}
             ${backButtonHTML}
         `;
-        
+
         setupTabEvents(); 
         const favBtn = document.getElementById('favoriteBtn');
         if (favBtn) favBtn.onclick = (e) => toggleFavorite(product, e.currentTarget);
-        
+
         const compareBtn = document.getElementById('addToCompareBtn');
         if (compareBtn) compareBtn.onclick = (e) => toggleComparison(product, e.currentTarget, enhancedDetail);
-        
+
         setupMainImageLightbox(imageUrl);
         setupAIFetchButton(product, enhancedDetail); 
     }
@@ -1488,7 +1478,7 @@ Ambalaj (Packing).
             </div>
         </div>`;
     }
-    
+
     function setupTabEvents() {
         const tabLinks = document.querySelectorAll('.tab-link-modern');
         const tabPanes = document.querySelectorAll('.tab-pane-modern');
@@ -1545,7 +1535,7 @@ Ambalaj (Packing).
         const container = document.getElementById(containerId);
         if (container) container.scrollLeft += direction * (container.clientWidth * 0.8);
     }
-    
+
     async function setupProductSearch() { 
         const searchInput = document.getElementById('headerProductSearchInput');
         const searchWrapper = document.querySelector('.header-search-wrapper');
@@ -1556,7 +1546,7 @@ Ambalaj (Packing).
             console.error("Header search elements not found.");
             return;
         }
-        
+
         if (allProducts.length === 0) { 
             try { 
                 allProducts = await fetchJsonData(`hayvan-sagligi.json`); 
@@ -1619,7 +1609,7 @@ Ambalaj (Packing).
                 }
             }, 150);
         });
-        
+
         resultsDropdown.addEventListener('mouseenter', () => { G_isMouseOverDropdown = true; });
         resultsDropdown.addEventListener('mouseleave', () => { G_isMouseOverDropdown = false; });
 
@@ -1652,7 +1642,7 @@ Ambalaj (Packing).
     document.addEventListener('DOMContentLoaded', function() {
         const currentYearEl = document.getElementById('currentYear');
         if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
-        
+
         loadFavorites();
         loadComparison(); // This calls updateCompareCount inside it
 
