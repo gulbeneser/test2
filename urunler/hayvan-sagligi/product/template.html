@@ -424,20 +424,19 @@
         .contact-grid { grid-template-columns: 1fr; } 
         .product-meta-enhanced { flex-direction: column; align-items: flex-start; gap: 0.5rem; } 
         
-        /* Mobile Floating Buttons Visibility (Compare button related styles removed) */
         .chatbot-floating-btn {
             display: flex !important;
             opacity: 1 !important;
             visibility: visible !important;
             right: 20px; 
-            bottom: 80px; /* Adjusted as compare btn is removed */
+            bottom: 80px; 
         }
         #favoritesNavLink {
             display: inline-flex !important; 
             opacity: 1 !important;
             visibility: visible !important;
             right: 20px; 
-            bottom: calc(80px + 56px + 10px); /* Adjusted */
+            bottom: calc(80px + 56px + 10px); 
         }
         .scroll-to-top { 
             right: 20px;
@@ -721,11 +720,13 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
     function displayFavorites() { const listEl = document.getElementById('favoritesList'); const noFavMsg = document.getElementById('noFavoritesMessage'); listEl.innerHTML = ''; if (favorites.length === 0) { noFavMsg.style.display = 'block'; } else { noFavMsg.style.display = 'none'; favorites.forEach(fav => { const item = document.createElement('div'); item.className = 'modal-list-item'; item.innerHTML = ` <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" title="${fav.ProductName} Detayı"> <img src="${fav.ImageUrl}" alt="${fav.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"> </a> <div class="modal-list-item-info"> <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a> <span class="category">${fav.Category}</span> </div> <div class="modal-list-item-actions"> <button class="remove-fav-btn" data-product-id="${fav.ProductId}" title="Favorilerden Çıkar"> <svg viewBox="0 0 24 24" fill="#e74c3c" width="20" height="20"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> </button> </div>`; listEl.appendChild(item); }); document.querySelectorAll('.remove-fav-btn').forEach(btn => { btn.onclick = (e) => { const id = e.currentTarget.dataset.productId; favorites = favorites.filter(f => String(f.ProductId) !== String(id)); saveFavorites(); displayFavorites();  if (currentProduct && String(currentProduct.ProductId) === String(id)) { const favBtn = document.getElementById('favoriteBtn'); if (favBtn) favBtn.classList.remove('favorited'); } }; }); } }
     function setupFavoritesModal() { const modal = document.getElementById('favoritesModal'); const link = document.getElementById('favoritesNavLink'); const closeBtn = modal.querySelector('.close-button'); if (link && modal && closeBtn) { link.onclick = (e) => { e.preventDefault(); displayFavorites(); modal.classList.add('show'); }; closeBtn.onclick = () => modal.classList.remove('show'); modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); }; } else { console.error("Favorites modal elements not found."); } }
     function setupChatbotModal() { const modal = document.getElementById('chatbotModal'); const btn = document.getElementById('chatbotFloatingBtn'); const closeBtn = modal.querySelector('.close-button'); const sendBtn = document.getElementById('chatbotSendBtn'); const input = document.getElementById('chatbotInput'); const messagesEl = document.getElementById('chatbotMessages'); let chatHistory = []; function addMessage(text, role = 'bot') { const msgDiv = document.createElement('div'); msgDiv.className = role === 'bot' ? 'bot-message' : 'user-message'; msgDiv.textContent = text; messagesEl.appendChild(msgDiv); messagesEl.scrollTop = messagesEl.scrollHeight;  chatHistory.push({ role, text }); } async function sendChat() { const question = input.value.trim(); if (!question || !currentProduct) { if(!currentProduct) addMessage("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.", 'bot'); return; } addMessage(question, 'user'); input.value = ''; input.disabled = true; sendBtn.disabled = true; const typingIndicator = document.createElement('div'); typingIndicator.className = 'bot-message typing'; messagesEl.appendChild(typingIndicator); messagesEl.scrollTop = messagesEl.scrollHeight; try { const response = await generateChatResponse(currentProduct.ProductName, getProductCategory(currentProduct), question, chatHistory); messagesEl.removeChild(typingIndicator); addMessage(response, 'bot'); } catch (error) { messagesEl.removeChild(typingIndicator); addMessage("Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.", 'bot'); } finally { input.disabled = false; sendBtn.disabled = false; input.focus(); } } if (modal && btn && closeBtn && sendBtn && input && messagesEl) { btn.onclick = () => {  let isAiEnabled = false; if (GEMINI_SDK_LOADED) { if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER"))) { isAiEnabled = true; } } if (!isAiEnabled) { alert("AI Chatbot şu an kullanılamıyor (API anahtarı eksik veya SDK yüklenmedi)."); return; } if (currentProduct) modal.classList.add('show');  else alert("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin."); }; closeBtn.onclick = () => modal.classList.remove('show'); modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); }; sendBtn.onclick = sendChat; input.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendChat(); }); } }
-    // Karşılaştırma fonksiyonları ve setupComparisonModal kaldırıldı.
-
+    
     async function loadProductDetail(slugFromUrl, segmentName) {
         const productDetailContainer = document.getElementById('productDetailContainer');
-        // productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`; // Bu satır kaldırıldı, yükleme mesajı DOM'da zaten var.
+        // Ensure loading message is displayed if not already (e.g., if called directly after DOMContentLoaded)
+        if (!productDetailContainer.querySelector('.loading-container')) {
+             productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`;
+        }
 
         try {
             const productsListFile = `${segmentName}.json`; 
@@ -893,7 +894,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg>
                     AI ile Bilgi Al
                 </button>
-                <!-- Karşılaştır butonu kaldırıldı -->
                 <div id="aiProductInfoPlaceholder"></div>
             </div>`;
 
@@ -956,7 +956,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         setupMainImageLightbox(imageUrl);
         setupAIFetchButton(product, originalEnhancedDetail); 
         
-        // Non-blocking call to fetch/update AI description from cache or API
         fetchAndFillDescriptionAI_Cached(product, originalEnhancedDetail);
     }
 
@@ -977,22 +976,20 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
 
         loadFavorites();
-        // Karşılaştırma ile ilgili loadComparison() kaldırıldı
 
         setupMobileMenu(); 
         setupScrollToTopButton();
         setupLightbox();
         setupFavoritesModal();
-        // setupComparisonModal(); kaldırıldı
         setupChatbotModal(); 
         
-        setupProductSearch(); // Non-blocking
+        setupProductSearch(); 
 
         const { segment: detectedSegment, slug: slugFromUrl } = getCurrentSegmentAndSlug();
         currentSegment = detectedSegment; 
 
         if (slugFromUrl && currentSegment) {
-            loadProductDetail(slugFromUrl, currentSegment); // Non-blocking
+            loadProductDetail(slugFromUrl, currentSegment); 
         } else {
             const detailContainer = document.getElementById('productDetailContainer');
             if(detailContainer && detailContainer.querySelector('.loading-container')) {
