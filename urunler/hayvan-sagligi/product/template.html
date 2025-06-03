@@ -175,7 +175,7 @@
 
     #favoritesNavLink { 
         position: fixed;
-        bottom: calc(80px + 56px + 10px); /* Adjusted due to compare button removal */
+        bottom: calc(80px + 56px + 10px); 
         right: 20px;
         background-color: var(--card-bg);
         border: 1px solid var(--border);
@@ -217,14 +217,14 @@
         border-radius: 50%;
         width: 56px;
         height: 56px;
-        display: flex; /* Ensure it's flex for centering icon */
+        display: flex; 
         align-items: center;
         justify-content: center;
         cursor: pointer;
         z-index: 1001;
         box-shadow: var(--shadow-md);
         transition: transform 0.3s;
-        bottom: 80px; /* Adjusted due to compare button removal */
+        bottom: 80px; 
     }
     .chatbot-floating-btn:hover { transform: scale(1.1); }
     .chatbot-floating-btn svg { width: 28px; height: 28px; }
@@ -424,7 +424,6 @@
         .contact-grid { grid-template-columns: 1fr; } 
         .product-meta-enhanced { flex-direction: column; align-items: flex-start; gap: 0.5rem; } 
         
-        /* Mobile Floating Buttons Visibility */
         .chatbot-floating-btn {
             display: flex !important;
             opacity: 1 !important;
@@ -506,13 +505,11 @@
     </div>
   </main>
 
-  <!-- Lightbox Modal -->
   <div id="imageLightbox" class="lightbox-modal">
     <span class="lightbox-close" title="Kapat (Esc)">×</span>
     <img class="lightbox-content" id="lightboxImg" alt="Büyütülmüş Ürün Resmi" loading="lazy">
   </div>
 
-  <!-- Favorites Modal -->
   <div id="favoritesModal" class="modal">
     <div class="modal-content">
       <span class="close-button">×</span>
@@ -522,9 +519,6 @@
     </div>
   </div>
 
-  <!-- Compare Modal (Kaldırıldı) -->
-
-  <!-- AI Chatbot Modal -->
   <div id="chatbotModal" class="modal chatbot-modal">
     <div class="modal-content chatbot-content">
       <span class="close-button">×</span>
@@ -541,8 +535,6 @@
     </div>
   </div>
 
-  <!-- Floating Buttons -->
-  <!-- Compare Floating Button (Kaldırıldı) -->
   <button id="chatbotFloatingBtn" class="chatbot-floating-btn" title="Ürün hakkında yapay zekaya danış">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 9h8v2H8V9zm4 4H8v-2h4v2zm4 4H8v-2h8v2z"/></svg>
   </button>
@@ -552,7 +544,6 @@
   </button>
   <div id="copyTooltip" class="copy-tooltip">Kopyalandı!</div>
   <div id="favoriteTooltip" class="favorite-tooltip"></div>
-  <!-- Compare Tooltip (Kaldırıldı) -->
 
   <footer>
     <div class="footer-left">
@@ -596,9 +587,7 @@
         
         let isGeminiEnabled = false;
         if (GEMINI_SDK_LOADED) {
-            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") { 
-                isGeminiEnabled = true;
-            } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) { 
+            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER"))) {
                 isGeminiEnabled = true;
             }
         }
@@ -644,17 +633,16 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             if (!parsedData.keyFeatures) parsedData.keyFeatures = []; 
             return parsedData; 
         } catch (error) {
-            console.error("Gemini API ile gelişmiş ürün bilgisi üretilirken hata oluştu:", error);
+            console.error(`[AI Error] Gemini API (generateEnhancedProductInfo for ${productName}):`, error);
             throw new Error(`AI bilgi üretilemedi: ${error.message || 'Bilinmeyen Hata'}`);
         }
     }
 
     async function generateChatResponse(productName, category, question, chatHistory = []) {
-         let isGeminiEnabled = false;
+        if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
+        let isGeminiEnabled = false;
         if (GEMINI_SDK_LOADED) {
-            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") {
-                isGeminiEnabled = true;
-            } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
+            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER"))) {
                 isGeminiEnabled = true;
             }
         }
@@ -664,25 +652,20 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-preview-05-20" });
-
         const historyPrompt = chatHistory.map(msg => `**${msg.role === 'user' ? 'Kullanıcı' : 'Asistan'}**: ${msg.text}`).join('\n');
-
         const prompt = `
             Sen Serakıncı Limited için bir müşteri destek asistanısın. Sadece hayvan sağlığı hakkında bilgi veriyorsun. 
             Şu an "${productName}" (${category}) ürünü hakkında konuşuyoruz. 
             Kullanıcı sorusu: "${question}".
             Önceki konuşma:
             ${historyPrompt}
-            
             Lütfen bu ürüne odaklanarak, kısa, anlaşılır ve kullanıcı soruyu hangi dilde sormuş ise o dilde bir cevap ver Eğer kullanıcı isterse başka dilde de cevap ver ve yardımcı ol. Bilmediğin veya emin olmadığın konularda 'Bu konuda detaylı bilgi için lütfen veteriner hekiminize veya firmamıza danışın.' de. Tıbbı destek ya da tanı koyarsan eğer mutlaka yapay zeka olduğunu söyle, ürünlerin etken maddesi gibi özellikleri hakkında bilgi ver.
         `;
-
         try {
             const result = await model.generateContent(prompt);
-            const response = result.response;
-            return response.text();
+            return result.response.text();
         } catch (error) {
-            console.error("AI Chat Hatası:", error);
+            console.error("[AI Chat Error]:", error);
             return "Üzgünüm, şu anda sorunuzu yanıtlayamıyorum. Lütfen daha sonra tekrar deneyin veya firmamızla iletişime geçin.";
         }
     }
@@ -701,17 +684,15 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         if (!isAiEnabled) {
             fetchBtn.disabled = true; 
-            fetchBtn.style.cursor = 'not-allowed';
-            fetchBtn.title = 'Yapay zeka modülü veya API anahtarı kullanılamıyor.';
-            placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka modülü (SDK) veya API anahtarı yapılandırılmadığı için bu özellik kullanılamıyor.</em></p></div>`; 
+            fetchBtn.style.display = 'none'; // Hide if not usable
+            placeholder.innerHTML = `<div id="aiProductInfo" class="error-message" style="display:none;"><p><em>Yapay zeka özelliği şu anda kullanılamıyor.</em></p></div>`; 
             return;
         }
 
         fetchBtn.addEventListener('click', async () => {
             fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> Bilgi Üretiliyor...`; placeholder.innerHTML = ''; 
-            
             const existingInfo = { 
-                description: currentProduct.Description, // Use current product's (potentially cached/AI-filled) description
+                description: currentProduct.Description, 
                 content: (originalEnhancedDetail && originalEnhancedDetail["Ürün İçeriği"]) || currentProduct.Content 
             };
             try {
@@ -725,41 +706,47 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         });
     }
 
-    function setupChatbotModal() { /* Omitted for brevity, same as previous version */ }
-    function showTooltip(tooltipId, element, message) { /* Omitted for brevity, same as previous version */ }
-    function getProductCategory(product) { /* Omitted for brevity, same as previous version */ }
-    function slugify(text) { /* Omitted for brevity, same as previous version */ }
-    function getCurrentSegmentAndSlug() { /* Omitted for brevity, same as previous version */ }
-    async function fetchJsonData(fileName) { /* Omitted for brevity, same as previous version */ }
-    function showError(msg) { /* Omitted for brevity, same as previous version */ }
-    function loadFavorites() { /* Omitted for brevity, same as previous version */ }
-    function saveFavorites() { /* Omitted for brevity, same as previous version */ }
-    function isFavorite(productId) { /* Omitted for brevity, same as previous version */ }
-    function updateFavoritesCount() { /* Omitted for brevity, same as previous version */ }
-    function toggleFavorite(product, btnElement) { /* Omitted for brevity, same as previous version */ }
-    function displayFavorites() { /* Omitted for brevity, same as previous version */ }
-    function setupFavoritesModal() { /* Omitted for brevity, same as previous version */ }
-    
+    // --- Other helper functions (showTooltip, getProductCategory, etc.) are assumed to be the same as your last provided version ---
+    // For brevity, they are not repeated here but should be included.
+    function showTooltip(tooltipId, element, message) { const tooltip = document.getElementById(tooltipId); if (!tooltip) return; tooltip.textContent = message; const rect = element.getBoundingClientRect(); tooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2)}px`; tooltip.style.top = `${rect.top + window.scrollY - tooltip.offsetHeight - 8}px`; tooltip.style.opacity = '1'; setTimeout(() => { tooltip.style.opacity = '0'; }, 2000); }
+    function getProductCategory(product) { if (product && typeof product.kategori === 'string' && product.kategori.trim() !== '') return product.kategori.trim(); if (product && typeof product.cat === 'string' && product.cat.trim() !== '') return product.cat.trim(); return 'Diğer'; }
+    function slugify(text) { if (text === null || typeof text === 'undefined') return 'isimsiz-urun'; const trMap = { 'ç': 'c', 'Ç': 'c', 'ğ': 'g', 'Ğ': 'g', 'ı': 'i', 'İ': 'i', 'ö': 'o', 'Ö': 'o', 'ş': 's', 'Ş': 's', 'ü': 'u', 'Ü': 'u' }; return String(text).replace(/[\u00C7\u00E7\u011F\u011E\u0131\u0130\u00D6\u00F6\u015E\u015F\u00DC\u00FC]/g, match => trMap[match] || match).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[()]/g, '-').replace(/(\d+)\s*(ml|gr|lt|kg|cc|mcg|mg|iu|doz|enj|wsp|oral|flakon|adet|ad|m|g|l|k|d)\b/gi, '$1-$2').replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-').replace(/^-+|-+$/g, ''); }
+    function getCurrentSegmentAndSlug() { const parts = window.location.pathname.split('/').filter(Boolean); if (parts.length >= 4 && parts[0] === 'urunler' && parts[2] === 'product' && parts[3]) { return { segment: parts[1], slug: parts[3] }; } if (parts.length >= 3 && parts[0] === 'urunler' && parts[1] === 'product' && parts[2]) { return { segment: 'hayvan-sagligi', slug: parts[2] };  } return { segment: null, slug: null }; }
+    async function fetchJsonData(fileName) { try { const response = await fetch(`${API_BASE_PATH}${fileName}`); if (!response.ok) { if (response.status === 404) { throw new Error(`Dosya bulunamadı: ${API_BASE_PATH}${fileName}`); } else { throw new Error(`Dosya yüklenirken ağ hatası: ${API_BASE_PATH}${fileName} (${response.status} ${response.statusText})`); } } return await response.json(); } catch (error) { console.error(`fetchJsonData Hata (${fileName}):`, error); throw error; } }
+    function showError(msg) { const detailContainer = document.getElementById('productDetailContainer'); const backLink = currentSegment ? `/urunler/${currentSegment}/` : '/urunler/'; const backLinkText = currentSegment ? `${currentSegment.charAt(0).toUpperCase() + currentSegment.slice(1).replace('-', ' ')} Ürünlerine Dön` : "Ürünler Sayfasına Dön"; if (detailContainer) { detailContainer.innerHTML = `<div class="error-container"><h2>Bir Sorun Oluştu</h2><p>${msg}</p><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;"> ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> Önceki Sayfaya Dön</a>` : ''} <a href="${backLink}" class="back-button-modern"><span class="back-icon">‹</span> ${backLinkText}</a> </div></div>`; } }
+    function loadFavorites() { favorites = JSON.parse(localStorage.getItem('serakinciFavorites')) || []; updateFavoritesCount(); }
+    function saveFavorites() { localStorage.setItem('serakinciFavorites', JSON.stringify(favorites)); updateFavoritesCount(); }
+    function isFavorite(productId) { return favorites.some(fav => fav.ProductId === productId); }
+    function updateFavoritesCount() {  const countEl = document.getElementById('favoritesCount'); if(countEl) { countEl.textContent = favorites.length;  if (favorites.length > 0) { countEl.style.display = 'inline-flex';  } else { countEl.style.display = 'none'; } } }
+    function toggleFavorite(product, btnElement) { const productId = product.ProductId; if (isFavorite(productId)) { favorites = favorites.filter(fav => fav.ProductId !== productId); showTooltip('favoriteTooltip', btnElement, 'Favorilerden çıkarıldı!'); btnElement.classList.remove('favorited'); } else { favorites.push({  ProductId: product.ProductId,  ProductName: product.ProductName,  ImageUrl: product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL, Category: getProductCategory(product), Segment: currentSegment, Slug: slugify(product.ProductName) }); showTooltip('favoriteTooltip', btnElement, 'Favorilere eklendi!'); btnElement.classList.add('favorited'); } saveFavorites(); }
+    function displayFavorites() { const listEl = document.getElementById('favoritesList'); const noFavMsg = document.getElementById('noFavoritesMessage'); listEl.innerHTML = ''; if (favorites.length === 0) { noFavMsg.style.display = 'block'; } else { noFavMsg.style.display = 'none'; favorites.forEach(fav => { const item = document.createElement('div'); item.className = 'modal-list-item'; item.innerHTML = ` <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" title="${fav.ProductName} Detayı"> <img src="${fav.ImageUrl}" alt="${fav.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"> </a> <div class="modal-list-item-info"> <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a> <span class="category">${fav.Category}</span> </div> <div class="modal-list-item-actions"> <button class="remove-fav-btn" data-product-id="${fav.ProductId}" title="Favorilerden Çıkar"> <svg viewBox="0 0 24 24" fill="#e74c3c" width="20" height="20"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> </button> </div>`; listEl.appendChild(item); }); document.querySelectorAll('.remove-fav-btn').forEach(btn => { btn.onclick = (e) => { const id = e.currentTarget.dataset.productId; favorites = favorites.filter(f => f.ProductId != id); saveFavorites(); displayFavorites();  if (currentProduct && currentProduct.ProductId == id) { const favBtn = document.getElementById('favoriteBtn'); if (favBtn) favBtn.classList.remove('favorited'); } }; }); } }
+    function setupFavoritesModal() { const modal = document.getElementById('favoritesModal'); const link = document.getElementById('favoritesNavLink'); const closeBtn = modal.querySelector('.close-button'); if (link && modal && closeBtn) { link.onclick = (e) => { e.preventDefault(); displayFavorites(); modal.classList.add('show'); }; closeBtn.onclick = () => modal.classList.remove('show'); modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); }; } else { console.error("Favorites modal elements not found."); } }
+    function setupChatbotModal() { const modal = document.getElementById('chatbotModal'); const btn = document.getElementById('chatbotFloatingBtn'); const closeBtn = modal.querySelector('.close-button'); const sendBtn = document.getElementById('chatbotSendBtn'); const input = document.getElementById('chatbotInput'); const messagesEl = document.getElementById('chatbotMessages'); let chatHistory = []; function addMessage(text, role = 'bot') { const msgDiv = document.createElement('div'); msgDiv.className = role === 'bot' ? 'bot-message' : 'user-message'; msgDiv.textContent = text; messagesEl.appendChild(msgDiv); messagesEl.scrollTop = messagesEl.scrollHeight;  chatHistory.push({ role, text }); } async function sendChat() { const question = input.value.trim(); if (!question || !currentProduct) { if(!currentProduct) addMessage("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin.", 'bot'); return; } addMessage(question, 'user'); input.value = ''; input.disabled = true; sendBtn.disabled = true; const typingIndicator = document.createElement('div'); typingIndicator.className = 'bot-message typing'; messagesEl.appendChild(typingIndicator); messagesEl.scrollTop = messagesEl.scrollHeight; try { const response = await generateChatResponse(currentProduct.ProductName, getProductCategory(currentProduct), question, chatHistory); messagesEl.removeChild(typingIndicator); addMessage(response, 'bot'); } catch (error) { messagesEl.removeChild(typingIndicator); addMessage("Üzgünüm, bir hata oluştu. Lütfen tekrar deneyin.", 'bot'); } finally { input.disabled = false; sendBtn.disabled = false; input.focus(); } } if (modal && btn && closeBtn && sendBtn && input && messagesEl) { btn.onclick = () => {  let isAiEnabled = false; if (GEMINI_SDK_LOADED) { if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" || (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER"))) { isAiEnabled = true; } } if (!isAiEnabled) { alert("AI Chatbot şu an kullanılamıyor (API anahtarı eksik veya SDK yüklenmedi)."); return; } if (currentProduct) modal.classList.add('show');  else alert("Ürün bilgileri henüz yüklenmedi, lütfen bekleyin."); }; closeBtn.onclick = () => modal.classList.remove('show'); modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); }; sendBtn.onclick = sendChat; input.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendChat(); }); } }
 
     async function loadProductDetail(slugFromUrl, segmentName) {
         const productDetailContainer = document.getElementById('productDetailContainer');
-        productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`;
+        // Keep the initial loading message
+        // productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`;
 
         try {
             const productsListFile = `${segmentName}.json`; 
             const [products, enhancedData] = await Promise.all([
               fetchJsonData(productsListFile), 
-              fetchJsonData('hayvan-sagligi-enhanced.json') // Assuming this always exists or is handled
+              fetchJsonData('hayvan-sagligi-enhanced.json')
             ]);
 
             allProducts = products; 
 
-            if (!Array.isArray(allProducts)) { showError('Ürün listesi yüklenemedi. Beklenmeyen format.'); return; }
+            if (!Array.isArray(allProducts)) {
+                showError('Ürün listesi yüklenemedi. Beklenmeyen format.');
+                return;
+            }
 
             currentProduct = allProducts.find(p => p.ProductName && slugify(p.ProductName) === slugFromUrl);
 
             if (currentProduct) {
                 const originalEnhancedDetail = enhancedData.find(detail => detail.ProductId === currentProduct.ProductId);
+                // This function will now handle rendering and then AI fetching.
                 displayProductDetail(currentProduct, originalEnhancedDetail, segmentName); 
                 document.title = `${currentProduct.ProductName} | ${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} | Serakıncı`;
                 const canonicalLink = document.querySelector("link[rel='canonical']");
@@ -769,7 +756,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             }
         } catch (error) {
             console.error("loadProductDetail hatası:", error);
-            showError(`Ürün bilgileri yüklenirken bir hata oluştu: ${error.message}. JSON dosyası formatı veya yolu hatalı olabilir.`);
+            showError(`Ürün bilgileri yüklenirken bir hata oluştu: ${error.message}.`);
         }
     }
     
@@ -781,25 +768,19 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         const tab1DescEl = document.getElementById('product-tab1-description-content');
 
         if (cachedAIDescription) {
-            console.log(`[AI Cache] Önbellekten AI açıklaması yüklendi for "${product.ProductName}".`);
+            console.log(`[AI Cache] Önbellekten "${product.ProductName}" için AI açıklaması yüklendi.`);
             if (shortDescEl && shortDescEl.innerHTML !== cachedAIDescription) shortDescEl.innerHTML = cachedAIDescription;
             if (tab1DescEl && tab1DescEl.innerHTML !== cachedAIDescription) tab1DescEl.innerHTML = cachedAIDescription;
-            // Update currentProduct's description for other functions like AI button or chatbot
             product.Description = cachedAIDescription; 
-            if (originalEnhancedDetail) originalEnhancedDetail["Ürün Açıklaması"] = cachedAIDescription; // if it exists
+            if (originalEnhancedDetail) originalEnhancedDetail["Ürün Açıklaması"] = cachedAIDescription;
             return; 
         }
 
-        // Check current description in DOM (or from initial product data)
         const currentDescSource = (originalEnhancedDetail && originalEnhancedDetail["Ürün Açıklaması"]) || product.Description;
         const placeholderTexts = [
-            "açıklama mevcut değil.",
-            "bu ürün için açıklama şu anda üretilememektedir.",
-            "otomatik açıklama üretilirken bir hata oluştu.",
-            "açıklama mevcut değil (ai modülü etkin değil).",
-            "açıklama mevcut değil (ai kapalı).", 
-            "yapay zeka ile açıklama üretilemedi.",
-            "açıklama üretilirken hata oluştu."
+            "açıklama mevcut değil.", "açıklama mevcut değil (aı kapalı).",
+            "bu ürün için açıklama şu anda üretilememektedir.", "yapay zeka ile açıklama üretilemedi.",
+            "otomatik açıklama üretilirken bir hata oluştu.", "açıklama üretilirken hata oluştu."
         ];
         
         const isDescriptionTrulyMissing = (!currentDescSource || 
@@ -807,15 +788,14 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                                          placeholderTexts.includes(String(currentDescSource).trim().toLowerCase()));
 
         if (!isDescriptionTrulyMissing) {
-             // If product.Description from JSON is valid, ensure it's reflected
-            if (product.Description && product.Description !== (shortDescEl ? shortDescEl.innerHTML : '')) {
-                if(shortDescEl) shortDescEl.innerHTML = product.Description;
-                if(tab1DescEl) tab1DescEl.innerHTML = product.Description;
+            if(currentDescSource && product.Description !== currentDescSource){
+                 product.Description = currentDescSource; // Sync with initial valid description
+                 if (originalEnhancedDetail) originalEnhancedDetail["Ürün Açıklaması"] = currentDescSource;
             }
             return; 
         }
         
-        console.log(`[AI Fetch] Önbellek boş ve açıklama eksik for "${product.ProductName}". Gemini ile üretilecek.`);
+        console.log(`[AI Fetch] "${product.ProductName}" için önbellek boş ve açıklama eksik. Gemini ile üretilecek.`);
             
         let isAiEnabled = false;
         if (GEMINI_SDK_LOADED) {
@@ -825,26 +805,21 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         }
 
         if (!isAiEnabled) {
-            console.warn(`[AI Fetch] Gemini modülü/API anahtarı kullanılamıyor for "${product.ProductName}".`);
+            console.warn(`[AI Fetch] "${product.ProductName}" için Gemini modülü/API kullanılamıyor.`);
             const defaultText = "Açıklama mevcut değil (AI kapalı).";
-            if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.textContent = defaultText;
-            if (tab1DescEl && placeholderTexts.includes(tab1DescEl.textContent.trim().toLowerCase())) tab1DescEl.textContent = defaultText;
+            if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.innerHTML = defaultText;
+            if (tab1DescEl && placeholderTexts.includes(tab1DescEl.textContent.trim().toLowerCase())) tab1DescEl.innerHTML = defaultText;
             return;
         }
         
-        const loadingText = "Yapay zeka ile açıklama üretiliyor...";
-        if (shortDescEl) shortDescEl.textContent = loadingText;
-        if (tab1DescEl) tab1DescEl.textContent = loadingText;
+        const loadingText = "<i>Yapay zeka ile açıklama üretiliyor...</i>";
+        if (shortDescEl) shortDescEl.innerHTML = loadingText;
+        if (tab1DescEl) tab1DescEl.innerHTML = loadingText;
 
         try {
             const aiData = await generateEnhancedProductInfo(
-                product.ProductName,
-                getProductCategory(product),
-                'tr',
-                { 
-                    description: 'Yok', 
-                    content: (originalEnhancedDetail && originalEnhancedDetail["Ürün İçeriği"]) || product.Content || 'Yok' 
-                }
+                product.ProductName, getProductCategory(product), 'tr',
+                { description: 'Yok', content: (originalEnhancedDetail && originalEnhancedDetail["Ürün İçeriği"]) || product.Content || 'Yok' }
             );
 
             if (aiData && aiData.enhancedDescription && 
@@ -852,7 +827,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 !String(aiData.enhancedDescription).trim().toLowerCase().includes("detaylı bilgi bulunmamaktadır")) {
                 
                 const newDescription = aiData.enhancedDescription;
-                console.log(`[AI Fetch] Gemini'den açıklama alındı for "${product.ProductName}". DOM & Cache güncelleniyor.`);
+                console.log(`[AI Fetch] "${product.ProductName}" için Gemini'den açıklama alındı. DOM & Cache güncelleniyor.`);
 
                 if (shortDescEl) shortDescEl.innerHTML = newDescription;
                 if (tab1DescEl) tab1DescEl.innerHTML = newDescription;
@@ -861,16 +836,16 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 product.Description = newDescription; 
                 if (originalEnhancedDetail) originalEnhancedDetail["Ürün Açıklaması"] = newDescription;
             } else {
-                console.warn(`[AI Fetch] Gemini'den geçerli bir açıklama alınamadı for "${product.ProductName}".`);
+                console.warn(`[AI Fetch] "${product.ProductName}" için Gemini'den geçerli bir açıklama alınamadı.`);
                  const failedText = "Yapay zeka ile açıklama üretilemedi.";
-                 if (shortDescEl && shortDescEl.textContent === loadingText) shortDescEl.textContent = failedText;
-                 if (tab1DescEl && tab1DescEl.textContent === loadingText) tab1DescEl.textContent = failedText;
+                 if (shortDescEl && shortDescEl.innerHTML === loadingText) shortDescEl.innerHTML = failedText;
+                 if (tab1DescEl && tab1DescEl.innerHTML === loadingText) tab1DescEl.innerHTML = failedText;
             }
         } catch (error) {
-            console.error(`[AI Fetch] Gemini ile otomatik açıklama üretilirken hata for "${product.ProductName}":`, error);
-            const errorText = "Açıklama üretilirken hata oluştu.";
-            if (shortDescEl && shortDescEl.textContent === loadingText) shortDescEl.textContent = errorText;
-            if (tab1DescEl && tab1DescEl.textContent === loadingText) tab1DescEl.textContent = errorText;
+            console.error(`[AI Fetch] "${product.ProductName}" için Gemini hatası:`, error);
+            const errorText = "Açıklama üretilirken bir hata oluştu.";
+            if (shortDescEl && shortDescEl.innerHTML === loadingText) shortDescEl.innerHTML = errorText;
+            if (tab1DescEl && tab1DescEl.innerHTML === loadingText) tab1DescEl.innerHTML = errorText;
         }
     }
 
@@ -881,9 +856,8 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         const cachedAIDescription = localStorage.getItem(cacheKey);
         let initialDescription = cachedAIDescription || (originalEnhancedDetail && originalEnhancedDetail["Ürün Açıklaması"]) || product.Description || "Açıklama mevcut değil.";
 
-        // Update product object with cached or initial description for consistency
-        product.Description = initialDescription;
-        if (originalEnhancedDetail && initialDescription) {
+        product.Description = initialDescription; // Ensure product object has the most up-to-date description
+        if (originalEnhancedDetail && initialDescription !== ((originalEnhancedDetail && originalEnhancedDetail["Ürün Açıklaması"]))) {
             originalEnhancedDetail["Ürün Açıklaması"] = initialDescription;
         }
 
@@ -979,22 +953,24 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         setupMainImageLightbox(imageUrl);
         setupAIFetchButton(product, originalEnhancedDetail); 
         
+        // Fetch AI description (if needed and not cached) after DOM is rendered
         fetchAndFillDescriptionAI_Cached(product, originalEnhancedDetail);
     }
 
-    function getRelatedProductsHTML(currentProduct, segmentName, allProducts) { /* Omitted for brevity, same as previous version */ }
-    function getDisclaimerHTML() { /* Omitted for brevity, same as previous version */ }
-    function getContactHTML() { /* Omitted for brevity, same as previous version */ }
-    function setupTabEvents() { /* Omitted for brevity, same as previous version */ }
-    function setupMainImageLightbox(imageUrl) { /* Omitted for brevity, same as previous version */ }
-    function setupLightbox() { /* Omitted for brevity, same as previous version */ }
-    function setupScrollToTopButton() { /* Omitted for brevity, same as previous version */ }
-    window.copyProductCode = function(event) { /* Omitted for brevity, same as previous version */ }
-    window.scrollCarousel = function(direction, containerId) { /* Omitted for brevity, same as previous version */ }
-    async function setupProductSearch() { /* Omitted for brevity, same as previous version */ }
-    function setupMobileMenu() { /* Omitted for brevity, same as previous version */ }
+    function getRelatedProductsHTML(currentProduct, segmentName, allProducts) { const productCategory = getProductCategory(currentProduct); const safeAllProducts = Array.isArray(allProducts) ? allProducts : []; const relatedProducts = safeAllProducts.filter(p => p && p.ProductName && getProductCategory(p) === productCategory && slugify(p.ProductName) !== slugify(currentProduct.ProductName)).slice(0, 10); if (relatedProducts.length === 0) return ''; const title = productCategory !== 'Diğer' ? `"${productCategory}" Kategorisindeki Diğer Ürünler` : "İlgili Diğer Ürünler"; let html = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${title}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`; relatedProducts.forEach(rp => { let rpImageUrl = rp.ImageUrl || (rp.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL; html += `<a href="/urunler/${segmentName}/product/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${getProductCategory(rp)}</div></div></a>`; }); html += `</div><div class="carousel-arrow next" onclick="window.scrollCarousel(1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div></div></div>`; return html; }
+    function getDisclaimerHTML() { return ` <div class="disclaimer-box-modern"> <strong>Yasal Uyarı / Legal Disclaimer</strong> <span>Bu web sitesinde sunulan bilgiler yalnızca genel bilgilendirme amaçlıdır ve profesyonel veteriner hekim tavsiyesinin veya teşhisinin yerini alması amaçlanmamıştır. Hayvanınızın sağlığı veya tıbbi durumu hakkında herhangi bir endişeniz varsa, daima veteriner hekiminize veya diğer nitelikli sağlık uzmanlarına danışın.</span> <span>Sitede yer alan bilgiler, herhangi bir hastalığı teşhis etmek, tedavi etmek, iyileştirmek veya önlemek için kullanılamaz. Ürünlerin kullanımı ve dozajı konusunda mutlaka bir veteriner hekimin önerisi ve gözetimi gereklidir. Yanlış veya bilinçsiz ilaç kullanımı hayvan sağlığı için ciddi riskler oluşturabilir.</span> <span>Serakıncı Limited, bu sitede yer alan bilgilerin doğruluğu, güncelliği veya eksiksizliği konusunda herhangi bir garanti vermez ve bu bilgilerin kullanımından kaynaklanabilecek doğrudan veya dolaylı hiçbir sorumluluk kabul etmez. Ürün bilgileri, etiketleri ve ambalajları zamanla değişebilir; her zaman ürünle birlikte gelen güncel etiket ve prospektüs bilgilerini ve veteriner hekiminizin tavsiyelerini dikkate alınız.</span> <span>Reçeteye tabi veteriner tıbbi ürünleri yalnızca veteriner hekim reçetesi ile temin edilebilir ve kullanılabilir.</span> <hr> <span><strong>Legal Disclaimer:</strong> The information provided on this website is for general informational purposes only and is not intended to be a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified health provider with any questions you may have regarding your animal's health or a medical condition.</span> </div>`; }
+    function getContactHTML() { return ` <div class="contact-card-modern"> <div class="contact-title-modern">Ürün Hakkında Bilgi Alın</div> <div class="contact-bar-modern"></div> <p class="contact-intro-text">Ürünle ilgili detaylı bilgi veya sorularınız için bizimle iletişime geçmekten çekinmeyin:</p> <div class="contact-grid"> <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><div><span class="contact-label-modern">Telefon</span><a href="tel:+903923662594" class="contact-link-modern">+90 392 366 25 94</a></div></div> <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><div><span class="contact-label-modern">E-posta</span><a href="mailto:info@serakinci.com" class="contact-link-modern">info@serakinci.com</a></div></div> <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><div><span class="contact-label-modern">Adres</span><span class="contact-address-text">Sht. Ziya Sok. No:1-2 99450<br>Gazimağusa - KKTC, Mersin 10 Turkey</span></div></div> <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 17.36c-.32-.1-.66-.16-1-.16-1.02 0-2.04.21-2.97.64-.34.16-.73.08-1-.16l-3.28-3.28c.43-.93.64-1.95.64-2.97C12.83 12.34 12.77 12 12.61 11l3.28-3.28c.24-.23.32-.62.16-1-.43-.93-.64-1.95-.64-2.97 0-.34.06-.68.16-1 .09-.28.03-.59-.18-.8l-1.09-1.09c-.21-.21-.52-.27-.8-.18-1 .1-1.98.38-2.87.82-.09.04-.18.07-.26.12L5.12 7.25c-.04.09-.07.17-.12.26C4.18 8.4 3.9 9.38 3.81 10.38c-.09.28-.03.59.18.8l1.09 1.09c.21.21.52.27.8.18 1-.1 1.98-.38 2.87-.82.09-.04.18.07.26-.12l5.75-5.75c.04-.09.07-.17.12-.26.89-.44 1.87-.72 2.87-.82.28-.09.59-.03.8.18l1.09 1.09c.21.21.27.52.18.8-.1 1-.38 1.98-.82 2.87-.04-.09-.07.18-.12.26L10.38 17c-.09.04-.17.07-.26-.12-.89.44-1.87.72-2.87.82-.28-.09-.59-.03-.8-.18l-1.09-1.09c-.21-.21-.27-.52-.18-.8.1-1 .38-1.98.82 2.87-.04-.09.07.18.12-.26l.01-.01c.01 0 .01 0 0 0L17 5.12c.09-.04.17-.07.26-.12.9-.43 1.88-.64 2.9-.64.34 0 .68.06 1 .16.28.09.5.29.62.56.15.34.17.73.05 1.07-.27.78-.63 1.52-1.06 2.2-.01.01-.01.02-.02.03l-5.52 5.52c-.01.01-.02.01-.03.02-.68.43-1.42.79-2.2 1.06-.34.12-.62.34-.75.62s-.16.61-.05 1.07c.27.78.63 1.52 1.06 2.2.01.01.01.02.02.03l.01.01c.01 0 .01 0 0 0zM6.5 10.5c0 .28.22.5.5.5s.5-.22.5-.5-.22-.5-.5-.5-.5.22-.5.5z"/></svg><div><span class="contact-label-modern">Fax</span><a href="fax:+903923661585" class="contact-link-modern">+90 392 366 15 85</a></div></div> </div> <div class="firm-social-media"> <span class="social-label">Sosyal Medyada Biz</span> <div class="firm-social-media-row"> <a href="https://www.facebook.com/serakincieczadeposu/" target="_blank" rel="noopener" title="Serakıncı Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a> <a href="https://www.instagram.com/serakincieczadeposu/" target="_blank" rel="noopener" title="Serakıncı Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><defs><radialGradient id="instaGradientDetail" cx="30%" cy="107%" r="150%" fx="30%" fy="107%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect fill="url(#instaGradientDetail)" width="20" height="20" x="2" y="2" rx="5" ry="5"/><path stroke="#fff" stroke-width="1.8" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.88h.01"/></svg></a> </div> </div> </div>`; }
+    function setupTabEvents() { const tabLinks = document.querySelectorAll('.tab-link-modern'); const tabPanes = document.querySelectorAll('.tab-pane-modern'); tabLinks.forEach(link => { link.addEventListener('click', () => { const targetTab = link.getAttribute('data-tab'); tabLinks.forEach(tl => tl.classList.remove('active')); link.classList.add('active'); tabPanes.forEach(pane => pane.id === targetTab ? pane.classList.add('active') : pane.classList.remove('active')); }); }); }
+    function setupMainImageLightbox(imageUrl) {  const mainImageWrapper = document.getElementById('mainProductImageWrapper'); if (mainImageWrapper && imageUrl && imageUrl !== FALLBACK_IMAGE_URL) { mainImageWrapper.onclick = function() { const lightboxImg = document.getElementById('lightboxImg'); const lightbox = document.getElementById('imageLightbox'); if (lightboxImg && lightbox) { lightboxImg.src = imageUrl; lightbox.classList.add('show'); } } } }
+    function setupLightbox() {  const lightbox = document.getElementById('imageLightbox'); if (!lightbox) return; const lightboxClose = lightbox.querySelector('.lightbox-close'); if (!lightboxClose) return; lightboxClose.onclick = () => lightbox.classList.remove('show'); lightbox.onclick = (event) => { if (event.target === lightbox) lightbox.classList.remove('show'); } document.addEventListener('keydown', (event) => { if (event.key === "Escape" && lightbox.classList.contains('show')) lightboxClose.onclick(); }); }
+    function setupScrollToTopButton() {  const btn = document.getElementById('scrollToTopBtn'); if(!btn) return; window.onscroll = () => btn.classList.toggle('show', document.body.scrollTop > 100 || document.documentElement.scrollTop > 100); btn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'}); }
+    window.copyProductCode = function(event) {  const productCodeEl = document.getElementById('productCodeValue'); if (!productCodeEl) return; navigator.clipboard.writeText(productCodeEl.innerText).then(() => { showTooltip('copyTooltip', event.target, 'Kopyalandı!'); }).catch(err => console.error('Kod kopyalanamadı: ', err)); }
+    window.scrollCarousel = function(direction, containerId) {  const container = document.getElementById(containerId); if (container) container.scrollLeft += direction * (container.clientWidth * 0.8); }
+    async function setupProductSearch() {  const searchInput = document.getElementById('headerProductSearchInput'); const searchWrapper = document.querySelector('.header-search-wrapper'); const resultsDropdown = document.getElementById('headerSearchResultsDropdown'); const resultsList = document.getElementById('headerSearchResultsList'); if (!searchInput || !searchWrapper || !resultsDropdown || !resultsList) { console.error("Header search elements not found."); return; } if (allProducts.length === 0) {  try {  allProducts = await fetchJsonData(`hayvan-sagligi.json`);  } catch (e) {  console.warn("Header arama için varsayılan ürünler yüklenemedi:", e.message);  } } searchInput.addEventListener('input', function(e) { const searchTerm = e.target.value.trim().toLocaleLowerCase('tr-TR'); clearTimeout(searchDebounceTimer); if (searchTerm.length < 2) {  resultsDropdown.style.display = 'none';  resultsList.innerHTML = '';  searchWrapper.classList.remove('search-active'); return;  } searchWrapper.classList.add('search-active'); searchDebounceTimer = setTimeout(() => { if (!allProducts || allProducts.length === 0) { resultsList.innerHTML = '<li class="no-results">Ürün verisi yükleniyor...</li>'; resultsDropdown.style.display = 'block'; return; } const filtered = allProducts.filter(product =>  product && product.ProductName && product.ProductName.toLocaleLowerCase('tr-TR').includes(searchTerm) || product && product.ProductCode && product.ProductCode.toLocaleLowerCase('tr-TR').includes(searchTerm) ).slice(0, 7); resultsList.innerHTML = '';  if (filtered.length > 0) { filtered.forEach(product => {  const listItem = document.createElement('li'); let rpImageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL; const productSegForLink = product.segment || currentSegment || 'hayvan-sagligi';  listItem.innerHTML = ` <a href="/urunler/${productSegForLink}/product/${slugify(product.ProductName)}/"> <img src="${rpImageUrl}" alt="${product.ProductName}" class="suggestion-image" onerror="this.src='${FALLBACK_IMAGE_URL}'"> <span class="suggestion-name">${product.ProductName}</span> ${getProductCategory(product) !== 'Diğer' ? `<span class="suggestion-category">${getProductCategory(product)}</span>` : ''} </a>`; resultsList.appendChild(listItem); }); } else { resultsList.innerHTML = '<li class="no-results">Sonuç bulunamadı.</li>'; } resultsDropdown.style.display = 'block'; }, 300);  }); searchInput.addEventListener('focus', function() { searchWrapper.classList.add('search-active'); if (searchInput.value.length >= 2 && resultsList.children.length > 0 && resultsList.firstChild.className !== 'no-results') { resultsDropdown.style.display = 'block'; } }); searchInput.addEventListener('blur', function() { setTimeout(() => { if (!G_isMouseOverDropdown) { resultsDropdown.style.display = 'none'; if (searchInput.value.length < 2) {  searchWrapper.classList.remove('search-active'); } } }, 150); }); resultsDropdown.addEventListener('mouseenter', () => { G_isMouseOverDropdown = true; }); resultsDropdown.addEventListener('mouseleave', () => { G_isMouseOverDropdown = false; }); document.addEventListener('click', function(event) { if (searchWrapper && !searchWrapper.contains(event.target) && resultsDropdown && !resultsDropdown.contains(event.target)) { resultsDropdown.style.display = 'none'; if (searchInput.value.length < 2) {  searchWrapper.classList.remove('search-active'); } } }); }
+    function setupMobileMenu() {  const menuToggle = document.querySelector('.mobile-menu-toggle'); const nav = document.querySelector('.new-site-navigation'); const siteHeader = document.getElementById('newSiteHeader'); if (menuToggle && nav && siteHeader) { menuToggle.addEventListener('click', () => { const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true'; menuToggle.setAttribute('aria-expanded', !isExpanded); nav.classList.toggle('is-active'); if (nav.classList.contains('is-active')) { nav.style.top = `${siteHeader.offsetHeight}px`;  } }); } }
 
-    document.addEventListener('DOMContentLoaded', async function() {
+
+    document.addEventListener('DOMContentLoaded', () => { // Removed async from here
         const currentYearEl = document.getElementById('currentYear');
         if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
 
@@ -1006,21 +982,25 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         setupFavoritesModal();
         setupChatbotModal(); 
         
-        await setupProductSearch(); 
+        // Call setupProductSearch (it's async but we don't await its completion here
+        // for faster initial DOMContentLoaded processing)
+        setupProductSearch(); 
 
         const { segment: detectedSegment, slug: slugFromUrl } = getCurrentSegmentAndSlug();
         currentSegment = detectedSegment; 
 
         if (slugFromUrl && currentSegment) {
-            await loadProductDetail(slugFromUrl, currentSegment); 
+            // Call loadProductDetail without await to prevent blocking DOMContentLoaded
+            loadProductDetail(slugFromUrl, currentSegment); 
         } else {
             const detailContainer = document.getElementById('productDetailContainer');
-            if(detailContainer && (!slugFromUrl || !currentSegment) && window.location.pathname.includes('/product/')) { 
-                 showError('Ürün bilgisi alınamadı. URL yapısı hatalı veya eksik. Lütfen geçerli bir ürün URL\'si ile gelin. Örnek: `/urunler/hayvan-sagligi/product/multivit-100ml-enj/`');
-            } else if (detailContainer && detailContainer.querySelector('.loading-container')) {
-                 if (!window.location.pathname.includes('/product/')) { 
-                    detailContainer.innerHTML = ''; 
-                 }
+            // If not a product page, but still has loading container, remove it or show error
+            if(detailContainer && detailContainer.querySelector('.loading-container')) {
+                if (window.location.pathname.includes('/product/')) { 
+                    showError('Ürün bilgisi alınamadı. URL yapısı hatalı veya eksik.');
+                } else { 
+                    detailContainer.innerHTML = ''; // Clear loader if it's not a product page context
+                }
             }
         }
     });
