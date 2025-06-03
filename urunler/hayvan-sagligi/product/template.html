@@ -1346,7 +1346,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
     async function fetchAndFillDescriptionAI(product, enhancedDetail) {
         const initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description;
         const placeholderTexts = [
-            "açıklama mevcut değil.",
+            "açıklama yükleniyor...",
             "bu ürün için açıklama şu anda üretilememektedir.",
             "otomatik açıklama üretilirken bir hata oluştu.",
             "açıklama mevcut değil (ai modülü etkin değil)."
