@@ -67,7 +67,6 @@
       --header-b2b-button-text: #ffffff;
       --header-b2b-button-hover-bg: #303E5C;
       --header-border-color: #e0e6e8;
-      --compare-btn-display: none; /* JS tarafından kontrol edilecek */
     }
     html{scroll-behavior:smooth}
     *{box-sizing:border-box; overflow-wrap: break-word;}
@@ -175,7 +174,7 @@
 
     #favoritesNavLink { 
         position: fixed;
-        bottom: calc(150px + 56px + 10px); 
+        bottom: calc(80px + 56px + 10px); /* Adjusted to be above chatbot */
         right: 20px;
         background-color: var(--card-bg);
         border: 1px solid var(--border);
@@ -208,10 +207,10 @@
         display: none !important; 
     }
 
-    .compare-floating-btn, .chatbot-floating-btn {
+    .chatbot-floating-btn {
         position: fixed;
         right: 20px;
-        background-color: var(--primary);
+        background-color: var(--accent);
         color: white;
         border: none;
         border-radius: 50%;
@@ -223,22 +222,12 @@
         z-index: 1001;
         box-shadow: var(--shadow-md);
         transition: transform 0.3s;
-    }
-    .chatbot-floating-btn {
-        bottom: 150px;
-        background-color: var(--accent);
         display: flex; 
-    }
-    .compare-floating-btn { /* General styling, display handled by JS for its ID */
-        bottom: 80px;
-    }
-    #compareFloatingBtn { /* Specific ID for display control */
-        display: var(--compare-btn-display);
+        bottom: 80px; /* Original compare button position */
     }
 
-    .compare-floating-btn:hover, .chatbot-floating-btn:hover { transform: scale(1.1); }
-    .compare-floating-btn svg, .chatbot-floating-btn svg { width: 28px; height: 28px; }
-    .compare-count { position: absolute; top: -5px; right: -5px; background-color: #e74c3c; color: white; border-radius: 50%; padding: 3px 7px; font-size: 0.75em; font-weight: bold; }
+    .chatbot-floating-btn:hover { transform: scale(1.1); }
+    .chatbot-floating-btn svg { width: 28px; height: 28px; }
 
 
     @media(max-width: 992px) { 
@@ -285,7 +274,7 @@
     .favorite-button svg { width: 24px; height: 24px; fill: currentColor; }
     .favorite-button:hover { color: #e74c3c; transform: scale(1.1); }
     .favorite-button.favorited { color: #e74c3c; }
-    .favorite-tooltip, .copy-tooltip, #compareTooltip { position: fixed; background-color: #333; color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.8em; z-index: 1010; opacity: 0; transition: opacity 0.3s; pointer-events: none; white-space: nowrap; } 
+    .favorite-tooltip, .copy-tooltip { position: fixed; background-color: #333; color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.8em; z-index: 1010; opacity: 0; transition: opacity 0.3s; pointer-events: none; white-space: nowrap; } 
     .product-meta-enhanced { font-size: 0.9rem; color: var(--text-medium); margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-start; }
     .product-meta-enhanced .meta-item { display: flex; align-items: center; flex-wrap: wrap; }
     .product-meta-enhanced .meta-item strong { color: var(--text-dark); font-weight: 600; margin-right: 0.4rem; white-space: nowrap; }
@@ -300,15 +289,11 @@
     .product-share-buttons svg { width: 100%; height: 100%; } 
     .product-short-description { font-size: 1rem; color: var(--text-medium); margin-bottom: 1.5rem; line-height: 1.7; }
     #ai-button-container { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 10px; }
-    #fetchAiInfoBtn, #addToCompareBtn { display: inline-flex; align-items: center; justify-content: center; width: auto; padding: 0.6rem 1.2rem; font-weight: 600; transition: all 0.2s; border: 1px solid; border-radius: var(--radius); cursor: pointer;}
+    #fetchAiInfoBtn { display: inline-flex; align-items: center; justify-content: center; width: auto; padding: 0.6rem 1.2rem; font-weight: 600; transition: all 0.2s; border: 1px solid; border-radius: var(--radius); cursor: pointer;}
     #fetchAiInfoBtn { background-color: var(--accent); border-color: var(--accent); color: white; }
     #fetchAiInfoBtn:hover { background-color: #dd6b15; border-color: #dd6b15;}
-    #addToCompareBtn { background-color: var(--primary-blue); border-color: var(--primary-blue); color: white; }
-    #addToCompareBtn:hover { background-color: var(--primary-blue-hover); border-color: var(--primary-blue-hover); }
-    #addToCompareBtn.added { background-color: #28a745; border-color: #28a745; }
-    #addToCompareBtn.added:hover { background-color: #218838; border-color: #218838; }
-    #fetchAiInfoBtn svg, #addToCompareBtn svg {width:20px; height:20px; margin-right: 8px;}
-    #fetchAiInfoBtn:disabled, #addToCompareBtn:disabled { background-color: var(--text-light) !important; border-color: var(--text-light) !important; cursor: not-allowed; }
+    #fetchAiInfoBtn svg {width:20px; height:20px; margin-right: 8px;}
+    #fetchAiInfoBtn:disabled { background-color: var(--text-light) !important; border-color: var(--text-light) !important; cursor: not-allowed; }
     #fetchAiInfoBtn .spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 8px; }
     @keyframes spin { to { transform: rotate(360deg); } }
     #aiProductInfoPlaceholder { margin-top: 1.5rem; width: 100%; }
@@ -378,129 +363,6 @@
     .modal-list-item-actions button:hover { color: #e74c3c; }
     .no-favorites-message { text-align: center; color: var(--text-medium); padding: 20px 0; }
 
-    .comparison-grid { 
-        display: grid; 
-        gap: 1px; 
-        background-color: var(--border-color); 
-        border-radius: var(--radius);
-        overflow-x: auto; 
-        margin-bottom: 20px;
-        box-shadow: var(--shadow-sm);
-        max-height: 70vh; 
-        overflow-y: auto;
-    }
-    .comparison-row {
-        display: contents; 
-    }
-    .comparison-header-row {
-        font-weight: 600;
-        color: var(--text-dark);
-        background-color: #f0f2f5;
-        position: sticky;
-        top: 0;
-        z-index: 5; 
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .comparison-header-label, .comparison-product-header, .comparison-cell {
-        padding: 15px 10px;
-        background-color: var(--card-bg);
-        border: 1px solid var(--border-color);
-        word-break: break-word; 
-    }
-    .comparison-header-label {
-        font-weight: 700;
-        color: var(--text-dark);
-        background-color: #e9ecef;
-        text-align: left;
-    }
-    .comparison-product-header {
-        position: relative;
-        text-align: center;
-        padding-top: 30px; 
-    }
-    .comparison-product-header .remove-cmp-btn {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        background: #e74c3c;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        line-height: 1; 
-        font-size: 16px;
-        padding: 0;
-        transition: background-color 0.2s;
-    }
-    .comparison-product-header .remove-cmp-btn:hover {
-        background-color: #c0392b;
-    }
-    .comparison-product-header img {
-        max-width: 80px;
-        max-height: 80px;
-        object-fit: contain;
-        margin-bottom: 10px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .comparison-product-header a {
-        text-decoration: none;
-        color: var(--text-dark);
-    }
-    .comparison-product-header a:hover {
-        text-decoration: underline;
-    }
-    .comparison-product-name {
-        font-weight: 600;
-        font-size: 1rem;
-        display: block;
-        margin-bottom: 5px;
-    }
-    .comparison-product-category {
-        font-size: 0.85rem;
-        color: var(--text-medium);
-        display: block;
-    }
-    .comparison-cell {
-        vertical-align: top;
-        text-align: left;
-        font-size: 0.9rem;
-        color: var(--text-medium);
-    }
-    .comparison-cell ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        margin: 0;
-    }
-    .comparison-cell ul li {
-        margin-bottom: 5px;
-    }
-    .comparison-cell-image img {
-        max-width: 60px;
-        max-height: 60px;
-        object-fit: contain;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .comparison-cell-link a {
-        color: var(--primary-blue);
-        text-decoration: none;
-    }
-    .comparison-cell-link a:hover {
-        text-decoration: underline;
-    }
-    .comparison-cell-long-text {
-        white-space: pre-wrap; 
-    }
-
     .chatbot-modal .modal-content { max-width: 500px; padding: 0; overflow: hidden;}
     .chatbot-modal h3 { background-color: var(--accent); color: white; padding: 15px 20px; margin: 0; font-size: 1.3rem;}
     .chatbot-messages { height: 350px; overflow-y: auto; padding: 20px; background-color: #f9f9f9; }
@@ -562,37 +424,6 @@
         .contact-card-modern { padding: 1.5rem; } 
         .contact-grid { grid-template-columns: 1fr; } 
         .product-meta-enhanced { flex-direction: column; align-items: flex-start; gap: 0.5rem; } 
-        .comparison-grid {
-            grid-template-columns: 1fr !important; 
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .comparison-header-row { display: none; } 
-        .comparison-product-header { margin-bottom: 20px; }
-        .comparison-item { padding: 0; border: none; }
-        .comparison-product-header, .comparison-cell {
-            border: none;
-            padding: 10px 0;
-            background-color: transparent;
-        }
-        .comparison-product-header {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-        .comparison-cell {
-            padding-left: 10px;
-            padding-right: 10px;
-            border-bottom: 1px dashed var(--border-color); 
-        }
-        .comparison-cell:last-child {
-            border-bottom: none;
-            padding-bottom: 20px;
-        }
-        .comparison-item .remove-cmp-btn {
-            background-color: var(--text-dark);
-            color: white;
-        }
 
         /* Mobile Floating Buttons Visibility */
         .chatbot-floating-btn {
@@ -600,21 +431,14 @@
             opacity: 1 !important;
             visibility: visible !important;
             right: 20px; /* Ensure position */
-            bottom: 150px; /* Ensure position */
+            bottom: 80px; /* Ensure position */
         }
         #favoritesNavLink {
             display: inline-flex !important; /* Correct display type */
             opacity: 1 !important;
             visibility: visible !important;
             right: 20px; /* Ensure position */
-            bottom: calc(150px + 56px + 10px); /* Ensure position */
-        }
-        #compareFloatingBtn {
-            display: var(--compare-btn-display) !important; /* Controlled by JS */
-            opacity: 1 !important;
-            visibility: visible !important;
-            right: 20px; /* Ensure position */
-            bottom: 80px; /* Ensure position */
+            bottom: calc(80px + 56px + 10px); /* Ensure position */
         }
         .scroll-to-top { /* Ensure scroll to top is also positioned correctly */
             right: 20px;
@@ -692,27 +516,17 @@
   <!-- Favorites Modal -->
   <div id="favoritesModal" class="modal">
     <div class="modal-content">
-      <span class="close-button">&times;</span>
+      <span class="close-button">×</span>
       <h2>Favori Ürünlerim</h2>
       <div id="favoritesList" class="modal-list"></div>
       <p id="noFavoritesMessage" class="no-favorites-message">Henüz favori ürününüz bulunmamaktadır.</p>
     </div>
   </div>
 
-  <!-- Compare Modal -->
-  <div id="compareModal" class="modal">
-    <div class="modal-content" style="max-width: 90%; width: auto;">
-      <span class="close-button">&times;</span>
-      <h2>Ürün Karşılaştırma</h2>
-      <div id="comparisonGrid" class="comparison-grid"></div>
-      <p id="noCompareMessage" class="no-favorites-message">Karşılaştırmak için henüz ürün seçmediniz (En fazla 4 ürün).</p>
-    </div>
-  </div>
-
   <!-- AI Chatbot Modal -->
   <div id="chatbotModal" class="modal chatbot-modal">
     <div class="modal-content chatbot-content">
-      <span class="close-button">&times;</span>
+      <span class="close-button">×</span>
       <h3>Serakıncı AI Asistanı</h3>
       <div class="chatbot-messages" id="chatbotMessages">
         <div class="bot-message">Merhaba! Bu ürün hakkında merak ettiklerinizi bana sorabilirsiniz.</div>
@@ -727,10 +541,6 @@
   </div>
 
   <!-- Floating Buttons -->
-  <button id="compareFloatingBtn" class="compare-floating-btn" title="Ürünleri Karşılaştır">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h5v2h2V1h-2v2zm0 15H5V5h5v13zm9-15h-5v2h3v5h-3v2h3v5h-3v2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 15h-3V5h3v13z"/></svg>
-    <span id="compareCount" class="compare-count">0</span>
-  </button>
   <button id="chatbotFloatingBtn" class="chatbot-floating-btn" title="Ürün hakkında yapay zekaya danış">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 9h8v2H8V9zm4 4H8v-2h4v2zm4 4H8v-2h8v2z"/></svg>
   </button>
@@ -740,7 +550,6 @@
   </button>
   <div id="copyTooltip" class="copy-tooltip">Kopyalandı!</div>
   <div id="favoriteTooltip" class="favorite-tooltip"></div>
-  <div id="compareTooltip" class="copy-tooltip"></div>
 
   <footer>
     <div class="footer-left">
@@ -771,13 +580,11 @@
     const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png';
     const API_BASE_PATH = '/urunler/api/'; 
     const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
-    const MAX_COMPARE_ITEMS = 4;
 
     let allProducts = []; 
     let currentSegment = ''; 
     let currentProduct = null;
     let favorites = [];
-    let comparisonList = [];
     let searchDebounceTimer;
     let G_isMouseOverDropdown = false; 
 
@@ -902,7 +709,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
         fetchBtn.addEventListener('click', async () => {
             fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> Bilgi Üretiliyor...`; placeholder.innerHTML = ''; 
-            // Use currentProduct's potentially updated description for existingInfo
             const existingInfo = { 
                 description: (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || currentProduct.Description, 
                 content: (enhancedDetail && enhancedDetail["Ürün İçeriği"]) || currentProduct.Content 
@@ -1146,169 +952,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         }
     }
 
-    function loadComparison() { comparisonList = JSON.parse(localStorage.getItem('serakinciComparison')) || []; updateCompareCount(); }
-    function saveComparison() { localStorage.setItem('serakinciComparison', JSON.stringify(comparisonList)); updateCompareCount(); }
-    function isInComparison(productId) { return comparisonList.some(item => item.ProductId === productId); }
-    function updateCompareCount() {
-        const countEl = document.getElementById('compareCount');
-        const compareBtn = document.getElementById('compareFloatingBtn');
-        if (countEl && compareBtn) {
-            countEl.textContent = comparisonList.length;
-            const displayStyle = comparisonList.length > 0 ? 'flex' : 'none';
-            document.documentElement.style.setProperty('--compare-btn-display', displayStyle);
-        }
-    }
-    function toggleComparison(product, btnElement, enhancedDetail) {
-        const productId = product.ProductId;
-        // Use currentProduct's description as it might have been updated by AI
-        const productDescriptionForCompare = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || currentProduct.Description || '-';
-
-        if (isInComparison(productId)) {
-            comparisonList = comparisonList.filter(item => item.ProductId !== productId);
-            showTooltip('compareTooltip', btnElement, 'Karşılaştırmadan çıkarıldı!');
-            btnElement.classList.remove('added');
-            btnElement.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h5v2h2V1h-2v2zm0 15H5V5h5v13zm9-15h-5v2h3v5h-3v2h3v5h-3v2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 15h-3V5h3v13z"/></svg> Karşılaştır`;
-        } else {
-            if (comparisonList.length >= MAX_COMPARE_ITEMS) {
-                showTooltip('compareTooltip', btnElement, `En fazla ${MAX_COMPARE_ITEMS} ürün karşılaştırılabilir!`);
-                return;
-            }
-            comparisonList.push({ 
-                ProductId: product.ProductId, 
-                ProductName: product.ProductName, 
-                ImageUrl: product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL,
-                Category: getProductCategory(product),
-                ProductCode: product.ProductCode || product.DisplayProductCode || '-',
-                Description: productDescriptionForCompare,
-                Slug: slugify(product.ProductName),
-                Segment: currentSegment,
-                enhancedManufacturer: enhancedDetail?.["Üretici Firma"] || '-',
-                enhancedWebsite: enhancedDetail?.["Firma Web Sitesi"] || '-',
-                enhancedProspectus: enhancedDetail?.["Üretici Prospektüs"] || '-',
-                enhancedContent: (enhancedDetail && enhancedDetail["Ürün İçeriği"]) || product.Content || '-',
-                enhancedWarnings: enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"] || [],
-                enhancedUsageTips: enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"] || []
-            });
-            showTooltip('compareTooltip', btnElement, 'Karşılaştırmaya eklendi!');
-            btnElement.classList.add('added');
-            btnElement.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Eklendi`;
-        }
-        saveComparison();
-    }
-
-    function displayComparison() {
-        const gridEl = document.getElementById('comparisonGrid');
-        const noCmpMsg = document.getElementById('noCompareMessage');
-        gridEl.innerHTML = '';
-
-        if (comparisonList.length === 0) {
-            noCmpMsg.style.display = 'block';
-            gridEl.style.gridTemplateColumns = '1fr';
-            return;
-        } else {
-            noCmpMsg.style.display = 'none';
-        }
-
-        const attributes = [
-            { label: 'Ürün Resmi', key: 'ImageUrl', type: 'image' },
-            { label: 'Ürün Adı', key: 'ProductName', type: 'text' },
-            { label: 'Ürün Kodu', key: 'ProductCode', type: 'text' },
-            { label: 'Kategori', key: 'Category', type: 'text' },
-            { label: 'Açıklama', key: 'Description', type: 'long-text' },
-            { label: 'Üretici Firma', key: 'enhancedManufacturer', type: 'text' },
-            { label: 'Web Sitesi', key: 'enhancedWebsite', type: 'link' },
-            { label: 'Üretici Prospektüs', key: 'enhancedProspectus', type: 'link' },
-            { label: 'İçerik Bilgisi', key: 'enhancedContent', type: 'long-text' },
-            { label: 'Uyarılar', key: 'enhancedWarnings', type: 'list' },
-            { label: 'Kullanım İpuçları', key: 'enhancedUsageTips', type: 'list' }
-        ];
-
-        const headerRow = document.createElement('div');
-        headerRow.className = 'comparison-row comparison-header-row';
-        headerRow.innerHTML = `<div class="comparison-header-label"></div>`; 
-
-        comparisonList.forEach(item => {
-            headerRow.innerHTML += `
-                <div class="comparison-product-header">
-                    <button class="remove-cmp-btn" data-product-id="${item.ProductId}" title="Karşılaştırmadan Çıkar">×</button>
-                    <a href="/urunler/${item.Segment}/product/${item.Slug}/">
-                        <img src="${item.ImageUrl}" alt="${item.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'">
-                    </a>
-                    <a href="/urunler/${item.Segment}/product/${item.Slug}/" class="comparison-product-name">${item.ProductName}</a>
-                    <div class="comparison-product-category">${item.Category}</div>
-                </div>`;
-        });
-        gridEl.appendChild(headerRow);
-
-        attributes.forEach(attr => {
-            const row = document.createElement('div');
-            row.className = 'comparison-row';
-            row.innerHTML = `<div class="comparison-header-label attribute-label">${attr.label}</div>`; 
-
-            comparisonList.forEach(item => {
-                let value = item[attr.key];
-                let cellContent = '';
-
-                switch (attr.type) {
-                    case 'image':
-                        cellContent = `<img src="${value}" alt="${item.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'">`;
-                        break;
-                    case 'link':
-                        cellContent = (value && value !== '-' && (value.startsWith('http://') || value.startsWith('https://'))) 
-                                      ? `<a href="${value}" target="_blank" rel="noopener">${attr.label === 'Web Sitesi' ? 'Ziyaret Et' : 'Görüntüle'}</a>` 
-                                      : '-';
-                        break;
-                    case 'list':
-                        if (Array.isArray(value) && value.length > 0) {
-                            cellContent = `<ul>${value.map(li => `<li>${li}</li>`).join('')}</ul>`;
-                        } else {
-                            cellContent = '-';
-                        }
-                        break;
-                    case 'long-text':
-                        cellContent = (value && value !== '-') ? value : '-';
-                        if (attr.key === 'enhancedContent' && (!value || value === '-')) {
-                            cellContent = 'Bileşen listesi için ambalajdaki etiket incelenmelidir.';
-                        }
-                        break;
-                    default: 
-                        cellContent = (value && value !== '-') ? value : '-';
-                        break;
-                }
-                row.innerHTML += `<div class="comparison-cell comparison-cell-${attr.type}">${cellContent}</div>`;
-            });
-            gridEl.appendChild(row);
-        });
-
-        document.querySelectorAll('#comparisonGrid .remove-cmp-btn').forEach(btn => {
-            btn.onclick = (e) => {
-                const id = e.currentTarget.dataset.productId;
-                comparisonList = comparisonList.filter(f => f.ProductId != id);
-                saveComparison();
-                displayComparison(); 
-                if (currentProduct && currentProduct.ProductId == id) {
-                    const cmpBtn = document.getElementById('addToCompareBtn');
-                    if (cmpBtn) {
-                       cmpBtn.classList.remove('added');
-                       cmpBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h5v2h2V1h-2v2zm0 15H5V5h5v13zm9-15h-5v2h3v5h-3v2h3v5h-3v2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 15h-3V5h3v13z"/></svg> Karşılaştır`;
-                    }
-                }
-            };
-        });
-
-        gridEl.style.gridTemplateColumns = `1fr repeat(${comparisonList.length}, minmax(180px, 1fr))`;
-    }
-
-    function setupComparisonModal() {
-        const modal = document.getElementById('compareModal');
-        const btn = document.getElementById('compareFloatingBtn');
-        const closeBtn = modal.querySelector('.close-button');
-        if (modal && btn && closeBtn) {
-            btn.onclick = (e) => { e.preventDefault(); displayComparison(); modal.classList.add('show'); };
-            closeBtn.onclick = () => modal.classList.remove('show');
-            modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); };
-        }
-    }
     async function loadProductDetail(slugFromUrl, segmentName) {
         const productDetailContainer = document.getElementById('productDetailContainer');
         productDetailContainer.innerHTML = `<div class="loading-container"><div class="loading-spinner"></div><p class="loading-text">Ürün bilgileri yükleniyor...</p></div>`;
@@ -1341,7 +984,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         }
     }
     
-    // NEW Function to fetch AI description post-render
     async function fetchAndFillDescriptionAI(product, enhancedDetail) {
         const initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description;
         const placeholderTexts = [
@@ -1356,7 +998,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                                          placeholderTexts.includes(String(initialDescription).trim().toLowerCase()));
 
         if (!isDescriptionTrulyMissing) {
-            return; // Description already exists or is not a generic placeholder.
+            return; 
         }
 
         console.log(`[AI Auto-Desc Post-Render] Açıklama eksik for "${product.ProductName}". Gemini ile üretilmeye çalışılacak.`);
@@ -1396,13 +1038,12 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 console.log(`[AI Auto-Desc Post-Render] Gemini'den açıklama alındı for "${product.ProductName}". Updating DOM.`);
 
                 const shortDescEl = document.getElementById('product-short-description-content');
-                if (shortDescEl) shortDescEl.innerHTML = newDescription; // Use innerHTML if AI can return simple formatting
+                if (shortDescEl) shortDescEl.innerHTML = newDescription; 
 
                 const tab1DescEl = document.getElementById('product-tab1-description-content');
                 if (tab1DescEl) tab1DescEl.innerHTML = newDescription;
 
-                // Update in-memory data for consistency with other features
-                product.Description = newDescription; // This updates currentProduct.Description as well
+                product.Description = newDescription; 
                 if (enhancedDetail) {
                     enhancedDetail["Ürün Açıklaması"] = newDescription;
                 }
@@ -1423,16 +1064,14 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
     }
 
 
-    function displayProductDetail(product, enhancedDetail, segmentName) { // No longer async
+    function displayProductDetail(product, enhancedDetail, segmentName) { 
         const detailContainer = document.getElementById('productDetailContainer');
         
-        // Use initial description, or a placeholder if totally missing
         let initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description || "Açıklama mevcut değil.";
 
         let imageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
         const productCategory = getProductCategory(product);
         const isFav = isFavorite(product.ProductId);
-        const isCmp = isInComparison(product.ProductId);
 
         const imageHTML = `<div class="product-main-image-wrapper" id="mainProductImageWrapper"><img src="${imageUrl}" alt="${product.ProductName}" class="product-main-image-modern ${!imageUrl || imageUrl === FALLBACK_IMAGE_URL ? 'fallback-image' : ''}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';" loading="lazy"></div>`;
         const favoriteButtonHTML = `<button class="favorite-button ${isFav ? 'favorited' : ''}" id="favoriteBtn" title="Favorilere Ekle/Çıkar"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>`;
@@ -1452,7 +1091,6 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         const shareText = encodeURIComponent(`Serakıncı'da ${product.ProductName} ürününü inceleyin:`);
         const shareButtonsHTML = `<div class="product-share-buttons"><span class="share-label">Paylaş:</span><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}" target="_blank" title="Facebook'ta Paylaş"><svg viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a><a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a></div>`;
         
-        // MODIFIED: Add ID for short description paragraph
         const shortDescriptionHTML = `<div class="product-short-description"><p id="product-short-description-content">${initialDescription}</p></div>`;
         
         const aiButtonHTML = `
@@ -1461,13 +1099,9 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg>
                     AI ile Bilgi Al
                 </button>
-                <button id="addToCompareBtn" class="${isCmp ? 'added' : ''}" title="Bu ürünü karşılaştırma listesine ekle/çıkar">
-                   ${isCmp ? `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Eklendi` : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h5v2h2V1h-2v2zm0 15H5V5h5v13zm9-15h-5v2h3v5h-3v2h3v5h-3v2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 15h-3V5h3v13z"/></svg> Karşılaştır`}
-                </button>
                 <div id="aiProductInfoPlaceholder"></div>
             </div>`;
 
-        // MODIFIED: Add ID for tab1 description paragraph
         const tab1Content = `<h3>Genel Açıklama</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
         const tab2Content = `<h3>Ürün İçeriği</h3><p>${(enhancedDetail?.["Ürün İçeriği"] || product.Content) && String(enhancedDetail?.["Ürün İçeriği"] || product.Content).trim() !== '' ? (enhancedDetail?.["Ürün İçeriği"] || product.Content) : "Bileşen listesi için ambalajdaki etiket incelenmelidir."}</p>`;
         let tab3Content = `<h3>Dikkat Edilmesi Gerekenler / Uyarılar</h3><ul>${enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel uyarı bulunmamaktadır.</li>"}</ul><h3>Kullanım İpuçları ve En İyi Uygulamalar</h3><ul>${enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel kullanım ipucu bulunmamaktadır.</li>"}</ul>`;
@@ -1524,20 +1158,14 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         const favBtn = document.getElementById('favoriteBtn');
         if (favBtn) favBtn.onclick = (e) => toggleFavorite(product, e.currentTarget);
 
-        const compareBtn = document.getElementById('addToCompareBtn');
-        if (compareBtn) compareBtn.onclick = (e) => toggleComparison(product, e.currentTarget, enhancedDetail || product);
-
-
         setupMainImageLightbox(imageUrl);
         setupAIFetchButton(product, enhancedDetail || product); 
         
-        // MODIFIED: Call the async AI description fetcher without awaiting
         fetchAndFillDescriptionAI(product, enhancedDetail);
     }
 
     function getRelatedProductsHTML(currentProduct, segmentName, allProducts) {
         const productCategory = getProductCategory(currentProduct);
-        // Ensure allProducts is an array before filtering
         const safeAllProducts = Array.isArray(allProducts) ? allProducts : [];
         const relatedProducts = safeAllProducts
             .filter(p => p && p.ProductName && getProductCategory(p) === productCategory && slugify(p.ProductName) !== slugify(currentProduct.ProductName))
@@ -1761,13 +1389,11 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
 
         loadFavorites();
-        loadComparison(); 
 
         setupMobileMenu(); 
         setupScrollToTopButton();
         setupLightbox();
         setupFavoritesModal();
-        setupComparisonModal();
         setupChatbotModal(); 
         
         await setupProductSearch(); 
