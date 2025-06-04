@@ -174,7 +174,7 @@
 
     #favoritesNavLink { 
         position: fixed;
-        bottom: calc(80px + 56px + 10px); /* Adjusted to be above chatbot */
+        bottom: calc(80px + 56px + 10px); 
         right: 20px;
         background-color: var(--card-bg);
         border: 1px solid var(--border);
@@ -223,7 +223,7 @@
         box-shadow: var(--shadow-md);
         transition: transform 0.3s;
         display: flex; 
-        bottom: 80px; /* Original compare button position */
+        bottom: 80px;
     }
 
     .chatbot-floating-btn:hover { transform: scale(1.1); }
@@ -289,20 +289,30 @@
     .product-share-buttons svg { width: 100%; height: 100%; } 
     .product-short-description { font-size: 1rem; color: var(--text-medium); margin-bottom: 1.5rem; line-height: 1.7; }
     #ai-button-container { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 10px; }
-    #fetchAiInfoBtn { display: inline-flex; align-items: center; justify-content: center; width: auto; padding: 0.6rem 1.2rem; font-weight: 600; transition: all 0.2s; border: 1px solid; border-radius: var(--radius); cursor: pointer;}
-    #fetchAiInfoBtn { background-color: var(--accent); border-color: var(--accent); color: white; }
-    #fetchAiInfoBtn:hover { background-color: #dd6b15; border-color: #dd6b15;}
-    #fetchAiInfoBtn svg {width:20px; height:20px; margin-right: 8px;}
-    #fetchAiInfoBtn:disabled { background-color: var(--text-light) !important; border-color: var(--text-light) !important; cursor: not-allowed; }
-    #fetchAiInfoBtn .spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 8px; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    #aiProductInfoPlaceholder { margin-top: 1.5rem; width: 100%; }
-    #aiProductInfo { margin-top: 1rem; padding: 1rem; background-color: #e9f4ff; border-left: 4px solid var(--primary-blue); border-radius: var(--radius); }
-    #aiProductInfo h4 { font-size: 1.1rem; color: var(--text-dark); margin-top: 0; margin-bottom: 0.75rem; }
-    #aiProductInfo p { margin-bottom: 0.5rem; }
-    #aiProductInfo ul { padding-left: 1.2rem; margin-bottom: 0; }
-    #aiProductInfo li { margin-bottom: 0.25rem; }
-    #aiProductInfo.error-message { background-color: #fff3cd; border-left-color: #ffc107; color: #664d03; }
+    #scrollToContactBtn { 
+      display: inline-flex; 
+      align-items: center; 
+      justify-content: center; 
+      width: auto; 
+      padding: 0.6rem 1.2rem; 
+      font-weight: 600; 
+      transition: all 0.2s; 
+      border: 1px solid; 
+      border-radius: var(--radius); 
+      cursor: pointer;
+      background-color: var(--primary-blue); 
+      border-color: var(--primary-blue); 
+      color: white; 
+    }
+    #scrollToContactBtn:hover { 
+      background-color: var(--primary-blue-hover); 
+      border-color: var(--primary-blue-hover); 
+    }
+    #scrollToContactBtn svg {
+      width:20px; 
+      height:20px; 
+      margin-right: 8px;
+    }
     .product-details-tabs-modern { background-color: var(--card-bg); padding: 0; border-radius: var(--radius); box-shadow: var(--shadow-md); margin-bottom: 2.5rem; overflow: hidden; }
     .tabs-navigation-modern { display: flex; border-bottom: 1px solid var(--border-color); background-color: #f8f9fa; overflow-x: auto; white-space: nowrap;}
     .tab-link-modern { font-family: 'Inter', sans-serif; padding: 1rem 1.5rem; cursor: pointer; border: none; background-color: transparent; color: var(--text-medium); font-size: 1rem; font-weight: 600; position: relative; border-bottom: 3px solid transparent; transition: color 0.2s, border-color 0.2s, background-color 0.2s; margin-bottom: -1px; flex-shrink: 0;}
@@ -381,6 +391,7 @@
     .scroll-to-top:hover { background-color: var(--primary-blue-hover); }
     .loading-container, .error-container { text-align: center; padding: 3rem 1rem; background-color: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow-md); max-width: 600px; margin: 3rem auto; }
     .loading-spinner { width: 48px; height: 48px; border: 4px solid #e9ecef; border-top: 4px solid var(--primary-blue); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1.5rem auto; }
+    @keyframes spin { to { transform: rotate(360deg); } }
     .loading-text { color: var(--text-medium); font-size: 1rem; }
     .error-container h2 { font-size: 1.5rem; color: var(--text-dark); margin-bottom: 0.5rem;}
     .error-container p { font-size: 1rem; color: var(--text-medium); margin-bottom: 1.5rem;}
@@ -425,22 +436,21 @@
         .contact-grid { grid-template-columns: 1fr; } 
         .product-meta-enhanced { flex-direction: column; align-items: flex-start; gap: 0.5rem; } 
 
-        /* Mobile Floating Buttons Visibility */
         .chatbot-floating-btn {
             display: flex !important;
             opacity: 1 !important;
             visibility: visible !important;
-            right: 20px; /* Ensure position */
-            bottom: 80px; /* Ensure position */
+            right: 20px; 
+            bottom: 80px; 
         }
         #favoritesNavLink {
-            display: inline-flex !important; /* Correct display type */
+            display: inline-flex !important; 
             opacity: 1 !important;
             visibility: visible !important;
-            right: 20px; /* Ensure position */
-            bottom: calc(80px + 56px + 10px); /* Ensure position */
+            right: 20px; 
+            bottom: calc(80px + 56px + 10px); 
         }
-        .scroll-to-top { /* Ensure scroll to top is also positioned correctly */
+        .scroll-to-top { 
             right: 20px;
             bottom: 20px;
         }
@@ -589,13 +599,17 @@
     let G_isMouseOverDropdown = false; 
 
     async function generateEnhancedProductInfo(productName, productKategori, languageCode, existingProductInfo = {}) {
+        // This function is kept for fetchAndFillDescriptionAI, 
+        // but it no longer directly powers a visible "AI Info" section via a button.
+        // It could be simplified to only return 'enhancedDescription' if 'keyFeatures' are truly no longer used anywhere.
+        // For now, keeping it as is, as fetchAndFillDescriptionAI might be adapted to use keyFeatures later if needed.
         if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
         
         let isGeminiEnabled = false;
         if (GEMINI_SDK_LOADED) {
-            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") { // Demo key
+            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") { 
                 isGeminiEnabled = true;
-            } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) { // Other valid key
+            } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) { 
                 isGeminiEnabled = true;
             }
         }
@@ -618,28 +632,21 @@
             
             Çıktı JSON nesnesi olmalı ve SADECE aşağıdaki anahtarları içermelidir Eğer bilmiyorsan cevap verme, mümkünse ürünün resmi web sitesi ile birebir aynı açıklamalar cümleler kullanılmalı:
             1.  "enhancedDescription": Profesyonel kısa açıklaması. Mevcut açıklamayla varsa ÇAKIŞMAMALI.
-            2.  "keyFeatures": Ne işe yarar?, İçeriği (Composition) , Kullanım Alanları ve kulanım hayvanları (Indications), Kontrendikasyonlar (Contraindications), Dozaj ve Uygulama (Dosage and Administration),Yan Etkiler (Side Effects), Uyarılar ve Önlemler (Precautions and Warnings), İlaç Kalıntı Süresi / İnsan Tüketimi Uyarısı (Withdrawal Times), Saklama Koşulları (Storage Conditions)
-          
-
-Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi bulunmamaktadır" şeklinde cevap ver 
-            1.  "enhancedDescription":  
-
+            Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi bulunmamaktadır" şeklinde cevap ver 
+            
             Örnek JSON:
             {
-              "enhancedDescription": "Bu ürün...",
-              "keyFeatures": ["Özellik 1", "Özellik 2"]
+              "enhancedDescription": "Bu ürün..."
             }
             Cevabını Türkçe olarak oluştur.
-        `;
+        `; // Removed keyFeatures from the prompt as it's not directly displayed anymore
 
         try {
             const result = await model.generateContent(basePrompt);
             const response = result.response;
             let jsonStr = response.text().replace(/^```(?:json)?\s*\n?(.*?)\n?\s*```$/s, '$1').trim();
             const parsedData = JSON.parse(jsonStr);
-            // Looser check, only enhancedDescription is strictly needed for auto-fill
             if (!parsedData.enhancedDescription) throw new Error("Yapay zekadan beklenen 'enhancedDescription' alanı alınamadı.");
-            if (!parsedData.keyFeatures) parsedData.keyFeatures = []; // Default to empty array if missing
             return parsedData; 
         } catch (error) {
             console.error("Gemini API ile gelişmiş ürün bilgisi üretilirken hata oluştu:", error);
@@ -684,45 +691,21 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             return "Üzgünüm, şu anda sorunuzu yanıtlayamıyorum. Lütfen daha sonra tekrar deneyin veya firmamızla iletişime geçin.";
         }
     }
-
-    function setupAIFetchButton(product, enhancedDetail) {
-        const fetchBtn = document.getElementById('fetchAiInfoBtn');
-        const placeholder = document.getElementById('aiProductInfoPlaceholder');
-        if (!fetchBtn || !placeholder) return;
-
-        let isAiEnabled = false;
-        if (GEMINI_SDK_LOADED) {
-            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA") {
-                isAiEnabled = true;
-            } else if (GEMINI_API_KEY && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
-                isAiEnabled = true;
-            }
+    
+    function setupScrollToContactButton() {
+        const scrollToContactBtn = document.getElementById('scrollToContactBtn');
+        if (scrollToContactBtn) {
+            scrollToContactBtn.addEventListener('click', () => {
+                const contactSection = document.querySelector('.contact-card-modern');
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    console.warn('İletişim bölümü bulunamadı.');
+                }
+            });
         }
-
-        if (!isAiEnabled) {
-            fetchBtn.disabled = true; 
-            fetchBtn.style.cursor = 'not-allowed';
-            fetchBtn.title = 'Yapay zeka modülü veya API anahtarı kullanılamıyor.';
-            placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka modülü (SDK) veya API anahtarı yapılandırılmadığı için bu özellik kullanılamıyor.</em></p></div>`; 
-            return;
-        }
-
-        fetchBtn.addEventListener('click', async () => {
-            fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> Bilgi Üretiliyor...`; placeholder.innerHTML = ''; 
-            const existingInfo = { 
-                description: (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || currentProduct.Description, 
-                content: (enhancedDetail && enhancedDetail["Ürün İçeriği"]) || currentProduct.Content 
-            };
-            try {
-                const aiData = await generateEnhancedProductInfo(currentProduct.ProductName, getProductCategory(currentProduct), 'tr', existingInfo); 
-                placeholder.innerHTML = `<div id="aiProductInfo"><h4>Yapay Zeka Destekli Ek Bilgiler:</h4><p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>${aiData.keyFeatures && aiData.keyFeatures.length > 0 ? `<p><strong>Öne Çıkan Ek Özellikler:</strong></p><ul>${aiData.keyFeatures.map(f => `<li>${f}</li>`).join('')}</ul>` : ''}</div>`;
-                fetchBtn.style.display = 'none'; 
-            } catch (error) {
-                placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>AI bilgisi oluşturulurken hata: ${error.message}.</em></p></div>`;
-                fetchBtn.disabled = false; fetchBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg> Tekrar Dene`;
-            }
-        });
     }
+
 
     function setupChatbotModal() {
         const modal = document.getElementById('chatbotModal');
@@ -971,7 +954,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
             if (currentProduct) {
                 const enhancedDetail = enhancedData.find(detail => detail.ProductId === currentProduct.ProductId);
-                displayProductDetail(currentProduct, enhancedDetail, segmentName); // No await here
+                displayProductDetail(currentProduct, enhancedDetail, segmentName); 
                 document.title = `${currentProduct.ProductName} | ${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} | Serakıncı`;
                 const canonicalLink = document.querySelector("link[rel='canonical']");
                 if (canonicalLink) canonicalLink.href = window.location.href; 
@@ -1001,7 +984,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
             return; 
         }
 
-        console.log(`[AI Auto-Desc Post-Render] Açıklama eksik for "${product.ProductName}". Gemini ile üretilmeye çalışılacak.`);
+        console.log(`[AI Auto-Desc] Açıklama eksik for "${product.ProductName}". Gemini ile üretilmeye çalışılacak.`);
             
         let isAiEnabled = false;
         if (GEMINI_SDK_LOADED) {
@@ -1011,7 +994,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         }
 
         if (!isAiEnabled) {
-            console.warn(`[AI Auto-Desc Post-Render] Gemini modülü veya API anahtarı kullanılamadığı için otomatik açıklama üretilemedi for "${product.ProductName}".`);
+            console.warn(`[AI Auto-Desc] Gemini modülü veya API anahtarı kullanılamadığı için otomatik açıklama üretilemedi for "${product.ProductName}".`);
             const shortDescEl = document.getElementById('product-short-description-content');
             const tab1DescEl = document.getElementById('product-tab1-description-content');
             if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.textContent = "Açıklama mevcut değil (AI kapalı).";
@@ -1035,7 +1018,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 String(aiData.enhancedDescription).trim().toLowerCase() !== "ürün hakkında detaylı bilgi bulunmamaktadır") {
                 
                 const newDescription = aiData.enhancedDescription;
-                console.log(`[AI Auto-Desc Post-Render] Gemini'den açıklama alındı for "${product.ProductName}". Updating DOM.`);
+                console.log(`[AI Auto-Desc] Gemini'den açıklama alındı for "${product.ProductName}". Updating DOM.`);
 
                 const shortDescEl = document.getElementById('product-short-description-content');
                 if (shortDescEl) shortDescEl.innerHTML = newDescription; 
@@ -1048,14 +1031,14 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                     enhancedDetail["Ürün Açıklaması"] = newDescription;
                 }
             } else {
-                console.warn(`[AI Auto-Desc Post-Render] Gemini'den geçerli bir açıklama alınamadı or 'bilgi yok' for "${product.ProductName}".`);
+                console.warn(`[AI Auto-Desc] Gemini'den geçerli bir açıklama alınamadı or 'bilgi yok' for "${product.ProductName}".`);
                  const shortDescEl = document.getElementById('product-short-description-content');
                  const tab1DescEl = document.getElementById('product-tab1-description-content');
                  if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.textContent = "Yapay zeka ile açıklama üretilemedi.";
                  if (tab1DescEl && placeholderTexts.includes(tab1DescEl.textContent.trim().toLowerCase())) tab1DescEl.textContent = "Yapay zeka ile genel açıklama üretilemedi.";
             }
         } catch (error) {
-            console.error(`[AI Auto-Desc Post-Render] Gemini ile otomatik açıklama üretilirken hata for "${product.ProductName}":`, error);
+            console.error(`[AI Auto-Desc] Gemini ile otomatik açıklama üretilirken hata for "${product.ProductName}":`, error);
             const shortDescEl = document.getElementById('product-short-description-content');
             const tab1DescEl = document.getElementById('product-tab1-description-content');
             if (shortDescEl && placeholderTexts.includes(shortDescEl.textContent.trim().toLowerCase())) shortDescEl.textContent = "Açıklama üretilirken hata oluştu.";
@@ -1093,13 +1076,12 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         
         const shortDescriptionHTML = `<div class="product-short-description"><p id="product-short-description-content">${initialDescription}</p></div>`;
         
-        const aiButtonHTML = `
+        const actionButtonHTML = `
             <div id="ai-button-container">
-                <button id="fetchAiInfoBtn" title="Yapay Zeka ile ürün hakkında daha fazla bilgi alın">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg>
-                    AI ile Bilgi Al
+                <button id="scrollToContactBtn" title="Daha fazla bilgi için iletişim bölümüne gidin">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/></svg>
+                    Daha Fazla Bilgi İçin
                 </button>
-                <div id="aiProductInfoPlaceholder"></div>
             </div>`;
 
         const tab1Content = `<h3>Genel Açıklama</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
@@ -1131,7 +1113,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
                 <div class="product-gallery-modern">${imageHTML}</div>
                 <div class="product-info-modern">
                     <div class="product-title-wrapper"><h1 class="product-title-modern">${product.ProductName}</h1>${favoriteButtonHTML}</div>
-                    ${metaInfoHTML}${shareButtonsHTML}${shortDescriptionHTML}${aiButtonHTML}
+                    ${metaInfoHTML}${shareButtonsHTML}${shortDescriptionHTML}${actionButtonHTML}
                 </div>
             </div>
             <div class="product-details-tabs-modern">
@@ -1157,10 +1139,9 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
         setupTabEvents(); 
         const favBtn = document.getElementById('favoriteBtn');
         if (favBtn) favBtn.onclick = (e) => toggleFavorite(product, e.currentTarget);
-
-        setupMainImageLightbox(imageUrl);
-        setupAIFetchButton(product, enhancedDetail || product); 
         
+        setupScrollToContactButton(); // Setup for the new button
+        setupMainImageLightbox(imageUrl);
         fetchAndFillDescriptionAI(product, enhancedDetail);
     }
 
@@ -1197,7 +1178,7 @@ Ambalaj (Packing).. Eğer bir cevap bulmaz isen "Ürün hakkında detaylı bilgi
 
     function getContactHTML() {
         return `
-        <div class="contact-card-modern">
+        <div class="contact-card-modern" id="contactSection">
             <div class="contact-title-modern">Ürün Hakkında Bilgi Alın</div>
             <div class="contact-bar-modern"></div>
             <p class="contact-intro-text">Ürünle ilgili detaylı bilgi veya sorularınız için bizimle iletişime geçmekten çekinmeyin:</p>
