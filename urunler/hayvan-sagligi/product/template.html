@@ -1050,7 +1050,7 @@
     function displayProductDetail(product, enhancedDetail, segmentName) { 
         const detailContainer = document.getElementById('productDetailContainer');
         
-        let initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description || "Açıklama mevcut değil.";
+        let initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description || " ";
 
         let imageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
         const productCategory = getProductCategory(product);
