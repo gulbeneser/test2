@@ -19,7 +19,7 @@ jobs:
       - name: 🟢 Node.js kurulumu
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '18'
 
       - name: 🧱 Puppeteer için sistem kütüphanelerini kur (Ubuntu 24.04 uyumlu)
         run: |
@@ -49,7 +49,7 @@ jobs:
             wget
 
       - name: 📦 NPM bağımlılıklarını yükle
-        run: npm ci
+        run: npm install puppeteer fs-extra dotenv
 
       - name: 🚀 Scraper script'ini çalıştır
         env:
