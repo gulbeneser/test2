@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Açıklaması Admin Paneli</title>
+    <style>
+        :root {
+            --primary-theme: #50C8C6;
+            --background: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-dark: #212529;
+            --text-medium: #495057;
+            --border-color: #dee2e6;
+            --radius: 0.375rem;
+            --shadow-md: 0 .5rem 1rem rgba(0,0,0,.1);
+            --accent-success: #28a745;
+            --accent-danger: #dc3545;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--background);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+        }
+        h1 {
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--primary-theme);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        textarea {
+            min-height: 200px;
+            resize: vertical;
+        }
+        .product-info {
+            background-color: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius);
+            font-size: 0.9rem;
+            color: var(--text-medium);
+            margin-top: 0.5rem;
+        }
+        button {
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: opacity 0.2s;
+        }
+        button:hover {
+            opacity: 0.85;
+        }
+        #saveChangesBtn {
+            background-color: var(--primary-theme);
+            color: white;
+            margin-right: 1rem;
+        }
+        #downloadFileBtn {
+            background-color: var(--accent-success);
+            color: white;
+        }
+        #status {
+            margin-top: 1.5rem;
+            font-weight: 500;
+            padding: 1rem;
+            border-radius: var(--radius);
+            display: none;
+        }
+        #status.success {
+            background-color: #d4edda;
+            color: #155724;
+            display: block;
+        }
+        #status.error {
+            background-color: #f8d7da;
+            color: var(--accent-danger);
+            display: block;
+        }
+        .editor-container {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Ürün Açıklaması Yönetimi</h1>
+    <div id="status"></div>
+    
+    <div class="form-group">
+        <label for="productSelector">Düzenlenecek Ürünü Seçin</label>
+        <select id="productSelector">
+            <option value="">Önce ürünleri yükleyin...</option>
+        </select>
+    </div>
+
+    <div id="editorContainer" class="editor-container">
+        <div style="padding: 1.5rem;">
+            <div class="form-group">
+                <label for="productDescription">Ürün Açıklaması (HTML destekler)</label>
+                <div class="product-info">
+                    <strong>Ürün Adı:</strong> <span id="infoProductName"></span><br>
+                    <strong>ID:</strong> <span id="infoProductId"></span>
+                </div>
+                <textarea id="productDescription" placeholder="Ürünün detaylı açıklamasını buraya yazın. Örnek: <p>Bu bir paragraftır.</p> <ul><li>Liste elemanı</li></ul>"></textarea>
+            </div>
+            <button id="saveChangesBtn">Değişiklikleri Kaydet</button>
+        </div>
+    </div>
+    
+    <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border-color);">
+
+    <button id="downloadFileBtn" disabled>Güncel `detay-product.json` Dosyasını İndir</button>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const API_BASE_PATH = '/urunler/api/';
+    const productSelector = document.getElementById('productSelector');
+    const editorContainer = document.getElementById('editorContainer');
+    const productDescriptionTextarea = document.getElementById('productDescription');
+    const saveChangesBtn = document.getElementById('saveChangesBtn');
+    const downloadFileBtn = document.getElementById('downloadFileBtn');
+    const statusDiv = document.getElementById('status');
+    const infoProductName = document.getElementById('infoProductName');
+    const infoProductId = document.getElementById('infoProductId');
+
+    let allProducts = [];
+    let productDetails = [];
+    let currentSelectedProductId = null;
+
+    function showStatus(message, type = 'success') {
+        statusDiv.textContent = message;
+        statusDiv.className = type; // 'success' or 'error'
+        setTimeout(() => {
+            statusDiv.style.display = 'none';
+        }, 4000);
+    }
+
+    async function loadData() {
+        try {
+            showStatus('Veriler yükleniyor...', 'success');
+            const [productsResponse, detailsResponse] = await Promise.all([
+                fetch(API_BASE_PATH + 'products.json'),
+                fetch(API_BASE_PATH + 'detay-product.json').catch(e => null) // Detay dosyası yoksa hata vermesin
+            ]);
+
+            if (!productsResponse.ok) {
+                throw new Error('products.json dosyası yüklenemedi.');
+            }
+            allProducts = await productsResponse.json();
+
+            if (detailsResponse && detailsResponse.ok) {
+                productDetails = await detailsResponse.json();
+            } else {
+                productDetails = []; // Eğer dosya yoksa veya boşsa, boş bir diziyle başla
+                console.warn('detay-product.json bulunamadı veya okunamadı. Yeni bir tane oluşturulacak.');
+            }
+            
+            populateSelector();
+            downloadFileBtn.disabled = false;
+            showStatus('Tüm veriler başarıyla yüklendi. Düzenlemek için bir ürün seçin.', 'success');
+        } catch (error) {
+            console.error('Veri yükleme hatası:', error);
+            showStatus('Veri yüklenirken bir hata oluştu: ' + error.message, 'error');
+        }
+    }
+
+    function populateSelector() {
+        productSelector.innerHTML = '<option value="">-- Bir Ürün Seçin --</option>';
+        allProducts.forEach(product => {
+            if (product.ProductId && product.ProductName) {
+                const option = document.createElement('option');
+                option.value = product.ProductId;
+                option.textContent = product.ProductName;
+                productSelector.appendChild(option);
+            }
+        });
+    }
+
+    productSelector.addEventListener('change', (e) => {
+        currentSelectedProductId = e.target.value;
+        if (!currentSelectedProductId) {
+            editorContainer.style.display = 'none';
+            return;
+        }
+
+        const selectedProduct = allProducts.find(p => p.ProductId == currentSelectedProductId);
+        let detail = productDetails.find(d => d.ProductId == currentSelectedProductId);
+
+        if (!detail) {
+            // Eğer bu ürün için detay yoksa, varsayılan bir tane oluştur
+            detail = {
+                ProductId: parseInt(currentSelectedProductId),
+                "Ürün Açıklaması": ""
+            };
+        }
+        
+        infoProductName.textContent = selectedProduct.ProductName;
+        infoProductId.textContent = selectedProduct.ProductId;
+        productDescriptionTextarea.value = detail["Ürün Açıklaması"] || "";
+        editorContainer.style.display = 'block';
+    });
+
+    saveChangesBtn.addEventListener('click', () => {
+        if (!currentSelectedProductId) {
+            showStatus('Lütfen önce bir ürün seçin.', 'error');
+            return;
+        }
+
+        let detailIndex = productDetails.findIndex(d => d.ProductId == currentSelectedProductId);
+
+        if (detailIndex > -1) {
+            // Var olanı güncelle
+            productDetails[detailIndex]["Ürün Açıklaması"] = productDescriptionTextarea.value;
+        } else {
+            // Yeni detay ekle
+            productDetails.push({
+                ProductId: parseInt(currentSelectedProductId),
+                "Ürün Açıklaması": productDescriptionTextarea.value
+            });
+        }
+        
+        showStatus(`"${infoProductName.textContent}" ürününün açıklaması kaydedildi. Değişiklikleri canlıya almak için dosyayı indirip sunucuya yükleyin.`, 'success');
+    });
+
+    downloadFileBtn.addEventListener('click', () => {
+        if (productDetails.length === 0) {
+            showStatus('İndirilecek kayıtlı bir değişiklik bulunmuyor.', 'error');
+            return;
+        }
+        const dataStr = JSON.stringify(productDetails, null, 2); // 2-space indentation for readability
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(dataBlob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'detay-product.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        showStatus('`detay-product.json` dosyası indirildi. Lütfen sunucudaki `/urunler/api/` klasörüne yükleyin.', 'success');
+    });
+
+    // Sayfa yüklendiğinde verileri çek
+    loadData();
+});
+</script>
+
+</body>
+</html>
