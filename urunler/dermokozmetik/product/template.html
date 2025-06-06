@@ -645,14 +645,14 @@
         }
 
         fetchBtn.addEventListener('click', async () => {
-            fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> Bilgi Üretiliyor...`; placeholder.innerHTML = ''; 
+            fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> ...`; placeholder.innerHTML = ''; 
             const existingInfo = { 
                 description: productDetail?.["Ürün Açıklaması"] || product.ProductShortDescription, 
             };
             try {
                 const aiData = await generateEnhancedProductInfo(product.ProductName, product.cat || 'Dermokozmetik', 'tr', existingInfo); 
                 let aiHtml = `<div id="aiProductInfo">`;
-                aiHtml += `<h4>Yapay Zeka Destekli Ek Bilgiler:</h4>`;
+                aiHtml += `<h4>Detaylar:</h4>`;
                 aiHtml += `<p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>`;
                 if (aiData.keyFeatures && aiData.keyFeatures.length > 0) {
                     aiHtml += `<p><strong>Öne Çıkan Özellikler:</strong></p><ul>`;
