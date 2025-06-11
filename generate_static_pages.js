@@ -70,6 +70,58 @@ ${links}
   await fs.promises.writeFile(outPath, html);
 }
 
+function extractStaticUrls() {
+  const sitemapPath = path.join(__dirname, 'sitemap.xml');
+  const urls = new Set();
+  if (fs.existsSync(sitemapPath)) {
+    const content = fs.readFileSync(sitemapPath, 'utf8');
+    const regex = /<loc>([^<]+)<\/loc>/g;
+    let m;
+    while ((m = regex.exec(content))) {
+      const loc = m[1];
+      if (!loc.includes('/product/') && !loc.includes('/product-pages/')) {
+        urls.add(loc);
+      }
+    }
+  } else {
+    urls.add('https://www.serakinci.com/');
+    urls.add('https://www.serakinci.com/urunler/');
+  }
+  return Array.from(urls);
+}
+
+async function createSitemap(dermo, animal) {
+  const today = new Date().toISOString().slice(0, 10);
+  const urls = extractStaticUrls();
+  for (const p of dermo) {
+    if (p && p.ProductName) {
+      const slug = slugify(p.ProductName);
+      urls.push(
+        `https://www.serakinci.com/urunler/dermokozmetik/product-pages/${slug}/`
+      );
+    }
+  }
+  for (const p of animal) {
+    if (p && p.ProductName) {
+      const slug = slugify(p.ProductName);
+      urls.push(
+        `https://www.serakinci.com/urunler/hayvan-sagligi/product-pages/${slug}/`
+      );
+    }
+  }
+  const entries = urls
+    .map(
+      (loc) => `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`
+    )
+    .join('\n');
+  const xml =
+    `<?xml version='1.0' encoding='utf-8'?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    entries +
+    '\n</urlset>';
+  await fs.promises.writeFile(path.join(__dirname, 'sitemap.xml'), xml);
+  await fs.promises.writeFile(path.join(__dirname, 'sitemap.html'), xml);
+}
+
 async function generate() {
   let dermo = [];
   let animal = [];
@@ -77,7 +129,8 @@ async function generate() {
   try { animal = JSON.parse(await fs.promises.readFile(animalPath, 'utf8')); } catch {}
   await createPages(dermo, 'dermokozmetik');
   await createPages(animal, 'hayvan-sagligi');
-  console.log('Static product pages generated.');
+  await createSitemap(dermo, animal);
+  console.log('Static product pages generated and sitemap updated.');
 }
 
 if (require.main === module) {

@@ -51,6 +51,8 @@ This will read the JSON data and write pages under
 Hayvan Sağlığı products. It also generates an `index.html` inside each
 `product-pages/` directory listing links to every product page, so visiting
 `/urunler/<segment>/product-pages/` shows all available products.
+The same command updates `sitemap.xml` and `sitemap.html` to include every
+product URL so search engines can discover them.
 
 ## Deploying with Netlify
 
@@ -58,7 +60,7 @@ The repository includes a `netlify.toml` file. Netlify will run the
 `generate_static_pages.js` script during the build phase to ensure each product
 has its own static page before deployment. Product data and pages are also kept
 up to date by the `run-scraper.yml` GitHub Actions workflow, which runs daily
-and commits any new JSON files or generated pages. Each commit triggers a new
+and commits any new JSON files or generated sitemap. Each commit triggers a new
 Netlify deploy, so the static site is rebuilt automatically.
 
 ## Project structure
