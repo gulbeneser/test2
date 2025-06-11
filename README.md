@@ -48,7 +48,9 @@ node generate_static_pages.js
 
 This will read the JSON data and write pages under
 `urunler/<segment>/product-pages/<slug>/index.html` for both Dermokozmetik and
-Hayvan Sağlığı products.
+Hayvan Sağlığı products. It also generates an `index.html` inside each
+`product-pages/` directory listing links to every product page, so visiting
+`/urunler/<segment>/product-pages/` shows all available products.
 
 ## Deploying with Netlify
 

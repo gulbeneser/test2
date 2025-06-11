@@ -29,13 +29,45 @@ async function loadTemplate(segment) {
 
 async function createPages(products, segment) {
   const template = await loadTemplate(segment);
+  const list = [];
   for (const p of products) {
     if (!p || !p.ProductName) continue;
     const slug = slugify(p.ProductName);
     const outDir = path.join(__dirname, 'urunler', segment, 'product-pages', slug);
     await fs.promises.mkdir(outDir, { recursive: true });
     await fs.promises.writeFile(path.join(outDir, 'index.html'), template);
+    list.push({ slug, name: p.ProductName });
   }
+  await createIndex(list, segment);
+}
+
+async function createIndex(items, segment) {
+  const links = items
+    .map(({ slug, name }) => `    <li><a href="${slug}/">${name}</a></li>`) 
+    .join('\n');
+  const html = `<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${segment} product pages</title>
+</head>
+<body>
+  <h1>${segment} product pages</h1>
+  <ul>
+${links}
+  </ul>
+</body>
+</html>`;
+  const outPath = path.join(
+    __dirname,
+    'urunler',
+    segment,
+    'product-pages',
+    'index.html'
+  );
+  await fs.promises.mkdir(path.dirname(outPath), { recursive: true });
+  await fs.promises.writeFile(outPath, html);
 }
 
 async function generate() {

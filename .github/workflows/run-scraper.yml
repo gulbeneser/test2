@@ -67,8 +67,6 @@ jobs:
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add urunler/api/products.json urunler/api/hayvan-sagligi.json
-          git add urunler/dermokozmetik/product-pages/**/index.html || true
-          git add urunler/hayvan-sagligi/product-pages/**/index.html || true
           if git diff --staged --quiet; then
             echo "📦 Değişiklik yok, commit yapılmadı."
           else
