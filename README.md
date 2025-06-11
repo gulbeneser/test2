@@ -36,7 +36,11 @@ for product listings.
 ## Generating static product pages
 
 After the JSON files are updated you can create a static HTML page for every
-product. Run:
+product. The script copies the product detail templates so that each page has
+the same layout as `urunler/dermokozmetik/product/template.html` or
+`urunler/hayvan-sagligi/product/template.html`.
+
+Run:
 
 ```bash
 node generate_static_pages.js

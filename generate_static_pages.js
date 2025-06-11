@@ -3,6 +3,8 @@ const path = require('path');
 
 const dermoPath = path.join(__dirname, 'urunler', 'api', 'products.json');
 const animalPath = path.join(__dirname, 'urunler', 'api', 'hayvan-sagligi.json');
+const dermoTemplate = path.join(__dirname, 'urunler', 'dermokozmetik', 'product', 'template.html');
+const animalTemplate = path.join(__dirname, 'urunler', 'hayvan-sagligi', 'product', 'template.html');
 
 function slugify(text) {
   if (text == null) return 'isimsiz-urun';
@@ -20,34 +22,19 @@ function slugify(text) {
   return str || 'isimsiz-urun';
 }
 
-function buildHtml(product, segment) {
-  const titleSegment = segment === 'dermokozmetik' ? 'Dermokozmetik' : 'Hayvan Sağlığı';
-  const description = product.description || product.ProductName;
-  return `<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<title>${product.ProductName} | ${titleSegment} | Serakıncı</title>
-<meta name="description" content="${description}">
-<link rel="canonical" href="https://www.serakinci.com/urunler/${segment}/product-pages/${slugify(product.ProductName)}/">
-</head>
-<body>
-<h1>${product.ProductName}</h1>
-${product.ImageUrl ? `<img src="${product.ImageUrl}" alt="${product.ProductName}">` : ''}
-<p><strong>Ürün Kodu:</strong> ${product.ProductCode || ''}</p>
-${description ? `<p>${description}</p>` : ''}
-</body>
-</html>`;
+async function loadTemplate(segment) {
+  const file = segment === 'dermokozmetik' ? dermoTemplate : animalTemplate;
+  return fs.promises.readFile(file, 'utf8');
 }
 
 async function createPages(products, segment) {
+  const template = await loadTemplate(segment);
   for (const p of products) {
     if (!p || !p.ProductName) continue;
     const slug = slugify(p.ProductName);
     const outDir = path.join(__dirname, 'urunler', segment, 'product-pages', slug);
     await fs.promises.mkdir(outDir, { recursive: true });
-    const html = buildHtml(p, segment);
-    await fs.promises.writeFile(path.join(outDir, 'index.html'), html);
+    await fs.promises.writeFile(path.join(outDir, 'index.html'), template);
   }
 }
 
