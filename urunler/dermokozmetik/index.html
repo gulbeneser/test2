@@ -811,7 +811,7 @@
           ? `<img src="${imageUrl}" alt="${p.ProductName || 'Ürün Resmi'}" class="product-image" loading="lazy" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'no-image\\'>Görsel Yok</div>';">`
           : '<div class="no-image">Görsel Yok</div>';
 
-        return `<div class="product-card" onclick="window.location.href='/urunler/${segment}/product/${productSlug}/'" title="${p.ProductName || ''}">
+        return `<div class="product-card" onclick="window.location.href='/urunler/${segment}/product-pages/${productSlug}/'" title="${p.ProductName || ''}">
                   <div class="product-image-container">${imageTag}</div>
                   <div class="product-content">
                     <span class="product-category">${categoryName}</span>

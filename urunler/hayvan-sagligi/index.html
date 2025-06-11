@@ -455,7 +455,7 @@
         let imageUrl  = p.ImageUrl || (p.ProductImages?.[0]?.ImageUrl) || '';
         const categoryName  = getProductCategory(p);
         const productDataString = JSON.stringify(p).replace(/"/g, '"');
-        const productLinkTarget = `/urunler/${segment}/product/${productSlug}/`;
+        const productLinkTarget = `/urunler/${segment}/product-pages/${productSlug}/`;
         // localStorage'a kaydetme işlemini onclick içinde doğrudan yapıyoruz.
         const productOnClick = `localStorage.setItem('selectedProduct', ${productDataString});`; 
         

@@ -783,7 +783,7 @@
     function getSlugFromUrl() { 
       const pathname = window.location.pathname;
       const parts = pathname.split('/');
-      if (parts.length >= 5 && parts[3] === 'product' && parts[4]) { return parts[4]; }
+      if (parts.length >= 5 && (parts[3] === 'product' || parts[3] === 'product-pages') && parts[4]) { return parts[4]; }
       return '';
     }
     
@@ -867,11 +867,11 @@
                 const item = document.createElement('div');
                 item.className = 'modal-list-item';
                 item.innerHTML = `
-                    <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" title="${fav.ProductName} Detayı">
+                    <a href="/urunler/${fav.Segment}/product-pages/${fav.Slug}/" title="${fav.ProductName} Detayı">
                         <img src="${fav.ImageUrl}" alt="${fav.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'">
                     </a>
                     <div class="modal-list-item-info">
-                        <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a>
+                        <a href="/urunler/${fav.Segment}/product-pages/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a>
                         <span class="category">${fav.Category} (${fav.Segment === 'dermokozmetik' ? 'Dermo' : 'Hayvan Sağ.'})</span>
                     </div>
                     <div class="modal-list-item-actions">
@@ -1189,7 +1189,7 @@
         relatedProductsHTML = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${relatedProductsTitle}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
         relatedProducts.forEach(rp => {
           let rpImageUrl = rp.ImageUrl || (rp.ProductImages && rp.ProductImages.length > 0 ? rp.ProductImages[0].ImageUrl : FALLBACK_IMAGE_URL);
-          relatedProductsHTML += `<a href="/urunler/${segment}/product/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${rp.cat || 'Belirtilmemiş'}</div></div></a>`;
+          relatedProductsHTML += `<a href="/urunler/${segment}/product-pages/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${rp.cat || 'Belirtilmemiş'}</div></div></a>`;
         });
         relatedProductsHTML += `</div><div class="carousel-arrow next" onclick="window.scrollCarousel(1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div></div></div>`;
       } else {
@@ -1420,7 +1420,7 @@
                             const listItem = document.createElement('li');
                             let rpImageUrl = product.ImageUrl || (product.ProductImages && product.ProductImages.length > 0 ? product.ProductImages[0].ImageUrl : FALLBACK_IMAGE_URL);
                             listItem.innerHTML = `
-                                <a href="/urunler/${segment}/product/${slugify(product.ProductName)}/">
+                                <a href="/urunler/${segment}/product-pages/${slugify(product.ProductName)}/">
                                     <img src="${rpImageUrl}" alt="${product.ProductName}" class="suggestion-image" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';">
                                     <span class="suggestion-name">${product.ProductName}</span>
                                     ${product.cat ? `<span class="suggestion-category">${product.cat}</span>` : ''}
@@ -1493,7 +1493,7 @@
                             const productSlug = product.slugFn(product.ProductName); 
 
                             listItem.innerHTML = `
-                                <a href="/urunler/${productSegForLink}/product/${productSlug}/">
+                                <a href="/urunler/${productSegForLink}/product-pages/${productSlug}/">
                                     <img src="${rpImageUrl}" alt="${product.ProductName}" class="suggestion-image" onerror="this.src='${FALLBACK_IMAGE_URL}'">
                                     <span class="suggestion-name">${product.ProductName}</span>
                                     <span class="suggestion-category">${product.cat || product.kategori || (productSegForLink === 'dermokozmetik' ? 'Dermo' : 'Hayvan S.')}</span>
