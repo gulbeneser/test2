@@ -1,3 +1,8 @@
+# Netlify build step
+[build]
+  command = "node generate_static_pages.js"
+  publish = "."
+
 # ---------------------------------------------
 # 1)  Statik JSON / logo / CSS vb. dosyalar
 # ---------------------------------------------

@@ -33,6 +33,25 @@ The script launches Puppeteer and writes JSON files to `urunler/api/` such as
 `products.json` and `hayvan-sagligi.json`. These files are consumed by the site
 for product listings.
 
+## Generating static product pages
+
+After the JSON files are updated you can create a static HTML page for every
+product. Run:
+
+```bash
+node generate_static_pages.js
+```
+
+This will read the JSON data and write pages under
+`urunler/<segment>/product-pages/<slug>/index.html` for both Dermokozmetik and
+Hayvan Sağlığı products.
+
+## Deploying with Netlify
+
+The repository includes a `netlify.toml` file. Netlify will run the
+`generate_static_pages.js` script during the build phase to ensure each product
+has its own static page before deployment.
+
 ## Project structure
 
 - `assets/` – compiled JS and CSS for the site
