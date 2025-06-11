@@ -54,7 +54,10 @@ Hayvan Sağlığı products.
 
 The repository includes a `netlify.toml` file. Netlify will run the
 `generate_static_pages.js` script during the build phase to ensure each product
-has its own static page before deployment.
+has its own static page before deployment. Product data and pages are also kept
+up to date by the `run-scraper.yml` GitHub Actions workflow, which runs daily
+and commits any new JSON files or generated pages. Each commit triggers a new
+Netlify deploy, so the static site is rebuilt automatically.
 
 ## Project structure
 
