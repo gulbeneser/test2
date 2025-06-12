@@ -117,6 +117,23 @@
 </head>
 <body>
 
+<div id="login-page">
+    <form id="login-form" class="container">
+        <h1>Admin Girişi</h1>
+        <div class="form-group">
+            <label for="username">Kullanıcı Adı</label>
+            <input id="username" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Şifre</label>
+            <input id="password" type="password" required />
+        </div>
+        <div id="login-error" style="display:none;color:var(--accent-danger);margin-bottom:1rem;">Hatalı kullanıcı adı veya şifre</div>
+        <button type="submit">Giriş Yap</button>
+    </form>
+</div>
+
+<div id="admin-panel" style="display:none;">
 <div class="container">
     <h1>Ürün Açıklaması Yönetimi</h1>
     <div id="status"></div>
@@ -138,6 +155,7 @@
                 </div>
                 <textarea id="productDescription" placeholder="Ürünün detaylı açıklamasını buraya yazın. Örnek: <p>Bu bir paragraftır.</p> <ul><li>Liste elemanı</li></ul>"></textarea>
             </div>
+            <button id="generateDescBtn" type="button">AI ile Açıklama Oluştur</button>
             <button id="saveChangesBtn">Değişiklikleri Kaydet</button>
         </div>
     </div>
@@ -146,22 +164,44 @@
 
     <button id="downloadFileBtn" disabled>Güncel `detay-product.json` Dosyasını İndir</button>
 
+    <div class="form-group" style="margin-top:2rem;">
+        <label for="brandNameInput">Yeni Marka Adı</label>
+        <input id="brandNameInput" />
+        <button id="addBrandBtn" type="button">Markayı Ekle</button>
+    </div>
+    <button id="downloadBrandsBtn" disabled>Güncel brands.json'u İndir</button>
+
+</div>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+    const USERNAME = 'admin';
+    const PASSWORD = 'serakinci123';
+    const GEMINI_API_KEY = 'AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA';
+    const GEMINI_MODEL = 'gemini-2.5-flash-preview-05-20';
+
     const API_BASE_PATH = '/urunler/api/';
     const productSelector = document.getElementById('productSelector');
     const editorContainer = document.getElementById('editorContainer');
     const productDescriptionTextarea = document.getElementById('productDescription');
     const saveChangesBtn = document.getElementById('saveChangesBtn');
     const downloadFileBtn = document.getElementById('downloadFileBtn');
+    const downloadBrandsBtn = document.getElementById('downloadBrandsBtn');
+    const generateDescBtn = document.getElementById('generateDescBtn');
     const statusDiv = document.getElementById('status');
     const infoProductName = document.getElementById('infoProductName');
     const infoProductId = document.getElementById('infoProductId');
+    const brandNameInput = document.getElementById('brandNameInput');
+    const addBrandBtn = document.getElementById('addBrandBtn');
+    const loginForm = document.getElementById('login-form');
+    const loginPage = document.getElementById('login-page');
+    const adminPanel = document.getElementById('admin-panel');
+    const loginError = document.getElementById('login-error');
 
     let allProducts = [];
     let productDetails = [];
+    let brands = [];
     let currentSelectedProductId = null;
 
     function showStatus(message, type = 'success') {
@@ -172,12 +212,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 4000);
     }
 
+    async function generateDescriptionAI(productName) {
+        if (!window.GoogleGenerativeAI) {
+            showStatus('AI modülü yüklenemedi', 'error');
+            return '';
+        }
+        try {
+            const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+            const model = genAI.getGenerativeModel({ model: GEMINI_MODEL });
+            const result = await model.generateContent(`\"${productName}\" ürünü için kısa bir tanıtım yaz. Türkçe cevap ver.`);
+            return result.response.text().trim();
+        } catch (err) {
+            console.error('AI hata', err);
+            showStatus('AI açıklama üretilemedi', 'error');
+            return '';
+        }
+    }
+
+    function slugify(text) {
+        return text.toString().toLowerCase()
+            .replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s')
+            .replace(/ı/g,'i').replace(/ö/g,'o').replace(/ç/g,'c')
+            .replace(/\s+/g,'-').replace(/[^\w-]+/g,'')
+            .replace(/--+/g,'-').replace(/^-+|-+$/g,'');
+    }
+
     async function loadData() {
         try {
             showStatus('Veriler yükleniyor...', 'success');
-            const [productsResponse, detailsResponse] = await Promise.all([
+            const [productsResponse, detailsResponse, brandsResponse] = await Promise.all([
                 fetch(API_BASE_PATH + 'products.json'),
-                fetch(API_BASE_PATH + 'detay-product.json').catch(e => null) // Detay dosyası yoksa hata vermesin
+                fetch(API_BASE_PATH + 'detay-product.json').catch(e => null),
+                fetch(API_BASE_PATH + 'brands.json').catch(e => null)
             ]);
 
             if (!productsResponse.ok) {
@@ -191,9 +257,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 productDetails = []; // Eğer dosya yoksa veya boşsa, boş bir diziyle başla
                 console.warn('detay-product.json bulunamadı veya okunamadı. Yeni bir tane oluşturulacak.');
             }
+
+            if (brandsResponse && brandsResponse.ok) {
+                brands = await brandsResponse.json();
+            } else {
+                brands = [];
+            }
             
             populateSelector();
             downloadFileBtn.disabled = false;
+            downloadBrandsBtn.disabled = false;
             showStatus('Tüm veriler başarıyla yüklendi. Düzenlemek için bir ürün seçin.', 'success');
         } catch (error) {
             console.error('Veri yükleme hatası:', error);
@@ -237,6 +310,17 @@ document.addEventListener('DOMContentLoaded', () => {
         editorContainer.style.display = 'block';
     });
 
+    if (generateDescBtn) {
+        generateDescBtn.addEventListener('click', async () => {
+            if (!currentSelectedProductId) { showStatus('Önce ürün seçin', 'error'); return; }
+            const selectedProduct = allProducts.find(p => p.ProductId == currentSelectedProductId);
+            generateDescBtn.disabled = true;
+            const desc = await generateDescriptionAI(selectedProduct.ProductName);
+            if (desc) productDescriptionTextarea.value = desc;
+            generateDescBtn.disabled = false;
+        });
+    }
+
     saveChangesBtn.addEventListener('click', () => {
         if (!currentSelectedProductId) {
             showStatus('Lütfen önce bir ürün seçin.', 'error');
@@ -279,8 +363,48 @@ document.addEventListener('DOMContentLoaded', () => {
         showStatus('`detay-product.json` dosyası indirildi. Lütfen sunucudaki `/urunler/api/` klasörüne yükleyin.', 'success');
     });
 
-    // Sayfa yüklendiğinde verileri çek
-    loadData();
+    if (addBrandBtn) {
+        addBrandBtn.addEventListener('click', () => {
+            const name = (brandNameInput.value || '').trim();
+            if (!name) { showStatus('Marka adı girin', 'error'); return; }
+            brands.push({ name, slug: slugify(name) });
+            brandNameInput.value = '';
+            showStatus('Marka eklendi. Dosyayı indirip yükleyin.', 'success');
+        });
+    }
+
+    downloadBrandsBtn.addEventListener('click', () => {
+        if (!brands.length) { showStatus('Marka verisi yok.', 'error'); return; }
+        const dataStr = JSON.stringify(brands, null, 2);
+        const dataBlob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(dataBlob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'brands.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showStatus('`brands.json` dosyası indirildi. /urunler/api/ klasörüne yükleyin.', 'success');
+    });
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', e => {
+            e.preventDefault();
+            const u = document.getElementById('username').value;
+            const p = document.getElementById('password').value;
+            if (u === USERNAME && p === PASSWORD) {
+                loginPage.style.display = 'none';
+                adminPanel.style.display = 'block';
+                loginError.style.display = 'none';
+                loadData();
+            } else {
+                loginError.style.display = 'block';
+            }
+        });
+    } else {
+        loadData();
+    }
 });
 </script>
 

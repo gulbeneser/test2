@@ -1,75 +1,50 @@
-name: Run B2B Scraper and Update Product Data
-
-on:
-  schedule:
-    # Her gün UTC 00:00'da çalışır (Türkiye saatiyle sabah 03:00)
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Manuel çalıştırma için
-
-jobs:
-  scrape_and_commit:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-      - name: 📥 Repo'yu klonla
-        uses: actions/checkout@v4
-
-      - name: 🟢 Node.js kurulumu
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: 🧱 Puppeteer için sistem kütüphanelerini kur (Ubuntu 24.04 uyumlu)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libx11-xcb1 \
-            libxcomposite1 \
-            libxdamage1 \
-            libxrandr2 \
-            libgbm1 \
-            libgtk-3-0 \
-            libnss3 \
-            libatk1.0-0 \
-            libatk-bridge2.0-0 \
-            libcups2 \
-            libdrm2 \
-            libxss1 \
-            libxshmfence1 \
-            libpango-1.0-0 \
-            libcairo2 \
-            libxkbcommon0 \
-            libasound2t64 \
-            lsb-release \
-            fonts-liberation \
-            libfontconfig1 \
-            xdg-utils \
-            wget
-
-      - name: 📦 NPM bağımlılıklarını yükle
-        run: npm install puppeteer fs-extra dotenv
-
-      - name: 🚀 Scraper script'ini çalıştır
-        env:
-          DERMO_EMAIL: ${{ secrets.DERMO_EMAIL }}
-          DERMO_PASSWORD: ${{ secrets.DERMO_PASSWORD }}
-          ANIMAL_EMAIL: ${{ secrets.ANIMAL_EMAIL }}
-          ANIMAL_PASSWORD: ${{ secrets.ANIMAL_PASSWORD }}
-        run: node b2b_scraper.js
-
-      - name: 📄 Ürün sayfalarını üret
-        run: node generate_static_pages.js
-
-      - name: 💾 JSON verilerini commit & push et (varsa)
-        run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add urunler/api/products.json urunler/api/hayvan-sagligi.json sitemap.xml sitemap.html
-          if git diff --staged --quiet; then
-            echo "📦 Değişiklik yok, commit yapılmadı."
-          else
-            git commit -m "Scraper: update product data and sitemap"
-            git push
-          fi
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/.github/workflows/run-scraper.yml b/.github/workflows/run-scraper.yml
+index f939882a1f182ed84d74588ca17eb9135da100b9..30d7d5ffde77ee5cdce09c96c59094ff312cc710 100644
+--- a/.github/workflows/run-scraper.yml
++++ b/.github/workflows/run-scraper.yml
+@@ -37,36 +37,39 @@ jobs:
+             libcups2 \
+             libdrm2 \
+             libxss1 \
+             libxshmfence1 \
+             libpango-1.0-0 \
+             libcairo2 \
+             libxkbcommon0 \
+             libasound2t64 \
+             lsb-release \
+             fonts-liberation \
+             libfontconfig1 \
+             xdg-utils \
+             wget
+ 
+       - name: 📦 NPM bağımlılıklarını yükle
+         run: npm install puppeteer fs-extra dotenv
+ 
+       - name: 🚀 Scraper script'ini çalıştır
+         env:
+           DERMO_EMAIL: ${{ secrets.DERMO_EMAIL }}
+           DERMO_PASSWORD: ${{ secrets.DERMO_PASSWORD }}
+           ANIMAL_EMAIL: ${{ secrets.ANIMAL_EMAIL }}
+           ANIMAL_PASSWORD: ${{ secrets.ANIMAL_PASSWORD }}
+         run: node b2b_scraper.js
+ 
++      - name: 📄 Ürün sayfalarını üret
++        run: node generate_static_pages.js
++
+       - name: 💾 JSON verilerini commit & push et (varsa)
+         run: |
+           git config --global user.name 'GitHub Actions Bot'
+           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+-          git add urunler/api/products.json urunler/api/hayvan-sagligi.json
++          git add urunler/api/products.json urunler/api/hayvan-sagligi.json sitemap.xml sitemap.html urunler/api/gorseller
+           if git diff --staged --quiet; then
+             echo "📦 Değişiklik yok, commit yapılmadı."
+           else
+-            git commit -m "Scraper: Update product data in urunler/api"
++            git commit -m "Scraper: update product data, images and sitemap"
+             git push
+           fi
+ 
+EOF
+)

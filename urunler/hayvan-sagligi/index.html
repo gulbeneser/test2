@@ -282,9 +282,18 @@
       initApp(); 
     });
 
-    let allProducts = []; 
-    let currentProducts = []; 
-    const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png'; 
+    let allProducts = [];
+    let currentProducts = [];
+    const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png';
+    const API_BASE_PATH = '/urunler/api/';
+    const LOCAL_IMAGE_BASE = `${API_BASE_PATH}gorseller/`;
+
+    function localImageUrl(product) {
+        if (!product || !product.ImageUrl || !product.ProductCode) return product?.ImageUrl || FALLBACK_IMAGE_URL;
+        const match = product.ImageUrl.match(/\.([a-zA-Z0-9]+)(?:[?#].*)?$/);
+        const ext = match ? match[1] : 'jpg';
+        return `${LOCAL_IMAGE_BASE}${product.ProductCode}.${ext}`;
+    }
 
     function getProductCategory(product) {
         if (product && typeof product.kategori === 'string' && product.kategori.trim() !== '') {
@@ -452,7 +461,7 @@
       if (!productsToDisplay.length) { grid.innerHTML = '<div class="no-results">Bu kriterlere uygun ürün bulunamadı.</div>'; return; }
       grid.innerHTML = productsToDisplay.map(p => {
         const productSlug = slugify(p.ProductName);
-        let imageUrl  = p.ImageUrl || (p.ProductImages?.[0]?.ImageUrl) || '';
+        let imageUrl  = localImageUrl(p);
         const categoryName  = getProductCategory(p);
         const productDataString = JSON.stringify(p).replace(/"/g, '"');
         const productLinkTarget = `/urunler/${segment}/product-pages/${productSlug}/`;
