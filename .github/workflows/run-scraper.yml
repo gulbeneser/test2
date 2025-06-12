@@ -70,4 +70,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "📦 Değişiklik yok, commit yapılmadı."
           else
-            git commit -m "Scraper
+            git commit -m "Scraper: update product data, images and sitemap"
+            git push
+          fi
