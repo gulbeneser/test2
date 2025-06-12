@@ -809,14 +809,14 @@
 
     function getCurrentSegmentAndSlug() {
         const parts = window.location.pathname.split('/').filter(Boolean);
-        if (parts.length >= 4 && parts[0] === 'urunler' && parts[2] === 'product' && parts[3]) {
+        if (parts.length >= 4 && parts[0] === 'urunler' && (parts[2] === 'product' || parts[2] === 'product-pages') && parts[3]) {
             return { segment: parts[1], slug: parts[3] };
         }
-        if (parts.length >= 3 && parts[0] === 'urunler' && parts[1] === 'product' && parts[2]) {
-            return { segment: 'hayvan-sagligi', slug: parts[2] }; 
+        if (parts.length >= 3 && parts[0] === 'urunler' && (parts[1] === 'product' || parts[1] === 'product-pages') && parts[2]) {
+            return { segment: 'hayvan-sagligi', slug: parts[2] };
         }
         return { segment: null, slug: null };
-    }
+    };
 
     async function fetchJsonData(fileName) {
         try {
@@ -893,11 +893,11 @@
                 const item = document.createElement('div');
                 item.className = 'modal-list-item';
                 item.innerHTML = `
-                    <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" title="${fav.ProductName} Detayı">
+                    <a href="/urunler/${fav.Segment}/product-pages/${fav.Slug}/" title="${fav.ProductName} Detayı">
                         <img src="${fav.ImageUrl}" alt="${fav.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'">
                     </a>
                     <div class="modal-list-item-info">
-                        <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a>
+                        <a href="/urunler/${fav.Segment}/product-pages/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a>
                         <span class="category">${fav.Category}</span>
                     </div>
                     <div class="modal-list-item-actions">
@@ -1157,7 +1157,7 @@
         let html = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${title}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
         relatedProducts.forEach(rp => {
             let rpImageUrl = rp.ImageUrl || (rp.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
-            html += `<a href="/urunler/${segmentName}/product/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${getProductCategory(rp)}</div></div></a>`;
+            html += `<a href="/urunler/${segmentName}/product-pages/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${getProductCategory(rp)}</div></div></a>`;
         });
         html += `</div><div class="carousel-arrow next" onclick="window.scrollCarousel(1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div></div></div>`;
         return html;
@@ -1304,7 +1304,7 @@
                         const productSegForLink = product.segment || currentSegment || 'hayvan-sagligi'; 
 
                         listItem.innerHTML = `
-                            <a href="/urunler/${productSegForLink}/product/${slugify(product.ProductName)}/">
+                            <a href="/urunler/${productSegForLink}/product-pages/${slugify(product.ProductName)}/">
                                 <img src="${rpImageUrl}" alt="${product.ProductName}" class="suggestion-image" onerror="this.src='${FALLBACK_IMAGE_URL}'">
                                 <span class="suggestion-name">${product.ProductName}</span>
                                 ${getProductCategory(product) !== 'Diğer' ? `<span class="suggestion-category">${getProductCategory(product)}</span>` : ''}
@@ -1386,10 +1386,10 @@
             await loadProductDetail(slugFromUrl, currentSegment); 
         } else {
             const detailContainer = document.getElementById('productDetailContainer');
-            if(detailContainer && (!slugFromUrl || !currentSegment) && window.location.pathname.includes('/product/')) { 
-                 showError('Ürün bilgisi alınamadı. URL yapısı hatalı veya eksik. Lütfen geçerli bir ürün URL\'si ile gelin. Örnek: `/urunler/hayvan-sagligi/product/multivit-100ml-enj/`');
+            if(detailContainer && (!slugFromUrl || !currentSegment) && (window.location.pathname.includes('/product/') || window.location.pathname.includes('/product-pages/'))) { 
+                 showError('Ürün bilgisi alınamadı. URL yapısı hatalı veya eksik. Lütfen geçerli bir ürün URL\'si ile gelin. Örnek: `/urunler/hayvan-sagligi/product-pages/multivit-100ml-enj/`');
             } else if (detailContainer && detailContainer.querySelector('.loading-container')) {
-                 if (!window.location.pathname.includes('/product/')) { 
+                 if (!(window.location.pathname.includes('/product/') || window.location.pathname.includes('/product-pages/'))) { 
                     detailContainer.innerHTML = ''; 
                  }
             }

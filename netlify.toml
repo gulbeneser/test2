@@ -1,3 +1,8 @@
+# Netlify build step
+[build]
+  command = "node generate_static_pages.js"
+  publish = "."
+
 # ---------------------------------------------
 # 1)  Statik JSON / logo / CSS vb. dosyalar
 # ---------------------------------------------
@@ -68,6 +73,17 @@
 [[redirects]]
   from   = "/urunler/hayvan-sagligi/kategori/*"
   to     = "/urunler/hayvan-sagligi/kategori/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/urunler/hayvan-sagligi/product-pages/*"
+  to     = "/urunler/hayvan-sagligi/product-pages/:splat/index.html"
+  status = 200
+
+# Allow direct access to dermokozmetik product pages
+[[redirects]]
+  from   = "/urunler/dermokozmetik/product-pages/*"
+  to     = "/urunler/dermokozmetik/product-pages/:splat/index.html"
   status = 200
 
 # ---------------------------------------------

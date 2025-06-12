@@ -33,6 +33,38 @@ The script launches Puppeteer and writes JSON files to `urunler/api/` such as
 `products.json` and `hayvan-sagligi.json`. These files are consumed by the site
 for product listings.
 
+## Generating static product pages
+
+After the JSON files are updated you can create a static HTML page for every
+product. The script copies the product detail templates so that each page has
+the same layout as `urunler/dermokozmetik/product/template.html` or
+`urunler/hayvan-sagligi/product/template.html`.
+
+Run:
+
+```bash
+node generate_static_pages.js
+```
+
+This will read the JSON data and write pages under
+`urunler/<segment>/product-pages/<slug>/index.html` for both Dermokozmetik and
+Hayvan Sağlığı products. It also generates an `index.html` inside each
+`product-pages/` directory listing links to every product page, so visiting
+`/urunler/<segment>/product-pages/` shows all available products.
+The same command updates `sitemap.xml` and `sitemap.html` to include every
+product URL so search engines can discover them. It also downloads all product
+images into `urunler/api/gorseller/` so that Netlify serves them locally.
+
+## Deploying with Netlify
+
+The repository includes a `netlify.toml` file. Netlify will run the
+`generate_static_pages.js` script during the build phase to ensure each product
+has its own static page before deployment. Product data, product images, and
+pages are kept up to date by the `run-scraper.yml` GitHub Actions workflow,
+which runs daily and commits any new JSON files, downloaded images and
+generated sitemap. Each commit triggers a new Netlify deploy, so the static site
+is rebuilt automatically.
+
 ## Project structure
 
 - `assets/` – compiled JS and CSS for the site

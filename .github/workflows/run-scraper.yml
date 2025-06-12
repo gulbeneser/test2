@@ -59,14 +59,17 @@ jobs:
           ANIMAL_PASSWORD: ${{ secrets.ANIMAL_PASSWORD }}
         run: node b2b_scraper.js
 
+      - name: 📄 Ürün sayfalarını üret
+        run: node generate_static_pages.js
+
       - name: 💾 JSON verilerini commit & push et (varsa)
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add urunler/api/products.json urunler/api/hayvan-sagligi.json
+          git add urunler/api/products.json urunler/api/hayvan-sagligi.json sitemap.xml sitemap.html urunler/api/gorseller
           if git diff --staged --quiet; then
             echo "📦 Değişiklik yok, commit yapılmadı."
           else
-            git commit -m "Scraper: Update product data in urunler/api"
+            git commit -m "Scraper: update product data, images and sitemap"
             git push
           fi
