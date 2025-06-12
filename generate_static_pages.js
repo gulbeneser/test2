@@ -32,16 +32,37 @@ async function downloadImages(products) {
   await fs.promises.mkdir(outDir, { recursive: true });
   for (const p of products) {
     if (!p || !p.ImageUrl || !p.ProductCode) continue;
-    try {
-      const url = new URL(p.ImageUrl);
-      const ext = path.extname(url.pathname) || '.jpg';
-      const dest = path.join(outDir, `${p.ProductCode}${ext}`);
-      const res = await fetch(p.ImageUrl);
-      if (!res.ok) throw new Error(res.statusText);
-      const arrayBuffer = await res.arrayBuffer();
-      await fs.promises.writeFile(dest, Buffer.from(arrayBuffer));
-    } catch (err) {
-      console.warn('Image download failed for', p.ImageUrl, err.message);
+    const url = new URL(p.ImageUrl);
+    const dir = path.dirname(url.pathname);
+    const ext = path.extname(url.pathname) || '.jpg';
+    const name = path.basename(url.pathname, ext);
+    const attempts = new Set();
+    attempts.add(url.href);
+    if (name.endsWith('_1')) {
+      attempts.add(`${url.origin}${dir}/${name.replace(/_1$/, '')}${ext}`);
+    } else {
+      attempts.add(`${url.origin}${dir}/${name}_1${ext}`);
+    }
+    if (!name.includes('_') && /\d$/.test(name)) {
+      attempts.add(`${url.origin}${dir}/${name.replace(/(\d)$/,'_$1')}${ext}`);
+    }
+
+    let saved = false;
+    for (const attempt of attempts) {
+      try {
+        const res = await fetch(attempt);
+        if (!res.ok) throw new Error(res.statusText);
+        const arrayBuffer = await res.arrayBuffer();
+        const dest = path.join(outDir, `${p.ProductCode}${path.extname(new URL(attempt).pathname) || ext}`);
+        await fs.promises.writeFile(dest, Buffer.from(arrayBuffer));
+        saved = true;
+        break;
+      } catch (err) {
+        continue;
+      }
+    }
+    if (!saved) {
+      console.warn('Image download failed for', p.ImageUrl);
     }
   }
 }
