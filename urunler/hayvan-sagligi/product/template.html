@@ -810,13 +810,19 @@
     }
 
     function slugify(text) {
-        if (text === null || typeof text === 'undefined') return 'isimsiz-urun';
-        const trMap = { 'ç': 'c', 'Ç': 'c', 'ğ': 'g', 'Ğ': 'g', 'ı': 'i', 'İ': 'i', 'ö': 'o', 'Ö': 'o', 'ş': 's', 'Ş': 's', 'ü': 'u', 'Ü': 'u' };
-        return String(text)
-            .replace(/[\u00C7\u00E7\u011F\u011E\u0131\u0130\u00D6\u00F6\u015E\u015F\u00DC\u00FC]/g, match => trMap[match] || match)
-            .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim()
-            .replace(/[()]/g, '-').replace(/(\d+)\s*(ml|gr|lt|kg|cc|mcg|mg|iu|doz|enj|wsp|oral|flakon|adet|ad|m|g|l|k|d)\b/gi, '$1-$2')
-            .replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
+        if (text == null) return 'isimsiz-urun';
+        let str = String(text);
+        const trMap = { 'ç':'c','Ç':'C','ğ':'g','Ğ':'G','ı':'i','İ':'I','ö':'o','Ö':'O','ş':'s','Ş':'S','ü':'u','Ü':'U' };
+        for (const key in trMap) str = str.replace(new RegExp(key, 'g'), trMap[key]);
+        str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        str = str.replace(/\//g, '').replace(/[\.,]/g, '');
+        str = str.toLowerCase();
+        str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
+        const units = 'ml|gr|l|kg|mg|cm|m|lt';
+        str = str.replace(new RegExp(`\\b(${units})\\s+(shower|gel)\\b`, 'gi'), '$1$2');
+        str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
+        str = str.replace(/\s+/g, '-').replace(/[^\w-]+/g, '-').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
+        return str || 'isimsiz-urun';
     }
 
     function getCurrentSegmentAndSlug() {

@@ -581,6 +581,16 @@
                 </li>
               </ul>
             </div>
+            <div class="filter-container" style="margin-top:1.5rem;">
+              <h2 class="filter-title">Markalar</h2>
+              <ul class="filter-list" id="brandList">
+                <li class="filter-item">
+                  <a href="#" class="filter-link" data-brand="ALL_BRANDS">
+                    Tüm Markalar <span class="filter-count">0</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </aside>
 
           <div class="category-content">
@@ -688,6 +698,7 @@
 
         currentProducts = [...allProducts];
         buildCategories();
+        buildBrands();
         buildBrandsCarousel();
         displayProducts(currentProducts);
         checkUrlParams();
@@ -732,6 +743,41 @@
         const selectedCategory = link.dataset.category;
         filterAndDisplayProducts(selectedCategory);
         updateURL(selectedCategory);
+        document.querySelectorAll('#brandList .filter-link').forEach(el => el.classList.remove('active'));
+        document.getElementById('productSearchInput').value = '';
+        document.getElementById('clearSearchButton').style.display = 'none';
+      }));
+    }
+
+    const extractBrands = () => {
+      const brandMap = { ALL_BRANDS: allProducts.length };
+      allProducts.forEach(p => {
+        const brandName = (p.brand || 'Other Brands').trim();
+        brandMap[brandName] = (brandMap[brandName] || 0) + 1;
+      });
+      return brandMap;
+    };
+
+    function buildBrands() {
+      const brands = extractBrands();
+      const brandListEl = document.getElementById('brandList');
+      if (!brandListEl) return;
+      const allLink = brandListEl.querySelector('[data-brand="ALL_BRANDS"] .filter-count');
+      if (allLink) allLink.textContent = brands.ALL_BRANDS || 0;
+      Object.keys(brands).filter(b => b !== 'ALL_BRANDS').sort().forEach(brandName => {
+        const safe = brandName.replace(/"/g, '&quot;');
+        brandListEl.insertAdjacentHTML('beforeend',
+          `<li class="filter-item"><a href="#" class="filter-link" data-brand="${safe}">${brandName}<span class="filter-count">${brands[brandName]}</span></a></li>`);
+      });
+
+      brandListEl.querySelectorAll('.filter-link').forEach(link => link.addEventListener('click', event => {
+        event.preventDefault();
+        brandListEl.querySelectorAll('.filter-link').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('#categoryList .filter-link').forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+        const brand = link.dataset.brand;
+        filterByBrand(brand);
+        updateBrandURL(brand);
         document.getElementById('productSearchInput').value = '';
         document.getElementById('clearSearchButton').style.display = 'none';
       }));
@@ -762,10 +808,10 @@
         const brandButton = e.target.closest('.brand-logo');
         if (!brandButton) return;
         const brandName = brandButton.dataset.brand;
-        const categoryLink = Array.from(document.querySelectorAll('.filter-link')).find(l => l.dataset.category === brandName);
+        const brandLink = Array.from(document.querySelectorAll('#brandList .filter-link')).find(l => l.dataset.brand === brandName);
 
-        if (categoryLink) {
-          categoryLink.click();
+        if (brandLink) {
+          brandLink.click();
           const categorySection = document.querySelector('.category-section');
           if (categorySection) {
             const siteHeader = document.getElementById('newSiteHeader');
@@ -780,6 +826,13 @@
         currentProducts = (category === 'ALL' || !category)
             ? [...allProducts]
             : allProducts.filter(p => (p.cat || p.brand || 'Diğer').trim() === category);
+        sortAndDisplayProducts();
+    }
+
+    function filterByBrand(brand) {
+        currentProducts = (brand === 'ALL_BRANDS' || !brand)
+            ? [...allProducts]
+            : allProducts.filter(p => ((p.brand || 'Other Brands').trim()) === brand);
         sortAndDisplayProducts();
     }
 
@@ -839,14 +892,29 @@
       } else {
         url.searchParams.set('kategori', category);
       }
+      url.searchParams.delete('marka');
+      history.pushState({}, '', url);
+    };
+
+    const updateBrandURL = brand => {
+      const url = new URL(location.href);
+      if (brand === 'ALL_BRANDS' || !brand) {
+        url.searchParams.delete('marka');
+      } else {
+        url.searchParams.set('marka', brand);
+      }
+      url.searchParams.delete('kategori');
       history.pushState({}, '', url);
     };
 
     const checkUrlParams = () => {
-      const categoryParam = new URLSearchParams(location.search).get('kategori');
+      const params = new URLSearchParams(location.search);
+      const categoryParam = params.get('kategori');
+      const brandParam = params.get('marka');
       if (!categoryParam) {
-        if (document.querySelector('.filter-link.active')?.dataset.category === 'ALL') {
-            return;
+        if (brandParam) {
+          const brandLink = Array.from(document.querySelectorAll('#brandList .filter-link')).find(l => l.dataset.brand === brandParam);
+          if (brandLink) { brandLink.click(); return; }
         }
         const allProductsLink = document.querySelector('.filter-link[data-category="ALL"]');
         if (allProductsLink) allProductsLink.click();
@@ -886,19 +954,34 @@
       clearButton.addEventListener('click', () => {
         searchInput.value='';
         clearButton.style.display='none';
-        const activeCategoryLink = document.querySelector('.filter-link.active');
-        const activeCategory = activeCategoryLink ? activeCategoryLink.dataset.category : 'ALL';
-        filterAndDisplayProducts(activeCategory);
+        const activeBrandLink = document.querySelector('#brandList .filter-link.active');
+        if (activeBrandLink) {
+          const brand = activeBrandLink.dataset.brand;
+          filterByBrand(brand);
+        } else {
+          const activeCategoryLink = document.querySelector('#categoryList .filter-link.active');
+          const activeCategory = activeCategoryLink ? activeCategoryLink.dataset.category : 'ALL';
+          filterAndDisplayProducts(activeCategory);
+        }
       });
     }
 
     function performSearch(term) {
-        const activeCategoryLink = document.querySelector('.filter-link.active');
+        const activeBrandLink = document.querySelector('#brandList .filter-link.active');
+        const activeCategoryLink = document.querySelector('#categoryList .filter-link.active');
         const activeCategory = activeCategoryLink ? activeCategoryLink.dataset.category : 'ALL';
 
-        let productsToSearch = (activeCategory === 'ALL' || !activeCategory)
-            ? [...allProducts]
-            : allProducts.filter(p => (p.cat || p.brand || 'Diğer').trim() === activeCategory);
+        let productsToSearch;
+        if (activeBrandLink) {
+            const activeBrand = activeBrandLink.dataset.brand;
+            productsToSearch = (activeBrand === 'ALL_BRANDS' || !activeBrand)
+                ? [...allProducts]
+                : allProducts.filter(p => ((p.brand || 'Other Brands').trim()) === activeBrand);
+        } else {
+            productsToSearch = (activeCategory === 'ALL' || !activeCategory)
+                ? [...allProducts]
+                : allProducts.filter(p => (p.cat || p.brand || 'Diğer').trim() === activeCategory);
+        }
 
         if (term) {
             productsToSearch = productsToSearch.filter(p =>
@@ -920,18 +1003,19 @@
     }
 
     function slugify(text) {
-      if (text === null || typeof text === 'undefined') {
-        return '';
-      }
-      return text.toString()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
-        .toLowerCase()
-        .replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s').replace(/ı/g,'i').replace(/ö/g,'o').replace(/ç/g,'c')
-        .replace(/(\d+)(\s*)(ml|ML|gr|GR|lt|LT)/g,'$1-$3')
-        .replace(/\s+/g,'-')
-        .replace(/[^\w-]+/g,'')
-        .replace(/--+/g,'-')
-        .replace(/^-+|-+$/g,'');
+      if (text == null) return 'isimsiz-urun';
+      let str = String(text);
+      const trMap = { 'ç':'c','Ç':'C','ğ':'g','Ğ':'G','ı':'i','İ':'I','ö':'o','Ö':'O','ş':'s','Ş':'S','ü':'u','Ü':'U' };
+      for (const key in trMap) str = str.replace(new RegExp(key, 'g'), trMap[key]);
+      str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      str = str.replace(/\//g, '').replace(/[\.,]/g, '');
+      str = str.toLowerCase();
+      str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
+      const units = 'ml|gr|l|kg|mg|cm|m|lt';
+      str = str.replace(new RegExp(`\\b(${units})\\s+(shower|gel)\\b`, 'gi'), '$1$2');
+      str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
+      str = str.replace(/\s+/g, '-').replace(/[^\w-]+/g, '-').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
+      return str || 'isimsiz-urun';
     }
 
     const showMessage = (msg, isError = false)=>{

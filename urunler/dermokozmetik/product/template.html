@@ -772,23 +772,19 @@
         return product?.cat || 'Dermokozmetik';
     }
 
-    function slugify(text) { 
-        if (text === null || typeof text === 'undefined') return 'isimsiz-urun';
+    function slugify(text) {
+        if (text == null) return 'isimsiz-urun';
         let str = String(text);
-        const trMap = { 'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'İ': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U' };
-        for (let key in trMap) { str = str.replace(new RegExp(key, 'g'), trMap[key]); }
+        const trMap = { 'ç':'c','Ç':'C','ğ':'g','Ğ':'G','ı':'i','İ':'I','ö':'o','Ö':'O','ş':'s','Ş':'S','ü':'u','Ü':'U' };
+        for (const key in trMap) str = str.replace(new RegExp(key, 'g'), trMap[key]);
         str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        str = str.replace(/\//g, ''); 
-        str = str.replace(/\./g, '');
+        str = str.replace(/\//g, '').replace(/[\.,]/g, '');
         str = str.toLowerCase();
-        str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2'); 
-        const birimler = 'ml|gr|l|kg|mg|cm|m|lt'; 
-        str = str.replace(new RegExp(`\\b(${birimler})\\s+(shower|gel)\\b`, 'gi'), '$1$2'); 
-        str = str.replace(new RegExp(`(\\d+)\\s*(${birimler})\\b`, 'gi'), '$1-$2');
-        str = str.replace(/\s+/g, '-');      
-        str = str.replace(/[^\w-]+/g, '-'); 
-        str = str.replace(/--+/g, '-');     
-        str = str.replace(/^-+|-+$/g, '');  
+        str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
+        const units = 'ml|gr|l|kg|mg|cm|m|lt';
+        str = str.replace(new RegExp(`\\b(${units})\\s+(shower|gel)\\b`, 'gi'), '$1$2');
+        str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
+        str = str.replace(/\s+/g, '-').replace(/[^\w-]+/g, '-').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
         return str || 'isimsiz-urun';
     }
 
