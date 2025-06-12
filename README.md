@@ -54,8 +54,8 @@ Hayvan Sağlığı products. It also generates an `index.html` inside each
 The same command updates `sitemap.xml` and `sitemap.html` to include every
 product URL so search engines can discover them. It also downloads all product
 images into `urunler/api/gorseller/` so that Netlify serves them locally.
-The product templates automatically read images from this folder, so pages no
-longer load visuals from external hosts.
+The product templates and category listings automatically read images from this
+folder, so pages no longer depend on external hosts.
 
 ## Deploying with Netlify
 
@@ -66,6 +66,15 @@ pages are kept up to date by the `run-scraper.yml` GitHub Actions workflow,
 which runs daily and commits any new JSON files, downloaded images and
 generated sitemap. Each commit triggers a new Netlify deploy, so the static site
 is rebuilt automatically.
+
+## Admin panel
+
+`urunler/admin.html` provides a basic admin panel. Sign in with the hard coded
+credentials `admin` / `serakinci123`. From there you can edit product
+descriptions or add missing brand names. Buttons allow downloading updated
+`detay-product.json` and `brands.json` files for uploading back to the server.
+The panel can also generate product descriptions via Google Gemini using the
+same API key as the site.
 
 ## Project structure
 
