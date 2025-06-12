@@ -87,4 +87,4 @@ same API key as the site.
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE)
 file for details.
-\nConflict markers resolved, retaining latest versions of page generator and workflow.
+Conflict markers resolved, retaining latest versions of page generator and workflow.
