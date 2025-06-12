@@ -586,9 +586,21 @@
   <script type="module">
     import { GoogleGenerativeAI } from "https://esm.sh/@google/generative-ai";
 
-    const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA"; 
+    const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA";
     const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png';
-    const API_BASE_PATH = '/urunler/api/'; 
+    const API_BASE_PATH = '/urunler/api/';
+    const LOCAL_IMAGE_BASE = `${API_BASE_PATH}gorseller/`;
+
+    function localImageUrl(product) {
+        if (!product || !product.ImageUrl || !product.ProductCode) return product?.ImageUrl || FALLBACK_IMAGE_URL;
+        const match = product.ImageUrl.match(/\.([a-zA-Z0-9]+)(?:[?#].*)?$/);
+        const ext = match ? match[1] : 'jpg';
+        return `${LOCAL_IMAGE_BASE}${product.ProductCode}.${ext}`;
+    }
+
+    function applyLocalImages(list) {
+        if (Array.isArray(list)) list.forEach(p => { p.ImageUrl = localImageUrl(p); });
+    }
     const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
 
     let allProducts = []; 
@@ -868,10 +880,10 @@
             showTooltip('favoriteTooltip', btnElement, 'Favorilerden çıkarıldı!');
             btnElement.classList.remove('favorited');
         } else {
-            favorites.push({ 
-                ProductId: product.ProductId, 
-                ProductName: product.ProductName, 
-                ImageUrl: product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL,
+            favorites.push({
+                ProductId: product.ProductId,
+                ProductName: product.ProductName,
+                ImageUrl: localImageUrl(product),
                 Category: getProductCategory(product),
                 Segment: currentSegment,
                 Slug: slugify(product.ProductName)
@@ -942,15 +954,17 @@
         try {
             const productsListFile = `${segmentName}.json`; 
             const [products, enhancedData] = await Promise.all([
-              fetchJsonData(productsListFile), 
-              fetchJsonData('hayvan-sagligi-enhanced.json') 
+              fetchJsonData(productsListFile),
+              fetchJsonData('hayvan-sagligi-enhanced.json')
             ]);
+            applyLocalImages(products);
 
             allProducts = products; 
 
             if (!Array.isArray(allProducts)) { showError('Ürün listesi yüklenemedi. Beklenmeyen format.'); return; }
 
             currentProduct = allProducts.find(p => p.ProductName && slugify(p.ProductName) === slugFromUrl);
+            if (currentProduct) currentProduct.ImageUrl = localImageUrl(currentProduct);
 
             if (currentProduct) {
                 const enhancedDetail = enhancedData.find(detail => detail.ProductId === currentProduct.ProductId);
@@ -1052,7 +1066,7 @@
         
         let initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description || " ";
 
-        let imageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
+        let imageUrl = localImageUrl(product);
         const productCategory = getProductCategory(product);
         const isFav = isFavorite(product.ProductId);
 
@@ -1156,7 +1170,7 @@
         const title = productCategory !== 'Diğer' ? `"${productCategory}" Kategorisindeki Diğer Ürünler` : "İlgili Diğer Ürünler";
         let html = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${title}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
         relatedProducts.forEach(rp => {
-            let rpImageUrl = rp.ImageUrl || (rp.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
+            let rpImageUrl = localImageUrl(rp);
             html += `<a href="/urunler/${segmentName}/product-pages/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${getProductCategory(rp)}</div></div></a>`;
         });
         html += `</div><div class="carousel-arrow next" onclick="window.scrollCarousel(1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div></div></div>`;
@@ -1268,7 +1282,8 @@
 
         if (allProducts.length === 0) { 
             try { 
-                allProducts = await fetchJsonData(`hayvan-sagligi.json`); 
+                allProducts = await fetchJsonData(`hayvan-sagligi.json`);
+                applyLocalImages(allProducts);
             } catch (e) { 
                 console.warn("Header arama için varsayılan ürünler yüklenemedi (bu bir ürün sayfası olmayabilir):", e.message); 
             }
@@ -1300,7 +1315,7 @@
                 if (filtered.length > 0) {
                     filtered.forEach(product => { 
                         const listItem = document.createElement('li');
-                        let rpImageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
+                        let rpImageUrl = localImageUrl(product);
                         const productSegForLink = product.segment || currentSegment || 'hayvan-sagligi'; 
 
                         listItem.innerHTML = `

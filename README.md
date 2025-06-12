@@ -54,6 +54,8 @@ Hayvan Sağlığı products. It also generates an `index.html` inside each
 The same command updates `sitemap.xml` and `sitemap.html` to include every
 product URL so search engines can discover them. It also downloads all product
 images into `urunler/api/gorseller/` so that Netlify serves them locally.
+The product templates automatically read images from this folder, so pages no
+longer load visuals from external hosts.
 
 ## Deploying with Netlify
 
