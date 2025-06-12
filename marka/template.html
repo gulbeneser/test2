@@ -5,17 +5,39 @@
   <meta name="description" content="">
   <link rel="canonical" href="">
   <link rel="stylesheet" href="/urunler/assets/css/modern-styles.css">
-  <style>/* ufak ek stiller */ .brand-hero{max-width:900px;margin:0 auto;padding:2rem 1rem}</style>
+  <style>
+    .brand-hero{max-width:900px;margin:0 auto;padding:2rem 1rem}
+    .brand-slider{margin-top:1rem;margin-bottom:2rem}
+    .brand-logo-link{display:flex;align-items:center;justify-content:center;margin:0 1rem}
+    .brand-logo{max-width:100px;max-height:60px;object-fit:contain;filter:grayscale(100%);opacity:.7;transition:all .3s}
+    .brand-logo-link:hover .brand-logo{filter:none;opacity:1;transform:scale(1.05)}
+    .product-card{position:relative}
+    .view-details{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.6);color:#fff;text-align:center;padding:.4rem 0;font-size:.85rem;opacity:0;transition:opacity .3s;text-decoration:none}
+    .product-card:hover .view-details{opacity:1}
+    #langSelect{margin-left:.5rem;padding:.25rem}
+  </style>
 </head>
 <body>
+  <header class="new-site-header">
+    <div class="new-header-content main-container">
+      <a href="/" class="new-site-logo-link"><img src="/urunler/assets/logos/logo.png" alt="Serakıncı Logo" class="new-site-logo-img"><span class="new-site-logo-text">Serakıncı Limited</span></a>
+      <div class="new-header-actions"><label><select id="langSelect"><option value="tr">TR</option><option value="en">EN</option><option value="de">DE</option></select></label></div>
+    </div>
+  </header>
+
   <main class="brand-hero" id="brandHero">
     <h1>Yükleniyor…</h1>
   </main>
+  <div class="sliding-brands brand-slider"><div class="brands-container"><div class="brands-track" id="brandSlider"></div></div></div>
 
+  <script src="/urunler/assets/js/translations.js"></script>
   <script type="module">
-    const slug = location.pathname.split('/').filter(Boolean).pop();   // bioderma
+    const slug = location.pathname.split('/').filter(Boolean).pop();
     const brandJson = '/urunler/api/brands.json';
     const productsJson = '/urunler/api/products.json';
+    let lang = localStorage.getItem('lang') || 'tr';
+    document.documentElement.lang = lang;
+    const t = key => (window.translations?.[lang]?.[key]) || key;
 
     const trTitle = s => s.replace(/\b\w/g,l=>l.toUpperCase());
 
@@ -42,11 +64,16 @@
 
       /* 2) Marka başlığı + kısa tanıtım */
       hero.innerHTML = `
-        <h1>${trTitle(brand.name)} ürünleri (KKTC yetkili satıcı)</h1>
-        <p>${trTitle(brand.name)}’in en sevilen serileri şimdi KKTC’de.
-           <strong>Gazimağusa</strong> deposundan 24 saatte teslim.</p>
-        <div id="brandGrid" class="products-grid" style="margin-top:1.5rem"></div>
+        <h1>${trTitle(brand.name)} ${t('relatedProductsTitle')||'ürünleri'}</h1>
+        <div id="brandGrid" class="product-grid" style="margin-top:1.5rem"></div>
       `;
+
+      /* Brand slider */
+      const slider = document.getElementById('brandSlider');
+      slider.innerHTML = brands.map(b=>{
+        const logo = `/urunler/assets/logos/${b.slug}.png`;
+        return `<a href="/marka/${b.slug}/" class="brand-logo-link"><img class="brand-logo" src="${logo}" alt="${b.name}"></a>`;
+      }).join('');
 
       /* 3) Ürünleri filtrele & grid’e bas */
       const all = await (await fetch(productsJson)).json();
@@ -54,17 +81,21 @@
 
       const grid = document.getElementById('brandGrid');
       grid.innerHTML = list.map(p=>{
-        const img = p.ImageUrl || (p.ProductImages?.[0]?.ImageUrl) || '/urunler/assets/img/no-image.png';
-        const url = `/urunler/${(p.segment||'dermokozmetik')}/product/${slugify(p.ProductName)}/`;
-        return `<div class="product-card" onclick="location.href='${url}'">
-                  <div class="product-image-container">
-                    <img src="${img}" alt="${p.ProductName}" class="product-image" loading="lazy">
-                  </div>
-                  <div class="product-content">
-                    <h3 class="product-name">${p.ProductName}</h3>
-                  </div>
+        const img = p.ImageUrl || (p.ProductImages?.[0]?.ImageUrl);
+        const url = `/urunler/${(p.segment||'dermokozmetik')}/product-pages/${slugify(p.ProductName)}/`;
+        const imageTag = img
+          ? `<img src="${img}" alt="${p.ProductName}" class="product-image" loading="lazy" onerror="this.src='/urunler/assets/logos/${brand.slug}.png'">`
+          : `<img src="/urunler/assets/logos/${brand.slug}.png" alt="${p.ProductName}" class="product-image" loading="lazy">`;
+        return `<div class="product-card">
+                  <div class="product-image-container">${imageTag}<a class="view-details" href="${url}">${t('viewDetailsButton')||'Detay'}</a></div>
+                  <div class="product-content"><h3 class="product-name">${p.ProductName}</h3></div>
                 </div>`;
       }).join('');
+
+      /* language selector */
+      const sel = document.getElementById('langSelect');
+      sel.value = lang;
+      sel.addEventListener('change',()=>{ lang = sel.value; localStorage.setItem('lang',lang); document.documentElement.lang = lang; location.reload(); });
     })();
   </script>
 </body></html>
