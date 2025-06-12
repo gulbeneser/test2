@@ -213,6 +213,16 @@
                 </li>
               </ul>
             </div>
+            <div class="filter-container" style="margin-top:1.5rem;">
+              <h2 class="filter-title">Markalar</h2>
+              <ul class="filter-list" id="brandList">
+                <li class="filter-item">
+                  <a href="#" class="filter-link" data-brand="ALL_BRANDS">
+                    Tüm Markalar <span class="filter-count">0</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </aside>
           <div class="category-content">
             <div class="toolbar">
@@ -282,9 +292,19 @@
       initApp(); 
     });
 
-    let allProducts = []; 
-    let currentProducts = []; 
-    const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png'; 
+    let allProducts = [];
+    let currentProducts = [];
+    let activeBrandFilter = null;
+    const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png';
+    const API_BASE_PATH = '/urunler/api/';
+    const LOCAL_IMAGE_BASE = `${API_BASE_PATH}gorseller/`;
+
+    function localImageUrl(product) {
+        if (!product || !product.ImageUrl || !product.ProductCode) return product?.ImageUrl || FALLBACK_IMAGE_URL;
+        const match = product.ImageUrl.match(/\.([a-zA-Z0-9]+)(?:[?#].*)?$/);
+        const ext = match ? match[1] : 'jpg';
+        return `${LOCAL_IMAGE_BASE}${product.ProductCode}.${ext}`;
+    }
 
     function getProductCategory(product) {
         if (product && typeof product.kategori === 'string' && product.kategori.trim() !== '') {
@@ -305,8 +325,9 @@
         }
         if (!allProducts.length) return showMessage('Ürün verisi bulunamadı veya yüklenemedi.');
         
-        currentProducts = [...allProducts]; 
-        buildCategories(); 
+        currentProducts = [...allProducts];
+        buildCategories();
+        buildBrands();
         populateAnimalBrandsMarquee();
         
         initBackToTop(); 
@@ -329,7 +350,7 @@
       return categoriesMap;
     };
 
-    function buildCategories() {
+  function buildCategories() {
       const categories = extractUniqueCategories();
       const categoryListElement = document.getElementById('categoryList');
       if (!categoryListElement) return;
@@ -359,6 +380,40 @@
       });
       setupCategoryEvents();
     }
+
+    const extractBrands = () => {
+      const brandMap = { ALL_BRANDS: allProducts.length };
+      allProducts.forEach(p => {
+        const brandName = (p.brand || 'Other Brands').trim();
+        brandMap[brandName] = (brandMap[brandName] || 0) + 1;
+      });
+      return brandMap;
+    };
+
+    function buildBrands() {
+      const brands = extractBrands();
+      const brandListEl = document.getElementById('brandList');
+      if (!brandListEl) return;
+      const allLink = brandListEl.querySelector('[data-brand="ALL_BRANDS"] .filter-count');
+      if (allLink) allLink.textContent = brands.ALL_BRANDS || 0;
+      Object.keys(brands).filter(b => b !== 'ALL_BRANDS').sort().forEach(name => {
+        const safe = name.replace(/"/g, '&quot;');
+        brandListEl.insertAdjacentHTML('beforeend',
+          `<li class="filter-item"><a href="#" class="filter-link" data-brand="${safe}">${name}<span class="filter-count">${brands[name]}</span></a></li>`);
+      });
+
+      brandListEl.querySelectorAll('.filter-link').forEach(link => link.addEventListener('click', e => {
+        e.preventDefault();
+        brandListEl.querySelectorAll('.filter-link').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('#categoryList .filter-link').forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+        const b = link.dataset.brand;
+        filterByBrand(b);
+        updateBrandURL(b);
+        document.getElementById('productSearchInput').value='';
+        document.getElementById('clearSearchButton').style.display='none';
+      }));
+    }
     
     function getCategoryIconSVG(categoryName) {
         const catLower = categoryName.toLowerCase();
@@ -378,6 +433,7 @@
             if (!link) return;
             event.preventDefault();
             categoryListElement.querySelectorAll('.filter-link').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('#brandList .filter-link').forEach(el => el.classList.remove('active'));
             link.classList.add('active');
             const selectedCategory = link.dataset.category;
             const searchTerm = document.getElementById('productSearchInput').value.trim().toLowerCase();
@@ -422,6 +478,10 @@
             ? [...allProducts]
             : allProducts.filter(p => getProductCategory(p) === category);
 
+        if (activeBrandFilter) {
+            currentProducts = currentProducts.filter(p => ((p.brand || 'Other Brands').trim()) === activeBrandFilter);
+        }
+
         if (searchTerm) {
             currentProducts = currentProducts.filter(p => 
                 (p.ProductName || '').toLowerCase().includes(searchTerm) || 
@@ -430,6 +490,13 @@
             );
         }
         sortAndDisplayProducts();
+    }
+
+    function filterByBrand(brand) {
+        activeBrandFilter = brand === 'ALL_BRANDS' || !brand ? null : brand;
+        const categoryLink = document.querySelector('#categoryList .filter-link.active');
+        const activeCategory = categoryLink ? categoryLink.dataset.category : 'ALL';
+        filterAndDisplayProducts(activeCategory, '');
     }
 
     function sortAndDisplayProducts() {
@@ -452,10 +519,10 @@
       if (!productsToDisplay.length) { grid.innerHTML = '<div class="no-results">Bu kriterlere uygun ürün bulunamadı.</div>'; return; }
       grid.innerHTML = productsToDisplay.map(p => {
         const productSlug = slugify(p.ProductName);
-        let imageUrl  = p.ImageUrl || (p.ProductImages?.[0]?.ImageUrl) || '';
+        let imageUrl  = localImageUrl(p);
         const categoryName  = getProductCategory(p);
         const productDataString = JSON.stringify(p).replace(/"/g, '"');
-        const productLinkTarget = `/urunler/${segment}/product/${productSlug}/`;
+        const productLinkTarget = `/urunler/${segment}/product-pages/${productSlug}/`;
         // localStorage'a kaydetme işlemini onclick içinde doğrudan yapıyoruz.
         const productOnClick = `localStorage.setItem('selectedProduct', ${productDataString});`; 
         
@@ -484,18 +551,29 @@
     // FallbackNoImageHTML fonksiyonu artık doğrudan kullanılmıyor, CSS ile .fallback-image yönetiliyor.
     // İsterseniz farklı bir HTML için tutulabilir ama mevcut durumda img etiketi fallback'i hallediyor.
 
-    const updateURL = (category, searchTerm) => { 
-      const url = new URL(location.href); 
+    const updateURL = (category, searchTerm) => {
+      const url = new URL(location.href);
       if (category === 'ALL' || !category) url.searchParams.delete('kategori');
       else url.searchParams.set('kategori', category.replace(/"/g, '"'));
+      url.searchParams.delete('marka');
       if (searchTerm) url.searchParams.set('q', searchTerm);
       else url.searchParams.delete('q');
-      history.pushState({}, '', url.toString()); 
+      history.pushState({}, '', url.toString());
     };
 
-    const checkUrlParams = () => { 
+    const updateBrandURL = brand => {
+      const url = new URL(location.href);
+      if (brand === 'ALL_BRANDS' || !brand) url.searchParams.delete('marka');
+      else url.searchParams.set('marka', brand);
+      url.searchParams.delete('kategori');
+      url.searchParams.delete('q');
+      history.pushState({}, '', url.toString());
+    };
+
+    const checkUrlParams = () => {
       const params = new URLSearchParams(location.search);
-      const categoryParam = params.get('kategori'); 
+      const categoryParam = params.get('kategori');
+      const brandParam = params.get('marka');
       const searchTermParam = params.get('q') || '';
       // const sortValue = document.getElementById('sortDropdown').value; // Bu burada gerekli değil, filterAndDisplayProducts zaten sıralamayı çağıracak
 
@@ -505,18 +583,29 @@
       }
 
       let categoryToFilter = 'ALL';
-      document.querySelectorAll('.filter-link').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('#categoryList .filter-link').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('#brandList .filter-link').forEach(el => el.classList.remove('active'));
 
       if (categoryParam) {
           const categoryLinkToActivate = Array.from(document.querySelectorAll('.filter-link')).find(l => l.dataset.category === categoryParam);
           if (categoryLinkToActivate) {
               categoryLinkToActivate.classList.add('active');
               categoryToFilter = categoryParam;
-          } else { 
+          } else {
               const allProductsLink = document.querySelector('.filter-link[data-category="ALL"]');
               if (allProductsLink) allProductsLink.classList.add('active');
           }
-      } else { 
+      } else if (brandParam) {
+          const brandLink = Array.from(document.querySelectorAll('#brandList .filter-link')).find(l => l.dataset.brand === brandParam);
+          if (brandLink) {
+              brandLink.classList.add('active');
+              filterByBrand(brandParam);
+              if (searchTermParam) filterAndDisplayProducts('ALL', searchTermParam); else sortAndDisplayProducts();
+              return;
+          }
+          const allBrandLink = document.querySelector('#brandList .filter-link[data-brand="ALL_BRANDS"]');
+          if (allBrandLink) allBrandLink.classList.add('active');
+      } else {
           const allProductsLink = document.querySelector('.filter-link[data-category="ALL"]');
           if (allProductsLink) allProductsLink.classList.add('active');
       }
@@ -544,16 +633,28 @@
         const searchTerm = searchInput.value.trim().toLowerCase();
         clearButton.style.display = searchTerm ? 'block' : 'none';
         searchDebounceTimeout = setTimeout(() => {
-            const activeCategory = document.querySelector('.filter-link.active')?.dataset.category || 'ALL';
-            filterAndDisplayProducts(activeCategory, searchTerm);
-            updateURL(activeCategory, searchTerm);
+            const activeBrandLink = document.querySelector('#brandList .filter-link.active');
+            if (activeBrandLink) {
+                filterByBrand(activeBrandLink.dataset.brand);
+                filterAndDisplayProducts('ALL', searchTerm);
+            } else {
+                const activeCategory = document.querySelector('#categoryList .filter-link.active')?.dataset.category || 'ALL';
+                filterAndDisplayProducts(activeCategory, searchTerm);
+                updateURL(activeCategory, searchTerm);
+            }
         }, 300);
       });
-      clearButton.addEventListener('click', () => { 
-        searchInput.value=''; clearButton.style.display='none'; 
-        const activeCategory = document.querySelector('.filter-link.active')?.dataset.category || 'ALL';
-        filterAndDisplayProducts(activeCategory, ''); 
-        updateURL(activeCategory, '');
+      clearButton.addEventListener('click', () => {
+        searchInput.value=''; clearButton.style.display='none';
+        const activeBrandLink = document.querySelector('#brandList .filter-link.active');
+        if (activeBrandLink) {
+          filterByBrand(activeBrandLink.dataset.brand);
+          updateBrandURL(activeBrandLink.dataset.brand);
+        } else {
+          const activeCategory = document.querySelector('#categoryList .filter-link.active')?.dataset.category || 'ALL';
+          filterAndDisplayProducts(activeCategory, '');
+          updateURL(activeCategory, '');
+        }
       });
     }
 
@@ -565,21 +666,19 @@
     }
 
     function slugify(text) {
-        if (text === null || typeof text === 'undefined') return 'isimsiz-urun';
-        const trMap = { 'ç': 'c', 'Ç': 'c', 'ğ': 'g', 'Ğ': 'g', 'ı': 'i', 'İ': 'i', 'ö': 'o', 'Ö': 'o', 'ş': 's', 'Ş': 's', 'ü': 'u', 'Ü': 'u' };
-        let slug = String(text)
-            .replace(/[\u00C7\u00E7\u011F\u011E\u0131\u0130\u00D6\u00F6\u015E\u015F\u00DC\u00FC]/g, match => trMap[match] || match)
-            .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase()
-            .trim()
-            .replace(/[()]/g, '-') 
-            .replace(/(\d+)\s*(ml|gr|lt|kg|cc|mcg|mg|iu|doz|enj|wsp|oral|flakon|adet|ad|m|g|l|k|d)\b/gi, '$1-$2')
-            .replace(/(\d+)(ml|gr|lt|kg|cc|mcg|mg|iu|doz|enj|wsp|oral|flakon|adet|ad|m|g|l|k|d)\b/gi, '$1-$2')
-            .replace(/\s+/g, '-')      
-            .replace(/[^\w-]+/g, '')  
-            .replace(/--+/g, '-')     
-            .replace(/^-+|-+$/g, '');
-        return slug || 'isimsiz-urun';
+        if (text == null) return 'isimsiz-urun';
+        let str = String(text);
+        const trMap = { 'ç':'c','Ç':'C','ğ':'g','Ğ':'G','ı':'i','İ':'I','ö':'o','Ö':'O','ş':'s','Ş':'S','ü':'u','Ü':'U' };
+        for (const key in trMap) str = str.replace(new RegExp(key, 'g'), trMap[key]);
+        str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        str = str.replace(/\//g, '').replace(/[\.,]/g, '');
+        str = str.toLowerCase();
+        str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
+        const units = 'ml|gr|l|kg|mg|cm|m|lt';
+        str = str.replace(new RegExp(`\\b(${units})\\s+(shower|gel)\\b`, 'gi'), '$1$2');
+        str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
+        str = str.replace(/\s+/g, '-').replace(/[^\w-]+/g, '-').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
+        return str || 'isimsiz-urun';
     }
 
     const showMessage = (msg, isError = false)=>{

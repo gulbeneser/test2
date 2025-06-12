@@ -536,9 +536,21 @@
   <script type="module">
     import { GoogleGenerativeAI } from "@google/genai";
 
-    const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA"; 
+    const GEMINI_API_KEY = "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA";
     const FALLBACK_IMAGE_URL = '/urunler/assets/logos/resimyok.png';
-    const API_BASE_PATH = '/urunler/api/'; 
+    const API_BASE_PATH = '/urunler/api/';
+    const LOCAL_IMAGE_BASE = `${API_BASE_PATH}gorseller/`;
+
+    function localImageUrl(product) {
+        if (!product || !product.ImageUrl || !product.ProductCode) return product?.ImageUrl || FALLBACK_IMAGE_URL;
+        const match = product.ImageUrl.match(/\.([a-zA-Z0-9]+)(?:[?#].*)?$/);
+        const ext = match ? match[1] : 'jpg';
+        return `${LOCAL_IMAGE_BASE}${product.ProductCode}.${ext}`;
+    }
+
+    function applyLocalImages(list) {
+        if (Array.isArray(list)) list.forEach(p => { p.ImageUrl = localImageUrl(p); });
+    }
     const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
     
     const segment = 'dermokozmetik'; 
@@ -760,30 +772,26 @@
         return product?.cat || 'Dermokozmetik';
     }
 
-    function slugify(text) { 
-        if (text === null || typeof text === 'undefined') return 'isimsiz-urun';
+    function slugify(text) {
+        if (text == null) return 'isimsiz-urun';
         let str = String(text);
-        const trMap = { 'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'İ': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U' };
-        for (let key in trMap) { str = str.replace(new RegExp(key, 'g'), trMap[key]); }
+        const trMap = { 'ç':'c','Ç':'C','ğ':'g','Ğ':'G','ı':'i','İ':'I','ö':'o','Ö':'O','ş':'s','Ş':'S','ü':'u','Ü':'U' };
+        for (const key in trMap) str = str.replace(new RegExp(key, 'g'), trMap[key]);
         str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        str = str.replace(/\//g, ''); 
-        str = str.replace(/\./g, '');
+        str = str.replace(/\//g, '').replace(/[\.,]/g, '');
         str = str.toLowerCase();
-        str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2'); 
-        const birimler = 'ml|gr|l|kg|mg|cm|m|lt'; 
-        str = str.replace(new RegExp(`\\b(${birimler})\\s+(shower|gel)\\b`, 'gi'), '$1$2'); 
-        str = str.replace(new RegExp(`(\\d+)\\s*(${birimler})\\b`, 'gi'), '$1-$2');
-        str = str.replace(/\s+/g, '-');      
-        str = str.replace(/[^\w-]+/g, '-'); 
-        str = str.replace(/--+/g, '-');     
-        str = str.replace(/^-+|-+$/g, '');  
+        str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
+        const units = 'ml|gr|l|kg|mg|cm|m|lt';
+        str = str.replace(new RegExp(`\\b(${units})\\s+(shower|gel)\\b`, 'gi'), '$1$2');
+        str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
+        str = str.replace(/\s+/g, '-').replace(/[^\w-]+/g, '-').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
         return str || 'isimsiz-urun';
     }
 
     function getSlugFromUrl() { 
       const pathname = window.location.pathname;
       const parts = pathname.split('/');
-      if (parts.length >= 5 && parts[3] === 'product' && parts[4]) { return parts[4]; }
+      if (parts.length >= 5 && (parts[3] === 'product' || parts[3] === 'product-pages') && parts[4]) { return parts[4]; }
       return '';
     }
     
@@ -841,13 +849,13 @@
             showTooltip(btnElement, 'Favorilerden çıkarıldı!', 'favoriteTooltip');
             btnElement.classList.remove('favorited');
         } else {
-            favorites.push({ 
-                ProductId: productId, 
-                ProductName: product.ProductName, 
-                ImageUrl: product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL,
-                Category: product.cat || 'Dermokozmetik', 
-                Segment: segment, 
-                Slug: slugify(product.ProductName) 
+            favorites.push({
+                ProductId: productId,
+                ProductName: product.ProductName,
+                ImageUrl: localImageUrl(product),
+                Category: product.cat || 'Dermokozmetik',
+                Segment: segment,
+                Slug: slugify(product.ProductName)
             });
             showTooltip(btnElement, 'Favorilere eklendi!', 'favoriteTooltip');
             btnElement.classList.add('favorited');
@@ -867,11 +875,11 @@
                 const item = document.createElement('div');
                 item.className = 'modal-list-item';
                 item.innerHTML = `
-                    <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" title="${fav.ProductName} Detayı">
+                    <a href="/urunler/${fav.Segment}/product-pages/${fav.Slug}/" title="${fav.ProductName} Detayı">
                         <img src="${fav.ImageUrl}" alt="${fav.ProductName}" loading="lazy" onerror="this.src='${FALLBACK_IMAGE_URL}'">
                     </a>
                     <div class="modal-list-item-info">
-                        <a href="/urunler/${fav.Segment}/product/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a>
+                        <a href="/urunler/${fav.Segment}/product-pages/${fav.Slug}/" class="name" title="${fav.ProductName} Detayı">${fav.ProductName}</a>
                         <span class="category">${fav.Category} (${fav.Segment === 'dermokozmetik' ? 'Dermo' : 'Hayvan Sağ.'})</span>
                     </div>
                     <div class="modal-list-item-actions">
@@ -913,6 +921,7 @@
             const productsResponse = await fetch(API_BASE_PATH + 'products.json'); 
             if (!productsResponse.ok) throw new Error(`Dermokozmetik ürünleri (arama için) yüklenemedi (${productsResponse.status})`);
             allProducts = await productsResponse.json();
+            applyLocalImages(allProducts);
         } catch (error) {
             console.error('Arama için dermokozmetik ürünleri yüklenirken hata:', error);
             allProducts = [];
@@ -938,7 +947,7 @@
         const twitterDescMeta = document.querySelector('meta[name="twitter:description"]');
         if (twitterDescMeta) twitterDescMeta.content = description.substring(0,160);
 
-        const imageUrl = product.ImageUrl || (product.ProductImages && product.ProductImages.length > 0 ? product.ProductImages[0].ImageUrl : FALLBACK_IMAGE_URL);
+        const imageUrl = localImageUrl(product);
         if (imageUrl) {
             try {
               const absoluteImageUrl = new URL(imageUrl, window.location.origin).href;
@@ -989,7 +998,8 @@
             if (!p.ProductName) continue; 
             const productNameSlug = slugify(p.ProductName); 
             if (productNameSlug === slugFromUrl) {
-                currentProduct = p; 
+                currentProduct = p;
+                currentProduct.ImageUrl = localImageUrl(p);
                 break;
             }
         }
@@ -1043,7 +1053,7 @@
       
       currentProduct = product; 
 
-      let mainImageUrl = product.ImageUrl || (product.ProductImages && product.ProductImages.length > 0 ? product.ProductImages[0].ImageUrl : FALLBACK_IMAGE_URL);
+      let mainImageUrl = localImageUrl(product);
       let galleryImages = [mainImageUrl];
 
       if (biodermaExtraData && biodermaExtraData.imagesLocal && biodermaExtraData.imagesLocal.length > 0) {
@@ -1188,8 +1198,8 @@
       if (relatedProducts.length > 0) {
         relatedProductsHTML = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${relatedProductsTitle}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
         relatedProducts.forEach(rp => {
-          let rpImageUrl = rp.ImageUrl || (rp.ProductImages && rp.ProductImages.length > 0 ? rp.ProductImages[0].ImageUrl : FALLBACK_IMAGE_URL);
-          relatedProductsHTML += `<a href="/urunler/${segment}/product/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${rp.cat || 'Belirtilmemiş'}</div></div></a>`;
+          let rpImageUrl = localImageUrl(rp);
+          relatedProductsHTML += `<a href="/urunler/${segment}/product-pages/${slugify(rp.ProductName)}/" class="related-product-card"><img src="${rpImageUrl}" alt="${rp.ProductName}" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';"><div class="info"><div class="name">${rp.ProductName}</div><div class="category">${rp.cat || 'Belirtilmemiş'}</div></div></a>`;
         });
         relatedProductsHTML += `</div><div class="carousel-arrow next" onclick="window.scrollCarousel(1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></div></div></div>`;
       } else {
@@ -1418,9 +1428,9 @@
                     if (filtered.length > 0) {
                         filtered.slice(0, 7).forEach(product => { 
                             const listItem = document.createElement('li');
-                            let rpImageUrl = product.ImageUrl || (product.ProductImages && product.ProductImages.length > 0 ? product.ProductImages[0].ImageUrl : FALLBACK_IMAGE_URL);
+                            let rpImageUrl = localImageUrl(product);
                             listItem.innerHTML = `
-                                <a href="/urunler/${segment}/product/${slugify(product.ProductName)}/">
+                                <a href="/urunler/${segment}/product-pages/${slugify(product.ProductName)}/">
                                     <img src="${rpImageUrl}" alt="${product.ProductName}" class="suggestion-image" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}';">
                                     <span class="suggestion-name">${product.ProductName}</span>
                                     ${product.cat ? `<span class="suggestion-category">${product.cat}</span>` : ''}
@@ -1456,14 +1466,15 @@
                         fetchJsonData('hayvan-sagligi.json').catch(e => { console.error("Animal products for header search failed:", e); return []; }) 
                     ]);
                     allProductsForHeaderSearch = [
-                        ...dermoProducts.map(p => ({...p, segment: 'dermokozmetik', slugFn: slugify})), 
-                        ...animalProducts.map(p => ({...p, segment: 'hayvan-sagligi', slugFn: (text) => { 
+                        ...dermoProducts.map(p => ({...p, segment: 'dermokozmetik', slugFn: slugify})),
+                        ...animalProducts.map(p => ({...p, segment: 'hayvan-sagligi', slugFn: (text) => {
                                 if (text === null || typeof text === 'undefined') return 'isimsiz-urun';
                                 const trMapHS = { 'ç': 'c', 'Ç': 'c', 'ğ': 'g', 'Ğ': 'g', 'ı': 'i', 'İ': 'i', 'ö': 'o', 'Ö': 'o', 'ş': 's', 'Ş': 's', 'ü': 'u', 'Ü': 'u' };
                                 return String(text).replace(/[\u00C7\u00E7\u011F\u011E\u0131\u0130\u00D6\u00F6\u015E\u015F\u00DC\u00FC]/g, match => trMapHS[match] || match).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[()]/g, '-').replace(/(\d+)\s*(ml|gr|lt|kg|cc|mcg|mg|iu|doz|enj|wsp|oral|flakon|adet|ad|m|g|l|k|d)\b/gi, '$1-$2').replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-').replace(/^-+|-+$/g, '') || 'isimsiz-urun';
                             }
                         }))
                     ];
+                    applyLocalImages(allProductsForHeaderSearch);
                 } catch (e) { 
                     console.error("Header arama için genel ürünler yüklenemedi:", e); 
                 }
@@ -1488,12 +1499,12 @@
                     if (filtered.length > 0) {
                         filtered.forEach(product => { 
                             const listItem = document.createElement('li');
-                            let rpImageUrl = product.ImageUrl || (product.ProductImages?.[0]?.ImageUrl) || FALLBACK_IMAGE_URL;
+                            let rpImageUrl = localImageUrl(product);
                             const productSegForLink = product.segment; 
                             const productSlug = product.slugFn(product.ProductName); 
 
                             listItem.innerHTML = `
-                                <a href="/urunler/${productSegForLink}/product/${productSlug}/">
+                                <a href="/urunler/${productSegForLink}/product-pages/${productSlug}/">
                                     <img src="${rpImageUrl}" alt="${product.ProductName}" class="suggestion-image" onerror="this.src='${FALLBACK_IMAGE_URL}'">
                                     <span class="suggestion-name">${product.ProductName}</span>
                                     <span class="suggestion-category">${product.cat || product.kategori || (productSegForLink === 'dermokozmetik' ? 'Dermo' : 'Hayvan S.')}</span>
