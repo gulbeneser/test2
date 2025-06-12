@@ -155,11 +155,12 @@
                 </div>
                 <textarea id="productDescription" placeholder="Ürünün detaylı açıklamasını buraya yazın. Örnek: <p>Bu bir paragraftır.</p> <ul><li>Liste elemanı</li></ul>"></textarea>
             </div>
-            <div class="form-group">
-                <label for="productBrand">Marka</label>
-                <input id="productBrand" />
-                <button id="generateBrandBtn" type="button">AI ile Marka Tahmin Et</button>
-            </div>
+<div class="form-group">
+    <label for="productBrand">Marka</label>
+    <input id="productBrand" />
+    <button id="generateBrandBtn" type="button">AI ile Marka Tahmin Et</button>
+</div>
+
             <button id="generateDescBtn" type="button">AI ile Açıklama Oluştur</button>
             <button id="saveChangesBtn">Değişiklikleri Kaydet</button>
         </div>
@@ -193,11 +194,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const productDescriptionTextarea = document.getElementById('productDescription');
     const saveChangesBtn = document.getElementById('saveChangesBtn');
     const downloadFileBtn = document.getElementById('downloadFileBtn');
-    const downloadProductsBtn = document.getElementById('downloadProductsBtn');
-    const downloadBrandsBtn = document.getElementById('downloadBrandsBtn');
-    const generateDescBtn = document.getElementById('generateDescBtn');
-    const productBrandInput = document.getElementById('productBrand');
-    const generateBrandBtn = document.getElementById('generateBrandBtn');
+const downloadProductsBtn = document.getElementById('downloadProductsBtn');
+const downloadBrandsBtn = document.getElementById('downloadBrandsBtn');
+const generateDescBtn = document.getElementById('generateDescBtn');
+const productBrandInput = document.getElementById('productBrand');
+const generateBrandBtn = document.getElementById('generateBrandBtn');
+
     const statusDiv = document.getElementById('status');
     const infoProductName = document.getElementById('infoProductName');
     const infoProductId = document.getElementById('infoProductId');
@@ -239,19 +241,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function slugify(text) {
-        if (text == null) return 'isimsiz-urun';
-        let str = String(text);
-        const trMap = { 'ç':'c','Ç':'C','ğ':'g','Ğ':'G','ı':'i','İ':'I','ö':'o','Ö':'O','ş':'s','Ş':'S','ü':'u','Ü':'U' };
-        for (const key in trMap) str = str.replace(new RegExp(key, 'g'), trMap[key]);
-        str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        str = str.replace(/\//g, '').replace(/[\.,]/g, '');
-        str = str.toLowerCase();
-        str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
-        const units = 'ml|gr|l|kg|mg|cm|m|lt';
-        str = str.replace(new RegExp(`\\b(${units})\\s+(shower|gel)\\b`, 'gi'), '$1$2');
-        str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
-        str = str.replace(/\s+/g, '-').replace(/[^\w-]+/g, '-').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
-        return str || 'isimsiz-urun';
+function slugify(text) {
+    if (text == null) return 'isimsiz-urun';
+    let str = String(text);
+    
+    const trMap = {
+        'ç': 'c', 'Ç': 'C',
+        'ğ': 'g', 'Ğ': 'G',
+        'ı': 'i', 'İ': 'I',
+        'ö': 'o', 'Ö': 'O',
+        'ş': 's', 'Ş': 'S',
+        'ü': 'u', 'Ü': 'U'
+    };
+
+    for (const key in trMap) {
+        str = str.replace(new RegExp(key, 'g'), trMap[key]);
+    }
+
+    str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    str = str.replace(/\//g, '').replace(/[\.,]/g, '');
+    str = str.toLowerCase();
+
+    // Özel kelime birleştirmeleri
+    str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
+
+    const units = 'ml|gr|l|kg|mg|cm|m|lt';
+    str = str.replace(new RegExp(`\\b(${units})\\s+(shower|gel)\\b`, 'gi'), '$1$2');
+    str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
+
+    str = str.replace(/\s+/g, '-')
+             .replace(/[^\w-]+/g, '-')
+             .replace(/--+/g, '-')
+             .replace(/^-+|-+$/g, '');
+
+    return str || 'isimsiz-urun';
+}
+
     }
 
     async function loadData() {
@@ -283,7 +308,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             populateSelector();
             downloadFileBtn.disabled = false;
-            downloadProductsBtn.disabled = false;
+downloadProductsBtn.disabled = false;
+
             downloadBrandsBtn.disabled = false;
             showStatus('Tüm veriler başarıyla yüklendi. Düzenlemek için bir ürün seçin.', 'success');
         } catch (error) {
@@ -340,16 +366,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (generateBrandBtn) {
-        generateBrandBtn.addEventListener('click', async () => {
-            if (!currentSelectedProductId) { showStatus('Önce ürün seçin', 'error'); return; }
-            const selectedProduct = allProducts.find(p => p.ProductId == currentSelectedProductId);
-            generateBrandBtn.disabled = true;
-            const desc = await generateDescriptionAI(`${selectedProduct.ProductName} markası hangisidir? Sadece markayı yaz.`);
-            if (desc) productBrandInput.value = desc;
-            generateBrandBtn.disabled = false;
-        });
-    }
+if (generateBrandBtn) {
+    generateBrandBtn.addEventListener('click', async () => {
+        if (!currentSelectedProductId) { 
+            showStatus('Önce ürün seçin', 'error'); 
+            return; 
+        }
+        const selectedProduct = allProducts.find(p => p.ProductId == currentSelectedProductId);
+        generateBrandBtn.disabled = true;
+        const desc = await generateDescriptionAI(`${selectedProduct.ProductName} markası hangisidir? Sadece markayı yaz.`);
+        if (desc) productBrandInput.value = desc;
+        generateBrandBtn.disabled = false;
+    });
+}
 
     saveChangesBtn.addEventListener('click', () => {
         if (!currentSelectedProductId) {
@@ -396,22 +425,21 @@ document.addEventListener('DOMContentLoaded', () => {
         
         showStatus('`detay-product.json` dosyası indirildi. Lütfen sunucudaki `/urunler/api/` klasörüne yükleyin.', 'success');
     });
-
-    if (downloadProductsBtn) {
-        downloadProductsBtn.addEventListener('click', () => {
-            const dataStr = JSON.stringify(allProducts, null, 2);
-            const blob = new Blob([dataStr], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'products.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-            showStatus('`products.json` dosyası indirildi.', 'success');
-        });
-    }
+if (downloadProductsBtn) {
+    downloadProductsBtn.addEventListener('click', () => {
+        const dataStr = JSON.stringify(allProducts, null, 2);
+        const blob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'products.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showStatus('`products.json` dosyası indirildi.', 'success');
+    });
+}
 
     if (addBrandBtn) {
         addBrandBtn.addEventListener('click', () => {
