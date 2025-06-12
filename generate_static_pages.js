@@ -12,7 +12,7 @@ function slugify(text) {
   const trMap = { 'ç':'c','Ç':'C','ğ':'g','Ğ':'G','ı':'i','İ':'I','ö':'o','Ö':'O','ş':'s','Ş':'S','ü':'u','Ü':'U' };
   for (const key in trMap) str = str.replace(new RegExp(key, 'g'), trMap[key]);
   str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  str = str.replace(/\//g, '').replace(/\./g, '');
+  str = str.replace(/\//g, '').replace(/[\.,]/g, '');
   str = str.toLowerCase();
   str = str.replace(/(\d+)\s+(sensibio)/g, '$1$2');
   const units = 'ml|gr|l|kg|mg|cm|m|lt';
