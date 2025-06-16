@@ -210,19 +210,30 @@
     .product-share-buttons svg { width: 100%; height: 100%; } 
     .product-short-description { font-size: 1rem; color: var(--text-medium); margin-bottom: 1rem; line-height: 1.7; }
     #ai-button-container { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 10px; }
-    #fetchAiInfoBtn { display: inline-flex; align-items: center; justify-content: center; width: auto; padding: 0.6rem 1.2rem; font-weight: 600; transition: all 0.2s; border: 1px solid; border-radius: var(--radius); cursor: pointer;}
-    #fetchAiInfoBtn { background-color: var(--accent); border-color: var(--accent); color: white; } 
-    #fetchAiInfoBtn:hover { background-color: #dd6b15; border-color: #dd6b15;}
-    #fetchAiInfoBtn svg {width:20px; height:20px; margin-right: 8px;}
-    #fetchAiInfoBtn:disabled { background-color: var(--text-light) !important; border-color: var(--text-light) !important; cursor: not-allowed; }
-    #fetchAiInfoBtn .spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 8px; }
-    #aiProductInfoPlaceholder { margin-top: 1rem; margin-bottom:1.5rem; font-size: 0.9375rem; }
-    #aiProductInfo { margin-top: 1rem; margin-bottom:1.5rem; padding: 1rem; background-color: #e6f7ff; border-left: 4px solid var(--primary-theme); border-radius: var(--radius); font-size: 0.9375rem; }
-    #aiProductInfo h4 { font-size: 1.15rem; color: var(--text-dark); margin-top: 0; margin-bottom: 0.75rem; font-weight: 600; }
-    #aiProductInfo p { margin-bottom: 0.75rem; line-height: 1.6; }
-    #aiProductInfo ul { padding-left: 1.2rem; margin-bottom: 0; }
-    #aiProductInfo li { margin-bottom: 0.35rem; }
-    #aiProductInfo.error-message { background-color: #fff3cd; border-left-color: #ffe082; color: #664d03; }
+    #scrollToContactBtn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      padding: 0.6rem 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      border: 1px solid;
+      border-radius: var(--radius);
+      cursor: pointer;
+      background-color: var(--primary-blue);
+      border-color: var(--primary-blue);
+      color: white;
+    }
+    #scrollToContactBtn:hover {
+      background-color: var(--primary-blue-hover);
+      border-color: var(--primary-blue-hover);
+    }
+    #scrollToContactBtn svg {
+      width:20px;
+      height:20px;
+      margin-right: 8px;
+    }
     .product-details-tabs-modern { background-color: var(--card-bg); padding: 0; border-radius: var(--radius); box-shadow: var(--shadow-md); margin-bottom: 2.5rem; overflow: hidden; }
     .tabs-navigation-modern { display: flex; border-bottom: 1px solid var(--border-color); background-color: #f8f9fa; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--primary-theme) #f1f3f5; }
     .tabs-navigation-modern::-webkit-scrollbar { height: 6px; }
@@ -564,46 +575,6 @@
     let G_isMouseOverDropdown = false; 
     let G_isMouseOverHeaderDropdown = false; 
 
-    // --- AI Fonksiyonları ---
-    async function generateEnhancedProductInfo(productName, productKategori, languageCode, existingProductInfo = {}) {
-        if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
-        if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) { 
-            if (GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER")) {
-                // Demo key
-            } else {
-                 throw new Error("Gemini API anahtarı yapılandırılmamış.");
-            }
-        }
-        const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-        const model = genAI.getGenerativeModel({ 
-            model: "gemini-2.5-flash-preview-05-20", 
-            generationConfig: { responseMimeType: "application/json" } 
-        });
-        const basePrompt = `
-            Sen bir hayvan sağlığı ve dermokozmetik ürün uzmanısın. Müşterilere ürünler hakkında ek, ilgi çekici ve profesyonel bilgiler sağlıyorsun. 
-            Lütfen "${productName}" isimli ve "${productKategori || 'Genel Dermokozmetik'}" kategorisindeki bir dermokozmetik ürünü için JSON formatında aşağıdaki bilgileri sağlayın:
-            1.  "enhancedDescription": Ürünün detaylı, cilt tipi/sorununa yönelik faydalarını, kullanım amacını ve öne çıkan içeriklerini vurgulayan profesyonel ve bilgilendirici bir açıklaması (yaklaşık 6-8 cümle). Açıklama kullanıcı odaklı ve kolay anlaşılır olmalı.
-            2.  "keyFeatures": Ürünün 5-7 adet temel özelliği, faydası veya anahtar içeriği (örneğin, "Hiyalüronik Asit ile yoğun nemlendirme", "Parabensiz ve parfümsüz formül", "Hassas ve alerjik ciltler için özel olarak geliştirilmiştir", "Geniş spektrumlu UVA/UVB koruması SPF50+").
-
-            Çıktının "enhancedDescription" ve "keyFeatures" anahtarlarına sahip geçerli bir JSON nesnesi olduğundan emin olun. Cevabını Türkçe olarak oluştur.
-            Örnek JSON:
-            {
-              "enhancedDescription": "Bu ürün...",
-              "keyFeatures": ["Özellik 1", "Özellik 2"]
-            }
-        `;
-        try {
-            const result = await model.generateContent(basePrompt);
-            const response = result.response;
-            let jsonStr = response.text().replace(/^```(?:json)?\s*\n?(.*?)\n?\s*```$/s, '$1').trim();
-            const parsedData = JSON.parse(jsonStr);
-            if (!parsedData.enhancedDescription || !Array.isArray(parsedData.keyFeatures)) throw new Error("Eksik veya hatalı biçimlendirilmiş veri alındı.");
-            return parsedData; 
-        } catch (error) {
-            console.error(`Gemini API (Dermokozmetik - ${productName}) hatası:`, error);
-            throw new Error(`AI bilgi üretilemedi: ${error.message || 'Bilinmeyen Hata'}`);
-        }
-    }
     
     async function generateChatResponse(productName, category, question, chatHistory = []) {
         if (!GEMINI_SDK_LOADED) throw new Error("Yapay zeka modülü (SDK) yüklenemedi.");
@@ -634,56 +605,22 @@
             return "Üzgünüm, şu anda sorunuzu yanıtlayamıyorum. Lütfen daha sonra tekrar deneyin veya firmamızla iletişime geçin.";
         }
     }
-
-    function setupAIFetchButton(product, productDetail) {
-        const fetchBtn = document.getElementById('fetchAiInfoBtn');
-        const placeholder = document.getElementById('aiProductInfoPlaceholder');
-        if (!fetchBtn || !placeholder) return;
-        
-        let isAiDisabled = false;
-        if (!GEMINI_SDK_LOADED) isAiDisabled = true;
-        if (!GEMINI_API_KEY || GEMINI_API_KEY.includes("PLACEHOLDER")) {
-            if (!(GEMINI_API_KEY === "AIzaSyBEpqKAEZKYSyznxeZsQ1MYO-9hqV5LGoA" && !GEMINI_API_KEY.includes("PLACEHOLDER"))) {
-                isAiDisabled = true;
-            }
-        }
-
-        if (isAiDisabled) {
-            fetchBtn.disabled = true; 
-            fetchBtn.style.cursor = 'not-allowed';
-            fetchBtn.title = 'Yapay zeka modülü veya API anahtarı kullanılamıyor.';
-            placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>Yapay zeka modülü (SDK) veya API anahtarı yapılandırılmadığı için bu özellik kullanılamıyor.</em></p></div>`; 
-            return;
-        }
-
-        fetchBtn.addEventListener('click', async () => {
-            fetchBtn.disabled = true; fetchBtn.innerHTML = `<span class="spinner"></span> ...`; placeholder.innerHTML = ''; 
-            const existingInfo = { 
-                description: productDetail?.["Ürün Açıklaması"] || product.ProductShortDescription, 
-            };
-            try {
-                const aiData = await generateEnhancedProductInfo(product.ProductName, product.cat || 'Dermokozmetik', 'tr', existingInfo); 
-                let aiHtml = `<div id="aiProductInfo">`;
-                aiHtml += `<h4>Detaylar:</h4>`;
-                aiHtml += `<p><strong>Detaylı Açıklama:</strong> ${aiData.enhancedDescription}</p>`;
-                if (aiData.keyFeatures && aiData.keyFeatures.length > 0) {
-                    aiHtml += `<p><strong>Öne Çıkan Özellikler:</strong></p><ul>`;
-                    aiData.keyFeatures.forEach(feature => {
-                        const linkRegex = /\[(.*?)\]\((.*?)\)/g; 
-                        const featureHtml = feature.replace(linkRegex, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color: var(--primary-theme); text-decoration: underline;">$1</a>');
-                        aiHtml += `<li>${featureHtml}</li>`;
-                    });
-                    aiHtml += `</ul>`;
+    function setupScrollToContactButton() {
+        const scrollToContactBtn = document.getElementById("scrollToContactBtn");
+        if (scrollToContactBtn) {
+            scrollToContactBtn.addEventListener("click", () => {
+                const contactSection = document.querySelector(".contact-card-modern");
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                } else {
+                    console.warn("İletişim bölümü bulunamadı.");
                 }
-                aiHtml += `</div>`;
-                placeholder.innerHTML = aiHtml;
-                fetchBtn.style.display = 'none'; 
-            } catch (error) {
-                placeholder.innerHTML = `<div id="aiProductInfo" class="error-message"><p><em>AI bilgisi oluşturulurken hata: ${error.message}.</em></p></div>`;
-                fetchBtn.disabled = false; fetchBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg> Tekrar Dene`;
-            }
-        });
+            });
+        }
     }
+
+
+
 
     function setupChatbotModal() {
         const modal = document.getElementById('chatbotModal');
@@ -1109,13 +1046,12 @@
       const descriptionToShow = biodermaExtraData?.description || product.ProductShortDescription || `"${product.ProductName}" Serakıncı güvencesiyle sizlerle.`;
       let shortDescriptionHTML = `<div class="product-short-description"><p>${descriptionToShow}</p></div>`;
       
-      const aiButtonHTML = `
+      const actionButtonHTML = `
             <div id="ai-button-container">
-                <button id="fetchAiInfoBtn" title="Detaylar için tıklayın">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5,12c2.2,0,4-1.8,4-4s-1.8-4-4-4s-4,1.8-4,4S13.3,12,15.5,12z M8.5,4C6.6,4,5,5.6,5,7.5S6.6,11,8.5,11S12,9.4,12,7.5S10.4,4,8.5,4z M3.5,19H2v-3c0-1.7,1.3-3,3-3h1.5c0.3-0.5,0.7-1,1.2-1.4C6.6,11.2,5.4,11,4,11C1.8,11,0,12.8,0,15v4h3.5V19z M16.5,14H14.5c-2.8,0-5,2.2-5,5v3h12v-3C21.5,16.2,19.3,14,16.5,14z"/></svg>
-                    Ayrıntılı Bilgi
+                <button id="scrollToContactBtn" title="Daha fazla bilgi için iletişim bölümüne gidin">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/></svg>
+                    Daha Fazla Bilgi İçin Bize Ulaşın
                 </button>
-                <div id="aiProductInfoPlaceholder"><p> </p></div>
             </div>`;
 
       let tabNavigationHTML = `
@@ -1264,7 +1200,7 @@
             ${metaInfoHTML}
             ${shareButtonsHTML}
             ${shortDescriptionHTML}
-            ${aiButtonHTML} 
+            ${actionButtonHTML} 
           </div>
         </div>
         <div class="product-details-tabs-modern">
@@ -1300,8 +1236,9 @@
       
       const favBtn = document.getElementById('favoriteBtn');
       if (favBtn) { favBtn.onclick = (event) => toggleFavorite(product, event.currentTarget); }
+
+      setupScrollToContactButton(); // Setup for the new button
       
-      setupAIFetchButton(product, productDetail); 
       
       // Bioderma tablarındaki accordion ve modal'lar için temel event listener'lar (Bootstrap olmadan)
       detailContainer.querySelectorAll('.product-details-tabs-modern .card button[data-toggle="collapse"]').forEach(button => {
