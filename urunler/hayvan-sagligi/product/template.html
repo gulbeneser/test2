@@ -626,7 +626,14 @@
     let currentProduct = null;
     let favorites = [];
     let searchDebounceTimer;
-    let G_isMouseOverDropdown = false; 
+    let G_isMouseOverDropdown = false;
+    let currentEnhancedDetail = null;
+    let currentExtraData = null;
+
+    function t(key){
+        const lang = document.documentElement.lang || 'tr';
+        return window.translations?.[lang]?.[key] || key;
+    }
 
     async function generateEnhancedProductInfo(productName, productKategori, languageCode, existingProductInfo = {}) {
         // This function is kept for fetchAndFillDescriptionAI, 
@@ -992,7 +999,9 @@
 
             if (currentProduct) {
                 const enhancedDetail = enhancedData.find(detail => detail.ProductId === currentProduct.ProductId);
-                displayProductDetail(currentProduct, enhancedDetail, segmentName); 
+                currentEnhancedDetail = enhancedDetail;
+                currentExtraData = null;
+                displayProductDetail(currentProduct, enhancedDetail, segmentName);
                 document.title = `${currentProduct.ProductName} | ${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} | Serakıncı`;
                 const canonicalLink = document.querySelector("link[rel='canonical']");
                 if (canonicalLink) canonicalLink.href = window.location.href; 
@@ -1098,19 +1107,19 @@
         const favoriteButtonHTML = `<button class="favorite-button ${isFav ? 'favorited' : ''}" id="favoriteBtn" title="Favorilere Ekle/Çıkar"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>`;
 
         let metaInfoHTML = '<div class="product-meta-enhanced">';
-        if (productCategory && productCategory !== 'Diğer') metaInfoHTML += `<span class="meta-item"><strong>Kategori:</strong> ${productCategory}</span>`;
+        if (productCategory && productCategory !== 'Diğer') metaInfoHTML += `<span class="meta-item"><strong>${t('labelCategory')}:</strong> ${productCategory}</span>`;
         const productCode = product.ProductCode || product.DisplayProductCode;
-        if (productCode) metaInfoHTML += `<span class="meta-item"><strong>Ürün Kodu:</strong> <span id="productCodeValue">${productCode}</span> <span class="copy-code" title="Kodu Kopyala" onclick="window.copyProductCode(event)">(Kopyala)</span></span>`;
-        if (enhancedDetail) { 
-            if(enhancedDetail["Üretici Firma"] && enhancedDetail["Üretici Firma"].trim() !== "") metaInfoHTML += `<span class="meta-item"><strong>Üretici:</strong> ${enhancedDetail["Üretici Firma"]}</span>`;
-            if(enhancedDetail["Firma Web Sitesi"] && enhancedDetail["Firma Web Sitesi"].trim() !== "" && (enhancedDetail["Firma Web Sitesi"].startsWith('http') || enhancedDetail["Firma Web Sitesi"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>Web Sitesi:</strong> <a href="${enhancedDetail["Firma Web Sitesi"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Firma Web Sitesi"]}" target="_blank" rel="noopener">Web Sitesini Ziyaret Et</a></span>`;
-            if(enhancedDetail["Üretici Prospektüs"] && enhancedDetail["Üretici Prospektüs"].trim() !== "" && (enhancedDetail["Üretici Prospektüs"].startsWith('http') || enhancedDetail["Üretici Prospektüs"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>Prospektüs:</strong> <a href="${enhancedDetail["Üretici Prospektüs"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Üretici Prospektüs"]}" target="_blank" rel="noopener">Prospektüsü Görüntüle</a></span>`;
+        if (productCode) metaInfoHTML += `<span class="meta-item"><strong>${t('labelProductCode')}:</strong> <span id="productCodeValue">${productCode}</span> <span class="copy-code" title="Kodu Kopyala" onclick="window.copyProductCode(event)">(Kopyala)</span></span>`;
+        if (enhancedDetail) {
+            if(enhancedDetail["Üretici Firma"] && enhancedDetail["Üretici Firma"].trim() !== "") metaInfoHTML += `<span class="meta-item"><strong>${t('labelManufacturer')}:</strong> ${enhancedDetail["Üretici Firma"]}</span>`;
+            if(enhancedDetail["Firma Web Sitesi"] && enhancedDetail["Firma Web Sitesi"].trim() !== "" && (enhancedDetail["Firma Web Sitesi"].startsWith('http') || enhancedDetail["Firma Web Sitesi"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>${t('labelWebsite')}:</strong> <a href="${enhancedDetail["Firma Web Sitesi"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Firma Web Sitesi"]}" target="_blank" rel="noopener">${t('labelWebsite')}</a></span>`;
+            if(enhancedDetail["Üretici Prospektüs"] && enhancedDetail["Üretici Prospektüs"].trim() !== "" && (enhancedDetail["Üretici Prospektüs"].startsWith('http') || enhancedDetail["Üretici Prospektüs"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>${t('labelProspectus')}:</strong> <a href="${enhancedDetail["Üretici Prospektüs"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Üretici Prospektüs"]}" target="_blank" rel="noopener">${t('labelProspectus')}</a></span>`;
         }
         metaInfoHTML += '</div>';
 
         const productUrl = window.location.href;
         const shareText = encodeURIComponent(`Serakıncı'da ${product.ProductName} ürününü inceleyin:`);
-        const shareButtonsHTML = `<div class="product-share-buttons"><span class="share-label">Paylaş:</span><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}" target="_blank" title="Facebook'ta Paylaş"><svg viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a><a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a></div>`;
+        const shareButtonsHTML = `<div class="product-share-buttons"><span class="share-label">${t('labelShare')}</span><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}" target="_blank" title="Facebook'ta Paylaş"><svg viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a><a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a></div>`;
         
         const shortDescriptionHTML = `<div class="product-short-description"><p id="product-short-description-content">${initialDescription}</p></div>`;
         
@@ -1118,14 +1127,14 @@
             <div id="ai-button-container">
                 <button id="scrollToContactBtn" title="Daha fazla bilgi için iletişim bölümüne gidin">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/></svg>
-                    Daha Fazla Bilgi İçin Bize Ulaşın
+                    ${t('moreInfoButton')}
                 </button>
             </div>`;
 
-        const tab1Content = `<h3>Genel Açıklama</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
-        const tab2Content = `<h3>Ürün İçeriği</h3><p>${(enhancedDetail?.["Ürün İçeriği"] || product.Content) && String(enhancedDetail?.["Ürün İçeriği"] || product.Content).trim() !== '' ? (enhancedDetail?.["Ürün İçeriği"] || product.Content) : "Bileşen listesi için ambalajdaki etiket incelenmelidir."}</p>`;
-        let tab3Content = `<h3>Dikkat Edilmesi Gerekenler / Uyarılar</h3><ul>${enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel uyarı bulunmamaktadır.</li>"}</ul><h3>Kullanım İpuçları ve En İyi Uygulamalar</h3><ul>${enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel kullanım ipucu bulunmamaktadır.</li>"}</ul>`;
-        let tab4Content = `<h3>Sıkça Sorulan Sorular</h3>${enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length ? `<div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>` : '<p>Bu ürün için sıkça sorulan soru bulunmamaktadır.</p>'}`;
+        const tab1Content = `<h3>${t('tabDetaylar')}</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
+        const tab2Content = `<h3>${t('tabEkBilgiler')}</h3><p>${(enhancedDetail?.["Ürün İçeriği"] || product.Content) && String(enhancedDetail?.["Ürün İçeriği"] || product.Content).trim() !== '' ? (enhancedDetail?.["Ürün İçeriği"] || product.Content) : "Bileşen listesi için ambalajdaki etiket incelenmelidir."}</p>`;
+        let tab3Content = `<h3>${t('tabUyarilar')}</h3><ul>${enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel uyarı bulunmamaktadır.</li>"}</ul><h3>${t('tabEkBilgiler')}</h3><ul>${enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel kullanım ipucu bulunmamaktadır.</li>"}</ul>`;
+        let tab4Content = `<h3>${t('tabSSS')}</h3>${enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length ? `<div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>` : '<p>Bu ürün için sıkça sorulan soru bulunmamaktadır.</p>'}`;
 
         const relatedProductsHTML = getRelatedProductsHTML(product, segmentName, allProducts);
         const disclaimerHTML = getDisclaimerHTML();
@@ -1156,10 +1165,10 @@
             </div>
             <div class="product-details-tabs-modern">
                 <div class="tabs-navigation-modern">
-                    <button class="tab-link-modern active" data-tab="tab1">Genel Açıklama</button>
-                    <button class="tab-link-modern" data-tab="tab2">İçerik Bilgisi</button>
-                    <button class="tab-link-modern" data-tab="tab3">Kullanım ve Uyarılar</button>
-                    <button class="tab-link-modern" data-tab="tab4">S.S.S.</button>
+                    <button class="tab-link-modern active" data-tab="tab1">${t('tabDetaylar')}</button>
+                    <button class="tab-link-modern" data-tab="tab2">${t('tabEkBilgiler')}</button>
+                    <button class="tab-link-modern" data-tab="tab3">${t('tabUyarilar')}</button>
+                    <button class="tab-link-modern" data-tab="tab4">${t('tabSSS')}</button>
                 </div>
                 <div class="tab-content-modern">
                     <div id="tab1" class="tab-pane-modern active">${tab1Content}</div>
@@ -1422,7 +1431,7 @@
         currentSegment = detectedSegment; 
 
         if (slugFromUrl && currentSegment) {
-            await loadProductDetail(slugFromUrl, currentSegment); 
+            await loadProductDetail(slugFromUrl, currentSegment);
         } else {
             const detailContainer = document.getElementById('productDetailContainer');
             if(detailContainer && (!slugFromUrl || !currentSegment) && (window.location.pathname.includes('/product/') || window.location.pathname.includes('/product-pages/'))) { 
@@ -1433,6 +1442,9 @@
                  }
             }
         }
+        window.addEventListener('languageChanged', () => {
+            if(currentProduct) displayProductDetail(currentProduct, currentEnhancedDetail, currentSegment);
+        });
     });
 
   </script>

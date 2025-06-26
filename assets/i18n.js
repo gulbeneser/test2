@@ -36,11 +36,13 @@
     }
     setLang(next);
     translate(next);
+    window.dispatchEvent(new CustomEvent('languageChanged',{detail:next}));
   };
   document.addEventListener('DOMContentLoaded',()=>{
     const lang = currentLang();
     setLang(lang);
     translate(lang);
+    window.dispatchEvent(new CustomEvent('languageChanged',{detail:lang}));
     const selectors=document.querySelectorAll('.language-selector');
     selectors.forEach(btn=>btn.addEventListener('click',()=>window.changeLang()));
   });
