@@ -453,7 +453,7 @@
       <div class="search-bar-container">
         <div class="search-input-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="productSearchInput" placeholder="Dermokozmetik ürünlerinde ara...">
+          <input type="text" id="productSearchInput" placeholder="Dermokozmetik ürünlerinde ara..." data-i18n="searchPlaceholder">
         </div>
         <div id="searchResultsDropdown">
           <ul id="searchResultsList"></ul>
@@ -464,7 +464,7 @@
     <div class="container" id="productDetailContainer"> 
       <div class="loading-container"> 
         <div class="loading-spinner"></div>
-        <p class="loading-text">Ürün bilgileri yükleniyor...</p>
+        <p class="loading-text" data-i18n="loadingText">Ürün bilgileri yükleniyor...</p>
       </div>
     </div>
   </main>
@@ -477,9 +477,9 @@
   <div id="favoritesModal" class="modal">
     <div class="modal-content">
       <span class="close-button">&times;</span>
-      <h2>Favori Ürünlerim</h2>
+      <h2 data-i18n="favoritesTitle">Favori Ürünlerim</h2>
       <div id="favoritesList" class="modal-list"></div>
-      <p id="noFavoritesMessage" class="no-favorites-message">Henüz favori ürününüz bulunmamaktadır.</p>
+      <p id="noFavoritesMessage" class="no-favorites-message" data-i18n="favoritesEmptyMessage">Henüz favori ürününüz bulunmamaktadır.</p>
     </div>
   </div>
 
@@ -488,11 +488,11 @@
       <span class="close-button">&times;</span>
       <h3>Serakıncı AI Asistanı</h3>
       <div class="chatbot-messages" id="chatbotMessages">
-        <div class="bot-message">Merhaba! Bu ürün hakkında merak ettiklerinizi bana sorabilirsiniz.</div>
+        <div class="bot-message" data-i18n="aiAssistantGreeting">Merhaba! Bu ürün hakkında merak ettiklerinizi bana sorabilirsiniz.</div>
       </div>
       <div class="chatbot-input-container">
-        <input type="text" id="chatbotInput" placeholder="Sorunuzu yazın..." aria-label="Yapay zeka asistanına sorunuzu yazın">
-        <button id="chatbotSendBtn" class="chatbot-send-btn" aria-label="Mesaj Gönder">
+        <input type="text" id="chatbotInput" placeholder="Sorunuzu yazın..." data-i18n="aiPlaceholder" aria-label="Yapay zeka asistanına sorunuzu yazın">
+        <button id="chatbotSendBtn" class="chatbot-send-btn" aria-label="Mesaj Gönder" data-i18n="sendMessageLabel">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
         </button>
       </div>
@@ -509,7 +509,7 @@
   -->
 
 
-  <a id="favoritesNavLink" title="Favori ürünlerinizi görüntüleyin">Favorilerim <span id="favoritesCount" class="favorites-count">0</span></a>
+  <a id="favoritesNavLink" title="Favori ürünlerinizi görüntüleyin"><span data-i18n="favoritesLinkText">Favorilerim</span> <span id="favoritesCount" class="favorites-count">0</span></a>
   <button id="chatbotFloatingBtn" class="chatbot-floating-btn" title="Ürün hakkında yapay zekaya danış">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 9h8v2H8V9zm4 4H8v-2h4v2zm4 4H8v-2h8v2z"/></svg>
   </button>
@@ -517,7 +517,7 @@
   <button id="scrollToTopBtn" class="scroll-to-top" title="Başa Dön">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
   </button>
-  <div id="copyTooltip" class="copy-tooltip">Kopyalandı!</div>
+  <div id="copyTooltip" class="copy-tooltip" data-i18n="copiedTooltip">Kopyalandı!</div>
   <div id="favoriteTooltip" class="favorite-tooltip"></div>
 
 
