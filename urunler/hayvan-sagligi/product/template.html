@@ -881,10 +881,11 @@
     function showError(msg) {
         const detailContainer = document.getElementById('productDetailContainer');
         const backLink = currentSegment ? `/urunler/${currentSegment}/` : '/urunler/';
-        const backLinkText = currentSegment ? `${currentSegment.charAt(0).toUpperCase() + currentSegment.slice(1).replace('-', ' ')} Ürünlerine Dön` : "Ürünler Sayfasına Dön";
+        const segName = currentSegment ? (currentSegment.charAt(0).toUpperCase() + currentSegment.slice(1).replace('-', ' ')) : t('navUrunler');
+        const backLinkText = t('backToListButton').replace('{segmentName}', segName);
         if (detailContainer) {
-            detailContainer.innerHTML = `<div class="error-container"><h2>Bir Sorun Oluştu</h2><p>${msg}</p><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
-                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> Önceki Sayfaya Dön</a>` : ''}
+            detailContainer.innerHTML = `<div class="error-container"><h2>${t('errorLoadingProduct')}</h2><p>${msg}</p><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
+                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> ${t('breadcrumbAnaSayfa')}</a>` : ''}
                 <a href="${backLink}" class="back-button-modern"><span class="back-icon">‹</span> ${backLinkText}</a>
             </div></div>`;
         }
@@ -1141,10 +1142,10 @@
         const contactHTML = getContactHTML();
 
         const categoryLink = productCategory && productCategory !== 'Diğer' ? `/urunler/${segmentName}/?kategori=${slugify(productCategory)}` : `/urunler/${segmentName}/`;
-        const categoryText = productCategory && productCategory !== 'Diğer' ? `"${productCategory}" Kategorisine Dön` : `${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} Ürünlerine Dön`;
+        const categoryText = t('backToListButton').replace('{segmentName}', productCategory && productCategory !== 'Diğer' ? productCategory : (segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')));
         const backButtonHTML = `
             <div id="backButtonsContainer" style="margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 10px;">
-                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> Önceki Sayfaya Dön</a>` : ''}
+                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> ${t('breadcrumbAnaSayfa')}</a>` : ''}
                 <a href="${categoryLink}" class="back-button-modern"><span class="back-icon">‹</span> ${categoryText}</a>
             </div>`;
 
@@ -1213,22 +1214,16 @@
     function getDisclaimerHTML() {
         return `
         <div class="disclaimer-box-modern">
-            <strong>Yasal Uyarı / Legal Disclaimer</strong>
-            <span>Bu web sitesinde sunulan bilgiler yalnızca genel bilgilendirme amaçlıdır ve profesyonel veteriner hekim tavsiyesinin veya teşhisinin yerini alması amaçlanmamıştır. Hayvanınızın sağlığı veya tıbbi durumu hakkında herhangi bir endişeniz varsa, daima veteriner hekiminize veya diğer nitelikli sağlık uzmanlarına danışın.</span>
-            <span>Sitede yer alan bilgiler, herhangi bir hastalığı teşhis etmek, tedavi etmek, iyileştirmek veya önlemek için kullanılamaz. Ürünlerin kullanımı ve dozajı konusunda mutlaka bir veteriner hekimin önerisi ve gözetimi gereklidir. Yanlış veya bilinçsiz ilaç kullanımı hayvan sağlığı için ciddi riskler oluşturabilir.</span>
-            <span>Serakıncı Limited, bu sitede yer alan bilgilerin doğruluğu, güncelliği veya eksiksizliği konusunda herhangi bir garanti vermez ve bu bilgilerin kullanımından kaynaklanabilecek doğrudan veya dolaylı hiçbir sorumluluk kabul etmez. Ürün bilgileri, etiketleri ve ambalajları zamanla değişebilir; her zaman ürünle birlikte gelen güncel etiket ve prospektüs bilgilerini ve veteriner hekiminizin tavsiyelerini dikkate alınız.</span>
-            <span>Reçeteye tabi veteriner tıbbi ürünleri yalnızca veteriner hekim reçetesi ile temin edilebilir ve kullanılabilir.</span>
-            <hr>
-            <span><strong>Legal Disclaimer:</strong> The information provided on this website is for general informational purposes only and is not intended to be a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified health provider with any questions you may have regarding your animal's health or a medical condition.</span>
+            <span>${t('disclaimerAnimal')}</span>
         </div>`;
     }
 
     function getContactHTML() {
         return `
         <div class="contact-card-modern" id="contactSection">
-            <div class="contact-title-modern">Ürün Hakkında Bilgi Alın</div>
+            <div class="contact-title-modern">${t('contactUsTitle')}</div>
             <div class="contact-bar-modern"></div>
-            <p class="contact-intro-text">Ürünle ilgili detaylı bilgi veya sorularınız için bizimle iletişime geçmekten çekinmeyin:</p>
+            <p class="contact-intro-text">${t('contactUsIntro')}</p>
             <div class="contact-grid">
                 <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><div><span class="contact-label-modern">Telefon</span><a href="tel:+903923662594" class="contact-link-modern">+90 392 366 25 94</a></div></div>
                 <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><div><span class="contact-label-modern">E-posta</span><a href="mailto:info@serakinci.com" class="contact-link-modern">info@serakinci.com</a></div></div>

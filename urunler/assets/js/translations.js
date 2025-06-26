@@ -85,7 +85,17 @@ window.translations = {
     "aiAssistantGreeting": "Hello! You can ask me anything about this product.",
     "aiPlaceholder": "Type your question...",
     "sendMessageLabel": "Send Message",
-    "copiedTooltip": "Copied!"
+    "copiedTooltip": "Copied!",
+    "siteTitleCatalog": "Serakıncı Product Catalog",
+    "siteDescCatalog": "Discover our Dermocosmetics and Animal Health products in Northern Cyprus.",
+    "siteTitleDermokozmetik": "Dermocosmetic Products | Serakıncı KKTC",
+    "siteDescDermokozmetik": "Explore dermocosmetic brands trusted by Serakıncı.",
+    "siteTitleHayvan": "Animal Health Products | Serakıncı KKTC",
+    "siteDescHayvan": "Wide range of veterinary medicines and supplements.",
+    "disclaimerDermo": "Product information on this site is for general reference only and is not a substitute for professional medical advice.",
+    "disclaimerAnimal": "The information provided on this website is for general informational purposes only and is not a substitute for veterinary advice.",
+    "contactUsTitle": "Contact Us",
+    "contactUsIntro": "For more information or questions about our products, please reach us using the channels below:"
   },
   "tr": {
     "siteTitle": "Ürün Detayı | Dermokozmetik | Serakıncı",
@@ -173,7 +183,17 @@ window.translations = {
     "aiAssistantGreeting": "Merhaba! Bu ürün hakkında merak ettiklerinizi bana sorabilirsiniz.",
     "aiPlaceholder": "Sorunuzu yazın...",
     "sendMessageLabel": "Mesaj Gönder",
-    "copiedTooltip": "Kopyalandı!"
+    "copiedTooltip": "Kopyalandı!",
+    "siteTitleCatalog": "Serakıncı Ürün Kataloğu",
+    "siteDescCatalog": "Kuzey Kıbrıs'taki dermokozmetik ve hayvan sağlığı ürünlerimizi keşfedin.",
+    "siteTitleDermokozmetik": "Dermokozmetik Ürünler | Serakıncı KKTC",
+    "siteDescDermokozmetik": "Serakıncı güvencesiyle dermokozmetik markaları keşfedin.",
+    "siteTitleHayvan": "Hayvan Sağlığı Ürünleri | Serakıncı KKTC",
+    "siteDescHayvan": "Veteriner ilaçları ve takviyeler için geniş ürün yelpazesi.",
+    "disclaimerDermo": "Bu sitede yer alan ürün bilgileri genel bilgilendirme amaçlıdır ve profesyonel sağlık tavsiyesi yerine geçmez.",
+    "disclaimerAnimal": "Bu web sitesindeki bilgiler genel amaçlıdır ve veteriner tavsiyesi yerine geçmez.",
+    "contactUsTitle": "Bizimle İletişime Geçin",
+    "contactUsIntro": "Ürünlerimiz hakkında daha fazla bilgi veya sorularınız için aşağıdaki kanallardan bize ulaşabilirsiniz:"
   },
   "ru": {
     "siteTitle": "Детали продукта | Дерматокосметика | Serakıncı",
@@ -261,7 +281,17 @@ window.translations = {
     "aiAssistantGreeting": "Здравствуйте! Спросите меня о продукте.",
     "aiPlaceholder": "Введите ваш вопрос...",
     "sendMessageLabel": "Отправить",
-    "copiedTooltip": "Скопировано!"
+    "copiedTooltip": "Скопировано!",
+    "siteTitleCatalog": "Каталог продукции Serakıncı",
+    "siteDescCatalog": "Ознакомьтесь с нашими товарами для дерматокосметики и здоровья животных на Северном Кипре.",
+    "siteTitleDermokozmetik": "Дерматокосметика | Serakıncı KKTC",
+    "siteDescDermokozmetik": "Изучите бренды дерматокосметики от Serakıncı.",
+    "siteTitleHayvan": "Товары для здоровья животных | Serakıncı KKTC",
+    "siteDescHayvan": "Широкий ассортимент ветеринарных препаратов и добавок.",
+    "disclaimerDermo": "Информация о продуктах на сайте носит общий характер и не заменяет профессиональные медицинские рекомендации.",
+    "disclaimerAnimal": "Предоставленная информация является общей и не заменяет совет ветеринара.",
+    "contactUsTitle": "Связаться с нами",
+    "contactUsIntro": "Чтобы получить дополнительную информацию о наших продуктах, свяжитесь с нами по каналам ниже:"
   },
   "de": {
     "siteTitle": "Produktdetails | Dermokosmetik | Serakıncı",
