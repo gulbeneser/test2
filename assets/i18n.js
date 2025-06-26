@@ -8,10 +8,12 @@
     if(!supported.includes(lang)) lang='tr';
     localStorage.setItem('lang',lang);
     document.documentElement.lang = lang;
-    const selector=document.querySelector('.language-selector');
-    if(selector && window.translations){
-      selector.textContent = window.translations[lang]?.langButtonText || lang;
-    }
+    const selectors=document.querySelectorAll('.language-selector');
+    selectors.forEach(btn=>{
+      if(window.translations){
+        btn.textContent = window.translations[lang]?.langButtonText || lang;
+      }
+    });
   }
   function translate(lang){
     if(!window.translations) return;
@@ -39,7 +41,7 @@
     const lang = currentLang();
     setLang(lang);
     translate(lang);
-    const selector=document.querySelector('.language-selector');
-    if(selector) selector.addEventListener('click',()=>window.changeLang());
+    const selectors=document.querySelectorAll('.language-selector');
+    selectors.forEach(btn=>btn.addEventListener('click',()=>window.changeLang()));
   });
 })();
