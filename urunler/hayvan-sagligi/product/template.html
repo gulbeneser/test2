@@ -84,6 +84,18 @@
     .new-nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -2px; left: 0; background-color: var(--header-nav-link-hover-color); transition: width 0.3s ease; }
     .new-nav-link:hover::after { width: 100%; }
     .new-header-actions { display: flex; align-items: center; gap: 1rem; flex-shrink: 0;}
+    .language-selector {
+      background-color: var(--header-lang-button-bg);
+      border: 1px solid var(--header-lang-button-border);
+      color: var(--header-lang-button-text);
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .language-selector:hover { background-color: var(--header-lang-button-hover-bg); }
 
     .header-search-wrapper {
         position: relative;
@@ -421,11 +433,12 @@
     .firm-social-media-row a svg { width: 100%; height: 100%; transition: opacity 0.2s; }
     .firm-social-media-row a:hover svg { opacity: 0.75; }
 
-    @media (max-width: 767px) { 
+    @media (max-width: 767px) {
         .new-header-content { padding: 0 1rem; }
         .new-site-navigation { gap: 1rem; }
-        .new-nav-link { font-size: 1rem; padding: 0.8rem 0; } 
+        .new-nav-link { font-size: 1rem; padding: 0.8rem 0; }
         .new-header-actions { gap: 0.5rem; }
+        .language-selector, .b2b-login-button { padding: 0.35rem 0.7rem; font-size: 0.8rem; }
         .container { padding: 1rem 0.75rem; } 
         .product-main-layout { padding: 1.5rem; gap: 1.5rem; } 
         .product-title-modern { font-size: 1.75rem; } 
@@ -455,9 +468,10 @@
             bottom: 20px;
         }
     }
-    @media (max-width: 480px) { 
-        .product-title-modern { font-size: 1.5rem; } 
-        .breadcrumb-separator { margin: 0 0.4rem; } 
+    @media (max-width: 480px) {
+        .product-title-modern { font-size: 1.5rem; }
+        .breadcrumb-separator { margin: 0 0.4rem; }
+        .language-selector { padding: 0.3rem 0.5rem; font-size: 0.7rem; }
     }
     footer { font-family: 'Satoshi', sans-serif; background-color: #ffffff; padding: 40px clamp(1.25rem, 5vw, 5rem); display: flex; justify-content: space-between; align-items: flex-start; font-size: 16px; border-top: 1px solid #e0e0e0; color: #1C274C; }
     .footer-left { display: flex; flex-direction: column; max-width: 45%; }
