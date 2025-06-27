@@ -507,7 +507,7 @@
         <div class="header-search-wrapper">
             <div class="search-input-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <input type="text" id="headerProductSearchInput" placeholder="Hızlı ürün ara...">
+                <input type="text" id="headerProductSearchInput" placeholder="Hızlı ürün ara..." data-i18n="headerSearchPlaceholder">
             </div>
             <div id="headerSearchResultsDropdown">
                 <ul id="headerSearchResultsList"></ul>
@@ -573,7 +573,7 @@
   <button id="scrollToTopBtn" class="scroll-to-top" title="Başa Dön">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
   </button>
-  <div id="copyTooltip" class="copy-tooltip">Kopyalandı!</div>
+  <div id="copyTooltip" class="copy-tooltip" data-i18n="copiedTooltip">Kopyalandı!</div>
   <div id="favoriteTooltip" class="favorite-tooltip"></div>
 
   <footer>
@@ -1119,7 +1119,7 @@
         let metaInfoHTML = '<div class="product-meta-enhanced">';
         if (productCategory && productCategory !== 'Diğer') metaInfoHTML += `<span class="meta-item"><strong>${t('labelCategory')}:</strong> ${productCategory}</span>`;
         const productCode = product.ProductCode || product.DisplayProductCode;
-        if (productCode) metaInfoHTML += `<span class="meta-item"><strong>${t('labelProductCode')}:</strong> <span id="productCodeValue">${productCode}</span> <span class="copy-code" title="Kodu Kopyala" onclick="window.copyProductCode(event)">(Kopyala)</span></span>`;
+        if (productCode) metaInfoHTML += `<span class="meta-item"><strong>${t('labelProductCode')}:</strong> <span id="productCodeValue">${productCode}</span> <span class="copy-code" title="${t('copyButtonTitle')}" onclick="window.copyProductCode(event)">${t('copyButton')}</span></span>`;
         if (enhancedDetail) {
             if(enhancedDetail["Üretici Firma"] && enhancedDetail["Üretici Firma"].trim() !== "") metaInfoHTML += `<span class="meta-item"><strong>${t('labelManufacturer')}:</strong> ${enhancedDetail["Üretici Firma"]}</span>`;
             if(enhancedDetail["Firma Web Sitesi"] && enhancedDetail["Firma Web Sitesi"].trim() !== "" && (enhancedDetail["Firma Web Sitesi"].startsWith('http') || enhancedDetail["Firma Web Sitesi"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>${t('labelWebsite')}:</strong> <a href="${enhancedDetail["Firma Web Sitesi"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Firma Web Sitesi"]}" target="_blank" rel="noopener">${t('labelWebsite')}</a></span>`;
@@ -1149,8 +1149,9 @@
         const tips = enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"] || [];
         const hasTab3 = warnings.length > 0 || tips.length > 0;
         let tab3Content = `<h3>${t('tabUyarilar')}</h3>${warnings.length?`<ul>${warnings.map(item=>`<li>${item}</li>`).join('')}</ul>`:''}${tips.length?`<h3>${t('tabEkBilgiler')}</h3><ul>${tips.map(item=>`<li>${item}</li>`).join('')}</ul>`:''}`;
-        const hasTab4 = enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length > 0;
-        let tab4Content = `<h3>${t('tabSSS')}</h3><div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>`;
+        const faqList = enhancedDetail?.["Sıkça Sorulan Sorular"] || [];
+        const hasTab4 = faqList.length > 0;
+        let tab4Content = `<h3>${t('tabSSS')}</h3><div class="faq-container">${faqList.map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>`;
 
         const relatedProductsHTML = getRelatedProductsHTML(product, segmentName, allProducts);
         const disclaimerHTML = getDisclaimerHTML();
@@ -1210,7 +1211,7 @@
             .slice(0, 10);
 
         if (relatedProducts.length === 0) return '';
-        const title = productCategory !== 'Diğer' ? `"${productCategory}" Kategorisindeki Diğer Ürünler` : "İlgili Diğer Ürünler";
+        const title = productCategory !== 'Diğer' ? t('otherProductsInCategory').replace('{category}', productCategory) : t('relatedProductsTitle');
         let html = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${title}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
         relatedProducts.forEach(rp => {
             let rpImageUrl = localImageUrl(rp);
@@ -1297,8 +1298,11 @@
         const productCodeEl = document.getElementById('productCodeValue');
         if (!productCodeEl) return;
         navigator.clipboard.writeText(productCodeEl.innerText).then(() => {
-            showTooltip('copyTooltip', event.target, 'Kopyalandı!');
-        }).catch(err => console.error('Kod kopyalanamadı: ', err));
+            showTooltip('copyTooltip', event.target, t('codeCopied'));
+        }).catch(err => {
+            console.error('Kod kopyalanamadı: ', err);
+            showTooltip('copyTooltip', event.target, t('codeNotCopied'));
+        });
     }
 
     window.scrollCarousel = function(direction, containerId) { 
