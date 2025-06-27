@@ -592,6 +592,7 @@
     let G_isMouseOverHeaderDropdown = false;
     let currentEnhancedDetail = null;
     let currentExtraData = null;
+    let biodermaDataCache = null;
 
     function t(key){
         const lang = document.documentElement.lang || 'tr';
@@ -605,6 +606,27 @@
         if(val && typeof val === 'object') return val[lang] || val.tr || Object.values(val)[0] || '';
         if(obj[`${base}_${lang}`]) return obj[`${base}_${lang}`];
         return obj[base] || '';
+    }
+
+    async function loadBiodermaData(){
+        if(biodermaDataCache) return biodermaDataCache;
+        try {
+            biodermaDataCache = await fetchJsonData('products_bioderma.json');
+        } catch(e){
+            console.warn('products_bioderma.json yüklenemedi:', e);
+            biodermaDataCache = [];
+        }
+        return biodermaDataCache;
+    }
+
+    function findBiodermaExtra(allData, product){
+        if(!product || !allData) return null;
+        const slug = slugify(product.ProductName);
+        const pid = String(product.ProductId);
+        const code = String(product.ProductCode);
+        return allData.find(b => String(b.ProductId) === pid) ||
+               allData.find(b => b.sku && String(b.sku) === code) ||
+               allData.find(b => b.name && slugify(b.name) === slug) || null;
     }
 
     
@@ -988,19 +1010,13 @@
             console.warn("detay-product.json yüklenemedi veya işlenemedi:", e);
         }
 
-        let biodermaExtraData = null; 
-        if (currentProduct.brand && currentProduct.brand.toLowerCase() === 'bioderma' && currentProduct.ProductId) {
+        let biodermaExtraData = null;
+        if (currentProduct.brand && currentProduct.brand.toLowerCase() === 'bioderma') {
           try {
-              const biodermaResponse = await fetchJsonData('products_bioderma.json');
-              biodermaExtraData = biodermaResponse.find(bProd => bProd.ProductId === currentProduct.ProductId);
+              const biodermaResponse = await loadBiodermaData();
+              biodermaExtraData = findBiodermaExtra(biodermaResponse, currentProduct);
               if (!biodermaExtraData) {
-                  biodermaExtraData = biodermaResponse.find(bProd =>
-                      (bProd.sku && bProd.sku === currentProduct.ProductCode) ||
-                      (bProd.name && slugify(bProd.name) === slugify(currentProduct.ProductName))
-                  );
-              }
-              if (!biodermaExtraData) {
-                  console.warn(`Bioderma ürünü (${currentProduct.ProductName}) için products_bioderma.json dosyasında eşleşen kayıt bulunamadı.`);
+                  console.warn(`Bioderma ürünü (${currentProduct.ProductName}) için products_bioderma.json içinde eşleşen kayıt bulunamadı.`);
               }
           } catch (e) {
               console.warn("Bioderma ek bilgileri yüklenemedi:", e);
