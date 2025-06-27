@@ -635,6 +635,15 @@
         return window.translations?.[lang]?.[key] || key;
     }
 
+    function getLocalized(obj, base){
+        const lang = document.documentElement.lang || 'tr';
+        if(!obj) return '';
+        const val = obj[base];
+        if(val && typeof val === 'object') return val[lang] || val.tr || Object.values(val)[0] || '';
+        if(obj[`${base}_${lang}`]) return obj[`${base}_${lang}`];
+        return obj[base] || '';
+    }
+
     async function generateEnhancedProductInfo(productName, productKategori, languageCode, existingProductInfo = {}) {
         // This function is kept for fetchAndFillDescriptionAI, 
         // but it no longer directly powers a visible "AI Info" section via a button.
@@ -1016,7 +1025,7 @@
     }
     
     async function fetchAndFillDescriptionAI(product, enhancedDetail) {
-        const initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description;
+        const initialDescription = getLocalized(enhancedDetail, "Ürün Açıklaması") || product.Description;
         const placeholderTexts = [
             "açıklama yükleniyor...",
             "bu ürün için açıklama şu anda üretilememektedir.",
@@ -1098,7 +1107,7 @@
     function displayProductDetail(product, enhancedDetail, segmentName) { 
         const detailContainer = document.getElementById('productDetailContainer');
         
-        let initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description || " ";
+        let initialDescription = getLocalized(enhancedDetail, "Ürün Açıklaması") || product.Description || " ";
 
         let imageUrl = localImageUrl(product);
         const productCategory = getProductCategory(product);
@@ -1133,9 +1142,15 @@
             </div>`;
 
         const tab1Content = `<h3>${t('tabDetaylar')}</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
-        const tab2Content = `<h3>${t('tabEkBilgiler')}</h3><p>${(enhancedDetail?.["Ürün İçeriği"] || product.Content) && String(enhancedDetail?.["Ürün İçeriği"] || product.Content).trim() !== '' ? (enhancedDetail?.["Ürün İçeriği"] || product.Content) : "Bileşen listesi için ambalajdaki etiket incelenmelidir."}</p>`;
-        let tab3Content = `<h3>${t('tabUyarilar')}</h3><ul>${enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel uyarı bulunmamaktadır.</li>"}</ul><h3>${t('tabEkBilgiler')}</h3><ul>${enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel kullanım ipucu bulunmamaktadır.</li>"}</ul>`;
-        let tab4Content = `<h3>${t('tabSSS')}</h3>${enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length ? `<div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>` : '<p>Bu ürün için sıkça sorulan soru bulunmamaktadır.</p>'}`;
+        const rawContent = enhancedDetail?.["Ürün İçeriği"] || product.Content || '';
+        const hasTab2 = rawContent.trim() !== '';
+        const tab2Content = `<h3>${t('tabEkBilgiler')}</h3><p>${rawContent}</p>`;
+        const warnings = enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"] || [];
+        const tips = enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"] || [];
+        const hasTab3 = warnings.length > 0 || tips.length > 0;
+        let tab3Content = `<h3>${t('tabUyarilar')}</h3>${warnings.length?`<ul>${warnings.map(item=>`<li>${item}</li>`).join('')}</ul>`:''}${tips.length?`<h3>${t('tabEkBilgiler')}</h3><ul>${tips.map(item=>`<li>${item}</li>`).join('')}</ul>`:''}`;
+        const hasTab4 = enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length > 0;
+        let tab4Content = `<h3>${t('tabSSS')}</h3><div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>`;
 
         const relatedProductsHTML = getRelatedProductsHTML(product, segmentName, allProducts);
         const disclaimerHTML = getDisclaimerHTML();
@@ -1166,16 +1181,10 @@
             </div>
             <div class="product-details-tabs-modern">
                 <div class="tabs-navigation-modern">
-                    <button class="tab-link-modern active" data-tab="tab1">${t('tabDetaylar')}</button>
-                    <button class="tab-link-modern" data-tab="tab2">${t('tabEkBilgiler')}</button>
-                    <button class="tab-link-modern" data-tab="tab3">${t('tabUyarilar')}</button>
-                    <button class="tab-link-modern" data-tab="tab4">${t('tabSSS')}</button>
+                    ${(()=>{let h=`<button class="tab-link-modern active" data-tab="tab1">${t('tabDetaylar')}</button>`;if(hasTab2)h+=`<button class="tab-link-modern" data-tab="tab2">${t('tabEkBilgiler')}</button>`;if(hasTab3)h+=`<button class="tab-link-modern" data-tab="tab3">${t('tabUyarilar')}</button>`;if(hasTab4)h+=`<button class="tab-link-modern" data-tab="tab4">${t('tabSSS')}</button>`;return h;})()}
                 </div>
                 <div class="tab-content-modern">
-                    <div id="tab1" class="tab-pane-modern active">${tab1Content}</div>
-                    <div id="tab2" class="tab-pane-modern">${tab2Content}</div>
-                    <div id="tab3" class="tab-pane-modern">${tab3Content}</div>
-                    <div id="tab4" class="tab-pane-modern">${tab4Content}</div>
+                    ${(()=>{let c=`<div id="tab1" class="tab-pane-modern active">${tab1Content}</div>`;if(hasTab2)c+=`<div id="tab2" class="tab-pane-modern">${tab2Content}</div>`;if(hasTab3)c+=`<div id="tab3" class="tab-pane-modern">${tab3Content}</div>`;if(hasTab4)c+=`<div id="tab4" class="tab-pane-modern">${tab4Content}</div>`;return c;})()}
                 </div>
             </div>
             ${relatedProductsHTML}

@@ -9,7 +9,9 @@
     "Üretici Firma": "Ceva",
     "Firma Web Sitesi": "https://www.ceva.com/tr/",
     "Ürün Açıklaması": "Hayvan Sağlığı kategorisindeki ANESTEZİK türü ürün.",
-    "Açıklama Kaynağı": "category_generated"
+    "Açıklama Kaynağı": "category_generated",
+    "Ürün Açıklaması_en": "An anesthetic product for animal health.",
+    "Ürün Açıklaması_ru": "Ветеринарный анестетик."
   },
   {
     "ProductId": 1415,
@@ -21,7 +23,9 @@
     "Üretici Firma": "Provet",
     "Firma Web Sitesi": "https://www.provet.com.tr/",
     "Ürün Açıklaması": "Atipamezol hidroklorür, köpek ve kedilerde, medetomidin ve deksmedetomidin gibi α2- agonistlerinin kullanımından sonra, bunların sedatif etkilerinin ve kardiyovasküler etkilerinin ortadan kaldırılması amacıyla kullanılır.",
-    "Açıklama Kaynağı": "alternative"
+    "Açıklama Kaynağı": "alternative",
+    "Ürün Açıklaması_en": "Atipamezole hydrochloride reverses sedative and cardiovascular effects of alpha2 agonists in dogs and cats.",
+    "Ürün Açıklaması_ru": "Атипамезол гидрохлорид для устранения седативного и кардиоваскулярного действия α2-агонистов у собак и кошек."
   },
   {
     "ProductId": 1416,
