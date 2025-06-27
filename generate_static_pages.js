@@ -3,7 +3,6 @@ const path = require('path');
 try {
   require('dotenv').config();
 } catch {}
-const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const dermoPath = path.join(__dirname, 'urunler', 'api', 'products.json');
 const animalPath = path.join(__dirname, 'urunler', 'api', 'hayvan-sagligi.json');
@@ -11,11 +10,6 @@ const dermoTemplate = path.join(__dirname, 'urunler', 'dermokozmetik', 'product'
 const animalTemplate = path.join(__dirname, 'urunler', 'hayvan-sagligi', 'product', 'template.html');
 
 const languages = ['tr', 'en', 'ru'];
-
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const translationModel = genAI.getGenerativeModel({
-  model: 'gemini-2.5-flash-preview-04-17'
-});
 
 const cachePath = path.join(__dirname, 'translation_cache.json');
 let translationCache = {};
@@ -29,8 +23,24 @@ async function translateText(text, targetLang) {
   const key = `${targetLang}:${text}`;
   if (translationCache[key]) return translationCache[key];
   const prompt = `Translate this text to ${targetLang}:\n${text}`;
-  const result = await translationModel.generateContent(prompt);
-  const translated = result?.response?.text()?.trim() || text;
+  const apiKey = process.env.GEMINI_API_KEY;
+  let translated = text;
+  if (apiKey) {
+    try {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-04-17:generateContent?key=${apiKey}`;
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ role: 'user', parts: [{ text: prompt }] }]
+        })
+      });
+      const data = await res.json();
+      translated = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || text;
+    } catch (err) {
+      console.warn('Translation failed', err);
+    }
+  }
   translationCache[key] = translated;
   fs.writeFileSync(cachePath, JSON.stringify(translationCache, null, 2));
   return translated;
