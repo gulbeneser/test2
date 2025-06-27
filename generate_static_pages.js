@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-require('dotenv').config();
-const { OpenAI } = require('openai');
+try {
+  require('dotenv').config();
+} catch {}
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const dermoPath = path.join(__dirname, 'urunler', 'api', 'products.json');
 const animalPath = path.join(__dirname, 'urunler', 'api', 'hayvan-sagligi.json');
@@ -10,7 +12,10 @@ const animalTemplate = path.join(__dirname, 'urunler', 'hayvan-sagligi', 'produc
 
 const languages = ['tr', 'en', 'ru'];
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const translationModel = genAI.getGenerativeModel({
+  model: 'gemini-2.5-flash-preview-04-17'
+});
 
 const cachePath = path.join(__dirname, 'translation_cache.json');
 let translationCache = {};
@@ -23,14 +28,9 @@ async function translateText(text, targetLang) {
   if (!text) return '';
   const key = `${targetLang}:${text}`;
   if (translationCache[key]) return translationCache[key];
-  const completion = await openai.chat.completions.create({
-    model: 'gpt-3.5-turbo',
-    messages: [
-      { role: 'system', content: 'You are a professional translator.' },
-      { role: 'user', content: `Translate the following text to ${targetLang}:\n${text}` }
-    ]
-  });
-  const translated = completion.choices[0].message.content.trim();
+  const prompt = `Translate this text to ${targetLang}:\n${text}`;
+  const result = await translationModel.generateContent(prompt);
+  const translated = result?.response?.text()?.trim() || text;
   translationCache[key] = translated;
   fs.writeFileSync(cachePath, JSON.stringify(translationCache, null, 2));
   return translated;
