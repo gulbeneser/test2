@@ -125,6 +125,7 @@ async function createPages(products, segment, lang) {
     list.push({ slug, name });
   }
   await createIndex(list, segment, lang);
+  await createCategoryIndex(list, segment, lang);
 }
 
 async function createIndex(items, segment, lang) {
@@ -157,6 +158,29 @@ ${links}
   await fs.promises.writeFile(outPath, html);
 }
 
+async function createCategoryIndex(items, segment, lang) {
+  const links = items
+    .map(({ slug, name }) => `    <li><a href="product-pages/${slug}/">${name}</a></li>`)
+    .join('\n');
+  const html = `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${segment}</title>
+</head>
+<body>
+  <h1>${segment}</h1>
+  <ul>
+${links}
+  </ul>
+</body>
+</html>`;
+  const outPath = path.join(__dirname, lang, 'urunler', segment, 'index.html');
+  await fs.promises.mkdir(path.dirname(outPath), { recursive: true });
+  await fs.promises.writeFile(outPath, html);
+}
+
 function extractStaticUrls() {
   const sitemapPath = path.join(__dirname, 'sitemap.xml');
   const urls = new Set();
@@ -182,6 +206,8 @@ async function createSitemap(dermo, animal) {
   const urls = extractStaticUrls();
   for (const lang of languages) {
     urls.push(`https://www.serakinci.com/${lang}/urunler/`);
+    urls.push(`https://www.serakinci.com/${lang}/urunler/dermokozmetik/`);
+    urls.push(`https://www.serakinci.com/${lang}/urunler/hayvan-sagligi/`);
     for (const p of dermo) {
       if (p && p.ProductName) {
         const name = await translateText(p.ProductName, lang);
@@ -210,6 +236,29 @@ async function createSitemap(dermo, animal) {
   await fs.promises.writeFile(path.join(__dirname, 'sitemap.html'), xml);
 }
 
+async function createRootIndex(lang) {
+  const dermoName = await translateText('dermokozmetik', lang);
+  const animalName = await translateText('hayvan sagligi', lang);
+  const html = `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>urunler</title>
+</head>
+<body>
+  <h1>urunler</h1>
+  <ul>
+    <li><a href="dermokozmetik/">${dermoName}</a></li>
+    <li><a href="hayvan-sagligi/">${animalName}</a></li>
+  </ul>
+</body>
+</html>`;
+  const outPath = path.join(__dirname, lang, 'urunler', 'index.html');
+  await fs.promises.mkdir(path.dirname(outPath), { recursive: true });
+  await fs.promises.writeFile(outPath, html);
+}
+
 async function generate() {
   let dermo = [];
   let animal = [];
@@ -219,6 +268,7 @@ async function generate() {
   for (const lang of languages) {
     await createPages(dermo, 'dermokozmetik', lang);
     await createPages(animal, 'hayvan-sagligi', lang);
+    await createRootIndex(lang);
   }
   await createSitemap(dermo, animal);
   console.log('Static product pages generated and sitemap updated.');
