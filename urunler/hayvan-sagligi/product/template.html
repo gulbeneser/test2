@@ -84,6 +84,18 @@
     .new-nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -2px; left: 0; background-color: var(--header-nav-link-hover-color); transition: width 0.3s ease; }
     .new-nav-link:hover::after { width: 100%; }
     .new-header-actions { display: flex; align-items: center; gap: 1rem; flex-shrink: 0;}
+    .language-selector {
+      background-color: var(--header-lang-button-bg);
+      border: 1px solid var(--header-lang-button-border);
+      color: var(--header-lang-button-text);
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .language-selector:hover { background-color: var(--header-lang-button-hover-bg); }
 
     .header-search-wrapper {
         position: relative;
@@ -421,11 +433,12 @@
     .firm-social-media-row a svg { width: 100%; height: 100%; transition: opacity 0.2s; }
     .firm-social-media-row a:hover svg { opacity: 0.75; }
 
-    @media (max-width: 767px) { 
+    @media (max-width: 767px) {
         .new-header-content { padding: 0 1rem; }
         .new-site-navigation { gap: 1rem; }
-        .new-nav-link { font-size: 1rem; padding: 0.8rem 0; } 
+        .new-nav-link { font-size: 1rem; padding: 0.8rem 0; }
         .new-header-actions { gap: 0.5rem; }
+        .language-selector, .b2b-login-button { padding: 0.35rem 0.7rem; font-size: 0.8rem; }
         .container { padding: 1rem 0.75rem; } 
         .product-main-layout { padding: 1.5rem; gap: 1.5rem; } 
         .product-title-modern { font-size: 1.75rem; } 
@@ -455,9 +468,10 @@
             bottom: 20px;
         }
     }
-    @media (max-width: 480px) { 
-        .product-title-modern { font-size: 1.5rem; } 
-        .breadcrumb-separator { margin: 0 0.4rem; } 
+    @media (max-width: 480px) {
+        .product-title-modern { font-size: 1.5rem; }
+        .breadcrumb-separator { margin: 0 0.4rem; }
+        .language-selector { padding: 0.3rem 0.5rem; font-size: 0.7rem; }
     }
     footer { font-family: 'Satoshi', sans-serif; background-color: #ffffff; padding: 40px clamp(1.25rem, 5vw, 5rem); display: flex; justify-content: space-between; align-items: flex-start; font-size: 16px; border-top: 1px solid #e0e0e0; color: #1C274C; }
     .footer-left { display: flex; flex-direction: column; max-width: 45%; }
@@ -480,26 +494,27 @@
     <div class="new-header-content main-container">
       <a href="https://www.serakinci.com" class="new-site-logo-link" title="Serakıncı Ana Sayfa">
         <img src="/urunler/assets/logos/logo.png" alt="Serakıncı Logo" class="new-site-logo-img" loading="lazy">
-        <span class="new-site-logo-text">Serakıncı Limited</span>
+        <span class="new-site-logo-text" data-i18n="headerLogoText">Serakıncı Limited</span>
       </a>
       <nav class="new-site-navigation">
-        <a href="https://serakinci.com/bizkimiz" class="new-nav-link">Biz Kimiz?</a>
-        <a href="https://serakinci.com/services" class="new-nav-link">Hizmetlerimiz</a>
-        <a href="/urunler/" class="new-nav-link">Ürünler</a>
-        <a href="https://serakinci.com/careers" class="new-nav-link">Kariyer</a>
-        <a href="https://serakinci.com/contact" class="new-nav-link">Bize Ulaşın</a>
+        <a href="https://serakinci.com/bizkimiz" class="new-nav-link" data-i18n="navBizKimiz">Biz Kimiz?</a>
+        <a href="https://serakinci.com/services" class="new-nav-link" data-i18n="navHizmetlerimiz">Hizmetlerimiz</a>
+        <a href="/urunler/" class="new-nav-link" data-i18n="navUrunler">Ürünler</a>
+        <a href="https://serakinci.com/careers" class="new-nav-link" data-i18n="navKariyer">Kariyer</a>
+        <a href="https://serakinci.com/contact" class="new-nav-link" data-i18n="navBizeUlasin">Bize Ulaşın</a>
       </nav>
       <div class="new-header-actions">
         <div class="header-search-wrapper">
             <div class="search-input-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <input type="text" id="headerProductSearchInput" placeholder="Hızlı ürün ara...">
+                <input type="text" id="headerProductSearchInput" placeholder="Hızlı ürün ara..." data-i18n="headerSearchPlaceholder">
             </div>
             <div id="headerSearchResultsDropdown">
                 <ul id="headerSearchResultsList"></ul>
             </div>
         </div>
-        <a href="https://siparis.serakinci.com/" class="b2b-login-button">B2B Giriş</a>
+        <button class="language-selector" aria-label="Dil Seçimi" data-i18n="langButtonText">Türkçe</button>
+        <a href="https://siparis.serakinci.com/" class="b2b-login-button" data-i18n="b2bLoginButtonText">B2B Giriş</a>
         <a id="favoritesNavLink" title="Favori ürünlerinizi görüntüleyin">Favorilerim <span id="favoritesCount" class="favorites-count">0</span></a>
         <button class="mobile-menu-toggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -558,7 +573,7 @@
   <button id="scrollToTopBtn" class="scroll-to-top" title="Başa Dön">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
   </button>
-  <div id="copyTooltip" class="copy-tooltip">Kopyalandı!</div>
+  <div id="copyTooltip" class="copy-tooltip" data-i18n="copiedTooltip">Kopyalandı!</div>
   <div id="favoriteTooltip" class="favorite-tooltip"></div>
 
   <footer>
@@ -567,22 +582,25 @@
         <img src="/urunler/assets/logos/logo.png" alt="Serakıncı Limited Logo" loading="lazy" />
         <h1>Serakıncı Limited</h1>
       </div>
-      <div class="footer-slogan"> Hayvan Sağlığı, Cilt Güzelliği — Tek Adreste! </div>
+      <div class="footer-slogan" data-i18n="footerSlogan"> Hayvan Sağlığı, Cilt Güzelliği — Tek Adreste! </div>
     </div>
     <div class="footer-right">
-      <a href="https://serakinci.com/">Ana Sayfa</a>
-      <a href="https://serakinci.com/bizkimiz">Hakkımızda</a>
-      <a href="https://serakinci.com/services">Hizmetlerimiz</a>
-      <a href="https://serakinci.com/contact">İletişim</a>
-      <a href="https://serakinci.com/careers">Kariyer</a>
-      <a href="https://serakinci.com/faq">Sıkça Sorulan Sorular</a>
+      <a href="https://serakinci.com/" data-i18n="footerLinkAnaSayfa">Ana Sayfa</a>
+      <a href="https://serakinci.com/bizkimiz" data-i18n="footerLinkHakkimizda">Hakkımızda</a>
+      <a href="https://serakinci.com/services" data-i18n="footerLinkHizmetlerimiz">Hizmetlerimiz</a>
+      <a href="https://serakinci.com/contact" data-i18n="footerLinkIletisim">İletişim</a>
+      <a href="https://serakinci.com/careers" data-i18n="footerLinkKariyer">Kariyer</a>
+      <a href="https://serakinci.com/faq" data-i18n="footerLinkSSS">Sıkça Sorulan Sorular</a>
+      <button class="language-selector" aria-label="Dil Seçimi" data-i18n="langButtonText">Türkçe</button>
     </div>
   </footer>
   <div class="footer-bottom">
-    © <span id="currentYear"></span> Serakıncı Limited. Tüm hakları saklıdır. | Powered by
+    <span data-i18n="footerCopyright">© <span id="currentYear"></span> Serakıncı Limited. Tüm hakları saklıdır.</span> | <span data-i18n="footerPoweredBy">Powered by</span>
     <a href="https://fures.tech" target="_blank">Fures Tech<img src="/urunler/assets/logos/fureslogo.png" alt="Fures Tech Logo" loading="lazy"/></a>
   </div>
 
+  <script src="/urunler/assets/js/translations.js"></script>
+  <script src="/assets/i18n.js"></script>
   <script type="module">
     import { GoogleGenerativeAI } from "https://esm.sh/@google/generative-ai";
 
@@ -608,7 +626,23 @@
     let currentProduct = null;
     let favorites = [];
     let searchDebounceTimer;
-    let G_isMouseOverDropdown = false; 
+    let G_isMouseOverDropdown = false;
+    let currentEnhancedDetail = null;
+    let currentExtraData = null;
+
+    function t(key){
+        const lang = document.documentElement.lang || 'tr';
+        return window.translations?.[lang]?.[key] || key;
+    }
+
+    function getLocalized(obj, base){
+        const lang = document.documentElement.lang || 'tr';
+        if(!obj) return '';
+        const val = obj[base];
+        if(val && typeof val === 'object') return val[lang] || val.tr || Object.values(val)[0] || '';
+        if(obj[`${base}_${lang}`]) return obj[`${base}_${lang}`];
+        return obj[base] || '';
+    }
 
     async function generateEnhancedProductInfo(productName, productKategori, languageCode, existingProductInfo = {}) {
         // This function is kept for fetchAndFillDescriptionAI, 
@@ -856,10 +890,11 @@
     function showError(msg) {
         const detailContainer = document.getElementById('productDetailContainer');
         const backLink = currentSegment ? `/urunler/${currentSegment}/` : '/urunler/';
-        const backLinkText = currentSegment ? `${currentSegment.charAt(0).toUpperCase() + currentSegment.slice(1).replace('-', ' ')} Ürünlerine Dön` : "Ürünler Sayfasına Dön";
+        const segName = currentSegment ? (currentSegment.charAt(0).toUpperCase() + currentSegment.slice(1).replace('-', ' ')) : t('navUrunler');
+        const backLinkText = t('backToListButton').replace('{segmentName}', segName);
         if (detailContainer) {
-            detailContainer.innerHTML = `<div class="error-container"><h2>Bir Sorun Oluştu</h2><p>${msg}</p><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
-                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> Önceki Sayfaya Dön</a>` : ''}
+            detailContainer.innerHTML = `<div class="error-container"><h2>${t('errorLoadingProduct')}</h2><p>${msg}</p><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
+                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> ${t('breadcrumbAnaSayfa')}</a>` : ''}
                 <a href="${backLink}" class="back-button-modern"><span class="back-icon">‹</span> ${backLinkText}</a>
             </div></div>`;
         }
@@ -974,7 +1009,9 @@
 
             if (currentProduct) {
                 const enhancedDetail = enhancedData.find(detail => detail.ProductId === currentProduct.ProductId);
-                displayProductDetail(currentProduct, enhancedDetail, segmentName); 
+                currentEnhancedDetail = enhancedDetail;
+                currentExtraData = null;
+                displayProductDetail(currentProduct, enhancedDetail, segmentName);
                 document.title = `${currentProduct.ProductName} | ${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} | Serakıncı`;
                 const canonicalLink = document.querySelector("link[rel='canonical']");
                 if (canonicalLink) canonicalLink.href = window.location.href; 
@@ -988,7 +1025,7 @@
     }
     
     async function fetchAndFillDescriptionAI(product, enhancedDetail) {
-        const initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description;
+        const initialDescription = getLocalized(enhancedDetail, "Ürün Açıklaması") || product.Description;
         const placeholderTexts = [
             "açıklama yükleniyor...",
             "bu ürün için açıklama şu anda üretilememektedir.",
@@ -1070,7 +1107,7 @@
     function displayProductDetail(product, enhancedDetail, segmentName) { 
         const detailContainer = document.getElementById('productDetailContainer');
         
-        let initialDescription = (enhancedDetail && enhancedDetail["Ürün Açıklaması"]) || product.Description || " ";
+        let initialDescription = getLocalized(enhancedDetail, "Ürün Açıklaması") || product.Description || " ";
 
         let imageUrl = localImageUrl(product);
         const productCategory = getProductCategory(product);
@@ -1080,19 +1117,19 @@
         const favoriteButtonHTML = `<button class="favorite-button ${isFav ? 'favorited' : ''}" id="favoriteBtn" title="Favorilere Ekle/Çıkar"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>`;
 
         let metaInfoHTML = '<div class="product-meta-enhanced">';
-        if (productCategory && productCategory !== 'Diğer') metaInfoHTML += `<span class="meta-item"><strong>Kategori:</strong> ${productCategory}</span>`;
+        if (productCategory && productCategory !== 'Diğer') metaInfoHTML += `<span class="meta-item"><strong>${t('labelCategory')}:</strong> ${productCategory}</span>`;
         const productCode = product.ProductCode || product.DisplayProductCode;
-        if (productCode) metaInfoHTML += `<span class="meta-item"><strong>Ürün Kodu:</strong> <span id="productCodeValue">${productCode}</span> <span class="copy-code" title="Kodu Kopyala" onclick="window.copyProductCode(event)">(Kopyala)</span></span>`;
-        if (enhancedDetail) { 
-            if(enhancedDetail["Üretici Firma"] && enhancedDetail["Üretici Firma"].trim() !== "") metaInfoHTML += `<span class="meta-item"><strong>Üretici:</strong> ${enhancedDetail["Üretici Firma"]}</span>`;
-            if(enhancedDetail["Firma Web Sitesi"] && enhancedDetail["Firma Web Sitesi"].trim() !== "" && (enhancedDetail["Firma Web Sitesi"].startsWith('http') || enhancedDetail["Firma Web Sitesi"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>Web Sitesi:</strong> <a href="${enhancedDetail["Firma Web Sitesi"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Firma Web Sitesi"]}" target="_blank" rel="noopener">Web Sitesini Ziyaret Et</a></span>`;
-            if(enhancedDetail["Üretici Prospektüs"] && enhancedDetail["Üretici Prospektüs"].trim() !== "" && (enhancedDetail["Üretici Prospektüs"].startsWith('http') || enhancedDetail["Üretici Prospektüs"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>Prospektüs:</strong> <a href="${enhancedDetail["Üretici Prospektüs"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Üretici Prospektüs"]}" target="_blank" rel="noopener">Prospektüsü Görüntüle</a></span>`;
+        if (productCode) metaInfoHTML += `<span class="meta-item"><strong>${t('labelProductCode')}:</strong> <span id="productCodeValue">${productCode}</span> <span class="copy-code" title="${t('copyButtonTitle')}" onclick="window.copyProductCode(event)">${t('copyButton')}</span></span>`;
+        if (enhancedDetail) {
+            if(enhancedDetail["Üretici Firma"] && enhancedDetail["Üretici Firma"].trim() !== "") metaInfoHTML += `<span class="meta-item"><strong>${t('labelManufacturer')}:</strong> ${enhancedDetail["Üretici Firma"]}</span>`;
+            if(enhancedDetail["Firma Web Sitesi"] && enhancedDetail["Firma Web Sitesi"].trim() !== "" && (enhancedDetail["Firma Web Sitesi"].startsWith('http') || enhancedDetail["Firma Web Sitesi"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>${t('labelWebsite')}:</strong> <a href="${enhancedDetail["Firma Web Sitesi"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Firma Web Sitesi"]}" target="_blank" rel="noopener">${t('labelWebsite')}</a></span>`;
+            if(enhancedDetail["Üretici Prospektüs"] && enhancedDetail["Üretici Prospektüs"].trim() !== "" && (enhancedDetail["Üretici Prospektüs"].startsWith('http') || enhancedDetail["Üretici Prospektüs"].startsWith('www'))) metaInfoHTML += `<span class="meta-item"><strong>${t('labelProspectus')}:</strong> <a href="${enhancedDetail["Üretici Prospektüs"].startsWith('http') ? '' : 'http://'}${enhancedDetail["Üretici Prospektüs"]}" target="_blank" rel="noopener">${t('labelProspectus')}</a></span>`;
         }
         metaInfoHTML += '</div>';
 
         const productUrl = window.location.href;
         const shareText = encodeURIComponent(`Serakıncı'da ${product.ProductName} ürününü inceleyin:`);
-        const shareButtonsHTML = `<div class="product-share-buttons"><span class="share-label">Paylaş:</span><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}" target="_blank" title="Facebook'ta Paylaş"><svg viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a><a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a></div>`;
+        const shareButtonsHTML = `<div class="product-share-buttons"><span class="share-label">${t('labelShare')}</span><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(productUrl)}" target="_blank" title="Facebook'ta Paylaş"><svg viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a><a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a></div>`;
         
         const shortDescriptionHTML = `<div class="product-short-description"><p id="product-short-description-content">${initialDescription}</p></div>`;
         
@@ -1100,24 +1137,31 @@
             <div id="ai-button-container">
                 <button id="scrollToContactBtn" title="Daha fazla bilgi için iletişim bölümüne gidin">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/></svg>
-                    Daha Fazla Bilgi İçin Bize Ulaşın
+                    ${t('moreInfoButton')}
                 </button>
             </div>`;
 
-        const tab1Content = `<h3>Genel Açıklama</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
-        const tab2Content = `<h3>Ürün İçeriği</h3><p>${(enhancedDetail?.["Ürün İçeriği"] || product.Content) && String(enhancedDetail?.["Ürün İçeriği"] || product.Content).trim() !== '' ? (enhancedDetail?.["Ürün İçeriği"] || product.Content) : "Bileşen listesi için ambalajdaki etiket incelenmelidir."}</p>`;
-        let tab3Content = `<h3>Dikkat Edilmesi Gerekenler / Uyarılar</h3><ul>${enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel uyarı bulunmamaktadır.</li>"}</ul><h3>Kullanım İpuçları ve En İyi Uygulamalar</h3><ul>${enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"]?.map(item => `<li>${item}</li>`).join('') || "<li>Bu ürün için özel kullanım ipucu bulunmamaktadır.</li>"}</ul>`;
-        let tab4Content = `<h3>Sıkça Sorulan Sorular</h3>${enhancedDetail && enhancedDetail["Sıkça Sorulan Sorular"]?.length ? `<div class="faq-container">${enhancedDetail["Sıkça Sorulan Sorular"].map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>` : '<p>Bu ürün için sıkça sorulan soru bulunmamaktadır.</p>'}`;
+        const tab1Content = `<h3>${t('tabDetaylar')}</h3><p id="product-tab1-description-content">${initialDescription}</p>`;
+        const rawContent = enhancedDetail?.["Ürün İçeriği"] || product.Content || '';
+        const hasTab2 = rawContent.trim() !== '';
+        const tab2Content = `<h3>${t('tabEkBilgiler')}</h3><p>${rawContent}</p>`;
+        const warnings = enhancedDetail?.["Dikkat edilmesi gerekenler ya da uyarılar"] || [];
+        const tips = enhancedDetail?.["Kullanım İpuçları ve En İyi Uygulamalar"] || [];
+        const hasTab3 = warnings.length > 0 || tips.length > 0;
+        let tab3Content = `<h3>${t('tabUyarilar')}</h3>${warnings.length?`<ul>${warnings.map(item=>`<li>${item}</li>`).join('')}</ul>`:''}${tips.length?`<h3>${t('tabEkBilgiler')}</h3><ul>${tips.map(item=>`<li>${item}</li>`).join('')}</ul>`:''}`;
+        const faqList = enhancedDetail?.["Sıkça Sorulan Sorular"] || [];
+        const hasTab4 = faqList.length > 0;
+        let tab4Content = `<h3>${t('tabSSS')}</h3><div class="faq-container">${faqList.map(faq => `<div class="faq-item"><details><summary>${faq.question}</summary><div class="faq-answer"><p>${faq.answer}</p></div></details></div>`).join('')}</div>`;
 
         const relatedProductsHTML = getRelatedProductsHTML(product, segmentName, allProducts);
         const disclaimerHTML = getDisclaimerHTML();
         const contactHTML = getContactHTML();
 
         const categoryLink = productCategory && productCategory !== 'Diğer' ? `/urunler/${segmentName}/?kategori=${slugify(productCategory)}` : `/urunler/${segmentName}/`;
-        const categoryText = productCategory && productCategory !== 'Diğer' ? `"${productCategory}" Kategorisine Dön` : `${segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')} Ürünlerine Dön`;
+        const categoryText = t('backToListButton').replace('{segmentName}', productCategory && productCategory !== 'Diğer' ? productCategory : (segmentName.charAt(0).toUpperCase() + segmentName.slice(1).replace('-', ' ')));
         const backButtonHTML = `
             <div id="backButtonsContainer" style="margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 10px;">
-                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> Önceki Sayfaya Dön</a>` : ''}
+                ${document.referrer && document.referrer.includes(window.location.host) ? `<a href="#" class="back-button-modern" onclick="event.preventDefault(); window.history.back();"><span class="back-icon">←</span> ${t('breadcrumbAnaSayfa')}</a>` : ''}
                 <a href="${categoryLink}" class="back-button-modern"><span class="back-icon">‹</span> ${categoryText}</a>
             </div>`;
 
@@ -1138,16 +1182,10 @@
             </div>
             <div class="product-details-tabs-modern">
                 <div class="tabs-navigation-modern">
-                    <button class="tab-link-modern active" data-tab="tab1">Genel Açıklama</button>
-                    <button class="tab-link-modern" data-tab="tab2">İçerik Bilgisi</button>
-                    <button class="tab-link-modern" data-tab="tab3">Kullanım ve Uyarılar</button>
-                    <button class="tab-link-modern" data-tab="tab4">S.S.S.</button>
+                    ${(()=>{let h=`<button class="tab-link-modern active" data-tab="tab1">${t('tabDetaylar')}</button>`;if(hasTab2)h+=`<button class="tab-link-modern" data-tab="tab2">${t('tabEkBilgiler')}</button>`;if(hasTab3)h+=`<button class="tab-link-modern" data-tab="tab3">${t('tabUyarilar')}</button>`;if(hasTab4)h+=`<button class="tab-link-modern" data-tab="tab4">${t('tabSSS')}</button>`;return h;})()}
                 </div>
                 <div class="tab-content-modern">
-                    <div id="tab1" class="tab-pane-modern active">${tab1Content}</div>
-                    <div id="tab2" class="tab-pane-modern">${tab2Content}</div>
-                    <div id="tab3" class="tab-pane-modern">${tab3Content}</div>
-                    <div id="tab4" class="tab-pane-modern">${tab4Content}</div>
+                    ${(()=>{let c=`<div id="tab1" class="tab-pane-modern active">${tab1Content}</div>`;if(hasTab2)c+=`<div id="tab2" class="tab-pane-modern">${tab2Content}</div>`;if(hasTab3)c+=`<div id="tab3" class="tab-pane-modern">${tab3Content}</div>`;if(hasTab4)c+=`<div id="tab4" class="tab-pane-modern">${tab4Content}</div>`;return c;})()}
                 </div>
             </div>
             ${relatedProductsHTML}
@@ -1173,7 +1211,7 @@
             .slice(0, 10);
 
         if (relatedProducts.length === 0) return '';
-        const title = productCategory !== 'Diğer' ? `"${productCategory}" Kategorisindeki Diğer Ürünler` : "İlgili Diğer Ürünler";
+        const title = productCategory !== 'Diğer' ? t('otherProductsInCategory').replace('{category}', productCategory) : t('relatedProductsTitle');
         let html = `<div class="related-products-section-modern"><h2 class="related-products-title-modern">${title}</h2><div class="related-products-carousel"><div class="carousel-arrow prev" onclick="window.scrollCarousel(-1, 'relatedProductsContainer')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></div><div class="related-products-container" id="relatedProductsContainer">`;
         relatedProducts.forEach(rp => {
             let rpImageUrl = localImageUrl(rp);
@@ -1186,30 +1224,24 @@
     function getDisclaimerHTML() {
         return `
         <div class="disclaimer-box-modern">
-            <strong>Yasal Uyarı / Legal Disclaimer</strong>
-            <span>Bu web sitesinde sunulan bilgiler yalnızca genel bilgilendirme amaçlıdır ve profesyonel veteriner hekim tavsiyesinin veya teşhisinin yerini alması amaçlanmamıştır. Hayvanınızın sağlığı veya tıbbi durumu hakkında herhangi bir endişeniz varsa, daima veteriner hekiminize veya diğer nitelikli sağlık uzmanlarına danışın.</span>
-            <span>Sitede yer alan bilgiler, herhangi bir hastalığı teşhis etmek, tedavi etmek, iyileştirmek veya önlemek için kullanılamaz. Ürünlerin kullanımı ve dozajı konusunda mutlaka bir veteriner hekimin önerisi ve gözetimi gereklidir. Yanlış veya bilinçsiz ilaç kullanımı hayvan sağlığı için ciddi riskler oluşturabilir.</span>
-            <span>Serakıncı Limited, bu sitede yer alan bilgilerin doğruluğu, güncelliği veya eksiksizliği konusunda herhangi bir garanti vermez ve bu bilgilerin kullanımından kaynaklanabilecek doğrudan veya dolaylı hiçbir sorumluluk kabul etmez. Ürün bilgileri, etiketleri ve ambalajları zamanla değişebilir; her zaman ürünle birlikte gelen güncel etiket ve prospektüs bilgilerini ve veteriner hekiminizin tavsiyelerini dikkate alınız.</span>
-            <span>Reçeteye tabi veteriner tıbbi ürünleri yalnızca veteriner hekim reçetesi ile temin edilebilir ve kullanılabilir.</span>
-            <hr>
-            <span><strong>Legal Disclaimer:</strong> The information provided on this website is for general informational purposes only and is not intended to be a substitute for professional veterinary advice, diagnosis, or treatment. Always seek the advice of your veterinarian or other qualified health provider with any questions you may have regarding your animal's health or a medical condition.</span>
+            <span>${t('disclaimerAnimal')}</span>
         </div>`;
     }
 
     function getContactHTML() {
         return `
         <div class="contact-card-modern" id="contactSection">
-            <div class="contact-title-modern">Ürün Hakkında Bilgi Alın</div>
+            <div class="contact-title-modern">${t('contactUsTitle')}</div>
             <div class="contact-bar-modern"></div>
-            <p class="contact-intro-text">Ürünle ilgili detaylı bilgi veya sorularınız için bizimle iletişime geçmekten çekinmeyin:</p>
+            <p class="contact-intro-text">${t('contactUsIntro')}</p>
             <div class="contact-grid">
-                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><div><span class="contact-label-modern">Telefon</span><a href="tel:+903923662594" class="contact-link-modern">+90 392 366 25 94</a></div></div>
-                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><div><span class="contact-label-modern">E-posta</span><a href="mailto:info@serakinci.com" class="contact-link-modern">info@serakinci.com</a></div></div>
-                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><div><span class="contact-label-modern">Adres</span><span class="contact-address-text">Sht. Ziya Sok. No:1-2 99450<br>Gazimağusa - KKTC, Mersin 10 Turkey</span></div></div>
-                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 17.36c-.32-.1-.66-.16-1-.16-1.02 0-2.04.21-2.97.64-.34.16-.73.08-1-.16l-3.28-3.28c.43-.93.64-1.95.64-2.97C12.83 12.34 12.77 12 12.61 11l3.28-3.28c.24-.23.32-.62.16-1-.43-.93-.64-1.95-.64-2.97 0-.34.06-.68.16-1 .09-.28.03-.59-.18-.8l-1.09-1.09c-.21-.21-.52-.27-.8-.18-1 .1-1.98.38-2.87.82-.09.04-.18.07-.26.12L5.12 7.25c-.04.09-.07.17-.12.26C4.18 8.4 3.9 9.38 3.81 10.38c-.09.28-.03.59.18.8l1.09 1.09c.21.21.52.27.8.18 1-.1 1.98-.38 2.87-.82.09-.04.18.07.26-.12l5.75-5.75c.04-.09.07-.17.12-.26.89-.44 1.87-.72 2.87-.82.28-.09.59-.03.8.18l1.09 1.09c.21.21.27.52.18.8-.1 1-.38 1.98-.82 2.87-.04-.09-.07.18-.12.26L10.38 17c-.09.04-.17.07-.26-.12-.89.44-1.87.72-2.87.82-.28-.09-.59-.03-.8-.18l-1.09-1.09c-.21-.21-.27-.52-.18-.8.1-1 .38-1.98.82 2.87-.04-.09.07.18.12-.26l.01-.01c.01 0 .01 0 0 0L17 5.12c.09-.04.17-.07.26-.12.9-.43 1.88-.64 2.9-.64.34 0 .68.06 1 .16.28.09.5.29.62.56.15.34.17.73.05 1.07-.27.78-.63 1.52-1.06 2.2-.01.01-.01.02-.02.03l-5.52 5.52c-.01.01-.02.01-.03.02-.68.43-1.42.79-2.2 1.06-.34.12-.62.34-.75.62s-.16.61-.05 1.07c.27.78.63 1.52 1.06 2.2.01.01.01.02.02.03l.01.01c.01 0 .01 0 0 0zM6.5 10.5c0 .28.22.5.5.5s.5-.22.5-.5-.22-.5-.5-.5-.5.22-.5.5z"/></svg><div><span class="contact-label-modern">Fax</span><a href="fax:+903923661585" class="contact-link-modern">+90 392 366 15 85</a></div></div>
+                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><div><span class="contact-label-modern">${t('labelTelefon')}</span><a href="tel:+903923662594" class="contact-link-modern">+90 392 366 25 94</a></div></div>
+                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><div><span class="contact-label-modern">${t('labelEposta')}</span><a href="mailto:info@serakinci.com" class="contact-link-modern">info@serakinci.com</a></div></div>
+                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><div><span class="contact-label-modern">${t('labelAdres')}</span><span class="contact-address-text">Sht. Ziya Sok. No:1-2 99450<br>Gazimağusa - KKTC, Mersin 10 Turkey</span></div></div>
+                <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 17.36c-.32-.1-.66-.16-1-.16-1.02 0-2.04.21-2.97.64-.34.16-.73.08-1-.16l-3.28-3.28c.43-.93.64-1.95.64-2.97C12.83 12.34 12.77 12 12.61 11l3.28-3.28c.24-.23.32-.62.16-1-.43-.93-.64-1.95-.64-2.97 0-.34.06-.68.16-1 .09-.28.03-.59-.18-.8l-1.09-1.09c-.21-.21-.52-.27-.8-.18-1 .1-1.98.38-2.87.82-.09.04-.18.07-.26.12L5.12 7.25c-.04.09-.07.17-.12.26C4.18 8.4 3.9 9.38 3.81 10.38c-.09.28-.03.59.18.8l1.09 1.09c.21.21.52.27.8.18 1-.1 1.98-.38 2.87-.82.09-.04.18.07.26-.12l5.75-5.75c.04-.09.07-.17.12-.26.89-.44 1.87-.72 2.87-.82.28-.09.59-.03.8.18l1.09 1.09c.21.21.27.52.18.8-.1 1-.38 1.98-.82 2.87-.04-.09-.07.18-.12.26L10.38 17c-.09.04-.17.07-.26-.12-.89.44-1.87.72-2.87.82-.28-.09-.59-.03-.8-.18l-1.09-1.09c-.21-.21-.27-.52-.18-.8.1-1 .38-1.98.82 2.87-.04-.09.07.18.12-.26l.01-.01c.01 0 .01 0 0 0L17 5.12c.09-.04.17-.07.26-.12.9-.43 1.88-.64 2.9-.64.34 0 .68.06 1 .16.28.09.5.29.62.56.15.34.17.73.05 1.07-.27.78-.63 1.52-1.06 2.2-.01.01-.01.02-.02.03l-5.52 5.52c-.01.01-.02.01-.03.02-.68.43-1.42.79-2.2 1.06-.34.12-.62.34-.75.62s-.16.61-.05 1.07c.27.78.63 1.52 1.06 2.2.01.01.01.02.02.03l.01.01c.01 0 .01 0 0 0zM6.5 10.5c0 .28.22.5.5.5s.5-.22.5-.5-.22-.5-.5-.5-.5.22-.5.5z"/></svg><div><span class="contact-label-modern">${t('labelFax')}</span><a href="fax:+903923661585" class="contact-link-modern">+90 392 366 15 85</a></div></div>
             </div>
             <div class="firm-social-media">
-                <span class="social-label">Sosyal Medyada Biz</span>
+                <span class="social-label">${t('socialMediaLabel')}</span>
                 <div class="firm-social-media-row">
                     <a href="https://www.facebook.com/serakincieczadeposu/" target="_blank" rel="noopener" title="Serakıncı Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#1877F2"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
                     <a href="https://www.instagram.com/serakincieczadeposu/" target="_blank" rel="noopener" title="Serakıncı Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><defs><radialGradient id="instaGradientDetail" cx="30%" cy="107%" r="150%" fx="30%" fy="107%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect fill="url(#instaGradientDetail)" width="20" height="20" x="2" y="2" rx="5" ry="5"/><path stroke="#fff" stroke-width="1.8" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.88h.01"/></svg></a>
@@ -1266,8 +1298,11 @@
         const productCodeEl = document.getElementById('productCodeValue');
         if (!productCodeEl) return;
         navigator.clipboard.writeText(productCodeEl.innerText).then(() => {
-            showTooltip('copyTooltip', event.target, 'Kopyalandı!');
-        }).catch(err => console.error('Kod kopyalanamadı: ', err));
+            showTooltip('copyTooltip', event.target, t('codeCopied'));
+        }).catch(err => {
+            console.error('Kod kopyalanamadı: ', err);
+            showTooltip('copyTooltip', event.target, t('codeNotCopied'));
+        });
     }
 
     window.scrollCarousel = function(direction, containerId) { 
@@ -1404,7 +1439,7 @@
         currentSegment = detectedSegment; 
 
         if (slugFromUrl && currentSegment) {
-            await loadProductDetail(slugFromUrl, currentSegment); 
+            await loadProductDetail(slugFromUrl, currentSegment);
         } else {
             const detailContainer = document.getElementById('productDetailContainer');
             if(detailContainer && (!slugFromUrl || !currentSegment) && (window.location.pathname.includes('/product/') || window.location.pathname.includes('/product-pages/'))) { 
@@ -1415,6 +1450,9 @@
                  }
             }
         }
+        window.addEventListener('languageChanged', () => {
+            if(currentProduct) displayProductDetail(currentProduct, currentEnhancedDetail, currentSegment);
+        });
     });
 
   </script>
