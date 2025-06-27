@@ -992,9 +992,15 @@
         if (currentProduct.brand && currentProduct.brand.toLowerCase() === 'bioderma' && currentProduct.ProductId) {
           try {
               const biodermaResponse = await fetchJsonData('products_bioderma.json');
-              biodermaExtraData = biodermaResponse.find(bProd => bProd.ProductId === currentProduct.ProductId); 
+              biodermaExtraData = biodermaResponse.find(bProd => bProd.ProductId === currentProduct.ProductId);
               if (!biodermaExtraData) {
-                  console.warn(`Bioderma ürünü (${currentProduct.ProductName}) için products_bioderma.json dosyasında eşleşen ProductId (${currentProduct.ProductId}) bulunamadı.`);
+                  biodermaExtraData = biodermaResponse.find(bProd =>
+                      (bProd.sku && bProd.sku === currentProduct.ProductCode) ||
+                      (bProd.name && slugify(bProd.name) === slugify(currentProduct.ProductName))
+                  );
+              }
+              if (!biodermaExtraData) {
+                  console.warn(`Bioderma ürünü (${currentProduct.ProductName}) için products_bioderma.json dosyasında eşleşen kayıt bulunamadı.`);
               }
           } catch (e) {
               console.warn("Bioderma ek bilgileri yüklenemedi:", e);
@@ -1089,14 +1095,13 @@
                 </button>
             </div>`;
 
-      let tabNavigationHTML = `
-        <button class="tab-link-modern active" data-tab="tabDetaylar">${t('tabDetaylar')}</button>`;
-      let tabContentHTML = `
-        <div id="tabDetaylar" class="tab-pane-modern active">
-            <h3>${t('tabDetaylar')}</h3>
-            <div>${getLocalized(productDetail, "Ürün Açıklaması") || descriptionToShow}</div>
-            ${biodermaExtraData && biodermaExtraData.url ? `<p style="margin-top:1rem;"><strong>Daha Fazla Bilgi:</strong> <a href="${biodermaExtraData.url}" target="_blank" rel="noopener noreferrer" class="underline">${biodermaExtraData.url}</a></p>` : ''}
-        </div>`;
+      let tabNavigationHTML = '';
+      let tabContentHTML = '';
+      const detayIcerik = getLocalized(productDetail, "Ürün Açıklaması") || descriptionToShow;
+      if(detayIcerik && detayIcerik.trim() !== '') {
+        tabNavigationHTML += `<button class="tab-link-modern active" data-tab="tabDetaylar">${t('tabDetaylar')}</button>`;
+        tabContentHTML += `<div id="tabDetaylar" class="tab-pane-modern active"><h3>${t('tabDetaylar')}</h3><div>${detayIcerik}</div>${biodermaExtraData && biodermaExtraData.url ? `<p style="margin-top:1rem;"><strong>Daha Fazla Bilgi:</strong> <a href="${biodermaExtraData.url}" target="_blank" rel="noopener noreferrer" class="underline">${biodermaExtraData.url}</a></p>` : ''}</div>`;
+      }
       
       // Bioderma'ya özel tabları ve içindekiler listesini ekle
       if (biodermaExtraData) {
@@ -1237,10 +1242,7 @@
             ${actionButtonHTML} 
           </div>
         </div>
-        <div class="product-details-tabs-modern">
-          <div class="tabs-navigation-modern">${tabNavigationHTML}</div>
-          <div class="tab-content-modern">${tabContentHTML}</div>
-        </div>
+        ${tabNavigationHTML ? `<div class="product-details-tabs-modern"><div class="tabs-navigation-modern">${tabNavigationHTML}</div><div class="tab-content-modern">${tabContentHTML}</div></div>` : ''}
         ${relatedProductsHTML}
         ${disclaimerHTML}
         ${contactHTML}
