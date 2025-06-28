@@ -977,6 +977,64 @@
         return html;
     }
 
+    function buildCaudalieTabs(details){
+        if(!Array.isArray(details) || details.length === 0) return {nav:'', content:'', other:[]};
+        const ingredients = [];
+        let fullList = '';
+        let appTips = '';
+        let advice = '';
+        const faqs = [];
+        const others = [];
+        details.forEach(d => {
+            if(!d || !d.key) return;
+            const keyLower = String(d.key).toLowerCase();
+            const value = d.value || '';
+            if(keyLower === 'description'){
+                const match = value.match(/application tips\s*:([^]*)/i);
+                if(match){
+                    appTips = match[1].trim();
+                    const before = value.slice(0, match.index).trim();
+                    if(before) others.push({key:d.key, value:before});
+                }else{
+                    others.push(d);
+                }
+            }else if(keyLower.includes('application tips')){
+                appTips = value.trim();
+            }else if(keyLower.includes('advice')){
+                advice = value.trim();
+            }else if(keyLower.includes('frequently')){
+                if(value.trim()) faqs.push(value.trim());
+            }else if(keyLower.includes('full list of ingredients')){
+                fullList = value.trim();
+            }else if(keyLower.includes('ingredients') || keyLower.includes('musk') || keyLower.includes('ginger') || keyLower.includes('neroli')){
+                if(value.trim()) ingredients.push({key:d.key, value:value.trim()});
+            }else{
+                others.push(d);
+            }
+        });
+        let nav='';
+        let content='';
+        if(ingredients.length || fullList){
+            nav += `<button class="tab-link-modern" data-tab="tabIngredients">Our ingredients</button>`;
+            const list = ingredients.map(it=>`<li><strong>${it.key}:</strong> ${it.value}</li>`).join('');
+            content += `<div id="tabIngredients" class="tab-pane-modern"><ul class="extra-detail-list">${list}</ul>${fullList?`<p>${fullList}</p>`:''}</div>`;
+        }
+        if(appTips){
+            nav += `<button class="tab-link-modern" data-tab="tabApplication">Application tips</button>`;
+            content += `<div id="tabApplication" class="tab-pane-modern"><p>${appTips}</p></div>`;
+        }
+        if(advice){
+            nav += `<button class="tab-link-modern" data-tab="tabAdvice">Advice from our Vinotherapists</button>`;
+            content += `<div id="tabAdvice" class="tab-pane-modern"><p>${advice}</p></div>`;
+        }
+        if(faqs.length){
+            nav += `<button class="tab-link-modern" data-tab="tabFAQ">Frequently asked questions</button>`;
+            const faqHtml = faqs.map(f=>`<li>${f}</li>`).join('');
+            content += `<div id="tabFAQ" class="tab-pane-modern"><ul class="extra-detail-list">${faqHtml}</ul></div>`;
+        }
+        return {nav, content, other:others};
+    }
+
     function showError(msg) {
       const detailContainer = document.getElementById('productDetailContainer');
       if (!detailContainer) { return; }
@@ -1331,9 +1389,13 @@ let tabNavigationHTML = '';
 let tabContentHTML    = '';
 
 const detayIcerik = getLocalized(productDetail, 'Ürün Açıklaması') || namePart;
-const detailsListHTML = extraData && Array.isArray(extraData.details) && extraData.details.length
-    ? buildDetailsList(extraData.details)
-    : '';
+
+let caudalieTabs = {nav:'', content:'', other: extraData && Array.isArray(extraData.details) ? extraData.details : []};
+if(extraData && product.brand && product.brand.toLowerCase() === 'caudalie'){
+    caudalieTabs = buildCaudalieTabs(extraData.details);
+}
+
+const detailsListHTML = buildDetailsList(caudalieTabs.other);
 
 if (detayIcerik?.trim()) {
   tabNavigationHTML += `
@@ -1355,6 +1417,11 @@ if (detayIcerik?.trim()) {
            </p>`
         : ''}
     </div>`;
+}
+
+if (product.brand && product.brand.toLowerCase() === 'caudalie') {
+  tabNavigationHTML += caudalieTabs.nav;
+  tabContentHTML    += caudalieTabs.content;
 }
 
 // Hepsi hazır – derlenebilir ve çatışmasız (konfliktfrei)! 😉
