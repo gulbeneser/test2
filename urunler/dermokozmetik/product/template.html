@@ -586,6 +586,21 @@
     function applyLocalImages(list) {
         if (Array.isArray(list)) list.forEach(p => { p.ImageUrl = localImageUrl(p); });
     }
+
+    function dedupeLimitImages(list, limit = 4){
+        if(!Array.isArray(list)) return [];
+        const seen = new Set();
+        const result = [];
+        for(const url of list){
+            if(!url) continue;
+            const base = String(url).split('?')[0];
+            if(seen.has(base)) continue;
+            seen.add(base);
+            result.push(url);
+            if(result.length >= limit) break;
+        }
+        return result;
+    }
     const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
     
     const segment = 'dermokozmetik'; 
@@ -603,6 +618,7 @@
     let biodermaDataCache = null;
     let etatPurDataCache = null;
     let esthedermDataCache = null;
+    let caudalieDataCache = null;
 
     function t(key){
         const lang = document.documentElement.lang || 'tr';
@@ -707,6 +723,33 @@
             }
         }
         return esthedermDataCache;
+    }
+
+    async function loadCaudalieData(){
+        if(caudalieDataCache) return caudalieDataCache;
+        const lang = document.documentElement.lang || 'tr';
+        const fileMap = {
+            'tr': 'products_caudalie.json',
+            'en': 'products_caudalie_en.json',
+            'ru': 'products_caudalie_ru.json'
+        };
+        const fileName = fileMap[lang] || 'products_caudalie.json';
+        try{
+            caudalieDataCache = await fetchJsonData(fileName);
+        }catch(e){
+            console.warn(`${fileName} yüklenemedi:`, e);
+            if(fileName !== 'products_caudalie.json'){
+                try{
+                    caudalieDataCache = await fetchJsonData('products_caudalie.json');
+                }catch(e2){
+                    console.warn('products_caudalie.json yüklenemedi:', e2);
+                    caudalieDataCache = [];
+                }
+            }else{
+                caudalieDataCache = [];
+            }
+        }
+        return caudalieDataCache;
     }
 
     function findBrandExtra(allData, product){
@@ -1138,6 +1181,9 @@
               const resp = await loadBiodermaData();
               extraData = findBiodermaExtra(resp, currentProduct);
               if(!extraData) console.warn(`Bioderma ürünü (${currentProduct.ProductName}) için products_bioderma.json içinde eşleşen kayıt bulunamadı.`);
+            } else if (brand === 'caudalie') {
+              const resp = await loadCaudalieData();
+              extraData = findBrandExtra(resp, currentProduct);
             } else if (brand === 'etat pur') {
               const resp = await loadEtatPurData();
               extraData = findBrandExtra(resp, currentProduct);
@@ -1183,6 +1229,7 @@
               galleryImages = extraData.imageUrls.slice();
           }
       }
+      galleryImages = dedupeLimitImages(galleryImages);
       if (galleryImages.length === 0) {
           galleryImages = [localImageUrl(product)];
       }
@@ -1812,12 +1859,17 @@ tabNavigationHTML += `<button class="tab-link-modern" data-tab="${attrTabId}">${
             biodermaDataCache = null;
             etatPurDataCache = null;
             esthedermDataCache = null;
+            caudalieDataCache = null;
             if(currentProduct && currentProduct.brand){
                 const brand = currentProduct.brand.toLowerCase();
                 try{
                     if(brand === 'bioderma'){
                         const resp = await loadBiodermaData();
                         const data = findBiodermaExtra(resp, currentProduct);
+                        if(data){ currentEnhancedDetail = data; currentExtraData = data; }
+                    }else if(brand === 'caudalie'){
+                        const resp = await loadCaudalieData();
+                        const data = findBrandExtra(resp, currentProduct);
                         if(data){ currentEnhancedDetail = data; currentExtraData = data; }
                     }else if(brand === 'etat pur'){
                         const resp = await loadEtatPurData();

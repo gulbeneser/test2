@@ -8,6 +8,7 @@ const animalEnhancedPath = path.join(__dirname, 'urunler', 'api', 'hayvan-saglig
 const biodermaPath = path.join(__dirname, 'urunler', 'api', 'products_bioderma.json');
 const etatPurPath = path.join(__dirname, 'urunler', 'api', 'products_etat-pur.json');
 const esthedermPath = path.join(__dirname, 'urunler', 'api', 'products_institut-esthederm.json');
+const caudaliePath = path.join(__dirname, 'urunler', 'api', 'products_caudalie.json');
 const dermoTemplate = path.join(__dirname, 'urunler', 'dermokozmetik', 'product', 'template.html');
 const animalTemplate = path.join(__dirname, 'urunler', 'hayvan-sagligi', 'product', 'template.html');
 
@@ -101,6 +102,8 @@ async function createPages(products, segment, extra) {
       const brand = (p.brand || '').toLowerCase();
       if (brand === 'bioderma') {
         extraData = findBrandExtra(extra.bioderma, p);
+      } else if (brand === 'caudalie') {
+        extraData = findBrandExtra(extra.caudalie, p);
       } else if (brand === 'etat pur') {
         extraData = findBrandExtra(extra.etatPur, p);
       } else if (brand === 'esthederm' || brand === 'institut esthederm') {
@@ -209,6 +212,7 @@ async function generate() {
   let bioderma = [];
   let etatPur = [];
   let esthederm = [];
+  let caudalie = [];
   try { dermo = JSON.parse(await fs.promises.readFile(dermoPath, 'utf8')); } catch {}
   try { animal = JSON.parse(await fs.promises.readFile(animalPath, 'utf8')); } catch {}
   try { detail = JSON.parse(await fs.promises.readFile(detailPath, 'utf8')); } catch {}
@@ -216,9 +220,10 @@ async function generate() {
   try { bioderma = JSON.parse(await fs.promises.readFile(biodermaPath, 'utf8')); } catch {}
   try { etatPur = JSON.parse(await fs.promises.readFile(etatPurPath, 'utf8')); } catch {}
   try { esthederm = JSON.parse(await fs.promises.readFile(esthedermPath, 'utf8')); } catch {}
+  try { caudalie = JSON.parse(await fs.promises.readFile(caudaliePath, 'utf8')); } catch {}
   await downloadImages([...dermo, ...animal]);
-  await createPages(dermo, 'dermokozmetik', { detail, bioderma, etatPur, esthederm, animalEnhanced: [] });
-  await createPages(animal, 'hayvan-sagligi', { animalEnhanced, detail: [], bioderma: [], etatPur: [], esthederm: [] });
+  await createPages(dermo, 'dermokozmetik', { detail, bioderma, caudalie, etatPur, esthederm, animalEnhanced: [] });
+  await createPages(animal, 'hayvan-sagligi', { animalEnhanced, detail: [], bioderma: [], caudalie: [], etatPur: [], esthederm: [] });
   await createSitemap(dermo, animal);
   console.log('Static product pages generated and sitemap updated.');
 }
