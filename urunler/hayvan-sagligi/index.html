@@ -525,14 +525,14 @@ let activeBrandFilter = null;
         const productSlug = slugify(p.ProductName);
         let imageUrl  = localImageUrl(p);
         const categoryName  = getProductCategory(p);
-        const productDataString = JSON.stringify(p).replace(/"/g, '"');
+        const productDataString = JSON.stringify(p).replace(/"/g, '&quot;');
         const productLinkTarget = `/urunler/${segment}/product-pages/${productSlug}/`;
         // localStorage'a kaydetme işlemini onclick içinde doğrudan yapıyoruz.
         const productOnClick = `localStorage.setItem('selectedProduct', ${productDataString});`; 
         
         const imageTag = `
             <img src="${imageUrl || FALLBACK_IMAGE_URL}" 
-                 alt="${(p.ProductName || 'Ürün Resmi').replace(/"/g, '"')}" 
+                 alt="${(p.ProductName || 'Ürün Resmi').replace(/"/g, '&quot;')}"
                  class="product-image ${!imageUrl ? 'fallback-image' : ''}" 
                  loading="lazy" 
                  onerror="this.onerror=null; this.src='${FALLBACK_IMAGE_URL}'; this.classList.add('fallback-image');">`;
@@ -543,7 +543,7 @@ let activeBrandFilter = null;
                   </a>
                   <div class="product-content">
                     <span class="product-category">${categoryName}</span>
-                    <a href="${productLinkTarget}" class="product-name-link" onclick="${productOnClick}" title="${(p.ProductName || '').replace(/"/g, '"')}">
+                    <a href="${productLinkTarget}" class="product-name-link" onclick="${productOnClick}" title="${(p.ProductName || '').replace(/"/g, '&quot;')}">
                       ${p.ProductName || 'İsimsiz Ürün'}
                     </a>
                     <a href="${productLinkTarget}" class="product-detail-link" onclick="${productOnClick}">Ürünü İncele</a>
