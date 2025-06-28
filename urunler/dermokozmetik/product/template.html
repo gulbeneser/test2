@@ -1278,6 +1278,9 @@
                     titleLower.includes('review') || titleLower.includes('yorum')) {
                     return; // Yorum/Review sekmelerini gösterme
                 }
+                if (idLower.includes('useage') || titleLower === 'ürün özellikleri') {
+                    return; // markadan gelen ekstra "Ürün Özellikleri" tabını atla
+                }
                 // Eğer "composition" id'li tab ise ve içindekiler zaten eklendiyse, bu tabı farklı işleyebiliriz veya atlayabiliriz.
                 // Bu örnekte, tüm tabları ekliyoruz. "Bileşenler" tabı için görseli kaldıracağız.
                 let tabHtmlContent = bTab.html || "<p>İçerik bulunamadı.</p>";
@@ -1737,7 +1740,16 @@
 
         if (slugStr) {
             if(canonicalLink) canonicalLink.href = window.location.href;
-            if (productDetailContainer) { loadProductDetail(slugStr); }
+            if (window.STATIC_PRODUCT_DATA) {
+                const d = window.STATIC_PRODUCT_DATA;
+                currentProduct = d.product;
+                currentEnhancedDetail = d.extra || d.detail;
+                currentExtraData = d.extra;
+                displayProductDetail(currentProduct, d.detail || currentEnhancedDetail, d.extra);
+                updateMetaTags(currentProduct, currentEnhancedDetail);
+            } else if (productDetailContainer) {
+                loadProductDetail(slugStr);
+            }
         } else {
             if (productDetailContainer) { 
                 const loadingContainer = productDetailContainer.querySelector('.loading-container');
@@ -1774,5 +1786,6 @@
     });
 
   </script>
+  <!--STATIC_PRODUCT_DATA-->
 </body>
 </html>
