@@ -286,6 +286,9 @@
     .table-responsive th { background-color: #F3F3F3; font-weight: 500; }
     .table-responsive h3 { margin: 0; font-size: 1rem; }
 
+    .extra-detail-list { padding-left: 1.25rem; margin-top: 1rem; }
+    .extra-detail-list li { margin-bottom: 0.4rem; }
+
 
     /* Bioderma tablarındaki modal ve accordion için temel stiller */
     .tab-pane-modern .card { border: 1px solid var(--border-color); margin-bottom: 0.5rem; border-radius: var(--radius); }
@@ -578,6 +581,10 @@
 
     function localImageUrl(product) {
         if (!product || !product.ImageUrl || !product.ProductCode) return product?.ImageUrl || FALLBACK_IMAGE_URL;
+        if (product.brand && String(product.brand).toLowerCase() === 'caudalie') {
+            // Caudalie görselleri yerelde saklanmıyor, orijinal URL kullanılmalı
+            return product.ImageUrl;
+        }
         const match = product.ImageUrl.match(/\.([a-zA-Z0-9]+)(?:[?#].*)?$/);
         const ext = match ? match[1] : 'jpg';
         return `${LOCAL_IMAGE_BASE}${product.ProductCode}.${ext}`;
@@ -585,6 +592,21 @@
 
     function applyLocalImages(list) {
         if (Array.isArray(list)) list.forEach(p => { p.ImageUrl = localImageUrl(p); });
+    }
+
+    function dedupeLimitImages(list, limit = 4){
+        if(!Array.isArray(list)) return [];
+        const seen = new Set();
+        const result = [];
+        for(const url of list){
+            if(!url) continue;
+            const base = String(url).split('?')[0];
+            if(seen.has(base)) continue;
+            seen.add(base);
+            result.push(url);
+            if(result.length >= limit) break;
+        }
+        return result;
     }
     const GEMINI_SDK_LOADED = typeof GoogleGenerativeAI !== 'undefined';
     
@@ -603,6 +625,7 @@
     let biodermaDataCache = null;
     let etatPurDataCache = null;
     let esthedermDataCache = null;
+    let caudalieDataCache = null;
 
     function t(key){
         const lang = document.documentElement.lang || 'tr';
@@ -707,6 +730,33 @@
             }
         }
         return esthedermDataCache;
+    }
+
+    async function loadCaudalieData(){
+        if(caudalieDataCache) return caudalieDataCache;
+        const lang = document.documentElement.lang || 'tr';
+        const fileMap = {
+            'tr': 'products_caudalie.json',
+            'en': 'products_caudalie_en.json',
+            'ru': 'products_caudalie_ru.json'
+        };
+        const fileName = fileMap[lang] || 'products_caudalie.json';
+        try{
+            caudalieDataCache = await fetchJsonData(fileName);
+        }catch(e){
+            console.warn(`${fileName} yüklenemedi:`, e);
+            if(fileName !== 'products_caudalie.json'){
+                try{
+                    caudalieDataCache = await fetchJsonData('products_caudalie.json');
+                }catch(e2){
+                    console.warn('products_caudalie.json yüklenemedi:', e2);
+                    caudalieDataCache = [];
+                }
+            }else{
+                caudalieDataCache = [];
+            }
+        }
+        return caudalieDataCache;
     }
 
     function findBrandExtra(allData, product){
@@ -916,6 +966,98 @@
         return html;
     }
 
+    function normalizeKey(str){
+        return String(str || '')
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g,'');
+    }
+
+    function stripLeadingColon(str){
+        return String(str || '').replace(/^\s*:\s*/, '');
+    }
+
+    const CAUDALIE_DESC_KEYS = ['description','aciklama','açıklama','описание'];
+    const CAUDALIE_FULL_LIST_KEYS = ['full list of ingredients','icindekilerin tam listesi','içindekilerin tam listesi','полный список ингредиентов'];
+    const CAUDALIE_APP_TIP_KEYS = ['application tips','uygulama ipuclari','uygulama ipuçları','советы по применению'];
+    const CAUDALIE_ADVICE_KEYS = ['advice','vinotherapists','vinoterapistlerin','совет'];
+    const CAUDALIE_FAQ_KEYS = ['frequently asked questions','sikca sorulan sorular','sıkça sorulan sorular','часто задаваемые вопросы','faq'];
+
+    function convertCaudalieDetailsToAttributes(details){
+        if(!Array.isArray(details)) return [];
+        return details
+            .filter(d => {
+                if(!d || !d.key || !d.value) return false;
+                const nk = normalizeKey(d.key);
+                if(CAUDALIE_DESC_KEYS.some(k=>nk.includes(k))) return false;
+                if(CAUDALIE_FULL_LIST_KEYS.some(k=>nk.includes(k))) return false;
+                if(CAUDALIE_APP_TIP_KEYS.some(k=>nk.includes(k))) return false;
+                if(CAUDALIE_ADVICE_KEYS.some(k=>nk.includes(k))) return false;
+                if(CAUDALIE_FAQ_KEYS.some(k=>nk.includes(k))) return false;
+                return true;
+            })
+            .map(d => ({ caption: d.key, values: [stripLeadingColon(d.value)] }));
+    }
+
+    function buildCaudalieTabs(details){
+        if(!Array.isArray(details) || details.length === 0) return {nav:'', content:'', other:[], desc:''};
+        const ingredients = [];
+        let fullList = '';
+        let appTips = '';
+        let advice = '';
+        const faqs = [];
+        const others = [];
+        let description = '';
+        details.forEach(d => {
+            if(!d || !d.key) return;
+            const nk = normalizeKey(d.key);
+            const value = stripLeadingColon(d.value || '');
+            if(CAUDALIE_DESC_KEYS.some(k => nk.includes(k))){
+                const match = value.match(/application tips\s*:([^]*)/i);
+                if(match){
+                    appTips = match[1].trim();
+                    const before = value.slice(0, match.index).trim();
+                    if(before) description = before;
+                }else{
+                    description = value;
+                }
+            }else if(CAUDALIE_APP_TIP_KEYS.some(k => nk.includes(k))){
+                appTips = value.trim();
+            }else if(CAUDALIE_ADVICE_KEYS.some(k => nk.includes(k))){
+                advice = value.trim();
+            }else if(CAUDALIE_FAQ_KEYS.some(k => nk.includes(k))){
+                if(value.trim()) faqs.push(value.trim());
+            }else if(CAUDALIE_FULL_LIST_KEYS.some(k => nk.includes(k))){
+                fullList = value.trim();
+            }else if(nk.includes('ingredients') || nk.includes('musk') || nk.includes('ginger') || nk.includes('neroli')){
+                if(value.trim()) ingredients.push({key:d.key, value:value.trim()});
+            }else{
+                others.push(d);
+            }
+        });
+        let nav='';
+        let content='';
+        if(ingredients.length || fullList){
+            nav += `<button class="tab-link-modern" data-tab="tabIngredients">Our ingredients</button>`;
+            const list = ingredients.map(it=>`<li><strong>${it.key}:</strong> ${it.value}</li>`).join('');
+            content += `<div id="tabIngredients" class="tab-pane-modern"><ul class="extra-detail-list">${list}</ul>${fullList?`<p>${fullList}</p>`:''}</div>`;
+        }
+        if(appTips){
+            nav += `<button class="tab-link-modern" data-tab="tabApplication">Application tips</button>`;
+            content += `<div id="tabApplication" class="tab-pane-modern"><p>${appTips}</p></div>`;
+        }
+        if(advice){
+            nav += `<button class="tab-link-modern" data-tab="tabAdvice">Advice from our Vinotherapists</button>`;
+            content += `<div id="tabAdvice" class="tab-pane-modern"><p>${advice}</p></div>`;
+        }
+        if(faqs.length){
+            nav += `<button class="tab-link-modern" data-tab="tabFAQ">Frequently asked questions</button>`;
+            const faqHtml = faqs.map(f=>`<li>${f}</li>`).join('');
+            content += `<div id="tabFAQ" class="tab-pane-modern"><ul class="extra-detail-list">${faqHtml}</ul></div>`;
+        }
+        return {nav, content, other:others, desc: description};
+    }
+
     function showError(msg) {
       const detailContainer = document.getElementById('productDetailContainer');
       if (!detailContainer) { return; }
@@ -1054,10 +1196,10 @@
 
         let imageUrl = localImageUrl(product);
         if (productDetailOrExtra) {
-            if (Array.isArray(productDetailOrExtra.imagesLocal) && productDetailOrExtra.imagesLocal.length > 0 && !/default\.jpg$/i.test(productDetailOrExtra.imagesLocal[0])) {
-                imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
-            } else if (Array.isArray(productDetailOrExtra.imageUrls) && productDetailOrExtra.imageUrls.length > 0) {
+            if (Array.isArray(productDetailOrExtra.imageUrls) && productDetailOrExtra.imageUrls.length > 0) {
                 imageUrl = productDetailOrExtra.imageUrls[0];
+            } else if (Array.isArray(productDetailOrExtra.imagesLocal) && productDetailOrExtra.imagesLocal.length > 0 && !/default\.jpg$/i.test(productDetailOrExtra.imagesLocal[0])) {
+                imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
             }
         }
         if (imageUrl) {
@@ -1138,6 +1280,9 @@
               const resp = await loadBiodermaData();
               extraData = findBiodermaExtra(resp, currentProduct);
               if(!extraData) console.warn(`Bioderma ürünü (${currentProduct.ProductName}) için products_bioderma.json içinde eşleşen kayıt bulunamadı.`);
+            } else if (brand === 'caudalie') {
+              const resp = await loadCaudalieData();
+              extraData = findBrandExtra(resp, currentProduct);
             } else if (brand === 'etat pur') {
               const resp = await loadEtatPurData();
               extraData = findBrandExtra(resp, currentProduct);
@@ -1176,13 +1321,14 @@
 
       let galleryImages = [];
       if (extraData) {
-          if (Array.isArray(extraData.imagesLocal) && extraData.imagesLocal.some(p => p && !/default\.jpg$/i.test(p))) {
-              galleryImages = extraData.imagesLocal.filter(p => p && !/default\.jpg$/i.test(p)).map(p => '/' + p.replace(/\\/g, '/'));
-          }
-          if (galleryImages.length === 0 && Array.isArray(extraData.imageUrls) && extraData.imageUrls.length > 0) {
+          if (Array.isArray(extraData.imageUrls) && extraData.imageUrls.length > 0) {
               galleryImages = extraData.imageUrls.slice();
           }
+          if (galleryImages.length === 0 && Array.isArray(extraData.imagesLocal) && extraData.imagesLocal.some(p => p && !/default\.jpg$/i.test(p))) {
+              galleryImages = extraData.imagesLocal.filter(p => p && !/default\.jpg$/i.test(p)).map(p => '/' + p.replace(/\\/g, '/'));
+          }
       }
+      galleryImages = dedupeLimitImages(galleryImages);
       if (galleryImages.length === 0) {
           galleryImages = [localImageUrl(product)];
       }
@@ -1230,8 +1376,14 @@
 // ► Ürün adı (i18n + fallback)
 const namePart = getLocalized(extraData, 'name') || product.ProductName;
 
+let caudalieTabs = {nav:'', content:'', other: extraData && Array.isArray(extraData.details) ? extraData.details : [], desc:''};
+if(extraData && product.brand && product.brand.toLowerCase() === 'caudalie'){
+    caudalieTabs = buildCaudalieTabs(extraData.details);
+}
+
 // ► Ürün kısa açıklaması (i18n + fallback)
 const descPart = getLocalized(extraData, 'description') ||
+                 caudalieTabs.desc ||
                  product.ProductShortDescription ||
                  t('shortDescFallback').replace('{product}', product.ProductName);
 
@@ -1267,6 +1419,8 @@ let tabContentHTML    = '';
 
 const detayIcerik = getLocalized(productDetail, 'Ürün Açıklaması') || namePart;
 
+const caudalieAttributes = convertCaudalieDetailsToAttributes(caudalieTabs.other);
+
 if (detayIcerik?.trim()) {
   tabNavigationHTML += `
     <button class="tab-link-modern active" data-tab="tabDetaylar">
@@ -1286,6 +1440,11 @@ if (detayIcerik?.trim()) {
            </p>`
         : ''}
     </div>`;
+}
+
+if (product.brand && product.brand.toLowerCase() === 'caudalie') {
+  tabNavigationHTML += caudalieTabs.nav;
+  tabContentHTML    += caudalieTabs.content;
 }
 
 // Hepsi hazır – derlenebilir ve çatışmasız (konfliktfrei)! 😉
@@ -1360,11 +1519,12 @@ if (detayIcerik?.trim()) {
                 tabContentHTML += `<div id="${tabId}" class="tab-pane-modern">${tabHtmlContent}</div>`;
             });
           }
-          if (Array.isArray(extraData.attributes) && extraData.attributes.length > 0) {
+          if ((Array.isArray(extraData.attributes) && extraData.attributes.length > 0) || caudalieAttributes.length > 0) {
             const attrTabId = 'tabAttributes';
-tabNavigationHTML += `<button class="tab-link-modern" data-tab="${attrTabId}">${t('tabAttributes')}</button>`;
+            tabNavigationHTML += `<button class="tab-link-modern" data-tab="${attrTabId}">${t('tabAttributes')}</button>`;
 
-            tabContentHTML += `<div id="${attrTabId}" class="tab-pane-modern">${buildAttributesHTML(extraData.attributes)}</div>`;
+            const attrs = (Array.isArray(extraData.attributes) ? extraData.attributes : []).concat(caudalieAttributes);
+            tabContentHTML += `<div id="${attrTabId}" class="tab-pane-modern">${buildAttributesHTML(attrs)}</div>`;
           }
       }
 
@@ -1812,12 +1972,17 @@ tabNavigationHTML += `<button class="tab-link-modern" data-tab="${attrTabId}">${
             biodermaDataCache = null;
             etatPurDataCache = null;
             esthedermDataCache = null;
+            caudalieDataCache = null;
             if(currentProduct && currentProduct.brand){
                 const brand = currentProduct.brand.toLowerCase();
                 try{
                     if(brand === 'bioderma'){
                         const resp = await loadBiodermaData();
                         const data = findBiodermaExtra(resp, currentProduct);
+                        if(data){ currentEnhancedDetail = data; currentExtraData = data; }
+                    }else if(brand === 'caudalie'){
+                        const resp = await loadCaudalieData();
+                        const data = findBrandExtra(resp, currentProduct);
                         if(data){ currentEnhancedDetail = data; currentExtraData = data; }
                     }else if(brand === 'etat pur'){
                         const resp = await loadEtatPurData();
