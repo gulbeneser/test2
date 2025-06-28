@@ -1220,29 +1220,60 @@
           <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(productUrl)}&text=${shareText}" target="_blank" rel="noopener" title="Twitter'da Paylaş"><svg viewBox="0 0 24 24"><path fill="#1DA1F2" d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.28 4.47 17.03 4 15.64 4c-2.97 0-5.32 2.44-5.32 5.45 0 .42.05.84.14 1.24C7.08 10.5 4.07 8.76 2.05 6.12c-.44.75-.69 1.62-.69 2.55 0 1.88 1 3.55 2.4 4.52-.88-.03-1.7-.27-2.42-.66v.07c0 2.63 1.85 4.82 4.3 5.32-.45.12-.93.18-1.42.18-.34 0-.68-.03-1-.1C4.56 19.95 6.43 21.3 8.63 21.3c-1.84 1.44-4.17 2.3-6.7 2.3-.43 0-.86-.02-1.28-.08C3.38 22.89 5.92 24 8.78 24c7.22 0 11.6-6.12 11.12-12.07.79-.57 1.47-1.29 2-2.06z"/></svg></a>
           <a href="https://api.whatsapp.com/send?text=${shareText} ${encodeURIComponent(productUrl)}" target="_blank" rel="noopener" title="WhatsApp'ta Paylaş"><svg viewBox="0 0 24 24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.8L2 22l5.29-1.38c1.37.71 2.93 1.12 4.56 1.12h.1c5.46 0 9.91-4.45 9.91-9.91S17.68 2 12.04 2zm4.64 12.13c-.14-.07-.86-.42-1-.49-.14-.07-.24-.11-.34.11-.1.22-.38.49-.47.59-.09.1-.18.11-.34.04-.16-.07-.68-.25-1.29-.79-.48-.42-.79-.94-.88-1.1s-.09-.25 0-.38c.08-.11.18-.28.28-.42.09-.14.14-.25.2-.42.07-.18.04-.33-.02-.44s-.34-.81-.47-1.1c-.12-.29-.25-.25-.34-.25-.09 0-.18 0-.28.02s-.24.11-.38.38c-.14.28-.54.86-.54 1.5s.54 1.74.62 1.86c.08.11.97 1.48 2.42 2.03.34.14.61.21.82.28.29.09.54.08.74.02.22-.07.68-.28.78-.55.1-.28.1-.51.07-.59s-.14-.11-.3-.18z"/></svg></a>
         </div>`;
-      
-      const descriptionToShow = getLocalized(extraData, 'name') ||
-                               getLocalized(extraData, 'description') ||
-                               product.ProductShortDescription ||
-                               t('shortDescFallback').replace('{product}', product.ProductName);
-      let shortDescriptionHTML = `<div class="product-short-description"><p>${descriptionToShow}</p></div>`;
-      
-      const actionButtonHTML = `
-            <div id="ai-button-container">
-                <button id="scrollToContactBtn" title="Daha fazla bilgi için iletişim bölümüne gidin">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/></svg>
-                    ${t('moreInfoButton')}
-                </button>
-            </div>`;
+// Kısa açıklama metni (i18n + fallback)
+const namePart = getLocalized(extraData, 'name') ||
+                 getLocalized(extraData, 'description') ||
+                 product.ProductShortDescription ||
+                 t('shortDescFallback').replace('{product}', product.ProductName);
 
-      let tabNavigationHTML = '';
-      let tabContentHTML = '';
-      const detayIcerik = getLocalized(productDetail, "Ürün Açıklaması") || descriptionToShow;
-      if(detayIcerik && detayIcerik.trim() !== '') {
-        tabNavigationHTML += `<button class="tab-link-modern active" data-tab="tabDetaylar">${t('tabDetaylar')}</button>`;
-        tabContentHTML += `<div id="tabDetaylar" class="tab-pane-modern active"><h3>${t('tabDetaylar')}</h3><div>${detayIcerik}</div>${extraData && extraData.url ? `<p style="margin-top:1rem;"><strong>Daha Fazla Bilgi:</strong> <a href="${extraData.url}" target="_blank" rel="noopener noreferrer" class="underline">${extraData.url}</a></p>` : ''}</div>`;
-      }
-      
+// “description0” sekmesindeki özel HTML’i ekle
+let desc0Html = '';
+if (extraData && Array.isArray(extraData.tabs)) {
+  const d0 = extraData.tabs.find(t => String(t.id).toLowerCase() === 'description0');
+  if (d0?.html) desc0Html = d0.html;
+}
+
+let shortDescriptionHTML =
+  `<div class="product-short-description"><p>${namePart}</p>${desc0Html}</div>`;
+
+// Aksiyon butonu
+const actionButtonHTML = `
+  <div id="ai-button-container">
+      <button id="scrollToContactBtn" title="Daha fazla bilgi için iletişim bölümüne gidin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/>
+          </svg>
+          ${t('moreInfoButton')}
+      </button>
+  </div>`;
+
+// Sekme navigasyonu ve içerik
+let tabNavigationHTML = '';
+let tabContentHTML   = '';
+
+const detayIcerik = getLocalized(productDetail, 'Ürün Açıklaması') || namePart;
+
+if (detayIcerik?.trim()) {
+  tabNavigationHTML += `
+    <button class="tab-link-modern active" data-tab="tabDetaylar">
+      ${t('tabDetaylar')}
+    </button>`;
+
+  tabContentHTML += `
+    <div id="tabDetaylar" class="tab-pane-modern active">
+        <h3>${t('tabDetaylar')}</h3>
+        <div>${detayIcerik}</div>
+        ${extraData?.url
+          ? `<p style="margin-top:1rem;">
+               <strong>${t('moreInfoLabel')}</strong>
+               <a href="${extraData.url}" target="_blank" rel="noopener noreferrer" class="underline">
+                 ${extraData.url}
+               </a>
+             </p>`
+          : ''}
+    </div>`;
+}
+
       // Marka verilerinden gelen ek tabları ve içerikleri ekle
       if (extraData) {
           if (extraData.ingredientsList && extraData.ingredientsList.length > 0) {
