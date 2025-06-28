@@ -966,70 +966,133 @@
         return html;
     }
 
-    function normalizeKey(str){
-        return String(str || '')
-            .toLowerCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g,'');
+/* ---------- Yardımcı Fonksiyonlar ---------- */
+function normalizeKey(str) {
+  return String(str || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
+function stripLeadingColon(str) {
+  return String(str || '').replace(/^\s*:\s*/, '');
+}
+
+/* ---------- Anahtar Dizileri ---------- */
+const CAUDALIE_DESC_KEYS       = ['description', 'aciklama', 'açıklama', 'описание'];
+const CAUDALIE_FULL_LIST_KEYS  = ['full list of ingredients', 'icindekilerin tam listesi', 'içindekilerin tam listesi', 'полный список ингредиентов'];
+const CAUDALIE_APP_TIP_KEYS    = ['application tips', 'uygulama ipuclari', 'uygulama ipuçları', 'советы по применению'];
+const CAUDALIE_ADVICE_KEYS     = ['advice', 'vinotherapists', 'vinoterapistlerin', 'совет'];
+const CAUDALIE_FAQ_KEYS        = ['frequently asked questions', 'sikca sorulan sorular', 'sıkça sorulan sorular', 'часто задаваемые вопросы', 'faq'];
+
+/* ---------- Detayları Özniteliklere Dönüştür ---------- */
+function convertCaudalieDetailsToAttributes(details) {
+  if (!Array.isArray(details)) return [];
+
+  return details
+    .filter(d => {
+      if (!d || !d.key || !d.value) return false;
+      const nk = normalizeKey(d.key);
+      if (CAUDALIE_DESC_KEYS.some(k => nk.includes(k))) return false;
+      if (CAUDALIE_FULL_LIST_KEYS.some(k => nk.includes(k))) return false;
+      if (CAUDALIE_APP_TIP_KEYS.some(k => nk.includes(k))) return false;
+      if (CAUDALIE_ADVICE_KEYS.some(k => nk.includes(k))) return false;
+      if (CAUDALIE_FAQ_KEYS.some(k => nk.includes(k))) return false;
+      return true;
+    })
+    .map(d => ({ caption: d.key, values: [stripLeadingColon(d.value)] }));
+}
+
+/* ---------- Caudalie Ayrıntılarından Sekmeler Oluştur ---------- */
+function buildCaudalieTabs(details) {
+  if (!Array.isArray(details) || details.length === 0) {
+    return { nav: '', content: '', other: [], desc: '' };
+  }
+
+  const ingredients = [];
+  let fullList  = '';
+  let appTips   = '';
+  let advice    = '';
+  const faqs    = [];
+  const others  = [];
+  let description = '';
+
+  details.forEach(d => {
+    if (!d || !d.key) return;
+
+    const nk    = normalizeKey(d.key);
+    const value = stripLeadingColon(d.value || '');
+
+    /* Açıklama (description) */
+    if (CAUDALIE_DESC_KEYS.some(k => nk.includes(k))) {
+      const match = value.match(/application tips\s*:([^]*)/i);
+      if (match) {
+        appTips  = match[1].trim();
+        const before = value.slice(0, match.index).trim();
+        if (before) description = before;
+      } else {
+        description = value;
+      }
+
+    /* Uygulama İpuçları */
+    } else if (CAUDALIE_APP_TIP_KEYS.some(k => nk.includes(k))) {
+      appTips = value.trim();
+
+    /* Tavsiyeler */
+    } else if (CAUDALIE_ADVICE_KEYS.some(k => nk.includes(k))) {
+      advice = value.trim();
+
+    /* SSS / FAQ */
+    } else if (CAUDALIE_FAQ_KEYS.some(k => nk.includes(k))) {
+      if (value.trim()) faqs.push(value.trim());
+
+    /* Tam İçerik Listesi */
+    } else if (CAUDALIE_FULL_LIST_KEYS.some(k => nk.includes(k))) {
+      fullList = value.trim();
+
+    /* İçindekiler (kısa listeler) */
+    } else if (nk.includes('ingredients') || nk.includes('musk') || nk.includes('ginger') || nk.includes('neroli')) {
+      if (value.trim()) ingredients.push(value.trim());
+
+    /* Diğer her şey */
+    } else {
+      if (value.trim()) others.push({ key: d.key, value: value.trim() });
     }
+  });
 
-    function stripLeadingColon(str){
-        return String(str || '').replace(/^\s*:\s*/, '');
-    }
+  /* --------- Sekme HTML’lerini Topla --------- */
+  const navParts     = [];
+  const contentParts = [];
 
-    const CAUDALIE_DESC_KEYS = ['description','aciklama','açıklama','описание'];
-    const CAUDALIE_FULL_LIST_KEYS = ['full list of ingredients','icindekilerin tam listesi','içindekilerin tam listesi','полный список ингредиентов'];
-    const CAUDALIE_APP_TIP_KEYS = ['application tips','uygulama ipuclari','uygulama ipuçları','советы по применению'];
-    const CAUDALIE_ADVICE_KEYS = ['advice','vinotherapists','vinoterapistlerin','совет'];
-    const CAUDALIE_FAQ_KEYS = ['frequently asked questions','sikca sorulan sorular','sıkça sorulan sorular','часто задаваемые вопросы','faq'];
+  function pushTab(condition, tabId, titleKey, bodyHtml) {
+    if (!condition) return;
+    const active = navParts.length === 0 ? 'active' : '';
+    navParts.push(
+      `<button class="tab-link-modern ${active}" data-tab="${tabId}">${t(titleKey)}</button>`
+    );
+    contentParts.push(
+      `<div id="${tabId}" class="tab-pane-modern ${active}">
+         <h3>${t(titleKey)}</h3>
+         ${bodyHtml}
+       </div>`
+    );
+  }
 
-    function convertCaudalieDetailsToAttributes(details){
-        if(!Array.isArray(details)) return [];
-        return details
-            .filter(d => {
-                if(!d || !d.key || !d.value) return false;
-                const nk = normalizeKey(d.key);
-                if(CAUDALIE_DESC_KEYS.some(k=>nk.includes(k))) return false;
-                if(CAUDALIE_FULL_LIST_KEYS.some(k=>nk.includes(k))) return false;
-                if(CAUDALIE_APP_TIP_KEYS.some(k=>nk.includes(k))) return false;
-                if(CAUDALIE_ADVICE_KEYS.some(k=>nk.includes(k))) return false;
-                if(CAUDALIE_FAQ_KEYS.some(k=>nk.includes(k))) return false;
-                return true;
-            })
-            .map(d => ({ caption: d.key, values: [stripLeadingColon(d.value)] }));
-    }
+  pushTab(description,          'tabDescription',  'tabDescription',  `<p>${description}</p>`);
+  pushTab(ingredients.length,   'tabIngredients',  'tabIngredients',  `<p>${ingredients.join('<br>')}</p>`);
+  pushTab(fullList,             'tabFullList',     'tabFullList',     `<p>${fullList}</p>`);
+  pushTab(appTips,              'tabAppTips',      'tabAppTips',      `<p>${appTips}</p>`);
+  pushTab(advice,               'tabAdvice',       'tabAdvice',       `<p>${advice}</p>`);
+  pushTab(faqs.length,          'tabFAQs',         'tabFAQs',         `<ul><li>${faqs.join('</li><li>')}</li></ul>`);
 
-    function buildCaudalieTabs(details){
-        if(!Array.isArray(details) || details.length === 0) return {nav:'', content:'', other:[], desc:''};
-        const ingredients = [];
-        let fullList = '';
-        let appTips = '';
-        let advice = '';
-        const faqs = [];
-        const others = [];
-        let description = '';
-        details.forEach(d => {
-            if(!d || !d.key) return;
-            const nk = normalizeKey(d.key);
-            const value = stripLeadingColon(d.value || '');
-            if(CAUDALIE_DESC_KEYS.some(k => nk.includes(k))){
-                const match = value.match(/application tips\s*:([^]*)/i);
-                if(match){
-                    appTips = match[1].trim();
-                    const before = value.slice(0, match.index).trim();
-                    if(before) description = before;
-                }else{
-                    description = value;
-                }
-            }else if(CAUDALIE_APP_TIP_KEYS.some(k => nk.includes(k))){
-                appTips = value.trim();
-            }else if(CAUDALIE_ADVICE_KEYS.some(k => nk.includes(k))){
-                advice = value.trim();
-            }else if(CAUDALIE_FAQ_KEYS.some(k => nk.includes(k))){
-                if(value.trim()) faqs.push(value.trim());
-            }else if(CAUDALIE_FULL_LIST_KEYS.some(k => nk.includes(k))){
-                fullList = value.trim();
-            }else if(nk.includes('ingredients') || nk.includes('musk') || nk.includes('ginger') || nk.includes('neroli')){
+  return {
+    nav: navParts.join(''),
+    content: contentParts.join(''),
+    other: others,
+    desc: description
+  };
+}
+
                 if(value.trim()) ingredients.push({key:d.key, value:value.trim()});
             }else{
                 others.push(d);
