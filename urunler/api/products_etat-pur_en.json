@@ -3,34 +3,34 @@
         "name": "Pure Active Peptide-4 Pro Collagen Plumping Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Dolgunlaştırıcı ve Mimik Çizgi Karşıtı Konsantre Bakım",
+        "shortDesc": "Concentrated Plumping and Anti-Expression Line Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt"
+                    "Normal Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Elastikiyet ve Sıkılık Kaybı"
+                    "Loss of Elasticity and Firmness"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -39,21 +39,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -94,24 +94,24 @@
         "name": "Melting Moisturizing Body Milk Relaxing and Moisturizing Body Milk 400 ML",
         "brand": "Etat Pur",
         "price": "1.629,00 ₺",
-        "shortDesc": "Tüm ciltler için rahatlatıcı ve nemlendirici vücut sütü.",
+        "shortDesc": "A soothing and moisturising body milk for all skin types.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Vücut Nemlendirici"
+                    "Body Moisturizer"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "400 ML"
+                    "400ML"
                 ]
             }
         ],
@@ -155,16 +155,16 @@
         "shortDesc": "",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur",
+                    "Stage Pur",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Bez Materyal Çanta",
+                    "Cloth Material Bag",
                     ""
                 ]
             }
@@ -206,35 +206,35 @@
         "name": "Pure Active Glycolic Acid 10% AHA Peeling Effective Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Gözenekleri sıkılaştırmaya, leke görünümünü azaltmaya ve cildin pürüzsüz görünmesine yardımcı olan konsantre bakım",
+        "shortDesc": "Concentrated care that helps tighten pores, reduce the appearance of blemishes and smooth the skin.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Blemish Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Işıltı Kaybı ve Mat Görünüm"
+                    "Dark Spots and Skin Tone Unevenness",
+                    "Loss of Shine and Dull Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -243,15 +243,15 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -292,38 +292,38 @@
         "name": "Pure Active Pure Vitamin C 10% Anti-Aging and Anti-Stain Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Yaşlanma ve Koyu Leke Karşıtı Konsantre Bakım",
+        "shortDesc": "Anti-Aging and Anti-Dark Spot Concentrated Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur",
+                    "Stage Pur",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü",
+                    "Concentrated Care Product",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Leke Eğilimli Cilt",
+                    "Blemish Prone Skin",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Dark Spots and Skin Tone Unevenness",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "30-34",
                     "",
@@ -334,16 +334,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML",
+                    "15ML",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz",
+                    "Colorless",
                     ""
                 ]
             }
@@ -393,35 +393,35 @@
         "name": "Pure Active Citric Acid 26% Pore Tightening Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Gözenek Karşıtı ve Işıltı Etkili Konsantre Bakım",
+        "shortDesc": "Concentrated Care with Anti-Pore and Brightening Effect",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Blemish Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm"
+                    "Loss of Shine and Dull Appearance",
+                    "Lifeless and Tired Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -430,21 +430,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -485,34 +485,34 @@
         "name": "Pure Active Glabridin Anti-Stain Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Leke Karşıtı Konsantre Bakım",
+        "shortDesc": "Anti-Stain Concentrated Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Blemish Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği"
+                    "Dark Spots and Skin Tone Unevenness"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -521,21 +521,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli"
+                    "Colourful"
                 ]
             }
         ],
@@ -576,34 +576,34 @@
         "name": "Pure Active Resveratrol Deep Anti-Wrinkle Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Kırışıklık Karşıtı Konsantre Bakım",
+        "shortDesc": "Anti-Wrinkle Concentrated Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Olgun Cilt"
+                    "Mature Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Derin Kırışıklık"
+                    "Deep Wrinkle"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -612,21 +612,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli"
+                    "Colourful"
                 ]
             }
         ],
@@ -667,35 +667,35 @@
         "name": "Pure Active Hyaluronic Acid Anti-Wrinkle Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "İnce Kırışıklık Karşıtı ve Sıkılaştırıcı Etkili Konsantre Bakım",
+        "shortDesc": "Concentrated Care with Anti-Wrinkle and Firming Effect",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt"
+                    "Normal Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık"
+                    "Loss of Elasticity and Firmness",
+                    "Fine Wrinkles"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -704,21 +704,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -759,34 +759,34 @@
         "name": "Pure Cleanser Anti-Acne Blackhead Purifying Facial Cleansing Gel 200 ml",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Arındırıcı Yüz Yıkama Jeli",
+        "shortDesc": "Purifying Face Wash Gel",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Temizleme Jeli"
+                    "Cleansing Gel"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Skin Shine and Oily Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -795,21 +795,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "200 ML"
+                    "200ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -862,35 +862,35 @@
         "name": "Pure Cleanser Nourishing Gentle Facial Cleansing Milk 200 ml Dry Sensitive Skin",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Rahatlatıcı Yüz ve Makyaj Temizleme Sütü",
+        "shortDesc": "Soothing Face and Makeup Cleansing Milk",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Temizleme Sütü"
+                    "Cleansing Milk"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Dry and Atopic Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Nemsizlik",
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Lack of humidity",
+                    "Intense Dryness and Tendency to Atopy"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -899,21 +899,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "200 ML"
+                    "200ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli"
+                    "Colourful"
                 ]
             }
         ],
@@ -954,34 +954,34 @@
         "name": "Pure Cleanser Purifying Eye and Face Make-Up Remover Micellar Water 200 ml",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Arındırıcı Yüz ve Makyaj Temizleme Misel Suyu",
+        "shortDesc": "Purifying Face and Makeup Remover Micellar Water",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Misel Su"
+                    "Micellar Water"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Skin Shine and Oily Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -990,21 +990,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "200 ML"
+                    "200ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -1053,34 +1053,34 @@
         "name": "Pure Cleanser Gentle Face Make-Up Remover Foam 150 ml Combination Oily Skin",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Nazik Yüz Temizleme Köpüğü",
+        "shortDesc": "Gentle Facial Cleansing Foam",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Temizleme Köpüğü"
+                    "Cleansing Foam"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Skin Shine and Oily Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1089,15 +1089,15 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "150 ML"
+                    "150ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -1138,38 +1138,38 @@
         "name": "Pure Cleanser Gentle Purifying and Regenerating Facial Peeling Gel 50 ml",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Nazik Yüz Temizleme Peelingi",
+        "shortDesc": "Gentle Facial Cleansing Scrub",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur",
+                    "Stage Pur",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Yüz Peelingi",
+                    "Facial Peeling",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt",
+                    "Normal Skin",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Geniş Gözenek ve Siyah Nokta",
+                    "Large Pores and Blackheads",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "",
@@ -1182,23 +1182,23 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz",
+                    "Face",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "50 ML",
+                    "50ML",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz",
+                    "Colorless",
                     ""
                 ]
             }
@@ -1248,55 +1248,55 @@
         "name": "Pure Active Zinc Gluconate 3% Anti-Shine Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Parlama Karşıtı ve Sebum Dengeleyici Konsantre Bakım",
+        "shortDesc": "Anti-Shine and Sebum Balancing Concentrated Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Skin Shine and Oily Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -1337,55 +1337,55 @@
         "name": "Pure Active Propolis Anti-Acne and Blackhead Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Akne Karşıtı ve Sebum Dengeleyici Konsantre Bakım",
+        "shortDesc": "Anti-Acne and Sebum Balancing Concentrated Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Akne ve Sivilce"
+                    "Acne and Pimples"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli"
+                    "Colourful"
                 ]
             }
         ],
@@ -1426,56 +1426,56 @@
         "name": "Pure Active Salicylic Acid 2% Anti-Blackhead Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Sivilce & Siyah Nokta Karşıtı Konsantre Bakım",
+        "shortDesc": "Anti-Acne &amp; Blackhead Concentrated Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Akne ve Sivilce",
-                    "Akne Lekeleri"
+                    "Acne and Pimples",
+                    "Acne Spots"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -1516,36 +1516,36 @@
         "name": "Pure Active Vitamin E 3.93% Antioxidant Effective Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Antioksidan Etkili Konsantre Bakım",
+        "shortDesc": "Concentrated Care with Antioxidant Effect",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Dry and Atopic Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Akne Lekeleri",
-                    "Nemsizlik",
-                    "Cansız ve Yorgun Görünüm"
+                    "Acne Spots",
+                    "Lack of humidity",
+                    "Lifeless and Tired Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1554,21 +1554,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli"
+                    "Colourful"
                 ]
             }
         ],
@@ -1609,35 +1609,35 @@
         "name": "Pure Active Aloe Vera Anti-Dryness Soothing Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Nemsizlik ve Kuruluk Karşıtı Konsantre Bakım",
+        "shortDesc": "Concentrated Care Against Moisture and Dryness",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Normal Skin",
+                    "Dry and Atopic Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Intense Dryness and Tendency to Atopy"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1646,21 +1646,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli"
+                    "Colourful"
                 ]
             }
         ],
@@ -1701,35 +1701,35 @@
         "name": "Pure Active D-Panthenol 5.25% Moisturizing and Repairing Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Yatıştırıcı ve Cilt Bariyerini Yenileyici Etkili Konsantre Bakım",
+        "shortDesc": "Concentrated Care with Soothing and Skin Barrier Regenerating Effect",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Normal Skin",
+                    "Dry and Atopic Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Intense Dryness and Tendency to Atopy"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1738,21 +1738,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -1793,34 +1793,34 @@
         "name": "Pure Cleanser Sebum Balancing Purifying White Clay Mask 50 ml Combination Skin",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Arındırıcı Yüz Maskesi",
+        "shortDesc": "Purifying Face Mask",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Yüz Maskesi"
+                    "Face Mask"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Large Pores and Blackheads"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1829,15 +1829,15 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "50 ML"
+                    "50ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -1878,35 +1878,35 @@
         "name": "Pure Active Enoxolon 2% Anti-Redness Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Kızarıklık Karşıtı Konsantre Bakım",
+        "shortDesc": "Concentrated Anti-Redness Care",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Concentrated Care Product"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt",
-                    "Hassas ve Kızarıklık Eğilimli Cilt"
+                    "Normal Skin",
+                    "Sensitive and Redness Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi"
+                    "Intolerance, Allergies and Rosacea Tendency"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1915,21 +1915,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -1970,34 +1970,34 @@
         "name": "Pure Moisturizers Mattifying Gel Care Cream for Oily Skin 40 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Yağlı Ciltler için Sebum Dengeleyici Jel Krem",
+        "shortDesc": "Sebum Balancing Gel Cream for Oily Skin",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Moisturizing cream"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Skin Shine and Oily Appearance"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2006,21 +2006,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML"
+                    "40ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli"
+                    "Colourful"
                 ]
             }
         ],
@@ -2073,35 +2073,35 @@
         "name": "Pure Moisturizers Moisturizing and Soothing Care Cream for Sensitive Skin 40 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Normal ve Hassas Ciltler için Yatıştırıcı Yüz Kremi",
+        "shortDesc": "Soothing Face Cream for Normal and Sensitive Skin",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Moisturizing cream"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Hassas ve Kızarıklık Eğilimli Cilt"
+                    "Sensitive and Redness Prone Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Nemsizlik",
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi"
+                    "Lack of humidity",
+                    "Intolerance, Allergies and Rosacea Tendency"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2110,21 +2110,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML"
+                    "40ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -2173,28 +2173,28 @@
         "name": "Pure Moisturizers Light Texture Moisturizing Cream for Combination Skin 40 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Karma ve Yağlı Ciltler için Hafif Dokulu Yüz Kremi",
+        "shortDesc": "Light Texture Face Cream for Combination and Oily Skin",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Moisturizing cream"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Combination, Oily and Acne Prone Skin"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2203,21 +2203,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML"
+                    "40ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -2270,34 +2270,34 @@
         "name": "Pure Moisturizers Intensive Texture Moisturizing Cream for Dry Skin 40 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Kuru Citler için Yoğun Dokulu Yüz Kremi",
+        "shortDesc": "Intense Texture Face Cream for Dry Skin",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Moisturizing cream"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Dry and Atopic Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Intense Dryness and Tendency to Atopy"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2306,21 +2306,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML"
+                    "40ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -2373,35 +2373,35 @@
         "name": "Pure Moisturizers Moisturizing Balm for Very Dry Skin 40 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Çok Kuru Citler için Yoğun Dokulu Yüz Kremi",
+        "shortDesc": "Intense Texture Face Cream for Very Dry Skin",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Moisturizing cream"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Dry and Atopic Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi",
-                    "Kuruluk"
+                    "Intense Dryness and Tendency to Atopy",
+                    "Dryness"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2410,21 +2410,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML"
+                    "40ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -2465,35 +2465,35 @@
         "name": "Pure Moisturizers Anti-Aging Eye Contour Moisturizing Care Cream 15 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Rahatlatıcı ve Kırışıklık Karşıtı Göz Çevresi Kremi",
+        "shortDesc": "Soothing and Anti-Wrinkle Eye Contour Cream",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Göz Kremi"
+                    "Eye Cream"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt"
+                    "Normal Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Selülit",
-                    "Göz Altı Torbaları ve Morlukları"
+                    "Cellulite",
+                    "Under-Eye Bags and Dark Circles"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2502,22 +2502,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Göz",
-                    "Göz Altı ve Çevresi"
+                    "Eyelash",
+                    "Under Eyes and Surrounding Area"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML"
+                    "15ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -2558,34 +2558,34 @@
         "name": "Pure Moisturizers Water Based Moisturizing Lotion for All Skin Types 125 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Su Bazlı Nemlendirici",
+        "shortDesc": "Water Based Moisturizer",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Losyon"
+                    "Lotion"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt"
+                    "Normal Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Nemsizlik"
+                    "Lack of humidity"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2594,21 +2594,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "125 ML"
+                    "125ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             }
         ],
@@ -2649,42 +2649,42 @@
         "name": "Pure UV Protector 100% Mineral Filter SPF30+ Sun Cream for All Skin Types 40ml",
         "brand": "Etat Pur",
         "price": "1.299,00 ₺",
-        "shortDesc": "Hassas ve Tüm Ciltler için SPF 30 Saf Güneş Koruyucu",
+        "shortDesc": "SPF 30 Pure Sunscreen for Sensitive and All Skin Types",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur",
+                    "Stage Pur",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Güneş Kremi",
+                    "Sunscreen",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt",
+                    "Normal Skin",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Güneş Yanığı",
+                    "Sunburn",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
-                    "3 ve Üzeri",
+                    "3 and Above",
                     "",
-                    "12 ve Üzeri",
+                    "12 and Above",
                     "",
                     "18-29",
                     "",
@@ -2697,28 +2697,28 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz",
+                    "Face",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML",
+                    "40ML",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz",
+                    "Colorless",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "SPF Value",
                 "values": [
                     "SPF 30",
                     ""
@@ -2767,38 +2767,38 @@
         "name": "Pure UV Protector 100% Mineral Filter SPF50 Sun Cream for All Skin Types 40ml",
         "brand": "Etat Pur",
         "price": "1.299,00 ₺",
-        "shortDesc": "Hassas ve Tüm Ciltler için SPF 50+ Saf Güneş Koruyucu",
+        "shortDesc": "SPF 50+ Pure Sunscreen for Sensitive and All Skin Types",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur"
+                    "Stage Pur"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Güneş Kremi"
+                    "Sunscreen"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt"
+                    "Normal Skin"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Güneş Yanığı"
+                    "Sunburn"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
-                    "3 ve Üzeri",
-                    "10 ve Üzeri",
-                    "12 ve Üzeri",
+                    "3 and Above",
+                    "10 and Above",
+                    "12 and Above",
                     "18-29",
                     "30-34",
                     "35-44",
@@ -2806,25 +2806,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz"
+                    "Face"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML"
+                    "40ML"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz"
+                    "Colorless"
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "SPF Value",
                 "values": [
                     "SPF 50+",
                     ""
@@ -2873,40 +2873,40 @@
         "name": "Pure Active Pure Niacinamide 5% Anti-Stain Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Işıltı Etkili ve Pürüz Karşıtı Konsantre Bakım",
+        "shortDesc": "Concentrated Care with Shine Effect and Anti-Smoothness",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur",
+                    "Stage Pur",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Yüz Serumu",
+                    "Face Serum",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Leke Eğilimli Cilt",
+                    "Blemish Prone Skin",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Akne Lekeleri",
+                    "Acne Spots",
                     "",
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Dark Spots and Skin Tone Unevenness",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "",
@@ -2919,16 +2919,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML",
+                    "15ML",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz",
+                    "Colorless",
                     ""
                 ]
             }
@@ -2970,40 +2970,40 @@
         "name": "Pure Active Retinol 0.3% Anti-Wrinkle Pure Concentrate Care 15 ml",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Olgun Ciltlerde Sarkma ve Kırışıklık Karşıtı Konsantre Bakım",
+        "shortDesc": "Concentrated Anti-Sagging and Anti-Wrinkle Care for Mature Skin",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur",
+                    "Stage Pur",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Konsantre Bakım Ürünü",
+                    "Concentrated Care Product",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt",
+                    "Normal Skin",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Cansız ve Yorgun Görünüm",
+                    "Lifeless and Tired Appearance",
                     "",
-                    "Elastikiyet ve Sıkılık Kaybı",
+                    "Loss of Elasticity and Firmness",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "",
@@ -3016,23 +3016,23 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Area of Use",
                 "values": [
-                    "Yüz",
+                    "Face",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "15 ML",
+                    "15ML",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renkli",
+                    "Colourful",
                     ""
                 ]
             }
@@ -3086,40 +3086,40 @@
         "name": "Pure Moisturizers Refreshing Gel Cream for Combination and Oily Skin 40 ml",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Karma ve Yağlı Ciltler için Ferahlatıcı Jel Krem",
+        "shortDesc": "Refreshing Gel Cream for Combination and Oily Skin",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Brand",
                 "values": [
-                    "Etat Pur",
+                    "Stage Pur",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Product Type",
                 "values": [
-                    "Nemlendirici Krem",
+                    "Moisturizing cream",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Skin Type",
                 "values": [
-                    "Normal Cilt",
+                    "Normal Skin",
                     "",
-                    "Karma, Yağlı ve Akne Eğilimli Cilt",
+                    "Combination, Oily and Acne Prone Skin",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Skin Concerns",
                 "values": [
-                    "Nemsizlik",
+                    "Lack of humidity",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Age",
                 "values": [
                     "18-29",
                     "",
@@ -3132,16 +3132,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Weight",
                 "values": [
-                    "40 ML",
+                    "40ML",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Colour",
                 "values": [
-                    "Renksiz",
+                    "Colorless",
                     ""
                 ]
             }

@@ -3,24 +3,24 @@
         "name": "Интенсивный бальзам-лифтинг для кожи вокруг глаз с ретинолом 15 мл",
         "brand": "Institut Esthederm",
         "price": "4.709,00 ₺",
-        "shortDesc": "Yaşlanma Karşıtı Göz Çevresi Balm",
+        "shortDesc": "Бальзам для контура глаз против старения",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     "."
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
+                    "Глубокие Морщины",
                     "."
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     ".",
@@ -33,25 +33,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     ".",
-                    "Göz",
+                    "Ресница",
                     "."
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML",
+                    "15мл",
                     "."
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     "."
                 ]
             }
@@ -93,48 +93,48 @@
         "name": "Интенсивная сыворотка Pro Collagen 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Sıkılaştırıcı ve dolgunlaştırıcı, yaşlanma karşıtı serum",
+        "shortDesc": "Укрепляющая и восстанавливающая антивозрастная сыворотка",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum",
+                    "сыворотка",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Kuru ve Atopi Eğilimli Cilt",
+                    "Сухая и атопическая кожа",
                     "",
-                    "Olgun Cilt",
+                    "Зрелая кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     "",
-                    "Cansız ve Yorgun Görünüm",
+                    "Безжизненный и усталый вид",
                     "",
-                    "Derin Kırışıklık",
+                    "Глубокие Морщины",
                     "",
-                    "İnce Kırışıklık",
+                    "Мелкие морщины",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -147,25 +147,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML",
+                    "30мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -207,48 +207,48 @@
         "name": "Интенсивный крем Pro Collagen 50 мл",
         "brand": "Institut Esthederm",
         "price": "5.149,00 ₺",
-        "shortDesc": "Sıkılaştırıcı ve dolgunlaştırıcı, yaşlanma karşıtı krem",
+        "shortDesc": "Укрепляющий и омолаживающий крем",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Bakım Kremi",
+                    "Крем для ухода",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Kuru ve Atopi Eğilimli Cilt",
+                    "Сухая и атопическая кожа",
                     "",
-                    "Olgun Cilt",
+                    "Зрелая кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     "",
-                    "Cansız ve Yorgun Görünüm",
+                    "Безжизненный и усталый вид",
                     "",
-                    "Derin Kırışıklık",
+                    "Глубокие Морщины",
                     "",
-                    "İnce Kırışıklık",
+                    "Мелкие морщины",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -261,25 +261,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -321,36 +321,36 @@
         "name": "Photo Regul Солнцезащитный крем против пигментных пятен и для загара SPF50+ 50 мл",
         "brand": "Institut Esthederm",
         "price": "2.859,00 ₺",
-        "shortDesc": "Leke eğilimli ciltler için bronzlaşmaya destek olan ve leke bakımı yapan güneş koruyucu",
+        "shortDesc": "Солнцезащитный крем, способствующий загару и обеспечивающий точечный уход за кожей, склонной к появлению пятен.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi"
+                    "Солнцезащитный крем"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -391,22 +391,22 @@
         "name": "Excellage Chrono-Repair ночное масло 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.499,00 ₺",
-        "shortDesc": "Excellage Chrono-Repair Sleeping Oil Yenileyici ve Onarıcı Gece Bakımı Yağı 30 Ml",
+        "shortDesc": "Excellage Chrono-Repair Sleeping Oil Регенерирующее и восстанавливающее ночное масло для ухода за кожей 30 мл",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34",
                     "35-44",
@@ -414,21 +414,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -489,30 +489,30 @@
         "name": "Масло для тела Adaptasun Hydra -Protective Golden Glow Sun Care 125 мл",
         "brand": "Institut Esthederm",
         "price": "3.589,00 ₺",
-        "shortDesc": "Işıltı etkili ve bronzlaştırıcı yüksek güneş koruyucu vücut yağı",
+        "shortDesc": "Масло для тела с высокой степенью защиты от солнца, осветляющим и бронзирующим эффектом",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Vücut"
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "125 ML"
+                    "125мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -553,36 +553,36 @@
         "name": "No Sun Ультралегкий минеральный солнцезащитный крем SPF50+ 40 мл",
         "brand": "Institut Esthederm",
         "price": "2.999,00 ₺",
-        "shortDesc": "Minarel filtre içeren ultra hafif akışkan dokulu güneş kremi",
+        "shortDesc": "Ультралегкий жидкий солнцезащитный крем с минеральной текстурой",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi"
+                    "Солнцезащитный крем"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML"
+                    "40мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -623,30 +623,30 @@
         "name": "Продлевающий загар мерцающий гель-крем для тела увлажняющий и успокаивающий гель-крем после загара 200 мл",
         "brand": "Institut Esthederm",
         "price": "2.879,00 ₺",
-        "shortDesc": "Güneşlenme sonrası nemlendirici ve yatıştırıcı jel krem",
+        "shortDesc": "Увлажняющий и успокаивающий гель-крем после пребывания на солнце",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Vücut"
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -687,49 +687,49 @@
         "name": "Age Proteom Eye Advanced Serum Пептидсодержащая, укрепляющая, осветляющая сыворотка для контура глаз 15 мл",
         "brand": "Institut Esthederm",
         "price": "4.489,00 ₺",
-        "shortDesc": "Göz çevresinin genç ve canlı kalmasını sağlarken, üst göz kapağını destekleyen, cildi nemlendiren, güçlendiren ve antioksidan koruma sunan hücresel yenilenme serumu.",
+        "shortDesc": "Сыворотка для клеточной регенерации, которая поддерживает верхнее веко, увлажняет и укрепляет кожу, а также обеспечивает антиоксидантную защиту, гарантируя, что область вокруг глаз останется молодой и яркой.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Işıltı Kaybı ve Mat Görünüm"
+                    "Потеря блеска и тусклый вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34",
                     "45+"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Göz Altı ve Çevresi"
+                    "Под глазами и вокруг глаз"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -790,59 +790,59 @@
         "name": "Интенсивный крем против морщин и старения кожи с интенсивным ретинолом 50 мл",
         "brand": "Institut Esthederm",
         "price": "5.159,00 ₺",
-        "shortDesc": "Yoğun kırışıklık problemine karşı retinol içeren krem",
+        "shortDesc": "Крем с ретинолом против интенсивных морщин",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Olgun Cilt"
+                    "Нормальная кожа",
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık",
-                    "Erken Yaşlanma"
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -883,58 +883,58 @@
         "name": "Интенсивная очищающая сыворотка для кожи с прополисом против акне 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Salisilik asit ve propolis ile güçlendirilmiş, yaşlanma ve sivilce karşıtı etki eden arındırıcı S.O.S. serum",
+        "shortDesc": "Очищающая SOS-сыворотка с антивозрастным и противоугревым действием, усиленная салициловой кислотой и прополисом.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm",
-                    "Akne ve Sivilce",
-                    "İnce Kırışıklık",
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Блеск кожи и жирный вид",
+                    "Угри и прыщи",
+                    "Мелкие морщины",
+                    "Большие поры и черные точки"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -968,43 +968,43 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2188,
         "eslesmeSkoru": 40
     },
     {
         "name": "Эффективный увлажняющий спрей с антиоксидантами и гиалуроновой кислотой 100 мл",
         "brand": "Institut Esthederm",
         "price": "1.709,00 ₺",
-        "shortDesc": "Antioksidan etkili, hyaluronik asit ile nemlendiren, enerji veren ve makyajı sabitleyen hücresel su",
+        "shortDesc": "Клеточная вода с антиоксидантным эффектом, увлажняющая, тонизирующая и фиксирующая макияж с гиалуроновой кислотой",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Mist"
+                    "Туман"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi",
-                    "Kuruluk"
+                    "Недостаток влажности",
+                    "Непереносимость, аллергия и склонность к розацеа",
+                    "Сухость"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1013,22 +1013,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Vücut"
+                    "Лицо",
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "100 ML"
+                    "100мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1070,47 +1070,47 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2169,
         "eslesmeSkoru": 33.33
     },
     {
         "name": "Эффективный увлажняющий спрей с антиоксидантами и гиалуроновой кислотой 200 мл",
         "brand": "Institut Esthederm",
         "price": "2.319,00 ₺",
-        "shortDesc": "Antioksidan etkili, hyaluronik asit ile nemlendiren, enerji veren ve makyajı sabitleyen hücresel su",
+        "shortDesc": "Клеточная вода с антиоксидантным эффектом, увлажняющая, тонизирующая и фиксирующая макияж с гиалуроновой кислотой",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Mist"
+                    "Туман"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm",
-                    "İnce Kırışıklık",
-                    "Kuruluk",
-                    "Erken Yaşlanma"
+                    "Недостаток влажности",
+                    "Непереносимость, аллергия и склонность к розацеа",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид",
+                    "Мелкие морщины",
+                    "Сухость",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1119,22 +1119,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Vücut"
+                    "Лицо",
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1183,38 +1183,38 @@
         "name": "Клеточная вода антиоксидантный эффективный и гелевой текстуры увлажняющий клеточный крем для ухода",
         "brand": "Institut Esthederm",
         "price": "2.559,00 ₺",
-        "shortDesc": "Karma ve yağlı ciltler için çevresel faktörlere karşı antioksidan etkili koruyucu jel dokulu hücresel bakım kremi",
+        "shortDesc": "Защитный клеточный крем с гелевой текстурой, обладающий антиоксидантным действием и защищающий от воздействия факторов окружающей среды для комбинированной и жирной кожи.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm",
-                    "Kuruluk",
-                    "Erken Yaşlanma"
+                    "Недостаток влажности",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид",
+                    "Сухость",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1223,22 +1223,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1279,39 +1279,39 @@
         "name": "Клеточная вода антиоксидант эффективный увлажняющий клеточный уход крем",
         "brand": "Institut Esthederm",
         "price": "2.559,00 ₺",
-        "shortDesc": "Kuru ve normal ciltler için çevresel faktörlere karşı antioksidan etkili koruyucu hücresel bakım kremi",
+        "shortDesc": "Эффективный антиоксидантный защитный крем для клеточного ухода от воздействия факторов окружающей среды для сухой и нормальной кожи.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm",
-                    "Kuruluk",
-                    "Erken Yaşlanma"
+                    "Недостаток влажности",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид",
+                    "Сухость",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1320,22 +1320,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1376,38 +1376,38 @@
         "name": "Питательная сыворотка для ухода за кожей EVE Cell Regeneration для всех типов кожи 30 мл",
         "brand": "Institut Esthederm",
         "price": "4.170,00 ₺",
-        "shortDesc": "Hücre yenileyici biyomimetik serum",
+        "shortDesc": "Биомиметическая сыворотка для регенерации клеток",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cansız ve Yorgun Görünüm",
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık",
-                    "Erken Yaşlanma"
+                    "Безжизненный и усталый вид",
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1416,22 +1416,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1465,43 +1465,43 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2276,
         "eslesmeSkoru": 0
     },
     {
         "name": "Morpho Fitness Сжигание жира, укрепление и похудение, эффективная сыворотка для ухода за телом 100 мл",
         "brand": "Institut Esthederm",
         "price": "2.869,00 ₺",
-        "shortDesc": "Egzersiz ve masaj ile beraber kullanımda inceltici etkiyi arttıran vücut serumu",
+        "shortDesc": "Сыворотка для тела, усиливающая эффект похудения при использовании в сочетании с физическими упражнениями и массажем.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Vücut Serumu"
+                    "Сыворотка для тела"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Olgun Cilt"
+                    "Нормальная кожа",
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "Selülit"
+                    "Потеря эластичности и упругости",
+                    "Целлюлит"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1510,21 +1510,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Vücut"
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "100 ML"
+                    "100мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1565,38 +1565,38 @@
         "name": "Крем для похудения и сжигания жира Absolute Firming, эффективный, моделирующий фигуру, 200 мл",
         "brand": "Institut Esthederm",
         "price": "3.289,00 ₺",
-        "shortDesc": "Üçlü etki ile inceltici, sıkılaştırıcı ve yağ yakımına yardımcı vücut bakım kremi",
+        "shortDesc": "Крем для тела с тройным эффектом для похудения, укрепления и сжигания жира",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt",
-                    "Olgun Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа",
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Kuruluk",
-                    "Selülit"
+                    "Недостаток влажности",
+                    "Сухость",
+                    "Целлюлит"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1605,21 +1605,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Vücut"
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1660,37 +1660,37 @@
         "name": "Интенсивная антицеллюлитная сыворотка для похудения Glauscine Body Care 200 мл",
         "brand": "Institut Esthederm",
         "price": "2.869,00 ₺",
-        "shortDesc": "Su bazlı selülitleri gidermeye yardımcı ve inceltici selülit bakım jeli",
+        "shortDesc": "Гель для похудения и устранения целлюлита на водной основе",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Vücut Serumu"
+                    "Сыворотка для тела"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt",
-                    "Olgun Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа",
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Selülit"
+                    "Недостаток влажности",
+                    "Целлюлит"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1699,21 +1699,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Vücut"
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1754,37 +1754,37 @@
         "name": "Интенсивный антицеллюлитный крем для похудения Glauscine для тела 200 мл",
         "brand": "Institut Esthederm",
         "price": "1.909,00 ₺",
-        "shortDesc": "Yağ bazlı ve inatçı selülitleri gidermeye yardımcı ve inceltici selülit bakım kremi",
+        "shortDesc": "Крем для ухода за целлюлитом на масляной основе, который помогает устранить стойкий целлюлит и сделать его тоньше.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt",
-                    "Olgun Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа",
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Selülit"
+                    "Недостаток влажности",
+                    "Целлюлит"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1793,21 +1793,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Vücut"
+                    "Тело"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1848,37 +1848,37 @@
         "name": "Osmoclean Очищающий крем для сужения и очищения пор для всех типов кожи 75 мл",
         "brand": "Institut Esthederm",
         "price": "1.729,00 ₺",
-        "shortDesc": "Derinlemesine etkili nazik gözenek temizleyici",
+        "shortDesc": "Глубокоэффективное мягкое средство для очищения пор",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Yüz Peelingi"
+                    "Пилинг лица"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm",
-                    "Akne ve Sivilce",
-                    "Cansız ve Yorgun Görünüm",
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Блеск кожи и жирный вид",
+                    "Угри и прыщи",
+                    "Безжизненный и усталый вид",
+                    "Большие поры и черные точки"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1887,22 +1887,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "75 ML"
+                    "75мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1944,42 +1944,42 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2172,
         "eslesmeSkoru": 25
     },
     {
         "name": "Osmoclean Освежающий и увлажняющий тоник для сухой и обезвоженной кожи 200 мл",
         "brand": "Institut Esthederm",
         "price": "1.529,00 ₺",
-        "shortDesc": "Nemsiz ciltlere yönelik tonik",
+        "shortDesc": "Тоник для обезвоженной кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Tonik"
+                    "Тоник"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Kuruluk"
+                    "Недостаток влажности",
+                    "Сухость"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1988,22 +1988,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2037,44 +2037,44 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2340,
         "eslesmeSkoru": 0
     },
     {
         "name": "Osmoclean Двухфазное средство для снятия макияжа с глаз и губ без отдушек 125 мл",
         "brand": "Institut Esthederm",
         "price": "1.649,00 ₺",
-        "shortDesc": "Göz ve dudak makyajını temizlemeye yönelik çift fazlı makyaj temizleyici",
+        "shortDesc": "Двухфазное средство для снятия макияжа с глаз и губ",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Çift Fazlı Makyaj Temizleyici"
+                    "Двухфазное средство для снятия макияжа"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi",
-                    "Kuruluk"
+                    "Недостаток влажности",
+                    "Непереносимость, аллергия и склонность к розацеа",
+                    "Сухость"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2083,23 +2083,23 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Göz",
-                    "Dudak"
+                    "Лицо",
+                    "Ресница",
+                    "Губы"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "125 ML"
+                    "125мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2133,37 +2133,37 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2177,
         "eslesmeSkoru": 25
     },
     {
         "name": "Osmoclean Освежающий и успокаивающий тоник без спирта для чувствительной кожи 200 мл",
         "brand": "Institut Esthederm",
         "price": "1.529,00 ₺",
-        "shortDesc": "Hassas ciltlere yönelik tonik",
+        "shortDesc": "Тоник для чувствительной кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Tonik"
+                    "Тоник"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi",
-                    "Kuruluk"
+                    "Недостаток влажности",
+                    "Непереносимость, аллергия и склонность к розацеа",
+                    "Сухость"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2171,22 +2171,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2220,65 +2220,65 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2277,
         "eslesmeSkoru": 33.33
     },
     {
         "name": "Excellage Интенсивный питательный крем для кожи вокруг глаз против морщин 15 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Cildi besleyici, sıkılaştırıcı ve cilde ışıltı veren kırışıklık karşıtı nemlendirici göz kremi",
+        "shortDesc": "Увлажняющий крем для кожи вокруг глаз против морщин, который питает, укрепляет и осветляет кожу.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Göz Kremi"
+                    "Крем для век"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "Göz Altı Torbaları ve Morlukları"
+                    "Недостаток влажности",
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мешки и темные круги под глазами"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "45+"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Göz",
-                    "Göz Altı ve Çevresi"
+                    "Ресница",
+                    "Под глазами и вокруг глаз"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2312,43 +2312,43 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2279,
         "eslesmeSkoru": 50
     },
     {
         "name": "Osmoclean Ежедневный очищающий гель для умывания лица для всех типов кожи 150 мл",
         "brand": "Institut Esthederm",
         "price": "1.629,00 ₺",
-        "shortDesc": "Normal ve karma ciltler için temizleyici yıkama jeli",
+        "shortDesc": "Очищающий гель для умывания для нормальной и комбинированной кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Temizleme Jeli"
+                    "Очищающий гель"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm",
-                    "Akne ve Sivilce",
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Блеск кожи и жирный вид",
+                    "Угри и прыщи",
+                    "Большие поры и черные точки"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2357,22 +2357,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "150 ML"
+                    "150мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2406,44 +2406,44 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2174,
         "eslesmeSkoru": 25
     },
     {
         "name": "Osmoclean Осветляющая и отшелушивающая эффективная очищающая маска для всех типов кожи 75 мл",
         "brand": "Institut Esthederm",
         "price": "1.819,00 ₺",
-        "shortDesc": "Granül içermeyen aydınlatıcı etkili peeling etkili maske",
+        "shortDesc": "Эффективная отшелушивающая маска без гранул",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Maske"
+                    "Маска"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm",
-                    "Akne ve Sivilce",
-                    "Cansız ve Yorgun Görünüm",
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Блеск кожи и жирный вид",
+                    "Угри и прыщи",
+                    "Безжизненный и усталый вид",
+                    "Большие поры и черные точки"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2452,22 +2452,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "75 ML"
+                    "75мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2509,42 +2509,42 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2173,
         "eslesmeSkoru": 20
     },
     {
         "name": "Excellage Эффективный укрепляющий крем против морщин против признаков старения",
         "brand": "Institut Esthederm",
         "price": "6.119,00 ₺",
-        "shortDesc": "Yaşlanmanın tüm belirtilerine karşı etkili, besleyici, nemlendirici ve sıkılaştırıcı kırışıklık kremi",
+        "shortDesc": "Эффективный, питательный, увлажняющий и укрепляющий крем против морщин, против всех признаков старения.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı"
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2553,22 +2553,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2609,56 +2609,56 @@
         "name": "Excellage Anti-Aging Увлажняющая сыворотка против морщин",
         "brand": "Institut Esthederm",
         "price": "6.669,00 ₺",
-        "shortDesc": "Cildi besleyici, sıkılaştırıcı ve cilde ışıltı veren kırışıklık karşıtı nemlendirici serum",
+        "shortDesc": "Увлажняющая сыворотка против морщин, которая питает, укрепляет и осветляет кожу.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı"
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "45+"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2700,42 +2700,42 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2207,
         "eslesmeSkoru": 50
     },
     {
         "name": "Esthe-White Anti-Spot Brightening Эффективная антивозрастная сыворотка 30 мл",
         "brand": "Institut Esthederm",
         "price": "4.819,00 ₺",
-        "shortDesc": "Leke, cilt tonu eşitsizliği ve yaşlanma karşıtı aydınlatıcı serum",
+        "shortDesc": "Сыворотка против пятен, неровностей тона кожи и против старения, осветляющая кожу",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Erken Yaşlanma"
+                    "Темные пятна и неровный тон кожи",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2744,22 +2744,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2800,35 +2800,35 @@
         "name": "Esthe-White Anti-Spot Skin Tone Equalizing Moisturizing Care Cream 50 мл",
         "brand": "Institut Esthederm",
         "price": "4.819,00 ₺",
-        "shortDesc": "Leke, cilt tonu eşitsizliği ve yaşlanma karşıtı aydınlatıcı gündüz kremi",
+        "shortDesc": "Дневной крем против пятен, выравнивающий тон кожи и замедляющий старение кожи, осветляющий кожу",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Erken Yaşlanma"
+                    "Темные пятна и неровный тон кожи",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2837,22 +2837,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2886,41 +2886,41 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2194,
         "eslesmeSkoru": 50
     },
     {
         "name": "Esthe-White Концентрат для устранения темных пятен 9 мл",
         "brand": "Institut Esthederm",
         "price": "2.869,00 ₺",
-        "shortDesc": "Leke, cilt tonu eşitsizliği ve yaşlanma karşıtı lokal roll-on serum",
+        "shortDesc": "Сыворотка для местного применения с роликовым аппликатором против пятен, неровностей тона кожи и против старения",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği"
+                    "Темные пятна и неровный тон кожи"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2929,22 +2929,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "9 ML"
+                    "9мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2985,35 +2985,35 @@
         "name": "Esthe-White Anti-Spot Skin Tone Equalizing Facial Cleansing Foam 150 мл",
         "brand": "Institut Esthederm",
         "price": "3.829,00 ₺",
-        "shortDesc": "Leke, cilt tonu eşitsizliği ve yaşlanma karşıtı köpük formda temizleyici",
+        "shortDesc": "Пенящееся очищающее средство против пятен, неровностей тона кожи и против старения",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Temizleme Köpüğü"
+                    "Очищающая пена"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Erken Yaşlanma"
+                    "Темные пятна и неровный тон кожи",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -3022,22 +3022,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "150 ML"
+                    "150мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -3071,49 +3071,49 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2193,
         "eslesmeSkoru": 50
     },
     {
         "name": "Солнцезащитный крем Adaptasun для чувствительной кожи с бронзирующим эффектом SPF 30 50 мл",
         "brand": "Institut Esthederm",
         "price": "2.859,00 ₺",
-        "shortDesc": "Cildi güneşe adapte ederek bronzlaştıran koruyucu güneş bakım kremi - Normal güneş**",
+        "shortDesc": "Защитный солнцезащитный крем, который адаптирует кожу к солнцу и загару - Нормальное солнце**",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi",
+                    "Солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Hassas ve Kızarıklık Eğilimli Cilt",
+                    "Чувствительная и склонная к покраснениям кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Güneş Hassasiyeti ve Alerjisi",
+                    "Чувствительность к солнцу и аллергии",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3126,32 +3126,32 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
-                    "SPF 30",
+                    "SPF30",
                     ""
                 ]
             }
@@ -3198,42 +3198,42 @@
         "name": "Солнцезащитный крем Into Repair High Protection для очень чувствительной кожи 50 мл",
         "brand": "Institut Esthederm",
         "price": "2.859,00 ₺",
-        "shortDesc": "Aşırı güneş hassasiyeti yaşayan ciltlere yönelik yaşlanma karşıtı koruyucu güneş bakım kremi",
+        "shortDesc": "Антивозрастной защитный солнцезащитный крем для кожи, чрезвычайно чувствительной к солнцу.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi",
+                    "Солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Hassas ve Kızarıklık Eğilimli Cilt",
+                    "Чувствительная и склонная к покраснениям кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Güneş Hassasiyeti ve Alerjisi",
+                    "Чувствительность к солнцу и аллергии",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3246,32 +3246,32 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
-                    "SPF 30",
+                    "SPF30",
                     ""
                 ]
             }
@@ -3318,44 +3318,44 @@
         "name": "No Sun 100% Mineral Filter Солнцезащитный крем против фотостарения SPF 50+ 50 мл",
         "brand": "Institut Esthederm",
         "price": "2.999,00 ₺",
-        "shortDesc": "%100 mineral fitreler içeren maksimum koruma sağlayan güneş bakım kremi",
+        "shortDesc": "Солнцезащитный крем с максимальной защитой, содержащий 100% минеральных фильтров",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi",
+                    "Солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Hassas ve Kızarıklık Eğilimli Cilt",
+                    "Чувствительная и склонная к покраснениям кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Güneş Hassasiyeti ve Alerjisi",
+                    "Чувствительность к солнцу и аллергии",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3368,32 +3368,32 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
-                    "Yüksek Koruma",
+                    "Высокая защита",
                     ""
                 ]
             }
@@ -3440,44 +3440,44 @@
         "name": "Photo Reverse Солнцезащитный крем с высокой степенью защиты от фотостарения и пигментных пятен 50 мл",
         "brand": "Institut Esthederm",
         "price": "2.999,00 ₺",
-        "shortDesc": "Leke eğilimli ciltler için maksimum koruma sağlayan ve leke bakımı yapan güneş koruyucu",
+        "shortDesc": "Солнцезащитный крем, обеспечивающий максимальную защиту и уход за кожей, склонной к появлению несовершенств.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi",
+                    "Солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Leke Eğilimli Cilt",
+                    "Кожа, склонная к появлению пятен",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Темные пятна и неровный тон кожи",
                     "",
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3490,30 +3490,30 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
                     "SPF 50+",
                     ""
@@ -3562,44 +3562,44 @@
         "name": "Фотореверсивный тонированный светло-бежевый солнцезащитный крем с высокой степенью защиты 50 мл",
         "brand": "Institut Esthederm",
         "price": "3.259,00 ₺",
-        "shortDesc": "Leke eğilimli ciltler için maksimum koruma sağlayan ve leke bakımı yapan aydınlatıcı etkili renkli güneş koruyucu",
+        "shortDesc": "Осветляющий, эффективный тонирующий солнцезащитный крем, обеспечивающий максимальную защиту и точечный уход за кожей, склонной к появлению пятен.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Renkli Güneş Kremi",
+                    "Тонированный солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Leke Eğilimli Cilt",
+                    "Кожа, склонная к появлению пятен",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Темные пятна и неровный тон кожи",
                     "",
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3612,30 +3612,30 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli",
+                    "Красочный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
                     "SPF 50+",
                     ""
@@ -3692,44 +3692,44 @@
         "name": "Фото Реверсивный тонированный средне-бежевый солнцезащитный крем с высокой степенью защиты 50 мл",
         "brand": "Institut Esthederm",
         "price": "3.259,00 ₺",
-        "shortDesc": "Leke eğilimli ciltler için maksimum koruma sağlayan ve leke bakımı yapan aydınlatıcı etkili renkli güneş koruyucu",
+        "shortDesc": "Осветляющий, эффективный тонирующий солнцезащитный крем, обеспечивающий максимальную защиту и точечный уход за кожей, склонной к появлению пятен.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Renkli Güneş Kremi",
+                    "Тонированный солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Leke Eğilimli Cilt",
+                    "Кожа, склонная к появлению пятен",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Темные пятна и неровный тон кожи",
                     "",
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3742,30 +3742,30 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli",
+                    "Красочный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
                     "SPF 50+",
                     ""
@@ -3822,40 +3822,40 @@
         "name": "Солнцезащитное масло для защиты от фотостарения, антизагарное и солнцезащитное масло SPF 15-30 150 мл",
         "brand": "Institut Esthederm",
         "price": "3.789,00 ₺",
-        "shortDesc": "Bronzlaştırıcı ve koruyucu vücuda ve saçlara uygulanabilen güneş yağı - Normal Ciltler",
+        "shortDesc": "Бронзирующий и защитный солнцезащитный крем, который можно наносить на тело и волосы - Нормальная кожа",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Kuru Yağ",
+                    "Сухое масло",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3868,30 +3868,30 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Saç ve Saç Derisi",
+                    "Волосы и кожа головы",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "150 ML",
+                    "150мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
-                    "SPF 30",
+                    "SPF30",
                     ""
                 ]
             }
@@ -3938,58 +3938,58 @@
         "name": "Мгновенная эффективная маска для глаз Lift &amp; Repair против мешков под глазами и темных кругов 2x10",
         "brand": "Institut Esthederm",
         "price": "4.159,00 ₺",
-        "shortDesc": "Yorgun görünüm ve kırışıklıkları azaltan SOS göz çevresi maskesi",
+        "shortDesc": "SOS-маска для кожи вокруг глаз уменьшает усталость и морщины",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Göz Çevresi Maskesi"
+                    "Маска для контура глаз"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cansız ve Yorgun Görünüm",
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "Göz Altı Torbaları ve Morlukları"
+                    "Безжизненный и усталый вид",
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мешки и темные круги под глазами"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "35-44"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Göz",
-                    "Göz Altı ve Çevresi"
+                    "Ресница",
+                    "Под глазами и вокруг глаз"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "20 G"
+                    "20G"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4030,57 +4030,57 @@
         "name": "Lift &amp; Repair Эффективная сыворотка для лица против морщин, укрепляющая и восстанавливающая 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Kırışıklık karşıtı ve sıkılaştırıcı serum",
+        "shortDesc": "Сыворотка против морщин и для укрепления кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık"
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "35-44"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4114,64 +4114,64 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2202,
         "eslesmeSkoru": 50
     },
     {
         "name": "Lift &amp; Repair Эффективный укрепляющий и восстанавливающий крем для лица против морщин 50 мл",
         "brand": "Institut Esthederm",
         "price": "4.819,00 ₺",
-        "shortDesc": "Yuvarlak yüz hatlarına yönelik, kırışıklık karşıtı toparlayıcı ve sıkılaştırıcı nemlendirici krem",
+        "shortDesc": "Увлажняющий крем против морщин, подтягивающий и укрепляющий кожу вокруг лица.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık"
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "35-44"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4213,65 +4213,65 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2203,
         "eslesmeSkoru": 50
     },
     {
         "name": "Эффективный крем для кожи вокруг глаз против морщин и «гусиных лапок» Lift &amp; Repair 15 мл",
         "brand": "Institut Esthederm",
         "price": "4.389,00 ₺",
-        "shortDesc": "Göz çevresinde özellikle kaz ayağı bölgesindeki kırışıklık görünümünü toparlayıcı nemlendirici göz kremi",
+        "shortDesc": "Увлажняющий крем для век, уменьшающий видимость морщин вокруг глаз, особенно в области «гусиных лапок».",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık",
-                    "Göz Altı Torbaları ve Morlukları"
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины",
+                    "Мешки и темные круги под глазами"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "35-44"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Göz",
-                    "Göz Altı ve Çevresi"
+                    "Ресница",
+                    "Под глазами и вокруг глаз"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4313,64 +4313,64 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2204,
         "eslesmeSkoru": 50
     },
     {
         "name": "Маска для мгновенного восстановления Lift &amp; Repair 50 мл",
         "brand": "Institut Esthederm",
         "price": "3.409,00 ₺",
-        "shortDesc": "Anında dolgun görünüm kazandıran haftalık maske",
+        "shortDesc": "Еженедельная маска, которая мгновенно подтянет вашу кожу",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Maske"
+                    "Маска"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık"
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "35-44"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4411,36 +4411,36 @@
         "name": "Derm Repair Восстанавливающая укрепляющая сыворотка для кожи для всех типов кожи 30 мл",
         "brand": "Institut Esthederm",
         "price": "4.159,00 ₺",
-        "shortDesc": "Tüm cilt tiplerine uygun, cildi derinden onaran kırışıklık karşıtı sıkılaştırıcı serum",
+        "shortDesc": "Глубоко восстанавливающая укрепляющая сыворотка против морщин, подходящая для всех типов кожи.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık",
-                    "Erken Yaşlanma"
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -4449,22 +4449,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4505,57 +4505,57 @@
         "name": "Активный восстанавливающий увлажняющий крем против морщин и осветления кожи 50 мл",
         "brand": "Institut Esthederm",
         "price": "3.829,00 ₺",
-        "shortDesc": "Kırışıklık karşıtı hafif dokulu nemlendirici",
+        "shortDesc": "Легкий увлажняющий крем против морщин",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık",
-                    "Erken Yaşlanma"
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4596,57 +4596,57 @@
         "name": "Крем для век Active Repair Anti-Wrinkle Brightening and Luminary 15 мл",
         "brand": "Institut Esthederm",
         "price": "3.289,00 ₺",
-        "shortDesc": "Kırışıklık, morluk ve şişlik karşıtı yenileyici göz kremi",
+        "shortDesc": "Регенерирующий крем для кожи вокруг глаз против морщин, темных кругов и отечности",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Göz Kremi"
+                    "Крем для век"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık",
-                    "Göz Altı Torbaları ve Morlukları",
-                    "Erken Yaşlanma"
+                    "Глубокие Морщины",
+                    "Мешки и темные круги под глазами",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Göz",
-                    "Göz Altı ve Çevresi"
+                    "Ресница",
+                    "Под глазами и вокруг глаз"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4687,41 +4687,41 @@
         "name": "Интенсивный крем против морщин с гиалуроновой кислотой 50 мл",
         "brand": "Institut Esthederm",
         "price": "5.149,00 ₺",
-        "shortDesc": "Yoğun nemsizlik, ince çizgiler ve kırışıklık görünümüne karşı hyalüronik asit içeren krem",
+        "shortDesc": "Крем с гиалуроновой кислотой против интенсивной потери влаги, мелких морщин и складок.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm",
-                    "Derin Kırışıklık",
-                    "İnce Kırışıklık",
-                    "Kuruluk",
-                    "Erken Yaşlanma"
+                    "Недостаток влажности",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид",
+                    "Глубокие Морщины",
+                    "Мелкие морщины",
+                    "Сухость",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -4730,22 +4730,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4779,48 +4779,48 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2180,
         "eslesmeSkoru": 33.33
     },
     {
         "name": "Интенсивная увлажняющая сыворотка для лица против морщин с интенсивной гиалуроновой кислотой 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Yoğun nemsizlik, ince çizgiler ve kırışıklık görünümüne karşı hyalüronik asit içeren serum",
+        "shortDesc": "Сыворотка с гиалуроновой кислотой против интенсивной потери влаги, тонких линий и морщин.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm",
-                    "Derin Kırışıklık",
-                    "İnce Kırışıklık",
-                    "Kuruluk",
-                    "Erken Yaşlanma"
+                    "Недостаток влажности",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид",
+                    "Глубокие Морщины",
+                    "Мелкие морщины",
+                    "Сухость",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -4829,22 +4829,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4886,47 +4886,47 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2178,
         "eslesmeSkoru": 33.33
     },
     {
         "name": "Интенсивная увлажняющая маска против морщин с гиалуроновой кислотой 75 мл",
         "brand": "Institut Esthederm",
         "price": "4.799,00 ₺",
-        "shortDesc": "Yoğun nemsizlik, kuruluk kaynaklı gerginlik ve kırışıklık problemlerine karşı hyalüronik asit içeren maske",
+        "shortDesc": "Маска с гиалуроновой кислотой против интенсивной потери влаги, сухости, напряжения и морщин.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Maske"
+                    "Маска"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm",
-                    "Derin Kırışıklık",
-                    "İnce Kırışıklık",
-                    "Kuruluk",
-                    "Erken Yaşlanma"
+                    "Недостаток влажности",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид",
+                    "Глубокие Морщины",
+                    "Мелкие морщины",
+                    "Сухость",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -4935,22 +4935,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "75 ML"
+                    "75мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -4984,35 +4984,35 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2181,
         "eslesmeSkoru": 33.33
     },
     {
         "name": "Интенсивная антиоксидантная и успокаивающая сыворотка с витамином Е для чувствительной кожи 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Yoğun hassasiyet kaynaklı kızarıklık karşıtı serum",
+        "shortDesc": "Интенсивная сыворотка против покраснений и чувствительности",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi"
+                    "Непереносимость, аллергия и склонность к розацеа"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -5021,22 +5021,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -5077,37 +5077,37 @@
         "name": "Интенсивная сыворотка для обновления кожи со спирулиной и сияющим эффектом против усталого вида 30 мл",
         "brand": "Institut Esthederm",
         "price": "4.929,00 ₺",
-        "shortDesc": "Yoğun ışıltı, canlılık kaybı ve yorgunluk problemine karşı spirülina içeren serum",
+        "shortDesc": "Сыворотка со спирулиной против чрезмерного блеска, потери жизненных сил и проблем с усталостью.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm"
+                    "Недостаток влажности",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -5116,22 +5116,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -5172,37 +5172,37 @@
         "name": "Интенсивный крем для обновления кожи со спирулиной и сияющим эффектом против усталого вида 50 мл",
         "brand": "Institut Esthederm",
         "price": "4.819,00 ₺",
-        "shortDesc": "Yoğun ışıltı, canlılık kaybı ve yorgunluk problemine karşı spirülina içeren krem",
+        "shortDesc": "Крем со спирулиной против чрезмерного блеска, потери жизненных сил и проблем с усталостью.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm"
+                    "Недостаток влажности",
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -5211,22 +5211,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -5260,68 +5260,68 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2184,
         "eslesmeSkoru": 33.33
     },
     {
         "name": "Интенсивная сыворотка против морщин и старения кожи с интенсивным ретинолом 15 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Yoğun kırışıklık problemine karşı retinol içeren serum",
+        "shortDesc": "Сыворотка с ретинолом против интенсивных морщин",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Olgun Cilt"
+                    "Нормальная кожа",
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Derin Kırışıklık",
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık",
-                    "Foto Yaşlanma(Photoaging)",
-                    "Erken Yaşlanma"
+                    "Темные пятна и неровный тон кожи",
+                    "Глубокие Морщины",
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины",
+                    "Фотостарение",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -5362,42 +5362,42 @@
         "name": "Интенсивная очищающая сыворотка для чувствительной кожи с интенсивным содержанием AHA-кислот 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Düzensiz cilt yüzeyi problemlerine karşı yoğun bir şekilde etki eden AHA asitleri içeren serum",
+        "shortDesc": "Сыворотка, содержащая AHA-кислоты, которые интенсивно борются с неровностями поверхности кожи.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum",
+                    "сыворотка",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Karma, Yağlı ve Akne Eğilimli Cilt",
+                    "Комбинированная, жирная и склонная к акне кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Темные пятна и неровный тон кожи",
                     "",
-                    "Geniş Gözenek ve Siyah Nokta",
+                    "Большие поры и черные точки",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -5410,25 +5410,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML",
+                    "30мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -5470,36 +5470,36 @@
         "name": "Интенсивная AHA-кислотная пилинг-эффективный укрепляющий и сужающий поры концентрированный сывороточный состав 30 мл",
         "brand": "Institut Esthederm",
         "price": "5.259,00 ₺",
-        "shortDesc": "Düzensiz cilt yüzeyi problemlerine karşı yoğun bir şekilde etki eden AHA asitleri içeren serum /Normal cilt",
+        "shortDesc": "Сыворотка, содержащая AHA-кислоты, которые интенсивно действуют против проблем с неровной поверхностью кожи / Нормальная кожа",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Темные пятна и неровный тон кожи",
+                    "Большие поры и черные точки"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -5508,22 +5508,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML"
+                    "30мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -5564,59 +5564,59 @@
         "name": "Интенсивный лосьон для сужения пор против черных точек, содержащий прополис и цинк",
         "brand": "Institut Esthederm",
         "price": "3.289,00 ₺",
-        "shortDesc": "Çinko ve propolis ile güçlendirilmiş, siyah nokta karşıtı gözenek sıkılaştırıcı serum losyon",
+        "shortDesc": "Лосьон-сыворотка против черных точек, сужающий поры, усиленный цинком и прополисом",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Losyon"
+                    "Лосьон"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm",
-                    "Akne ve Sivilce",
-                    "İnce Kırışıklık",
-                    "Geniş Gözenek ve Siyah Nokta",
-                    "Erken Yaşlanma"
+                    "Блеск кожи и жирный вид",
+                    "Угри и прыщи",
+                    "Мелкие морщины",
+                    "Большие поры и черные точки",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "130 ML"
+                    "130мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -5658,65 +5658,65 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2190,
         "eslesmeSkoru": 40
     },
     {
         "name": "Интенсивный крем для лица против акне и старения с интенсивным прополисом 50 мл",
         "brand": "Institut Esthederm",
         "price": "5.149,00 ₺",
-        "shortDesc": "Ferülik asit ve propolis ile güçlendirilmiş, yaşlanma karşıtı etkili pürüzsüzleştirici krem",
+        "shortDesc": "Антивозрастной разглаживающий крем, обогащенный феруловой кислотой и прополисом.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm",
-                    "Akne ve Sivilce",
-                    "İnce Kırışıklık",
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Блеск кожи и жирный вид",
+                    "Угри и прыщи",
+                    "Мелкие морщины",
+                    "Большие поры и черные точки"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -5758,51 +5758,51 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2189,
         "eslesmeSkoru": 40
     },
     {
         "name": "Photo Reverse High Sun Protection Anti-Photo-Aging Stick Sun Cream 50 мл",
         "brand": "Institut Esthederm",
         "price": "3.399,00 ₺",
-        "shortDesc": "Yüz, dekolte, göz ve dudak çevresi gibi bölgesel kullanıma uygun stick formda, leke karşıtı yüksek güneş koruyucu",
+        "shortDesc": "Солнцезащитный крем с высокой степенью защиты от пигментных пятен в форме карандаша подходит для местного применения на лице, в зоне декольте, вокруг глаз и губ.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Stick Güneş Koruyucu",
+                    "Солнцезащитный крем-карандаш",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Leke Eğilimli Cilt",
+                    "Кожа, склонная к появлению пятен",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Темные пятна и неровный тон кожи",
                     "",
-                    "Foto Yaşlanma(Photoaging)",
+                    "Фотостарение",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -5815,34 +5815,34 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Göz",
+                    "Ресница",
                     "",
-                    "Dudak",
+                    "Губы",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "10 ML",
+                    "10мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
                     "SPF 50+",
                     ""
@@ -5903,38 +5903,38 @@
         "name": "Интенсивная очищающая маска против черных точек и прыщей с прополисом и каолином",
         "brand": "Institut Esthederm",
         "price": "4.159,00 ₺",
-        "shortDesc": "Kaolin kili ve propolis ile güçlendirilmiş derinlemesine arındırıcı sivilce ve siyah nokta karşıtı maske",
+        "shortDesc": "Глубоко очищающая маска против угрей и черных точек, обогащенная каолиновой глиной и прополисом",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Maske"
+                    "Маска"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm",
-                    "Akne ve Sivilce",
-                    "İnce Kırışıklık",
-                    "Geniş Gözenek ve Siyah Nokta",
-                    "Erken Yaşlanma"
+                    "Блеск кожи и жирный вид",
+                    "Угри и прыщи",
+                    "Мелкие морщины",
+                    "Большие поры и черные точки",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -5943,22 +5943,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "75 ML"
+                    "75мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -6004,43 +6004,43 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2191,
         "eslesmeSkoru": 40
     },
     {
         "name": "Интенсивный осветляющий и антиоксидантный эффективный крем для ухода за кожей с интенсивным витамином С 50 мл",
         "brand": "Institut Esthederm",
         "price": "5.149,00 ₺",
-        "shortDesc": "Leke, ışıltı kaybı ve renk eşitsizliği problemlerine karşı hafif dokulu bakım kremi",
+        "shortDesc": "Легкий крем для ухода за кожей против пятен, потери блеска и неравномерного цвета.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Cansız ve Yorgun Görünüm",
-                    "Elastikiyet ve Sıkılık Kaybı"
+                    "Темные пятна и неровный тон кожи",
+                    "Безжизненный и усталый вид",
+                    "Потеря эластичности и упругости"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -6049,22 +6049,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -6098,50 +6098,50 @@
         "imagesLocal": [
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2187,
         "eslesmeSkoru": 33.33
     },
     {
         "name": "Интенсивная сыворотка против морщин для кожи вокруг глаз с гиалуроновой кислотой 15 мл",
         "brand": "Institut Esthederm",
         "price": "4.709,00 ₺",
-        "shortDesc": "Yoğun nemsizlik, ince çizgiler ve kırışıklık görünümüne karşı hyalüronik asit içeren göz kremi",
+        "shortDesc": "Крем для кожи вокруг глаз с гиалуроновой кислотой против интенсивной потери влаги, мелких морщин и складок.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Göz Kremi",
+                    "Крем для век",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     "",
-                    "Işıltı Kaybı ve Mat Görünüm",
+                    "Потеря блеска и тусклый вид",
                     "",
-                    "Cansız ve Yorgun Görünüm",
+                    "Безжизненный и усталый вид",
                     "",
-                    "Derin Kırışıklık",
+                    "Глубокие Морщины",
                     "",
-                    "İnce Kırışıklık",
+                    "Мелкие морщины",
                     "",
-                    "Kuruluk",
+                    "Сухость",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -6154,25 +6154,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Göz",
+                    "Ресница",
                     "",
-                    "Göz Altı ve Çevresi",
+                    "Под глазами и вокруг глаз",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML",
+                    "15мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -6222,29 +6222,29 @@
         "name": "Успокаивающий биомиметический крем для чувствительной кожи против покраснений 50 мл",
         "brand": "Institut Esthederm",
         "price": "2.869,00 ₺",
-        "shortDesc": "Toleransı düşük, çok hassas ve reaktif ciltler için cildin doğal yapısıyla uyumlu %99 oranında biyomimetik krem",
+        "shortDesc": "Крем на 99% биомиметический, совместимый с естественной структурой кожи, для непереносимой, очень чувствительной и реактивной кожи.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi",
-                    "Erken Yaşlanma"
+                    "Непереносимость, аллергия и склонность к розацеа",
+                    "Преждевременное старение"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -6253,22 +6253,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -6309,40 +6309,40 @@
         "name": "Мицеллярное очищающее масло для ухода 150 мл",
         "brand": "Institut Esthederm",
         "price": "1.989,00 ₺",
-        "shortDesc": "Cildi ve makyajı derinlemesine arındıran, temizleyici misel bakım yağı",
+        "shortDesc": "Очищающее мицеллярное масло, которое глубоко очищает кожу и смывает макияж.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Temizleme Jeli",
+                    "Очищающий гель",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     "",
-                    "Cansız ve Yorgun Görünüm",
+                    "Безжизненный и усталый вид",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -6355,23 +6355,23 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "150 ML",
+                    "150мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -6413,36 +6413,36 @@
         "name": "Интенсивная концентрированная сыворотка с витамином C2 против пигментных пятен, 10 мл",
         "brand": "Institut Esthederm",
         "price": "2.869,00 ₺",
-        "shortDesc": "Leke, renk eşitsizliği ve kırışıklık karşıtı, aydınlatıcı konsantre serum.",
+        "shortDesc": "Концентрированная сыворотка, которая осветляет кожу, борется с пятнами, изменениями цвета и морщинами.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm"
+                    "Институт Estheticerm"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum"
+                    "сыворотка"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Cansız ve Yorgun Görünüm",
-                    "Elastikiyet ve Sıkılık Kaybı"
+                    "Темные пятна и неровный тон кожи",
+                    "Безжизненный и усталый вид",
+                    "Потеря эластичности и упругости"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -6451,22 +6451,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
-                    "Boyun"
+                    "Лицо",
+                    "Шея"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "10 ML"
+                    "10мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -6515,35 +6515,35 @@
         "name": "Age Proteom Advanced Serum 30 мл",
         "brand": "Institut Esthederm",
         "price": "6.119,00 ₺",
-        "shortDesc": "Yaşlanma belirtilerini yavaşlatmaya ve cildin kendisini onarmasına yardımcı olan, hücresel yenilenme serumu",
+        "shortDesc": "Сыворотка для клеточной регенерации, которая помогает замедлить признаки старения и восстановить кожу",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Serum",
+                    "сыворотка",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     "",
-                    "Işıltı Kaybı ve Mat Görünüm",
+                    "Потеря блеска и тусклый вид",
                     "",
-                    "Erken Yaşlanma",
+                    "Преждевременное старение",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -6554,25 +6554,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Boyun",
+                    "Шея",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "30 ML",
+                    "30мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -6630,38 +6630,38 @@
         "name": "Интенсивный очищающий гель Propolis+ 200 мл",
         "brand": "Institut Esthederm",
         "price": "2.289,00 ₺",
-        "shortDesc": "Akne eğilimli ciltler için, derinlemesine arındırıcı temizleme jeli",
+        "shortDesc": "Глубоко очищающий гель для кожи, склонной к акне",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Temizleme Jeli",
+                    "Очищающий гель",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt",
+                    "Кожа, склонная к появлению пятен",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Akne Lekeleri",
+                    "Пятна от прыщей",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -6674,16 +6674,16 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML",
+                    "200мл",
                     ""
                 ]
             }
@@ -6725,40 +6725,40 @@
         "name": "Крем-гель для автозагара Hydra Boost 200 мл",
         "brand": "Institut Esthederm",
         "price": "2.879,00 ₺",
-        "shortDesc": "Uzun süre kalıcı, pürüzsüz, doğal bir bronzluk etkisi sağlayan, renkli, güneşsiz bronzlaştırıcı jel-krem",
+        "shortDesc": "Тонированный гель-крем для загара без воздействия солнца, обеспечивающий длительный, ровный, естественный эффект загара.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Bakım Kremi",
+                    "Крем для ухода",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     "",
-                    "Işıltı Kaybı ve Mat Görünüm",
+                    "Потеря блеска и тусклый вид",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -6771,16 +6771,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML",
+                    "200мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli",
+                    "Красочный",
                     ""
                 ]
             }
@@ -6822,24 +6822,24 @@
         "name": "Неразделимый двойной сундук",
         "brand": "Institut Esthederm",
         "price": "2.629,00 ₺",
-        "shortDesc": "Evde Enstitü Bakımı'nın Ayrılmaz İkilisi; Gentle Deep Pore Cleanser 75 ml ve Lightening Buffing Mask 75 ml'den oluşan özel fiyatlı cilt bakım seti",
+        "shortDesc": "Неразлучный дуэт Home Institute Care; набор по специальной цене для ухода за кожей, состоящий из нежного глубокого очищающего средства для пор 75 мл и осветляющей полирующей маски 75 мл.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Bakım Kiti",
+                    "Комплект для технического обслуживания",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -6852,16 +6852,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "150 ML",
+                    "150мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -6904,45 +6904,45 @@
             "urunler\\api\\gorseller\\default.jpg",
             "urunler\\api\\gorseller\\default.jpg"
         ],
-        "ProductId": null,
+        "ProductId": 2426,
         "eslesmeSkoru": 25
     },
     {
         "name": "Adaptasun Увлажняющая солнцезащитная вода 150 мл",
         "brand": "Institut Esthederm",
         "price": "3.389,00 ₺",
-        "shortDesc": "Su Formda Nemlendirici Etkili Güneş Koruyucu",
+        "shortDesc": "Эффективный увлажняющий солнцезащитный крем в водной форме",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Institut Esthederm",
+                    "Институт Estheticerm",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi",
+                    "Солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -6955,25 +6955,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     "",
-                    "Vücut",
+                    "Тело",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "150 ML",
+                    "150мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli",
+                    "Красочный",
                     ""
                 ]
             }
