@@ -3,6 +3,11 @@ const path = require('path');
 
 const dermoPath = path.join(__dirname, 'urunler', 'api', 'products.json');
 const animalPath = path.join(__dirname, 'urunler', 'api', 'hayvan-sagligi.json');
+const detailPath = path.join(__dirname, 'urunler', 'api', 'detay-product.json');
+const animalEnhancedPath = path.join(__dirname, 'urunler', 'api', 'hayvan-sagligi-enhanced.json');
+const biodermaPath = path.join(__dirname, 'urunler', 'api', 'products_bioderma.json');
+const etatPurPath = path.join(__dirname, 'urunler', 'api', 'products_etat-pur.json');
+const esthedermPath = path.join(__dirname, 'urunler', 'api', 'products_institut-esthederm.json');
 const dermoTemplate = path.join(__dirname, 'urunler', 'dermokozmetik', 'product', 'template.html');
 const animalTemplate = path.join(__dirname, 'urunler', 'hayvan-sagligi', 'product', 'template.html');
 
@@ -20,6 +25,19 @@ function slugify(text) {
   str = str.replace(new RegExp(`(\\d+)\\s*(${units})\\b`, 'gi'), '$1-$2');
   str = str.replace(/\s+/g, '-').replace(/[^\w-]+/g, '-').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
   return str || 'isimsiz-urun';
+}
+
+function findBrandExtra(allData, product) {
+  if (!product || !Array.isArray(allData)) return null;
+  const slug = slugify(product.ProductName);
+  const pid = String(product.ProductId);
+  const code = String(product.ProductCode);
+  return (
+    allData.find((b) => String(b.ProductId) === pid) ||
+    allData.find((b) => b.sku && String(b.sku) === code) ||
+    allData.find((b) => b.name && slugify(b.name) === slug) ||
+    null
+  );
 }
 
 async function loadTemplate(segment) {
@@ -67,7 +85,7 @@ async function downloadImages(products) {
   }
 }
 
-async function createPages(products, segment) {
+async function createPages(products, segment, extra) {
   const template = await loadTemplate(segment);
   const list = [];
   for (const p of products) {
@@ -75,7 +93,28 @@ async function createPages(products, segment) {
     const slug = slugify(p.ProductName);
     const outDir = path.join(__dirname, 'urunler', segment, 'product-pages', slug);
     await fs.promises.mkdir(outDir, { recursive: true });
-    await fs.promises.writeFile(path.join(outDir, 'index.html'), template);
+
+    let detail = null;
+    let extraData = null;
+    if (segment === 'dermokozmetik') {
+      detail = extra.detail.find(d => d.ProductId === p.ProductId) || null;
+      const brand = (p.brand || '').toLowerCase();
+      if (brand === 'bioderma') {
+        extraData = findBrandExtra(extra.bioderma, p);
+      } else if (brand === 'etat pur') {
+        extraData = findBrandExtra(extra.etatPur, p);
+      } else if (brand === 'esthederm' || brand === 'institut esthederm') {
+        extraData = findBrandExtra(extra.esthederm, p);
+      }
+    } else {
+      detail = extra.animalEnhanced.find(d => d.ProductId === p.ProductId) || null;
+    }
+
+    const staticObj = { product: p, detail, extra: extraData };
+    const staticScript = `<script>window.STATIC_PRODUCT_DATA = ${JSON.stringify(staticObj)};</script>`;
+    const pageContent = template.replace('<!--STATIC_PRODUCT_DATA-->', staticScript);
+
+    await fs.promises.writeFile(path.join(outDir, 'index.html'), pageContent);
     list.push({ slug, name: p.ProductName });
   }
   await createIndex(list, segment);
@@ -165,11 +204,21 @@ async function createSitemap(dermo, animal) {
 async function generate() {
   let dermo = [];
   let animal = [];
+  let detail = [];
+  let animalEnhanced = [];
+  let bioderma = [];
+  let etatPur = [];
+  let esthederm = [];
   try { dermo = JSON.parse(await fs.promises.readFile(dermoPath, 'utf8')); } catch {}
   try { animal = JSON.parse(await fs.promises.readFile(animalPath, 'utf8')); } catch {}
+  try { detail = JSON.parse(await fs.promises.readFile(detailPath, 'utf8')); } catch {}
+  try { animalEnhanced = JSON.parse(await fs.promises.readFile(animalEnhancedPath, 'utf8')); } catch {}
+  try { bioderma = JSON.parse(await fs.promises.readFile(biodermaPath, 'utf8')); } catch {}
+  try { etatPur = JSON.parse(await fs.promises.readFile(etatPurPath, 'utf8')); } catch {}
+  try { esthederm = JSON.parse(await fs.promises.readFile(esthedermPath, 'utf8')); } catch {}
   await downloadImages([...dermo, ...animal]);
-  await createPages(dermo, 'dermokozmetik');
-  await createPages(animal, 'hayvan-sagligi');
+  await createPages(dermo, 'dermokozmetik', { detail, bioderma, etatPur, esthederm, animalEnhanced: [] });
+  await createPages(animal, 'hayvan-sagligi', { animalEnhanced, detail: [], bioderma: [], etatPur: [], esthederm: [] });
   await createSitemap(dermo, animal);
   console.log('Static product pages generated and sitemap updated.');
 }

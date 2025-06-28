@@ -1439,7 +1439,14 @@
         currentSegment = detectedSegment; 
 
         if (slugFromUrl && currentSegment) {
-            await loadProductDetail(slugFromUrl, currentSegment);
+            if (window.STATIC_PRODUCT_DATA) {
+                const d = window.STATIC_PRODUCT_DATA;
+                currentProduct = d.product;
+                currentEnhancedDetail = d.detail || null;
+                displayProductDetail(currentProduct, currentEnhancedDetail, currentSegment);
+            } else {
+                await loadProductDetail(slugFromUrl, currentSegment);
+            }
         } else {
             const detailContainer = document.getElementById('productDetailContainer');
             if(detailContainer && (!slugFromUrl || !currentSegment) && (window.location.pathname.includes('/product/') || window.location.pathname.includes('/product-pages/'))) { 
@@ -1456,5 +1463,6 @@
     });
 
   </script>
+  <!--STATIC_PRODUCT_DATA-->
 </body>
 </html>
