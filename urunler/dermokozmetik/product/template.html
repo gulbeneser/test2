@@ -966,25 +966,22 @@
         return html;
     }
 
-    function buildDetailsList(details){
-        if(!Array.isArray(details) || details.length === 0) return '';
-        let html = '<ul class="extra-detail-list">';
-        details.forEach(d => {
-            if(!d || !d.key || !d.value) return;
-            html += `<li><strong>${d.key}:</strong> ${d.value}</li>`;
-        });
-        html += '</ul>';
-        return html;
+    function convertCaudalieDetailsToAttributes(details){
+        if(!Array.isArray(details)) return [];
+        return details
+            .filter(d => d && d.key && d.value)
+            .map(d => ({ caption: d.key, values: [d.value] }));
     }
 
     function buildCaudalieTabs(details){
-        if(!Array.isArray(details) || details.length === 0) return {nav:'', content:'', other:[]};
+        if(!Array.isArray(details) || details.length === 0) return {nav:'', content:'', other:[], desc:''};
         const ingredients = [];
         let fullList = '';
         let appTips = '';
         let advice = '';
         const faqs = [];
         const others = [];
+        let description = '';
         details.forEach(d => {
             if(!d || !d.key) return;
             const keyLower = String(d.key).toLowerCase();
@@ -994,9 +991,9 @@
                 if(match){
                     appTips = match[1].trim();
                     const before = value.slice(0, match.index).trim();
-                    if(before) others.push({key:d.key, value:before});
+                    if(before) description = before;
                 }else{
-                    others.push(d);
+                    description = value;
                 }
             }else if(keyLower.includes('application tips')){
                 appTips = value.trim();
@@ -1032,7 +1029,7 @@
             const faqHtml = faqs.map(f=>`<li>${f}</li>`).join('');
             content += `<div id="tabFAQ" class="tab-pane-modern"><ul class="extra-detail-list">${faqHtml}</ul></div>`;
         }
-        return {nav, content, other:others};
+        return {nav, content, other:others, desc: description};
     }
 
     function showError(msg) {
@@ -1353,8 +1350,14 @@
 // ► Ürün adı (i18n + fallback)
 const namePart = getLocalized(extraData, 'name') || product.ProductName;
 
+let caudalieTabs = {nav:'', content:'', other: extraData && Array.isArray(extraData.details) ? extraData.details : [], desc:''};
+if(extraData && product.brand && product.brand.toLowerCase() === 'caudalie'){
+    caudalieTabs = buildCaudalieTabs(extraData.details);
+}
+
 // ► Ürün kısa açıklaması (i18n + fallback)
 const descPart = getLocalized(extraData, 'description') ||
+                 caudalieTabs.desc ||
                  product.ProductShortDescription ||
                  t('shortDescFallback').replace('{product}', product.ProductName);
 
@@ -1390,12 +1393,7 @@ let tabContentHTML    = '';
 
 const detayIcerik = getLocalized(productDetail, 'Ürün Açıklaması') || namePart;
 
-let caudalieTabs = {nav:'', content:'', other: extraData && Array.isArray(extraData.details) ? extraData.details : []};
-if(extraData && product.brand && product.brand.toLowerCase() === 'caudalie'){
-    caudalieTabs = buildCaudalieTabs(extraData.details);
-}
-
-const detailsListHTML = buildDetailsList(caudalieTabs.other);
+const caudalieAttributes = convertCaudalieDetailsToAttributes(caudalieTabs.other);
 
 if (detayIcerik?.trim()) {
   tabNavigationHTML += `
@@ -1407,7 +1405,6 @@ if (detayIcerik?.trim()) {
     <div id="tabDetaylar" class="tab-pane-modern active">
       <h3>${t('tabDetaylar')}</h3>
       <div>${detayIcerik}</div>
-      ${detailsListHTML}
       ${extraData?.url
         ? `<p style="margin-top:1rem;">
              <strong>${t('moreInfoLabel')}</strong>
@@ -1496,11 +1493,12 @@ if (product.brand && product.brand.toLowerCase() === 'caudalie') {
                 tabContentHTML += `<div id="${tabId}" class="tab-pane-modern">${tabHtmlContent}</div>`;
             });
           }
-          if (Array.isArray(extraData.attributes) && extraData.attributes.length > 0) {
+          if ((Array.isArray(extraData.attributes) && extraData.attributes.length > 0) || caudalieAttributes.length > 0) {
             const attrTabId = 'tabAttributes';
-tabNavigationHTML += `<button class="tab-link-modern" data-tab="${attrTabId}">${t('tabAttributes')}</button>`;
+            tabNavigationHTML += `<button class="tab-link-modern" data-tab="${attrTabId}">${t('tabAttributes')}</button>`;
 
-            tabContentHTML += `<div id="${attrTabId}" class="tab-pane-modern">${buildAttributesHTML(extraData.attributes)}</div>`;
+            const attrs = (Array.isArray(extraData.attributes) ? extraData.attributes : []).concat(caudalieAttributes);
+            tabContentHTML += `<div id="${attrTabId}" class="tab-pane-modern">${buildAttributesHTML(attrs)}</div>`;
           }
       }
 
