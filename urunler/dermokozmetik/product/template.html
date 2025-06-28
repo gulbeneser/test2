@@ -893,6 +893,22 @@
         }
     }
 
+    function buildAttributesHTML(attrs) {
+        if (!Array.isArray(attrs) || attrs.length === 0) return '';
+        let html = '<div class="table-responsive">';
+        attrs.forEach(attr => {
+            if(!attr || !attr.caption || !Array.isArray(attr.values)) return;
+            const rows = attr.values
+                .filter(v => v && v.trim() && v.trim() !== '.')
+                .map(v => `<tr><th width="200"><h3>${v}</h3></th></tr>`)
+                .join('');
+            if(rows)
+                html += `<table class="attribute_lists table table-striped"><caption>${attr.caption}</caption><tbody>${rows}</tbody></table>`;
+        });
+        html += '</div>';
+        return html;
+    }
+
     function showError(msg) {
       const detailContainer = document.getElementById('productDetailContainer');
       if (!detailContainer) { return; }
@@ -1030,8 +1046,12 @@
         if (twitterDescMeta) twitterDescMeta.content = description.substring(0,160);
 
         let imageUrl = localImageUrl(product);
-        if (productDetailOrExtra && productDetailOrExtra.imagesLocal && productDetailOrExtra.imagesLocal.length > 0) {
-            imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
+        if (productDetailOrExtra) {
+            if (Array.isArray(productDetailOrExtra.imagesLocal) && productDetailOrExtra.imagesLocal.length > 0 && !/default\.jpg$/i.test(productDetailOrExtra.imagesLocal[0])) {
+                imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
+            } else if (Array.isArray(productDetailOrExtra.imageUrls) && productDetailOrExtra.imageUrls.length > 0) {
+                imageUrl = productDetailOrExtra.imageUrls[0];
+            }
         }
         if (imageUrl) {
             try {
@@ -1147,18 +1167,19 @@
       
       currentProduct = product; 
 
-      let mainImageUrl = localImageUrl(product);
-      let galleryImages = [mainImageUrl];
-
-      if (extraData && extraData.imagesLocal && extraData.imagesLocal.length > 0) {
-          galleryImages = extraData.imagesLocal.map(localPath => {
-              // Ters taksimleri düz taksimle değiştir ve '/urunler/api/' base path'ini kullan
-              // Eğer imagesLocal zaten tam URL ise bu kısım gerekmeyebilir.
-              // Bu örnekte, JSON'daki gibi 'urunler\\api\\gorseller\\...' formatında olduğunu varsayıyoruz
-              return "/" + localPath.replace(/\\/g, '/'); 
-          });
-          if (galleryImages.length > 0) mainImageUrl = galleryImages[0]; 
+      let galleryImages = [];
+      if (extraData) {
+          if (Array.isArray(extraData.imagesLocal) && extraData.imagesLocal.some(p => p && !/default\.jpg$/i.test(p))) {
+              galleryImages = extraData.imagesLocal.filter(p => p && !/default\.jpg$/i.test(p)).map(p => '/' + p.replace(/\\/g, '/'));
+          }
+          if (galleryImages.length === 0 && Array.isArray(extraData.imageUrls) && extraData.imageUrls.length > 0) {
+              galleryImages = extraData.imageUrls.slice();
+          }
       }
+      if (galleryImages.length === 0) {
+          galleryImages = [localImageUrl(product)];
+      }
+      let mainImageUrl = galleryImages[0];
 
       const imageHTML = `
         <div class="product-main-image-wrapper" id="mainProductImageWrapper">
@@ -1286,6 +1307,11 @@
                 tabNavigationHTML += `<button class="tab-link-modern" data-tab="${tabId}">${bTab.title || `Ek Detay ${index + 1}`}</button>`;
                 tabContentHTML += `<div id="${tabId}" class="tab-pane-modern">${tabHtmlContent}</div>`;
             });
+          }
+          if (Array.isArray(extraData.attributes) && extraData.attributes.length > 0) {
+            const attrTabId = 'tabAttributes';
+            tabNavigationHTML += `<button class="tab-link-modern" data-tab="${attrTabId}">Ürün Özellikleri</button>`;
+            tabContentHTML += `<div id="${attrTabId}" class="tab-pane-modern">${buildAttributesHTML(extraData.attributes)}</div>`;
           }
       }
 
