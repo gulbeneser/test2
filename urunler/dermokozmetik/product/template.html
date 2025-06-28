@@ -286,6 +286,9 @@
     .table-responsive th { background-color: #F3F3F3; font-weight: 500; }
     .table-responsive h3 { margin: 0; font-size: 1rem; }
 
+    .extra-detail-list { padding-left: 1.25rem; margin-top: 1rem; }
+    .extra-detail-list li { margin-bottom: 0.4rem; }
+
 
     /* Bioderma tablarındaki modal ve accordion için temel stiller */
     .tab-pane-modern .card { border: 1px solid var(--border-color); margin-bottom: 0.5rem; border-radius: var(--radius); }
@@ -578,6 +581,10 @@
 
     function localImageUrl(product) {
         if (!product || !product.ImageUrl || !product.ProductCode) return product?.ImageUrl || FALLBACK_IMAGE_URL;
+        if (product.brand && String(product.brand).toLowerCase() === 'caudalie') {
+            // Caudalie görselleri yerelde saklanmıyor, orijinal URL kullanılmalı
+            return product.ImageUrl;
+        }
         const match = product.ImageUrl.match(/\.([a-zA-Z0-9]+)(?:[?#].*)?$/);
         const ext = match ? match[1] : 'jpg';
         return `${LOCAL_IMAGE_BASE}${product.ProductCode}.${ext}`;
@@ -959,6 +966,17 @@
         return html;
     }
 
+    function buildDetailsList(details){
+        if(!Array.isArray(details) || details.length === 0) return '';
+        let html = '<ul class="extra-detail-list">';
+        details.forEach(d => {
+            if(!d || !d.key || !d.value) return;
+            html += `<li><strong>${d.key}:</strong> ${d.value}</li>`;
+        });
+        html += '</ul>';
+        return html;
+    }
+
     function showError(msg) {
       const detailContainer = document.getElementById('productDetailContainer');
       if (!detailContainer) { return; }
@@ -1097,10 +1115,10 @@
 
         let imageUrl = localImageUrl(product);
         if (productDetailOrExtra) {
-            if (Array.isArray(productDetailOrExtra.imagesLocal) && productDetailOrExtra.imagesLocal.length > 0 && !/default\.jpg$/i.test(productDetailOrExtra.imagesLocal[0])) {
-                imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
-            } else if (Array.isArray(productDetailOrExtra.imageUrls) && productDetailOrExtra.imageUrls.length > 0) {
+            if (Array.isArray(productDetailOrExtra.imageUrls) && productDetailOrExtra.imageUrls.length > 0) {
                 imageUrl = productDetailOrExtra.imageUrls[0];
+            } else if (Array.isArray(productDetailOrExtra.imagesLocal) && productDetailOrExtra.imagesLocal.length > 0 && !/default\.jpg$/i.test(productDetailOrExtra.imagesLocal[0])) {
+                imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
             }
         }
         if (imageUrl) {
@@ -1222,11 +1240,11 @@
 
       let galleryImages = [];
       if (extraData) {
-          if (Array.isArray(extraData.imagesLocal) && extraData.imagesLocal.some(p => p && !/default\.jpg$/i.test(p))) {
-              galleryImages = extraData.imagesLocal.filter(p => p && !/default\.jpg$/i.test(p)).map(p => '/' + p.replace(/\\/g, '/'));
-          }
-          if (galleryImages.length === 0 && Array.isArray(extraData.imageUrls) && extraData.imageUrls.length > 0) {
+          if (Array.isArray(extraData.imageUrls) && extraData.imageUrls.length > 0) {
               galleryImages = extraData.imageUrls.slice();
+          }
+          if (galleryImages.length === 0 && Array.isArray(extraData.imagesLocal) && extraData.imagesLocal.some(p => p && !/default\.jpg$/i.test(p))) {
+              galleryImages = extraData.imagesLocal.filter(p => p && !/default\.jpg$/i.test(p)).map(p => '/' + p.replace(/\\/g, '/'));
           }
       }
       galleryImages = dedupeLimitImages(galleryImages);
@@ -1313,6 +1331,9 @@ let tabNavigationHTML = '';
 let tabContentHTML    = '';
 
 const detayIcerik = getLocalized(productDetail, 'Ürün Açıklaması') || namePart;
+const detailsListHTML = extraData && Array.isArray(extraData.details) && extraData.details.length
+    ? buildDetailsList(extraData.details)
+    : '';
 
 if (detayIcerik?.trim()) {
   tabNavigationHTML += `
@@ -1324,6 +1345,7 @@ if (detayIcerik?.trim()) {
     <div id="tabDetaylar" class="tab-pane-modern active">
       <h3>${t('tabDetaylar')}</h3>
       <div>${detayIcerik}</div>
+      ${detailsListHTML}
       ${extraData?.url
         ? `<p style="margin-top:1rem;">
              <strong>${t('moreInfoLabel')}</strong>
