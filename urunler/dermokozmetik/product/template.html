@@ -982,6 +982,7 @@
     const CAUDALIE_APP_TIP_KEYS = ['application tips','uygulama ipuclari','uygulama ipuçları','советы по применению'];
     const CAUDALIE_ADVICE_KEYS = ['advice','vinotherapists','vinoterapistlerin','совет'];
     const CAUDALIE_FAQ_KEYS = ['frequently asked questions','sikca sorulan sorular','sıkça sorulan sorular','часто задаваемые вопросы','faq'];
+    const CAUDALIE_INGREDIENT_KEYWORDS = ['musk','ginger','neroli','papaya','enzyme','enzimi','vinifer','glycol','glikol','папай','винифер','гликол'];
 
     function convertCaudalieDetailsToAttributes(details){
         if(!Array.isArray(details)) return [];
@@ -1029,7 +1030,7 @@
                 if(value.trim()) faqs.push(value.trim());
             }else if(CAUDALIE_FULL_LIST_KEYS.some(k => nk.includes(k))){
                 fullList = value.trim();
-            }else if(nk.includes('ingredients') || nk.includes('musk') || nk.includes('ginger') || nk.includes('neroli')){
+            }else if(CAUDALIE_INGREDIENT_KEYWORDS.some(k => nk.includes(k))){
                 if(value.trim()) ingredients.push({key:d.key, value:value.trim()});
             }else{
                 others.push(d);
@@ -1038,20 +1039,20 @@
         let nav='';
         let content='';
         if(ingredients.length || fullList){
-            nav += `<button class="tab-link-modern" data-tab="tabIngredients">Our ingredients</button>`;
+            nav += `<button class="tab-link-modern" data-tab="tabIngredients">${t('tabOurIngredients')}</button>`;
             const list = ingredients.map(it=>`<li><strong>${it.key}:</strong> ${it.value}</li>`).join('');
             content += `<div id="tabIngredients" class="tab-pane-modern"><ul class="extra-detail-list">${list}</ul>${fullList?`<p>${fullList}</p>`:''}</div>`;
         }
         if(appTips){
-            nav += `<button class="tab-link-modern" data-tab="tabApplication">Application tips</button>`;
+            nav += `<button class="tab-link-modern" data-tab="tabApplication">${t('tabApplicationTips')}</button>`;
             content += `<div id="tabApplication" class="tab-pane-modern"><p>${appTips}</p></div>`;
         }
         if(advice){
-            nav += `<button class="tab-link-modern" data-tab="tabAdvice">Advice from our Vinotherapists</button>`;
+            nav += `<button class="tab-link-modern" data-tab="tabAdvice">${t('tabAdviceVinotherapists')}</button>`;
             content += `<div id="tabAdvice" class="tab-pane-modern"><p>${advice}</p></div>`;
         }
         if(faqs.length){
-            nav += `<button class="tab-link-modern" data-tab="tabFAQ">Frequently asked questions</button>`;
+            nav += `<button class="tab-link-modern" data-tab="tabFAQ">${t('tabSSS')}</button>`;
             const faqHtml = faqs.map(f=>`<li>${f}</li>`).join('');
             content += `<div id="tabFAQ" class="tab-pane-modern"><ul class="extra-detail-list">${faqHtml}</ul></div>`;
         }
@@ -1195,13 +1196,6 @@
         if (twitterDescMeta) twitterDescMeta.content = description.substring(0,160);
 
         let imageUrl = localImageUrl(product);
-        if (productDetailOrExtra) {
-            if (Array.isArray(productDetailOrExtra.imageUrls) && productDetailOrExtra.imageUrls.length > 0) {
-                imageUrl = productDetailOrExtra.imageUrls[0];
-            } else if (Array.isArray(productDetailOrExtra.imagesLocal) && productDetailOrExtra.imagesLocal.length > 0 && !/default\.jpg$/i.test(productDetailOrExtra.imagesLocal[0])) {
-                imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
-            }
-        }
         if (imageUrl) {
             try {
               const absoluteImageUrl = new URL(imageUrl, window.location.origin).href;
@@ -1319,13 +1313,13 @@
       
       currentProduct = product; 
 
-      let galleryImages = [];
+      let galleryImages = [localImageUrl(product)];
       if (extraData) {
           if (Array.isArray(extraData.imageUrls) && extraData.imageUrls.length > 0) {
-              galleryImages = extraData.imageUrls.slice();
+              galleryImages = galleryImages.concat(extraData.imageUrls);
           }
-          if (galleryImages.length === 0 && Array.isArray(extraData.imagesLocal) && extraData.imagesLocal.some(p => p && !/default\.jpg$/i.test(p))) {
-              galleryImages = extraData.imagesLocal.filter(p => p && !/default\.jpg$/i.test(p)).map(p => '/' + p.replace(/\\/g, '/'));
+          if (Array.isArray(extraData.imagesLocal) && extraData.imagesLocal.some(p => p && !/default\.jpg$/i.test(p))) {
+              galleryImages = galleryImages.concat(extraData.imagesLocal.filter(p => p && !/default\.jpg$/i.test(p)).map(p => '/' + p.replace(/\\/g, '/')));
           }
       }
       galleryImages = dedupeLimitImages(galleryImages);
