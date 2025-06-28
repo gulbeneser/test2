@@ -15,7 +15,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -23,7 +23,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Papaya Enzimi, Viniferin, Glikolik asit"
             },
             {
@@ -222,7 +222,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -230,7 +230,7 @@
                 "value": "Jel-Krem"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferin, Niacinamidler"
             },
             {
@@ -441,11 +441,11 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Zeytin skualeni, Viniferin"
             },
             {
@@ -654,7 +654,7 @@
                 "value": "Hassas ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -662,7 +662,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik üzüm suyu, Panthenol (Pro-vitamin B5)"
             },
             {
@@ -902,11 +902,11 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirin"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit"
             },
             {
@@ -1046,7 +1046,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -1054,7 +1054,7 @@
                 "value": "Serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Zeytin skualeni, Viniferin"
             },
             {
@@ -1381,7 +1381,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -1389,7 +1389,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -1612,7 +1612,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
@@ -1620,7 +1620,7 @@
                 "value": "Hafif jel serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Polifenoller, Niacinamidler"
             },
             {
@@ -1845,7 +1845,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nihai Yaşlanma Karşıtı"
             },
             {
@@ -1853,7 +1853,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, İnci karışımı, Uzun ömürlü PatentCaudalie x Harvard Tıp Fakültesi*, Doğal dolgunlaştırıcı dolgu"
             },
             {
@@ -2188,7 +2188,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Cilt güzelleştirme"
             },
             {
@@ -2196,7 +2196,7 @@
                 "value": "Sis"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Yeşil üzüm, Gül esansiyel yağı, Biberiye esansiyel yağı"
             },
             {
@@ -2453,7 +2453,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Güneş bakımı"
             },
             {
@@ -2461,7 +2461,7 @@
                 "value": "Sopa"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Organik Buriti Yağı"
             },
             {
@@ -2696,7 +2696,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Güneş bakımı"
             },
             {
@@ -2704,7 +2704,7 @@
                 "value": "Sıvı"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ladin özütü, Polifenoller, E vitamini"
             },
             {
@@ -2922,7 +2922,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -2930,7 +2930,7 @@
                 "value": "Serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Zeytin skualeni, Viniferin"
             },
             {
@@ -3111,7 +3111,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -3119,7 +3119,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -3350,7 +3350,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Güneş bakımı"
             },
             {
@@ -3358,7 +3358,7 @@
                 "value": "Sıvı"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ladin özütü, Polifenoller, E vitamini"
             },
             {
@@ -3537,7 +3537,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -3545,7 +3545,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -3792,7 +3792,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -3800,7 +3800,7 @@
                 "value": "Hafif Serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik üzüm suyu, Polifenoller"
             },
             {
@@ -4013,7 +4013,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -4021,7 +4021,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Papaya Enzimi, Viniferin, Glikolik asit"
             },
             {
@@ -4220,7 +4220,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -4228,7 +4228,7 @@
                 "value": "Jel-Krem"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferin, Niacinamidler"
             },
             {
@@ -4439,7 +4439,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nihai Yaşlanma Karşıtı"
             },
             {
@@ -4447,7 +4447,7 @@
                 "value": "Serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferine, Niacinamidler, Uzun Ömürlülük PatentCaudalie x Harvard Tıp Fakültesi*"
             },
             {
@@ -4660,7 +4660,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Cilt güzelleştirme"
             },
             {
@@ -4668,7 +4668,7 @@
                 "value": "Sıvı"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu, Eritrüloz, %100 Doğal kökenli DHA"
             },
             {
@@ -4869,7 +4869,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -4877,7 +4877,7 @@
                 "value": "Hafif Serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -5094,7 +5094,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -5102,7 +5102,7 @@
                 "value": "Hafif Serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -5335,7 +5335,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -5343,7 +5343,7 @@
                 "value": "Sis"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu"
             },
             {
@@ -5482,7 +5482,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
@@ -5490,7 +5490,7 @@
                 "value": "Yumuşak krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Polifenoller, Silika tozu, Bitkisel skualen"
             },
             {
@@ -5693,7 +5693,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -5701,7 +5701,7 @@
                 "value": "Sis"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu"
             },
             {
@@ -5858,7 +5858,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -5866,7 +5866,7 @@
                 "value": "Jel-Krem"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -6065,7 +6065,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -6073,7 +6073,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -6274,7 +6274,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -6282,7 +6282,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -6483,7 +6483,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nihai Yaşlanma Karşıtı"
             },
             {
@@ -6491,7 +6491,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferine, Uzun Ömürlü PatentCaudalie x Harvard Tıp Fakültesi*, Doğal dolgunlaştırıcı dolgu"
             },
             {
@@ -6752,7 +6752,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nihai Yaşlanma Karşıtı"
             },
             {
@@ -6760,7 +6760,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferine, Uzun Ömürlü PatentCaudalie x Harvard Tıp Fakültesi*, Doğal dolgunlaştırıcı dolgu"
             },
             {
@@ -7023,7 +7023,7 @@
                 "value": "Kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nihai Yaşlanma Karşıtı"
             },
             {
@@ -7031,7 +7031,7 @@
                 "value": "Zengin krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Biyoseramidler, Uzun Ömürlü PatentCaudalie x Harvard Tıp Fakültesi*, Doğal dolgunlaştırıcı dolgu"
             },
             {
@@ -7244,7 +7244,7 @@
                 "value": "Kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nihai Yaşlanma Karşıtı"
             },
             {
@@ -7252,7 +7252,7 @@
                 "value": "Zengin krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Biyoseramidler, Uzun Ömürlü PatentCaudalie x Harvard Tıp Fakültesi*, Doğal dolgunlaştırıcı dolgu"
             },
             {
@@ -7467,7 +7467,7 @@
                 "value": "Normal cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -7475,7 +7475,7 @@
                 "value": "Jel-Krem"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Papatya, Hyaluronik asit, Organik üzüm suyu"
             },
             {
@@ -7730,11 +7730,11 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Polifenoller, Niacinamidler"
             },
             {
@@ -7833,7 +7833,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -7841,7 +7841,7 @@
                 "value": "Sütlü yağ"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Tatlı badem yağı, Hint yağı"
             },
             {
@@ -8099,7 +8099,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -8192,7 +8192,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -8200,7 +8200,7 @@
                 "value": "Sütlü yağ"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Tatlı badem yağı, Hint yağı"
             },
             {
@@ -8453,7 +8453,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Detoks"
             },
             {
@@ -8461,7 +8461,7 @@
                 "value": "Maske"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Pembe kil, Kahve özütü, Üzüm posası"
             },
             {
@@ -8662,7 +8662,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -8670,7 +8670,7 @@
                 "value": "Köpük"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Adaçayı, Papatya, Yeşil üzüm"
             },
             {
@@ -8803,7 +8803,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -8811,7 +8811,7 @@
                 "value": "Köpük"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Adaçayı, Papatya, Yeşil üzüm"
             },
             {
@@ -9047,7 +9047,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Güneş bakımı"
             },
             {
@@ -9055,7 +9055,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ladin özütü, Polifenoller, E vitamini"
             },
             {
@@ -9226,7 +9226,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -9234,7 +9234,7 @@
                 "value": "Köpük"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Adaçayı, Papatya, Yeşil üzüm"
             },
             {
@@ -9469,7 +9469,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Güneş bakımı"
             },
             {
@@ -9477,7 +9477,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ladin özütü, Polifenoller, E vitamini"
             },
             {
@@ -9711,7 +9711,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Güneş bakımı"
             },
             {
@@ -9719,7 +9719,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ladin özütü, Polifenoller, E vitamini"
             },
             {
@@ -9937,7 +9937,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Güneş bakımı"
             },
             {
@@ -9945,7 +9945,7 @@
                 "value": "Sıvı"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ladin özütü, Polifenoller, E vitamini"
             },
             {
@@ -10145,7 +10145,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirin"
             },
             {
@@ -10153,7 +10153,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Aloe vera özütü, Organik üzüm suyu, Hindistan cevizi yağı"
             },
             {
@@ -10340,7 +10340,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Şişkinlik karşıtı"
             },
             {
@@ -10348,7 +10348,7 @@
                 "value": "Yumuşak krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferin, Niacinamidler, Kafein"
             },
             {
@@ -10623,7 +10623,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -10631,7 +10631,7 @@
                 "value": "Köpük"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu, Meyve asitleri, Mandelik asit"
             },
             {
@@ -10832,7 +10832,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -10840,7 +10840,7 @@
                 "value": "Köpük"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu, Meyve asitleri, Mandelik asit"
             },
             {
@@ -11047,7 +11047,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Işıltı, Leke karşıtı"
             },
             {
@@ -11055,7 +11055,7 @@
                 "value": "Maske"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferin, Glikolik asit, Meyve asitleri"
             },
             {
@@ -11235,7 +11235,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Renklendirilmiş"
             },
             {
@@ -11243,7 +11243,7 @@
                 "value": "Öz"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Beyaz şakayık, Organik üzüm suyu, Glikolik asit"
             },
             {
@@ -11467,7 +11467,7 @@
                 "value": "Eller"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Anti-koyu leke"
             },
             {
@@ -11475,7 +11475,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik shea yağı, Avokado Yağı, Viniferine"
             },
             {
@@ -11632,7 +11632,7 @@
                 "value": "Karma cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -11640,7 +11640,7 @@
                 "value": "Sıvı"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen 1"
             },
             {
@@ -11817,7 +11817,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı"
             },
             {
@@ -11825,7 +11825,7 @@
                 "value": "Hafif Serum"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -11908,7 +11908,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -11916,7 +11916,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -12037,7 +12037,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
@@ -12045,7 +12045,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Organik üzüm suyu, Polifenoller"
             },
             {
@@ -12270,7 +12270,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Kırışıklık karşıtı, sıkılık"
             },
             {
@@ -12278,7 +12278,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Resveratrol, Vegan Kolajen Güçlendirici, Vegan Kolajen 1"
             },
             {
@@ -12377,7 +12377,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
@@ -12385,7 +12385,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Organik üzüm suyu, Polifenoller"
             },
             {
@@ -12626,7 +12626,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
@@ -12634,7 +12634,7 @@
                 "value": "Losyon"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Organik üzüm suyu, 6 adet arındırıcı esansiyel yağ"
             },
             {
@@ -12843,7 +12843,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
@@ -12851,7 +12851,7 @@
                 "value": "Losyon"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Organik üzüm suyu, 6 adet arındırıcı esansiyel yağ"
             },
             {
@@ -13080,7 +13080,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler"
             },
             {
@@ -13088,7 +13088,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Niacinamidler, Çay ağacı esansiyel yağı"
             },
             {
@@ -13265,7 +13265,7 @@
                 "value": "Sivilceye meyilli ciltler"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Lekeler, genişlemiş gözenekler, siyah noktalar, yağlı cilt"
             },
             {
@@ -13273,7 +13273,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Doğal salisilik asit, Organik üzüm suyu, Polifenoller"
             },
             {
@@ -13427,7 +13427,7 @@
                 "value": "Kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nihai Yaşlanma Karşıtı"
             },
             {
@@ -13435,7 +13435,7 @@
                 "value": "Zengin krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Viniferine, Uzun Ömürlü PatentCaudalie x Harvard Tıp Fakültesi*, Doğal dolgunlaştırıcı dolgu"
             },
             {
@@ -13540,7 +13540,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Cilt güzelleştirme"
             },
             {
@@ -13548,7 +13548,7 @@
                 "value": "Sis"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Yeşil üzüm, Gül esansiyel yağı, Biberiye esansiyel yağı"
             },
             {
@@ -13743,7 +13743,7 @@
                 "value": "Kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -13751,7 +13751,7 @@
                 "value": "Zengin krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik shea yağı, Organik üzüm suyu"
             },
             {
@@ -14008,7 +14008,7 @@
                 "value": "Kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -14016,7 +14016,7 @@
                 "value": "Zengin krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik shea yağı, Organik üzüm suyu"
             },
             {
@@ -14237,7 +14237,7 @@
                 "value": "Karma cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -14245,7 +14245,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Aloe vera özü, Organik üzüm suyu"
             },
             {
@@ -14488,7 +14488,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -14496,7 +14496,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Papatya, Organik üzüm suyu"
             },
             {
@@ -14757,7 +14757,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirme ve hassas ciltler"
             },
             {
@@ -14765,7 +14765,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu, Polifenoller, Organik centella asiatica"
             },
             {
@@ -14948,7 +14948,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -14956,7 +14956,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Papatya, Organik üzüm suyu"
             },
             {
@@ -15217,7 +15217,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleyici"
             },
             {
@@ -15225,7 +15225,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Jojoba yağı, Tatlı badem yağı, Organik shea yağı, Peygamber çiçeği özü, Polifenoller, Hint yağı"
             },
             {
@@ -15504,7 +15504,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -15512,7 +15512,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik gül suyu, Vinolevure"
             },
             {
@@ -15773,7 +15773,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleyici"
             },
             {
@@ -15781,7 +15781,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Jojoba yağı, Tatlı badem yağı, Organik shea yağı, Peygamber çiçeği özü, Polifenoller, Hint yağı"
             },
             {
@@ -16067,7 +16067,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -16075,7 +16075,7 @@
                 "value": "Parlatıcı krem"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu, Organik mentol, Volkanik kum mikroboncukları"
             },
             {
@@ -16214,7 +16214,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -16222,7 +16222,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik gül suyu, Vinolevure"
             },
             {
@@ -16481,7 +16481,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Peeling yapın"
             },
             {
@@ -16489,7 +16489,7 @@
                 "value": "Parçacık fırçalama"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Bal, Jojoba mikro boncukları"
             },
             {
@@ -16641,11 +16641,11 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Peeling yapın"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Yeşil üzüm, Organik üzüm suyu"
             },
             {
@@ -16864,11 +16864,11 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Yorgunluk önleyici"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Jojoba yağı, Bal, Kahve özütü, Üzüm posası"
             },
             {
@@ -16987,7 +16987,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Yaşlanma karşıtı, donukluk, çevresel etkenler"
             },
             {
@@ -16995,7 +16995,7 @@
                 "value": "Kuru yağ"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Tatlı badem yağı, Neroli esansiyel yağı"
             },
             {
@@ -17159,11 +17159,11 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Yorgunluk önleyici"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Tatlı badem yağı, Pembe kil, Kahve özü, Üzüm çekirdeği"
             },
             {
@@ -17257,7 +17257,7 @@
                 "value": "Vücut"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Sıkılaştırıcı"
             },
             {
@@ -17265,7 +17265,7 @@
                 "value": "Parçacık fırçalama"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Bal"
             },
             {
@@ -17416,7 +17416,7 @@
                 "value": "Vücut"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Sıkılaştırıcı"
             },
             {
@@ -17424,7 +17424,7 @@
                 "value": "Merhem"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Organik shea yağı, Polifenoller, İris özü"
             },
             {
@@ -17579,7 +17579,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Neroli, Ahududu üzümü, Paçuli"
             },
             {
@@ -17714,7 +17714,7 @@
                 "value": "Normal cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -17722,7 +17722,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik shea yağı, Polifenoller"
             },
             {
@@ -17841,7 +17841,7 @@
                 "value": "Normal cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -17849,7 +17849,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik shea yağı, Polifenoller"
             },
             {
@@ -17968,7 +17968,7 @@
                 "value": "Normal cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -17976,7 +17976,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik shea yağı, Polifenoller"
             },
             {
@@ -18253,7 +18253,7 @@
                 "value": "Normal cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -18261,7 +18261,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik shea yağı, Polifenoller"
             },
             {
@@ -18550,7 +18550,7 @@
                 "value": "Kuru ila çok kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -18558,7 +18558,7 @@
                 "value": "Merhem"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Organik shea yağı, Çöl hurması yağı"
             },
             {
@@ -18767,7 +18767,7 @@
                 "value": "Normal cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -18775,7 +18775,7 @@
                 "value": "Süt"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Hyaluronik asit, Organik shea yağı, Polifenoller"
             },
             {
@@ -18926,7 +18926,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -18934,7 +18934,7 @@
                 "value": "Yağ"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Argan Yağı, Üzüm Çekirdeği Yağı, Dikenli Armut Yağı"
             },
             {
@@ -19145,7 +19145,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -19153,7 +19153,7 @@
                 "value": "Yağ"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Argan Yağı, Üzüm Çekirdeği Yağı, Dikenli Armut Yağı"
             },
             {
@@ -19365,7 +19365,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -19373,7 +19373,7 @@
                 "value": "Yağ"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Argan Yağı, Üzüm Çekirdeği Yağı, Shea Yağı"
             },
             {
@@ -19587,7 +19587,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Koku"
             },
             {
@@ -19595,7 +19595,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Beyaz misk, Zencefil, Portakal çiçeği"
             },
             {
@@ -19734,7 +19734,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -19742,7 +19742,7 @@
                 "value": "Yağ"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Argan Yağı, Üzüm Çekirdeği Yağı, Shea Yağı"
             },
             {
@@ -19962,7 +19962,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Koku"
             },
             {
@@ -19970,7 +19970,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Beyaz misk, Zencefil, Portakal çiçeği"
             },
             {
@@ -20092,7 +20092,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Koku"
             },
             {
@@ -20100,7 +20100,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Portakal çiçeği suyu, Yasemin, Hindistan cevizi"
             },
             {
@@ -20238,7 +20238,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Banyo ve Duş"
             },
             {
@@ -20246,7 +20246,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Beyaz misk, Zencefil, Portakal çiçeği"
             },
             {
@@ -20351,7 +20351,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ravent, Gül, Beyaz misk"
             },
             {
@@ -20476,7 +20476,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Banyo ve Duş"
             },
             {
@@ -20484,7 +20484,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Portakal çiçeği suyu, Yasemin, Hindistan cevizi"
             },
             {
@@ -20608,7 +20608,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Koku"
             },
             {
@@ -20616,7 +20616,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Ravent, Gül, Beyaz misk"
             },
             {
@@ -20774,7 +20774,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Koku"
             },
             {
@@ -20782,7 +20782,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Beyaz misk, Bergamot, İris"
             },
             {
@@ -20922,7 +20922,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Koku"
             },
             {
@@ -20930,7 +20930,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Greyfurt, Mandalina, Sedir"
             },
             {
@@ -21087,7 +21087,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Banyo ve Duş"
             },
             {
@@ -21095,7 +21095,7 @@
                 "value": "Jel"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Beyaz misk, Bergamot, İris"
             },
             {
@@ -21221,11 +21221,11 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Koku"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Neroli, Ahududu üzümü, Paçuli"
             },
             {
@@ -21364,7 +21364,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Banyo ve Duş"
             },
             {
@@ -21372,7 +21372,7 @@
                 "value": "Duş Jeli"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Karpuz, Pembe karabiber, Beyaz gül"
             },
             {
@@ -21515,7 +21515,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Banyo ve Duş"
             },
             {
@@ -21523,7 +21523,7 @@
                 "value": "Duş Jeli"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Neroli, Ahududu üzümü, Paçuli"
             },
             {
@@ -21730,7 +21730,7 @@
                 "value": "Kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -21738,7 +21738,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Organik shea yağı, Polifenoller"
             },
             {
@@ -21921,7 +21921,7 @@
                 "value": "Kuru cilt"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Vücut nemlendirmesi"
             },
             {
@@ -21929,7 +21929,7 @@
                 "value": "Krema"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Üzüm çekirdeği yağı, Organik shea yağı, Polifenoller"
             },
             {
@@ -22078,7 +22078,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Arındırmak"
             },
             {
@@ -22086,7 +22086,7 @@
                 "value": "Sopa"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik üzüm suyu, Organik Okaliptüs"
             },
             {
@@ -22322,7 +22322,7 @@
                 "value": "Dudaklar"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirin"
             },
             {
@@ -22330,7 +22330,7 @@
                 "value": "Sopa"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik shea yağı, Polifenoller"
             },
             {
@@ -22477,7 +22477,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Temizleme ve Makyaj Temizleme"
             },
             {
@@ -22485,7 +22485,7 @@
                 "value": "su"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik gül suyu, Vinolevure"
             },
             {
@@ -22793,7 +22793,7 @@
                 "value": "Dudaklar"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Nemlendirin"
             },
             {
@@ -22801,7 +22801,7 @@
                 "value": "Sopa"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Organik shea yağı, Polifenoller"
             },
             {
@@ -22942,7 +22942,7 @@
                 "value": "Tüm cilt tipleri"
             },
             {
-                "key": "Kaygı",
+                "key": "İhtiyaç",
                 "value": "Detoks"
             },
             {
@@ -22950,7 +22950,7 @@
                 "value": "Maske"
             },
             {
-                "key": "Temel bileşenler",
+                "key": "Ana İçerikler",
                 "value": "Pembe kil, Kahve özütü, Üzüm posası"
             },
             {
