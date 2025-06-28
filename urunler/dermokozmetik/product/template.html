@@ -610,11 +610,27 @@
 
     async function loadBiodermaData(){
         if(biodermaDataCache) return biodermaDataCache;
+        const lang = document.documentElement.lang || 'tr';
+        const fileMap = {
+            'tr': 'products_bioderma.json',
+            'en': 'products_bioderma_en.json',
+            'ru': 'products_bioderma_ru.json'
+        };
+        const fileName = fileMap[lang] || 'products_bioderma.json';
         try {
-            biodermaDataCache = await fetchJsonData('products_bioderma.json');
+            biodermaDataCache = await fetchJsonData(fileName);
         } catch(e){
-            console.warn('products_bioderma.json yüklenemedi:', e);
-            biodermaDataCache = [];
+            console.warn(`${fileName} yüklenemedi:`, e);
+            if(fileName !== 'products_bioderma.json'){
+                try{
+                    biodermaDataCache = await fetchJsonData('products_bioderma.json');
+                }catch(e2){
+                    console.warn('products_bioderma.json yüklenemedi:', e2);
+                    biodermaDataCache = [];
+                }
+            }else{
+                biodermaDataCache = [];
+            }
         }
         return biodermaDataCache;
     }
@@ -1613,7 +1629,20 @@
             }
             if(canonicalLink) canonicalLink.href = window.location.origin + window.location.pathname;
         }
-        window.addEventListener('languageChanged', () => {
+        window.addEventListener('languageChanged', async () => {
+            biodermaDataCache = null;
+            if(currentProduct && currentProduct.brand && currentProduct.brand.toLowerCase() === 'bioderma') {
+                try {
+                    const biodermaResponse = await loadBiodermaData();
+                    const biodermaData = findBiodermaExtra(biodermaResponse, currentProduct);
+                    if(biodermaData) {
+                        currentEnhancedDetail = biodermaData;
+                        currentExtraData = biodermaData;
+                    }
+                } catch(e) {
+                    console.warn('Bioderma verileri yeniden yüklenemedi:', e);
+                }
+            }
             if(currentProduct) displayProductDetail(currentProduct, currentEnhancedDetail, currentExtraData);
         });
     });
