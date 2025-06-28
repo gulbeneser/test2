@@ -278,6 +278,14 @@
     .ingredients-section .ask-naos-link a { color: var(--primary-theme); font-weight: 500; text-decoration: underline; }
     .ingredients-section .ingredients-disclaimer { font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; }
 
+    /* Brand attribute tables (Ürün Özellikleri) */
+    .table-responsive { width: 100%; overflow-x: auto; margin-bottom: 1rem; }
+    .table-responsive table { width: 100%; border-collapse: collapse; margin-bottom: .75rem; }
+    .table-responsive caption { text-align: left; font-weight: 600; padding-bottom: .25rem; color: var(--text-dark); }
+    .table-responsive th, .table-responsive td { padding: .5rem; border: 1px solid var(--border-color); text-align: left; }
+    .table-responsive th { background-color: #F3F3F3; font-weight: 500; }
+    .table-responsive h3 { margin: 0; font-size: 1rem; }
+
 
     /* Bioderma tablarındaki modal ve accordion için temel stiller */
     .tab-pane-modern .card { border: 1px solid var(--border-color); margin-bottom: 0.5rem; border-radius: var(--radius); }
@@ -1021,7 +1029,10 @@
         const twitterDescMeta = document.querySelector('meta[name="twitter:description"]');
         if (twitterDescMeta) twitterDescMeta.content = description.substring(0,160);
 
-        const imageUrl = localImageUrl(product);
+        let imageUrl = localImageUrl(product);
+        if (productDetailOrExtra && productDetailOrExtra.imagesLocal && productDetailOrExtra.imagesLocal.length > 0) {
+            imageUrl = '/' + productDetailOrExtra.imagesLocal[0].replace(/\\/g, '/');
+        }
         if (imageUrl) {
             try {
               const absoluteImageUrl = new URL(imageUrl, window.location.origin).href;
