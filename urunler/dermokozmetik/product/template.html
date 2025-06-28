@@ -1240,6 +1240,12 @@
 
           if (extraData.tabs && extraData.tabs.length > 0) {
             extraData.tabs.forEach((bTab, index) => {
+                const idLower = String(bTab.id || '').toLowerCase();
+                const titleLower = String(bTab.title || '').toLowerCase();
+                if (idLower.includes('review') || idLower.includes('yorum') ||
+                    titleLower.includes('review') || titleLower.includes('yorum')) {
+                    return; // Yorum/Review sekmelerini gösterme
+                }
                 // Eğer "composition" id'li tab ise ve içindekiler zaten eklendiyse, bu tabı farklı işleyebiliriz veya atlayabiliriz.
                 // Bu örnekte, tüm tabları ekliyoruz. "Bileşenler" tabı için görseli kaldıracağız.
                 let tabHtmlContent = bTab.html || "<p>İçerik bulunamadı.</p>";
