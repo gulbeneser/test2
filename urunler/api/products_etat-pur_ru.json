@@ -3,34 +3,34 @@
         "name": "Чистый активный пептид-4 Pro Collagen Plumping Pure Concentrate Care 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Dolgunlaştırıcı ve Mimik Çizgi Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированное средство для придания упругости и разглаживания мимических морщин",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Elastikiyet ve Sıkılık Kaybı"
+                    "Потеря эластичности и упругости"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -39,21 +39,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -94,24 +94,24 @@
         "name": "Тающая увлажняющая молочко для тела Расслабляющее и увлажняющее молочко для тела 400 мл",
         "brand": "Etat Pur",
         "price": "1.629,00 ₺",
-        "shortDesc": "Tüm ciltler için rahatlatıcı ve nemlendirici vücut sütü.",
+        "shortDesc": "Успокаивающее и увлажняющее молочко для тела для всех типов кожи.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Vücut Nemlendirici"
+                    "Увлажнитель для тела"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "400 ML"
+                    "400мл"
                 ]
             }
         ],
@@ -155,16 +155,16 @@
         "shortDesc": "",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur",
+                    "Стадия Пур",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Bez Materyal Çanta",
+                    "Сумка из тканевого материала",
                     ""
                 ]
             }
@@ -206,35 +206,35 @@
         "name": "Чистая активная гликолевая кислота 10% AHA пилинг эффективный чистый концентрат уход 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Gözenekleri sıkılaştırmaya, leke görünümünü azaltmaya ve cildin pürüzsüz görünmesine yardımcı olan konsantre bakım",
+        "shortDesc": "Концентрированный уход, который помогает сузить поры, уменьшить проявления пятен и разгладить кожу.",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
-                    "Işıltı Kaybı ve Mat Görünüm"
+                    "Темные пятна и неровный тон кожи",
+                    "Потеря блеска и тусклый вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -243,15 +243,15 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -292,38 +292,38 @@
         "name": "Чистый активный чистый витамин C 10% Концентрированный уход против старения и пятен 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Yaşlanma ve Koyu Leke Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против старения и темных пятен",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur",
+                    "Стадия Пур",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü",
+                    "Концентрированное средство по уходу",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt",
+                    "Кожа, склонная к появлению пятен",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Темные пятна и неровный тон кожи",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "30-34",
                     "",
@@ -334,16 +334,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML",
+                    "15мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -393,35 +393,35 @@
         "name": "Чистая активная лимонная кислота 26% Чистый концентрат для сужения пор 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Gözenek Karşıtı ve Işıltı Etkili Konsantre Bakım",
+        "shortDesc": "Концентрированный уход с эффектом сужения пор и осветления кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Işıltı Kaybı ve Mat Görünüm",
-                    "Cansız ve Yorgun Görünüm"
+                    "Потеря блеска и тусклый вид",
+                    "Безжизненный и усталый вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -430,21 +430,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -485,34 +485,34 @@
         "name": "Чистый активный концентрат Glabridin Anti-Stain Pure 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Leke Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против пятен",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt"
+                    "Кожа, склонная к появлению пятен"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği"
+                    "Темные пятна и неровный тон кожи"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -521,21 +521,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -576,34 +576,34 @@
         "name": "Чистый активный ресвератрол, глубокий концентрат против морщин, 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Kırışıklık Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против морщин",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Olgun Cilt"
+                    "Зрелая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Derin Kırışıklık"
+                    "Глубокие Морщины"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -612,21 +612,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -667,35 +667,35 @@
         "name": "Чистая активная гиалуроновая кислота против морщин Pure Concentrate Care 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "İnce Kırışıklık Karşıtı ve Sıkılaştırıcı Etkili Konsantre Bakım",
+        "shortDesc": "Концентрированный уход с эффектом против морщин и укрепления кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Elastikiyet ve Sıkılık Kaybı",
-                    "İnce Kırışıklık"
+                    "Потеря эластичности и упругости",
+                    "Мелкие морщины"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -704,21 +704,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -759,34 +759,34 @@
         "name": "Pure Cleanser Очищающий гель для лица от угрей и черных точек 200 мл",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Arındırıcı Yüz Yıkama Jeli",
+        "shortDesc": "Очищающий гель для умывания лица",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Temizleme Jeli"
+                    "Очищающий гель"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Блеск кожи и жирный вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -795,21 +795,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -862,35 +862,35 @@
         "name": "Pure Cleanser Питательное нежное очищающее молочко для лица 200 мл для сухой чувствительной кожи",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Rahatlatıcı Yüz ve Makyaj Temizleme Sütü",
+        "shortDesc": "Успокаивающее молочко для лица и снятия макияжа",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Temizleme Sütü"
+                    "Очищающее молочко"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Недостаток влажности",
+                    "Сильная сухость и склонность к атопии"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -899,21 +899,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -954,34 +954,34 @@
         "name": "Pure Cleanser Очищающая мицеллярная вода для снятия макияжа с глаз и лица 200 мл",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Arındırıcı Yüz ve Makyaj Temizleme Misel Suyu",
+        "shortDesc": "Очищающая мицеллярная вода для лица и снятия макияжа",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Misel Su"
+                    "Мицеллярная вода"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Блеск кожи и жирный вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -990,21 +990,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "200 ML"
+                    "200мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1053,34 +1053,34 @@
         "name": "Pure Cleanser Gentle Face Make-Up Remover Foam 150 мл Комбинированная жирная кожа",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Nazik Yüz Temizleme Köpüğü",
+        "shortDesc": "Нежная очищающая пенка для лица",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Temizleme Köpüğü"
+                    "Очищающая пена"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Блеск кожи и жирный вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1089,15 +1089,15 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "150 ML"
+                    "150мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1138,38 +1138,38 @@
         "name": "Pure Cleanser Нежный очищающий и восстанавливающий пилинг-гель для лица 50 мл",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Nazik Yüz Temizleme Peelingi",
+        "shortDesc": "Нежный очищающий скраб для лица",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur",
+                    "Стадия Пур",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Yüz Peelingi",
+                    "Пилинг лица",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Geniş Gözenek ve Siyah Nokta",
+                    "Большие поры и черные точки",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -1182,23 +1182,23 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML",
+                    "50мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -1248,55 +1248,55 @@
         "name": "Чистый активный глюконат цинка 3% Концентрированный уход против блеска 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Parlama Karşıtı ve Sebum Dengeleyici Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против блеска и балансировки кожного сала",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Блеск кожи и жирный вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1337,55 +1337,55 @@
         "name": "Чистый активный прополис, концентрированный уход против угрей и черных точек, 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Akne Karşıtı ve Sebum Dengeleyici Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против акне и для балансировки себума",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Akne ve Sivilce"
+                    "Угри и прыщи"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -1426,56 +1426,56 @@
         "name": "Чистая активная салициловая кислота 2% Концентрат против черных точек 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Sivilce & Siyah Nokta Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против угрей и черных точек",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Akne ve Sivilce",
-                    "Akne Lekeleri"
+                    "Угри и прыщи",
+                    "Пятна от прыщей"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34"
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1516,36 +1516,36 @@
         "name": "Чистый активный витамин Е 3,93% антиоксидантный эффективный чистый концентрированный уход 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Antioksidan Etkili Konsantre Bakım",
+        "shortDesc": "Концентрированный уход с антиоксидантным эффектом",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Akne Lekeleri",
-                    "Nemsizlik",
-                    "Cansız ve Yorgun Görünüm"
+                    "Пятна от прыщей",
+                    "Недостаток влажности",
+                    "Безжизненный и усталый вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1554,21 +1554,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -1609,35 +1609,35 @@
         "name": "Чистый активный концентрат алоэ вера против сухости, успокаивающий кожу, 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Nemsizlik ve Kuruluk Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированный уход против влаги и сухости",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Сильная сухость и склонность к атопии"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1646,21 +1646,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -1701,35 +1701,35 @@
         "name": "Чистый активный D-пантенол 5,25% увлажняющий и восстанавливающий чистый концентрированный уход 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Yatıştırıcı ve Cilt Bariyerini Yenileyici Etkili Konsantre Bakım",
+        "shortDesc": "Концентрированный уход с успокаивающим и восстанавливающим кожный барьер эффектом",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Сильная сухость и склонность к атопии"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1738,21 +1738,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1793,34 +1793,34 @@
         "name": "Pure Cleanser Sebum Balancing Purifying White Clay Mask 50 мл для комбинированной кожи",
         "brand": "Etat Pur",
         "price": "739,00 ₺",
-        "shortDesc": "Arındırıcı Yüz Maskesi",
+        "shortDesc": "Очищающая маска для лица",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Yüz Maskesi"
+                    "Медицинская маска"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Geniş Gözenek ve Siyah Nokta"
+                    "Большие поры и черные точки"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1829,15 +1829,15 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "50 ML"
+                    "50мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1878,35 +1878,35 @@
         "name": "Чистый активный эноксолон 2% против покраснений Pure Concentrate Care 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Kızarıklık Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против покраснений",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü"
+                    "Концентрированное средство по уходу"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
-                    "Hassas ve Kızarıklık Eğilimli Cilt"
+                    "Нормальная кожа",
+                    "Чувствительная и склонная к покраснениям кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi"
+                    "Непереносимость, аллергия и склонность к розацеа"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -1915,21 +1915,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -1970,34 +1970,34 @@
         "name": "Pure Moisturizers Матирующий гель-крем для жирной кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Yağlı Ciltler için Sebum Dengeleyici Jel Krem",
+        "shortDesc": "Гель-крем для балансировки себума для жирной кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cilt Parlaması ve Yağlı Görünüm"
+                    "Блеск кожи и жирный вид"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2006,21 +2006,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML"
+                    "40мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli"
+                    "Красочный"
                 ]
             }
         ],
@@ -2073,35 +2073,35 @@
         "name": "Pure Moisturizers Увлажняющий и успокаивающий крем для чувствительной кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Normal ve Hassas Ciltler için Yatıştırıcı Yüz Kremi",
+        "shortDesc": "Успокаивающий крем для лица для нормальной и чувствительной кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Hassas ve Kızarıklık Eğilimli Cilt"
+                    "Чувствительная и склонная к покраснениям кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
-                    "Toleranssızlık, Alerji ve Rozasea Eğilimi"
+                    "Недостаток влажности",
+                    "Непереносимость, аллергия и склонность к розацеа"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2110,21 +2110,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML"
+                    "40мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2173,28 +2173,28 @@
         "name": "Pure Moisturizers Легкий увлажняющий крем для комбинированной кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Karma ve Yağlı Ciltler için Hafif Dokulu Yüz Kremi",
+        "shortDesc": "Легкий крем для лица для комбинированной и жирной кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Karma, Yağlı ve Akne Eğilimli Cilt"
+                    "Комбинированная, жирная и склонная к акне кожа"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2203,21 +2203,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML"
+                    "40мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2270,34 +2270,34 @@
         "name": "Pure Moisturizers Интенсивный увлажняющий крем для сухой кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Kuru Citler için Yoğun Dokulu Yüz Kremi",
+        "shortDesc": "Крем для лица с интенсивной текстурой для сухой кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi"
+                    "Сильная сухость и склонность к атопии"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2306,21 +2306,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML"
+                    "40мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2373,35 +2373,35 @@
         "name": "Pure Moisturizers Увлажняющий бальзам для очень сухой кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Çok Kuru Citler için Yoğun Dokulu Yüz Kremi",
+        "shortDesc": "Крем для лица с интенсивной текстурой для очень сухой кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem"
+                    "Увлажняющий крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Kuru ve Atopi Eğilimli Cilt"
+                    "Сухая и атопическая кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Yoğun Kuruluk ve Atopi Eğilimi",
-                    "Kuruluk"
+                    "Сильная сухость и склонность к атопии",
+                    "Сухость"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2410,21 +2410,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML"
+                    "40мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2465,35 +2465,35 @@
         "name": "Pure Moisturizers Увлажняющий крем для контура глаз против старения 15 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Rahatlatıcı ve Kırışıklık Karşıtı Göz Çevresi Kremi",
+        "shortDesc": "Успокаивающий и против морщин крем для контура глаз",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Göz Kremi"
+                    "Крем для век"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Selülit",
-                    "Göz Altı Torbaları ve Morlukları"
+                    "Целлюлит",
+                    "Мешки и темные круги под глазами"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2502,22 +2502,22 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Göz",
-                    "Göz Altı ve Çevresi"
+                    "Ресница",
+                    "Под глазами и вокруг глаз"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML"
+                    "15мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2558,34 +2558,34 @@
         "name": "Pure Moisturizers Увлажняющий лосьон на водной основе для всех типов кожи 125 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Su Bazlı Nemlendirici",
+        "shortDesc": "Увлажнитель на водной основе",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Losyon"
+                    "Лосьон"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik"
+                    "Недостаток влажности"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "30-34",
@@ -2594,21 +2594,21 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "125 ML"
+                    "125мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             }
         ],
@@ -2649,42 +2649,42 @@
         "name": "Pure UV Protector 100% Mineral Filter SPF30+ Солнцезащитный крем для всех типов кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.299,00 ₺",
-        "shortDesc": "Hassas ve Tüm Ciltler için SPF 30 Saf Güneş Koruyucu",
+        "shortDesc": "SPF 30 Чистый солнцезащитный крем для чувствительной и всех типов кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur",
+                    "Стадия Пур",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi",
+                    "Солнцезащитный крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Güneş Yanığı",
+                    "Солнечный ожог",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
-                    "3 ve Üzeri",
+                    "3 и выше",
                     "",
-                    "12 ve Üzeri",
+                    "12 и старше",
                     "",
                     "18-29",
                     "",
@@ -2697,30 +2697,30 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML",
+                    "40мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
-                    "SPF 30",
+                    "SPF30",
                     ""
                 ]
             }
@@ -2767,38 +2767,38 @@
         "name": "Pure UV Protector 100% Mineral Filter SPF50 Солнцезащитный крем для всех типов кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.299,00 ₺",
-        "shortDesc": "Hassas ve Tüm Ciltler için SPF 50+ Saf Güneş Koruyucu",
+        "shortDesc": "SPF 50+ Чистый солнцезащитный крем для чувствительной и всех типов кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur"
+                    "Стадия Пур"
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Güneş Kremi"
+                    "Солнцезащитный крем"
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt"
+                    "Нормальная кожа"
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Güneş Yanığı"
+                    "Солнечный ожог"
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
-                    "3 ve Üzeri",
-                    "10 ve Üzeri",
-                    "12 ve Üzeri",
+                    "3 и выше",
+                    "10 и старше",
+                    "12 и старше",
                     "18-29",
                     "30-34",
                     "35-44",
@@ -2806,25 +2806,25 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz"
+                    "Лицо"
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML"
+                    "40мл"
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz"
+                    "Бесцветный"
                 ]
             },
             {
-                "caption": "SPF Değeri",
+                "caption": "Значение SPF",
                 "values": [
                     "SPF 50+",
                     ""
@@ -2873,40 +2873,40 @@
         "name": "Pure Active Pure Niacinamide 5% Концентрированный уход против пятен Pure 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Işıltı Etkili ve Pürüz Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированный уход с эффектом блеска и против гладкости",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur",
+                    "Стадия Пур",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Yüz Serumu",
+                    "Сыворотка для лица",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Leke Eğilimli Cilt",
+                    "Кожа, склонная к появлению пятен",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Akne Lekeleri",
+                    "Пятна от прыщей",
                     "",
-                    "Koyu Leke ve Cilt Tonu Eşitsizliği",
+                    "Темные пятна и неровный тон кожи",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -2919,16 +2919,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML",
+                    "15мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
@@ -2970,40 +2970,40 @@
         "name": "Чистый активный ретинол 0,3% Концентрированный уход против морщин 15 мл",
         "brand": "Etat Pur",
         "price": "1.199,00 ₺",
-        "shortDesc": "Olgun Ciltlerde Sarkma ve Kırışıklık Karşıtı Konsantre Bakım",
+        "shortDesc": "Концентрированное средство против провисания и морщин для зрелой кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur",
+                    "Стадия Пур",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Konsantre Bakım Ürünü",
+                    "Концентрированное средство по уходу",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Cansız ve Yorgun Görünüm",
+                    "Безжизненный и усталый вид",
                     "",
-                    "Elastikiyet ve Sıkılık Kaybı",
+                    "Потеря эластичности и упругости",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3016,23 +3016,23 @@
                 ]
             },
             {
-                "caption": "Kullanım Bölgesi",
+                "caption": "Область применения",
                 "values": [
-                    "Yüz",
+                    "Лицо",
                     ""
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "15 ML",
+                    "15мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renkli",
+                    "Красочный",
                     ""
                 ]
             }
@@ -3086,40 +3086,40 @@
         "name": "Освежающий гель-крем Pure Moisturizers для комбинированной и жирной кожи 40 мл",
         "brand": "Etat Pur",
         "price": "1.069,00 ₺",
-        "shortDesc": "Karma ve Yağlı Ciltler için Ferahlatıcı Jel Krem",
+        "shortDesc": "Освежающий гель-крем для комбинированной и жирной кожи",
         "attributes": [
             {
-                "caption": "Marka",
+                "caption": "Бренд",
                 "values": [
-                    "Etat Pur",
+                    "Стадия Пур",
                     ""
                 ]
             },
             {
-                "caption": "Ürün Tipi",
+                "caption": "Тип продукта",
                 "values": [
-                    "Nemlendirici Krem",
+                    "Увлажняющий крем",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Tipi",
+                "caption": "Тип кожи",
                 "values": [
-                    "Normal Cilt",
+                    "Нормальная кожа",
                     "",
-                    "Karma, Yağlı ve Akne Eğilimli Cilt",
+                    "Комбинированная, жирная и склонная к акне кожа",
                     ""
                 ]
             },
             {
-                "caption": "Cilt Endişesi",
+                "caption": "Проблемы с кожей",
                 "values": [
-                    "Nemsizlik",
+                    "Недостаток влажности",
                     ""
                 ]
             },
             {
-                "caption": "Yaş",
+                "caption": "Возраст",
                 "values": [
                     "18-29",
                     "",
@@ -3132,16 +3132,16 @@
                 ]
             },
             {
-                "caption": "Gramaj",
+                "caption": "Масса",
                 "values": [
-                    "40 ML",
+                    "40мл",
                     ""
                 ]
             },
             {
-                "caption": "Renk",
+                "caption": "Цвет",
                 "values": [
-                    "Renksiz",
+                    "Бесцветный",
                     ""
                 ]
             }
