@@ -13,18 +13,6 @@
   force  = true
 
 [[redirects]]
-  from   = "/urunler"
-  to     = "/tr/urunler/"
-  status = 301
-  force  = true
-
-[[redirects]]
-  from   = "/urunler/*"
-  to     = "/tr/urunler/:splat"
-  status = 301
-  force  = true
-
-[[redirects]]
   from   = "/urunler/assets/*"
   to     = "/urunler/assets/:splat"
   status = 200
@@ -62,13 +50,13 @@
 # 2) Ürün detay (template)
 # ---------------------------------------------
 [[redirects]]
-  from   = "/:lang/urunler/hayvan-sagligi/product/*"
-  to     = "/:lang/urunler/hayvan-sagligi/product/template.html"
+  from   = "/urunler/hayvan-sagligi/product/*"
+  to     = "/urunler/hayvan-sagligi/product/template.html"
   status = 200
 
 [[redirects]]
-  from   = "/:lang/urunler/dermokozmetik/product/*"
-  to     = "/:lang/urunler/dermokozmetik/product/template.html"
+  from   = "/urunler/dermokozmetik/product/*"
+  to     = "/urunler/dermokozmetik/product/template.html"
   status = 200
 
 # ---------------------------------------------
@@ -83,40 +71,40 @@
 # 3) Kategori alt-index'leri
 # ---------------------------------------------
 [[redirects]]
-  from   = "/:lang/urunler/hayvan-sagligi/kategori/*"
-  to     = "/:lang/urunler/hayvan-sagligi/kategori/index.html"
+  from   = "/urunler/hayvan-sagligi/kategori/*"
+  to     = "/urunler/hayvan-sagligi/kategori/index.html"
   status = 200
 
 [[redirects]]
-  from   = "/:lang/urunler/hayvan-sagligi/product-pages/*"
-  to     = "/:lang/urunler/hayvan-sagligi/product-pages/:splat/index.html"
+  from   = "/urunler/hayvan-sagligi/product-pages/*"
+  to     = "/urunler/hayvan-sagligi/product-pages/:splat/index.html"
   status = 200
 
 # Allow direct access to dermokozmetik product pages
 [[redirects]]
-  from   = "/:lang/urunler/dermokozmetik/product-pages/*"
-  to     = "/:lang/urunler/dermokozmetik/product-pages/:splat/index.html"
+  from   = "/urunler/dermokozmetik/product-pages/*"
+  to     = "/urunler/dermokozmetik/product-pages/:splat/index.html"
   status = 200
 
 # ---------------------------------------------
 # 4) Kategori ana-index'leri
 # ---------------------------------------------
 [[redirects]]
-  from   = "/:lang/urunler/hayvan-sagligi/*"
-  to     = "/:lang/urunler/hayvan-sagligi/index.html"
+  from   = "/urunler/hayvan-sagligi/*"
+  to     = "/urunler/hayvan-sagligi/index.html"
   status = 200
 
 [[redirects]]
-  from   = "/:lang/urunler/dermokozmetik/*"
-  to     = "/:lang/urunler/dermokozmetik/index.html"
+  from   = "/urunler/dermokozmetik/*"
+  to     = "/urunler/dermokozmetik/index.html"
   status = 200
 
 # ---------------------------------------------
 # 5) Ürün listesi ana sayfası
 # ---------------------------------------------
 [[redirects]]
-  from   = "/:lang/urunler/*"
-  to     = "/:lang/urunler/index.html"
+  from   = "/urunler/*"
+  to     = "/urunler/index.html"
   status = 200
 
 # ---------------------------------------------

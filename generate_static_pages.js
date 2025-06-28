@@ -1,50 +1,10 @@
 const fs = require('fs');
 const path = require('path');
-try {
-  require('dotenv').config();
-} catch {}
 
 const dermoPath = path.join(__dirname, 'urunler', 'api', 'products.json');
 const animalPath = path.join(__dirname, 'urunler', 'api', 'hayvan-sagligi.json');
 const dermoTemplate = path.join(__dirname, 'urunler', 'dermokozmetik', 'product', 'template.html');
 const animalTemplate = path.join(__dirname, 'urunler', 'hayvan-sagligi', 'product', 'template.html');
-
-const languages = ['tr', 'en', 'ru'];
-
-const cachePath = path.join(__dirname, 'translation_cache.json');
-let translationCache = {};
-try {
-  translationCache = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
-} catch {}
-
-async function translateText(text, targetLang) {
-  if (targetLang === 'tr') return text;
-  if (!text) return '';
-  const key = `${targetLang}:${text}`;
-  if (translationCache[key]) return translationCache[key];
-  const prompt = `Translate this text to ${targetLang}:\n${text}`;
-  const apiKey = process.env.GEMINI_API_KEY;
-  let translated = text;
-  if (apiKey) {
-    try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-04-17:generateContent?key=${apiKey}`;
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: prompt }] }]
-        })
-      });
-      const data = await res.json();
-      translated = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || text;
-    } catch (err) {
-      console.warn('Translation failed', err);
-    }
-  }
-  translationCache[key] = translated;
-  fs.writeFileSync(cachePath, JSON.stringify(translationCache, null, 2));
-  return translated;
-}
 
 function slugify(text) {
   if (text == null) return 'isimsiz-urun';
@@ -107,33 +67,26 @@ async function downloadImages(products) {
   }
 }
 
-async function createPages(products, segment, lang) {
+async function createPages(products, segment) {
   const template = await loadTemplate(segment);
   const list = [];
   for (const p of products) {
     if (!p || !p.ProductName) continue;
-    const name = await translateText(p.ProductName, lang);
-    const slug = slugify(name);
-    const outDir = path.join(__dirname, lang, 'urunler', segment, 'product-pages', slug);
+    const slug = slugify(p.ProductName);
+    const outDir = path.join(__dirname, 'urunler', segment, 'product-pages', slug);
     await fs.promises.mkdir(outDir, { recursive: true });
-    let page = template.replace('<html lang="tr">', `<html lang="${lang}">`);
-    const hreflang = languages
-      .map(l => `<link rel="alternate" hreflang="${l}" href="/${l}/urunler/${segment}/product-pages/${slug}/" />`)
-      .join('\n');
-    page = page.replace('</head>', `${hreflang}\n</head>`);
-    await fs.promises.writeFile(path.join(outDir, 'index.html'), page);
-    list.push({ slug, name });
+    await fs.promises.writeFile(path.join(outDir, 'index.html'), template);
+    list.push({ slug, name: p.ProductName });
   }
-  await createIndex(list, segment, lang);
-  await createCategoryIndex(list, segment, lang);
+  await createIndex(list, segment);
 }
 
-async function createIndex(items, segment, lang) {
+async function createIndex(items, segment) {
   const links = items
-    .map(({ slug, name }) => `    <li><a href="${slug}/">${name}</a></li>`)
+    .map(({ slug, name }) => `    <li><a href="${slug}/">${name}</a></li>`) 
     .join('\n');
   const html = `<!DOCTYPE html>
-<html lang="${lang}">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -148,35 +101,11 @@ ${links}
 </html>`;
   const outPath = path.join(
     __dirname,
-    lang,
     'urunler',
     segment,
     'product-pages',
     'index.html'
   );
-  await fs.promises.mkdir(path.dirname(outPath), { recursive: true });
-  await fs.promises.writeFile(outPath, html);
-}
-
-async function createCategoryIndex(items, segment, lang) {
-  const links = items
-    .map(({ slug, name }) => `    <li><a href="product-pages/${slug}/">${name}</a></li>`)
-    .join('\n');
-  const html = `<!DOCTYPE html>
-<html lang="${lang}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${segment}</title>
-</head>
-<body>
-  <h1>${segment}</h1>
-  <ul>
-${links}
-  </ul>
-</body>
-</html>`;
-  const outPath = path.join(__dirname, lang, 'urunler', segment, 'index.html');
   await fs.promises.mkdir(path.dirname(outPath), { recursive: true });
   await fs.promises.writeFile(outPath, html);
 }
@@ -204,23 +133,20 @@ function extractStaticUrls() {
 async function createSitemap(dermo, animal) {
   const today = new Date().toISOString().slice(0, 10);
   const urls = extractStaticUrls();
-  for (const lang of languages) {
-    urls.push(`https://www.serakinci.com/${lang}/urunler/`);
-    urls.push(`https://www.serakinci.com/${lang}/urunler/dermokozmetik/`);
-    urls.push(`https://www.serakinci.com/${lang}/urunler/hayvan-sagligi/`);
-    for (const p of dermo) {
-      if (p && p.ProductName) {
-        const name = await translateText(p.ProductName, lang);
-        const slug = slugify(name);
-        urls.push(`https://www.serakinci.com/${lang}/urunler/dermokozmetik/product-pages/${slug}/`);
-      }
+  for (const p of dermo) {
+    if (p && p.ProductName) {
+      const slug = slugify(p.ProductName);
+      urls.push(
+        `https://www.serakinci.com/urunler/dermokozmetik/product-pages/${slug}/`
+      );
     }
-    for (const p of animal) {
-      if (p && p.ProductName) {
-        const name = await translateText(p.ProductName, lang);
-        const slug = slugify(name);
-        urls.push(`https://www.serakinci.com/${lang}/urunler/hayvan-sagligi/product-pages/${slug}/`);
-      }
+  }
+  for (const p of animal) {
+    if (p && p.ProductName) {
+      const slug = slugify(p.ProductName);
+      urls.push(
+        `https://www.serakinci.com/urunler/hayvan-sagligi/product-pages/${slug}/`
+      );
     }
   }
   const entries = urls
@@ -236,40 +162,14 @@ async function createSitemap(dermo, animal) {
   await fs.promises.writeFile(path.join(__dirname, 'sitemap.html'), xml);
 }
 
-async function createRootIndex(lang) {
-  const dermoName = await translateText('dermokozmetik', lang);
-  const animalName = await translateText('hayvan sagligi', lang);
-  const html = `<!DOCTYPE html>
-<html lang="${lang}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>urunler</title>
-</head>
-<body>
-  <h1>urunler</h1>
-  <ul>
-    <li><a href="dermokozmetik/">${dermoName}</a></li>
-    <li><a href="hayvan-sagligi/">${animalName}</a></li>
-  </ul>
-</body>
-</html>`;
-  const outPath = path.join(__dirname, lang, 'urunler', 'index.html');
-  await fs.promises.mkdir(path.dirname(outPath), { recursive: true });
-  await fs.promises.writeFile(outPath, html);
-}
-
 async function generate() {
   let dermo = [];
   let animal = [];
   try { dermo = JSON.parse(await fs.promises.readFile(dermoPath, 'utf8')); } catch {}
   try { animal = JSON.parse(await fs.promises.readFile(animalPath, 'utf8')); } catch {}
   await downloadImages([...dermo, ...animal]);
-  for (const lang of languages) {
-    await createPages(dermo, 'dermokozmetik', lang);
-    await createPages(animal, 'hayvan-sagligi', lang);
-    await createRootIndex(lang);
-  }
+  await createPages(dermo, 'dermokozmetik');
+  await createPages(animal, 'hayvan-sagligi');
   await createSitemap(dermo, animal);
   console.log('Static product pages generated and sitemap updated.');
 }
