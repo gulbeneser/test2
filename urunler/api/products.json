@@ -290,6 +290,16 @@
     "cat": "Bioderma"
   },
   {
+    "ProductId": 2012,
+    "ProductName": "BIODERMA PHOTODERM SPOT SPF50+ 150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006140874.jpg",
+    "ProductCode": "1006140874",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2015,
     "ProductName": "INSTA-MASQUE DETOXIFYING+GLOW SİYAH",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUXE038.jpg",
@@ -518,6 +528,26 @@
     "anaKategori": "Dermokozmetik",
     "brand": "Nuxe",
     "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2057,
+    "ProductName": "PHOTODERM SPOT-AGE SPF50+ 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006623738_1.jpg",
+    "ProductCode": "1006623738",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2059,
+    "ProductName": "PHOTODERM COVER TOUCH SPF50+ LIGHT 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006613424_1.jpg",
+    "ProductCode": "1006613424",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
   },
   {
     "ProductId": 2060,
@@ -2260,6 +2290,36 @@
     "cat": "Bioderma"
   },
   {
+    "ProductId": 2288,
+    "ProductName": "PHOTODERM CREAM SPF50+ LIGHT 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006583516.jpg",
+    "ProductCode": "1006583516",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2289,
+    "ProductName": "PHOTODERM NUDE SPF50+ VERY LIGHT 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006593455.jpg",
+    "ProductCode": "1006593455",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2290,
+    "ProductName": "PHOTODERM M SPF50+ LIGHT 40 ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006614414.jpg",
+    "ProductCode": "1006614414",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2293,
     "ProductName": "MELTING EXFOLIATING GEL 50 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/3002101500.jpg",
@@ -2640,6 +2700,16 @@
     "cat": "Phyto"
   },
   {
+    "ProductId": 2359,
+    "ProductName": "PHOTODERM PEDIATRICS SPRAY SPF50+ 200ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006657316.jpg",
+    "ProductCode": "1006657316",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2360,
     "ProductName": "PHYTOCOLOR SHAMPOO 100ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/PHYC4PH10008A32591.jpg",
@@ -2990,6 +3060,26 @@
     "cat": "Nuxe"
   },
   {
+    "ProductId": 2419,
+    "ProductName": "PHOTODERM COVER TOUCH SPF50+ VERY LIGHT 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006607415.jpg",
+    "ProductCode": "1006607415",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2421,
+    "ProductName": "PHOTODERM SPRAY  SPF50+ 300 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006639921.jpg",
+    "ProductCode": "1006639921",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2422,
     "ProductName": "MICELLAR CLEANSING OIL CARE 150ML ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/2002092080.jpg",
@@ -3310,6 +3400,26 @@
     "cat": "Bioderma"
   },
   {
+    "ProductId": 2458,
+    "ProductName": "PHOTODERM BRONZ SUN PROTECTIVE WATER SPF30 200ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006647880_1.jpg",
+    "ProductCode": "1006647880",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2459,
+    "ProductName": "PHOTODERM STICK SPF50+ 8GR -YENİ-",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006624438_1.jpg",
+    "ProductCode": "1006624438",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2460,
     "ProductName": "MATRICIUM™ 30 x 1 ML KAPSÜL ",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1010506586.jpg",
@@ -3344,6 +3454,26 @@
     "ProductName": "CICABIO CLEANSING BALM 200 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008110019.jpg",
     "ProductCode": "1008110019",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2465,
+    "ProductName": "PHOTODERM PEDIATRICS LAIT SPF50+ 100 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006667286_1.jpg",
+    "ProductCode": "1006667286",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2466,
+    "ProductName": "PHOTODERM AQUAFLUID SPF50&SENSIBIO H2O 100ML KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990080.jpg",
+    "ProductCode": "1006990080",
     "description": "",
     "anaKategori": "Dermokozmetik",
     "brand": "Bioderma",
@@ -3760,6 +3890,16 @@
     "cat": "Caudalie"
   },
   {
+    "ProductId": 2569,
+    "ProductName": "PHOTODERM CREAM SPF50+ 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006573523_1.jpg",
+    "ProductCode": "1006573523",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2571,
     "ProductName": "FLEUR DE VIGNE FRAGRANCE 50 ML (üzüm çekirdegi)",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSCAUFRA4008097.jpg",
@@ -3778,6 +3918,26 @@
     "anaKategori": "Dermokozmetik",
     "brand": "Caudalie",
     "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2578,
+    "ProductName": "BIODERMA PHOTODERM AR SPF50+ 30 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006613707_1.jpg",
+    "ProductCode": "1006613707",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2582,
+    "ProductName": "BIODERMA PHOTODERM AKN MAT SPF30 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006613691_1.jpg",
+    "ProductCode": "1006613691",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
   },
   {
     "ProductId": 2583,
@@ -3834,6 +3994,16 @@
     "ProductName": "CICABIO CREAM SPF 50+",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008085547.jpg",
     "ProductCode": "1008085547",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2595,
+    "ProductName": "PHOTODERM MINERAL FLUID SPF50+",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006623721.jpg",
+    "ProductCode": "1006623721",
     "description": "",
     "anaKategori": "Dermokozmetik",
     "brand": "Bioderma",
@@ -3940,6 +4110,16 @@
     "cat": "Bioderma"
   },
   {
+    "ProductId": 2616,
+    "ProductName": "PHOTODERM AQUAFLUIDE SPF50+ 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006564377_1.jpg",
+    "ProductCode": "1006564377",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2619,
     "ProductName": "CICABIO POMAD",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1008095405.jpg",
@@ -3974,6 +4154,26 @@
     "ProductName": "HYDRABIO H2O 100 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1007211157.jpg",
     "ProductCode": "1007211157",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2628,
+    "ProductName": "PHOTODERM M SPF50+ GOLDEN 40ML ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006623714_1.jpg",
+    "ProductCode": "1006623714",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2630,
+    "ProductName": "PHOTODERM SUN MIST SPF50+ 150 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006643622_1.jpg",
+    "ProductCode": "1006643622",
     "description": "",
     "anaKategori": "Dermokozmetik",
     "brand": "Bioderma",
@@ -4034,6 +4234,16 @@
     "ProductName": "ATODERM SHOWER GEL 1LT",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001082926.jpg",
     "ProductCode": "1001082926",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2640,
+    "ProductName": "PHOTODERM SPRAY  SPF50+ 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006633677.jpg",
+    "ProductCode": "1006633677",
     "description": "",
     "anaKategori": "Dermokozmetik",
     "brand": "Bioderma",
@@ -4174,6 +4384,16 @@
     "ProductName": "ATODERM LIP BALM",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1001163756.jpg",
     "ProductCode": "1001163756",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2667,
+    "ProductName": "PHOTODERM NUDE TOUCH SPF 50+ LIGHT 40 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006603448_1.jpg",
+    "ProductCode": "1006603448",
     "description": "",
     "anaKategori": "Dermokozmetik",
     "brand": "Bioderma",
@@ -4618,6 +4838,26 @@
     "anaKategori": "Dermokozmetik",
     "brand": "Nuxe",
     "cat": "Nuxe"
+  },
+  {
+    "ProductId": 2738,
+    "ProductName": "PHOTODERM MINERAL COMPACT LIGHT SPF50+",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006623790_1.jpg",
+    "ProductCode": "1006623790",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2743,
+    "ProductName": "PHOTODERM AFTER SUN GEL-CREAM 200 ML",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006653820_1.jpg",
+    "ProductCode": "1006653820",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
   },
   {
     "ProductId": 2744,
@@ -5700,6 +5940,116 @@
     "cat": "Caudalie"
   },
   {
+    "ProductId": 2935,
+    "ProductName": "BIODERMA PHOTODERM AKN MAT SPF30 150 ML ÖZEL FİYAT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990088.jpg",
+    "ProductCode": "1006990088",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2936,
+    "ProductName": "PHOTODERM SPRAY SPF50+ 200 ML ÖZEL FİYAT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990089.jpg",
+    "ProductCode": "1006990089",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2937,
+    "ProductName": "PHOTODERM SPRAY SPF50+ 300 ML ÖZEL FİYAT",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990090.jpg",
+    "ProductCode": "1006990090",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2938,
+    "ProductName": "BIODERMA PHO.PEDIATRICS LAIT SPF50+200 ML ÖZEL FİY",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990091.jpg",
+    "ProductCode": "1006990091",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2939,
+    "ProductName": "BIODERMA PHO.PEDIATRICS MINERAL SPF50+50 GR ÖZEL F",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990092.jpg",
+    "ProductCode": "1006990092",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2940,
+    "ProductName": "PHOTODERM AKN MAT 150 ML &SEBIUM FG 100 ML KOFRE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990086.jpg",
+    "ProductCode": "1006990086",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2941,
+    "ProductName": "PHOTO.PEDIATRICS LAIT 200 ML&ABCDERM FG 200ML KOFR",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006990087.jpg",
+    "ProductCode": "1006990087",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2942,
+    "ProductName": "PHOTODERM XDEFENSE ULTRAFLUID SPF50+40ML-YENİ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006563614.jpg",
+    "ProductCode": "1006563614",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2943,
+    "ProductName": "PHOTODERM XDEFENSE ULTRAFLUID SPF50+VERY LIGHT-YE ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006563621.jpg",
+    "ProductCode": "1006563621",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2944,
+    "ProductName": "PHOTODERM XDEFENSE ULTRAFLUID SPF50+40ML LIGHT-YEN",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006563638.jpg",
+    "ProductCode": "1006563638",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
+    "ProductId": 2945,
+    "ProductName": "PHOTODERM XDEFENSE ULTRAFLUID SPF50+40ML GOLDEN-YE",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006563645.jpg",
+    "ProductCode": "1006563645",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
+  },
+  {
     "ProductId": 2970,
     "ProductName": "NUXE SUN HUILE SOLAIRE GOLD SPF50 /150 ML",
     "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/KSNUX30172003.jpg",
@@ -5838,5 +6188,15 @@
     "anaKategori": "Dermokozmetik",
     "brand": "Caudalie",
     "cat": "Caudalie"
+  },
+  {
+    "ProductId": 2992,
+    "ProductName": "PHOTODERM ANTIOX SUN PROTECTIVE WATER SPF50 200ml ",
+    "ImageUrl": "https://siparis.serakinci.com/Content/Asset/ProductImages/1006647897_1.jpg",
+    "ProductCode": "1006647897",
+    "description": "",
+    "anaKategori": "Dermokozmetik",
+    "brand": "Bioderma",
+    "cat": "Bioderma"
   }
 ]
